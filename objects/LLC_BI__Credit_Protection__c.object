@@ -1,0 +1,355 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <allowInChatterGroups>false</allowInChatterGroups>
+    <compactLayoutAssignment>SYSTEM</compactLayoutAssignment>
+    <deploymentStatus>Deployed</deploymentStatus>
+    <deprecated>false</deprecated>
+    <description>This object displays the credit protection details related to the selected product(s).</description>
+    <enableActivities>false</enableActivities>
+    <enableBulkApi>true</enableBulkApi>
+    <enableFeeds>false</enableFeeds>
+    <enableHistory>false</enableHistory>
+    <enableLicensing>false</enableLicensing>
+    <enableReports>false</enableReports>
+    <enableSearch>false</enableSearch>
+    <enableSharing>true</enableSharing>
+    <enableStreamingApi>true</enableStreamingApi>
+    <externalSharingModel>Private</externalSharingModel>
+    <fields>
+        <fullName>LLC_BI__Cost_Per_Day__c</fullName>
+        <deprecated>false</deprecated>
+        <description>The system automatically populates this optional currency field to store the daily cost of this protection. By default, it is blank.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>This field stores the daily cost of this protection.</inlineHelpText>
+        <label>Cost Per Day</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>LLC_BI__Cost_Per_Month__c</fullName>
+        <deprecated>false</deprecated>
+        <description>The system automatically populates this optional currency field to store the monthly cost of this protection. By default, it is blank.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>This field stores the monthly cost of this protection.</inlineHelpText>
+        <label>Cost Per Month</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>LLC_BI__Coverage_Result__c</fullName>
+        <deprecated>false</deprecated>
+        <description>The system automatically populates this optional picklist field to store whether the coverage was fully applied, partially applied, or denied. By default, it is blank.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>This field informs the calling application if the requested coverage was fully applied, partially applied, or denied.</inlineHelpText>
+        <label>Coverage Result</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Fully Applied</fullName>
+                    <default>false</default>
+                    <label>Fully Applied</label>
+                </value>
+                <value>
+                    <fullName>Partially Applied</fullName>
+                    <default>false</default>
+                    <label>Partially Applied</label>
+                </value>
+                <value>
+                    <fullName>Denied</fullName>
+                    <default>false</default>
+                    <label>Denied</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>LLC_BI__Covered_Entity_Joint__c</fullName>
+        <deleteConstraint>Restrict</deleteConstraint>
+        <deprecated>false</deprecated>
+        <description>The system automatically populates this field after a user applies joint coverage to an entity. By default, it is blank.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>The system automatically populates this field after a user applies joint coverage to an entity. By default, it is blank.</inlineHelpText>
+        <label>Covered Entity - Joint</label>
+        <referenceTo>LLC_BI__Legal_Entities__c</referenceTo>
+        <relationshipLabel>Credit Protections - Joint</relationshipLabel>
+        <relationshipName>Credit_Protections_Joint</relationshipName>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>LLC_BI__Covered_Entity_Single__c</fullName>
+        <deleteConstraint>Restrict</deleteConstraint>
+        <deprecated>false</deprecated>
+        <description>The system automatically populates this field after a user applies coverage to an entity. By default, it is blank.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>The system automatically populates this field after a user applies coverage to an entity.  By default, it is blank.</inlineHelpText>
+        <label>Covered Entity - Single</label>
+        <referenceTo>LLC_BI__Legal_Entities__c</referenceTo>
+        <relationshipLabel>Credit Protections - Single</relationshipLabel>
+        <relationshipName>Credit_Protections</relationshipName>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>LLC_BI__Drop_Code__c</fullName>
+        <deprecated>false</deprecated>
+        <description>The system automatically populates this optional number field to store a numeric code that indicates the reason the requested protection was denied. By default, it is blank.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>This field stores a numeric code that indicates the reason the requested protection was denied.</inlineHelpText>
+        <label>Drop Code</label>
+        <precision>3</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>LLC_BI__Drop_Reason__c</fullName>
+        <deprecated>false</deprecated>
+        <description>The system automatically populates this optional text field to store a human-readable description of the reason the requested protection was denied. By default, it is blank.</description>
+        <encryptionScheme>None</encryptionScheme>
+        <externalId>false</externalId>
+        <inlineHelpText>This field stores a human-readable description of the reason the requested protection was denied.</inlineHelpText>
+        <label>Drop Reason</label>
+        <length>256</length>
+        <trackTrending>false</trackTrending>
+        <type>LongTextArea</type>
+        <visibleLines>3</visibleLines>
+    </fields>
+    <fields>
+        <fullName>LLC_BI__Loan__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <deprecated>false</deprecated>
+        <description>The system uses this optional lookup field to determine the selected loan. By default, it is blank.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>When populated, the system uses this lookup field to determine the selected loan.</inlineHelpText>
+        <label>Loan</label>
+        <referenceTo>LLC_BI__Loan__c</referenceTo>
+        <relationshipLabel>Credit Protections</relationshipLabel>
+        <relationshipName>Credit_Protections</relationshipName>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>LLC_BI__Premium__c</fullName>
+        <deprecated>false</deprecated>
+        <description>The system automatically populates this optional currency field to store the total cost of this protection over the term of the loan. By default, it is blank.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>This field stores the total cost of this protection over the term of the loan.</inlineHelpText>
+        <label>Premium</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>LLC_BI__Pricing_Option__c</fullName>
+        <deleteConstraint>Cascade</deleteConstraint>
+        <deprecated>false</deprecated>
+        <description>The system uses this optional lookup field to determine the Pricing Option of the selected product. By default, it is blank.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>When populated, the system uses this lookup field to determine the Pricing Option being serviced.</inlineHelpText>
+        <label>Pricing Option</label>
+        <referenceTo>LLC_BI__Pricing_Option__c</referenceTo>
+        <relationshipLabel>Credit Protections</relationshipLabel>
+        <relationshipName>Credit_Protections</relationshipName>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>LLC_BI__Product__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <deprecated>false</deprecated>
+        <description>The system uses this optional lookup field to determine the product represented by this object. By default, it is blank.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>When populated, the system uses this lookup field to determine the product represented.</inlineHelpText>
+        <label>Product</label>
+        <referenceTo>LLC_BI__Product__c</referenceTo>
+        <relationshipLabel>Credit Protections</relationshipLabel>
+        <relationshipName>Credit_Protections</relationshipName>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>LLC_BI__lookupKey__c</fullName>
+        <caseSensitive>false</caseSensitive>
+        <deprecated>false</deprecated>
+        <description>This field is optional and automatically populated. This field is used to house the unique external ID of this record.</description>
+        <encryptionScheme>None</encryptionScheme>
+        <externalId>true</externalId>
+        <label>lookupKey</label>
+        <length>255</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>true</unique>
+    </fields>
+    <label>Credit Protection</label>
+    <nameField>
+        <displayFormat>Credit Protection-{00000}</displayFormat>
+        <label>Credit Protection Name</label>
+        <type>AutoNumber</type>
+    </nameField>
+    <pluralLabel>Credit Protections</pluralLabel>
+    <searchLayouts/>
+    <sharingModel>ReadWrite</sharingModel>
+    <visibility>Public</visibility>
+</CustomObject>

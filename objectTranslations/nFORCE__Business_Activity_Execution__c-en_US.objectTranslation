@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <help><!-- This automatically populated required field displays the name of the business activity it is associated with. --></help>
+        <label><!-- Business Activity Name --></label>
+        <name>nFORCE__Business_Activity_Name__c</name>
+    </fields>
+    <fields>
+        <help><!-- This automatically populated field displays the Business Process Interaction record to which this business activity is associated. --></help>
+        <label><!-- Business Process Interaction --></label>
+        <name>nFORCE__Business_Process_Interaction__c</name>
+        <relationshipLabel><!-- Business Process Interactions --></relationshipLabel>
+    </fields>
+    <fields>
+        <help><!-- This automatically populated field displays the expected child activities. --></help>
+        <label><!-- Expected Child Activity Count --></label>
+        <name>nFORCE__Child_Activity_Count__c</name>
+    </fields>
+    <fields>
+        <help><!-- This automatically populated field displays whether the business process was previously stored. --></help>
+        <label><!-- Business Process Is Dynamic --></label>
+        <name>nFORCE__Config_Template_Is_Dynamic__c</name>
+    </fields>
+    <fields>
+        <help><!-- This automatically populated field displays the business process key it is associated with. --></help>
+        <label><!-- Business Process Key --></label>
+        <name>nFORCE__Config_Template_Name__c</name>
+    </fields>
+    <fields>
+        <help><!-- This automatically populated field displays an ID that refers to all Business Activity executions in the scope of this executing business process. --></help>
+        <label><!-- Correlation Id --></label>
+        <name>nFORCE__Correlation_Id__c</name>
+    </fields>
+    <fields>
+        <help><!-- This automatically populated field displays the intent of this Business Activity execution. --></help>
+        <label><!-- Description --></label>
+        <name>nFORCE__Description__c</name>
+    </fields>
+    <fields>
+        <help><!-- This automatically populated field displays the end-to-end processing time of this Business Activity execution. --></help>
+        <label><!-- Execution Duration --></label>
+        <name>nFORCE__Duration__c</name>
+    </fields>
+    <fields>
+        <help><!-- This automatically populated field displays the Apex Batch Job ID or the Business Activity Event UUID. --></help>
+        <label><!-- Execution Id --></label>
+        <name>nFORCE__Execution_Id__c</name>
+    </fields>
+    <fields>
+        <help><!-- This automatically populated field displays an ID that refers to this Business Activity. --></help>
+        <label><!-- External Id --></label>
+        <name>nFORCE__External_Id__c</name>
+    </fields>
+    <fields>
+        <help><!-- This automatically populated field displays the fully qualified class name of the business activity handler. --></help>
+        <label><!-- Fully Qualified Class Name --></label>
+        <name>nFORCE__FQCN__c</name>
+    </fields>
+    <fields>
+        <help><!-- This automatically populated field displays the completion timestamp of the Business Activity. --></help>
+        <label><!-- Final Timestamp --></label>
+        <name>nFORCE__FinalTimestamp__c</name>
+    </fields>
+    <fields>
+        <help><!-- This automatically populated field displays whether the Business Activity execution is complete. --></help>
+        <label><!-- Finalization Is Complete --></label>
+        <name>nFORCE__Finalization_Complete__c</name>
+    </fields>
+    <fields>
+        <help><!-- This automatically populated field displays whether a finalization process has been enqueued. --></help>
+        <label><!-- Finalization Handler Is Enqueued --></label>
+        <name>nFORCE__Finalization_Enqueued__c</name>
+    </fields>
+    <fields>
+        <help><!-- This automatically populated field displays whether a Business Activity execution, if scheduled, executes once or is recurring. --></help>
+        <label><!-- Is Scheduled Single Run Only --></label>
+        <name>nFORCE__Is_Scheduled_Single_Run__c</name>
+    </fields>
+    <fields>
+        <help><!-- This automatically populated field displays whether this business activity execution is scheduled for future processing. --></help>
+        <label><!-- Is Scheduled --></label>
+        <name>nFORCE__Is_Scheduled__c</name>
+    </fields>
+    <fields>
+        <help><!-- This automatically populated field displays the most recent message determined by the Business Activity execution handler. --></help>
+        <label><!-- Message --></label>
+        <name>nFORCE__Message__c</name>
+    </fields>
+    <fields>
+        <help><!-- This automatically populated field displays the parent Business Activity execution record to which this Business Activity execution is associated. --></help>
+        <label><!-- Parent Activity --></label>
+        <name>nFORCE__Parent_Activity__c</name>
+        <relationshipLabel><!-- Business Activity Execution --></relationshipLabel>
+    </fields>
+    <fields>
+        <help><!-- This automatically selected checkbox displays whether this Business Activity execution runs asynchronously or not. --></help>
+        <label><!-- Perform Async --></label>
+        <name>nFORCE__Perform_Async__c</name>
+    </fields>
+    <fields>
+        <help><!-- This automatically populated field indicates that this Business Activity execution has been published or not. --></help>
+        <label><!-- Publish --></label>
+        <name>nFORCE__Publish__c</name>
+    </fields>
+    <fields>
+        <help><!-- This automatically populated field displays the CRON expression. --></help>
+        <label><!-- Scheduled Job CRON Expression --></label>
+        <name>nFORCE__Scheduled_CRON_Expr__c</name>
+    </fields>
+    <fields>
+        <help><!-- This automatically populated field displays the status current status of this Business Activity execution. --></help>
+        <label><!-- Status --></label>
+        <name>nFORCE__Status__c</name>
+        <picklistValues>
+            <masterLabel>Cancelled</masterLabel>
+            <translation><!-- Cancelled --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Completed Successfully</masterLabel>
+            <translation><!-- Completed Successfully --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Completed With Errors</masterLabel>
+            <translation><!-- Completed With Errors --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>In Progress</masterLabel>
+            <translation><!-- In Progress --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Queued</masterLabel>
+            <translation><!-- Queued --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Scheduled</masterLabel>
+            <translation><!-- Scheduled --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- This automatically populated field displays the timestamp of when the Business Activity execution was created. --></help>
+        <label><!-- Timestamp --></label>
+        <name>nFORCE__Timestamp__c</name>
+    </fields>
+    <fields>
+        <help><!-- This automatically selected checkbox indicates that the Business Activity execution should remain in progress until an external process updates the status to continue. --></help>
+        <label><!-- Wait For External Update --></label>
+        <name>nFORCE__Wait_For_External_Update__c</name>
+    </fields>
+</CustomObjectTranslation>

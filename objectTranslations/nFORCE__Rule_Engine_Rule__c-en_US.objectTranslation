@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <label><!-- Active --></label>
+        <name>nFORCE__Active__c</name>
+    </fields>
+    <fields>
+        <label><!-- Description --></label>
+        <name>nFORCE__Description__c</name>
+    </fields>
+    <fields>
+        <label><!-- End Date --></label>
+        <name>nFORCE__End_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Rule Engine Context Rule --></label>
+        <name>nFORCE__Rule_Engine_Context_Rule__c</name>
+        <relationshipLabel><!-- Rule Engine Rules --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Rule Engine Rule Name --></label>
+        <name>nFORCE__Rule_Engine_Rule_Name__c</name>
+    </fields>
+    <fields>
+        <label><!-- Rule Engine Rule Reference --></label>
+        <name>nFORCE__Rule_Engine_Rule_Reference__c</name>
+    </fields>
+    <fields>
+        <label><!-- Rule Engine --></label>
+        <name>nFORCE__Rule_Engine__c</name>
+    </fields>
+    <fields>
+        <label><!-- Start Date --></label>
+        <name>nFORCE__Start_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- lookupKey --></label>
+        <name>nFORCE__lookupKey__c</name>
+    </fields>
+</CustomObjectTranslation>

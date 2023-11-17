@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Role xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseAccessLevel>Edit</caseAccessLevel>
+    <contactAccessLevel>Edit</contactAccessLevel>
+    <description>EVP Contract Services</description>
+    <mayForecastManagerShare>false</mayForecastManagerShare>
+    <name>EVP Contract Service</name>
+    <opportunityAccessLevel>Edit</opportunityAccessLevel>
+    <parentRole>BOM_Exec</parentRole>
+</Role>

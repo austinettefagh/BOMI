@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Letterhead xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <backgroundColor>#CCCCCC</backgroundColor>
+    <bodyColor>#FFFFFF</bodyColor>
+    <bottomLine>
+        <color>#007a3e</color>
+        <height>0</height>
+    </bottomLine>
+    <description>Official TBOM Email Template Header/Footer</description>
+    <footer>
+        <backgroundColor>#FFFFFF</backgroundColor>
+        <height>0</height>
+        <horizontalAlignment>Left</horizontalAlignment>
+        <logo>SharedDocuments/TBOM_Tagline.png</logo>
+        <verticalAlignment>Middle</verticalAlignment>
+    </footer>
+    <header>
+        <backgroundColor>#FFFFFF</backgroundColor>
+        <height>0</height>
+        <horizontalAlignment>Right</horizontalAlignment>
+        <verticalAlignment>Top</verticalAlignment>
+    </header>
+    <middleLine>
+        <color>#007a3e</color>
+        <height>0</height>
+    </middleLine>
+    <name>TBOM</name>
+    <topLine>
+        <color>#007a3e</color>
+        <height>0</height>
+    </topLine>
+</Letterhead>

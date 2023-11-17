@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PermissionSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <classAccesses>
+        <apexClass>nTreasury__TMMassActionsCFGLoaderAura</apexClass>
+        <enabled>true</enabled>
+    </classAccesses>
+    <customPermissions>
+        <enabled>true</enabled>
+        <name>nTreasury__Treasury_Service_Mass_Actions_User</name>
+    </customPermissions>
+    <description>Permission set to grant users permission to mass add and edit analyzed accounts and authorized users.</description>
+    <hasActivationRequired>false</hasActivationRequired>
+    <label>Treasury Service Mass Actions</label>
+</PermissionSet>

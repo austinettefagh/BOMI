@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>Alert for New Application has been created</description>
+    <encodingKey>UTF-8</encodingKey>
+    <letterhead>TBoM_NewLetterHead</letterhead>
+    <name>New Application Created</name>
+    <style>freeForm</style>
+    <subject>New Application has been created</subject>
+    <textOnly>Hi {!Receiving_User.FirstName},
+
+We have received a new Treasury Application, details as follows. 
+
+Created By: {!TM_Application__c.OwnerFullName}
+
+Account Name: {!TM_Application__c.TM_Account_Name__c}
+
+Opportunity Name: {!TM_Application__c.TM_Opportunity_Name__c}
+
+Expected Install Date: {!TM_Application__c.TM_Expected_Install_Date__c}
+
+Record URL: {!TM_Application__c.Link}</textOnly>
+    <type>html</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fieldSets>
+        <label><!-- Upgradeable Fields --></label>
+        <name>LLC_BI__Upgradeable_Fields</name>
+    </fieldSets>
+    <fields>
+        <label><!-- Associated Record --></label>
+        <name>LLC_BI__Associated_Parent_Record__c</name>
+        <relationshipLabel><!-- Associated Child Records --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Cloned Source Row --></label>
+        <name>LLC_BI__Cloned_Source_Row__c</name>
+        <relationshipLabel><!-- Row Clones --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Debit --></label>
+        <name>LLC_BI__Debit__c</name>
+    </fields>
+    <fields>
+        <label><!-- Display Type --></label>
+        <name>LLC_BI__Display_Type__c</name>
+        <picklistValues>
+            <masterLabel>Decimal</masterLabel>
+            <translation><!-- Decimal --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Financial</masterLabel>
+            <translation><!-- Financial --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Percentage</masterLabel>
+            <translation><!-- Percentage --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Use Group Type</masterLabel>
+            <translation><!-- Use Group Type --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Formula --></label>
+        <name>LLC_BI__Formula_Long_Text__c</name>
+    </fields>
+    <fields>
+        <label><!-- Formula -D --></label>
+        <name>LLC_BI__Formula__c</name>
+    </fields>
+    <fields>
+        <label><!-- Include In Total --></label>
+        <name>LLC_BI__Include_In_Total__c</name>
+    </fields>
+    <fields>
+        <label><!-- Is Linked --></label>
+        <name>LLC_BI__Is_Linked__c</name>
+    </fields>
+    <fields>
+        <label><!-- Highlights Type --></label>
+        <name>LLC_BI__KPI_Type__c</name>
+        <picklistValues>
+            <masterLabel>Standard Highlight</masterLabel>
+            <translation><!-- Standard Highlight --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>User Highlight</masterLabel>
+            <translation><!-- User Highlight --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Linked Spread Statement Record --></label>
+        <name>LLC_BI__Linked_Spread_Statement_Record__c</name>
+        <relationshipLabel><!-- Spread Statement Records --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Linked Spread Statement Total Group --></label>
+        <name>LLC_BI__Linked_Spread_Statement_Total_Group__c</name>
+        <relationshipLabel><!-- Spread Statement Records (Linked Spread Statement Total Group) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Operation Add --></label>
+        <name>LLC_BI__Operation_Add__c</name>
+    </fields>
+    <fields>
+        <label><!-- Operation Divide --></label>
+        <name>LLC_BI__Operation_Divide__c</name>
+    </fields>
+    <fields>
+        <label><!-- Operation Multiply --></label>
+        <name>LLC_BI__Operation_Multiply__c</name>
+    </fields>
+    <fields>
+        <label><!-- Operation Subtract --></label>
+        <name>LLC_BI__Operation_Subtract__c</name>
+    </fields>
+    <fields>
+        <label><!-- Operation --></label>
+        <name>LLC_BI__Operation__c</name>
+        <picklistValues>
+            <masterLabel>ADD</masterLabel>
+            <translation><!-- ADD --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>DIVIDE</masterLabel>
+            <translation><!-- DIVIDE --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MULTIPLY</masterLabel>
+            <translation><!-- MULTIPLY --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SUBTRACT</masterLabel>
+            <translation><!-- SUBTRACT --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- Check this field to calculate period over period change --></help>
+        <label><!-- Period Over Period Change --></label>
+        <name>LLC_BI__Period_Over_Period_Change__c</name>
+    </fields>
+    <fields>
+        <help><!-- Check this field to calculate the period over prior fiscal year. --></help>
+        <label><!-- Period Over Prior Fiscal Year --></label>
+        <name>LLC_BI__Period_Over_Prior_Fiscal_Year__c</name>
+    </fields>
+    <fields>
+        <label><!-- Prior Fiscal Year --></label>
+        <name>LLC_BI__Prior_Fiscal_Year__c</name>
+    </fields>
+    <fields>
+        <label><!-- Record Type --></label>
+        <name>LLC_BI__Record_Type__c</name>
+        <picklistValues>
+            <masterLabel>Days in Period</masterLabel>
+            <translation><!-- Days in Period --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Debt Service</masterLabel>
+            <translation><!-- Debt Service --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Loan Assumptions</masterLabel>
+            <translation><!-- Loan Assumptions --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Prepopulated</masterLabel>
+            <translation><!-- Prepopulated --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Rent Roll Annual Income</masterLabel>
+            <translation><!-- Rent Roll Annual Income --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Simulated</masterLabel>
+            <translation><!-- Simulated --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Standard</masterLabel>
+            <translation><!-- Standard --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Row Number --></label>
+        <name>LLC_BI__Row_Number__c</name>
+    </fields>
+    <fields>
+        <label><!-- Source Row --></label>
+        <name>LLC_BI__Source_Row__c</name>
+        <relationshipLabel><!-- Cloned Spread Statement Records --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Spread Statement Record Total --></label>
+        <name>LLC_BI__Spread_Statement_Record_Total__c</name>
+        <relationshipLabel><!-- Spread Statement Records --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Spread Statement Type --></label>
+        <name>LLC_BI__Spread_Statement_Type__c</name>
+        <relationshipLabel><!-- Spread Statement Records --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- lookupKey --></label>
+        <name>LLC_BI__lookupKey__c</name>
+    </fields>
+    <validationRules>
+        <errorMessage><!-- Cannot calculate period over period values for none linked records --></errorMessage>
+        <name>LLC_BI__Cannot_calculate_period_over_period_val</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- You may link to a Record or a Total Group, but not both. --></errorMessage>
+        <name>LLC_BI__Cannot_link_to_Record_and_a_Total_Group</name>
+    </validationRules>
+</CustomObjectTranslation>

@@ -1,0 +1,237 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fieldSets>
+        <label><!-- Jack Henry jXchange Automated Booking --></label>
+        <name>JHJX__ABJX</name>
+    </fieldSets>
+    <fieldSets>
+        <label><!-- Account Covenant Related List --></label>
+        <name>LLC_BI__Account_Covenant_Related_List</name>
+    </fieldSets>
+    <fieldSets>
+        <label><!-- CovenantBulkAssociate --></label>
+        <name>LLC_BI__CovenantBulkAssociate</name>
+    </fieldSets>
+    <fieldSets>
+        <label><!-- Credit Memo Standard Product Package --></label>
+        <name>LLC_BI__Credit_Memo_Standard_Product_Package</name>
+    </fieldSets>
+    <fieldSets>
+        <label><!-- Loan Covenant Related List --></label>
+        <name>LLC_BI__Loan_Covenant_Related_List</name>
+    </fieldSets>
+    <fieldSets>
+        <label><!-- Product Package Account Covenant FS --></label>
+        <name>LLC_BI__Product_Package_Account_Covenant_FS</name>
+    </fieldSets>
+    <fieldSets>
+        <label><!-- Product Package Loan Covenant FS --></label>
+        <name>LLC_BI__Product_Package_Loan_Covenant_FS</name>
+    </fieldSets>
+    <fieldSets>
+        <label><!-- manageCovenants --></label>
+        <name>LLC_BI__manageCovenants</name>
+    </fieldSets>
+    <fields>
+        <label><!-- Covenant Narrative --></label>
+        <name>CF_Covenant_Narrative__c</name>
+    </fields>
+    <fields>
+        <label><!-- Effective Date --></label>
+        <name>CF_Effective_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Next Evaluation Date In --></label>
+        <name>CF_Next_Evaluation_Date_In__c</name>
+    </fields>
+    <fields>
+        <help><!-- Please provide details as to what this Covenant is tracking --></help>
+        <label><!-- Other Covenant Details --></label>
+        <name>CF_Other_Covenant_Details__c</name>
+    </fields>
+    <fields>
+        <label><!-- Related Entity --></label>
+        <name>CF_Related_Entity__c</name>
+    </fields>
+    <fields>
+        <label><!-- Relationship --></label>
+        <name>CF_Relationship__c</name>
+    </fields>
+    <fields>
+        <label><!-- Account --></label>
+        <name>LLC_BI__Account__c</name>
+        <relationshipLabel><!-- Covenant Mgmt --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Active --></label>
+        <name>LLC_BI__Active__c</name>
+    </fields>
+    <fields>
+        <label><!-- Comments --></label>
+        <name>LLC_BI__Comments__c</name>
+    </fields>
+    <fields>
+        <label><!-- Compliance Days Prior --></label>
+        <name>LLC_BI__Compliance_Days_Prior__c</name>
+        <picklistValues>
+            <masterLabel>14</masterLabel>
+            <translation><!-- 14 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>15</masterLabel>
+            <translation><!-- 15 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>30</masterLabel>
+            <translation><!-- 30 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>45</masterLabel>
+            <translation><!-- 45 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>7</masterLabel>
+            <translation><!-- 7 --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- Update the Covenant Compliance status to update this field. --></help>
+        <label><!-- Covenant Status --></label>
+        <name>LLC_BI__Covenant_Status__c</name>
+        <picklistValues>
+            <masterLabel>Compliant</masterLabel>
+            <translation><!-- Compliant --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Exception</masterLabel>
+            <translation><!-- Exception --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>In Progress</masterLabel>
+            <translation><!-- In Progress --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Pending</masterLabel>
+            <translation><!-- Pending --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Waived</masterLabel>
+            <translation><!-- Waived --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- Lookup to the Covenant Type --></help>
+        <label><!-- Covenant Type --></label>
+        <name>LLC_BI__Covenant_Type__c</name>
+        <relationshipLabel><!-- Covenant Mgmt --></relationshipLabel>
+    </fields>
+    <fields>
+        <help><!-- Number of days past the Next Evaluation Date. --></help>
+        <label><!-- Days Past Next Evaluation --></label>
+        <name>LLC_BI__Days_Past_Next_Evaluation__c</name>
+    </fields>
+    <fields>
+        <help><!-- Number of days until the Next Evaluation Date. --></help>
+        <label><!-- Days Until Next Evaluation --></label>
+        <name>LLC_BI__Days_Until_Next_Evaluation__c</name>
+    </fields>
+    <fields>
+        <help><!-- Use this field to add details to the covenant. --></help>
+        <label><!-- Detail --></label>
+        <name>LLC_BI__Detail__c</name>
+    </fields>
+    <fields>
+        <label><!-- Due Date --></label>
+        <name>LLC_BI__Due_Date__c</name>
+    </fields>
+    <fields>
+        <help><!-- Effective Date is the Date of the Statement --></help>
+        <label><!-- Effective Date --></label>
+        <name>LLC_BI__Effective_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Financial Indicator Value --></label>
+        <name>LLC_BI__Financial_Indicator_Value__c</name>
+    </fields>
+    <fields>
+        <label><!-- Frequency Months --></label>
+        <name>LLC_BI__Frequency_Months__c</name>
+    </fields>
+    <fields>
+        <label><!-- Frequency Template --></label>
+        <name>LLC_BI__Frequency_Template__c</name>
+        <relationshipLabel><!-- Covenant Mgmt --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Frequency --></label>
+        <name>LLC_BI__Frequency__c</name>
+        <picklistValues>
+            <masterLabel>Annually</masterLabel>
+            <translation><!-- Annually --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Monthly</masterLabel>
+            <translation><!-- Monthly --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Quarterly</masterLabel>
+            <translation><!-- Quarterly --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Semi-Annually</masterLabel>
+            <translation><!-- Semi-Annually --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- Enter the number of grace days --></help>
+        <label><!-- Grace Days --></label>
+        <name>LLC_BI__Grace_Days__c</name>
+    </fields>
+    <fields>
+        <label><!-- Is_Template --></label>
+        <name>LLC_BI__Is_Template__c</name>
+    </fields>
+    <fields>
+        <label><!-- Last Evaluation Date --></label>
+        <name>LLC_BI__Last_Evaluation_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Last Evaluation Status --></label>
+        <name>LLC_BI__Last_Evaluation_Status__c</name>
+    </fields>
+    <fields>
+        <help><!-- The Spread Statement Record Total (group) this Financial Indicator Covenant is referencing for compliance. --></help>
+        <label><!-- Linked Spread Statement Record Total --></label>
+        <name>LLC_BI__Linked_Spread_Statement_Record_Total__c</name>
+        <relationshipLabel><!-- Covenant Mgmt --></relationshipLabel>
+    </fields>
+    <fields>
+        <help><!-- The Spread Statement Record (row) this Financial Indicator Covenant is referencing for compliance. --></help>
+        <label><!-- Linked Spread Statement Record --></label>
+        <name>LLC_BI__Linked_Spread_Statement_Record__c</name>
+        <relationshipLabel><!-- Covenant Mgmt --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Next Evaluation Date --></label>
+        <name>LLC_BI__Next_Evaluation_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Notes --></label>
+        <name>LLC_BI__Notes__c</name>
+    </fields>
+    <fields>
+        <help><!-- This field is used to relate Financial Indicator covenants to Financial Statement Requirements covenants.  When a Financial Statement Requirement covenant goes into exception all of its related FI covenants are also set to Exception. --></help>
+        <label><!-- Related Covenant --></label>
+        <name>LLC_BI__Related_Covenant__c</name>
+        <relationshipLabel><!-- Covenant Mgmt --></relationshipLabel>
+    </fields>
+    <fields>
+        <help><!-- This field indicates whether or not a Covenant is required. --></help>
+        <label><!-- Required --></label>
+        <name>LLC_BI__Required__c</name>
+    </fields>
+    <fields>
+        <label><!-- lookupKey --></label>
+        <name>LLC_BI__lookupKey__c</name>
+    </fields>
+</CustomObjectTranslation>

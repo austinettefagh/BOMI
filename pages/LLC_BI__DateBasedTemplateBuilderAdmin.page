@@ -1,0 +1,80 @@
+<apex:page showHeader="false" sidebar="false" standardStylesheets="false" docType="html-5.0">
+	<html lang="en">
+		<head>
+			<meta name="viewport" content="width=device-width, initial-scale=1" />
+			<apex:includeLightning />
+			<apex:slds />
+		</head>
+		<h1>Date-Based Template Builder</h1>
+		<p>This tool allows administrators to create templates for activities that reoccur and require single calendar year frequencies; annually, quarterly, etc. For example, administrators can use this tool to create templates for covenant compliance generation.</p>
+		<body>
+			<div id="toastContainer"></div>
+			<div id="dateTemplateListContainer"></div>
+			<script>
+				$Lightning.use('LLC_BI:dateTemplateAura', function () {
+					$Lightning.createComponent(
+						'LLC_BI:dateTemplateList',
+						{
+							recordId: '{!$CurrentPage.parameters.id}',
+						},
+						'dateTemplateListContainer',
+						function (cmp) {
+							const cmpElement = cmp.getElement();
+							cmpElement.addEventListener('showtoast', showToastInVisualforce);
+							window.overlayLib = cmp.get('v.overlayLibRef');
+						}
+					);
+				});
+
+				function showToastInVisualforce(event) {
+					const { title, message, variant } = event.detail;
+
+					const toastContainer = document.createElement('div');
+					toastContainer.classList.add('slds-notify_container');
+
+					const toast = document.createElement('div');
+					toast.classList.add('slds-notify', 'slds-notify_toast', `slds-theme_${variant}`);
+					toast.setAttribute('role', 'status');
+
+					const icon = `<span class="slds-assistive-text">${variant}</span>
+						<span class="slds-icon_container slds-icon-utility-${variant} slds-m-right_small slds-no-flex slds-align-top slds-custom_toast-icon" title="Description of icon when needed">
+							<svg class="slds-icon slds-icon_small" aria-hidden="true">
+								<use xlink:href="/_slds/icons/utility-sprite/svg/symbols.svg#${variant}"></use>
+							</svg>
+						</span>`;
+
+					const content = `<div class="slds-notify__content">
+							<h2 class="slds-text-heading_small slds-m-top_none">${title}: ${message}</h2>
+						</div>`;
+
+					const closeButton = `<div class="slds-notify__close">
+							<button class="slds-button slds-button_icon slds-button_icon-inverse" title="Close">
+								<svg class="slds-button__icon slds-button__icon_large" aria-hidden="true">
+									<use xlink:href="/_slds/icons/utility-sprite/svg/symbols.svg#close"></use>
+								</svg>
+								<span class="slds-assistive-text">Close</span>
+							</button>
+						</div>`;
+
+					toast.innerHTML = `${icon}${content}${closeButton}`;
+					toastContainer.appendChild(toast);
+
+					const toastRootContainer = document.getElementById('toastContainer');
+					toastRootContainer.appendChild(toastContainer);
+
+					if (variant !== 'error') {
+						setTimeout(() => {
+							if (toastContainer.parentElement === toastRootContainer) {
+								toastRootContainer.removeChild(toastContainer);
+							}
+						}, 3000);
+					}
+
+					toast
+						.querySelector('.slds-notify__close button')
+						.addEventListener('click', () => toastRootContainer.removeChild(toastContainer));
+				}
+			</script>
+		</body>
+	</html>
+</apex:page>

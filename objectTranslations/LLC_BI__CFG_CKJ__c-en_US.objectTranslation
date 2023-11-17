@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <label><!-- CFG_ConfigKeys --></label>
+        <name>LLC_BI__CFG_ConfigKeys__c</name>
+        <relationshipLabel><!-- CFG_CKJs --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- CFG_ConfigValue --></label>
+        <name>LLC_BI__CFG_ConfigValue__c</name>
+        <relationshipLabel><!-- CFG_CKJs --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Product Type --></label>
+        <name>LLC_BI__Product_Type__c</name>
+        <relationshipLabel><!-- Product Type --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Product --></label>
+        <name>LLC_BI__Product__c</name>
+        <relationshipLabel><!-- Product --></relationshipLabel>
+    </fields>
+    <fields>
+        <help><!-- Enter a unique external identifier. --></help>
+        <label><!-- lookupKey --></label>
+        <name>LLC_BI__lookupKey__c</name>
+    </fields>
+    <fields>
+        <label><!-- sObject Type --></label>
+        <name>LLC_BI__sObject_Type__c</name>
+        <picklistValues>
+            <masterLabel>LLC_BI__Loan__c</masterLabel>
+            <translation><!-- LLC_BI__Loan__c --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>LLC_BI__Treasury_Service__c</masterLabel>
+            <translation><!-- LLC_BI__Treasury_Service__c --></translation>
+        </picklistValues>
+    </fields>
+</CustomObjectTranslation>

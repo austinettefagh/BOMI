@@ -1,0 +1,18 @@
+<apex:page id="NewProduct">
+	<style>
+		:root {
+			--slds-c-input-text-color: black;
+			--slds-c-input-text-color-focus: black;
+			--slds-c-select-text-color: black;
+			--slds-c-select-text-color-focus: black;
+		}
+	</style>
+
+	<c:NewLoanProductConfiguration />
+
+	<div id="ncNewProduct" class="slds">
+		<c:ncNewProductPartials />
+		<new-product></new-product>
+	</div>
+
+</apex:page>

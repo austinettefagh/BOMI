@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <label><!-- Allows Reconfiguration --></label>
+        <name>nFORCE__Allows_Reconfiguration__c</name>
+    </fields>
+    <fields>
+        <label><!-- Class Name --></label>
+        <name>nFORCE__Class_Name__c</name>
+    </fields>
+    <fields>
+        <label><!-- Help Text --></label>
+        <name>nFORCE__Help_Text__c</name>
+    </fields>
+    <fields>
+        <label><!-- Is Active --></label>
+        <name>nFORCE__Is_Active__c</name>
+    </fields>
+    <fields>
+        <label><!-- Is Configured --></label>
+        <name>nFORCE__Is_Configured__c</name>
+    </fields>
+    <fields>
+        <label><!-- Is Link --></label>
+        <name>nFORCE__Is_Link__c</name>
+    </fields>
+    <fields>
+        <label><!-- Link URL --></label>
+        <name>nFORCE__Link_URL__c</name>
+    </fields>
+</CustomObjectTranslation>

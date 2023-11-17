@@ -1,0 +1,182 @@
+/*.THIS {
+    margin-left: 0 !important;
+    margin-right: 0.25rem !important;
+}
+*/
+.THIS .slds-accordion__section {
+    padding-top: 0;
+}
+
+/*.THIS .donut_one dashboard-container {
+    border: 2px solid red;
+}*/
+
+.THIS .Discovery {
+    background: #D9A5C2;
+}
+
+.THIS .SolutionAsk {
+    background: #4CD6BE;
+}
+
+.THIS .ProposalNegotiation {
+    background: #08916E;
+}
+
+.THIS .Install {
+    background: #F3B23D;  
+}
+
+.THIS .ClosedLost {
+    background: #F0E541;
+}
+
+.THIS .ClosedWon {
+    background: #2CA28D;   
+}
+
+.THIS .Onboarding {
+    background: #006499;  
+}
+.THIS .Completed {
+    background: #F59B05;
+}
+
+.THIS .Identify {
+    background: #509DE0;
+}
+
+.THIS .filter-button_active {
+    background-color: #32AF99;
+    padding: 0 1rem;
+    color: #ffffff;
+}
+
+.THIS .filter-button_inactive {
+    border: 1px solid #32AF99;
+    padding: 0 1rem;
+    color: #32AF99;
+}
+
+.THIS .table-test thead tr span {
+	background-color: #152A53;
+	color: #FFFFFF;    
+}
+
+.THIS .slds-table_header-fixed_container .slds-scrollable_y table tbody tr:nth-child(even) {
+    background: #eeeeee;
+}
+/*
+.THIS .slds-table_header-fixed_container .slds-scrollable_y table tbody tr td:nth-child(2) span {
+    background: #32AF99;
+    color: #FFFFFF;
+    border-radius: 10px;
+    display: flex;
+    margin-right: 2rem;
+    padding: 0 1rem;
+}
+*/
+
+.THIS .slds-table_header-fixed_container {
+    overflow-x: hidden !important;
+}
+
+.THIS lightning-primitive-header-factory .slds-has-button-menu {
+    display: flex;
+}
+
+.THIS .slds-line-height_reset th:nth-child(1) lightning-primitive-header-factory span.slds-has-button-menu .slds-th__action, .THIS .slds-line-height_reset th:nth-child(2) lightning-primitive-header-factory span.slds-has-button-menu .slds-th__action, .THIS .slds-line-height_reset th:nth-child(3) lightning-primitive-header-factory span.slds-has-button-menu .slds-th__action, .THIS .slds-line-height_reset th:nth-child(4) lightning-primitive-header-factory span.slds-has-button-menu .slds-th__action, .THIS .slds-line-height_reset th:nth-child(5) lightning-primitive-header-factory span.slds-has-button-menu .slds-th__action, .THIS .slds-line-height_reset th:nth-child(6) lightning-primitive-header-factory span.slds-has-button-menu .slds-th__action {
+    width: 100% !important;
+}
+
+.THIS .slds-line-height_reset th:nth-child(1) lightning-primitive-header-factory span.slds-has-button-menu .slds-th__action:hover, .THIS .slds-line-height_reset th:nth-child(2) lightning-primitive-header-factory span.slds-has-button-menu .slds-th__action:hover, .THIS .slds-line-height_reset th:nth-child(3) lightning-primitive-header-factory span.slds-has-button-menu .slds-th__action:hover, .THIS .slds-line-height_reset th:nth-child(4) lightning-primitive-header-factory span.slds-has-button-menu .slds-th__action:hover, .THIS .slds-line-height_reset th:nth-child(5) lightning-primitive-header-factory span.slds-has-button-menu .slds-th__action:hover, .THIS .slds-line-height_reset th:nth-child(6) lightning-primitive-header-factory span.slds-has-button-menu .slds-th__action:hover {
+    background-color: #152A53;
+}
+
+.THIS .slds-line-height_reset th:nth-child(1), .THIS .slds-line-height_reset th:nth-child(1) lightning-primitive-header-factory, .THIS .slds-line-height_reset th:nth-child(1) lightning-primitive-header-factory span.slds-has-button-menu {
+    width: 22.5% !important;
+}
+
+.THIS .slds-line-height_reset th:nth-child(2), .THIS .slds-line-height_reset th:nth-child(2) lightning-primitive-header-factory, .THIS .slds-line-height_reset th:nth-child(2) lightning-primitive-header-factory span.slds-has-button-menu {
+    width: 27.501% !important;
+}
+
+.THIS .slds-line-height_reset th:nth-child(3), .THIS .slds-line-height_reset th:nth-child(3) lightning-primitive-header-factory, .THIS .slds-line-height_reset th:nth-child(3) lightning-primitive-header-factory span.slds-has-button-menu {
+    width: 15% !important;
+}
+
+.THIS .slds-line-height_reset th:nth-child(4), .THIS .slds-line-height_reset th:nth-child(4) lightning-primitive-header-factory, .THIS .slds-line-height_reset th:nth-child(4) lightning-primitive-header-factory span.slds-has-button-menu {
+    width: 12.5% !important;
+}
+
+.THIS .slds-line-height_reset th:nth-child(5), .THIS .slds-line-height_reset th:nth-child(5) lightning-primitive-header-factory, .THIS .slds-line-height_reset th:nth-child(5) lightning-primitive-header-factory span.slds-has-button-menu {
+    width: 12.5% !important;
+}
+
+.THIS .slds-line-height_reset th:nth-child(6), .THIS .slds-line-height_reset th:nth-child(6) lightning-primitive-header-factory, .THIS .slds-line-height_reset th:nth-child(6) lightning-primitive-header-factory div.slds-cell-fixed {
+    width: 10% !important;
+}
+
+/*
+.THIS .slds-line-height_reset th:nth-child(1) lightning-primitive-header-factory span.slds-cell-fixed, .THIS .slds-line-height_reset th:nth-child(2) lightning-primitive-header-factory span.slds-cell-fixed, .THIS .slds-line-height_reset th:nth-child(3) lightning-primitive-header-factory span.slds-cell-fixed, .THIS .slds-line-height_reset th:nth-child(4) lightning-primitive-header-factory span.slds-cell-fixed {
+	border-right: 1px solid #dddddd;
+}
+
+.THIS .slds-line-height_reset th:nth-child(5) lightning-primitive-header-factory span.slds-cell-fixed {
+    border-right: 2px solid #dddddd;
+}
+*/
+
+.THIS .slds-line-height_reset th:nth-child(6) lightning-primitive-header-factory div.slds-cell-fixed span.slds-th__action {
+	display: flex;
+	justify-content: center;
+}
+
+.THIS .slds-is-resizable .slds-th__action:focus, .THIS .slds-is-resizable .slds-th__action:hover {
+    box-shadow: #152A53 -0.25rem 0 0 inset;
+}
+
+.THIS .slds-is-resizable .slds-th__action:focus svg, .THIS .slds-is-resizable .slds-th__action:hover svg {
+    fill: #32AF99;
+}
+    
+.THIS .slds-has-focus.slds-is-resizable .slds-th__action, .THIS .slds-has-focus.slds-is-resizable .slds-th__action:focus, .THIS .slds-has-focus.slds-is-resizable .slds-th__action:focus:hover, .THIS .slds-has-focus.slds-is-resizable .slds-th__action:hover, .THIS .slds-is-resizable .slds-th__action:focus, .THIS .slds-is-resizable .slds-th__action:focus:hover {
+    background-color: #152A53;
+}
+
+.THIS lightning-primitive-header-actions {
+    display: none;
+}
+
+.THIS lightning-primitive-resize-handler {
+    display: none;
+}
+
+.THIS lightning-primitive-header-actions lightning-button-menu {
+    margin-right: 0.5rem;
+}
+
+.THIS lightning-primitive-header-actions lightning-button-menu svg {
+    fill: #32AF99;
+}
+
+.THIS table tbody tr td.highlight_cell > lightning-primitive-cell-factory {
+    height: 16px;
+    width: 16px;
+    border: 3px solid red;
+    border-radius: 16px;
+    display: block;
+    margin: 0px auto;
+    position: 1 relative;
+    right: 38px;
+}
+
+/*.THIS .ref-btn{
+    position: absolute;
+    top: 11px;
+    right: 55px;
+} */
+.THIS .refresh-btn{
+    position: relative;
+    left: 1470px;
+}

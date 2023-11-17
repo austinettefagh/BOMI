@@ -1,0 +1,417 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <help><!-- Enter a brief description of the built-up area. --></help>
+        <label><!-- Built-Up Area --></label>
+        <name>LLC_BI__Built_Up_Area__c</name>
+    </fields>
+    <fields>
+        <help><!-- Select the property’s ceiling type from the picklist. --></help>
+        <label><!-- Ceiling Type --></label>
+        <name>LLC_BI__Ceiling_Type__c</name>
+        <picklistValues>
+            <masterLabel>Beam</masterLabel>
+            <translation><!-- Beam --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Coffered</masterLabel>
+            <translation><!-- Coffered --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Conventional</masterLabel>
+            <translation><!-- Conventional --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Cove</masterLabel>
+            <translation><!-- Cove --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Shed</masterLabel>
+            <translation><!-- Shed --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Suspended</masterLabel>
+            <translation><!-- Suspended --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Tray</masterLabel>
+            <translation><!-- Tray --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- Select the property’s construction class type from the picklist. --></help>
+        <label><!-- Construction Class --></label>
+        <name>LLC_BI__Construction_Class__c</name>
+        <picklistValues>
+            <masterLabel>Average/ Standard Builders Grade</masterLabel>
+            <translation><!-- Average/ Standard Builders Grade --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Basic</masterLabel>
+            <translation><!-- Basic --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Custom</masterLabel>
+            <translation><!-- Custom --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Custom/ Luxury</masterLabel>
+            <translation><!-- Custom/ Luxury --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Designer</masterLabel>
+            <translation><!-- Designer --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Economy</masterLabel>
+            <translation><!-- Economy --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Economy/Standard</masterLabel>
+            <translation><!-- Economy/Standard --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Luxury</masterLabel>
+            <translation><!-- Luxury --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Minimum</masterLabel>
+            <translation><!-- Minimum --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Standard/Custom</masterLabel>
+            <translation><!-- Standard/Custom --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Superior</masterLabel>
+            <translation><!-- Superior --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- Enter any additional information about the property in this field. --></help>
+        <label><!-- Description --></label>
+        <name>LLC_BI__Description__c</name>
+    </fields>
+    <fields>
+        <help><!-- Select the property’s dwelling type from the picklist. --></help>
+        <label><!-- Dwelling Type --></label>
+        <name>LLC_BI__Dwelling_Type__c</name>
+        <picklistValues>
+            <masterLabel>Above Shop/Commercial</masterLabel>
+            <translation><!-- Above Shop/Commercial --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Conversion</masterLabel>
+            <translation><!-- Conversion --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Detached</masterLabel>
+            <translation><!-- Detached --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Duplex</masterLabel>
+            <translation><!-- Duplex --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>High Rise Multiple Units</masterLabel>
+            <translation><!-- High Rise Multiple Units --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Low Rise Multiple Units</masterLabel>
+            <translation><!-- Low Rise Multiple Units --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Purpose Built</masterLabel>
+            <translation><!-- Purpose Built --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Semi Detached</masterLabel>
+            <translation><!-- Semi Detached --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Single Family Detached Four Square</masterLabel>
+            <translation><!-- Single Family Detached Four Square --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Single Family Detached Ranch</masterLabel>
+            <translation><!-- Single Family Detached Ranch --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Single Family Detached Row Home</masterLabel>
+            <translation><!-- Single Family Detached Row Home --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Studio</masterLabel>
+            <translation><!-- Studio --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Terraced</masterLabel>
+            <translation><!-- Terraced --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- Select the property’s floor type from the picklist. --></help>
+        <label><!-- Floor Type --></label>
+        <name>LLC_BI__Floor_Type__c</name>
+        <picklistValues>
+            <masterLabel>Bamboo</masterLabel>
+            <translation><!-- Bamboo --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Carpet</masterLabel>
+            <translation><!-- Carpet --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Ceramic Tile</masterLabel>
+            <translation><!-- Ceramic Tile --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Cork</masterLabel>
+            <translation><!-- Cork --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Engineered Wood</masterLabel>
+            <translation><!-- Engineered Wood --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Floating Wood Tile</masterLabel>
+            <translation><!-- Floating Wood Tile --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Hardwood</masterLabel>
+            <translation><!-- Hardwood --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Porcelain Tile</masterLabel>
+            <translation><!-- Porcelain Tile --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Stone</masterLabel>
+            <translation><!-- Stone --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Vinyl</masterLabel>
+            <translation><!-- Vinyl --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- Select the property’s foundation type from the picklist. --></help>
+        <label><!-- Foundation Type --></label>
+        <name>LLC_BI__Foundation_Type__c</name>
+        <picklistValues>
+            <masterLabel>Basement</masterLabel>
+            <translation><!-- Basement --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Crawlspace</masterLabel>
+            <translation><!-- Crawlspace --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Pier and Beam</masterLabel>
+            <translation><!-- Pier and Beam --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Slab</masterLabel>
+            <translation><!-- Slab --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- Select the property’s garage type from the picklist. --></help>
+        <label><!-- Garage Type --></label>
+        <name>LLC_BI__Garage_Type__c</name>
+        <picklistValues>
+            <masterLabel>Attached</masterLabel>
+            <translation><!-- Attached --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Basement</masterLabel>
+            <translation><!-- Basement --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Built-In</masterLabel>
+            <translation><!-- Built-In --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Carport</masterLabel>
+            <translation><!-- Carport --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- If this property is a leased asset, enter the lease period for the property in this field. --></help>
+        <label><!-- Lease Period (Months) --></label>
+        <name>LLC_BI__Lease_Period_Months__c</name>
+    </fields>
+    <fields>
+        <help><!-- If this property is a leased asset, enter the lease period for the property in this field. --></help>
+        <label><!-- Lease Period (Years) --></label>
+        <name>LLC_BI__Lease_Period_Years__c</name>
+    </fields>
+    <fields>
+        <help><!-- This field contains the collateral detail record’s automated numerical identifier. --></help>
+        <label><!-- Name --></label>
+        <name>LLC_BI__Name__c</name>
+    </fields>
+    <fields>
+        <help><!-- Enter the property’s total number of bathrooms in this field. --></help>
+        <label><!-- Number Of Bathrooms --></label>
+        <name>LLC_BI__Number_Of_Bathrooms__c</name>
+    </fields>
+    <fields>
+        <help><!-- Enter the property’s total number of bedrooms in this field. --></help>
+        <label><!-- Number Of Bedrooms --></label>
+        <name>LLC_BI__Number_Of_Bedrooms__c</name>
+    </fields>
+    <fields>
+        <help><!-- Enter the property’s total number of floors in this field. --></help>
+        <label><!-- Number Of Floors --></label>
+        <name>LLC_BI__Number_Of_Floors__c</name>
+    </fields>
+    <fields>
+        <help><!-- Enter the property’s total number of kitchens in this field. --></help>
+        <label><!-- Number Of Kitchens --></label>
+        <name>LLC_BI__Number_Of_Kitchens__c</name>
+    </fields>
+    <fields>
+        <help><!-- Enter the property’s total number of parking spaces in this field. --></help>
+        <label><!-- Number of Parking Spaces in Garage --></label>
+        <name>LLC_BI__Number_Of_Parking_Spaces_In_Garage__c</name>
+    </fields>
+    <fields>
+        <help><!-- Select the extra features included with the property from the picklist. You can select more than one. --></help>
+        <label><!-- Other Property Features --></label>
+        <name>LLC_BI__Other_Property_Features__c</name>
+        <picklistValues>
+            <masterLabel>Basement</masterLabel>
+            <translation><!-- Basement --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Chimney</masterLabel>
+            <translation><!-- Chimney --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Elevator/Lift</masterLabel>
+            <translation><!-- Elevator/Lift --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Swimming Pool</masterLabel>
+            <translation><!-- Swimming Pool --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- Select the property’s primary use from the picklist. --></help>
+        <label><!-- Primary Use --></label>
+        <name>LLC_BI__Primary_Use__c</name>
+        <picklistValues>
+            <masterLabel>Holiday Home</masterLabel>
+            <translation><!-- Holiday Home --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Holiday Let</masterLabel>
+            <translation><!-- Holiday Let --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Live Work Unit</masterLabel>
+            <translation><!-- Live Work Unit --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Primary Residence</masterLabel>
+            <translation><!-- Primary Residence --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Second Home</masterLabel>
+            <translation><!-- Second Home --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Sitting Tenant</masterLabel>
+            <translation><!-- Sitting Tenant --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>To Let</masterLabel>
+            <translation><!-- To Let --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- Enter the property’s purchase date in this field. --></help>
+        <label><!-- Purchase Date --></label>
+        <name>LLC_BI__Purchase_Date__c</name>
+    </fields>
+    <fields>
+        <help><!-- Select the property’s roof type from the picklist. --></help>
+        <label><!-- Roof Type --></label>
+        <name>LLC_BI__Roof_Type__c</name>
+        <picklistValues>
+            <masterLabel>Asphalt Shingles</masterLabel>
+            <translation><!-- Asphalt Shingles --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Built-up Roofing</masterLabel>
+            <translation><!-- Built-up Roofing --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Clay and Concrete Tiles</masterLabel>
+            <translation><!-- Clay and Concrete Tiles --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Flat</masterLabel>
+            <translation><!-- Flat --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Green Roof</masterLabel>
+            <translation><!-- Green Roof --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Metal Roofing</masterLabel>
+            <translation><!-- Metal Roofing --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Rubber Slate</masterLabel>
+            <translation><!-- Rubber Slate --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Slate</masterLabel>
+            <translation><!-- Slate --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Solar Tiles</masterLabel>
+            <translation><!-- Solar Tiles --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Stone-coated Steel</masterLabel>
+            <translation><!-- Stone-coated Steel --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Thatched</masterLabel>
+            <translation><!-- Thatched --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- Select the property’s wall construction type from the picklist. --></help>
+        <label><!-- Wall Construction Type --></label>
+        <name>LLC_BI__Wall_Construction_Type__c</name>
+        <picklistValues>
+            <masterLabel>Brick</masterLabel>
+            <translation><!-- Brick --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Concrete</masterLabel>
+            <translation><!-- Concrete --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Other</masterLabel>
+            <translation><!-- Other --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Steel Framed</masterLabel>
+            <translation><!-- Steel Framed --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Timber Framed</masterLabel>
+            <translation><!-- Timber Framed --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- Enter the year the property was built in this field. --></help>
+        <label><!-- Year Built --></label>
+        <name>LLC_BI__Year_Built__c</name>
+    </fields>
+</CustomObjectTranslation>

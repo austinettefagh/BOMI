@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<AnimationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <animationFrequency>often</animationFrequency>
+    <developerName>CS_Legal_Tracking</developerName>
+    <isActive>true</isActive>
+    <masterLabel>CS Legal Tracking</masterLabel>
+    <recordTypeContext>Custom</recordTypeContext>
+    <recordTypeName>CS_Legal_Tracking</recordTypeName>
+    <sobjectType>Case</sobjectType>
+    <targetField>Status</targetField>
+    <targetFieldChangeToValues>Closed</targetFieldChangeToValues>
+</AnimationRule>

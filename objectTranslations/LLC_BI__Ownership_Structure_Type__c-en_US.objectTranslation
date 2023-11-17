@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fieldSets>
+        <label><!-- Jack Henry jXchange Automated Booking --></label>
+        <name>JHJX__ABJX</name>
+    </fieldSets>
+    <fields>
+        <help><!-- Select a State to select an Ownership Structure Type. --></help>
+        <label><!-- Applicable States --></label>
+        <name>LLC_BI__Applicable_States__c</name>
+    </fields>
+    <fields>
+        <help><!-- Type of account this ownership type relates to --></help>
+        <label><!-- Category --></label>
+        <name>LLC_BI__Category__c</name>
+        <picklistValues>
+            <masterLabel>Association</masterLabel>
+            <translation><!-- Association --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Corporation</masterLabel>
+            <translation><!-- Corporation --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Government</masterLabel>
+            <translation><!-- Government --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Household</masterLabel>
+            <translation><!-- Household --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Individual</masterLabel>
+            <translation><!-- Individual --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Limited Liability Company</masterLabel>
+            <translation><!-- Limited Liability Company --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Partnership</masterLabel>
+            <translation><!-- Partnership --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Sole Proprietorship</masterLabel>
+            <translation><!-- Sole Proprietorship --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Trust</masterLabel>
+            <translation><!-- Trust --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- This system-populated field displays the unique identifier for Ownership Structure Type --></help>
+        <label><!-- lookupKey --></label>
+        <name>LLC_BI__lookupKey__c</name>
+    </fields>
+</CustomObjectTranslation>

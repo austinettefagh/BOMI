@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fieldSets>
+        <label><!-- TM Proforma Quantity Pricing --></label>
+        <name>LLC_BI__TM_Proforma_Quantity_Pricing</name>
+    </fieldSets>
+    <fieldSets>
+        <label><!-- TM Proforma Total Quantity Pricing --></label>
+        <name>LLC_BI__TM_Proforma_Total_Quantity_Pricing</name>
+    </fieldSets>
+    <fields>
+        <label><!-- Set Default Exception Price --></label>
+        <name>CF_Set_Default_Exception_Price__c</name>
+    </fields>
+    <fields>
+        <label><!-- Fee Including Discounts Less Than Costs --></label>
+        <name>Fee_Including_Discounts_Less_Than_Costs__c</name>
+        <picklistValues>
+            <masterLabel>No</masterLabel>
+            <translation><!-- No --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes</masterLabel>
+            <translation><!-- Yes --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Fee Including Discounts --></label>
+        <name>Fee_Including_Discounts_cm__c</name>
+    </fields>
+    <fields>
+        <label><!-- Balance Required Difference --></label>
+        <name>LLC_BI__Balance_Required_Difference__c</name>
+    </fields>
+    <fields>
+        <label><!-- Balance Required --></label>
+        <name>LLC_BI__Balance_Required__c</name>
+    </fields>
+    <fields>
+        <label><!-- Bill Point --></label>
+        <name>LLC_BI__Bill_Point__c</name>
+        <relationshipLabel><!-- Scenario Items --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Charge Difference --></label>
+        <name>LLC_BI__Charge_Difference__c</name>
+    </fields>
+    <fields>
+        <label><!-- Competitor Balance Required --></label>
+        <name>LLC_BI__Competitor_Balance_Required__c</name>
+    </fields>
+    <fields>
+        <label><!-- Competitor Difference --></label>
+        <name>LLC_BI__Competitor_Difference__c</name>
+    </fields>
+    <fields>
+        <label><!-- Competitor Fee --></label>
+        <name>LLC_BI__Competitor_Fee__c</name>
+    </fields>
+    <fields>
+        <label><!-- Competitor Price --></label>
+        <name>LLC_BI__Competitor_Price__c</name>
+    </fields>
+    <fields>
+        <label><!-- Cost --></label>
+        <name>LLC_BI__Cost__c</name>
+    </fields>
+    <fields>
+        <label><!-- Current Volume --></label>
+        <name>LLC_BI__Current_Volume__c</name>
+    </fields>
+    <fields>
+        <label><!-- Discount ($) --></label>
+        <name>LLC_BI__Discount_Currency__c</name>
+    </fields>
+    <fields>
+        <label><!-- Discount (%) --></label>
+        <name>LLC_BI__Discount_Percent__c</name>
+    </fields>
+    <fields>
+        <label><!-- Exception Price --></label>
+        <name>LLC_BI__Exception_Price__c</name>
+    </fields>
+    <fields>
+        <label><!-- Expiration Date --></label>
+        <name>LLC_BI__Expiration_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Fee Including Discounts --></label>
+        <name>LLC_BI__Fee_Including_Discounts__c</name>
+    </fields>
+    <fields>
+        <label><!-- Fixed Cost --></label>
+        <name>LLC_BI__Fixed_Cost_Total__c</name>
+    </fields>
+    <fields>
+        <label><!-- Gross Fee --></label>
+        <name>LLC_BI__Gross_Fee__c</name>
+    </fields>
+    <fields>
+        <label><!-- Is Bundle Exception --></label>
+        <name>LLC_BI__Is_Bundle_Exception__c</name>
+    </fields>
+    <fields>
+        <label><!-- Is Monthly --></label>
+        <name>LLC_BI__Is_Monthly__c</name>
+    </fields>
+    <fields>
+        <label><!-- Is Perm Waive --></label>
+        <name>LLC_BI__Is_Perm_Waive__c</name>
+    </fields>
+    <fields>
+        <label><!-- Is Product Type --></label>
+        <name>LLC_BI__Is_Product_Type__c</name>
+    </fields>
+    <fields>
+        <label><!-- Margin After Discount --></label>
+        <name>LLC_BI__Margin_After_Discount__c</name>
+    </fields>
+    <fields>
+        <label><!-- Margin Before Discount --></label>
+        <name>LLC_BI__Margin_Before_Discount__c</name>
+    </fields>
+    <fields>
+        <label><!-- Minimum Required Balance --></label>
+        <name>LLC_BI__Minimum_Required_Balance__c</name>
+    </fields>
+    <fields>
+        <label><!-- Product Type Name --></label>
+        <name>LLC_BI__Product_Type_Name__c</name>
+    </fields>
+    <fields>
+        <label><!-- Product / Type --></label>
+        <name>LLC_BI__Product__c</name>
+    </fields>
+    <fields>
+        <label><!-- Scenario --></label>
+        <name>LLC_BI__Scenario__c</name>
+        <relationshipLabel><!-- Scenario Items --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Semi Variable Cost --></label>
+        <name>LLC_BI__Semi_Variable_Cost__c</name>
+    </fields>
+    <fields>
+        <label><!-- Standard Price --></label>
+        <name>LLC_BI__Standard_Price__c</name>
+    </fields>
+    <fields>
+        <label><!-- Unit Cost --></label>
+        <name>LLC_BI__Unit_Cost__c</name>
+    </fields>
+    <fields>
+        <label><!-- Volumes --></label>
+        <name>LLC_BI__Volumes__c</name>
+    </fields>
+    <fields>
+        <label><!-- Waived --></label>
+        <name>LLC_BI__Waived__c</name>
+    </fields>
+    <fields>
+        <label><!-- Waived or Exception Priced --></label>
+        <name>Waived_or_Exception_Priced__c</name>
+    </fields>
+    <validationRules>
+        <errorMessage><!-- Exception Pricing cannot be less than Cost. Please increase the Exception Pricing to be greater than Cost. --></errorMessage>
+        <name>CVR_Exception_Price_Cannot_Exceed_Cost</name>
+    </validationRules>
+</CustomObjectTranslation>

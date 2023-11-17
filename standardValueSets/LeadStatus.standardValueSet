@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<StandardValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <sorted>false</sorted>
+    <standardValue>
+        <fullName>New</fullName>
+        <default>true</default>
+        <label>New</label>
+        <converted>false</converted>
+    </standardValue>
+    <standardValue>
+        <fullName>Pre-Call Questionnaire</fullName>
+        <default>false</default>
+        <label>Pre-Call Questionnaire</label>
+        <converted>false</converted>
+    </standardValue>
+    <standardValue>
+        <fullName>Active</fullName>
+        <default>false</default>
+        <label>Active</label>
+        <converted>false</converted>
+    </standardValue>
+    <standardValue>
+        <fullName>Unqualified</fullName>
+        <default>false</default>
+        <label>Unqualified</label>
+        <converted>false</converted>
+    </standardValue>
+    <standardValue>
+        <fullName>Converted</fullName>
+        <default>false</default>
+        <label>Converted</label>
+        <converted>true</converted>
+    </standardValue>
+    <standardValue>
+        <fullName>Qualified</fullName>
+        <default>false</default>
+        <label>Qualified</label>
+        <converted>true</converted>
+    </standardValue>
+    <standardValue>
+        <fullName>Working</fullName>
+        <default>false</default>
+        <label>Working</label>
+        <converted>false</converted>
+    </standardValue>
+    <standardValue>
+        <fullName>Nurturing</fullName>
+        <default>false</default>
+        <label>Nurturing</label>
+        <converted>false</converted>
+    </standardValue>
+    <standardValue>
+        <fullName>Contacted</fullName>
+        <default>false</default>
+        <label>Contacted</label>
+        <converted>false</converted>
+    </standardValue>
+    <standardValue>
+        <fullName>Share term sheet with Prospect</fullName>
+        <default>false</default>
+        <label>Share term sheet with Prospect</label>
+        <converted>false</converted>
+    </standardValue>
+    <standardValue>
+        <fullName>Prospect Questionnaire</fullName>
+        <default>false</default>
+        <label>Prospect Questionnaire</label>
+        <converted>false</converted>
+    </standardValue>
+    <standardValue>
+        <fullName>Work with Legal to develop term sheet</fullName>
+        <default>false</default>
+        <label>Work with Legal to develop term sheet</label>
+        <converted>false</converted>
+    </standardValue>
+    <standardValue>
+        <fullName>Draft MNDA</fullName>
+        <default>false</default>
+        <label>Draft MNDA</label>
+        <converted>false</converted>
+    </standardValue>
+    <standardValue>
+        <fullName>Initial Due Diligence Checklist</fullName>
+        <default>false</default>
+        <label>Initial Due Diligence Checklist</label>
+        <converted>false</converted>
+    </standardValue>
+    <standardValue>
+        <fullName>Evaluate Proposed Program Projections</fullName>
+        <default>false</default>
+        <label>Evaluate Proposed Program Projections</label>
+        <converted>false</converted>
+    </standardValue>
+    <standardValue>
+        <fullName>Review prospect&apos;s proposed edits</fullName>
+        <default>false</default>
+        <label>Review prospect&apos;s proposed edits</label>
+        <converted>false</converted>
+    </standardValue>
+    <standardValue>
+        <fullName>Share updates</fullName>
+        <default>false</default>
+        <label>Share updates</label>
+        <converted>false</converted>
+    </standardValue>
+    <standardValue>
+        <fullName>Prepare Term Sheet Presentation</fullName>
+        <default>false</default>
+        <label>Prepare Term Sheet Presentation</label>
+        <converted>false</converted>
+    </standardValue>
+    <standardValue>
+        <fullName>Present Term Sheet &amp; Analysis</fullName>
+        <default>false</default>
+        <label>Present Term Sheet &amp; Analysis</label>
+        <converted>false</converted>
+    </standardValue>
+    <standardValue>
+        <fullName>Proceed to Detailed Due Diligence</fullName>
+        <default>false</default>
+        <label>Proceed to Detailed Due Diligence</label>
+        <converted>false</converted>
+    </standardValue>
+</StandardValueSet>

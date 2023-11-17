@@ -1,0 +1,30 @@
+<apex:component layout="none" controller="csaLaserProMappingInstallerController" extensions="nFORCE.RemoteActionController">
+    <nFORCE:ncDataProvidersIncludes />
+    <nFORCE:ncUIIncludes />
+
+    <apex:includeScript value="{!URLFOR($Resource.csaLaserProMappingInstaller, 'application/App.js')}"/>
+    <apex:includeScript value="{!URLFOR($Resource.csaLaserProMappingInstaller, 'application/Bootstrap.js')}"/>
+    <apex:includeScript value="{!URLFOR($Resource.csaLaserProMappingInstaller, 'controllers/csaLaserProMappingInstallerController.controller.js')}"/>
+
+    <script type="text/javascript">
+        (function () {
+            'use strict';
+            angular.module('csaLaserProMappingInstaller').config(function (configProvider, labelProvider) {
+                configProvider.set({
+                    actions: {
+                        invoke: '{!$RemoteAction.RemoteActionController.invoke}',
+                        check: 'csaLaserProMappingInstallerController.checkInstall',
+                        install: 'csaLaserProMappingInstallerController.install',
+                        uninstall: 'csaLaserProMappingInstallerController.uninstall'
+                    }
+                });
+                labelProvider.setLabels({
+                  success: {
+                      install: '{!$Label.LPLM_install_success}',
+                      uninstall: '{!$Label.LPLM_uninstall_success}'
+                  }
+                });
+            });
+        })();
+    </script>
+</apex:component>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <help><!-- The category this Spread Statement Record or Spread Statement Total Group relates to. --></help>
+        <label><!-- Category --></label>
+        <name>LLC_BI__Category__c</name>
+        <picklistValues>
+            <masterLabel>RMA Benchmarking</masterLabel>
+            <translation><!-- RMA Benchmarking --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- lookupKey --></label>
+        <name>LLC_BI__lookupKey__c</name>
+    </fields>
+</CustomObjectTranslation>

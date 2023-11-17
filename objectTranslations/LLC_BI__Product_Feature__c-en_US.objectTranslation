@@ -1,0 +1,1783 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fieldSets>
+        <label><!-- Jack Henry jXchange Automated Booking --></label>
+        <name>JHJX__ABJX</name>
+    </fieldSets>
+    <fieldSets>
+        <label><!-- SBEOC Product Feature --></label>
+        <name>nSBA__SBEOC_Product_Feature</name>
+    </fieldSets>
+    <fields>
+        <label><!-- ATM Card --></label>
+        <name>JHJX__ATMCard__c</name>
+        <picklistValues>
+            <masterLabel>No</masterLabel>
+            <translation><!-- No --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes</masterLabel>
+            <translation><!-- Yes --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Allow Reopening of Closed Account --></label>
+        <name>JHJX__AcctReOpenCode__c</name>
+        <picklistValues>
+            <masterLabel>No</masterLabel>
+            <translation><!-- No --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes</masterLabel>
+            <translation><!-- Yes --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Allow Redposit --></label>
+        <name>JHJX__AllowReDepCode__c</name>
+        <picklistValues>
+            <masterLabel>No</masterLabel>
+            <translation><!-- No --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes</masterLabel>
+            <translation><!-- Yes --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Automatic NSF fee --></label>
+        <name>JHJX__AutoNSFFee__c</name>
+        <picklistValues>
+            <masterLabel>Chg</masterLabel>
+            <translation><!-- Chg --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>NA</masterLabel>
+            <translation><!-- NA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Wav</masterLabel>
+            <translation><!-- Wav --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Charge a Continuous Charge --></label>
+        <name>JHJX__ChgODCode__c</name>
+        <picklistValues>
+            <masterLabel>No</masterLabel>
+            <translation><!-- No --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes</masterLabel>
+            <translation><!-- Yes --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Type of Days to Charge Overdraft Fees --></label>
+        <name>JHJX__ChgODFeeDaysType__c</name>
+        <picklistValues>
+            <masterLabel>Actual Days</masterLabel>
+            <translation><!-- Actual Days --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Business Days</masterLabel>
+            <translation><!-- Business Days --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Continuous OD Fee Max --></label>
+        <name>JHJX__ChgODFeeMax__c</name>
+    </fields>
+    <fields>
+        <label><!-- Continuous OD Fee Min --></label>
+        <name>JHJX__ChgODFeeMin__c</name>
+    </fields>
+    <fields>
+        <label><!-- Continuous OD Fee Percentage --></label>
+        <name>JHJX__ChgODFeePct__c</name>
+    </fields>
+    <fields>
+        <label><!-- Automatically Charge Off Account --></label>
+        <name>JHJX__ChgdOffAutoCode__c</name>
+        <picklistValues>
+            <masterLabel>No</masterLabel>
+            <translation><!-- No --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes</masterLabel>
+            <translation><!-- Yes --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Check Guaranty --></label>
+        <name>JHJX__ChkGuar__c</name>
+        <picklistValues>
+            <masterLabel>No</masterLabel>
+            <translation><!-- No --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes</masterLabel>
+            <translation><!-- Yes --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Close On Zero Balance --></label>
+        <name>JHJX__ClsOnZeroBal__c</name>
+        <picklistValues>
+            <masterLabel>No</masterLabel>
+            <translation><!-- No --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes</masterLabel>
+            <translation><!-- Yes --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Club Plan --></label>
+        <name>JHJX__ClubPin__c</name>
+    </fields>
+    <fields>
+        <label><!-- Daily NSF Max --></label>
+        <name>JHJX__DlyNSFMaxChg__c</name>
+    </fields>
+    <fields>
+        <label><!-- Daily OD Max --></label>
+        <name>JHJX__DlyODMaxChg__c</name>
+    </fields>
+    <fields>
+        <label><!-- Daily Uncollected Funds Max --></label>
+        <name>JHJX__DlyUCFMaxChg__c</name>
+    </fields>
+    <fields>
+        <label><!-- ISO Number --></label>
+        <name>JHJX__EFTCardProdCode__c</name>
+    </fields>
+    <fields>
+        <label><!-- Electronic Statement Service Charge --></label>
+        <name>JHJX__ElecStmtChgWav__c</name>
+        <picklistValues>
+            <masterLabel>Chg</masterLabel>
+            <translation><!-- Chg --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>NA</masterLabel>
+            <translation><!-- NA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Wav</masterLabel>
+            <translation><!-- Wav --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Type of Electronic Statement --></label>
+        <name>JHJX__ElecStmtType__c</name>
+        <picklistValues>
+            <masterLabel>Both</masterLabel>
+            <translation><!-- Both --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Email</masterLabel>
+            <translation><!-- Email --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>NA</masterLabel>
+            <translation><!-- NA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Paper</masterLabel>
+            <translation><!-- Paper --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- High Volume Deposit Account --></label>
+        <name>JHJX__HighVolAcctCode__c</name>
+        <picklistValues>
+            <masterLabel>No</masterLabel>
+            <translation><!-- No --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes</masterLabel>
+            <translation><!-- Yes --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Include Credit Image Items --></label>
+        <name>JHJX__ImgIncCrCode__c</name>
+        <picklistValues>
+            <masterLabel>No</masterLabel>
+            <translation><!-- No --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes</masterLabel>
+            <translation><!-- Yes --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Print Image Items Front/Back --></label>
+        <name>JHJX__ImgItemsFrntBackCode__c</name>
+        <picklistValues>
+            <masterLabel>1</masterLabel>
+            <translation><!-- 1 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>2</masterLabel>
+            <translation><!-- 2 --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Print Images Per Page --></label>
+        <name>JHJX__ImgItemsPerPgCode__c</name>
+    </fields>
+    <fields>
+        <label><!-- Print Checks in Order --></label>
+        <name>JHJX__ImgPrtChkOrderCode__c</name>
+        <picklistValues>
+            <masterLabel>No</masterLabel>
+            <translation><!-- No --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes</masterLabel>
+            <translation><!-- Yes --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Include on Combined Statement --></label>
+        <name>JHJX__IncCombStmt__c</name>
+        <picklistValues>
+            <masterLabel>No</masterLabel>
+            <translation><!-- No --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes</masterLabel>
+            <translation><!-- Yes --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Interest Cycle --></label>
+        <name>JHJX__IntCycle__c</name>
+    </fields>
+    <fields>
+        <label><!-- Item Truncation --></label>
+        <name>JHJX__ItmTrunc__c</name>
+        <picklistValues>
+            <masterLabel>Img</masterLabel>
+            <translation><!-- Img --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ImgAndTrunc</masterLabel>
+            <translation><!-- ImgAndTrunc --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>NA</masterLabel>
+            <translation><!-- NA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>NoTrunc</masterLabel>
+            <translation><!-- NoTrunc --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Trunc</masterLabel>
+            <translation><!-- Trunc --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Summarize Daily Debit Items --></label>
+        <name>JHJX__LstPostAcctCode__c</name>
+        <picklistValues>
+            <masterLabel>No</masterLabel>
+            <translation><!-- No --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes</masterLabel>
+            <translation><!-- Yes --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Number of Redeposits --></label>
+        <name>JHJX__NumAllowReDepItems__c</name>
+    </fields>
+    <fields>
+        <label><!-- Overdraft Limit Code --></label>
+        <name>JHJX__ODLmt__c</name>
+    </fields>
+    <fields>
+        <label><!-- Number of Days Until First OD Notice --></label>
+        <name>JHJX__ODNot1Days__c</name>
+    </fields>
+    <fields>
+        <label><!-- Number of Days Until Second OD Notice --></label>
+        <name>JHJX__ODNot2Days__c</name>
+    </fields>
+    <fields>
+        <label><!-- Number of Days Until Third OD Notice --></label>
+        <name>JHJX__ODNot3Days__c</name>
+    </fields>
+    <fields>
+        <label><!-- Number of Days Until Fourth OD Notice --></label>
+        <name>JHJX__ODNot4Days__c</name>
+    </fields>
+    <fields>
+        <label><!-- Number of Days Until Fifth OD Notice --></label>
+        <name>JHJX__ODNot5Days__c</name>
+    </fields>
+    <fields>
+        <label><!-- Overdraft Privilege Option --></label>
+        <name>JHJX__ODPrvlgOptType__c</name>
+        <picklistValues>
+            <masterLabel>Elec</masterLabel>
+            <translation><!-- Elec --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Overdraft Privilege Option --></label>
+        <name>JHJX__ODPrvlgOptVal__c</name>
+        <picklistValues>
+            <masterLabel>Accept</masterLabel>
+            <translation><!-- Accept --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Decline</masterLabel>
+            <translation><!-- Decline --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Exmp</masterLabel>
+            <translation><!-- Exmp --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Inelgb</masterLabel>
+            <translation><!-- Inelgb --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>NoRs</masterLabel>
+            <translation><!-- NoRs --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Revo</masterLabel>
+            <translation><!-- Revo --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Report to Regulatory Agencies --></label>
+        <name>JHJX__ODRegRptCode__c</name>
+        <picklistValues>
+            <masterLabel>No</masterLabel>
+            <translation><!-- No --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes</masterLabel>
+            <translation><!-- Yes --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Handle Interest Payments --></label>
+        <name>JHJX__PayIntEOMCode__c</name>
+        <picklistValues>
+            <masterLabel>No</masterLabel>
+            <translation><!-- No --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes</masterLabel>
+            <translation><!-- Yes --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Post AFT NSF Code --></label>
+        <name>JHJX__PostAFTNSFCode__c</name>
+        <picklistValues>
+            <masterLabel>Do Not Post if NSF/Any Status</masterLabel>
+            <translation><!-- Do Not Post if NSF/Any Status --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Do Not Post if NSF/No Restricted Status</masterLabel>
+            <translation><!-- Do Not Post if NSF/No Restricted Status --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Post if NSF/Any Status</masterLabel>
+            <translation><!-- Post if NSF/Any Status --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Post if NSF/No Restricted Status</masterLabel>
+            <translation><!-- Post if NSF/No Restricted Status --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Send Redeposit Notice --></label>
+        <name>JHJX__ReDepNotCode__c</name>
+        <picklistValues>
+            <masterLabel>No</masterLabel>
+            <translation><!-- No --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes</masterLabel>
+            <translation><!-- Yes --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Service Charge Cycle --></label>
+        <name>JHJX__SerChgCycle__c</name>
+    </fields>
+    <fields>
+        <label><!-- Waive Reason Code --></label>
+        <name>JHJX__SerChgWavRsnCode__c</name>
+    </fields>
+    <fields>
+        <label><!-- Service Charge --></label>
+        <name>JHJX__SerChgWav__c</name>
+        <picklistValues>
+            <masterLabel>Chg</masterLabel>
+            <translation><!-- Chg --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>NA</masterLabel>
+            <translation><!-- NA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Wav</masterLabel>
+            <translation><!-- Wav --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Signature Verification Required --></label>
+        <name>JHJX__SigVerifyCode__c</name>
+        <picklistValues>
+            <masterLabel>No</masterLabel>
+            <translation><!-- No --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes</masterLabel>
+            <translation><!-- Yes --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Freq to Reset Statement Cycle Counter --></label>
+        <name>JHJX__StmtCycResetFreqCode__c</name>
+        <picklistValues>
+            <masterLabel>Calendar month</masterLabel>
+            <translation><!-- Calendar month --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Interest cycle</masterLabel>
+            <translation><!-- Interest cycle --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>No Charge</masterLabel>
+            <translation><!-- No Charge --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Quarterly</masterLabel>
+            <translation><!-- Quarterly --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Service Charge Cycle</masterLabel>
+            <translation><!-- Service Charge Cycle --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Statement Cycle --></label>
+        <name>JHJX__StmtCycle__c</name>
+    </fields>
+    <fields>
+        <label><!-- Statement or Passbook Code --></label>
+        <name>JHJX__StmtPasCode__c</name>
+        <picklistValues>
+            <masterLabel>NA</masterLabel>
+            <translation><!-- NA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Pas</masterLabel>
+            <translation><!-- Pas --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Stmt</masterLabel>
+            <translation><!-- Stmt --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- Select the APR method you would like to associate with your APR calculation. --></help>
+        <label><!-- APR Method --></label>
+        <name>LLC_BI__APR_Method__c</name>
+        <picklistValues>
+            <masterLabel>Actual_360</masterLabel>
+            <translation><!-- Actual_360 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Actual_365</masterLabel>
+            <translation><!-- Actual_365 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Actual_365.25</masterLabel>
+            <translation><!-- Actual_365.25 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Actual_Actual</masterLabel>
+            <translation><!-- Actual_Actual --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Actuarial</masterLabel>
+            <translation><!-- Actuarial --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CAN</masterLabel>
+            <translation><!-- CAN --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>EU</masterLabel>
+            <translation><!-- EU --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Midnight_366</masterLabel>
+            <translation><!-- Midnight_366 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>OpenEnd</masterLabel>
+            <translation><!-- OpenEnd --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>True365_360</masterLabel>
+            <translation><!-- True365_360 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>True365_365</masterLabel>
+            <translation><!-- True365_365 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>US_Rule</masterLabel>
+            <translation><!-- US_Rule --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>UnitPeriod_360</masterLabel>
+            <translation><!-- UnitPeriod_360 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>UnitPeriod_360_IRR</masterLabel>
+            <translation><!-- UnitPeriod_360_IRR --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>UnitPeriod_365</masterLabel>
+            <translation><!-- UnitPeriod_365 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>UnitPeriod_365.25</masterLabel>
+            <translation><!-- UnitPeriod_365.25 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>UnitPeriod_DaysPerPeriod</masterLabel>
+            <translation><!-- UnitPeriod_DaysPerPeriod --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>UnitPeriod_FederalCalendar</masterLabel>
+            <translation><!-- UnitPeriod_FederalCalendar --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>UnitPeriod_True360_360</masterLabel>
+            <translation><!-- UnitPeriod_True360_360 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>UnitPeriod_True360_365</masterLabel>
+            <translation><!-- UnitPeriod_True360_365 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>UnitPeriod_True360_365.25</masterLabel>
+            <translation><!-- UnitPeriod_True360_365.25 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>UnitPeriod_True360_DaysPerPeriod</masterLabel>
+            <translation><!-- UnitPeriod_True360_DaysPerPeriod --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>YieldPeriod_UnitPeriod_IRR</masterLabel>
+            <translation><!-- YieldPeriod_UnitPeriod_IRR --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- Select to allow negative odd days interest. --></help>
+        <label><!-- Allow Negative Odd Days --></label>
+        <name>LLC_BI__Allow_Negative_Odd_Days__c</name>
+        <picklistValues>
+            <masterLabel>Allow</masterLabel>
+            <translation><!-- Allow --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Don&apos;t Allow</masterLabel>
+            <translation><!-- Don&apos;t Allow --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Allow Participation --></label>
+        <name>LLC_BI__Allow_Participation__c</name>
+    </fields>
+    <fields>
+        <label><!-- Allow Syndication --></label>
+        <name>LLC_BI__Allow_Syndication__c</name>
+    </fields>
+    <fields>
+        <label><!-- Annual Operating Cost --></label>
+        <name>LLC_BI__Annual_Operating_Cost__c</name>
+    </fields>
+    <fields>
+        <help><!-- This field displays how much the interest rate increases annually. --></help>
+        <label><!-- Annual Rate Increase --></label>
+        <name>LLC_BI__Annual_Rate_Increase__c</name>
+    </fields>
+    <fields>
+        <label><!-- Average Term --></label>
+        <name>LLC_BI__Average_Term__c</name>
+    </fields>
+    <fields>
+        <label><!-- Balloon Product Structure --></label>
+        <name>LLC_BI__Balloon_Product_Structure__c</name>
+        <picklistValues>
+            <masterLabel>Balloon Amount</masterLabel>
+            <translation><!-- Balloon Amount --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Balloon Term</masterLabel>
+            <translation><!-- Balloon Term --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Balloon --></label>
+        <name>LLC_BI__Balloon__c</name>
+    </fields>
+    <fields>
+        <help><!-- The length of time from the opening date of the time deposit to the maturity date (e.g. 91 days 18 months). --></help>
+        <label><!-- CD Term --></label>
+        <name>LLC_BI__CD_Term__c</name>
+    </fields>
+    <fields>
+        <help><!-- This field determines if the interest on your loan is capitalized for the product feature. --></help>
+        <label><!-- Capitalize Interest --></label>
+        <name>LLC_BI__Capitalize_Interest__c</name>
+        <picklistValues>
+            <masterLabel>No</masterLabel>
+            <translation><!-- No --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes</masterLabel>
+            <translation><!-- Yes --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Checking Withdrawal Notice --></label>
+        <name>LLC_BI__Checking_Withdrawal_Notice__c</name>
+    </fields>
+    <fields>
+        <help><!-- Select an option to collect odd days interest. --></help>
+        <label><!-- Collect Odd Days Interest --></label>
+        <name>LLC_BI__Collect_Odd_Days_Interest__c</name>
+        <picklistValues>
+            <masterLabel>Add to First Payment</masterLabel>
+            <translation><!-- Add to First Payment --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Collect When Due</masterLabel>
+            <translation><!-- Collect When Due --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Commercial --></label>
+        <name>LLC_BI__Commercial__c</name>
+    </fields>
+    <fields>
+        <help><!-- Specifies an institution&apos;s general policy regarding how often accrued earnings are added to the principal balance of an account for the purpose of computing additional earnings. --></help>
+        <label><!-- Compounding Frequency --></label>
+        <name>LLC_BI__Compounding_Frequency__c</name>
+        <picklistValues>
+            <masterLabel>Annually</masterLabel>
+            <translation><!-- Annually --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Continuous</masterLabel>
+            <translation><!-- Continuous --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Daily</masterLabel>
+            <translation><!-- Daily --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Every Other Week</masterLabel>
+            <translation><!-- Every Other Week --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Monthly</masterLabel>
+            <translation><!-- Monthly --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>No compounding/Simple</masterLabel>
+            <translation><!-- No compounding/Simple --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Quarterly</masterLabel>
+            <translation><!-- Quarterly --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Semiannually</masterLabel>
+            <translation><!-- Semiannually --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Semimonthly</masterLabel>
+            <translation><!-- Semimonthly --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Weekly</masterLabel>
+            <translation><!-- Weekly --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- Specifies the construction note type. --></help>
+        <label><!-- Construction Note Type --></label>
+        <name>LLC_BI__Construction_Note_Type__c</name>
+        <picklistValues>
+            <masterLabel>Construction Only</masterLabel>
+            <translation><!-- Construction Only --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Construction and Permanent Note</masterLabel>
+            <translation><!-- Construction and Permanent Note --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Cost of Debt (Kd) --></label>
+        <name>LLC_BI__Cost_Of_Equity_Kd__c</name>
+    </fields>
+    <fields>
+        <label><!-- Cost of Equity (Ke) --></label>
+        <name>LLC_BI__Cost_Of_Equity_Ke__c</name>
+    </fields>
+    <fields>
+        <help><!-- This field displays the estimated daily cost of the product. For credit protection products, this field displays the estimated daily cost per $1000 of the loan. --></help>
+        <label><!-- Cost Per Day --></label>
+        <name>LLC_BI__Cost_Per_Day__c</name>
+    </fields>
+    <fields>
+        <label><!-- Cost of Deposit Capital --></label>
+        <name>LLC_BI__Cost_of_Deposit_Capital__c</name>
+    </fields>
+    <fields>
+        <help><!-- Check to enable application record creation for products. --></help>
+        <label><!-- Create Applications --></label>
+        <name>LLC_BI__Create_Applications__c</name>
+    </fields>
+    <fields>
+        <help><!-- This field displays the level of coverage or pricing of the selected insurance. --></help>
+        <label><!-- Credit Protection Cost Code --></label>
+        <name>LLC_BI__Credit_Protection_Cost_Code__c</name>
+    </fields>
+    <fields>
+        <label><!-- Crediting Frequency Type --></label>
+        <name>LLC_BI__Crediting_Frequency_Type__c</name>
+        <picklistValues>
+            <masterLabel>Annually</masterLabel>
+            <translation><!-- Annually --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>At maturity</masterLabel>
+            <translation><!-- At maturity --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Bi-monthly</masterLabel>
+            <translation><!-- Bi-monthly --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Daily</masterLabel>
+            <translation><!-- Daily --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Monthly</masterLabel>
+            <translation><!-- Monthly --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Other</masterLabel>
+            <translation><!-- Other --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Quarterly</masterLabel>
+            <translation><!-- Quarterly --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Semi-annually</masterLabel>
+            <translation><!-- Semi-annually --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Weekly</masterLabel>
+            <translation><!-- Weekly --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- Select the credit product type for the application. --></help>
+        <label><!-- DF1071 Credit Product --></label>
+        <name>LLC_BI__DF1071_Credit_Product__c</name>
+        <picklistValues>
+            <masterLabel>Credit card account, not private-label</masterLabel>
+            <translation><!-- Credit card account, not private-label --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Line of credit - secured</masterLabel>
+            <translation><!-- Line of credit - secured --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Line of credit - unsecured</masterLabel>
+            <translation><!-- Line of credit - unsecured --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Merchant cash advance</masterLabel>
+            <translation><!-- Merchant cash advance --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Other sales-based financing transaction</masterLabel>
+            <translation><!-- Other sales-based financing transaction --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Private-label credit card account</masterLabel>
+            <translation><!-- Private-label credit card account --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Term loan - secured</masterLabel>
+            <translation><!-- Term loan - secured --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Term loan - unsecured</masterLabel>
+            <translation><!-- Term loan - unsecured --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Dependent Structures --></label>
+        <name>LLC_BI__Dependent_Structures__c</name>
+        <picklistValues>
+            <masterLabel>ELOC</masterLabel>
+            <translation><!-- ELOC --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Letter of Credit</masterLabel>
+            <translation><!-- Letter of Credit --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Multi Level Future</masterLabel>
+            <translation><!-- Multi Level Future --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Regular Future</masterLabel>
+            <translation><!-- Regular Future --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Term Loan/Current</masterLabel>
+            <translation><!-- Term Loan/Current --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Deposit Funds Transfer Pricing --></label>
+        <name>LLC_BI__Deposit_FTP__c</name>
+    </fields>
+    <fields>
+        <label><!-- Deposit Reserve Rate --></label>
+        <name>LLC_BI__Deposit_Reserve_Rate__c</name>
+    </fields>
+    <fields>
+        <label><!-- Deposit Tax Rate --></label>
+        <name>LLC_BI__Deposit_Tax_Rate__c</name>
+    </fields>
+    <fields>
+        <help><!-- Select a change in interest rate to see how it affects the loan. --></help>
+        <label><!-- Effect of Rate Change Type --></label>
+        <name>LLC_BI__Effect_of_Rate_Change_Type__c</name>
+        <picklistValues>
+            <masterLabel>Loan Term</masterLabel>
+            <translation><!-- Loan Term --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Maturity</masterLabel>
+            <translation><!-- Maturity --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Payment Amount</masterLabel>
+            <translation><!-- Payment Amount --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Payment and Maturity</masterLabel>
+            <translation><!-- Payment and Maturity --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Exclude From Exposure --></label>
+        <name>LLC_BI__Exclude_From_Exposure__c</name>
+    </fields>
+    <fields>
+        <help><!-- Select this field to exclude the products with this product feature from the relevant product selection page. --></help>
+        <label><!-- Exclude from Products --></label>
+        <name>LLC_BI__Exclude_From_LoanProducts__c</name>
+    </fields>
+    <fields>
+        <label><!-- Exposure Filter --></label>
+        <name>LLC_BI__Exposure_Filter__c</name>
+        <picklistValues>
+            <masterLabel>Tier 1</masterLabel>
+            <translation><!-- Tier 1 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Tier 2</masterLabel>
+            <translation><!-- Tier 2 --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- This external product name is used to specify the product file name for external doc prep providers such as Laser Pro. --></help>
+        <label><!-- External Product Name --></label>
+        <name>LLC_BI__External_Product_Name__c</name>
+    </fields>
+    <fields>
+        <help><!-- This optional currency field determines the final payment in calculations. --></help>
+        <label><!-- Calculations Payment Amount --></label>
+        <name>LLC_BI__Final_Payment_Amount__c</name>
+    </fields>
+    <fields>
+        <help><!-- Select value from this picklist to add or subtract financed fees from loan amount, or manually calculate. --></help>
+        <label><!-- Financed Fee Calculations --></label>
+        <name>LLC_BI__Financed_Fee_Calculations__c</name>
+        <picklistValues>
+            <masterLabel>Add to Loan Amount</masterLabel>
+            <translation><!-- Add to Loan Amount --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Manual Calculation</masterLabel>
+            <translation><!-- Manual Calculation --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Subtract From Loan Amount</masterLabel>
+            <translation><!-- Subtract From Loan Amount --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- This field displays how much the interest rate increases for the first rate increase. --></help>
+        <label><!-- First Rate Increase --></label>
+        <name>LLC_BI__First_Rate_Increase__c</name>
+    </fields>
+    <fields>
+        <help><!-- This field indicates if loans originated for this product require Home Lending compliance calculations. --></help>
+        <label><!-- Home Lending Compliance Calculations --></label>
+        <name>LLC_BI__Home_Lending_Compliance_Calculations__c</name>
+        <picklistValues>
+            <masterLabel>HCM</masterLabel>
+            <translation><!-- HCM --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>HPML</masterLabel>
+            <translation><!-- HPML --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- Specifies the type of the fee associated with the IRA plan. --></help>
+        <label><!-- IRA Plan Fee Type --></label>
+        <name>LLC_BI__IRA_Plan_Fee_Type__c</name>
+        <picklistValues>
+            <masterLabel>Annual Service/Administration Fee</masterLabel>
+            <translation><!-- Annual Service/Administration Fee --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Establishment Fee</masterLabel>
+            <translation><!-- Establishment Fee --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Other</masterLabel>
+            <translation><!-- Other --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Termination Fee</masterLabel>
+            <translation><!-- Termination Fee --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Transfer/Direct Rollover Fee</masterLabel>
+            <translation><!-- Transfer/Direct Rollover Fee --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- The percent (if applicable) of the fee associated with the IRA plan. --></help>
+        <label><!-- IRA Plan Fee --></label>
+        <name>LLC_BI__IRA_Plan_Fee__c</name>
+    </fields>
+    <fields>
+        <help><!-- This field is populated during configuration of the product catalog. If the deposit product will include Withdrawal Notice Requirements, select this field. --></help>
+        <label><!-- Includes Withdrawal Notice Requirements --></label>
+        <name>LLC_BI__Includes_Withdrawal_Notice_Requirements__c</name>
+    </fields>
+    <fields>
+        <help><!-- This item indicates the name of the index tied to the variable rate account. --></help>
+        <label><!-- Index Name --></label>
+        <name>LLC_BI__Index_Name__c</name>
+    </fields>
+    <fields>
+        <help><!-- Specifies what kind of rate is used to determine the initial rate of interest on the account. --></help>
+        <label><!-- Initial Interest Rate Type --></label>
+        <name>LLC_BI__Initial_Interest_Rate_Type__c</name>
+        <picklistValues>
+            <masterLabel>Fixed</masterLabel>
+            <translation><!-- Fixed --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Variable</masterLabel>
+            <translation><!-- Variable --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- The initial interest rate on the account. --></help>
+        <label><!-- Initial Interest Rate --></label>
+        <name>LLC_BI__Initial_Interest_Rate__c</name>
+    </fields>
+    <fields>
+        <help><!-- If true an initial rate (i.e. a teaser rate) was applied to the account. --></help>
+        <label><!-- Initial Rate Indicator --></label>
+        <name>LLC_BI__Initial_Rate_Indicator__c</name>
+    </fields>
+    <fields>
+        <help><!-- The percentage that is added to the index rate to determine the initial (teaser) rate. --></help>
+        <label><!-- Initial Rate Margin --></label>
+        <name>LLC_BI__Initial_Rate_Margin__c</name>
+    </fields>
+    <fields>
+        <help><!-- The number of periods that the initial rate will be in effect. --></help>
+        <label><!-- Initial Rate Period Number --></label>
+        <name>LLC_BI__Initial_Rate_Period_Number__c</name>
+    </fields>
+    <fields>
+        <help><!-- Specifies the period of time the initial rate will apply. --></help>
+        <label><!-- Initial Rate Period Type --></label>
+        <name>LLC_BI__Initial_Rate_Period_Type__c</name>
+        <picklistValues>
+            <masterLabel>Day(s)</masterLabel>
+            <translation><!-- Day(s) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Month(s)</masterLabel>
+            <translation><!-- Month(s) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Week(s)</masterLabel>
+            <translation><!-- Week(s) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Year(s)</masterLabel>
+            <translation><!-- Year(s) --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Interest Accrual Method --></label>
+        <name>LLC_BI__Interest_Accrual_Method__c</name>
+        <picklistValues>
+            <masterLabel>30_360</masterLabel>
+            <translation><!-- 30_360 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>30_365</masterLabel>
+            <translation><!-- 30_365 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Actual_360</masterLabel>
+            <translation><!-- Actual_360 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Actual_365</masterLabel>
+            <translation><!-- Actual_365 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Actual_Actual</masterLabel>
+            <translation><!-- Actual_Actual --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- If true a margin is used in determining the interest rate for a variable rate account. --></help>
+        <label><!-- Interest Rate Margin Indicator --></label>
+        <name>LLC_BI__Interest_Rate_Margin_Indicator__c</name>
+    </fields>
+    <fields>
+        <help><!-- This manually-populated field displays the percentage that the system adds to the index to determine the applicable rate for the account. --></help>
+        <label><!-- Interest Rate Margin Percent --></label>
+        <name>LLC_BI__Interest_Rate_Margin_Percent__c</name>
+    </fields>
+    <fields>
+        <help><!-- Specify the type of interest rate for a loan. --></help>
+        <label><!-- Interest Rate Type --></label>
+        <name>LLC_BI__Interest_Rate_Type__c</name>
+        <picklistValues>
+            <masterLabel>Fixed</masterLabel>
+            <translation><!-- Fixed --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Fixed with Index</masterLabel>
+            <translation><!-- Fixed with Index --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Floating with Index</masterLabel>
+            <translation><!-- Floating with Index --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- The interest rate of the deposit account. If an initial rate (i.e. a teaser) applies this is the rate that is in effect after the expiration of the teaser period. --></help>
+        <label><!-- Interest Rate --></label>
+        <name>LLC_BI__Interest_Rate__c</name>
+    </fields>
+    <fields>
+        <help><!-- If true accrued earnings are required to be distributed out of the account. --></help>
+        <label><!-- Interest Withdrawal Required --></label>
+        <name>LLC_BI__Interest_Withdrawal_Required__c</name>
+    </fields>
+    <fields>
+        <label><!-- Is Automated Clearing House Service --></label>
+        <name>LLC_BI__Is_Automated_Clearing_House_Service__c</name>
+    </fields>
+    <fields>
+        <label><!-- Is Binding --></label>
+        <name>LLC_BI__Is_Binding__c</name>
+    </fields>
+    <fields>
+        <label><!-- Is Bought --></label>
+        <name>LLC_BI__Is_Bought__c</name>
+    </fields>
+    <fields>
+        <label><!-- Is Budget --></label>
+        <name>LLC_BI__Is_Budget_Item__c</name>
+    </fields>
+    <fields>
+        <label><!-- Is Bundle --></label>
+        <name>LLC_BI__Is_Bundle__c</name>
+    </fields>
+    <fields>
+        <label><!-- Is Cash Service --></label>
+        <name>LLC_BI__Is_Cash_Service__c</name>
+    </fields>
+    <fields>
+        <label><!-- Is Commercial --></label>
+        <name>LLC_BI__Is_Commercial__c</name>
+    </fields>
+    <fields>
+        <help><!-- Indicates if product is a construction product. --></help>
+        <label><!-- Is Construction --></label>
+        <name>LLC_BI__Is_Construction__c</name>
+    </fields>
+    <fields>
+        <label><!-- Is Current Takedown --></label>
+        <name>LLC_BI__Is_Current_Takedown__c</name>
+    </fields>
+    <fields>
+        <label><!-- Is Debit Card --></label>
+        <name>LLC_BI__Is_Debit_Card__c</name>
+    </fields>
+    <fields>
+        <help><!-- Indicates if product is a demand note / has a demand feature. --></help>
+        <label><!-- Is Demand Note --></label>
+        <name>LLC_BI__Is_Demand_Note__c</name>
+    </fields>
+    <fields>
+        <label><!-- Is Depository Service --></label>
+        <name>LLC_BI__Is_Depository_Service__c</name>
+    </fields>
+    <fields>
+        <label><!-- Is Disbursement Service --></label>
+        <name>LLC_BI__Is_Disbursement_Service__c</name>
+    </fields>
+    <fields>
+        <label><!-- Is ELOC --></label>
+        <name>LLC_BI__Is_ELOC__c</name>
+    </fields>
+    <fields>
+        <help><!-- Indicates if product is a dealer floor product. --></help>
+        <label><!-- Is Floor Plan --></label>
+        <name>LLC_BI__Is_Floor_Plan__c</name>
+    </fields>
+    <fields>
+        <label><!-- Is Guidance --></label>
+        <name>LLC_BI__Is_Guidance__c</name>
+    </fields>
+    <fields>
+        <help><!-- Select this checkbox to indicate the credit protection product(s) covers multiple applicants. --></help>
+        <label><!-- Is Joint Credit Protection Coverage --></label>
+        <name>LLC_BI__Is_Joint_Credit_Protection_Coverage__c</name>
+    </fields>
+    <fields>
+        <label><!-- Is Lease --></label>
+        <name>LLC_BI__Is_Lease__c</name>
+    </fields>
+    <fields>
+        <label><!-- Is Letter of Credit --></label>
+        <name>LLC_BI__Is_Letter_of_Credit__c</name>
+    </fields>
+    <fields>
+        <label><!-- Is Limit --></label>
+        <name>LLC_BI__Is_Limit__c</name>
+    </fields>
+    <fields>
+        <label><!-- Is Lockbox Service --></label>
+        <name>LLC_BI__Is_Lockbox_Service__c</name>
+    </fields>
+    <fields>
+        <label><!-- Is Main --></label>
+        <name>LLC_BI__Is_Main__c</name>
+    </fields>
+    <fields>
+        <label><!-- Is Miscellaneous Service --></label>
+        <name>LLC_BI__Is_Miscellaneous_Service__c</name>
+    </fields>
+    <fields>
+        <label><!-- Is Non Revolving --></label>
+        <name>LLC_BI__Is_Non_Revolving__c</name>
+    </fields>
+    <fields>
+        <label><!-- Is Online Banking Service --></label>
+        <name>LLC_BI__Is_Online_Banking_Service__c</name>
+    </fields>
+    <fields>
+        <label><!-- Is Rate Sheet Pricing --></label>
+        <name>LLC_BI__Is_Rate_Sheet_Pricing__c</name>
+    </fields>
+    <fields>
+        <label><!-- Is Reconciliation Service --></label>
+        <name>LLC_BI__Is_Reconciliation_Service__c</name>
+    </fields>
+    <fields>
+        <label><!-- Is Regular Future --></label>
+        <name>LLC_BI__Is_Regular_Future__c</name>
+    </fields>
+    <fields>
+        <label><!-- Is Regular --></label>
+        <name>LLC_BI__Is_Regular__c</name>
+    </fields>
+    <fields>
+        <label><!-- Is Remote Deposit Capture Service --></label>
+        <name>LLC_BI__Is_Remote_Deposit_Capture_Service__c</name>
+    </fields>
+    <fields>
+        <label><!-- Is Reporting Service --></label>
+        <name>LLC_BI__Is_Reporting_Service__c</name>
+    </fields>
+    <fields>
+        <label><!-- Is Revolving --></label>
+        <name>LLC_BI__Is_Revolving__c</name>
+    </fields>
+    <fields>
+        <label><!-- Is Standby --></label>
+        <name>LLC_BI__Is_Standby__c</name>
+    </fields>
+    <fields>
+        <help><!-- Select this checkbox if the loan is subject to TRID tolerances. --></help>
+        <label><!-- Subject To TRID Tolerances --></label>
+        <name>LLC_BI__Is_Subject_To_TRID_Tolerances__c</name>
+    </fields>
+    <fields>
+        <label><!-- Is Sub Limit --></label>
+        <name>LLC_BI__Is_Sublimit__c</name>
+    </fields>
+    <fields>
+        <label><!-- Is Sweep Service --></label>
+        <name>LLC_BI__Is_Sweep_Service__c</name>
+    </fields>
+    <fields>
+        <label><!-- Is Syndication Agent --></label>
+        <name>LLC_BI__Is_Syndication_Agent__c</name>
+    </fields>
+    <fields>
+        <label><!-- Is Syndication Member --></label>
+        <name>LLC_BI__Is_Syndication_Member__c</name>
+    </fields>
+    <fields>
+        <label><!-- Is Term Loan --></label>
+        <name>LLC_BI__Is_Term_Loan__c</name>
+    </fields>
+    <fields>
+        <label><!-- Is Wire Service --></label>
+        <name>LLC_BI__Is_Wire_Service__c</name>
+    </fields>
+    <fields>
+        <label><!-- Is Zero Balance Account Service --></label>
+        <name>LLC_BI__Is_Zero_Balance_Account_Service__c</name>
+    </fields>
+    <fields>
+        <help><!-- After changing this field, go to the nCino Administration tab then run Install Updates and Install Batch Updates if this feature is related to products which are related to existing loans. --></help>
+        <label><!-- Line Of Credit --></label>
+        <name>LLC_BI__Line_Of_Credit__c</name>
+    </fields>
+    <fields>
+        <help><!-- Select the matrix calculation method of the associated loan. --></help>
+        <label><!-- Pricing Method --></label>
+        <name>LLC_BI__Matrix_Calculation_Method__c</name>
+        <picklistValues>
+            <masterLabel>Rule Engine</masterLabel>
+            <translation><!-- Rule Engine --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- The amount of the maximum tier balance that may be in the account in order to earn the disclosed rate for that tier. This is the high end dollar amount for a given tier. --></help>
+        <label><!-- Maximum Balance Tiered Account --></label>
+        <name>LLC_BI__Maximum_Balance_Tiered_Account__c</name>
+    </fields>
+    <fields>
+        <help><!-- This field displays the maximum value the interest rate may increase from the specified teaser rate during the term of the loan. --></help>
+        <label><!-- Maximum Rate Increase --></label>
+        <name>LLC_BI__Maximum_Rate_Increase__c</name>
+    </fields>
+    <fields>
+        <help><!-- The amount of the minimum tier balance that must be in the account in order to earn the disclosed rate for that tier. This is the low end dollar amount for a given tier. --></help>
+        <label><!-- Minimum Balance Tiered Account --></label>
+        <name>LLC_BI__Minimum_Balance_Tiered_Account__c</name>
+    </fields>
+    <fields>
+        <help><!-- Use this optional currency field to sets a minimum payment amount. --></help>
+        <label><!-- Minimum Payment --></label>
+        <name>LLC_BI__Minimum_Payment__c</name>
+    </fields>
+    <fields>
+        <help><!-- The lowest interest rate that can apply to the account. --></help>
+        <label><!-- Minimum Rate --></label>
+        <name>LLC_BI__Minimum_Rate__c</name>
+    </fields>
+    <fields>
+        <help><!-- To use a custom monthly interest rate calculation in Rate &amp; Payment Structures, enter the API name of a formula field for the system to convert the annual interest rate to the monthly interest rate. --></help>
+        <label><!-- Monthly Interest Rate Field --></label>
+        <name>LLC_BI__Monthly_Interest_Rate_Field__c</name>
+    </fields>
+    <fields>
+        <label><!-- New Loan Additional Fields --></label>
+        <name>LLC_BI__New_Loan_Additional_Fields__c</name>
+        <relationshipLabel><!-- Product Features --></relationshipLabel>
+    </fields>
+    <fields>
+        <help><!-- This optional checkbox field ensures payment is recalculated when interest changes. --></help>
+        <label><!-- New Payment --></label>
+        <name>LLC_BI__New_Payment__c</name>
+    </fields>
+    <fields>
+        <help><!-- Specifies the advance type is used for a note. --></help>
+        <label><!-- Note Advance Type --></label>
+        <name>LLC_BI__Note_Advance_Type__c</name>
+        <picklistValues>
+            <masterLabel>No Advances</masterLabel>
+            <translation><!-- No Advances --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Non-Revolving Advances</masterLabel>
+            <translation><!-- Non-Revolving Advances --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Reimbursement Advances</masterLabel>
+            <translation><!-- Reimbursement Advances --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Revolving Advances</masterLabel>
+            <translation><!-- Revolving Advances --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- Specifies the alternate maturity of an account if any. This only applies to notice accounts. --></help>
+        <label><!-- Notice Account Maturity Type --></label>
+        <name>LLC_BI__Notice_Account_Maturity_Type__c</name>
+        <picklistValues>
+            <masterLabel>Date</masterLabel>
+            <translation><!-- Date --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>No Alternate Maturity</masterLabel>
+            <translation><!-- No Alternate Maturity --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Period</masterLabel>
+            <translation><!-- Period --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- Choose an Anchor Date Method to determine how to arrive at the anchor date. --></help>
+        <label><!-- Odd Days Anchor Date Method --></label>
+        <name>LLC_BI__Odd_Days_Anchor_Date_Method__c</name>
+        <picklistValues>
+            <masterLabel>Back Days Per Period</masterLabel>
+            <translation><!-- Back Days Per Period --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Back Unit Period</masterLabel>
+            <translation><!-- Back Unit Period --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Other Compounding Frequency Time Period --></label>
+        <name>LLC_BI__Other_Compounding_Frequency_Time_Period__c</name>
+    </fields>
+    <fields>
+        <label><!-- Other Crediting Frequency --></label>
+        <name>LLC_BI__Other_Crediting_Frequency__c</name>
+    </fields>
+    <fields>
+        <help><!-- This optional number field captures the date adjustment for payments to begin. --></help>
+        <label><!-- Payment Begin Adjustment --></label>
+        <name>LLC_BI__Payment_Begin_Adjustment__c</name>
+    </fields>
+    <fields>
+        <help><!-- Administrators populate this optional picklist field to identify the payment calculation basis of the loan, including the flat amount, the percent of principal, and percent of outstanding. By default, it is blank. --></help>
+        <label><!-- Payment Calculation Basis --></label>
+        <name>LLC_BI__Payment_Calculation_Basis__c</name>
+        <picklistValues>
+            <masterLabel>Flat Amount</masterLabel>
+            <translation><!-- Flat Amount --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Percent of Outstanding</masterLabel>
+            <translation><!-- Percent of Outstanding --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Percent of Principal</masterLabel>
+            <translation><!-- Percent of Principal --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- Administrators populate this optional percent field with the desired payment percentage value. The percentage value will be applied to the payment amount. By default, it is blank. --></help>
+        <label><!-- Payment Calculation Percent --></label>
+        <name>LLC_BI__Payment_Calculation_Percent__c</name>
+    </fields>
+    <fields>
+        <help><!-- This optional picklist field captures the method for calculating payments. --></help>
+        <label><!-- Payment Type --></label>
+        <name>LLC_BI__Payment_Type__c</name>
+        <picklistValues>
+            <masterLabel>Calculated Payment</masterLabel>
+            <translation><!-- Calculated Payment --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Fixed Payment</masterLabel>
+            <translation><!-- Fixed Payment --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Pay Interest</masterLabel>
+            <translation><!-- Pay Interest --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Pay Principal</masterLabel>
+            <translation><!-- Pay Principal --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- This optional number field determines the number of payments per year. --></help>
+        <label><!-- Payments Per Year --></label>
+        <name>LLC_BI__Payments_Per_Year__c</name>
+    </fields>
+    <fields>
+        <help><!-- If true there is a limit to the amount that a variable rate can change over successive specified periods. --></help>
+        <label><!-- Periodic Change Limit Indicator --></label>
+        <name>LLC_BI__Periodic_Change_Limit_Indicator__c</name>
+    </fields>
+    <fields>
+        <help><!-- The number of periods between periodic rate changes. --></help>
+        <label><!-- Periods Between Rate Changes --></label>
+        <name>LLC_BI__Periods_Between_Rate_Changes__c</name>
+    </fields>
+    <fields>
+        <help><!-- The day on which the regular interest rate takes effect on a variable rate account having a different/special initial or promotional rate (i.e. the date corresponding to the day after expiration of initial rate period for the specified account). --></help>
+        <label><!-- Permanent Rate Effective Date --></label>
+        <name>LLC_BI__Permanent_Rate_Effective_Date__c</name>
+    </fields>
+    <fields>
+        <help><!-- Select the desired accrual code to calculate the prepaid interest due at closing. --></help>
+        <label><!-- Odd Days Interest Accrual Code --></label>
+        <name>LLC_BI__Prepaid_Interest_Accrual_Code__c</name>
+        <picklistValues>
+            <masterLabel>Actual_360</masterLabel>
+            <translation><!-- Actual_360 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Actual_365</masterLabel>
+            <translation><!-- Actual_365 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Actual_Actual</masterLabel>
+            <translation><!-- Actual_Actual --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Actual_Variable_Days_Per_Year</masterLabel>
+            <translation><!-- Actual_Variable_Days_Per_Year --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Midnight_366</masterLabel>
+            <translation><!-- Midnight_366 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>True360_360</masterLabel>
+            <translation><!-- True360_360 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>True360_365</masterLabel>
+            <translation><!-- True360_365 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>True365_360</masterLabel>
+            <translation><!-- True365_360 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>True365_365</masterLabel>
+            <translation><!-- True365_365 --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- Select whether prepayment penalties are possible for the products associated with this product feature. --></help>
+        <label><!-- Prepayment Penalty is Applicable --></label>
+        <name>LLC_BI__Prepayment_Penalty_Applicable__c</name>
+    </fields>
+    <fields>
+        <label><!-- Is Pricing Supported --></label>
+        <name>LLC_BI__Pricing_Support_Status__c</name>
+    </fields>
+    <fields>
+        <help><!-- This is the time period used to describe the length of a Certificate term, which is used in conjunction with the number of such periods. --></help>
+        <label><!-- Product Term Type --></label>
+        <name>LLC_BI__Product_Term_Type__c</name>
+        <picklistValues>
+            <masterLabel>Day(s)</masterLabel>
+            <translation><!-- Day(s) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Month(s)</masterLabel>
+            <translation><!-- Month(s) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Quarter(s)</masterLabel>
+            <translation><!-- Quarter(s) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Year(s)</masterLabel>
+            <translation><!-- Year(s) --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Projected Draw Schedule Enabled --></label>
+        <name>LLC_BI__Projected_Draw_Schedule_Enabled__c</name>
+    </fields>
+    <fields>
+        <label><!-- Purpose Code --></label>
+        <name>LLC_BI__Purpose_Code__c</name>
+    </fields>
+    <fields>
+        <help><!-- Enter the desired maximum threshold for the loan interest rate. --></help>
+        <label><!-- Rate Ceiling --></label>
+        <name>LLC_BI__Rate_Ceiling__c</name>
+    </fields>
+    <fields>
+        <help><!-- The amount by which a variable rate may change within the specified term. --></help>
+        <label><!-- Rate Change Percent --></label>
+        <name>LLC_BI__Rate_Change_Percent__c</name>
+    </fields>
+    <fields>
+        <help><!-- Specifies the period of time between periodic rate changes. --></help>
+        <label><!-- Rate Change Period Type --></label>
+        <name>LLC_BI__Rate_Change_Period_Type__c</name>
+        <picklistValues>
+            <masterLabel>Day(s)</masterLabel>
+            <translation><!-- Day(s) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Month(s)</masterLabel>
+            <translation><!-- Month(s) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Week(s)</masterLabel>
+            <translation><!-- Week(s) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Year(s)</masterLabel>
+            <translation><!-- Year(s) --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- Specifies how often the variable rate can change. --></help>
+        <label><!-- Rate Change Period --></label>
+        <name>LLC_BI__Rate_Change_Period__c</name>
+        <picklistValues>
+            <masterLabel>Annually</masterLabel>
+            <translation><!-- Annually --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>At any time</masterLabel>
+            <translation><!-- At any time --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Daily</masterLabel>
+            <translation><!-- Daily --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Every Other Week</masterLabel>
+            <translation><!-- Every Other Week --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Monthly</masterLabel>
+            <translation><!-- Monthly --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Quarterly</masterLabel>
+            <translation><!-- Quarterly --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Semiannually</masterLabel>
+            <translation><!-- Semiannually --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Weekly</masterLabel>
+            <translation><!-- Weekly --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- Enter the desired minimum threshold for the loan interest rate. --></help>
+        <label><!-- Rate Floor --></label>
+        <name>LLC_BI__Rate_Floor__c</name>
+    </fields>
+    <fields>
+        <help><!-- If true a rate ceiling applies on the account. --></help>
+        <label><!-- Rate Maximum Indicator --></label>
+        <name>LLC_BI__Rate_Maximum_Indicator__c</name>
+    </fields>
+    <fields>
+        <help><!-- The highest interest rate that can apply to the account. --></help>
+        <label><!-- Rate Maximum --></label>
+        <name>LLC_BI__Rate_Maximum__c</name>
+    </fields>
+    <fields>
+        <help><!-- If true a rate floor applies to the account. --></help>
+        <label><!-- Rate Minimum Indicator --></label>
+        <name>LLC_BI__Rate_Minimum_Indicator__c</name>
+    </fields>
+    <fields>
+        <help><!-- Specifies the rate type that will apply to the account. --></help>
+        <label><!-- Rate Type --></label>
+        <name>LLC_BI__Rate_Type__c</name>
+        <picklistValues>
+            <masterLabel>Exchange</masterLabel>
+            <translation><!-- Exchange --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Single</masterLabel>
+            <translation><!-- Single --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Stepped</masterLabel>
+            <translation><!-- Stepped --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Tier A</masterLabel>
+            <translation><!-- Tier A --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Tier B</masterLabel>
+            <translation><!-- Tier B --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Regulatory Capital Allocation (CET1) --></label>
+        <name>LLC_BI__Reg_Capital_Allocation_CET__c</name>
+    </fields>
+    <fields>
+        <label><!-- Regulatory Capital Allocation (Non-CET1) --></label>
+        <name>LLC_BI__Reg_Capital_Allocation_nonCET__c</name>
+    </fields>
+    <fields>
+        <help><!-- Specifies the interest rate at which the account will be renewed. --></help>
+        <label><!-- Renewal Interest Rate Type --></label>
+        <name>LLC_BI__Renewal_Interest_Rate_Type__c</name>
+        <picklistValues>
+            <masterLabel>Other</masterLabel>
+            <translation><!-- Other --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Same Basis</masterLabel>
+            <translation><!-- Same Basis --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- The new interest or dividend rate upon automatic renewal. --></help>
+        <label><!-- Renewal Interest Rate --></label>
+        <name>LLC_BI__Renewal_Interest_Rate__c</name>
+    </fields>
+    <fields>
+        <label><!-- Secured --></label>
+        <name>LLC_BI__Secured__c</name>
+    </fields>
+    <fields>
+        <help><!-- Select this checkbox to tell the system that the Set Contingent Percentage to 100% system property should fire for the specific Product Feature. --></help>
+        <label><!-- Set Contingent Percentage to 100% --></label>
+        <name>LLC_BI__Set_Contingent_Percent_to_100__c</name>
+    </fields>
+    <fields>
+        <help><!-- This field is checked when the interest rate is allowed to decrease below the teaser rate over the term of the loan and unchecked when the interest rate cannot decrease below the teaser rate. --></help>
+        <label><!-- Stair Step Down --></label>
+        <name>LLC_BI__Stair_Step_Down__c</name>
+    </fields>
+    <fields>
+        <help><!-- The interest rate that applies to the corresponding step. --></help>
+        <label><!-- Step Interest Rate --></label>
+        <name>LLC_BI__Step_Interest_Rate__c</name>
+    </fields>
+    <fields>
+        <help><!-- Specifies the period of time the corresponding step rate will apply. --></help>
+        <label><!-- Step Rate Period Type --></label>
+        <name>LLC_BI__Step_Rate_Period_Type__c</name>
+        <picklistValues>
+            <masterLabel>Day(s)</masterLabel>
+            <translation><!-- Day(s) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Month(s)</masterLabel>
+            <translation><!-- Month(s) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Week(s)</masterLabel>
+            <translation><!-- Week(s) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Year(s)</masterLabel>
+            <translation><!-- Year(s) --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- The number of periods that the corresponding stepped rate will apply. --></help>
+        <label><!-- Step Rate Period --></label>
+        <name>LLC_BI__Step_Rate_Period__c</name>
+    </fields>
+    <fields>
+        <help><!-- Specifies the subline type of a note. --></help>
+        <label><!-- Subline Type --></label>
+        <name>LLC_BI__Subline_Type__c</name>
+        <picklistValues>
+            <masterLabel>Asset Acquisition</masterLabel>
+            <translation><!-- Asset Acquisition --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Equipment Acquisition</masterLabel>
+            <translation><!-- Equipment Acquisition --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Term Loans</masterLabel>
+            <translation><!-- Term Loans --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- Enter the number of payments between increases in interest rates after the passed teaser term. --></help>
+        <label><!-- Term Step --></label>
+        <name>LLC_BI__Term_Step__c</name>
+    </fields>
+    <fields>
+        <help><!-- The interest rate that applies to the corresponding tier. --></help>
+        <label><!-- Tiered Interest Rate --></label>
+        <name>LLC_BI__Tiered_Interest_Rate__c</name>
+    </fields>
+    <fields>
+        <help><!-- The percentage that is added to (or subtracted from) the index to determine the applicable rate for a given account tier with variable rate tiers. --></help>
+        <label><!-- Tiered Margin Percent --></label>
+        <name>LLC_BI__Tiered_Margin_Percent__c</name>
+    </fields>
+    <fields>
+        <label><!-- Unused Credit Conversion Factor --></label>
+        <name>LLC_BI__Unused_CreditConversionFactor__c</name>
+    </fields>
+    <fields>
+        <help><!-- Select this checkbox to use the Teaser Rate and Teaser Term in loan calculations. --></help>
+        <label><!-- Calculate with Teaser Rate --></label>
+        <name>LLC_BI__Use_Teaser_Rate__c</name>
+    </fields>
+    <fields>
+        <label><!-- Used Credit Conversion Factor --></label>
+        <name>LLC_BI__Used_CreditConversionFactor__c</name>
+    </fields>
+    <fields>
+        <label><!-- lookupKey --></label>
+        <name>LLC_BI__lookupKey__c</name>
+    </fields>
+</CustomObjectTranslation>

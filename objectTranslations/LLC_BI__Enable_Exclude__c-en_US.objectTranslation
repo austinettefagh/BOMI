@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fieldSets>
+        <label><!-- Exposure Exclusion Disabled --></label>
+        <name>LLC_BI__Exposure_Exclusion_Disabled</name>
+    </fieldSets>
+    <fieldSets>
+        <label><!-- Exposure Exclusion Enabled --></label>
+        <name>LLC_BI__Exposure_Exclusion_Enabled</name>
+    </fieldSets>
+    <fields>
+        <label><!-- -D Account --></label>
+        <name>LLC_BI__Account__c</name>
+        <relationshipLabel><!-- -D Enable Excludes --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- -D Comments --></label>
+        <name>LLC_BI__Comments__c</name>
+    </fields>
+    <fields>
+        <label><!-- -D Debt --></label>
+        <name>LLC_BI__Debt__c</name>
+        <relationshipLabel><!-- -D Enable Excludes --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- -D Exclude Reason --></label>
+        <name>LLC_BI__Exclude_Reason__c</name>
+        <picklistValues>
+            <masterLabel>This loan is being paid out.</masterLabel>
+            <translation><!-- This loan is being paid out. --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>This loan&apos;s amount is being paid off by an in progress loan.</masterLabel>
+            <translation><!-- This loan&apos;s amount is being paid off by an in progress loan. --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- -D Loan --></label>
+        <name>LLC_BI__Loan__c</name>
+        <relationshipLabel><!-- -D Enable Excludes --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- -D Product Package --></label>
+        <name>LLC_BI__Product_Package__c</name>
+        <relationshipLabel><!-- -D Enable Excludes --></relationshipLabel>
+    </fields>
+</CustomObjectTranslation>

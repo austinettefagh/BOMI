@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>LLC_BI__Loan__c$Name</field>
+    </columns>
+    <columns>
+        <field>LLC_BI__Loan__c.LLC_BI__LLC_LoanDocuments__r$Name</field>
+    </columns>
+    <description>Report used by Nancy to review flood certification/recertifications as needed</description>
+    <filter>
+        <criteriaItems>
+            <column>LLC_BI__Loan__c.LLC_BI__LLC_LoanDocuments__r$Name</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>contains</operator>
+            <value>flood</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>LLC_BI__Loan__c.LLC_BI__LLC_LoanDocuments__r$LLC_BI__reviewStatus__c</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>notEqual</operator>
+            <value>Open,Rejected,Waived</value>
+        </criteriaItems>
+        <language>en_US</language>
+    </filter>
+    <format>Summary</format>
+    <groupingsDown>
+        <field>LLC_BI__Loan__c.LLC_BI__LLC_LoanDocuments__r$LLC_BI__date__c</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <name>Flood Certification Review - Nancy</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>Loans_with_Loan_documents__c</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <showGrandTotal>true</showGrandTotal>
+    <showSubTotals>true</showSubTotals>
+    <timeFrameFilter>
+        <dateColumn>LLC_BI__Loan__c$Amortized_Through_Date__c</dateColumn>
+        <interval>INTERVAL_CUSTOM</interval>
+    </timeFrameFilter>
+</Report>

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Flow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <apiVersion>55.0</apiVersion>
+    <description>This flow sets the default app so that new deposit records present the first route
+        of the DAO workflow to the end-user.</description>
+    <interviewLabel>nCino PDE - Record-Trigger: Deposit - Set Landing Route - V1.0.0 {!$Flow.CurrentDateTime}</interviewLabel>
+    <isTemplate>true</isTemplate>
+    <label>nCino PDE - Record-Trigger: Deposit - Set Landing Route - V1.0.0</label>
+    <processType>AutoLaunchedFlow</processType>
+    <recordUpdates>
+        <name>Set_Default_App</name>
+        <label>Set Default App</label>
+        <locationX>176</locationX>
+        <locationY>311</locationY>
+        <inputAssignments>
+            <field>LLC_BI__Default_App__c</field>
+            <value>
+                <stringValue>deposit-account-origination_2023R1.deposit-details_2023R1</stringValue>
+            </value>
+        </inputAssignments>
+        <inputReference>$Record</inputReference>
+    </recordUpdates>
+    <start>
+        <locationX>50</locationX>
+        <locationY>0</locationY>
+        <connector>
+            <targetReference>Set_Default_App</targetReference>
+        </connector>
+        <filterFormula>{!$Permission.LLC_BI__Exclude_Flow}=False</filterFormula>
+        <object>LLC_BI__Deposit__c</object>
+        <recordTriggerType>Create</recordTriggerType>
+        <triggerType>RecordBeforeSave</triggerType>
+    </start>
+    <status>Draft</status>
+</Flow>

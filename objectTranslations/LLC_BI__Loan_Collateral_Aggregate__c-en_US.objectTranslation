@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <label><!-- Crops &amp; Livestock Market Value --></label>
+        <name>CF_Crops_Livestock_Market_Value__c</name>
+    </fields>
+    <fields>
+        <label><!-- Total Current Balance --></label>
+        <name>CF_Total_Current_Balance__c</name>
+    </fields>
+    <fields>
+        <help><!-- Number of Collateral Pledged Records --></help>
+        <label><!-- Collateral Pledged Count --></label>
+        <name>LLC_BI__Collateral_Pledged_Count__c</name>
+    </fields>
+    <fields>
+        <help><!-- Sum of all collateral lendable value --></help>
+        <label><!-- Current Total Lendable Value --></label>
+        <name>LLC_BI__Current_Total_Lendable_Value__c</name>
+    </fields>
+    <fields>
+        <help><!-- The total amount of collateral pledged against the loan --></help>
+        <label><!-- Total Collateral Pledged --></label>
+        <name>LLC_BI__Total_Collateral_Pledged__c</name>
+    </fields>
+    <fields>
+        <help><!-- The combined value of all collateral on the loan --></help>
+        <label><!-- Total Collateral Value --></label>
+        <name>LLC_BI__Total_Collateral_Value__c</name>
+    </fields>
+    <fields>
+        <help><!-- Sum of all Liens associated with the loan --></help>
+        <label><!-- Total Current Lien Amount --></label>
+        <name>LLC_BI__Total_Current_Lien_Amount__c</name>
+    </fields>
+    <fields>
+        <label><!-- Total Superior Lien Amount --></label>
+        <name>LLC_BI__Total_Superior_Lien_Amount__c</name>
+    </fields>
+    <fields>
+        <label><!-- lookupKey --></label>
+        <name>LLC_BI__lookupKey__c</name>
+    </fields>
+</CustomObjectTranslation>

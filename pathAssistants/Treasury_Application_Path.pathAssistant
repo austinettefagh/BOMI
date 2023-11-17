@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PathAssistant xmlns="http://soap.sforce.com/2006/04/metadata">
+    <active>true</active>
+    <entityName>TM_Application__c</entityName>
+    <fieldName>TM_Application_Stage__c</fieldName>
+    <masterLabel>Treasury Application Path</masterLabel>
+    <pathAssistantSteps>
+        <info>&lt;p&gt;&lt;strong&gt;&lt;u&gt;a. Prepare OCM application&lt;/u&gt;&lt;/strong&gt;&lt;/p&gt;&lt;p&gt;&lt;strong&gt;&lt;u&gt;b. Prepare OCM agreement, new customers only&lt;/u&gt;&lt;/strong&gt;&lt;/p&gt;&lt;p&gt;&lt;strong&gt;&lt;u&gt;c. Complete any Online Banking Indemnification Agreements&lt;/u&gt;&lt;/strong&gt;&lt;/p&gt;</info>
+        <picklistValueName>Data Input</picklistValueName>
+    </pathAssistantSteps>
+    <pathAssistantSteps>
+        <info>&lt;p&gt;&lt;strong&gt;&lt;u&gt;a. One hour before install, perform any back office setup&lt;/u&gt;&lt;/strong&gt;&lt;/p&gt;&lt;p&gt;&lt;strong&gt;&lt;u&gt;b. Complete WebEx training with customer&lt;/u&gt;&lt;/strong&gt;&lt;/p&gt;&lt;p&gt;&lt;strong&gt;&lt;u&gt;c. Image to Synergy&lt;/u&gt;&lt;/strong&gt;&lt;/p&gt;&lt;p&gt;&lt;strong&gt;&lt;u&gt;d. Update Treasury Customer List&lt;/u&gt;&lt;/strong&gt;&lt;/p&gt;&lt;p&gt;&lt;strong&gt;&lt;u&gt;e. Update Treasury Email List&lt;/u&gt;&lt;/strong&gt;&lt;/p&gt;&lt;p&gt;&lt;strong&gt;&lt;u&gt; f.f. Treasury AA Checklist&lt;/u&gt;&lt;/strong&gt;&lt;/p&gt;&lt;p&gt;&lt;strong&gt;&lt;u&gt;g. Add/Modify service charge code on all open demand deposit accounts&lt;/u&gt;&lt;/strong&gt;&lt;/p&gt;&lt;p&gt;&lt;strong&gt;&lt;u&gt;h. Analysis pricing&lt;/u&gt;&lt;/strong&gt;&lt;/p&gt;&lt;p&gt;&lt;strong&gt;&lt;u&gt;i. Add non-JHA application account in core&lt;/u&gt;&lt;/strong&gt;&lt;/p&gt;&lt;p&gt;&lt;strong&gt;&lt;u&gt;j. Update account record in Salesforce with new product details&lt;/u&gt;&lt;/strong&gt;&lt;/p&gt;&lt;p&gt;&lt;strong&gt;&lt;u&gt;k. Create and assign pricing review tasks to TSO inside of opportunity record&lt;/u&gt;&lt;/strong&gt;&lt;/p&gt;</info>
+        <picklistValueName>Finish Customer Setup</picklistValueName>
+    </pathAssistantSteps>
+    <pathAssistantSteps>
+        <info>&lt;p&gt;&lt;strong&gt;&lt;u&gt;a. Perform Core / ProfitStars maintenance (DO NOT perform Back Office Setup as part of this step)&lt;/u&gt;&lt;/strong&gt;&lt;/p&gt;</info>
+        <picklistValueName>Perform Initial Setup</picklistValueName>
+    </pathAssistantSteps>
+    <pathAssistantSteps>
+        <info>&lt;p&gt;&lt;strong&gt;&lt;u&gt;a. Review application record information and attached files&lt;/u&gt;&lt;/strong&gt;&lt;/p&gt;&lt;p&gt;&lt;strong&gt;&lt;u&gt;b. Opportunity support specialist must be selected&lt;/u&gt;&lt;/strong&gt;&lt;/p&gt;</info>
+        <picklistValueName>Review</picklistValueName>
+    </pathAssistantSteps>
+    <pathAssistantSteps>
+        <info>&lt;p&gt;&lt;strong&gt;&lt;u&gt;a. TSO to schedule or confirm install date and all attendee email addresses&lt;/u&gt;&lt;/strong&gt;&lt;/p&gt;&lt;p&gt;&lt;strong&gt;&lt;u&gt;b. TSO to create event but where?&lt;/u&gt;&lt;/strong&gt;&lt;/p&gt;&lt;p&gt;&lt;strong&gt;&lt;u&gt;c. TSO to chatter details, but where?&lt;/u&gt;&lt;/strong&gt;&lt;/p&gt;&lt;p&gt;&lt;strong&gt;&lt;u&gt;d. Ops &amp;amp; Support to schedule and send WebEx invite and enter details on Installation Calendar&lt;/u&gt;&lt;/strong&gt;&lt;/p&gt;</info>
+        <picklistValueName>Schedule/Confirm Install Date</picklistValueName>
+    </pathAssistantSteps>
+    <pathAssistantSteps>
+        <info>&lt;p&gt;&lt;strong&gt;&lt;u&gt;a. Send application and/or agreement to TSO to review and sign&lt;/u&gt;&lt;/strong&gt;&lt;/p&gt;&lt;p&gt;&lt;strong&gt;&lt;u&gt;b. Send application and/or agreement to customer to sign&lt;/u&gt;&lt;/strong&gt;&lt;/p&gt;&lt;p&gt;&lt;strong&gt;&lt;u&gt;c. Confirm docs have been eSigned&lt;/u&gt;&lt;/strong&gt;&lt;/p&gt;</info>
+        <picklistValueName>Signature Required</picklistValueName>
+    </pathAssistantSteps>
+    <pathAssistantSteps>
+        <info>&lt;p&gt;&lt;strong&gt;&lt;u&gt;a. Complete OCM Exposure form&lt;/u&gt;&lt;/strong&gt;&lt;/p&gt;&lt;p class=&quot;ql-indent-1&quot;&gt;&lt;strong&gt;&lt;u&gt;i. ACH Origination &amp;amp; Third Party Senders&lt;/u&gt;&lt;/strong&gt;&lt;/p&gt;&lt;p class=&quot;ql-indent-1&quot;&gt;&lt;strong&gt;&lt;u&gt;ii. All RDC products (high speed, low speed, mobile limits &amp;gt;$5000)&lt;/u&gt;&lt;/strong&gt;&lt;/p&gt;&lt;p class=&quot;ql-indent-1&quot;&gt;&lt;strong&gt;&lt;u&gt;iii. All Lockbox products (remote, retail)&lt;/u&gt;&lt;/strong&gt;&lt;/p&gt;&lt;p class=&quot;ql-indent-1&quot;&gt;&lt;strong style=&quot;font-size: 13px;&quot;&gt;&lt;u&gt;iv. U-Pay &amp;amp; I-Collect Portals&lt;/u&gt;&lt;/strong&gt;&lt;/p&gt;</info>
+        <picklistValueName>Underwriting</picklistValueName>
+    </pathAssistantSteps>
+    <recordTypeName>__MASTER__</recordTypeName>
+</PathAssistant>

@@ -1,0 +1,904 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <allowInChatterGroups>false</allowInChatterGroups>
+    <compactLayoutAssignment>SYSTEM</compactLayoutAssignment>
+    <deploymentStatus>Deployed</deploymentStatus>
+    <deprecated>false</deprecated>
+    <description>This object captures additional information about a loan to enhance loan application documentation.</description>
+    <enableActivities>true</enableActivities>
+    <enableBulkApi>true</enableBulkApi>
+    <enableFeeds>false</enableFeeds>
+    <enableHistory>true</enableHistory>
+    <enableLicensing>false</enableLicensing>
+    <enableReports>true</enableReports>
+    <enableSearch>true</enableSearch>
+    <enableSharing>true</enableSharing>
+    <enableStreamingApi>true</enableStreamingApi>
+    <externalSharingModel>ControlledByParent</externalSharingModel>
+    <fieldSets>
+        <fullName>JHJX__ABJX</fullName>
+        <description>Jack Henry jXchange Automated Booking Fields</description>
+        <displayedFields>
+            <field>Name</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </displayedFields>
+        <displayedFields>
+            <field>LLC_BI__Lookup_Key__c</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </displayedFields>
+        <displayedFields>
+            <field>JHJX__TrnRcptId__c</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </displayedFields>
+        <label>Jack Henry jXchange Automated Booking</label>
+    </fieldSets>
+    <fields>
+        <fullName>JHJX__TrnRcptId__c</fullName>
+        <deprecated>false</deprecated>
+        <encryptionScheme>None</encryptionScheme>
+        <externalId>false</externalId>
+        <label>Transaction ID</label>
+        <length>21</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>LLC_BI__APR_Method__c</fullName>
+        <deprecated>false</deprecated>
+        <description>The user populates this optional picklist field with the APR method to associate with an APR calculation. By default, it is blank.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Select the APR method you would like to associate with your APR calculation.</inlineHelpText>
+        <label>APR Method</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>OpenEnd</fullName>
+                    <default>false</default>
+                    <label>OpenEnd</label>
+                </value>
+                <value>
+                    <fullName>UnitPeriod_360_IRR</fullName>
+                    <default>false</default>
+                    <label>UnitPeriod_360_IRR</label>
+                </value>
+                <value>
+                    <fullName>YieldPeriod_UnitPeriod_IRR</fullName>
+                    <default>false</default>
+                    <label>YieldPeriod_UnitPeriod_IRR</label>
+                </value>
+                <value>
+                    <fullName>EU</fullName>
+                    <default>false</default>
+                    <label>EU</label>
+                </value>
+                <value>
+                    <fullName>CAN</fullName>
+                    <default>false</default>
+                    <label>CAN</label>
+                </value>
+                <value>
+                    <fullName>Actuarial</fullName>
+                    <default>false</default>
+                    <label>Actuarial</label>
+                </value>
+                <value>
+                    <fullName>UnitPeriod_360</fullName>
+                    <default>false</default>
+                    <label>UnitPeriod_360</label>
+                </value>
+                <value>
+                    <fullName>UnitPeriod_365</fullName>
+                    <default>false</default>
+                    <label>UnitPeriod_365</label>
+                </value>
+                <value>
+                    <fullName>UnitPeriod_DaysPerPeriod</fullName>
+                    <default>false</default>
+                    <label>UnitPeriod_DaysPerPeriod</label>
+                </value>
+                <value>
+                    <fullName>UnitPeriod_True360_360</fullName>
+                    <default>false</default>
+                    <label>UnitPeriod_True360_360</label>
+                </value>
+                <value>
+                    <fullName>UnitPeriod_True360_365</fullName>
+                    <default>false</default>
+                    <label>UnitPeriod_True360_365</label>
+                </value>
+                <value>
+                    <fullName>UnitPeriod_True360_DaysPerPeriod</fullName>
+                    <default>false</default>
+                    <label>UnitPeriod_True360_DaysPerPeriod</label>
+                </value>
+                <value>
+                    <fullName>UnitPeriod_FederalCalendar</fullName>
+                    <default>false</default>
+                    <label>UnitPeriod_FederalCalendar</label>
+                </value>
+                <value>
+                    <fullName>UnitPeriod_365.25</fullName>
+                    <default>false</default>
+                    <label>UnitPeriod_365.25</label>
+                </value>
+                <value>
+                    <fullName>UnitPeriod_True360_365.25</fullName>
+                    <default>false</default>
+                    <label>UnitPeriod_True360_365.25</label>
+                </value>
+                <value>
+                    <fullName>Actual_360</fullName>
+                    <default>false</default>
+                    <label>Actual_360</label>
+                </value>
+                <value>
+                    <fullName>True365_360</fullName>
+                    <default>false</default>
+                    <label>True365_360</label>
+                </value>
+                <value>
+                    <fullName>Actual_365</fullName>
+                    <default>false</default>
+                    <label>Actual_365</label>
+                </value>
+                <value>
+                    <fullName>True365_365</fullName>
+                    <default>false</default>
+                    <label>True365_365</label>
+                </value>
+                <value>
+                    <fullName>Actual_Actual</fullName>
+                    <default>false</default>
+                    <label>Actual_Actual</label>
+                </value>
+                <value>
+                    <fullName>Midnight_366</fullName>
+                    <default>false</default>
+                    <label>Midnight_366</label>
+                </value>
+                <value>
+                    <fullName>Actual_365.25</fullName>
+                    <default>false</default>
+                    <label>Actual_365.25</label>
+                </value>
+                <value>
+                    <fullName>US_Rule</fullName>
+                    <default>false</default>
+                    <label>US_Rule</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>LLC_BI__APR_Without_Credit_Protection__c</fullName>
+        <deprecated>false</deprecated>
+        <description>The system automatically populates this optional percent field to calculate and display the annual percentage rate (APR) without any applied credit protections. By default, it is blank.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>When populated, this field contains the annual percentage rate (APR) without any applied credit protections.</inlineHelpText>
+        <label>APR Without Credit Protection</label>
+        <precision>6</precision>
+        <required>false</required>
+        <scale>3</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Percent</type>
+    </fields>
+    <fields>
+        <fullName>LLC_BI__Additional_Loan_Purposes__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Users populate this optional multi-picklist field to indicate any additional purposes of the loan. By default, it is empty.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Use this field to specify additional purposes of the loan.</inlineHelpText>
+        <label>Additional Loan Purposes</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>MultiselectPicklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetName>LLC_BI__Loan_Detail_Purposes</valueSetName>
+        </valueSet>
+        <visibleLines>4</visibleLines>
+    </fields>
+    <fields>
+        <fullName>LLC_BI__ApplicationDate__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Users populate this optional date field to capture the date an application is completed for a loan. By default, the value is blank.</description>
+        <encryptionScheme>None</encryptionScheme>
+        <externalId>false</externalId>
+        <inlineHelpText>Date application is completed.</inlineHelpText>
+        <label>Application Date</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>LLC_BI__Application_Method__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Users populate this optional picklist field to describe how the applicant submits the application. By default, it is empty.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Select a value to describe which method the applicant uses to submit the application.</inlineHelpText>
+        <label>Application Method</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>In-person</fullName>
+                    <default>false</default>
+                    <label>In-person</label>
+                </value>
+                <value>
+                    <fullName>Telephone</fullName>
+                    <default>false</default>
+                    <label>Telephone</label>
+                </value>
+                <value>
+                    <fullName>Online</fullName>
+                    <default>false</default>
+                    <label>Online</label>
+                </value>
+                <value>
+                    <fullName>Mail</fullName>
+                    <default>false</default>
+                    <label>Mail</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>LLC_BI__Balloon_Payment_Date__c</fullName>
+        <deprecated>false</deprecated>
+        <description>The user manually populates this date field to indicate the due date of the loan’s balloon payment. By default, this field is blank.</description>
+        <encryptionScheme>None</encryptionScheme>
+        <externalId>false</externalId>
+        <inlineHelpText>This field indicates the loan’s balloon payment due date.</inlineHelpText>
+        <label>Balloon Payment Date</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>LLC_BI__Calculated_Balloon_Principal_Amount__c</fullName>
+        <deprecated>false</deprecated>
+        <description>The system automatically populates this optional currency field to specify the principal portion of a calculated balloon amount. By default, it is blank.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>This field will populate after a user enters a rate and payment stream and an amortization term greater than the loan term. This results in a calculated balloon payment.</inlineHelpText>
+        <label>Calculated Balloon Principal Amount</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>LLC_BI__Collect_Odd_Days_Interest__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Administrators and users populate this optional picklist field to determine if a loan applies odd days interest and when that interest applies to the loan.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Select an option to collect odd days interest.</inlineHelpText>
+        <label>Collect Odd Days Interest</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Add to First Payment</fullName>
+                    <default>false</default>
+                    <label>Add to First Payment</label>
+                </value>
+                <value>
+                    <fullName>Collect When Due</fullName>
+                    <default>false</default>
+                    <label>Collect When Due</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>LLC_BI__DF1071_Reportable__c</fullName>
+        <defaultValue>false</defaultValue>
+        <deprecated>false</deprecated>
+        <description>The system automatically populates this optional field to indicate a loan&apos;s eligibility for Dodd-Frank 1071 compliance reporting. By default, it is empty.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>The system automatically populates this optional field to indicate a loan&apos;s eligibility for Dodd-Frank 1071 compliance reporting. By default, it is empty.</inlineHelpText>
+        <label>DF1071 Reportable</label>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>LLC_BI__Effective_Interest_Rate__c</fullName>
+        <deprecated>false</deprecated>
+        <description>The system automatically populates this optional percentage field with the value of the calculated EIR.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>This field contains the value of the calculated EIR.</inlineHelpText>
+        <label>EIR</label>
+        <precision>6</precision>
+        <required>false</required>
+        <scale>3</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Percent</type>
+    </fields>
+    <fields>
+        <fullName>LLC_BI__Final_Payment_Date__c</fullName>
+        <deprecated>false</deprecated>
+        <description>The system automatically populates this optional date field with the final payment date of the loan.</description>
+        <encryptionScheme>None</encryptionScheme>
+        <externalId>false</externalId>
+        <inlineHelpText>This field reflects the date of your final payment on the loan.</inlineHelpText>
+        <label>Final Payment Date</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>LLC_BI__Gross_Charge_Off_Date__c</fullName>
+        <deprecated>false</deprecated>
+        <description>The user manually populates this date field to indicate the initial date that the loan moves from the Active to Default status. By default, this field is blank.</description>
+        <encryptionScheme>None</encryptionScheme>
+        <externalId>false</externalId>
+        <inlineHelpText>This field indicates the initial date loan moves from the Active to Default status.</inlineHelpText>
+        <label>Gross Charge Off Date</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>LLC_BI__Guarantee_Type__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Users select from this optional multi-picklist field to indicate which guarantee type(s) apply to the loan. By default, it is empty.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Select the guarantee type(s) that apply to the loan.</inlineHelpText>
+        <label>Guarantee Type</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>MultiselectPicklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>personal_owner</fullName>
+                    <default>false</default>
+                    <label>Personal guarantee - owner(s)</label>
+                </value>
+                <value>
+                    <fullName>personal_non_owner</fullName>
+                    <default>false</default>
+                    <label>Personal guarantee - non-owner(s)</label>
+                </value>
+                <value>
+                    <fullName>sba_7a</fullName>
+                    <default>false</default>
+                    <label>SBA guarantee - 7(a) program</label>
+                </value>
+                <value>
+                    <fullName>sba_504</fullName>
+                    <default>false</default>
+                    <label>SBA guarantee - 504 program</label>
+                </value>
+                <value>
+                    <fullName>sba_other</fullName>
+                    <default>false</default>
+                    <label>SBA guarantee - other</label>
+                </value>
+                <value>
+                    <fullName>usda</fullName>
+                    <default>false</default>
+                    <label>USDA guarantee</label>
+                </value>
+                <value>
+                    <fullName>fha</fullName>
+                    <default>false</default>
+                    <label>FHA insurance</label>
+                </value>
+                <value>
+                    <fullName>bia</fullName>
+                    <default>false</default>
+                    <label>Bureau of Indian Affairs guarantee</label>
+                </value>
+                <value>
+                    <fullName>other_federal</fullName>
+                    <default>false</default>
+                    <label>Other Federal guarantee</label>
+                </value>
+                <value>
+                    <fullName>state_gov</fullName>
+                    <default>false</default>
+                    <label>State government guarantee</label>
+                </value>
+                <value>
+                    <fullName>local_gov</fullName>
+                    <default>false</default>
+                    <label>Local government guarantee</label>
+                </value>
+                <value>
+                    <fullName>no_guarantee</fullName>
+                    <default>false</default>
+                    <label>No guarantee</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+        <visibleLines>4</visibleLines>
+    </fields>
+    <fields>
+        <fullName>LLC_BI__Initial_APR__c</fullName>
+        <deprecated>false</deprecated>
+        <description>The system automatically populates this percentage field to display the loan’s Annual Percentage Rate before the user applies rate discounts to the loan. By default, this field is blank.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>This field displays the applicant’s APR without rate discounts applied to the loan.</inlineHelpText>
+        <label>Initial APR</label>
+        <precision>6</precision>
+        <required>false</required>
+        <scale>3</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Percent</type>
+    </fields>
+    <fields>
+        <fullName>LLC_BI__Initial_Monthly_Payment__c</fullName>
+        <deprecated>false</deprecated>
+        <description>The system automatically populates this currency field to display the applicant’s monthly payment before the user applies rate discounts to the loan By default, this field is blank.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>This field displays the applicant’s calculated monthly payment without rate discounts applied to the loan.</inlineHelpText>
+        <label>Initial Monthly Payment</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>LLC_BI__Is_Interest_Only__c</fullName>
+        <defaultValue>false</defaultValue>
+        <deprecated>false</deprecated>
+        <description>The user manually populates this Boolean field to indicate if a loan is Interest Only. By default, this field is false.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>This field indicates if a loan is Interest Only.</inlineHelpText>
+        <label>Interest Only Indicator</label>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>LLC_BI__Line_Of_Credit_Draw_Expiration_Date__c</fullName>
+        <deprecated>false</deprecated>
+        <description>The user manually populates this date field to indicate the date at which the loan’s Line of Credit expires and enters repayment. By default, this field is blank.</description>
+        <encryptionScheme>None</encryptionScheme>
+        <externalId>false</externalId>
+        <inlineHelpText>This field indicates the date at which loan line of credit expires and converts to a loan.</inlineHelpText>
+        <label>Line Of Credit Draw Expiration Date</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>LLC_BI__Loan__c</fullName>
+        <deprecated>false</deprecated>
+        <description>A user populates this master-detail relationship to link a Loan Detail record to its corresponding Loan record.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>This master-detail relationship contains the associated Loan record’s Id.</inlineHelpText>
+        <label>Loan</label>
+        <referenceTo>LLC_BI__Loan__c</referenceTo>
+        <relationshipLabel>Loan Details</relationshipLabel>
+        <relationshipName>Loan_Details</relationshipName>
+        <relationshipOrder>0</relationshipOrder>
+        <reparentableMasterDetail>false</reparentableMasterDetail>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>MasterDetail</type>
+        <writeRequiresMasterRead>false</writeRequiresMasterRead>
+    </fields>
+    <fields>
+        <fullName>LLC_BI__Lookup_Key__c</fullName>
+        <deprecated>false</deprecated>
+        <description>System administrators manually populate this optional text field to enter a unique external identifier, which associates the record with its matching record in an external system. By default, this field is blank.</description>
+        <encryptionScheme>None</encryptionScheme>
+        <externalId>true</externalId>
+        <inlineHelpText>Enter a unique identifier.</inlineHelpText>
+        <label>Lookup Key</label>
+        <length>255</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>LLC_BI__Mod_Type__c</fullName>
+        <deprecated>false</deprecated>
+        <description>The system populates this optional picklist field to specify the action type chosen for the corresponding loan.</description>
+        <externalId>false</externalId>
+        <label>Action Type</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Renewal</fullName>
+                    <default>false</default>
+                    <label>Renewal</label>
+                </value>
+                <value>
+                    <fullName>Modification</fullName>
+                    <default>false</default>
+                    <label>Modification</label>
+                </value>
+                <value>
+                    <fullName>Add New Sub-Loan</fullName>
+                    <default>false</default>
+                    <label>Add New Sub-Loan</label>
+                </value>
+                <value>
+                    <fullName>Copy Loan</fullName>
+                    <default>false</default>
+                    <label>Copy Loan</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>LLC_BI__Number_of_Odd_Days__c</fullName>
+        <deprecated>false</deprecated>
+        <description>The system automatically populates this optional number field to determine the number of odd days between closing and first payment. By default, it is blank.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>The number of days accumulating odd interest between closing and first payment.</inlineHelpText>
+        <label>Number of Odd Days</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>LLC_BI__Odd_Days_Amount_Per_Diem__c</fullName>
+        <deprecated>false</deprecated>
+        <description>The system automatically populates this optional currency field to determine the daily cost of the odd days interest the loan accrues. By default, it is blank.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>The daily cost of odd days interest on a loan.</inlineHelpText>
+        <label>Odd Days Amount Per Diem</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>LLC_BI__Odd_Days_Amount__c</fullName>
+        <deprecated>false</deprecated>
+        <description>The system automatically populates this optional currency field to determine the amount of odd days interest the loan accrues. By default, it is blank.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>The amount of odd days interest accrued for the loan.</inlineHelpText>
+        <label>Odd Days Amount</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>LLC_BI__Preferred_Rate__c</fullName>
+        <deprecated>false</deprecated>
+        <description>This field is automatically populated when a percentage value is entered into the Rate Discount field on Loan, and represents the discounted interest rate a customer will receive for their loan. This field is calculated as the loan’s Interest Rate minus the Rate Discount. By default, this field is blank.</description>
+        <externalId>false</externalId>
+        <formula>(LLC_BI__Loan__r.LLC_BI__InterestRate__c - LLC_BI__Loan__r.LLC_BI__Rate_Discount__c)</formula>
+        <inlineHelpText>This field automatically calculates a customer’s discounted interest rate for a loan.</inlineHelpText>
+        <label>Preferred Rate</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>3</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Percent</type>
+    </fields>
+    <fields>
+        <fullName>LLC_BI__Primary_Loan_Purpose__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Users populate this optional picklist field to indicate the primary purpose of the loan. By default, it is empty.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Use this field to specify the primary purpose of the loan.</inlineHelpText>
+        <label>Primary Loan Purpose</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetName>LLC_BI__Loan_Detail_Purposes</valueSetName>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>LLC_BI__Qualifying_Payment__c</fullName>
+        <deprecated>false</deprecated>
+        <description>The system automatically populates this optional amount field to specify the payment used to calculate the proposed monthly debt.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>This system-populated field displays the monthly payment used to calculate the proposed monthly debt.</inlineHelpText>
+        <label>Qualifying Payment</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>LLC_BI__Qualifying_Rate__c</fullName>
+        <deprecated>false</deprecated>
+        <description>The system automatically populates this optional percentage field to specify the interest rate used to calculate the proposed monthly debt. By default, it is blank.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>This system-populated field displays the interest rate used to calculate proposed monthly debt.</inlineHelpText>
+        <label>Qualifying Rate</label>
+        <precision>7</precision>
+        <required>false</required>
+        <scale>3</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Percent</type>
+    </fields>
+    <fields>
+        <fullName>LLC_BI__Recovery_Date__c</fullName>
+        <deprecated>false</deprecated>
+        <description>The user manually populates this date field to indicate the date of loan recovery from nonpayment or default. By default, this field is blank.</description>
+        <encryptionScheme>None</encryptionScheme>
+        <externalId>false</externalId>
+        <inlineHelpText>This field indicates the date tied to the loan recovery amount.</inlineHelpText>
+        <label>Recovery Date</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>LLC_BI__Total_Interest_Percentage__c</fullName>
+        <deprecated>false</deprecated>
+        <description>The system automatically populates this percentage field when the user selects an offer in the Retail Loan Workflow to indicate the total interest the borrower pays over the loan term. The system calculates total interest as a percentage of the loan amount. By default, this field is blank.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>This field indicates the total interest the borrower pays over the loan term as a percentage of the loan amount.</inlineHelpText>
+        <label>Total Interest Percentage</label>
+        <precision>6</precision>
+        <required>false</required>
+        <scale>3</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Percent</type>
+    </fields>
+    <fields>
+        <fullName>LLC_BI__Total_Payment_Over_5_Years__c</fullName>
+        <deprecated>false</deprecated>
+        <description>The system automatically populates this currency field when the user selects an offer in the Retail Loan Workflow to indicate the total amount the borrower pays over the first five years of the loan term. This amount includes principal, interest, and loan costs. By default, this field is blank.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>This field indicates the total principal, interest,  and loan costs the borrower pays over the first five years of the loan term.</inlineHelpText>
+        <label>Total Payment Over 5 Years</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>LLC_BI__Total_Principal_Over_5_Years__c</fullName>
+        <deprecated>false</deprecated>
+        <description>The system automatically populates this currency field when the user selects an offer in the Retail Loan Workflow to indicate the total principal the borrower pays over the first five years of the loan term. By default, this field is blank.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>This field indicates the total principal the borrower pays over the first five years of the loan term.</inlineHelpText>
+        <label>Total Principal Over 5 Years</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>LLC_BI__Total_of_Payments__c</fullName>
+        <deprecated>false</deprecated>
+        <description>The system automatically populates this currency field for loans subject to TRID tolerances to indicate the total amount the borrower pays over the loan term. By default, this field is blank.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>This field indicates the total principal, interest, and loan costs the borrower pays over the loan term.</inlineHelpText>
+        <label>Total of Payments</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>LLC_BI__Use_Preferred_Rate__c</fullName>
+        <defaultValue>false</defaultValue>
+        <deprecated>false</deprecated>
+        <description>The user manually selects this checkbox field to indicate that the system should calculate the loan using the value entered in the Preferred Interest Rate field. By default, this field is unchecked.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Select this checkbox to use the Preferred Rate in loan calculations.</inlineHelpText>
+        <label>Calculate with Preferred Rate</label>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <label>Loan Detail</label>
+    <nameField>
+        <encryptionScheme>None</encryptionScheme>
+        <label>Loan Detail Name</label>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+    </nameField>
+    <pluralLabel>Loan Details</pluralLabel>
+    <searchLayouts/>
+    <sharingModel>ControlledByParent</sharingModel>
+    <visibility>Public</visibility>
+</CustomObject>

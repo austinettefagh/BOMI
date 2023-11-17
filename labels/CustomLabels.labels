@@ -1,0 +1,316 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomLabels xmlns="http://soap.sforce.com/2006/04/metadata">
+    <labels>
+        <fullName>Account_Existing_Individual</fullName>
+        <categories>RecordType - Account</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Account Existing Individual</shortDescription>
+        <value>Account Existing Individual</value>
+    </labels>
+    <labels>
+        <fullName>Account_New_Individual</fullName>
+        <categories>RecordType - Account</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Account New Individual</shortDescription>
+        <value>Account New Individual</value>
+    </labels>
+    <labels>
+        <fullName>CL_Customer_Portal_Url</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Stores the portal url</shortDescription>
+        <value>https://pcgatbankofmo--sit.my.site.com</value>
+    </labels>
+    <labels>
+        <fullName>CL_New_Deposit_Account_Request_Group</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Used in Opportunity Trigger flow to send an email to group when deposit opp stag</shortDescription>
+        <value>TreasuryRetailOpportunity@bankofmissouri.com</value>
+    </labels>
+    <labels>
+        <fullName>CustomerPortal_EHL_Logo</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>CustomerPortal_EHL_Logo</shortDescription>
+        <value>https://pcgatbankofmo--sit.sandbox.file.force.com/servlet/servlet.ImageServer?id=0156g000001jh11&amp;oid=00DDS000000tAgO&amp;lastMod=1663611435000</value>
+    </labels>
+    <labels>
+        <fullName>CustomerPortal_FDIC_Logo</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>CustomerPortal_FDIC_Logo</shortDescription>
+        <value>https://pcgatbankofmo--sit.sandbox.file.force.com/servlet/servlet.ImageServer?id=0156g000001jh12&amp;oid=00DDS000000tAgO&amp;lastMod=1663611435000</value>
+    </labels>
+    <labels>
+        <fullName>CustomerPortal_Footer_Text</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>CustomerPortal_Footer_Text</shortDescription>
+        <value>© 2023 The Bank of Missouri</value>
+    </labels>
+    <labels>
+        <fullName>Individual</fullName>
+        <categories>RecordType - Account</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Individual</shortDescription>
+        <value>Individual</value>
+    </labels>
+    <labels>
+        <fullName>LPLM_Installer_Button_Install_Title</fullName>
+        <categories>nCino CSA LaserPro Mapping</categories>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>LPLM_Installer_Button_Install_Title</shortDescription>
+        <value>Install nCino LaserPro Mapping</value>
+    </labels>
+    <labels>
+        <fullName>LPLM_Installer_Button_Uninstall_Title</fullName>
+        <categories>nCino CSA LaserPro Mapping</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>LPLM_Installer_Button_Uninstall_Title</shortDescription>
+        <value>Uninstall nCino LaserPro Mapping</value>
+    </labels>
+    <labels>
+        <fullName>LPLM_Installer_Description</fullName>
+        <categories>nCino CSA LaserPro Mapping</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>LPLM_Installer_Description</shortDescription>
+        <value>Define mappings to include, exclude and override in the genearted LaserPro Extract with Custom Metadata</value>
+    </labels>
+    <labels>
+        <fullName>LPLM_install_success</fullName>
+        <categories>nCino CSA LaserPro Mapping</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>lplm_install_success</shortDescription>
+        <value>Install Successful</value>
+    </labels>
+    <labels>
+        <fullName>LPLM_installer_title</fullName>
+        <categories>nCino CSA LaserPro Mapping</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>LPLM_installer_title</shortDescription>
+        <value>nCino LaserPro Mapping</value>
+    </labels>
+    <labels>
+        <fullName>LPLM_uninstall_success</fullName>
+        <categories>nCino CSA LaserPro Mapping</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>LPLM_uninstall_success</shortDescription>
+        <value>Uninstall Successful</value>
+    </labels>
+    <labels>
+        <fullName>SBA_Individual</fullName>
+        <categories>RecordType - Account</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>SBA Individual</shortDescription>
+        <value>SBA Individual</value>
+    </labels>
+    <labels>
+        <fullName>Stage1</fullName>
+        <categories>SLA</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Stage 01</shortDescription>
+        <value>Qualification / Proposal</value>
+    </labels>
+    <labels>
+        <fullName>Stage10</fullName>
+        <categories>SLA</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Stage 10</shortDescription>
+        <value>Complete</value>
+    </labels>
+    <labels>
+        <fullName>Stage2</fullName>
+        <categories>SLA</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Stage 02</shortDescription>
+        <value>Application Processing</value>
+    </labels>
+    <labels>
+        <fullName>Stage3</fullName>
+        <categories>SLA</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Stage 03</shortDescription>
+        <value>Credit Underwriting</value>
+    </labels>
+    <labels>
+        <fullName>Stage4</fullName>
+        <categories>SLA</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Stage 04</shortDescription>
+        <value>Credit Decisioning</value>
+    </labels>
+    <labels>
+        <fullName>Stage5</fullName>
+        <categories>SLA</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Stage 05</shortDescription>
+        <value>Pre-Closing Due Diligence</value>
+    </labels>
+    <labels>
+        <fullName>Stage6</fullName>
+        <categories>SLA</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Stage 06</shortDescription>
+        <value>Doc Prep &amp; Review</value>
+    </labels>
+    <labels>
+        <fullName>Stage7</fullName>
+        <categories>SLA</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Stage 07</shortDescription>
+        <value>Closing</value>
+    </labels>
+    <labels>
+        <fullName>Stage8</fullName>
+        <categories>SLA</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Stage 08</shortDescription>
+        <value>Booking / Funding</value>
+    </labels>
+    <labels>
+        <fullName>Stage9</fullName>
+        <categories>SLA</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Stage 09</shortDescription>
+        <value>Booked</value>
+    </labels>
+    <labels>
+        <fullName>TBOM_non_member_logo_URL</fullName>
+        <categories>Email Templates</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>TBOM logo without &apos;member FDIC&apos;</shortDescription>
+        <value>https://pcgatbankofmo--sit.sandbox.file.force.com/servlet/servlet.ImageServer?id=0156g000001jh13&amp;oid=00DDS000000tAgO&amp;lastMod=1663611435000</value>
+    </labels>
+    <labels>
+        <fullName>TBoM_Logo_URL</fullName>
+        <categories>Customer Portal</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>TBoM Logo URL</shortDescription>
+        <value>https://pcgatbankofmo--sit.sandbox.file.force.com/servlet/servlet.ImageServer?id=0156g000001jh14&amp;oid=00DDS000000tAgO&amp;lastMod=1663611435000</value>
+    </labels>
+    <labels>
+        <fullName>TM_CreateApplicationSuccessMsg</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>TM_CreateApplicationSuccessMsg</shortDescription>
+        <value>Create Application Successfully!</value>
+    </labels>
+    <labels>
+        <fullName>TM_CreatedApplicationMsg</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>TM_CreatedApplicationMsg</shortDescription>
+        <value>This opportunity already has an application record created.</value>
+    </labels>
+    <labels>
+        <fullName>TM_MissAccountTaxMsg</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>TM_MissAccountTaxMsg</shortDescription>
+        <value>The application cannot be created because the Account is missing Tax ID or CIF#. Please check the linked Account and make sure it has both fields completed.</value>
+    </labels>
+    <labels>
+        <fullName>TM_NoOppProductMsg</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>TM_NoOppProductMsg</shortDescription>
+        <value>Your opportunity needs to have at least one opportunity product to create a treasury application.</value>
+    </labels>
+    <labels>
+        <fullName>TM_StdErrorMessage</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>TM_StdErrorMessage</shortDescription>
+        <value>Something Went Wrong! Please contact the Administrator!</value>
+    </labels>
+    <labels>
+        <fullName>TM_SubmitApplicationMsg</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>TM_SubmitApplicationMsg</shortDescription>
+        <value>Are you sure you want to submit the Application?</value>
+    </labels>
+    <labels>
+        <fullName>TM_Treasury_Goals_ErrorMessage</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Treasury Goals Error Message</shortDescription>
+        <value>The Relationship Manager already has an activated Treasury Goal for this Fiscal year.</value>
+    </labels>
+    <labels>
+        <fullName>Treasury_Resolution_Maintenance</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Treasury Resolution - Maintenance</shortDescription>
+        <value>Account Analysis Modifications, Account Modifications, ACH Filters, ACH Modifications, Add/Remove Access, Allow Transfers From LOC, BAI File Download, Cancel ACH Origination Service, Cancel ACH Positive Pay Service, Cancel Bill Pay Service, Cancel Check Positive Pay Service, Cancel Lockbox Service, Cancel MRDC Services, Cancel Online Cash Management, Cancel RDC Service, Cancel Sweep, Cancel U-Pay / I-Collect services, Cancel Wire Transmission service, Combine/Uncombine Statements, EDI Addenda Translation, Enroll in e-statements, Indemnifications, Modify Balance Type, Permanent Limit Modification, Positive Pay Modifications, Reversal File, SFTP File Transfer, Temporary Limit Modification, Third Party Sender ACH, Turn On/off, Unenroll in e-statements, Update Peg Balance, User Modifications, Velocity Limits, Wire Modifications, Wire PIN</value>
+    </labels>
+    <labels>
+        <fullName>Treasury_Resolution_Servicing</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Treasury Resolution - Servicing</shortDescription>
+        <value>2 Factor Authentication, Account Research, Billing Question/Issue, Check item Issues, Creating/Initiating Batch, Creating/Transmitting, Dual Control Issues, Email Compromise, Error Message Received, Login Issues, Missing Bill Payments, Mobile Banking App, Password Unlock/Reset, Product Assistance, Quickbooks Account Sync, Research, Scanner Issues, Security Questions, SSO Link Expired, Stop Payments, Tax Payments, Token, Uploading Check File, User Impersonation, View e-statements, Working Exceptions</value>
+    </labels>
+    <labels>
+        <fullName>X_MISSING_REQUIRED_PROPERTY</fullName>
+        <categories>Equifax</categories>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Missing Equifax configured property</shortDescription>
+        <value>Missing Equifax configured property</value>
+    </labels>
+    <labels>
+        <fullName>X_MISSING_UNKNOWN_REPORT_TYPE</fullName>
+        <categories>Equifax</categories>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Unknown Report Type</shortDescription>
+        <value>Unknown Report Type</value>
+    </labels>
+    <labels>
+        <fullName>X_PRODUCT_LIMIT_EXCEEDED</fullName>
+        <categories>Equifax</categories>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>More than the 5 allowable Equifax Business products have been selected.</shortDescription>
+        <value>More than the 5 allowable Equifax Business products have been selected, please update the product selections within the plugin configuration.</value>
+    </labels>
+    <labels>
+        <fullName>X_USERINFO_QUERY_FAILED</fullName>
+        <categories>Equifax</categories>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Failed to query user info</shortDescription>
+        <value>Failed to query user info</value>
+    </labels>
+    <labels>
+        <fullName>eTran_Batch_Time_Gap</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>eTran Batch Time Gap</shortDescription>
+        <value>0</value>
+    </labels>
+</CustomLabels>

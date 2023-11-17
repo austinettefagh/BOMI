@@ -1,0 +1,519 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <allowInChatterGroups>false</allowInChatterGroups>
+    <compactLayoutAssignment>SYSTEM</compactLayoutAssignment>
+    <deploymentStatus>Deployed</deploymentStatus>
+    <deprecated>false</deprecated>
+    <description>This object represents the individual business activity that the system ran as part of a business process and maintains the state of the business activity during its execution</description>
+    <enableActivities>false</enableActivities>
+    <enableBulkApi>true</enableBulkApi>
+    <enableFeeds>false</enableFeeds>
+    <enableHistory>false</enableHistory>
+    <enableLicensing>false</enableLicensing>
+    <enableReports>false</enableReports>
+    <enableSearch>false</enableSearch>
+    <enableSharing>true</enableSharing>
+    <enableStreamingApi>true</enableStreamingApi>
+    <externalSharingModel>Private</externalSharingModel>
+    <fields>
+        <fullName>nFORCE__Business_Activity_Name__c</fullName>
+        <deprecated>false</deprecated>
+        <description>The system automatically populates this required string field with the name of the business activity it is associated with.</description>
+        <encryptionScheme>None</encryptionScheme>
+        <externalId>false</externalId>
+        <inlineHelpText>This automatically populated required field displays the name of the business activity it is associated with.</inlineHelpText>
+        <label>Business Activity Name</label>
+        <length>255</length>
+        <required>true</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>nFORCE__Business_Process_Interaction__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <deprecated>false</deprecated>
+        <description>The system automatically populates this field with the Business Process Interaction record to which this business activity execution is associated. By default, it is blank.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>This automatically populated field displays the Business Process Interaction record to which this business activity is associated.</inlineHelpText>
+        <label>Business Process Interaction</label>
+        <referenceTo>nFORCE__Business_Process_Interaction__c</referenceTo>
+        <relationshipLabel>Business Process Interactions</relationshipLabel>
+        <relationshipName>Linked_Business_Process_Interaction</relationshipName>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>nFORCE__Child_Activity_Count__c</fullName>
+        <defaultValue>0</defaultValue>
+        <deprecated>false</deprecated>
+        <description>The system automatically populates this field with the expected child activity count. By default, it is zero</description>
+        <externalId>false</externalId>
+        <inlineHelpText>This automatically populated field displays the expected child activities.</inlineHelpText>
+        <label>Expected Child Activity Count</label>
+        <precision>4</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>nFORCE__Config_Template_Is_Dynamic__c</fullName>
+        <defaultValue>false</defaultValue>
+        <deprecated>false</deprecated>
+        <description>The system automatically populates this optional field to indicate whether the business process was previously stored. By default, it is false.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>This automatically populated field displays whether the business process was previously stored.</inlineHelpText>
+        <label>Business Process Is Dynamic</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>nFORCE__Config_Template_Name__c</fullName>
+        <deprecated>false</deprecated>
+        <description>The system automatically populates this required string field with the business process key it is associated with.</description>
+        <encryptionScheme>None</encryptionScheme>
+        <externalId>false</externalId>
+        <inlineHelpText>This automatically populated field displays the business process key it is associated with.</inlineHelpText>
+        <label>Business Process Key</label>
+        <length>255</length>
+        <required>true</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>nFORCE__Correlation_Id__c</fullName>
+        <deprecated>false</deprecated>
+        <description>The system automatically populates this required string field with an ID that refers to all Business Activity executions in the scope of this executing business process.</description>
+        <encryptionScheme>None</encryptionScheme>
+        <externalId>false</externalId>
+        <inlineHelpText>This automatically populated field displays an ID that refers to all Business Activity executions in the scope of this executing business process.</inlineHelpText>
+        <label>Correlation Id</label>
+        <length>40</length>
+        <required>true</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>nFORCE__Description__c</fullName>
+        <deprecated>false</deprecated>
+        <description>The system automatically populates this field to identify the intent of this Business Activity execution.</description>
+        <encryptionScheme>None</encryptionScheme>
+        <externalId>false</externalId>
+        <inlineHelpText>This automatically populated field displays the intent of this Business Activity execution.</inlineHelpText>
+        <label>Description</label>
+        <length>255</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>nFORCE__Duration__c</fullName>
+        <deprecated>false</deprecated>
+        <description>UThe system automatically populates this optional field with the end-to-end processing time of this Business Activity execution that includes queued wait times.</description>
+        <externalId>false</externalId>
+        <formula>nFORCE__FinalTimestamp__c - nFORCE__Timestamp__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <inlineHelpText>This automatically populated field displays the end-to-end processing time of this Business Activity execution.</inlineHelpText>
+        <label>Execution Duration</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>nFORCE__Execution_Id__c</fullName>
+        <caseSensitive>false</caseSensitive>
+        <deprecated>false</deprecated>
+        <description>The system automatically populates this optional field with the Apex Batch Job ID or the Business Activity Event UUID. If synchronously executed and using Apex Batch, this field is blank. By default, it is blank.</description>
+        <encryptionScheme>None</encryptionScheme>
+        <externalId>false</externalId>
+        <inlineHelpText>This automatically populated field displays the Apex Batch Job ID or the Business Activity Event UUID.</inlineHelpText>
+        <label>Execution Id</label>
+        <length>36</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>true</unique>
+    </fields>
+    <fields>
+        <fullName>nFORCE__External_Id__c</fullName>
+        <caseSensitive>false</caseSensitive>
+        <deprecated>false</deprecated>
+        <description>The system automatically populates this required string field with an ID that refers to this Business Activity execution.</description>
+        <encryptionScheme>None</encryptionScheme>
+        <externalId>true</externalId>
+        <inlineHelpText>This automatically populated field displays an ID that refers to this Business Activity.</inlineHelpText>
+        <label>External Id</label>
+        <length>40</length>
+        <required>true</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>true</unique>
+    </fields>
+    <fields>
+        <fullName>nFORCE__FQCN__c</fullName>
+        <deprecated>false</deprecated>
+        <description>The system automatically populates this required text field with the fully qualified class name of the Business Activity handler.</description>
+        <encryptionScheme>None</encryptionScheme>
+        <externalId>false</externalId>
+        <inlineHelpText>This automatically populated field displays the fully qualified class name of the business activity handler.</inlineHelpText>
+        <label>Fully Qualified Class Name</label>
+        <length>255</length>
+        <required>true</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>nFORCE__FinalTimestamp__c</fullName>
+        <deprecated>false</deprecated>
+        <description>The system automatically populates this required field to capture the timestamp of completion of the Business Activity execution.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>This automatically populated field displays the completion timestamp of the Business Activity.</inlineHelpText>
+        <label>Final Timestamp</label>
+        <precision>18</precision>
+        <required>true</required>
+        <scale>0</scale>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>nFORCE__Finalization_Complete__c</fullName>
+        <defaultValue>false</defaultValue>
+        <deprecated>false</deprecated>
+        <description>The system automatically populates this field to indicate if this Business Activity execution has completed all finalization processes. By default, it is false.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>This automatically populated field displays whether the Business Activity execution is complete.</inlineHelpText>
+        <label>Finalization Is Complete</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>nFORCE__Finalization_Enqueued__c</fullName>
+        <defaultValue>false</defaultValue>
+        <deprecated>false</deprecated>
+        <description>The system automatically populates this field to indicate if a finalization process has been enqueued. By default, it is false.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>This automatically populated field displays whether a finalization process has been enqueued.</inlineHelpText>
+        <label>Finalization Handler Is Enqueued</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>nFORCE__Is_Scheduled_Single_Run__c</fullName>
+        <defaultValue>true</defaultValue>
+        <deprecated>false</deprecated>
+        <description>The system automatically populates this optional field to indicate if this Business Activity execution, if scheduled, executes once or is recurring. By default, it is true.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>This automatically populated field displays whether a Business Activity execution, if scheduled, executes once or is recurring.</inlineHelpText>
+        <label>Is Scheduled Single Run Only</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>nFORCE__Is_Scheduled__c</fullName>
+        <defaultValue>false</defaultValue>
+        <deprecated>false</deprecated>
+        <description>The system automatically populates this optional field to indicate if this business activity execution is scheduled for future processing. By default, it is false.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>This automatically populated field displays whether this business activity execution is scheduled for future processing.</inlineHelpText>
+        <label>Is Scheduled</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>nFORCE__Message__c</fullName>
+        <deprecated>false</deprecated>
+        <description>The system automatically populates this optional text field with the most recent relevant message determined by the Business Activity execution handler. By default, it is blank.</description>
+        <encryptionScheme>None</encryptionScheme>
+        <externalId>false</externalId>
+        <inlineHelpText>This automatically populated field displays the most recent message determined by the Business Activity execution handler.</inlineHelpText>
+        <label>Message</label>
+        <length>2048</length>
+        <trackTrending>false</trackTrending>
+        <type>LongTextArea</type>
+        <visibleLines>5</visibleLines>
+    </fields>
+    <fields>
+        <fullName>nFORCE__Parent_Activity__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <deprecated>false</deprecated>
+        <description>The system automatically populates this optional field with the parent Business Activity execution record to which this Business Activity execution is associated. By default, it is blank.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>This automatically populated field displays the parent Business Activity execution record to which this Business Activity execution is associated.</inlineHelpText>
+        <label>Parent Activity</label>
+        <referenceTo>nFORCE__Business_Activity_Execution__c</referenceTo>
+        <relationshipLabel>Business Activity Execution</relationshipLabel>
+        <relationshipName>childActivityExecution</relationshipName>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>nFORCE__Perform_Async__c</fullName>
+        <defaultValue>false</defaultValue>
+        <deprecated>false</deprecated>
+        <description>The system automatically selects this checkbox field to indicate that this Business Activity execution runs asynchronously or not. By default, it is false.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>This automatically selected checkbox displays whether this Business Activity execution runs asynchronously or not.</inlineHelpText>
+        <label>Perform Async</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>nFORCE__Publish__c</fullName>
+        <defaultValue>false</defaultValue>
+        <deprecated>false</deprecated>
+        <description>The system automatically populates this optional field to indicate that this Business Activity execution has been published or not. By default, it is false.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>This automatically populated field indicates that this Business Activity execution has been published or not.</inlineHelpText>
+        <label>Publish</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>nFORCE__Scheduled_CRON_Expr__c</fullName>
+        <deprecated>false</deprecated>
+        <description>The system automatically populates this optional field with the Salesforce compatible CRON expression representing the future time to be published. By default, it is blank.</description>
+        <encryptionScheme>None</encryptionScheme>
+        <externalId>false</externalId>
+        <inlineHelpText>This automatically populated field displays the CRON expression.</inlineHelpText>
+        <label>Scheduled Job CRON Expression</label>
+        <length>255</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>nFORCE__Status__c</fullName>
+        <deprecated>false</deprecated>
+        <description>The system automatically populates this required picklist field to indicate the current status of this Business Activity execution. By default, it is Queued.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>This automatically populated field displays the status current status of this Business Activity execution.</inlineHelpText>
+        <label>Status</label>
+        <required>true</required>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Queued</fullName>
+                    <default>true</default>
+                    <label>Queued</label>
+                </value>
+                <value>
+                    <fullName>Scheduled</fullName>
+                    <default>false</default>
+                    <label>Scheduled</label>
+                </value>
+                <value>
+                    <fullName>In Progress</fullName>
+                    <default>false</default>
+                    <label>In Progress</label>
+                </value>
+                <value>
+                    <fullName>Completed Successfully</fullName>
+                    <default>false</default>
+                    <label>Completed Successfully</label>
+                </value>
+                <value>
+                    <fullName>Completed With Errors</fullName>
+                    <default>false</default>
+                    <label>Completed With Errors</label>
+                </value>
+                <value>
+                    <fullName>Cancelled</fullName>
+                    <default>false</default>
+                    <label>Cancelled</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>nFORCE__Timestamp__c</fullName>
+        <deprecated>false</deprecated>
+        <description>The system automatically populates this required field with the timestamp of the time the Business Activity execution was created.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>This automatically populated field displays the timestamp of when the Business Activity execution was created.</inlineHelpText>
+        <label>Timestamp</label>
+        <precision>18</precision>
+        <required>true</required>
+        <scale>0</scale>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>nFORCE__Wait_For_External_Update__c</fullName>
+        <defaultValue>false</defaultValue>
+        <deprecated>false</deprecated>
+        <description>The system automatically selects this checkbox to indicate that the Business Activity execution should remain in progress until an external process updates the status to continue. By default, it is false.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>This automatically selected checkbox indicates that the Business Activity execution should remain in progress until an external process updates the status to continue.</inlineHelpText>
+        <label>Wait For External Update</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <label>Business Activity Execution</label>
+    <nameField>
+        <displayFormat>E-{00000}</displayFormat>
+        <label>Business Activity Execution Name</label>
+        <type>AutoNumber</type>
+    </nameField>
+    <pluralLabel>Business Activity Executions</pluralLabel>
+    <searchLayouts/>
+    <sharingModel>Read</sharingModel>
+    <visibility>Public</visibility>
+</CustomObject>

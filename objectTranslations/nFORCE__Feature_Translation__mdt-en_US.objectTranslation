@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <label><!-- Active --></label>
+        <name>nFORCE__Active__c</name>
+    </fields>
+    <fields>
+        <label><!-- Feature --></label>
+        <name>nFORCE__Feature__c</name>
+        <relationshipLabel><!-- Feature Translations --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Field API Name --></label>
+        <name>nFORCE__Field_API_Name__c</name>
+    </fields>
+    <fields>
+        <label><!-- SObject API Name --></label>
+        <name>nFORCE__SObject_API_Name__c</name>
+    </fields>
+</CustomObjectTranslation>

@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <help><!-- Check this box if you wish to automate the pledge process for this product and collateral type combination. --></help>
+        <label><!-- Automate Collateral Pledge --></label>
+        <name>LLC_BI__Automate_Collateral_Pledge__c</name>
+    </fields>
+    <fields>
+        <help><!-- Use this lookup field to select a collateral type to connect to a product. --></help>
+        <label><!-- Collateral Type --></label>
+        <name>LLC_BI__Collateral_Type__c</name>
+        <relationshipLabel><!-- Collateral Types --></relationshipLabel>
+    </fields>
+    <fields>
+        <help><!-- Select this checkbox to enable collateral type limiting for the collateral type associated with this record --></help>
+        <label><!-- Filter In-Branch Collateral --></label>
+        <name>LLC_BI__Filter_In_Branch_Collateral__c</name>
+    </fields>
+    <fields>
+        <help><!-- Select this checkbox to enable asset type limiting for the asset collateral type associated with this record. --></help>
+        <label><!-- Filter In-Branch Leased Asset --></label>
+        <name>LLC_BI__Filter_In_Branch_Leased_Asset__c</name>
+    </fields>
+    <fields>
+        <help><!-- Select this checkbox if the collateral type you have connected to the product is the default collateral type. --></help>
+        <label><!-- Is Default --></label>
+        <name>LLC_BI__Is_Default__c</name>
+    </fields>
+    <fields>
+        <help><!-- Set this field to the applicable auto advance rate policy that is run in matrix manager. --></help>
+        <label><!-- Policy Type ID --></label>
+        <name>LLC_BI__Policy_Type_Id__c</name>
+        <relationshipLabel><!-- Product Collateral Types --></relationshipLabel>
+    </fields>
+    <fields>
+        <help><!-- Use this lookup field to select a product to connect to a collateral type. --></help>
+        <label><!-- Product --></label>
+        <name>LLC_BI__Product__c</name>
+        <relationshipLabel><!-- Products --></relationshipLabel>
+    </fields>
+    <fields>
+        <help><!-- Enter external valuations providers in a comma delimited list to allow the system to assign valuation methods to Product-Collateral type. --></help>
+        <label><!-- Valuation Providers --></label>
+        <name>LLC_BI__Valuation_Providers__c</name>
+    </fields>
+    <fields>
+        <label><!-- lookupKey --></label>
+        <name>LLC_BI__lookupKey__c</name>
+    </fields>
+    <fields>
+        <help><!-- Select this checkbox to enable the collateral type for the product in Customer Portal. --></help>
+        <label><!-- Is Portal Enabled --></label>
+        <name>nPortal__Is_Portal_Enabled__c</name>
+    </fields>
+</CustomObjectTranslation>

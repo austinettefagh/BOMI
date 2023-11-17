@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fieldSets>
+        <label><!-- Tenancy Management Additional Fields (Collateral) --></label>
+        <name>nCino__Collateral_Tenancy_Additional_Columns</name>
+    </fieldSets>
+    <fieldSets>
+        <label><!-- Tenancy Management Commercial Additional Fields --></label>
+        <name>nCino__Commercial_Record_Additional_Fields</name>
+    </fieldSets>
+    <fieldSets>
+        <label><!-- Tenancy Management Additional Fields (Relationship) --></label>
+        <name>nCino__Relationship_Tenancy_Additional_Columns</name>
+    </fieldSets>
+    <fieldSets>
+        <label><!-- Tenancy Management Residential Additional Fields --></label>
+        <name>nCino__Residential_Record_Additional_Fields</name>
+    </fieldSets>
+    <fields>
+        <label><!-- -D Area Measurement --></label>
+        <name>LLC_BI__Area_Measurement__c</name>
+        <picklistValues>
+            <masterLabel>Sq Feet</masterLabel>
+            <translation><!-- Sq Feet --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Sq Meters</masterLabel>
+            <translation><!-- Sq Meters --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Break Date --></label>
+        <name>LLC_BI__Break_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Service Charges --></label>
+        <name>LLC_BI__Charges__c</name>
+    </fields>
+    <fields>
+        <help><!-- This field displays the relationship between the collateral and the tenancy. --></help>
+        <label><!-- -D Collateral --></label>
+        <name>LLC_BI__Collateral__c</name>
+        <relationshipLabel><!-- Tenancies --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- -D Cost Frequency --></label>
+        <name>LLC_BI__Cost_Frequency__c</name>
+        <picklistValues>
+            <masterLabel>Annually</masterLabel>
+            <translation><!-- Annually --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Monthly</masterLabel>
+            <translation><!-- Monthly --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- -D Cost Per Area --></label>
+        <name>LLC_BI__Cost_Per_Area__c</name>
+    </fields>
+    <fields>
+        <help><!-- This field defines the total square measurement of floor space in square units. --></help>
+        <label><!-- -D Floor Area --></label>
+        <name>LLC_BI__Floor_Area__c</name>
+    </fields>
+    <fields>
+        <label><!-- Income Frequency --></label>
+        <name>LLC_BI__Income_Frequency__c</name>
+        <picklistValues>
+            <masterLabel>Annually</masterLabel>
+            <translation><!-- Annually --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Monthly</masterLabel>
+            <translation><!-- Monthly --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- This field defines the amount of income the owner earns from tenancies. --></help>
+        <label><!-- Income --></label>
+        <name>LLC_BI__Income__c</name>
+    </fields>
+    <fields>
+        <label><!-- Is Private Tenant --></label>
+        <name>LLC_BI__Is_Private_Tenant__c</name>
+    </fields>
+    <fields>
+        <label><!-- Lease End Date --></label>
+        <name>LLC_BI__Lease_End_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Lease Start Date --></label>
+        <name>LLC_BI__Lease_Start_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Lease Type --></label>
+        <name>LLC_BI__Lease_Type__c</name>
+        <picklistValues>
+            <masterLabel>Absolute Net Lease</masterLabel>
+            <translation><!-- Absolute Net Lease --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Full Service Lease</masterLabel>
+            <translation><!-- Full Service Lease --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Modified Gross Lease</masterLabel>
+            <translation><!-- Modified Gross Lease --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Triple Net Lease</masterLabel>
+            <translation><!-- Triple Net Lease --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Tenant --></label>
+        <name>LLC_BI__Leaseholder__c</name>
+        <relationshipLabel><!-- Tenancies --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- -D Monthly Rent --></label>
+        <name>LLC_BI__Monthly_Rent__c</name>
+    </fields>
+    <fields>
+        <label><!-- -D Status --></label>
+        <name>LLC_BI__Status__c</name>
+        <picklistValues>
+            <masterLabel>Occupied</masterLabel>
+            <translation><!-- Occupied --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Proposed</masterLabel>
+            <translation><!-- Proposed --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Vacant</masterLabel>
+            <translation><!-- Vacant --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Tenant Type --></label>
+        <name>LLC_BI__Tenant_Type__c</name>
+        <picklistValues>
+            <masterLabel>Commercial</masterLabel>
+            <translation><!-- Commercial --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Residential</masterLabel>
+            <translation><!-- Residential --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- This field displays the relationship between the tenant and the tenancy. --></help>
+        <label><!-- -D Relationship --></label>
+        <name>LLC_BI__Tenant__c</name>
+        <relationshipLabel><!-- Tenancies --></relationshipLabel>
+    </fields>
+    <fields>
+        <help><!-- This field defines the unit of a rental property that a tenant will be occupying. --></help>
+        <label><!-- -D Unit --></label>
+        <name>LLC_BI__Unit__c</name>
+    </fields>
+    <fields>
+        <label><!-- lookupKey --></label>
+        <name>LLC_BI__lookupKey__c</name>
+    </fields>
+</CustomObjectTranslation>

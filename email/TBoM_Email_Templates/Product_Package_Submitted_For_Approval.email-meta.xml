@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>An email alert that goes out to the approver when the Product Package is submitted for approval.</description>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <name>Product Package Submitted For Approval</name>
+    <style>none</style>
+    <subject>The following Approvals are Pending your Approval</subject>
+    <textOnly>Hello,  The Product Package {!LLC_BI__Product_Package__c.Name} requires your approval. To approve or reject this item, please click this link: {!ApprovalRequest.External_URL}. Here is the link to Credit Memo: {!LLC_BI__Product_Package__c.CF_Credit_Memo_Page_Link__c}  Thank you.</textOnly>
+    <type>custom</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

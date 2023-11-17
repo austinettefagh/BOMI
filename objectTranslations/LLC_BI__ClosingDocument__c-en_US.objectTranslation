@@ -1,0 +1,216 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <label><!-- Customer Portal Doc --></label>
+        <name>LLC_BI__Customer_Portal_Doc__c</name>
+    </fields>
+    <fields>
+        <label><!-- Loan --></label>
+        <name>LLC_BI__Loan__c</name>
+        <relationshipLabel><!-- Closing Documents --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- ownerGroup --></label>
+        <name>LLC_BI__Owner__c</name>
+        <picklistValues>
+            <masterLabel>Attorney</masterLabel>
+            <translation><!-- Attorney --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Closer</masterLabel>
+            <translation><!-- Closer --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Compliance</masterLabel>
+            <translation><!-- Compliance --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Construction</masterLabel>
+            <translation><!-- Construction --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Loan Ops</masterLabel>
+            <translation><!-- Loan Ops --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Servicing</masterLabel>
+            <translation><!-- Servicing --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Special Assets</masterLabel>
+            <translation><!-- Special Assets --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Portal Doc Name --></label>
+        <name>LLC_BI__Portal_Doc_Name__c</name>
+    </fields>
+    <fields>
+        <label><!-- Portal Doc Type --></label>
+        <name>LLC_BI__Portal_Doc_Type__c</name>
+        <picklistValues>
+            <masterLabel>A</masterLabel>
+            <translation><!-- A --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>R</masterLabel>
+            <translation><!-- R --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>S</masterLabel>
+            <translation><!-- S --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>X</masterLabel>
+            <translation><!-- X --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Portal Upload Date --></label>
+        <name>LLC_BI__Portal_Upload_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Approval Date --></label>
+        <name>LLC_BI__approvalDate__c</name>
+    </fields>
+    <fields>
+        <label><!-- Approved By --></label>
+        <name>LLC_BI__approvedBy__c</name>
+        <relationshipLabel><!-- Closing Documents (Approved By) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Current Attachment Id --></label>
+        <name>LLC_BI__attachmentId__c</name>
+    </fields>
+    <fields>
+        <label><!-- Closing Checklist --></label>
+        <name>LLC_BI__closingChecklist__c</name>
+        <relationshipLabel><!-- Closing Documents --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- comments --></label>
+        <name>LLC_BI__comments__c</name>
+    </fields>
+    <fields>
+        <label><!-- Date --></label>
+        <name>LLC_BI__date__c</name>
+    </fields>
+    <fields>
+        <label><!-- DocClass --></label>
+        <name>LLC_BI__docClass__c</name>
+        <relationshipLabel><!-- Closing Documents --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- DocManager --></label>
+        <name>LLC_BI__docManager__c</name>
+        <relationshipLabel><!-- Closing Documents --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- DocTab --></label>
+        <name>LLC_BI__docTab__c</name>
+        <relationshipLabel><!-- Closing Documents --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- DocType --></label>
+        <name>LLC_BI__docType__c</name>
+        <relationshipLabel><!-- Closing Documents --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- -D Due Days Prior --></label>
+        <name>LLC_BI__dueDaysPrior__c</name>
+    </fields>
+    <fields>
+        <label><!-- Exception Date --></label>
+        <name>LLC_BI__exceptionDate__c</name>
+    </fields>
+    <fields>
+        <label><!-- File Size --></label>
+        <name>LLC_BI__fileSize__c</name>
+    </fields>
+    <fields>
+        <label><!-- -D First Review --></label>
+        <name>LLC_BI__firstReview__c</name>
+    </fields>
+    <fields>
+        <label><!-- Help Text --></label>
+        <name>LLC_BI__helpText__c</name>
+    </fields>
+    <fields>
+        <label><!-- Directory --></label>
+        <name>LLC_BI__isDirectory__c</name>
+    </fields>
+    <fields>
+        <label><!-- Mime Type --></label>
+        <name>LLC_BI__mimeType__c</name>
+    </fields>
+    <fields>
+        <label><!-- ownerObjectId --></label>
+        <name>LLC_BI__ownerObjectId__c</name>
+    </fields>
+    <fields>
+        <label><!-- Parent --></label>
+        <name>LLC_BI__parent__c</name>
+        <relationshipLabel><!-- Closing Documents --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Priority --></label>
+        <name>LLC_BI__priority__c</name>
+        <picklistValues>
+            <masterLabel>Critical</masterLabel>
+            <translation><!-- Critical --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>High</masterLabel>
+            <translation><!-- High --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Low</masterLabel>
+            <translation><!-- Low --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Medium</masterLabel>
+            <translation><!-- Medium --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Review Date --></label>
+        <name>LLC_BI__reviewDate__c</name>
+    </fields>
+    <fields>
+        <label><!-- Review Status --></label>
+        <name>LLC_BI__reviewStatus__c</name>
+        <picklistValues>
+            <masterLabel>Approved</masterLabel>
+            <translation><!-- Approved --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Exception</masterLabel>
+            <translation><!-- Exception --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>In-File</masterLabel>
+            <translation><!-- In-File --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Open</masterLabel>
+            <translation><!-- Open --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Reviewed</masterLabel>
+            <translation><!-- Reviewed --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Reviewed By --></label>
+        <name>LLC_BI__reviewedBy__c</name>
+        <relationshipLabel><!-- Closing Documents (Reviewed By) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- -D Sort --></label>
+        <name>LLC_BI__sortOrder__c</name>
+    </fields>
+    <fields>
+        <label><!-- version --></label>
+        <name>LLC_BI__version__c</name>
+    </fields>
+</CustomObjectTranslation>

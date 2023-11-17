@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fieldSets>
+        <label><!-- Jack Henry jXchange Automated Booking --></label>
+        <name>JHJX__ABJX</name>
+    </fieldSets>
+    <fieldSets>
+        <label><!-- UI Lookup Fields --></label>
+        <name>LLC_BI__UI_Lookup_Fields</name>
+    </fieldSets>
+    <fields>
+        <label><!-- Compliance Status Count --></label>
+        <name>CF_Compliance_Status_Count__c</name>
+    </fields>
+    <fields>
+        <help><!-- Account that the Covenant applies to. --></help>
+        <label><!-- Relationship --></label>
+        <name>LLC_BI__Account__c</name>
+        <relationshipLabel><!-- Covenants --></relationshipLabel>
+    </fields>
+    <fields>
+        <help><!-- Is the Covenant active? --></help>
+        <label><!-- Active --></label>
+        <name>LLC_BI__Active__c</name>
+    </fields>
+    <fields>
+        <help><!-- Contact to which this Covenant applies. --></help>
+        <label><!-- Contact --></label>
+        <name>LLC_BI__Contact__c</name>
+        <relationshipLabel><!-- Covenants --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Covenant Name --></label>
+        <name>LLC_BI__Covenant_Name__c</name>
+    </fields>
+    <fields>
+        <label><!-- -D Covenant Sub Type --></label>
+        <name>LLC_BI__Covenant_Sub_Type__c</name>
+        <picklistValues>
+            <masterLabel>Accounts Payable</masterLabel>
+            <translation><!-- Accounts Payable --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Business Financial Statement</masterLabel>
+            <translation><!-- Business Financial Statement --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Collateral Insurance</masterLabel>
+            <translation><!-- Collateral Insurance --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Debt Service Coverage of Borrower</masterLabel>
+            <translation><!-- Debt Service Coverage of Borrower --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Debt Service Coverage with and without Distributions</masterLabel>
+            <translation><!-- Debt Service Coverage with and without Distributions --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Fixed Asset Purchases</masterLabel>
+            <translation><!-- Fixed Asset Purchases --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Global Debt Service Coverage</masterLabel>
+            <translation><!-- Global Debt Service Coverage --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Key Man Life Insurance</masterLabel>
+            <translation><!-- Key Man Life Insurance --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Lease Information</masterLabel>
+            <translation><!-- Lease Information --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Limiting Compensation</masterLabel>
+            <translation><!-- Limiting Compensation --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Maintain Accounts</masterLabel>
+            <translation><!-- Maintain Accounts --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Maximum Debt to Worth</masterLabel>
+            <translation><!-- Maximum Debt to Worth --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Minimum Current Ratio</masterLabel>
+            <translation><!-- Minimum Current Ratio --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Minimum Liquidity</masterLabel>
+            <translation><!-- Minimum Liquidity --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Minimum Times Interest Earned</masterLabel>
+            <translation><!-- Minimum Times Interest Earned --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Minimum Working Capital</masterLabel>
+            <translation><!-- Minimum Working Capital --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Minimum Working Capital Ratio</masterLabel>
+            <translation><!-- Minimum Working Capital Ratio --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Personal Financial Statement</masterLabel>
+            <translation><!-- Personal Financial Statement --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Tax Returns</masterLabel>
+            <translation><!-- Tax Returns --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Covenant Type --></label>
+        <name>LLC_BI__Covenant_Type_Reference__c</name>
+        <relationshipLabel><!-- Covenants --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- -D Covenant Type --></label>
+        <name>LLC_BI__Covenant_Type__c</name>
+        <picklistValues>
+            <masterLabel>Default Covenants</masterLabel>
+            <translation><!-- Default Covenants --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Financial Indicators</masterLabel>
+            <translation><!-- Financial Indicators --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Financial Statement Requirements</masterLabel>
+            <translation><!-- Financial Statement Requirements --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Term Covenants</masterLabel>
+            <translation><!-- Term Covenants --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- Number of days past the Next Evaluation Date --></help>
+        <label><!-- Days Past Next Evaluation --></label>
+        <name>LLC_BI__Days_Past_Next_Evaluation__c</name>
+    </fields>
+    <fields>
+        <help><!-- Number of days until the Next Evaluation Date --></help>
+        <label><!-- Days Until Next Evaluation --></label>
+        <name>LLC_BI__Days_Until_Next_Evaluation__c</name>
+    </fields>
+    <fields>
+        <help><!-- The value that&apos;s being confirmed with the financial indicator covenant. IE: DSC of  at least 1.25 --></help>
+        <label><!-- Financial Indicator Value --></label>
+        <name>LLC_BI__Financial_Indicator_Value__c</name>
+    </fields>
+    <fields>
+        <label><!-- Frequency Months --></label>
+        <name>LLC_BI__Frequency_Months__c</name>
+    </fields>
+    <fields>
+        <help><!-- Frequency --></help>
+        <label><!-- Frequency --></label>
+        <name>LLC_BI__Frequency__c</name>
+        <picklistValues>
+            <masterLabel>Annually</masterLabel>
+            <translation><!-- Annually --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Every 2 Months</masterLabel>
+            <translation><!-- Every 2 Months --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Monthly</masterLabel>
+            <translation><!-- Monthly --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Quarterly</masterLabel>
+            <translation><!-- Quarterly --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Semi-Annually</masterLabel>
+            <translation><!-- Semi-Annually --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Last Evaluation Date --></label>
+        <name>LLC_BI__Last_Evaluation_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Last Evaluation Status --></label>
+        <name>LLC_BI__Last_Evaluation_Status__c</name>
+    </fields>
+    <fields>
+        <help><!-- Loan that the Covenant is related to. --></help>
+        <label><!-- Loan --></label>
+        <name>LLC_BI__Loan__c</name>
+        <relationshipLabel><!-- Covenants --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Next Evaluation Date --></label>
+        <name>LLC_BI__Next_Evaluation_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Notes --></label>
+        <name>LLC_BI__Notes__c</name>
+    </fields>
+</CustomObjectTranslation>

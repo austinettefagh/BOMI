@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <label><!-- Row_Number --></label>
+        <name>LLC_BI__Column_Number__c</name>
+    </fields>
+    <fields>
+        <label><!-- Highest --></label>
+        <name>LLC_BI__Highest__c</name>
+    </fields>
+    <fields>
+        <label><!-- Is Qualitative --></label>
+        <name>LLC_BI__Is_Qualitative__c</name>
+    </fields>
+    <fields>
+        <label><!-- Is Quantitative --></label>
+        <name>LLC_BI__Is_Quantitative__c</name>
+    </fields>
+    <fields>
+        <label><!-- Lowest --></label>
+        <name>LLC_BI__Lowest__c</name>
+    </fields>
+    <fields>
+        <label><!-- Risk Grade Group --></label>
+        <name>LLC_BI__Risk_Grade_Group__c</name>
+        <relationshipLabel><!-- Risk Grade Factors --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Risk Grade Template --></label>
+        <name>LLC_BI__Risk_Grade_Template__c</name>
+        <relationshipLabel><!-- Risk Grade Factors --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Type --></label>
+        <name>LLC_BI__Type__c</name>
+        <picklistValues>
+            <masterLabel>Qualitative</masterLabel>
+            <translation><!-- Qualitative --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Quantitative</masterLabel>
+            <translation><!-- Quantitative --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- The units of the risk grade factor. The symbol entered here will be displayed in parenthesis on the column. --></help>
+        <label><!-- Units --></label>
+        <name>LLC_BI__Units__c</name>
+    </fields>
+    <fields>
+        <label><!-- Weight --></label>
+        <name>LLC_BI__Weight__c</name>
+    </fields>
+    <fields>
+        <label><!-- lookupKey --></label>
+        <name>LLC_BI__lookupKey__c</name>
+    </fields>
+</CustomObjectTranslation>

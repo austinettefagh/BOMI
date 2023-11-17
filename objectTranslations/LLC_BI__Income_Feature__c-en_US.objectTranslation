@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <help><!-- Enter the name of the fieldset with all necessary fields to be collected for this income type. --></help>
+        <label><!-- Additional Income Type Fields --></label>
+        <name>LLC_BI__Additional_Income_Type_Fields__c</name>
+    </fields>
+    <fields>
+        <help><!-- Use this field to specify the income type. --></help>
+        <label><!-- Income Type --></label>
+        <name>LLC_BI__Income_Type__c</name>
+        <picklistValues>
+            <masterLabel>Alimony Support</masterLabel>
+            <translation><!-- Alimony Support --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Annual Bonus/Commission</masterLabel>
+            <translation><!-- Annual Bonus/Commission --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Financially Analyzed Income</masterLabel>
+            <translation><!-- Financially Analyzed Income --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Gross Annual Income</masterLabel>
+            <translation><!-- Gross Annual Income --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Investment/Trust Income</masterLabel>
+            <translation><!-- Investment/Trust Income --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Military Income</masterLabel>
+            <translation><!-- Military Income --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Other Income</masterLabel>
+            <translation><!-- Other Income --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Part Time Income</masterLabel>
+            <translation><!-- Part Time Income --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Rental Income</masterLabel>
+            <translation><!-- Rental Income --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Self Employment Income</masterLabel>
+            <translation><!-- Self Employment Income --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Taxable Income</masterLabel>
+            <translation><!-- Taxable Income --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Total Before Tax Income</masterLabel>
+            <translation><!-- Total Before Tax Income --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Unemployment Benefits</masterLabel>
+            <translation><!-- Unemployment Benefits --></translation>
+        </picklistValues>
+    </fields>
+</CustomObjectTranslation>

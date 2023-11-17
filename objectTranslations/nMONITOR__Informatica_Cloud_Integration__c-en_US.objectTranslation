@@ -1,0 +1,499 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <help><!-- Box is checked by ICS if configured error threshold is exceeded by daily Monitor Record results. --></help>
+        <label><!-- Auto Create Case --></label>
+        <name>nMONITOR__Auto_Create_Case__c</name>
+    </fields>
+    <fields>
+        <help><!-- Informatica Cloud Bundle Version. --></help>
+        <label><!-- CUSO Bundle Version --></label>
+        <name>nMONITOR__CUSO_Bundle_Version__c</name>
+    </fields>
+    <fields>
+        <help><!-- Informatica Cloud Bundle Version. --></help>
+        <label><!-- Collateral Bundle Version --></label>
+        <name>nMONITOR__Collateral_Bundle_Version__c</name>
+    </fields>
+    <fields>
+        <help><!-- Collateral Errors for Collateral, Collateral Pledged, Loan Collateral aggregate, Lien, and Collateral Ownership Objects. --></help>
+        <label><!-- Collateral Errors --></label>
+        <name>nMONITOR__Collateral_Errors__c</name>
+    </fields>
+    <fields>
+        <help><!-- Collateral Exceptions for Collateral (Collateral Mgmt) Task. --></help>
+        <label><!-- Collateral Exceptions --></label>
+        <name>nMONITOR__Collateral_Exceptions__c</name>
+    </fields>
+    <fields>
+        <help><!-- Indicates the Collateral Record causing the Exception, if it already exists in nCino. --></help>
+        <label><!-- Collateral Mgmt --></label>
+        <name>nMONITOR__Collateral_Mgmt__c</name>
+        <relationshipLabel><!-- Informatica Cloud Integrations --></relationshipLabel>
+    </fields>
+    <fields>
+        <help><!-- Field indicating that the Monitoring processes are complete. --></help>
+        <label><!-- Complete --></label>
+        <name>nMONITOR__Complete__c</name>
+    </fields>
+    <fields>
+        <help><!-- Connection Errors for Connections Task. --></help>
+        <label><!-- Connection Errors --></label>
+        <name>nMONITOR__Connection_Errors__c</name>
+    </fields>
+    <fields>
+        <help><!-- Connection Exceptions for Connections Task. --></help>
+        <label><!-- Connection Exceptions --></label>
+        <name>nMONITOR__Connection_Exceptions__c</name>
+    </fields>
+    <fields>
+        <help><!-- Connection Role translated by Informatica Cloud. --></help>
+        <label><!-- Connection Role --></label>
+        <name>nMONITOR__Connection_Role__c</name>
+    </fields>
+    <fields>
+        <help><!-- Contact Errors for Contact Task. --></help>
+        <label><!-- Contact Errors --></label>
+        <name>nMONITOR__Contact_Errors__c</name>
+    </fields>
+    <fields>
+        <help><!-- Contact Exceptions for Contact Task. --></help>
+        <label><!-- Contact Exceptions --></label>
+        <name>nMONITOR__Contact_Exceptions__c</name>
+    </fields>
+    <fields>
+        <help><!-- Indicates the probable exception Record. --></help>
+        <label><!-- Contact --></label>
+        <name>nMONITOR__Contact__c</name>
+        <relationshipLabel><!-- Informatica Cloud Integrations --></relationshipLabel>
+    </fields>
+    <fields>
+        <help><!-- Informatica Cloud Bundle Version. --></help>
+        <label><!-- Covenant Bundle Version --></label>
+        <name>nMONITOR__Covenant_Bundle_Version__c</name>
+    </fields>
+    <fields>
+        <help><!-- Covenant Errors for Covenant, Loan Covenant, Account Covenant, and Covenant Compliance Tasks. --></help>
+        <label><!-- Covenant Errors --></label>
+        <name>nMONITOR__Covenant_Errors__c</name>
+    </fields>
+    <fields>
+        <help><!-- Covenant Exceptions for Covenant (Covenant Mgmt) Task. --></help>
+        <label><!-- Covenant Exceptions --></label>
+        <name>nMONITOR__Covenant_Exceptions__c</name>
+    </fields>
+    <fields>
+        <help><!-- Indicates the existing Covenant causing the Exception if the Covenant Object is synchronized. Will be NULL for migrations. --></help>
+        <label><!-- Covenant Mgmt --></label>
+        <name>nMONITOR__Covenant__c</name>
+        <relationshipLabel><!-- Informatica Cloud Integrations --></relationshipLabel>
+    </fields>
+    <fields>
+        <help><!-- Contains Product Line value on existing Loan Record in nCino. --></help>
+        <label><!-- Current Product Line --></label>
+        <name>nMONITOR__Current_Product_Line__c</name>
+    </fields>
+    <fields>
+        <help><!-- Contains Product Type value on existing Loan Record in nCino. --></help>
+        <label><!-- Current Product Type --></label>
+        <name>nMONITOR__Current_Product_Type__c</name>
+    </fields>
+    <fields>
+        <help><!-- Contains Product value on existing Loan Record in nCino. --></help>
+        <label><!-- Current Product --></label>
+        <name>nMONITOR__Current_Product__c</name>
+    </fields>
+    <fields>
+        <help><!-- Informatica Cloud Bundle Version. --></help>
+        <label><!-- Daily Integration Bundle Version --></label>
+        <name>nMONITOR__Daily_Integration_Bundle_Version__c</name>
+    </fields>
+    <fields>
+        <help><!-- Contact Errors for Contact Task. --></help>
+        <label><!-- Deposit Errors --></label>
+        <name>nMONITOR__Deposit_Errors__c</name>
+    </fields>
+    <fields>
+        <help><!-- Deposit Exceptions for Deposit Task. --></help>
+        <label><!-- Deposit Exceptions --></label>
+        <name>nMONITOR__Deposit_Exceptions__c</name>
+    </fields>
+    <fields>
+        <help><!-- Indicates the Deposit Record causing the Exception, if it already exists in nCino. --></help>
+        <label><!-- Deposit --></label>
+        <name>nMONITOR__Deposit__c</name>
+        <relationshipLabel><!-- Informatica Cloud Integrations --></relationshipLabel>
+    </fields>
+    <fields>
+        <help><!-- Time that the Task Flow completed in Informatica Cloud. --></help>
+        <label><!-- End Time --></label>
+        <name>nMONITOR__End_Time__c</name>
+    </fields>
+    <fields>
+        <help><!-- Entity Involvement Errors for Entity Involvement Task. --></help>
+        <label><!-- Entity Involvement Errors --></label>
+        <name>nMONITOR__Entity_Involvement_Errors__c</name>
+    </fields>
+    <fields>
+        <help><!-- Entity Involvement Exceptions for Entity Involvement Task. --></help>
+        <label><!-- Entity Involvement Exceptions --></label>
+        <name>nMONITOR__Entity_Involvement_Exceptions__c</name>
+    </fields>
+    <fields>
+        <help><!-- Displays the reason a row of data is an exception. --></help>
+        <label><!-- Exception Description --></label>
+        <name>nMONITOR__Exception_Description__c</name>
+    </fields>
+    <fields>
+        <help><!-- Indicates the probable exception Household Relationship Record --></help>
+        <label><!-- Household --></label>
+        <name>nMONITOR__Household__c</name>
+        <relationshipLabel><!-- Informatica Cloud Integrations (Household) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- IsCollateralPledged --></label>
+        <name>nMONITOR__IsCollateralPledged__c</name>
+    </fields>
+    <fields>
+        <help><!-- Signifies that the Exception Record should be a Collateral Record. --></help>
+        <label><!-- IsCollateral --></label>
+        <name>nMONITOR__IsCollateral__c</name>
+    </fields>
+    <fields>
+        <help><!-- Signifies that the Exception Record should be a Connection Record. --></help>
+        <label><!-- IsConnection --></label>
+        <name>nMONITOR__IsConnection__c</name>
+    </fields>
+    <fields>
+        <help><!-- Signifies that the Exception Record should be a Covenant Record. --></help>
+        <label><!-- IsCovenant --></label>
+        <name>nMONITOR__IsCovenant__c</name>
+    </fields>
+    <fields>
+        <help><!-- Signifies that the Exception Record should be an Entity Involvement Record. --></help>
+        <label><!-- IsEntityInvolvement --></label>
+        <name>nMONITOR__IsEntityInvolvement__c</name>
+    </fields>
+    <fields>
+        <help><!-- Signifies that the Exception Record should be a Loan Record. --></help>
+        <label><!-- IsLoan --></label>
+        <name>nMONITOR__IsLoan__c</name>
+    </fields>
+    <fields>
+        <help><!-- Signifies that the Exception Record should be a Loan Record. --></help>
+        <label><!-- IsParticipation --></label>
+        <name>nMONITOR__IsParticipation__c</name>
+    </fields>
+    <fields>
+        <help><!-- Signifies that the Exception Record should be a Relationship Record. --></help>
+        <label><!-- IsRelationship --></label>
+        <name>nMONITOR__IsRelationship__c</name>
+    </fields>
+    <fields>
+        <help><!-- Loan Errors across Loan and Sub Loan Tasks. --></help>
+        <label><!-- Loan Errors --></label>
+        <name>nMONITOR__Loan_Errors__c</name>
+    </fields>
+    <fields>
+        <help><!-- Loan Exceptions across Loan and Sub Loan Tasks. --></help>
+        <label><!-- Loan Exceptions --></label>
+        <name>nMONITOR__Loan_Exceptions__c</name>
+    </fields>
+    <fields>
+        <help><!-- Indicates the Loan Hierarchy level of the Exception. --></help>
+        <label><!-- Loan Hierarchy Value --></label>
+        <name>nMONITOR__Loan_Hierarchy_Value__c</name>
+    </fields>
+    <fields>
+        <help><!-- Indicates the Loan Record causing the Exception, if it already exists in nCino. --></help>
+        <label><!-- Loan --></label>
+        <name>nMONITOR__Loan__c</name>
+        <relationshipLabel><!-- Informatica Cloud Integrations --></relationshipLabel>
+    </fields>
+    <fields>
+        <help><!-- Updated by Batch Apex. Signifies that an Exception Record has been added to the number of exceptions for that day. --></help>
+        <label><!-- Logged --></label>
+        <name>nMONITOR__Logged__c</name>
+    </fields>
+    <fields>
+        <help><!-- Name and Bundle version for any one Migration Bundle used. --></help>
+        <label><!-- Migration Bundle --></label>
+        <name>nMONITOR__Migration_Bundle__c</name>
+    </fields>
+    <fields>
+        <help><!-- Checkbox leveraged in Monitoring automation. --></help>
+        <label><!-- Monitor --></label>
+        <name>nMONITOR__Monitor__c</name>
+    </fields>
+    <fields>
+        <help><!-- Set the name of the Monitor Task Flow. --></help>
+        <label><!-- Monitoring Task Flow --></label>
+        <name>nMONITOR__Monitoring_Task_Flow__c</name>
+    </fields>
+    <fields>
+        <help><!-- On-Demand Email to Case --></help>
+        <label><!-- On-Demand Email to Case --></label>
+        <name>nMONITOR__On_Demand_Email_to_Case__c</name>
+    </fields>
+    <fields>
+        <help><!-- Participation Errors for Participation Task. --></help>
+        <label><!-- Participation Errors --></label>
+        <name>nMONITOR__Participation_Errors__c</name>
+    </fields>
+    <fields>
+        <help><!-- Participation Exceptions for Participation Task. --></help>
+        <label><!-- Participation Exceptions --></label>
+        <name>nMONITOR__Participation_Exceptions__c</name>
+    </fields>
+    <fields>
+        <help><!-- Indicates the Product Package Record associated with the Loan Exception. --></help>
+        <label><!-- Product Package --></label>
+        <name>nMONITOR__Product_Package__c</name>
+        <relationshipLabel><!-- Informatica Cloud Integrations --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Record Age --></label>
+        <name>nMONITOR__Record_Age__c</name>
+    </fields>
+    <fields>
+        <help><!-- Relationship errors across Relationship and Household Relationship Tasks. --></help>
+        <label><!-- Relationship Errors --></label>
+        <name>nMONITOR__Relationship_Errors__c</name>
+    </fields>
+    <fields>
+        <help><!-- Relationship Exceptions across Relationship and Household Relationship Tasks. --></help>
+        <label><!-- Relationship Exceptions --></label>
+        <name>nMONITOR__Relationship_Exceptions__c</name>
+    </fields>
+    <fields>
+        <help><!-- Holds the value Field Mapped to &apos;Name&apos; on the Relationship Object. Corresponds to the row of exception data. --></help>
+        <label><!-- Relationship Name --></label>
+        <name>nMONITOR__Relationship_Name__c</name>
+    </fields>
+    <fields>
+        <help><!-- Houses the Relationship Type of the exception data. --></help>
+        <label><!-- Relationship Type --></label>
+        <name>nMONITOR__Relationship_Type__c</name>
+    </fields>
+    <fields>
+        <help><!-- Indicates the probable exception Record. --></help>
+        <label><!-- Relationship --></label>
+        <name>nMONITOR__Relationship__c</name>
+        <relationshipLabel><!-- Informatica Cloud Integrations --></relationshipLabel>
+    </fields>
+    <fields>
+        <help><!-- Indicates that the Secure Agent leveraged for the ICS Integration is currently up and running. --></help>
+        <label><!-- Secure Agent Data inactive --></label>
+        <name>nMONITOR__Secure_Agent_Data_inactive__c</name>
+    </fields>
+    <fields>
+        <help><!-- Id value of Secure Agent to monitor. --></help>
+        <label><!-- Secure Agent Id --></label>
+        <name>nMONITOR__Secure_Agent_Id__c</name>
+    </fields>
+    <fields>
+        <help><!-- Indicates that the Secure Agent process used for ICRT Integrations is inactive. --></help>
+        <label><!-- Secure Agent Process inactive --></label>
+        <name>nMONITOR__Secure_Agent_Process_inactive__c</name>
+    </fields>
+    <fields>
+        <help><!-- Time that the Task Flow was initiated in Informatica Cloud. --></help>
+        <label><!-- Start Time --></label>
+        <name>nMONITOR__Start_Time__c</name>
+    </fields>
+    <fields>
+        <help><!-- Specify the name of the Task Flow being monitored with Setting Record. If multiple Task Flows are present, create multiple Setting Records. --></help>
+        <label><!-- Task Flow to Monitor --></label>
+        <name>nMONITOR__Task_Flow_to_Monitor__c</name>
+    </fields>
+    <fields>
+        <help><!-- Tax Identification Number or Social Security Number for the row of exception data. --></help>
+        <label><!-- Tax ID or SSN --></label>
+        <name>nMONITOR__Tax_ID_or_SSN__c</name>
+    </fields>
+    <fields>
+        <label><!-- Today --></label>
+        <name>nMONITOR__Today__c</name>
+    </fields>
+    <fields>
+        <help><!-- Total Number of Errors reading from source and writing to nCino. --></help>
+        <label><!-- Total Errors --></label>
+        <name>nMONITOR__Total_Errors__c</name>
+    </fields>
+    <fields>
+        <help><!-- Total Number of Exceptions across all Standard Tasks. --></help>
+        <label><!-- Total Exceptions --></label>
+        <name>nMONITOR__Total_Exceptions__c</name>
+    </fields>
+    <fields>
+        <help><!-- Field holding the total number of successful rows from sources written to nCino. --></help>
+        <label><!-- Total Successes --></label>
+        <name>nMONITOR__Total_Successes__c</name>
+    </fields>
+    <fields>
+        <help><!-- Product Line translation in Informatica Cloud. --></help>
+        <label><!-- Translated Product Line --></label>
+        <name>nMONITOR__Translated_Product_Line__c</name>
+    </fields>
+    <fields>
+        <help><!-- Product Type translated by Informatica Cloud. --></help>
+        <label><!-- Translated Product Type --></label>
+        <name>nMONITOR__Translated_Product_Type__c</name>
+    </fields>
+    <fields>
+        <help><!-- Product translated by Informatica Cloud. --></help>
+        <label><!-- Translated Product --></label>
+        <name>nMONITOR__Translated_Product__c</name>
+    </fields>
+    <fields>
+        <help><!-- Informatica Cloud Bundle Version. --></help>
+        <label><!-- Treasury Management Bundle Version --></label>
+        <name>nMONITOR__Treasury_Management_Bundle_Version__c</name>
+    </fields>
+    <fields>
+        <help><!-- Unique Identifier for a given row from the source external system. --></help>
+        <label><!-- Unique Identifier --></label>
+        <name>nMONITOR__Unique_Identifier__c</name>
+    </fields>
+    <fields>
+        <label><!-- User Friendly Agent Data Status --></label>
+        <name>nMONITOR__User_Friendly_Agent_Data_Status__c</name>
+    </fields>
+    <fields>
+        <label><!-- User Friendly Agent Process Status --></label>
+        <name>nMONITOR__User_Friendly_Agent_Process_Status__c</name>
+    </fields>
+    <fields>
+        <help><!-- Signifies that the Exception Record should be a Contact Record. --></help>
+        <label><!-- isContact --></label>
+        <name>nMONITOR__isContact__c</name>
+    </fields>
+    <fields>
+        <help><!-- Signifies that the Exception Record should be a Deposit Record. --></help>
+        <label><!-- isDeposit --></label>
+        <name>nMONITOR__isDeposit__c</name>
+    </fields>
+    <fields>
+        <label><!-- Object Type --></label>
+        <name>nMONITOR__isObject__c</name>
+        <picklistValues>
+            <masterLabel>Authorized Account</masterLabel>
+            <translation><!-- Authorized Account --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Authorized Signer</masterLabel>
+            <translation><!-- Authorized Signer --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Beneficiary</masterLabel>
+            <translation><!-- Beneficiary --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Collateral</masterLabel>
+            <translation><!-- Collateral --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Collateral Ownership</masterLabel>
+            <translation><!-- Collateral Ownership --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Collateral Pledged</masterLabel>
+            <translation><!-- Collateral Pledged --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Connection</masterLabel>
+            <translation><!-- Connection --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Contact</masterLabel>
+            <translation><!-- Contact --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Covenant</masterLabel>
+            <translation><!-- Covenant --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Deposit</masterLabel>
+            <translation><!-- Deposit --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Entity Involvement</masterLabel>
+            <translation><!-- Entity Involvement --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Financial Account</masterLabel>
+            <translation><!-- Financial Account --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Financial Account Role</masterLabel>
+            <translation><!-- Financial Account Role --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Loan</masterLabel>
+            <translation><!-- Loan --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Participation</masterLabel>
+            <translation><!-- Participation --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Relationship</masterLabel>
+            <translation><!-- Relationship --></translation>
+        </picklistValues>
+    </fields>
+    <recordTypes>
+        <description><!-- Record Type holding Fields pertinent to Collateral Exceptions --></description>
+        <label><!-- Collateral Exception --></label>
+        <name>nMONITOR__Collateral_Exception</name>
+    </recordTypes>
+    <recordTypes>
+        <description><!-- Record Type holding Fields pertinent to Connection Exceptions --></description>
+        <label><!-- Connection Exception --></label>
+        <name>nMONITOR__Connection_Exception</name>
+    </recordTypes>
+    <recordTypes>
+        <description><!-- Record Type holding Fields pertinent to Contact Exceptions --></description>
+        <label><!-- Contact Exception --></label>
+        <name>nMONITOR__Contact_Exception</name>
+    </recordTypes>
+    <recordTypes>
+        <description><!-- Record Type holding Fields pertinent to Covenant Exceptions --></description>
+        <label><!-- Covenant Exception --></label>
+        <name>nMONITOR__Covenant_Exception</name>
+    </recordTypes>
+    <recordTypes>
+        <description><!-- Record Type holding Fields pertinent to Deposit Exceptions --></description>
+        <label><!-- Deposit Exception --></label>
+        <name>nMONITOR__Deposit_Exception</name>
+    </recordTypes>
+    <recordTypes>
+        <description><!-- Record Type holding Fields pertinent to Entity Involvement Exceptions --></description>
+        <label><!-- Entity Involvement Exception --></label>
+        <name>nMONITOR__Entity_Involvement_Exception</name>
+    </recordTypes>
+    <recordTypes>
+        <description><!-- Record Type holding Fields pertinent to Loan Exceptions --></description>
+        <label><!-- Loan Exception --></label>
+        <name>nMONITOR__Loan_Exception</name>
+    </recordTypes>
+    <recordTypes>
+        <description><!-- Record Type holding Monitoring statistics Fields. --></description>
+        <label><!-- Monitor --></label>
+        <name>nMONITOR__Monitor</name>
+    </recordTypes>
+    <recordTypes>
+        <description><!-- Record Type holding Fields pertinent to Participation Exceptions --></description>
+        <label><!-- Participation Exception --></label>
+        <name>nMONITOR__Participation_Exception</name>
+    </recordTypes>
+    <recordTypes>
+        <description><!-- Record Type holding Fields pertinent to Relationship Exceptions --></description>
+        <label><!-- Relationship Exception --></label>
+        <name>nMONITOR__Relationship_Exception</name>
+    </recordTypes>
+    <recordTypes>
+        <description><!-- Record Type contains Fields pertinent to monitoring configuration. --></description>
+        <label><!-- Settings --></label>
+        <name>nMONITOR__Settings</name>
+    </recordTypes>
+</CustomObjectTranslation>

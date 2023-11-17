@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <help><!-- This field indicates if Product State Config is used to determine if a record is active (checked) or inactive (unchecked).  Used in connection with a feature specific (e.g. Covenant) setting is active.  Default is unchecked (inactive). --></help>
+        <label><!-- Activate --></label>
+        <name>LLC_BI__Activate__c</name>
+    </fields>
+    <fields>
+        <label><!-- External Stage Order --></label>
+        <name>LLC_BI__External_Stage_Order__c</name>
+    </fields>
+    <fields>
+        <label><!-- External Stage --></label>
+        <name>LLC_BI__External_Stage__c</name>
+        <picklistValues>
+            <masterLabel>Application</masterLabel>
+            <translation><!-- Application --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Booking</masterLabel>
+            <translation><!-- Booking --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Closing</masterLabel>
+            <translation><!-- Closing --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Processing</masterLabel>
+            <translation><!-- Processing --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Underwriting</masterLabel>
+            <translation><!-- Underwriting --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Is Booked --></label>
+        <name>LLC_BI__Is_Booked__c</name>
+    </fields>
+    <fields>
+        <label><!-- Is Closed --></label>
+        <name>LLC_BI__Is_Closed__c</name>
+    </fields>
+    <fields>
+        <help><!-- This field indicates if a Covenant related Product State Config (checked). Default is unchecked. --></help>
+        <label><!-- Is Covenant --></label>
+        <name>LLC_BI__Is_Covenant__c</name>
+    </fields>
+    <fields>
+        <label><!-- Is Excluded From Stage Duration --></label>
+        <name>LLC_BI__Is_Excluded_From_Stage_Duration__c</name>
+    </fields>
+    <fields>
+        <label><!-- Is Ready to Transmit --></label>
+        <name>LLC_BI__Is_Ready_To_Transmit__c</name>
+    </fields>
+    <fields>
+        <label><!-- Product Type --></label>
+        <name>LLC_BI__Product_Type__c</name>
+        <relationshipLabel><!-- Product State Config --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Stage --></label>
+        <name>LLC_BI__Stage__c</name>
+    </fields>
+    <fields>
+        <label><!-- Stage and Status --></label>
+        <name>LLC_BI__Stage_and_Status__c</name>
+    </fields>
+    <fields>
+        <label><!-- Status --></label>
+        <name>LLC_BI__Status__c</name>
+    </fields>
+    <fields>
+        <label><!-- lookupKey --></label>
+        <name>LLC_BI__lookupKey__c</name>
+    </fields>
+</CustomObjectTranslation>

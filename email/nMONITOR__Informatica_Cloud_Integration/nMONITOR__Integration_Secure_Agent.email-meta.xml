@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>Secure Agent status generated notification from Informatica Cloud Integrations Unmanaged Package</description>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <name>Integration: Secure Agent</name>
+    <style>none</style>
+    <subject>The Informatica Cloud Secure Agent is down</subject>
+    <textOnly>Hello,  The Informatica Cloud Secure Agent for {!Organization.Name} is down. The Secure Agent is used by Informatica Cloud to transmit core extract files into nCino. If the Agent remains offline, then today&apos;s batch integration will not run. Please reach out to your IT department to have the Informatica Cloud Secure Agent restarted as soon as possible.   Thank you,   nCino Data Services</textOnly>
+    <type>custom</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

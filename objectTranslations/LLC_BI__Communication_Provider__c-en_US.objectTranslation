@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <label><!-- Billable --></label>
+        <name>LLC_BI__Billable__c</name>
+    </fields>
+    <fields>
+        <label><!-- Class Name --></label>
+        <name>LLC_BI__Class_Name__c</name>
+    </fields>
+    <fields>
+        <label><!-- Destination --></label>
+        <name>LLC_BI__Destination__c</name>
+    </fields>
+    <fields>
+        <label><!-- Is Active --></label>
+        <name>LLC_BI__IsActive__c</name>
+    </fields>
+</CustomObjectTranslation>

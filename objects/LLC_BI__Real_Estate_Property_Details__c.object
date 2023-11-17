@@ -1,0 +1,880 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <allowInChatterGroups>false</allowInChatterGroups>
+    <compactLayoutAssignment>SYSTEM</compactLayoutAssignment>
+    <deploymentStatus>Deployed</deploymentStatus>
+    <deprecated>false</deprecated>
+    <description>This extension object captures granular details of Real Estate collateral.</description>
+    <enableActivities>false</enableActivities>
+    <enableBulkApi>true</enableBulkApi>
+    <enableFeeds>false</enableFeeds>
+    <enableHistory>false</enableHistory>
+    <enableLicensing>false</enableLicensing>
+    <enableReports>false</enableReports>
+    <enableSearch>false</enableSearch>
+    <enableSharing>true</enableSharing>
+    <enableStreamingApi>true</enableStreamingApi>
+    <externalSharingModel>Private</externalSharingModel>
+    <fields>
+        <fullName>LLC_BI__Built_Up_Area__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Users or an integration manually populate this text field to include a brief description of the property’s built-up area.</description>
+        <encryptionScheme>None</encryptionScheme>
+        <externalId>false</externalId>
+        <inlineHelpText>Enter a brief description of the built-up area.</inlineHelpText>
+        <label>Built-Up Area</label>
+        <length>100</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>LLC_BI__Ceiling_Type__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Users or an integration manually populate this picklist field to identify a property’s ceiling type of a real estate record.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Select the property’s ceiling type from the picklist.</inlineHelpText>
+        <label>Ceiling Type</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Conventional</fullName>
+                    <default>false</default>
+                    <label>Conventional</label>
+                </value>
+                <value>
+                    <fullName>Beam</fullName>
+                    <default>false</default>
+                    <label>Beam</label>
+                </value>
+                <value>
+                    <fullName>Shed</fullName>
+                    <default>false</default>
+                    <label>Shed</label>
+                </value>
+                <value>
+                    <fullName>Cove</fullName>
+                    <default>false</default>
+                    <label>Cove</label>
+                </value>
+                <value>
+                    <fullName>Coffered</fullName>
+                    <default>false</default>
+                    <label>Coffered</label>
+                </value>
+                <value>
+                    <fullName>Tray</fullName>
+                    <default>false</default>
+                    <label>Tray</label>
+                </value>
+                <value>
+                    <fullName>Suspended</fullName>
+                    <default>false</default>
+                    <label>Suspended</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>LLC_BI__Construction_Class__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Users or an integration manually populate this picklist field to identify a property’s construction class type for a real estate collateral record.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Select the property’s construction class type from the picklist.</inlineHelpText>
+        <label>Construction Class</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Average/ Standard Builders Grade</fullName>
+                    <default>false</default>
+                    <label>Average/ Standard Builders Grade</label>
+                </value>
+                <value>
+                    <fullName>Basic</fullName>
+                    <default>false</default>
+                    <label>Basic</label>
+                </value>
+                <value>
+                    <fullName>Custom</fullName>
+                    <default>false</default>
+                    <label>Custom</label>
+                </value>
+                <value>
+                    <fullName>Custom/ Luxury</fullName>
+                    <default>false</default>
+                    <label>Custom/ Luxury</label>
+                </value>
+                <value>
+                    <fullName>Designer</fullName>
+                    <default>false</default>
+                    <label>Designer</label>
+                </value>
+                <value>
+                    <fullName>Economy</fullName>
+                    <default>false</default>
+                    <label>Economy</label>
+                </value>
+                <value>
+                    <fullName>Economy/Standard</fullName>
+                    <default>false</default>
+                    <label>Economy/Standard</label>
+                </value>
+                <value>
+                    <fullName>Luxury</fullName>
+                    <default>false</default>
+                    <label>Luxury</label>
+                </value>
+                <value>
+                    <fullName>Minimum</fullName>
+                    <default>false</default>
+                    <label>Minimum</label>
+                </value>
+                <value>
+                    <fullName>Standard/Custom</fullName>
+                    <default>false</default>
+                    <label>Standard/Custom</label>
+                </value>
+                <value>
+                    <fullName>Superior</fullName>
+                    <default>false</default>
+                    <label>Superior</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>LLC_BI__Description__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Users or an integration manually populate this long text field to capture additional information about a property for the real estate record.</description>
+        <encryptionScheme>None</encryptionScheme>
+        <externalId>false</externalId>
+        <inlineHelpText>Enter any additional information about the property in this field.</inlineHelpText>
+        <label>Description</label>
+        <length>32768</length>
+        <trackTrending>false</trackTrending>
+        <type>LongTextArea</type>
+        <visibleLines>3</visibleLines>
+    </fields>
+    <fields>
+        <fullName>LLC_BI__Dwelling_Type__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Users or an integration manually populate this picklist field to identify a property’s dwelling type for the real estate collateral record.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Select the property’s dwelling type from the picklist.</inlineHelpText>
+        <label>Dwelling Type</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Duplex</fullName>
+                    <default>false</default>
+                    <label>Duplex</label>
+                </value>
+                <value>
+                    <fullName>High Rise Multiple Units</fullName>
+                    <default>false</default>
+                    <label>High Rise Multiple Units</label>
+                </value>
+                <value>
+                    <fullName>Low Rise Multiple Units</fullName>
+                    <default>false</default>
+                    <label>Low Rise Multiple Units</label>
+                </value>
+                <value>
+                    <fullName>Single Family Detached Four Square</fullName>
+                    <default>false</default>
+                    <label>Single Family Detached Four Square</label>
+                </value>
+                <value>
+                    <fullName>Single Family Detached Ranch</fullName>
+                    <default>false</default>
+                    <label>Single Family Detached Ranch</label>
+                </value>
+                <value>
+                    <fullName>Single Family Detached Row Home</fullName>
+                    <default>false</default>
+                    <label>Single Family Detached Row Home</label>
+                </value>
+                <value>
+                    <fullName>Detached</fullName>
+                    <default>false</default>
+                    <label>Detached</label>
+                </value>
+                <value>
+                    <fullName>Semi Detached</fullName>
+                    <default>false</default>
+                    <label>Semi Detached</label>
+                </value>
+                <value>
+                    <fullName>Terraced</fullName>
+                    <default>false</default>
+                    <label>Terraced</label>
+                </value>
+                <value>
+                    <fullName>Purpose Built</fullName>
+                    <default>false</default>
+                    <label>Purpose Built</label>
+                </value>
+                <value>
+                    <fullName>Above Shop/Commercial</fullName>
+                    <default>false</default>
+                    <label>Above Shop/Commercial</label>
+                </value>
+                <value>
+                    <fullName>Studio</fullName>
+                    <default>false</default>
+                    <label>Studio</label>
+                </value>
+                <value>
+                    <fullName>Conversion</fullName>
+                    <default>false</default>
+                    <label>Conversion</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>LLC_BI__Floor_Type__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Users or an integration manually populate this picklist field to identify a property’s floor type for the real estate collateral record.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Select the property’s floor type from the picklist.</inlineHelpText>
+        <label>Floor Type</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Ceramic Tile</fullName>
+                    <default>false</default>
+                    <label>Ceramic Tile</label>
+                </value>
+                <value>
+                    <fullName>Porcelain Tile</fullName>
+                    <default>false</default>
+                    <label>Porcelain Tile</label>
+                </value>
+                <value>
+                    <fullName>Floating Wood Tile</fullName>
+                    <default>false</default>
+                    <label>Floating Wood Tile</label>
+                </value>
+                <value>
+                    <fullName>Carpet</fullName>
+                    <default>false</default>
+                    <label>Carpet</label>
+                </value>
+                <value>
+                    <fullName>Hardwood</fullName>
+                    <default>false</default>
+                    <label>Hardwood</label>
+                </value>
+                <value>
+                    <fullName>Engineered Wood</fullName>
+                    <default>false</default>
+                    <label>Engineered Wood</label>
+                </value>
+                <value>
+                    <fullName>Bamboo</fullName>
+                    <default>false</default>
+                    <label>Bamboo</label>
+                </value>
+                <value>
+                    <fullName>Cork</fullName>
+                    <default>false</default>
+                    <label>Cork</label>
+                </value>
+                <value>
+                    <fullName>Stone</fullName>
+                    <default>false</default>
+                    <label>Stone</label>
+                </value>
+                <value>
+                    <fullName>Vinyl</fullName>
+                    <default>false</default>
+                    <label>Vinyl</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>LLC_BI__Foundation_Type__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Users or an integration manually populate this picklist field to identify a property’s foundation type for the real estate collateral record.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Select the property’s foundation type from the picklist.</inlineHelpText>
+        <label>Foundation Type</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Basement</fullName>
+                    <default>false</default>
+                    <label>Basement</label>
+                </value>
+                <value>
+                    <fullName>Crawlspace</fullName>
+                    <default>false</default>
+                    <label>Crawlspace</label>
+                </value>
+                <value>
+                    <fullName>Pier and Beam</fullName>
+                    <default>false</default>
+                    <label>Pier and Beam</label>
+                </value>
+                <value>
+                    <fullName>Slab</fullName>
+                    <default>false</default>
+                    <label>Slab</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>LLC_BI__Garage_Type__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Users or an integration manually populate this picklist field to identify a property’s garage type for the real estate collateral record.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Select the property’s garage type from the picklist.</inlineHelpText>
+        <label>Garage Type</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Attached</fullName>
+                    <default>false</default>
+                    <label>Attached</label>
+                </value>
+                <value>
+                    <fullName>Basement</fullName>
+                    <default>false</default>
+                    <label>Basement</label>
+                </value>
+                <value>
+                    <fullName>Built-In</fullName>
+                    <default>false</default>
+                    <label>Built-In</label>
+                </value>
+                <value>
+                    <fullName>Carport</fullName>
+                    <default>false</default>
+                    <label>Carport</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>LLC_BI__Lease_Period_Months__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Users or an integration manually populate this number field to identify the lease period for a property if it is a leased asset.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>If this property is a leased asset, enter the lease period for the property in this field.</inlineHelpText>
+        <label>Lease Period (Months)</label>
+        <precision>9</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>LLC_BI__Lease_Period_Years__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Users or an integration manually populate this number field to identify the lease period for a property if it is a leased asset.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>If this property is a leased asset, enter the lease period for the property in this field.</inlineHelpText>
+        <label>Lease Period (Years)</label>
+        <precision>9</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>LLC_BI__Name__c</fullName>
+        <deprecated>false</deprecated>
+        <description>The system automatically populates this field to assign a record number to the collateral details record.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>This field contains the collateral detail record’s automated numerical identifier.</inlineHelpText>
+        <label>Name</label>
+        <trackTrending>false</trackTrending>
+        <type>AutoNumber</type>
+    </fields>
+    <fields>
+        <fullName>LLC_BI__Number_Of_Bathrooms__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Users or an integration manually populate this number field to indicate the number of bathrooms a property contains for a real estate collateral record.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Enter the property’s total number of bathrooms in this field.</inlineHelpText>
+        <label>Number Of Bathrooms</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>LLC_BI__Number_Of_Bedrooms__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Users or an integration manually populate this number field to indicate the number of bedrooms a property contains for a real estate collateral record.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Enter the property’s total number of bedrooms in this field.</inlineHelpText>
+        <label>Number Of Bedrooms</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>LLC_BI__Number_Of_Floors__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Users or an integration manually populate this number field to indicate the number of floors a property contains for a real estate collateral record.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Enter the property’s total number of floors in this field.</inlineHelpText>
+        <label>Number Of Floors</label>
+        <precision>9</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>LLC_BI__Number_Of_Kitchens__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Users or an integration manually populate this number field to indicate the number of kitchens a property contains for a real estate collateral record.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Enter the property’s total number of kitchens in this field.</inlineHelpText>
+        <label>Number Of Kitchens</label>
+        <precision>9</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>LLC_BI__Number_Of_Parking_Spaces_In_Garage__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Users or an integration manually populate this number field to indicate the number of parking spaces a property contains for a real estate collateral record.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Enter the property’s total number of parking spaces in this field.</inlineHelpText>
+        <label>Number of Parking Spaces in Garage</label>
+        <precision>9</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>LLC_BI__Other_Property_Features__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Users or an integration manually populate this multi-select picklist to identify a property’s included features for a real estate property record.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Select the extra features included with the property from the picklist. You can select more than one.</inlineHelpText>
+        <label>Other Property Features</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>MultiselectPicklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Basement</fullName>
+                    <default>false</default>
+                    <label>Basement</label>
+                </value>
+                <value>
+                    <fullName>Chimney</fullName>
+                    <default>false</default>
+                    <label>Chimney</label>
+                </value>
+                <value>
+                    <fullName>Swimming Pool</fullName>
+                    <default>false</default>
+                    <label>Swimming Pool</label>
+                </value>
+                <value>
+                    <fullName>Elevator/Lift</fullName>
+                    <default>false</default>
+                    <label>Elevator/Lift</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+        <visibleLines>4</visibleLines>
+    </fields>
+    <fields>
+        <fullName>LLC_BI__Primary_Use__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Users or an integration manually populate this field to determine the real estate collateral’s primary use for a real estate collateral record.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Select the property’s primary use from the picklist.</inlineHelpText>
+        <label>Primary Use</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Primary Residence</fullName>
+                    <default>false</default>
+                    <label>Primary Residence</label>
+                </value>
+                <value>
+                    <fullName>Second Home</fullName>
+                    <default>false</default>
+                    <label>Second Home</label>
+                </value>
+                <value>
+                    <fullName>Holiday Home</fullName>
+                    <default>false</default>
+                    <label>Holiday Home</label>
+                </value>
+                <value>
+                    <fullName>Sitting Tenant</fullName>
+                    <default>false</default>
+                    <label>Sitting Tenant</label>
+                </value>
+                <value>
+                    <fullName>Live Work Unit</fullName>
+                    <default>false</default>
+                    <label>Live Work Unit</label>
+                </value>
+                <value>
+                    <fullName>Holiday Let</fullName>
+                    <default>false</default>
+                    <label>Holiday Let</label>
+                </value>
+                <value>
+                    <fullName>To Let</fullName>
+                    <default>false</default>
+                    <label>To Let</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>LLC_BI__Purchase_Date__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Users or an integration manually populate this date field to capture a property’s purchase date for for the real estate collateral record.</description>
+        <encryptionScheme>None</encryptionScheme>
+        <externalId>false</externalId>
+        <inlineHelpText>Enter the property’s purchase date in this field.</inlineHelpText>
+        <label>Purchase Date</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>LLC_BI__Roof_Type__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Users or an integration manually populate this picklist to identify a property’s roof type for the real estate collateral record.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Select the property’s roof type from the picklist.</inlineHelpText>
+        <label>Roof Type</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Solar Tiles</fullName>
+                    <default>false</default>
+                    <label>Solar Tiles</label>
+                </value>
+                <value>
+                    <fullName>Asphalt Shingles</fullName>
+                    <default>false</default>
+                    <label>Asphalt Shingles</label>
+                </value>
+                <value>
+                    <fullName>Metal Roofing</fullName>
+                    <default>false</default>
+                    <label>Metal Roofing</label>
+                </value>
+                <value>
+                    <fullName>Stone-coated Steel</fullName>
+                    <default>false</default>
+                    <label>Stone-coated Steel</label>
+                </value>
+                <value>
+                    <fullName>Slate</fullName>
+                    <default>false</default>
+                    <label>Slate</label>
+                </value>
+                <value>
+                    <fullName>Rubber Slate</fullName>
+                    <default>false</default>
+                    <label>Rubber Slate</label>
+                </value>
+                <value>
+                    <fullName>Clay and Concrete Tiles</fullName>
+                    <default>false</default>
+                    <label>Clay and Concrete Tiles</label>
+                </value>
+                <value>
+                    <fullName>Green Roof</fullName>
+                    <default>false</default>
+                    <label>Green Roof</label>
+                </value>
+                <value>
+                    <fullName>Built-up Roofing</fullName>
+                    <default>false</default>
+                    <label>Built-up Roofing</label>
+                </value>
+                <value>
+                    <fullName>Flat</fullName>
+                    <default>false</default>
+                    <label>Flat</label>
+                </value>
+                <value>
+                    <fullName>Thatched</fullName>
+                    <default>false</default>
+                    <label>Thatched</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>LLC_BI__Wall_Construction_Type__c</fullName>
+        <deprecated>false</deprecated>
+        <description>User or an integration manually populate this picklist field to identify a property’s wall construction type for the real estate collateral record.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Select the property’s wall construction type from the picklist.</inlineHelpText>
+        <label>Wall Construction Type</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Concrete</fullName>
+                    <default>false</default>
+                    <label>Concrete</label>
+                </value>
+                <value>
+                    <fullName>Timber Framed</fullName>
+                    <default>false</default>
+                    <label>Timber Framed</label>
+                </value>
+                <value>
+                    <fullName>Steel Framed</fullName>
+                    <default>false</default>
+                    <label>Steel Framed</label>
+                </value>
+                <value>
+                    <fullName>Brick</fullName>
+                    <default>false</default>
+                    <label>Brick</label>
+                </value>
+                <value>
+                    <fullName>Other</fullName>
+                    <default>false</default>
+                    <label>Other</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>LLC_BI__Year_Built__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Users or an integration manually populate this number field to capture the year the property was built.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Enter the year the property was built in this field.</inlineHelpText>
+        <label>Year Built</label>
+        <precision>9</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <label>Real Estate Property Details</label>
+    <nameField>
+        <encryptionScheme>None</encryptionScheme>
+        <label>Real Estate Property Details Name</label>
+        <type>Text</type>
+    </nameField>
+    <pluralLabel>Real Estate Property Details</pluralLabel>
+    <searchLayouts/>
+    <sharingModel>ReadWrite</sharingModel>
+    <visibility>Public</visibility>
+</CustomObject>

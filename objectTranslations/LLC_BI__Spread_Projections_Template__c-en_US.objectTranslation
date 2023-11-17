@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <label><!-- Description --></label>
+        <name>LLC_BI__Description__c</name>
+    </fields>
+    <fields>
+        <label><!-- Is Active --></label>
+        <name>LLC_BI__Is_Active__c</name>
+    </fields>
+    <fields>
+        <help><!-- The system automatically populates this optional picklist field based on the template’s created route that indicates the template’s use. By default, the field value is Projection. --></help>
+        <label><!-- Purpose --></label>
+        <name>LLC_BI__Purpose__c</name>
+        <picklistValues>
+            <masterLabel>Average</masterLabel>
+            <translation><!-- Average --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Projection</masterLabel>
+            <translation><!-- Projection --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- lookupKey --></label>
+        <name>LLC_BI__lookupKey__c</name>
+    </fields>
+</CustomObjectTranslation>

@@ -1,0 +1,11 @@
+<apex:page sidebar="false" showHeader="false">
+	<apex:slds />
+	<head>
+		<meta http-equiv="Refresh" content="0; url={!$CurrentPage.parameters.ceremonyURL}" />
+	</head>
+	<body>
+		<h2>&nbsp;&nbsp;&nbsp;&nbsp;
+			If not automatically redirected to the signing page, use <a href="{!$CurrentPage.parameters.ceremonyURL}">this link</a>.
+		</h2>
+	</body>
+</apex:page>

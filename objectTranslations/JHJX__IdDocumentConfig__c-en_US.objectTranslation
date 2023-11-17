@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <label><!-- Document Type --></label>
+        <name>JHJX__Document_Type__c</name>
+        <relationshipLabel><!-- Id Document Configs --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- IdVerifyQueryVal --></label>
+        <name>JHJX__IdVerifyQueryVal__c</name>
+    </fields>
+    <fields>
+        <label><!-- IdVerifyQuery --></label>
+        <name>JHJX__IdVerifyQuery__c</name>
+    </fields>
+</CustomObjectTranslation>

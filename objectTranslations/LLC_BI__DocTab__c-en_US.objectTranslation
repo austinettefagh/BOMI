@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <help><!-- exists;name;docType;firstReview;exceptionDate;status;comment;owner --></help>
+        <label><!-- columns --></label>
+        <name>LLC_BI__columns__c</name>
+    </fields>
+    <fields>
+        <label><!-- defaultOwner --></label>
+        <name>LLC_BI__defaultOwner__c</name>
+        <picklistValues>
+            <masterLabel>Attorney</masterLabel>
+            <translation><!-- Attorney --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Closer</masterLabel>
+            <translation><!-- Closer --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Compliance</masterLabel>
+            <translation><!-- Compliance --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Construction</masterLabel>
+            <translation><!-- Construction --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Loan Ops</masterLabel>
+            <translation><!-- Loan Ops --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Servicing</masterLabel>
+            <translation><!-- Servicing --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Special Assets</masterLabel>
+            <translation><!-- Special Assets --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- DocManager --></label>
+        <name>LLC_BI__docManager__c</name>
+        <relationshipLabel><!-- DocTabs --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- lookupId --></label>
+        <name>LLC_BI__lookupId__c</name>
+    </fields>
+    <fields>
+        <label><!-- lookupKey --></label>
+        <name>LLC_BI__lookupKey__c</name>
+    </fields>
+    <fields>
+        <label><!-- sortOrder --></label>
+        <name>LLC_BI__sortOrder__c</name>
+    </fields>
+    <fields>
+        <label><!-- status --></label>
+        <name>LLC_BI__status__c</name>
+        <picklistValues>
+            <masterLabel>Approved</masterLabel>
+            <translation><!-- Approved --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Closer Updated</masterLabel>
+            <translation><!-- Closer Updated --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Exception</masterLabel>
+            <translation><!-- Exception --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Expired</masterLabel>
+            <translation><!-- Expired --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>In File</masterLabel>
+            <translation><!-- In File --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>In Process</masterLabel>
+            <translation><!-- In Process --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Missing</masterLabel>
+            <translation><!-- Missing --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Open</masterLabel>
+            <translation><!-- Open --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Recorded Doc/Policy</masterLabel>
+            <translation><!-- Recorded Doc/Policy --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Reviewed</masterLabel>
+            <translation><!-- Reviewed --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Waived</masterLabel>
+            <translation><!-- Waived --></translation>
+        </picklistValues>
+    </fields>
+</CustomObjectTranslation>

@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <label><!-- Description --></label>
+        <name>LLC_BI__Description__c</name>
+    </fields>
+    <fields>
+        <label><!-- DocOwner --></label>
+        <name>LLC_BI__DocOwner__c</name>
+        <picklistValues>
+            <masterLabel>Attorney</masterLabel>
+            <translation><!-- Attorney --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Closer</masterLabel>
+            <translation><!-- Closer --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Compliance</masterLabel>
+            <translation><!-- Compliance --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Construction</masterLabel>
+            <translation><!-- Construction --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Loan Ops</masterLabel>
+            <translation><!-- Loan Ops --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- DocType --></label>
+        <name>LLC_BI__DocType__c</name>
+        <relationshipLabel><!-- DocClass --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- DocManager --></label>
+        <name>LLC_BI__docManager__c</name>
+        <relationshipLabel><!-- DocClass --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- lookupId --></label>
+        <name>LLC_BI__lookupId__c</name>
+    </fields>
+    <fields>
+        <label><!-- lookupKey --></label>
+        <name>LLC_BI__lookupKey__c</name>
+    </fields>
+    <fields>
+        <label><!-- Industry --></label>
+        <name>NDOC__Industry__c</name>
+    </fields>
+</CustomObjectTranslation>

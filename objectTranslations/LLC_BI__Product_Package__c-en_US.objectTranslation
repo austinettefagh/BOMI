@@ -1,0 +1,917 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fieldSets>
+        <label><!-- Approvers --></label>
+        <name>FS_Approvers</name>
+    </fieldSets>
+    <fieldSets>
+        <label><!-- Deal Team --></label>
+        <name>FS_Deal_Team</name>
+    </fieldSets>
+    <fieldSets>
+        <label><!-- Deal Team - Treasury --></label>
+        <name>FS_Deal_Team_Treasury</name>
+    </fieldSets>
+    <fieldSets>
+        <label><!-- Product Package Deal Summary --></label>
+        <name>FS_Product_Package_Deal_Summary</name>
+    </fieldSets>
+    <fieldSets>
+        <label><!-- Product Package Deal Summary - Treasury --></label>
+        <name>FS_Product_Package_Deal_Summary_Treasury</name>
+    </fieldSets>
+    <fieldSets>
+        <label><!-- Product Package Exposure - Treasury --></label>
+        <name>FS_Product_Package_Exposure_Treasury</name>
+    </fieldSets>
+    <fieldSets>
+        <label><!-- Product Package Info --></label>
+        <name>FS_Product_Package_Info</name>
+    </fieldSets>
+    <fieldSets>
+        <label><!-- Product Package Info - Treasury --></label>
+        <name>FS_Product_Package_Info_Treasury</name>
+    </fieldSets>
+    <fieldSets>
+        <label><!-- Jack Henry jXchange Automated Booking --></label>
+        <name>JHJX__ABJX</name>
+    </fieldSets>
+    <fieldSets>
+        <label><!-- ConvertTo Display Fields --></label>
+        <name>LLC_BI__ConvertTo_Display_Fields</name>
+    </fieldSets>
+    <fieldSets>
+        <label><!-- Credit_Actions_New_Package_Details --></label>
+        <name>LLC_BI__Credit_Actions_New_Package_Details</name>
+    </fieldSets>
+    <fieldSets>
+        <label><!-- New Proposal --></label>
+        <name>LLC_BI__New_Proposal</name>
+    </fieldSets>
+    <fieldSets>
+        <label><!-- Product_Package_Compliance_Information --></label>
+        <name>LLC_BI__Product_Package_Compliance_Information</name>
+    </fieldSets>
+    <fieldSets>
+        <label><!-- Product_Package_Exposure_Information --></label>
+        <name>LLC_BI__Product_Package_Exposure_Information</name>
+    </fieldSets>
+    <fieldSets>
+        <label><!-- Relationship Product Package Header --></label>
+        <name>LLC_BI__Relationship_Product_Package_Header</name>
+    </fieldSets>
+    <fieldSets>
+        <label><!-- ReviewDisplay --></label>
+        <name>LLC_BI__ReviewDisplay</name>
+    </fieldSets>
+    <fieldSets>
+        <label><!-- Credit Memo Standard Product Package --></label>
+        <name>LLC_BI__Standard_Product_Package_Credit_Memo</name>
+    </fieldSets>
+    <fieldSets>
+        <label><!-- Total Exposure Summary --></label>
+        <name>LLC_BI__Total_Exposure_Summary</name>
+    </fieldSets>
+    <fields>
+        <label><!-- Approval Path --></label>
+        <name>CF_Approval_Path__c</name>
+    </fields>
+    <fields>
+        <label><!-- Approval Process --></label>
+        <name>CF_Approval_Process__c</name>
+    </fields>
+    <fields>
+        <label><!-- Approver 1 --></label>
+        <name>CF_Approver_1__c</name>
+        <relationshipLabel><!-- Product Packages (Approver 1) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Approver 2 --></label>
+        <name>CF_Approver_2__c</name>
+        <relationshipLabel><!-- Product Packages (Approver 2) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Approver 3 --></label>
+        <name>CF_Approver_3__c</name>
+        <relationshipLabel><!-- Product Packages (Approver 3) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Approver 4 --></label>
+        <name>CF_Approver_4__c</name>
+        <picklistValues>
+            <masterLabel>Board Of Directors</masterLabel>
+            <translation><!-- Board Of Directors --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Director Loan Committee</masterLabel>
+            <translation><!-- Director Loan Committee --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Internal Loan Committee</masterLabel>
+            <translation><!-- Internal Loan Committee --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Approver Group --></label>
+        <name>CF_Approver_Queue__c</name>
+        <picklistValues>
+            <masterLabel>Board Of Directors</masterLabel>
+            <translation><!-- Board Of Directors --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CBP RBP RCO Role Queue</masterLabel>
+            <translation><!-- CBP RBP RCO Role Queue --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CEO CCO CBO Role Queue</masterLabel>
+            <translation><!-- CEO CCO CBO Role Queue --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Internal Loan Committee</masterLabel>
+            <translation><!-- Internal Loan Committee --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Internal and Director Loan Committee</masterLabel>
+            <translation><!-- Internal and Director Loan Committee --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>RBP RCO Role Queue</masterLabel>
+            <translation><!-- RBP RCO Role Queue --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>RCO Executive Team Role Queue</masterLabel>
+            <translation><!-- RCO Executive Team Role Queue --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Auto Approval? --></label>
+        <name>CF_Auto_Approval__c</name>
+    </fields>
+    <fields>
+        <label><!-- Branch --></label>
+        <name>CF_Branch__c</name>
+        <relationshipLabel><!-- Product Packages (Branch) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Collateral Narrative --></label>
+        <name>CF_Collateral_Narrative__c</name>
+    </fields>
+    <fields>
+        <label><!-- Converted Loan --></label>
+        <name>CF_Converted_Loan__c</name>
+    </fields>
+    <fields>
+        <label><!-- Credit Analyst --></label>
+        <name>CF_Credit_Analyst__c</name>
+        <relationshipLabel><!-- Product Packages (Credit Analyst) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Credit Officer --></label>
+        <name>CF_Credit_Officer__c</name>
+        <relationshipLabel><!-- Product Packages (Credit Officer) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Current User --></label>
+        <name>CF_Current_User__c</name>
+    </fields>
+    <fields>
+        <help><!-- Please check this box if you wish to submit to Credit --></help>
+        <label><!-- Fast-Track Approval? --></label>
+        <name>CF_Fast_Track_Approval__c</name>
+    </fields>
+    <fields>
+        <label><!-- Financial Analysis --></label>
+        <name>CF_Financial_Repayment_Analysis__c</name>
+    </fields>
+    <fields>
+        <label><!-- Financial Summary Narrative --></label>
+        <name>CF_Financial_Summary_Narrative__c</name>
+    </fields>
+    <fields>
+        <label><!-- Guarantor Analysis --></label>
+        <name>CF_Guarantor_Analysis__c</name>
+    </fields>
+    <fields>
+        <label><!-- Has Employee Loan? --></label>
+        <name>CF_Has_Employee_Loan__c</name>
+    </fields>
+    <fields>
+        <label><!-- Has New Money Loan? --></label>
+        <name>CF_Has_New_Money_Loan__c</name>
+    </fields>
+    <fields>
+        <label><!-- Has Reg O Loan? --></label>
+        <name>CF_Has_Reg_O_Loan__c</name>
+    </fields>
+    <fields>
+        <label><!-- Has Structure Loans? --></label>
+        <name>CF_Has_Structure_Loans__c</name>
+    </fields>
+    <fields>
+        <label><!-- Highest Policy Exception --></label>
+        <name>CF_Highest_Policy_Exception__c</name>
+    </fields>
+    <fields>
+        <label><!-- Is Approval Ready? --></label>
+        <name>CF_Is_Approval_Ready__c</name>
+    </fields>
+    <fields>
+        <label><!-- Is Fully Cash Secured? --></label>
+        <name>CF_Is_Fully_Cash_Secured__c</name>
+    </fields>
+    <fields>
+        <label><!-- Line Of Business --></label>
+        <name>CF_Line_Of_Business__c</name>
+        <picklistValues>
+            <masterLabel>Agriculture</masterLabel>
+            <translation><!-- Agriculture --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Commercial</masterLabel>
+            <translation><!-- Commercial --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Consumer</masterLabel>
+            <translation><!-- Consumer --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Contract Services</masterLabel>
+            <translation><!-- Contract Services --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SBA</masterLabel>
+            <translation><!-- SBA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Treasury Management</masterLabel>
+            <translation><!-- Treasury Management --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Loan Assistant --></label>
+        <name>CF_Loan_Assistant__c</name>
+        <relationshipLabel><!-- Product Packages (Loan Assistant) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Loan Purpose --></label>
+        <name>CF_Loan_Purpose__c</name>
+    </fields>
+    <fields>
+        <label><!-- Deal Summary --></label>
+        <name>CF_Memorandum__c</name>
+    </fields>
+    <fields>
+        <label><!-- New Policy Exception? --></label>
+        <name>CF_New_Policy_Exception__c</name>
+    </fields>
+    <fields>
+        <label><!-- Now --></label>
+        <name>CF_Now__c</name>
+    </fields>
+    <fields>
+        <label><!-- Comments --></label>
+        <name>CF_Pre_Screen_Comments__c</name>
+    </fields>
+    <fields>
+        <label><!-- Processor --></label>
+        <name>CF_Processor__c</name>
+        <relationshipLabel><!-- Product Packages (Processor) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Product Package Narrative --></label>
+        <name>CF_Product_Package_Narrative__c</name>
+    </fields>
+    <fields>
+        <label><!-- Recent Risk Grade Downgrade? --></label>
+        <name>CF_Recent_Risk_Grade_Downgrade__c</name>
+    </fields>
+    <fields>
+        <label><!-- Recommendation Summary --></label>
+        <name>CF_Recommendation_Summary__c</name>
+    </fields>
+    <fields>
+        <label><!-- Region --></label>
+        <name>CF_Region__c</name>
+    </fields>
+    <fields>
+        <label><!-- Relationship Manager --></label>
+        <name>CF_Relationship_Manager__c</name>
+        <relationshipLabel><!-- Product Packages (Relationship Manager) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Repayment Analysis --></label>
+        <name>CF_Repayment_Analysis__c</name>
+    </fields>
+    <fields>
+        <label><!-- Request Description --></label>
+        <name>CF_Request_Description__c</name>
+    </fields>
+    <fields>
+        <label><!-- Risk Rating Narrative --></label>
+        <name>CF_Risk_Rating_Narrative_PP__c</name>
+    </fields>
+    <fields>
+        <label><!-- Secondary Relationship Manager --></label>
+        <name>CF_Secondary_Relationship_Manager__c</name>
+        <relationshipLabel><!-- Product Packages (Secondary Relationship Manager) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Strengths --></label>
+        <name>CF_Strengths__c</name>
+    </fields>
+    <fields>
+        <label><!-- Today&apos;s Date --></label>
+        <name>CF_Today_s_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Total Aggregate Account Exposure --></label>
+        <name>CF_Total_Aggregate_Exposure_Account__c</name>
+    </fields>
+    <fields>
+        <label><!-- Total Product Package Exposure --></label>
+        <name>CF_Total_Aggregate_Exposure__c</name>
+    </fields>
+    <fields>
+        <label><!-- Total Treasury Exposure --></label>
+        <name>CF_Total_Treasury_Exposure__c</name>
+    </fields>
+    <fields>
+        <label><!-- Total Treasury Services --></label>
+        <name>CF_Total_Treasury_Services__c</name>
+    </fields>
+    <fields>
+        <label><!-- Treasury --></label>
+        <name>CF_Treasury__c</name>
+        <relationshipLabel><!-- Product Packages (Treasury) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Weaknesses --></label>
+        <name>CF_Weaknesses__c</name>
+    </fields>
+    <fields>
+        <label><!-- Relationship --></label>
+        <name>LLC_BI__Account__c</name>
+        <relationshipLabel><!-- Product Packages --></relationshipLabel>
+    </fields>
+    <fields>
+        <help><!-- Populate this field with any additional income. --></help>
+        <label><!-- Additional Income Category --></label>
+        <name>LLC_BI__Additional_Income_Category__c</name>
+        <picklistValues>
+            <masterLabel>Insurance</masterLabel>
+            <translation><!-- Insurance --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Swap</masterLabel>
+            <translation><!-- Swap --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Wealth</masterLabel>
+            <translation><!-- Wealth --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- Use this field to capture any additional one-time wealth, insurance, or other relevant income in the deal an FI originates outside of nCino and not captured in existing loan, deposit, or treasury inputs. --></help>
+        <label><!-- Additional One Time Income --></label>
+        <name>LLC_BI__Additional_One_Time_Income__c</name>
+    </fields>
+    <fields>
+        <help><!-- The approximate tax rate to apply to the revenue of new deposits in the deal an FI originates outside of nCino. --></help>
+        <label><!-- Deposit Tax Rate --></label>
+        <name>LLC_BI__Ancillary_Product_Tax_Rate__c</name>
+    </fields>
+    <fields>
+        <help><!-- Use this field for any details associated with the ancillary revenue being summarized in the deal but originated outside of nCino. --></help>
+        <label><!-- Ancillary Revenue Comments --></label>
+        <name>LLC_BI__Ancillary_Revenue_Comments__c</name>
+    </fields>
+    <fields>
+        <help><!-- The approximate Annual Operating Cost for new deposit products an FI originates in the deal outside of nCino. --></help>
+        <label><!-- Annual Deposit Operating Cost --></label>
+        <name>LLC_BI__Annual_Deposit_Operating_Cost__c</name>
+    </fields>
+    <fields>
+        <label><!-- Approval Status --></label>
+        <name>LLC_BI__Approval_Status__c</name>
+        <picklistValues>
+            <masterLabel>Not Submitted</masterLabel>
+            <translation><!-- Not Submitted --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Pending</masterLabel>
+            <translation><!-- Pending --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Ready</masterLabel>
+            <translation><!-- Ready --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Booked Affiliated Exposure --></label>
+        <name>LLC_BI__Booked_Affiliated_Exposure__c</name>
+    </fields>
+    <fields>
+        <help><!-- This field is used to report Booked Direct Exposure to the Product Package. --></help>
+        <label><!-- Booked Direct Exposure --></label>
+        <name>LLC_BI__Booked_Direct_Exposure__c</name>
+    </fields>
+    <fields>
+        <help><!-- This field is used to report Booked Indirect Exposure to the Product Package. --></help>
+        <label><!-- Booked Indirect Exposure --></label>
+        <name>LLC_BI__Booked_Indirect_Exposure__c</name>
+    </fields>
+    <fields>
+        <help><!-- The approximate capital allocation rate for all new treasury exposure an FI originates in the deal outside of nCino. nCino recommends using the same capital allocation rate used in loans. --></help>
+        <label><!-- Capital Allocation Rate of New Exposures --></label>
+        <name>LLC_BI__Capital_Allocation_Rate_of_New_Exposures__c</name>
+    </fields>
+    <fields>
+        <label><!-- Committed Affiliated Exposure --></label>
+        <name>LLC_BI__Committed_Affiliated_Exposure__c</name>
+    </fields>
+    <fields>
+        <help><!-- This field is used to report Committed Direct Exposure to the Product Package. --></help>
+        <label><!-- Committed Direct Exposure --></label>
+        <name>LLC_BI__Committed_Direct_Exposure__c</name>
+    </fields>
+    <fields>
+        <help><!-- This field is used to report Committed Indirect Exposure to the Product Package. --></help>
+        <label><!-- Committed Indirect Exposure --></label>
+        <name>LLC_BI__Committed_Indirect_Exposure__c</name>
+    </fields>
+    <fields>
+        <help><!-- The cost of deposit capital for new deposits in the deal an FI originates outside of nCino. --></help>
+        <label><!-- Cost of New Deposit Capital --></label>
+        <name>LLC_BI__Cost_Of_New_Deposit_Capital_Percent__c</name>
+    </fields>
+    <fields>
+        <help><!-- The approximate cost of capital percentage for all new treasury exposure being originated in the deal outside of nCino. nCino recommends using the same cost of capital rate used in for loans. --></help>
+        <label><!-- Cost of Capital of New Exposures --></label>
+        <name>LLC_BI__Cost_of_Capital_of_New_Exposures__c</name>
+    </fields>
+    <fields>
+        <label><!-- Credit Memo --></label>
+        <name>LLC_BI__Credit_Memo__c</name>
+        <relationshipLabel><!-- Product Packages --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Deal Type --></label>
+        <name>LLC_BI__Deal_Type__c</name>
+        <picklistValues>
+            <masterLabel>Handover Loans</masterLabel>
+            <translation><!-- Handover Loans --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Loan Onboarding</masterLabel>
+            <translation><!-- Loan Onboarding --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- This field is used to determine the default landing page for this product package within the nCino User Interface. --></help>
+        <label><!-- Default App --></label>
+        <name>LLC_BI__Default_App__c</name>
+    </fields>
+    <fields>
+        <help><!-- The approximate reserve rate for deposit balances to be held on the balance sheet. --></help>
+        <label><!-- Deposit Reserve Rate --></label>
+        <name>LLC_BI__Deposit_Reserve_Rate__c</name>
+    </fields>
+    <fields>
+        <label><!-- Description --></label>
+        <name>LLC_BI__Description__c</name>
+    </fields>
+    <fields>
+        <help><!-- The approximate expected loss rate for any new treasury exposures an FI originates in the deal outside of nCino. This value should represent an average blended rate of PD &amp; LGD. --></help>
+        <label><!-- Expected Loss Rate of New Exposures --></label>
+        <name>LLC_BI__Expected_Loss_Rate_of_New_Exposures__c</name>
+    </fields>
+    <fields>
+        <help><!-- The expected term in months for new deposit products an FI originates in the deal outside of nCino. --></help>
+        <label><!-- Expected Term of New Deposit Products --></label>
+        <name>LLC_BI__Expected_Term_of_New_Deposit_Products__c</name>
+    </fields>
+    <fields>
+        <help><!-- The expected or average term in months for new treasury service products an FI originates in the deal outside of nCino. --></help>
+        <label><!-- Expected Term of New Treasury Services --></label>
+        <name>LLC_BI__Expected_Term_of_New_Treasury_Services__c</name>
+    </fields>
+    <fields>
+        <help><!-- Users populate this field with the expected utilization % of new credit exposure for applicable treasury service products an FI originates outside of nCino. --></help>
+        <label><!-- Expected Utilization of New Exposure --></label>
+        <name>LLC_BI__Expected_Utilization_of_New_Exposure__c</name>
+    </fields>
+    <fields>
+        <help><!-- Provide context and other supporting information about the client and their financial situation. --></help>
+        <label><!-- Handover Information --></label>
+        <name>LLC_BI__Handover_Information__c</name>
+    </fields>
+    <fields>
+        <label><!-- Handover Type --></label>
+        <name>LLC_BI__Handover_Type__c</name>
+        <picklistValues>
+            <masterLabel>Distressed Loans</masterLabel>
+            <translation><!-- Distressed Loans --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Has Leases --></label>
+        <name>LLC_BI__Has_Leases__c</name>
+    </fields>
+    <fields>
+        <label><!-- Has Syndicated Loans --></label>
+        <name>LLC_BI__Has_Syndicated_Loans__c</name>
+    </fields>
+    <fields>
+        <label><!-- Last Exposure Calculation Date --></label>
+        <name>LLC_BI__Last_Exposure_Calc_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Last Review Date --></label>
+        <name>LLC_BI__Last_Review_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Number of Loan Facilities --></label>
+        <name>LLC_BI__Loan_Facilities_Count__c</name>
+    </fields>
+    <fields>
+        <help><!-- Use this field to determine the approximate blended rate of new interest-bearing products an FI originates in the deal outside of nCino. --></help>
+        <label><!-- New Deposit Product Rate --></label>
+        <name>LLC_BI__New_Deposit_Blended_Rate__c</name>
+    </fields>
+    <fields>
+        <help><!-- The approximate reserve rate for deposit balances to be held on the balance sheet. This value reflects a FTP or cost of funds that is confirmed with the FI. --></help>
+        <label><!-- New Deposit Revenue Rate --></label>
+        <name>LLC_BI__New_Deposit_Revenue_Rate__c</name>
+    </fields>
+    <fields>
+        <help><!-- Use this field to indicate any additional interest-bearing deposit account balance for all new deposit products an FI originates in the deal outside of nCino. --></help>
+        <label><!-- New Interest Bearing Deposit Balance --></label>
+        <name>LLC_BI__New_Interest_Bearing_Deposit_Balance__c</name>
+    </fields>
+    <fields>
+        <label><!-- New Money --></label>
+        <name>LLC_BI__New_Money__c</name>
+    </fields>
+    <fields>
+        <help><!-- The additional monthly income of all treasury products (net of ECR) in the deal that an FI originates outside of nCino. --></help>
+        <label><!-- New Monthly Treasury Income --></label>
+        <name>LLC_BI__New_Monthly_Treasury_Income__c</name>
+    </fields>
+    <fields>
+        <help><!-- Use this field to indicate any additional non-interest-bearing deposit account balance for all new deposit products an FI originates in the deal outside of nCino. --></help>
+        <label><!-- New Non-Interest Bearing Deposit Balance --></label>
+        <name>LLC_BI__New_Non_Interest_Bearing_Deposit_Balance__c</name>
+    </fields>
+    <fields>
+        <help><!-- This field indicates the sum of total credit exposure for any new treasury service products in the deal an FI originates outside of nCino. --></help>
+        <label><!-- New Treasury Credit Exposure --></label>
+        <name>LLC_BI__New_Treasury_Credit_Exposure__c</name>
+    </fields>
+    <fields>
+        <help><!-- Populate this field with the sum of any one-time fees associated with treasury products an FI originates in the deal outside of nCino. Exclusive of recurring fees captured in New Monthly Treasury Income. --></help>
+        <label><!-- New Treasury One Time Fee Amount --></label>
+        <name>LLC_BI__New_Treasury_One_Time_Fee_Amount__c</name>
+    </fields>
+    <fields>
+        <label><!-- -D Next Annual Review --></label>
+        <name>LLC_BI__Next_Annual_Review__c</name>
+    </fields>
+    <fields>
+        <label><!-- Next Review Date --></label>
+        <name>LLC_BI__Next_Review_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Outstanding --></label>
+        <name>LLC_BI__Outstanding__c</name>
+    </fields>
+    <fields>
+        <label><!-- Primary Entity --></label>
+        <name>LLC_BI__Primary_Entity__c</name>
+        <relationshipLabel><!-- Primary Product Packages --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Primary Officer --></label>
+        <name>LLC_BI__Primary_Officer__c</name>
+        <relationshipLabel><!-- Product Packages (Primary Officer) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Propagate Action --></label>
+        <name>LLC_BI__Propagate_Action__c</name>
+    </fields>
+    <fields>
+        <label><!-- Proposed Affiliated Exposure --></label>
+        <name>LLC_BI__Proposed_Affiliated_Exposure__c</name>
+    </fields>
+    <fields>
+        <help><!-- This field is used to report Proposed Direct Exposure to the Product Package. --></help>
+        <label><!-- Proposed Direct Exposure --></label>
+        <name>LLC_BI__Proposed_Direct_Exposure__c</name>
+    </fields>
+    <fields>
+        <help><!-- This field is used to report Proposed Indirect Exposure to the Product Package. --></help>
+        <label><!-- Proposed Indirect Exposure --></label>
+        <name>LLC_BI__Proposed_Indirect_Exposure__c</name>
+    </fields>
+    <fields>
+        <help><!-- Risk Weighted Assets percentage for any new treasury exposures an FI originates in the deal outside of nCino. The percentage could vary based on the mix of treasury products. --></help>
+        <label><!-- RWA Percentage for New Treasury Exposure --></label>
+        <name>LLC_BI__RWA_Percentage_for_New_Treasury_Exposure__c</name>
+    </fields>
+    <fields>
+        <label><!-- Reason for Handover --></label>
+        <name>LLC_BI__Reason_For_Handover__c</name>
+        <picklistValues>
+            <masterLabel>Covenant Breach</masterLabel>
+            <translation><!-- Covenant Breach --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Declining Industry Sector</masterLabel>
+            <translation><!-- Declining Industry Sector --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Financial Distress</masterLabel>
+            <translation><!-- Financial Distress --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Management Issue</masterLabel>
+            <translation><!-- Management Issue --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Other</masterLabel>
+            <translation><!-- Other --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Review Frequency --></label>
+        <name>LLC_BI__Review_Frequency__c</name>
+        <picklistValues>
+            <masterLabel>Annually</masterLabel>
+            <translation><!-- Annually --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Every 2 Months</masterLabel>
+            <translation><!-- Every 2 Months --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Monthly</masterLabel>
+            <translation><!-- Monthly --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Quarterly</masterLabel>
+            <translation><!-- Quarterly --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Semi-Annually</masterLabel>
+            <translation><!-- Semi-Annually --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Number of Reviewable Loan Facilities --></label>
+        <name>LLC_BI__Reviewable_Loan_Facilities_Count__c</name>
+    </fields>
+    <fields>
+        <label><!-- Risk Rating --></label>
+        <name>LLC_BI__Risk_Rating__c</name>
+        <picklistValues>
+            <masterLabel>1</masterLabel>
+            <translation><!-- 1 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>2</masterLabel>
+            <translation><!-- 2 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>3</masterLabel>
+            <translation><!-- 3 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>4</masterLabel>
+            <translation><!-- 4 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>5</masterLabel>
+            <translation><!-- 5 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>6</masterLabel>
+            <translation><!-- 6 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>7</masterLabel>
+            <translation><!-- 7 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>8</masterLabel>
+            <translation><!-- 8 --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Secondary Officer --></label>
+        <name>LLC_BI__Secondary_Officer__c</name>
+        <relationshipLabel><!-- Product Packages (Secondary Officer) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Stage --></label>
+        <name>LLC_BI__Stage__c</name>
+        <picklistValues>
+            <masterLabel>Application Processing</masterLabel>
+            <translation><!-- Application Processing --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Complete</masterLabel>
+            <translation><!-- Complete --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Credit Decisioning</masterLabel>
+            <translation><!-- Credit Decisioning --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Credit Underwriting</masterLabel>
+            <translation><!-- Credit Underwriting --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Qualification / Proposal</masterLabel>
+            <translation><!-- Qualification / Proposal --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Sales</masterLabel>
+            <translation><!-- Sales --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Status --></label>
+        <name>LLC_BI__Status__c</name>
+        <picklistValues>
+            <masterLabel>Approved</masterLabel>
+            <translation><!-- Approved --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Board of Directors Approved</masterLabel>
+            <translation><!-- Board of Directors Approved --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CBP RBP RCO Role Approved</masterLabel>
+            <translation><!-- CBP RBP RCO Role Approved --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CEO CCO CBO Role Approved</masterLabel>
+            <translation><!-- CEO CCO CBO Role Approved --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Charge-Off</masterLabel>
+            <translation><!-- Charge-Off --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Complete</masterLabel>
+            <translation><!-- Complete --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Declined</masterLabel>
+            <translation><!-- Declined --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Director Loan Committee Approved</masterLabel>
+            <translation><!-- Director Loan Committee Approved --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Hold</masterLabel>
+            <translation><!-- Hold --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>In Review</masterLabel>
+            <translation><!-- In Review --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Open</masterLabel>
+            <translation><!-- Open --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Paid-Off</masterLabel>
+            <translation><!-- Paid-Off --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>RBP RCO Role Approved</masterLabel>
+            <translation><!-- RBP RCO Role Approved --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>RCO Executive Team Role Approved</masterLabel>
+            <translation><!-- RCO Executive Team Role Approved --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Rework</masterLabel>
+            <translation><!-- Rework --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Withdrawn</masterLabel>
+            <translation><!-- Withdrawn --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label>Total Borrower Exposure</label>
+        <name>LLC_BI__TBE__c</name>
+    </fields>
+    <fields>
+        <label>Total Credit Exposure</label>
+        <name>LLC_BI__TCE__c</name>
+    </fields>
+    <fields>
+        <label>Total Obligor Exposure</label>
+        <name>LLC_BI__TOE__c</name>
+    </fields>
+    <fields>
+        <label><!-- Total Affiliated Exposure --></label>
+        <name>LLC_BI__Total_Affiliated_Exposure__c</name>
+    </fields>
+    <fields>
+        <label><!-- Total Allocated Syndication Amount --></label>
+        <name>LLC_BI__Total_Allocated_Syndication_Amount__c</name>
+    </fields>
+    <fields>
+        <help><!-- This field is used to report Total Direct Exposure to the Product Package. --></help>
+        <label><!-- Total Direct Exposure --></label>
+        <name>LLC_BI__Total_Direct_Exposure__c</name>
+    </fields>
+    <fields>
+        <help><!-- This field is used to report Total Indirect Exposure to the Product Package. --></help>
+        <label><!-- Total Indirect Exposure --></label>
+        <name>LLC_BI__Total_Indirect_Exposure__c</name>
+    </fields>
+    <fields>
+        <label><!-- Total Loan Facilities Amount --></label>
+        <name>LLC_BI__Total_Loan_Facilities_Amount__c</name>
+    </fields>
+    <fields>
+        <label><!-- Total Loan Facilities Exposure --></label>
+        <name>LLC_BI__Total_Loan_Facilities_Exposure__c</name>
+    </fields>
+    <fields>
+        <help><!-- This field is used for Total Net New Funds for any renewals or modifications in this Product Package. --></help>
+        <label><!-- Total Net New Funds --></label>
+        <name>LLC_BI__Total_Net_New_Funds__c</name>
+    </fields>
+    <fields>
+        <label><!-- Total Syndicated Facility Amount --></label>
+        <name>LLC_BI__Total_Syndicated_Facility_Amount__c</name>
+    </fields>
+    <fields>
+        <help><!-- The approximate annual operating cost in dollars for new treasury service products an FI originates in the deal outside of nCino. --></help>
+        <label><!-- Treasury Annual Operating Cost --></label>
+        <name>LLC_BI__Treasury_Annual_Operating_Cost__c</name>
+    </fields>
+    <fields>
+        <label><!-- Unused --></label>
+        <name>LLC_BI__Unused__c</name>
+    </fields>
+    <fields>
+        <label><!-- lookupKey --></label>
+        <name>LLC_BI__lookupKey__c</name>
+    </fields>
+    <recordTypes>
+        <description><!-- This record type should be used in tandem with the Deal Proposal functionality. --></description>
+        <label><!-- Deal Proposal --></label>
+        <name>LLC_BI__Deal_Proposal</name>
+    </recordTypes>
+    <recordTypes>
+        <description><!-- Record Type for Treasury Maintenance Change Summary --></description>
+        <label><!-- Treasury Maintenance --></label>
+        <name>LLC_BI__Treasury_Maintenance</name>
+    </recordTypes>
+    <recordTypes>
+        <description><!-- This has been created as nCino PP UI --></description>
+        <label><!-- nCino Product Package --></label>
+        <name>PP_nCino_Product_Package</name>
+    </recordTypes>
+    <recordTypes>
+        <description><!-- Used for Product packages having Treasury services record --></description>
+        <label><!-- nCino TS Product Package --></label>
+        <name>PP_nCino_TS_Product_Package</name>
+    </recordTypes>
+    <validationRules>
+        <errorMessage><!-- Borrower&apos;s credit report has not been pulled in the last 90 days. Please pull credit from the Account record. --></errorMessage>
+        <name>VR_Borrower_CreditReport_90Days</name>
+    </validationRules>
+    <webLinks>
+        <label><!-- Credit_Memo --></label>
+        <name>Credit_Memo</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Credit_Memo --></label>
+        <name>LLC_BI__Credit_Memo</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Mass_Actions --></label>
+        <name>LLC_BI__Mass_Actions</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- New_Facility --></label>
+        <name>LLC_BI__New_Facility</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- renew_loan --></label>
+        <name>LLC_BI__renew_loan</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- PP_Generate_Credit_Memo --></label>
+        <name>PP_Generate_Credit_Memo</name>
+    </webLinks>
+</CustomObjectTranslation>

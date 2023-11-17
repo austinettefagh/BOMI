@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Queue xmlns="http://soap.sforce.com/2006/04/metadata">
+    <doesSendEmailToMembers>true</doesSendEmailToMembers>
+    <name>Partner with Us leads</name>
+    <queueMembers>
+        <publicGroups>
+            <publicGroup>Partner_with_Us_leads</publicGroup>
+        </publicGroups>
+        <users>
+            <user>jbuck@bankofmissouri.com</user>
+            <user>smoore@bankofmissouri.com</user>
+        </users>
+    </queueMembers>
+    <queueSobject>
+        <sobjectType>Lead</sobjectType>
+    </queueSobject>
+</Queue>

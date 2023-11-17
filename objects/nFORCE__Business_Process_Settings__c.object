@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customSettingsType>Hierarchy</customSettingsType>
+    <description>This object provides administrators the ability to specify business process settings.</description>
+    <enableFeeds>false</enableFeeds>
+    <fields>
+        <fullName>nFORCE__Apex_Jobs_Batch_Size__c</fullName>
+        <defaultValue>200</defaultValue>
+        <deprecated>false</deprecated>
+        <description>Administrators populate this optional number field to specify the number of records to submit per batch. By default, it is 200.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>This specifies the number of records to submit per batch.</inlineHelpText>
+        <label>Apex Jobs Batch Size</label>
+        <precision>3</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>nFORCE__Disable_New_Business_Activities__c</fullName>
+        <defaultValue>false</defaultValue>
+        <deprecated>false</deprecated>
+        <description>Administrators populate this optional checkbox field that, when set to true, disables the system&apos;s ability to process new business activities. By default, it is false.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Select to disable new business activities.</inlineHelpText>
+        <label>Disable New Business Activities</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>nFORCE__Disable_Triggers__c</fullName>
+        <defaultValue>false</defaultValue>
+        <deprecated>false</deprecated>
+        <description>Administrators populate this optional checkbox field that, when set to true, disables the execution of business process triggers. By default, it is false.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Select to disable triggers.</inlineHelpText>
+        <label>Disable Triggers</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>nFORCE__Disable_Validation_Rules__c</fullName>
+        <defaultValue>false</defaultValue>
+        <deprecated>false</deprecated>
+        <description>The user manually populates this optional checkbox to disable validation rules on the name fields for business activity and business process. By default, it is false.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>This checkbox field indicates if the system should disable validation rules for business activity and business process.</inlineHelpText>
+        <label>Disable Validation Rules</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>nFORCE__Enable_Logging__c</fullName>
+        <defaultValue>false</defaultValue>
+        <deprecated>false</deprecated>
+        <description>Enable logging during the BPO Business Process. The Enable_Logging__c field in the Business_Process__c custom object will take precendence over this value.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Check this box to enable logging during your BPO Business Process.</inlineHelpText>
+        <label>Enable Logging</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>nFORCE__Enable_Method_Logging__c</fullName>
+        <defaultValue>false</defaultValue>
+        <deprecated>false</deprecated>
+        <description>Enable logging upon method entrance and exit. The Enable_Method_Logging__c field in the Business_Process__c custom object will take precendence over this value.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Check this box to enable logging upon method entrance and exiting. NOTE: This will greatly increase the size of the logs included in your output.</inlineHelpText>
+        <label>Enable Method Logging</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>nFORCE__Enable_Telemetry__c</fullName>
+        <defaultValue>false</defaultValue>
+        <deprecated>false</deprecated>
+        <description>Administrators populate this optional checkbox field that, when set to true, enables the use of telemetry. The default is false.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Select to enable telemetry.</inlineHelpText>
+        <label>Enable Telemetry</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>nFORCE__Enabled_Telemetry_Keys__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Administrators populate this optional text field with the comma-delimited list of telemetry keys they want the system to capture.</description>
+        <encryptionScheme>None</encryptionScheme>
+        <externalId>false</externalId>
+        <inlineHelpText>Enter the comma-delimited list of keys to capture.</inlineHelpText>
+        <label>Enabled Telemetry Keys</label>
+        <length>255</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>nFORCE__Encrypt_Business_Activity_State__c</fullName>
+        <defaultValue>true</defaultValue>
+        <deprecated>false</deprecated>
+        <description>Administrators populate this optional checkbox field that, when set to true, encrypts the state data of the business activities. The default is true. The Encrypt_Business_Activity_State__c field in the Business_Process__c custom object will take precendence over this value.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Select to encrypt the state data of the business activities.</inlineHelpText>
+        <label>Encrypt Business Activity State</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>nFORCE__Encrypt_Dynamic_Configuration__c</fullName>
+        <defaultValue>false</defaultValue>
+        <deprecated>false</deprecated>
+        <description>Administrators populate this optional checkbox field that, when set to true, encrypts the dynamic configuration provided at runtime for the business process interaction. The default is false.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Select to encrypt the dynamic configuration provided at runtime for the business process interaction.</inlineHelpText>
+        <label>Encrypt Dynamic Configuration</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>nFORCE__Include_Logs_In_Output__c</fullName>
+        <defaultValue>false</defaultValue>
+        <deprecated>false</deprecated>
+        <description>Enable logs in output. The Include_Logs_In_Output__c field in the Business_Process__c custom object will take precendence over this value.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Check this box to enable logs in output.</inlineHelpText>
+        <label>Include Logs in Output</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>nFORCE__Log_Level_To_Capture__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Select the appropriate log level to capture for this process. - NONE, ERROR, WARN, INFO, DEBUG, FINE, FINER, FINEST. The Log_Level_To_Capture__c field in the Business_Process__c custom object will take precendence over this value.</description>
+        <encryptionScheme>None</encryptionScheme>
+        <externalId>false</externalId>
+        <inlineHelpText>Using this optional field, Administrators can select a log level to capture for the process to communicate what occurred during the execution. The options available are NONE, ERROR, WARN, INFO, DEBUG, FINE, FINER, FINEST.</inlineHelpText>
+        <label>Log Level To Capture</label>
+        <length>6</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>nFORCE__Log_Provider__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Administrators populate this optional text field with the fully qualified Class Name for the ALogProvider extending class. The Log_Provider__c field in the Business_Process__c custom object will take precendence over this value.</description>
+        <encryptionScheme>None</encryptionScheme>
+        <externalId>false</externalId>
+        <inlineHelpText>Enter the fully-qualified class name for the ALogProvider extending class.</inlineHelpText>
+        <label>Log Provider</label>
+        <length>255</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>nFORCE__Use_Platform_Events__c</fullName>
+        <defaultValue>false</defaultValue>
+        <deprecated>false</deprecated>
+        <description>--DEPRECATED-- Administrators populate this required checkbox field that, when set to true, enables the use of platform events. By default, it is false.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Select to use platform events. If this reaches daily platform event limits, an admin needs to disable this field.</inlineHelpText>
+        <label>-D Use Platform Events</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <label>Business Process Settings</label>
+    <visibility>Public</visibility>
+</CustomObject>

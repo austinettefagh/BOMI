@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fieldSets>
+        <label><!-- UI Config Builder --></label>
+        <name>nFORCE__UI_Config_Builder</name>
+    </fieldSets>
+    <fields>
+        <label><!-- Disable Print --></label>
+        <name>nFORCE__Disable_Print__c</name>
+    </fields>
+    <fields>
+        <help><!-- Select to hide the cancel button. --></help>
+        <label><!-- Disable Read-Only View --></label>
+        <name>nFORCE__Disable_Read_Only_View__c</name>
+    </fields>
+    <fields>
+        <label><!-- Show Context Object Name --></label>
+        <name>nFORCE__Show_Link_To_Context_Object__c</name>
+    </fields>
+    <fields>
+        <label><!-- lookupKey --></label>
+        <name>nFORCE__lookupKey__c</name>
+    </fields>
+    <fields>
+        <help><!-- Enter the URL for the image. --></help>
+        <label><!-- Add Multi Record Display Icon --></label>
+        <name>nPortal__Add_Multi_Record_Display_Icon__c</name>
+    </fields>
+    <fields>
+        <help><!-- Enter the maximum number of records that users can add. --></help>
+        <label><!-- Maximum Number of Records --></label>
+        <name>nPortal__Maximum_Number_of_Records__c</name>
+    </fields>
+    <fields>
+        <help><!-- Enter the minimum number of records that users can add. --></help>
+        <label><!-- Minimum Number of Records --></label>
+        <name>nPortal__Minimum_Number_of_Records__c</name>
+    </fields>
+    <fields>
+        <help><!-- Enter a header name for the record. --></help>
+        <label><!-- OA Review Multiple Record Entry Label --></label>
+        <name>nPortal__OA_Review_Multiple_Record_Entry_Label__c</name>
+    </fields>
+</CustomObjectTranslation>

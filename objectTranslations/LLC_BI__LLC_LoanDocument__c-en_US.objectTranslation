@@ -1,0 +1,751 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>LLC_LoanDocument</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>LLC_LoanDocument</value>
+    </caseValues>
+    <fieldSets>
+        <label><!-- Add New Fields --></label>
+        <name>NDOC__DocMan_Add_New_Fields</name>
+    </fieldSets>
+    <fieldSets>
+        <label><!-- DocMan Fields --></label>
+        <name>NDOC__DocMan_Fields</name>
+    </fieldSets>
+    <fieldSets>
+        <label><!-- Loan DocMan Columns --></label>
+        <name>NDOC__DocMan_Loan_Columns</name>
+    </fieldSets>
+    <fieldSets>
+        <label><!-- LoanDocument Bulk Update Fields --></label>
+        <name>NDOC__LoanDocument_Bulk_Update_Fields</name>
+    </fieldSets>
+    <fieldSets>
+        <label><!-- LoanDocument Bulk Update Summary --></label>
+        <name>NDOC__LoanDocument_Bulk_Update_Summary</name>
+    </fieldSets>
+    <fieldSets>
+        <label><!-- TEST_LOAN_ADDITIONAL_FIELDS --></label>
+        <name>NDOC__TEST_LOAN_ADDITIONAL_FIELDS</name>
+    </fieldSets>
+    <fields>
+        <label><!-- Category --></label>
+        <name>CF_Category__c</name>
+    </fields>
+    <fields>
+        <label><!-- Document Date --></label>
+        <name>CF_Document_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Exception Tracking Status --></label>
+        <name>CF_Exception_Tracking_Status__c</name>
+        <picklistValues>
+            <masterLabel>Compliance Approved</masterLabel>
+            <translation><!-- Compliance Approved --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Compliance Exception - Corrected Document</masterLabel>
+            <translation><!-- Compliance Exception - Corrected Document --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Compliance Exception - Date Required</masterLabel>
+            <translation><!-- Compliance Exception - Date Required --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Compliance Exception - Expired Document</masterLabel>
+            <translation><!-- Compliance Exception - Expired Document --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Compliance Exception - Missing Document</masterLabel>
+            <translation><!-- Compliance Exception - Missing Document --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Compliance Exception - Notary Required</masterLabel>
+            <translation><!-- Compliance Exception - Notary Required --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Compliance Exception - Officer Comments</masterLabel>
+            <translation><!-- Compliance Exception - Officer Comments --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Compliance Exception - Original Document</masterLabel>
+            <translation><!-- Compliance Exception - Original Document --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Compliance Exception - Release Required</masterLabel>
+            <translation><!-- Compliance Exception - Release Required --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Compliance Exception - Signature Required</masterLabel>
+            <translation><!-- Compliance Exception - Signature Required --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Compliance to Review</masterLabel>
+            <translation><!-- Compliance to Review --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Requested</masterLabel>
+            <translation><!-- Requested --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Trailing Document</masterLabel>
+            <translation><!-- Trailing Document --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Document Placeholder Name --></label>
+        <name>CF_Name__c</name>
+    </fields>
+    <fields>
+        <label><!-- SBA Error Message --></label>
+        <name>EtranDocErrorMessage__c</name>
+    </fields>
+    <fields>
+        <label><!-- SBA Status --></label>
+        <name>EtranDocStatus__c</name>
+        <picklistValues>
+            <masterLabel>Error</masterLabel>
+            <translation><!-- Error --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Ready for eTran</masterLabel>
+            <translation><!-- Ready for eTran --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Sent to eTran</masterLabel>
+            <translation><!-- Sent to eTran --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- SBA Document Type Code --></label>
+        <name>EtranDocumentTypeCode__c</name>
+        <picklistValues>
+            <masterLabel>Signed SBA Form 912</masterLabel>
+            <translation><!-- Signed SBA Form 912 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>T1 - SBA Form 1919 - Borrower&apos;s Information</masterLabel>
+            <translation><!-- T1 - SBA Form 1919 - Borrower&apos;s Information --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>T1 - SBA Form 1920 - Lender&apos;s Application</masterLabel>
+            <translation><!-- T1 - SBA Form 1920 - Lender&apos;s Application --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>T10 - Articles of Organization</masterLabel>
+            <translation><!-- T10 - Articles of Organization --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>T10 - CAIVRS Report</masterLabel>
+            <translation><!-- T10 - CAIVRS Report --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>T10 - Clearance Docs for Non-US Citizens</masterLabel>
+            <translation><!-- T10 - Clearance Docs for Non-US Citizens --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>T10 - Documentation of Lawsuits / Judgements / Bankruptcy</masterLabel>
+            <translation><!-- T10 - Documentation of Lawsuits / Judgements / Bankruptcy --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>T10 - Other Misc Document</masterLabel>
+            <translation><!-- T10 - Other Misc Document --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>T10 - SBA Form 159 - Fee Disclosure and Compensation Form</masterLabel>
+            <translation><!-- T10 - SBA Form 159 - Fee Disclosure and Compensation Form --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>T10 - SBA Form 159 - Itemization and Supporting Documentation</masterLabel>
+            <translation><!-- T10 - SBA Form 159 - Itemization and Supporting Documentation --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>T2 - Debt Schedule documents</masterLabel>
+            <translation><!-- T2 - Debt Schedule documents --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>T2 - Schedule of Collateral</masterLabel>
+            <translation><!-- T2 - Schedule of Collateral --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>T2 – Lender’s Credit Memo</masterLabel>
+            <translation><!-- T2 – Lender’s Credit Memo --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>T3 - Loan Authorization</masterLabel>
+            <translation><!-- T3 - Loan Authorization --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>T4 - Credit Bureau Report</masterLabel>
+            <translation><!-- T4 - Credit Bureau Report --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>T4 - SBA Form 413 - Personal Financial Statements</masterLabel>
+            <translation><!-- T4 - SBA Form 413 - Personal Financial Statements --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>T4 - SBA Form 912 - Statement of Personal History</masterLabel>
+            <translation><!-- T4 - SBA Form 912 - Statement of Personal History --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>T5 - Business Valuation</masterLabel>
+            <translation><!-- T5 - Business Valuation --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>T5 - Copies of Notes to be Refinanced</masterLabel>
+            <translation><!-- T5 - Copies of Notes to be Refinanced --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>T5 - List of all M being Purchased</masterLabel>
+            <translation><!-- T5 - List of all M being Purchased --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>T5 - Refi Transcript of Account</masterLabel>
+            <translation><!-- T5 - Refi Transcript of Account --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>T6 - Business Financials</masterLabel>
+            <translation><!-- T6 - Business Financials --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>T6 - Business Forecast</masterLabel>
+            <translation><!-- T6 - Business Forecast --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>T6 - Current A/R and A/P</masterLabel>
+            <translation><!-- T6 - Current A/R and A/P --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>T7 - Affiliate Tax Returns</masterLabel>
+            <translation><!-- T7 - Affiliate Tax Returns --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>T8 - Franchise Documents</masterLabel>
+            <translation><!-- T8 - Franchise Documents --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>T8 - Purchase Agreement (Business/Stock/Asset)</masterLabel>
+            <translation><!-- T8 - Purchase Agreement (Business/Stock/Asset) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>T8 - Purchase Agreement (Real Estate)</masterLabel>
+            <translation><!-- T8 - Purchase Agreement (Real Estate) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>T9 - Enviromental Investion Report</masterLabel>
+            <translation><!-- T9 - Enviromental Investion Report --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>T9 - Lease Agreement</masterLabel>
+            <translation><!-- T9 - Lease Agreement --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>T9 - M Appraisal Documents</masterLabel>
+            <translation><!-- T9 - M Appraisal Documents --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>T9 - Real Estate Appraisal</masterLabel>
+            <translation><!-- T9 - Real Estate Appraisal --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- Semicolon delimited list of roles that are allowed to approve the document. If left blank all roles can approve the document. --></help>
+        <label><!-- Approval Roles --></label>
+        <name>LLC_BI__Approval_Roles__c</name>
+    </fields>
+    <fields>
+        <label><!-- Auto E-Sign --></label>
+        <name>LLC_BI__Auto_Esign__c</name>
+    </fields>
+    <fields>
+        <label><!-- Content Management Key --></label>
+        <name>LLC_BI__Content_Management_Key__c</name>
+    </fields>
+    <fields>
+        <label><!-- -D Customer Portal Doc --></label>
+        <name>LLC_BI__Customer_Portal_Doc__c</name>
+    </fields>
+    <fields>
+        <help><!-- This system-populated field displays a document’s source. --></help>
+        <label><!-- Document Source --></label>
+        <name>LLC_BI__Document_Source__c</name>
+        <picklistValues>
+            <masterLabel>Doc Prep</masterLabel>
+            <translation><!-- Doc Prep --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Document Store Index --></label>
+        <name>LLC_BI__Document_Store_Index__c</name>
+        <relationshipLabel><!-- Loan Documents --></relationshipLabel>
+    </fields>
+    <fields>
+        <help><!-- Field should be marked to true if a compatible file should be downloaded as a PDF. --></help>
+        <label><!-- Download As PDF --></label>
+        <name>LLC_BI__Download_As_PDF__c</name>
+    </fields>
+    <fields>
+        <help><!-- This system-populated field automatically displays the document due date and time. --></help>
+        <label><!-- Due Date Time --></label>
+        <name>LLC_BI__Due_Date_Time__c</name>
+    </fields>
+    <fields>
+        <help><!-- Select this field to flag the e-vault placeholder as to-send. --></help>
+        <label><!-- E-Vault Placeholder --></label>
+        <name>LLC_BI__E_Vault__c</name>
+    </fields>
+    <fields>
+        <help><!-- This system-populated field automatically displays the document exception date and time. --></help>
+        <label><!-- Exception Date Time --></label>
+        <name>LLC_BI__Exception_Date_Time__c</name>
+    </fields>
+    <fields>
+        <label><!-- Has File --></label>
+        <name>LLC_BI__Has_File__c</name>
+    </fields>
+    <fields>
+        <label><!-- Loan --></label>
+        <name>LLC_BI__Loan__c</name>
+        <relationshipLabel><!-- LLC_LoanDocument --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- ownerGroup --></label>
+        <name>LLC_BI__Owner__c</name>
+        <picklistValues>
+            <masterLabel>Admin</masterLabel>
+            <translation><!-- Admin --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Attorney</masterLabel>
+            <translation><!-- Attorney --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Closer</masterLabel>
+            <translation><!-- Closer --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Compliance</masterLabel>
+            <translation><!-- Compliance --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Construction</masterLabel>
+            <translation><!-- Construction --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Legal</masterLabel>
+            <translation><!-- Legal --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Lender</masterLabel>
+            <translation><!-- Lender --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Lender/Admin</masterLabel>
+            <translation><!-- Lender/Admin --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Loan Ops</masterLabel>
+            <translation><!-- Loan Ops --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Processor</masterLabel>
+            <translation><!-- Processor --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Servicing</masterLabel>
+            <translation><!-- Servicing --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Special Assets</masterLabel>
+            <translation><!-- Special Assets --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Placeholder Viewer Groups --></label>
+        <name>LLC_BI__Placeholder_Viewer_Groups__c</name>
+    </fields>
+    <fields>
+        <label><!-- Placeholder Viewer Profiles --></label>
+        <name>LLC_BI__Placeholder_Viewer_Profiles__c</name>
+    </fields>
+    <fields>
+        <label><!-- Portal Doc Description --></label>
+        <name>LLC_BI__Portal_Doc_Description__c</name>
+    </fields>
+    <fields>
+        <label><!-- Portal Doc Name --></label>
+        <name>LLC_BI__Portal_Doc_Name__c</name>
+    </fields>
+    <fields>
+        <label><!-- -D Portal Doc Type --></label>
+        <name>LLC_BI__Portal_Doc_Type__c</name>
+        <picklistValues>
+            <masterLabel>A</masterLabel>
+            <translation><!-- A --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>R</masterLabel>
+            <translation><!-- R --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>S</masterLabel>
+            <translation><!-- S --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>X</masterLabel>
+            <translation><!-- X --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Portal Enabled --></label>
+        <name>LLC_BI__Portal_Enabled__c</name>
+    </fields>
+    <fields>
+        <help><!-- This system-populated field automatically displays the Customer Portal document rejection date and time. --></help>
+        <label><!-- Portal Rejection Date Time --></label>
+        <name>LLC_BI__Portal_Rejection_Date_Time__c</name>
+    </fields>
+    <fields>
+        <label><!-- Portal Rejection Date --></label>
+        <name>LLC_BI__Portal_Rejection_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Portal Rejection Reason --></label>
+        <name>LLC_BI__Portal_Rejection_Reason__c</name>
+        <picklistValues>
+            <masterLabel>Incomplete</masterLabel>
+            <translation><!-- Incomplete --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Incorrect Information</masterLabel>
+            <translation><!-- Incorrect Information --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Missing Signature</masterLabel>
+            <translation><!-- Missing Signature --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Out of Date</masterLabel>
+            <translation><!-- Out of Date --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Unreadable</masterLabel>
+            <translation><!-- Unreadable --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Wrong File</masterLabel>
+            <translation><!-- Wrong File --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Portal Upload Date --></label>
+        <name>LLC_BI__Portal_Upload_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Uploaded By --></label>
+        <name>LLC_BI__Portal_Uploaded_By__c</name>
+        <relationshipLabel><!-- LLC_LoanDocument (Uploaded By) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Requirement --></label>
+        <name>LLC_BI__Requirement__c</name>
+        <relationshipLabel><!-- LLC LoanDocuments --></relationshipLabel>
+    </fields>
+    <fields>
+        <help><!-- Semicolon delimited list of roles that are allowed to view the document. If blank all roles can view the document. --></help>
+        <label><!-- Viewer Roles --></label>
+        <name>LLC_BI__Viewer_Roles__c</name>
+    </fields>
+    <fields>
+        <label><!-- Approval Date --></label>
+        <name>LLC_BI__approvalDate__c</name>
+    </fields>
+    <fields>
+        <label><!-- Approved By --></label>
+        <name>LLC_BI__approvedBy__c</name>
+        <relationshipLabel><!-- LLC_LoanDocument (Approved By) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Current Attachment Id --></label>
+        <name>LLC_BI__attachmentId__c</name>
+    </fields>
+    <fields>
+        <label><!-- Closing Checklist --></label>
+        <name>LLC_BI__closingChecklist__c</name>
+        <relationshipLabel><!-- LLC_LoanDocument --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Comments --></label>
+        <name>LLC_BI__comments__c</name>
+    </fields>
+    <fields>
+        <label><!-- Date --></label>
+        <name>LLC_BI__date__c</name>
+    </fields>
+    <fields>
+        <label><!-- DocClass --></label>
+        <name>LLC_BI__docClass__c</name>
+        <relationshipLabel><!-- LLC_LoanDocument --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- DocManager --></label>
+        <name>LLC_BI__docManager__c</name>
+        <relationshipLabel><!-- LLC_LoanDocument --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- DocTab --></label>
+        <name>LLC_BI__docTab__c</name>
+        <relationshipLabel><!-- LLC_LoanDocument --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Category --></label>
+        <name>LLC_BI__docType__c</name>
+        <relationshipLabel><!-- LLC_LoanDocument --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- -D Due Days Prior --></label>
+        <name>LLC_BI__dueDaysPrior__c</name>
+    </fields>
+    <fields>
+        <label><!-- Exception Date --></label>
+        <name>LLC_BI__exceptionDate__c</name>
+    </fields>
+    <fields>
+        <label><!-- File Size --></label>
+        <name>LLC_BI__fileSize__c</name>
+    </fields>
+    <fields>
+        <label><!-- -D First Review --></label>
+        <name>LLC_BI__firstReview__c</name>
+    </fields>
+    <fields>
+        <label><!-- Help Text --></label>
+        <name>LLC_BI__helpText__c</name>
+    </fields>
+    <fields>
+        <label><!-- Directory --></label>
+        <name>LLC_BI__isDirectory__c</name>
+    </fields>
+    <fields>
+        <label><!-- Mime Type --></label>
+        <name>LLC_BI__mimeType__c</name>
+    </fields>
+    <fields>
+        <label><!-- ownerObjectId --></label>
+        <name>LLC_BI__ownerObjectId__c</name>
+    </fields>
+    <fields>
+        <label><!-- Parent --></label>
+        <name>LLC_BI__parent__c</name>
+        <relationshipLabel><!-- LLC_LoanDocuments --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Priority --></label>
+        <name>LLC_BI__priority__c</name>
+        <picklistValues>
+            <masterLabel>Critical</masterLabel>
+            <translation><!-- Critical --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>High</masterLabel>
+            <translation><!-- High --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Low</masterLabel>
+            <translation><!-- Low --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Medium</masterLabel>
+            <translation><!-- Medium --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Review Date --></label>
+        <name>LLC_BI__reviewDate__c</name>
+    </fields>
+    <fields>
+        <label><!-- Review Status --></label>
+        <name>LLC_BI__reviewStatus__c</name>
+        <picklistValues>
+            <masterLabel>Approved</masterLabel>
+            <translation><!-- Approved --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Awaiting Review</masterLabel>
+            <translation><!-- Awaiting Review --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>E-Signature Needed</masterLabel>
+            <translation><!-- E-Signature Needed --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>E-Signature Pending</masterLabel>
+            <translation><!-- E-Signature Pending --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Exception</masterLabel>
+            <translation><!-- Exception --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>In-File</masterLabel>
+            <translation><!-- In-File --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Open</masterLabel>
+            <translation><!-- Open --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Ready to Tag</masterLabel>
+            <translation><!-- Ready to Tag --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Rejected</masterLabel>
+            <translation><!-- Rejected --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Reviewed</masterLabel>
+            <translation><!-- Reviewed --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Signed</masterLabel>
+            <translation><!-- Signed --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Waived</masterLabel>
+            <translation><!-- Waived --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Reviewed By --></label>
+        <name>LLC_BI__reviewedBy__c</name>
+        <relationshipLabel><!-- LLC_LoanDocument (Reviewed By) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- -D Sort --></label>
+        <name>LLC_BI__sortOrder__c</name>
+    </fields>
+    <fields>
+        <label><!-- Version --></label>
+        <name>LLC_BI__version__c</name>
+    </fields>
+    <fields>
+        <label><!-- -D Account --></label>
+        <name>NDOC__Account__c</name>
+    </fields>
+    <fields>
+        <label><!-- Created_By_Closing_Checklist_Id --></label>
+        <name>NDOC__Created_By_Closing_Checklist_Id__c</name>
+    </fields>
+    <fields>
+        <label><!-- HasBeenWaived --></label>
+        <name>NDOC__HasBeenWaived__c</name>
+    </fields>
+    <fields>
+        <label><!-- Is Imported --></label>
+        <name>NDOC__Is_Imported__c</name>
+    </fields>
+    <fields>
+        <label><!-- is Staged --></label>
+        <name>NDOC__Is_Staged__c</name>
+    </fields>
+    <fields>
+        <label><!-- Legal Entity --></label>
+        <name>NDOC__Legal_entity__c</name>
+        <relationshipLabel><!-- LLC_LoanDocument --></relationshipLabel>
+    </fields>
+    <fields>
+        <help><!-- Semicolon delimited list of roles that are allowed to approve the document. If left blank all roles can approve the document. --></help>
+        <label><!-- Placeholder Approval Roles --></label>
+        <name>NDOC__Placeholder_Approval_Roles__c</name>
+    </fields>
+    <fields>
+        <label><!-- Placeholder Viewer Roles --></label>
+        <name>NDOC__Placeholder_Viewer_Roles__c</name>
+    </fields>
+    <fields>
+        <label><!-- Portal Rejection Comment --></label>
+        <name>NDOC__Portal_Rejection_Comment__c</name>
+        <picklistValues>
+            <masterLabel>The document you provided is missing a required signature. Please sign this document and upload again.</masterLabel>
+            <translation><!-- The document you provided is missing a required signature. Please sign this document and upload again. --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Related Generation Context Id --></label>
+        <name>NDOC__Related_Generation_Context_Id__c</name>
+    </fields>
+    <fields>
+        <label><!-- Trashed Date --></label>
+        <name>NDOC__Trashed_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Description --></label>
+        <name>NDOC__description__c</name>
+    </fields>
+    <fields>
+        <label><!-- File Name --></label>
+        <name>NDOC__fileName__c</name>
+    </fields>
+    <fields>
+        <label><!-- isTrash --></label>
+        <name>NDOC__isTrash__c</name>
+    </fields>
+    <fields>
+        <label><!-- Needed By Stage --></label>
+        <name>NDOC__neededByStage__c</name>
+        <picklistValues>
+            <masterLabel>Approval / Loan Committee</masterLabel>
+            <translation><!-- Approval / Loan Committee --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Booked</masterLabel>
+            <translation><!-- Booked --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Closing</masterLabel>
+            <translation><!-- Closing --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Complete</masterLabel>
+            <translation><!-- Complete --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Doc Prep</masterLabel>
+            <translation><!-- Doc Prep --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Doc Review</masterLabel>
+            <translation><!-- Doc Review --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Processing</masterLabel>
+            <translation><!-- Processing --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Proposal</masterLabel>
+            <translation><!-- Proposal --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Qualification / Application</masterLabel>
+            <translation><!-- Qualification / Application --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Underwriting</masterLabel>
+            <translation><!-- Underwriting --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Year --></label>
+        <name>NDOC__year__c</name>
+    </fields>
+    <nameFieldLabel>Document Placeholder Name</nameFieldLabel>
+    <startsWith>Consonant</startsWith>
+    <validationRules>
+        <errorMessage><!-- Please ensure the Document Date field has been updated to change the status --></errorMessage>
+        <name>CVR_Loan_Review_Status</name>
+    </validationRules>
+</CustomObjectTranslation>

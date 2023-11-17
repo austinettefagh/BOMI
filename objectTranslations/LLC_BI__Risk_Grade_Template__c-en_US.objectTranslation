@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <label><!-- Is Template --></label>
+        <name>LLC_BI__Is_Template__c</name>
+    </fields>
+    <fields>
+        <label><!-- Risk Rating Review --></label>
+        <name>LLC_BI__Risk_Rating_Review__c</name>
+        <relationshipLabel><!-- Risk Grade Template --></relationshipLabel>
+    </fields>
+    <fields>
+        <help><!-- If checked then the final risk grade will be a round number. If unchecked then the final risk grade will be a decimal number. --></help>
+        <label><!-- Round Final Risk Grade --></label>
+        <name>LLC_BI__Round_Final_Risk_Grade__c</name>
+    </fields>
+    <fields>
+        <label><!-- Template Object Field Name --></label>
+        <name>LLC_BI__Template_Object_Field_Name__c</name>
+    </fields>
+    <fields>
+        <label><!-- Template Object Field Value --></label>
+        <name>LLC_BI__Template_Object_Field_Value__c</name>
+    </fields>
+    <fields>
+        <label><!-- Template Object Type --></label>
+        <name>LLC_BI__Template_Object_Type__c</name>
+        <picklistValues>
+            <masterLabel>Account</masterLabel>
+            <translation><!-- Account --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Loan__c</masterLabel>
+            <translation><!-- Loan__c --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- lookupKey --></label>
+        <name>LLC_BI__lookupKey__c</name>
+    </fields>
+</CustomObjectTranslation>

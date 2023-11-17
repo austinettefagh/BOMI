@@ -1,0 +1,10 @@
+<apex:page sidebar="false" showHeader="false">
+	<div style="text-align: center">
+		<h1>{!JSENCODE($Label.DocuSign_Redirect_Message)}</h1>
+	</div>
+	<script type="text/javascript">
+		window.addEventListener('load', () => {
+			window.parent.postMessage('tagging-complete', '*');
+		});
+	</script>
+</apex:page>

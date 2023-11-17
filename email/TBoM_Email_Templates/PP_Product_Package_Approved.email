@@ -1,0 +1,7 @@
+Hi,<br>
+<p>The Product Package {!LLC_BI__Product_Package__c.Name} has been approved and is ready for further review.
+</p>
+<p>Click here for the Product Package details: {!LLC_BI__Product_Package__c.Link}
+</p>
+<br>
+Thank You.

@@ -1,0 +1,289 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Flow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionCalls>
+        <name>Account_Setup_Stage_Notification</name>
+        <label>Account Setup Stage Notification</label>
+        <locationX>50</locationX>
+        <locationY>575</locationY>
+        <actionName>emailSimple</actionName>
+        <actionType>emailSimple</actionType>
+        <connector>
+            <targetReference>Check_Stage_has_changed</targetReference>
+        </connector>
+        <flowTransactionModel>CurrentTransaction</flowTransactionModel>
+        <inputParameters>
+            <name>emailBody</name>
+            <value>
+                <elementReference>NewDepositAccountRequestTemplate</elementReference>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>emailAddresses</name>
+            <value>
+                <elementReference>$Label.CL_New_Deposit_Account_Request_Group</elementReference>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>sendRichBody</name>
+            <value>
+                <booleanValue>true</booleanValue>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>emailSubject</name>
+            <value>
+                <stringValue>New Deposit Account Setup Request</stringValue>
+            </value>
+        </inputParameters>
+        <nameSegment>emailSimple</nameSegment>
+        <versionSegment>1</versionSegment>
+    </actionCalls>
+    <apiVersion>55.0</apiVersion>
+    <decisions>
+        <name>Check_New_Money_has_changed</name>
+        <label>Check New Money has changed</label>
+        <locationX>622</locationX>
+        <locationY>455</locationY>
+        <defaultConnector>
+            <targetReference>Check_Stage_has_changed</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
+        <rules>
+            <name>New_Money_has_changed</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record.TM_New_Money__c</leftValueReference>
+                <operator>IsChanged</operator>
+                <rightValue>
+                    <booleanValue>true</booleanValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Update_Treasury_Goal_New_Money_Till_Date</targetReference>
+            </connector>
+            <label>New Money has changed</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <name>Check_Record_Type</name>
+        <label>Check Record Type</label>
+        <locationX>776</locationX>
+        <locationY>335</locationY>
+        <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
+        <rules>
+            <name>Record_type_is_TM_Deposit</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record.RecordType.DeveloperName</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>OPP_nCino_Deposit</stringValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Check_Stage_changed</targetReference>
+            </connector>
+            <label>Record type is TM Deposit</label>
+        </rules>
+        <rules>
+            <name>Record_type_is_Deposit</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record.RecordType.Name</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Track Deposit Pipeline</stringValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Check_New_Money_has_changed</targetReference>
+            </connector>
+            <label>Record type is Deposit</label>
+        </rules>
+        <rules>
+            <name>Record_Type_is_Treasury</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record.RecordType.Name</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Track Treasury Products Sold</stringValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Check_Stage_has_changed</targetReference>
+            </connector>
+            <label>Record Type is Treasury</label>
+        </rules>
+        <rules>
+            <name>Has_Referral</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record.FinServ__ReferredByUser__c</leftValueReference>
+                <operator>IsNull</operator>
+                <rightValue>
+                    <booleanValue>false</booleanValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Send_Referral_Notification_For_Opportunity</targetReference>
+            </connector>
+            <label>Has Referral</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <name>Check_Stage_changed</name>
+        <label>Check Stage changed</label>
+        <locationX>182</locationX>
+        <locationY>455</locationY>
+        <defaultConnector>
+            <targetReference>Check_Stage_has_changed</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
+        <rules>
+            <name>Stage_Account_Setup</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record.StageName</leftValueReference>
+                <operator>IsChanged</operator>
+                <rightValue>
+                    <booleanValue>true</booleanValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.StageName</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Account Setup</stringValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Account_Setup_Stage_Notification</targetReference>
+            </connector>
+            <label>Stage = Account Setup</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <name>Check_Stage_has_changed</name>
+        <label>Check Stage has changed</label>
+        <locationX>776</locationX>
+        <locationY>887</locationY>
+        <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
+        <rules>
+            <name>Stage_has_Changed</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record.StageName</leftValueReference>
+                <operator>IsChanged</operator>
+                <rightValue>
+                    <booleanValue>true</booleanValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Update_Stage_Changed_Date</targetReference>
+            </connector>
+            <label>Stage has Changed</label>
+        </rules>
+    </decisions>
+    <formulas>
+        <name>recordLinkFormula</name>
+        <dataType>String</dataType>
+        <expression>LEFT({!$Api.Partner_Server_URL_550}, FIND( &apos;/services&apos;, {!$Api.Partner_Server_URL_550})) &amp; {!$Record.Id}</expression>
+    </formulas>
+    <formulas>
+        <name>Today</name>
+        <dataType>Date</dataType>
+        <expression>TODAY()</expression>
+    </formulas>
+    <interviewLabel>Opportunity Trigger Flow {!$Flow.CurrentDateTime}</interviewLabel>
+    <label>Opportunity Trigger Flow</label>
+    <processMetadataValues>
+        <name>BuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>CanvasMode</name>
+        <value>
+            <stringValue>AUTO_LAYOUT_CANVAS</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>OriginBuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processType>AutoLaunchedFlow</processType>
+    <recordUpdates>
+        <name>Update_Stage_Changed_Date</name>
+        <label>Update Stage Changed Date</label>
+        <locationX>644</locationX>
+        <locationY>1007</locationY>
+        <inputAssignments>
+            <field>TM_IsSendEmail__c</field>
+            <value>
+                <booleanValue>false</booleanValue>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>TM_Stage_Changed_Date__c</field>
+            <value>
+                <elementReference>Today</elementReference>
+            </value>
+        </inputAssignments>
+        <inputReference>$Record</inputReference>
+    </recordUpdates>
+    <start>
+        <locationX>650</locationX>
+        <locationY>0</locationY>
+        <connector>
+            <targetReference>Check_Record_Type</targetReference>
+        </connector>
+        <object>Opportunity</object>
+        <recordTriggerType>CreateAndUpdate</recordTriggerType>
+        <triggerType>RecordAfterSave</triggerType>
+    </start>
+    <status>Active</status>
+    <subflows>
+        <name>Send_Referral_Notification_For_Opportunity</name>
+        <label>Send Referral Notification For Opportunity</label>
+        <locationX>1106</locationX>
+        <locationY>455</locationY>
+        <flowName>TM_Send_Referral_Notification_For_Opportunity</flowName>
+        <inputAssignments>
+            <name>OpportunityId</name>
+            <value>
+                <elementReference>$Record.Id</elementReference>
+            </value>
+        </inputAssignments>
+    </subflows>
+    <subflows>
+        <name>Update_Treasury_Goal_New_Money_Till_Date</name>
+        <label>Update Treasury Goal New Money Till Date</label>
+        <locationX>490</locationX>
+        <locationY>575</locationY>
+        <connector>
+            <targetReference>Check_Stage_has_changed</targetReference>
+        </connector>
+        <flowName>TM_Update_Treasury_Goal_New_Money_Till_Date</flowName>
+        <inputAssignments>
+            <name>OpportunityId</name>
+            <value>
+                <elementReference>$Record.Id</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <name>PriorNewMoney</name>
+            <value>
+                <elementReference>$Record__Prior.TM_New_Money__c</elementReference>
+            </value>
+        </inputAssignments>
+    </subflows>
+    <textTemplates>
+        <name>NewDepositAccountRequestTemplate</name>
+        <isViewedAsPlainText>false</isViewedAsPlainText>
+        <text>&lt;p&gt;&lt;span style=&quot;background-color: rgb(255, 255, 255); font-size: 11.36px; font-family: Arial, Helvetica, sans-serif; color: rgb(0, 0, 0);&quot;&gt;Hello,&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot;background-color: rgb(255, 255, 255); font-size: 11.36px; font-family: Arial, Helvetica, sans-serif; color: rgb(0, 0, 0);&quot;&gt;Please setup {!$Record.Account.Name} with a deposit account on Jack Henry. See the Opportunity record &lt;/span&gt;&lt;a href=&quot;{!recordLinkFormula}&quot; rel=&quot;noopener noreferrer&quot; target=&quot;_blank&quot; style=&quot;background-color: rgb(255, 255, 255); font-size: 11.36px; font-family: Arial, Helvetica, sans-serif; color: rgb(0, 0, 0);&quot;&gt;here&lt;/a&gt;&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;&lt;a href=&quot;{!recordLinkFormula}&quot; rel=&quot;noopener noreferrer&quot; target=&quot;_blank&quot; style=&quot;background-color: rgb(255, 255, 255); font-size: 11.36px; font-family: Arial, Helvetica, sans-serif; color: rgb(0, 0, 0);&quot;&gt;Please reach o&lt;/a&gt;&lt;a href=&quot;https://pcgatbankofmo--dev.sandbox.lightning.force.com/&quot; rel=&quot;noopener noreferrer&quot; target=&quot;_blank&quot; style=&quot;background-color: rgb(255, 255, 255); font-size: 11.36px; font-family: Arial, Helvetica, sans-serif; color: rgb(0, 0, 0);&quot;&gt;ut to &lt;/a&gt;&lt;a href=&quot;https://pcgatbankofmo--dev.sandbox.lightning.force.com/&quot; rel=&quot;noopener noreferrer&quot; target=&quot;_blank&quot; style=&quot;background-color: rgb(255, 255, 255); color: rgb(68, 68, 68);&quot;&gt;{!$Record.Owner.Email}&lt;/a&gt;&lt;a href=&quot;https://pcgatbankofmo--dev.sandbox.lightning.force.com/&quot; rel=&quot;noopener noreferrer&quot; target=&quot;_blank&quot; style=&quot;background-color: rgb(255, 255, 255); color: rgb(0, 0, 0); font-size: 11.36px; font-family: Arial, Helvetica, sans-serif;&quot;&gt; for fu&lt;/a&gt;&lt;span style=&quot;background-color: rgb(255, 255, 255); color: rgb(0, 0, 0); font-size: 11.36px; font-family: Arial, Helvetica, sans-serif;&quot;&gt;rther details.&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot;background-color: rgb(255, 255, 255); font-size: 11.36px; font-family: Arial, Helvetica, sans-serif; color: rgb(0, 0, 0);&quot;&gt;Thank you!&lt;/span&gt;&lt;/p&gt;</text>
+    </textTemplates>
+</Flow>

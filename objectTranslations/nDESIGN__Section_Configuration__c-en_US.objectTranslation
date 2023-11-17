@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <label><!-- Display Order --></label>
+        <name>nDESIGN__Display_Order__c</name>
+    </fields>
+    <fields>
+        <label><!-- Field Set --></label>
+        <name>nDESIGN__Field_Set_Key__c</name>
+    </fields>
+    <fields>
+        <label><!-- Layout --></label>
+        <name>nDESIGN__Layout__c</name>
+        <relationshipLabel><!-- Section Configurations --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Parent Configuration --></label>
+        <name>nDESIGN__Parent_Configuration__c</name>
+        <relationshipLabel><!-- Child Configurations --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Parent Relationship Name --></label>
+        <name>nDESIGN__Parent_Relationship_Name__c</name>
+    </fields>
+    <fields>
+        <label><!-- Screen Section --></label>
+        <name>nDESIGN__Screen_Section__c</name>
+        <relationshipLabel><!-- Section Configurations --></relationshipLabel>
+    </fields>
+    <fields>
+        <help><!-- A header to display at the top of this section. --></help>
+        <label><!-- Section Header --></label>
+        <name>nDESIGN__Section_Header__c</name>
+    </fields>
+    <fields>
+        <label><!-- -D Section Resource Class --></label>
+        <name>nDESIGN__Section_Resource_Class__c</name>
+    </fields>
+    <fields>
+        <label><!-- lookupKey --></label>
+        <name>nDESIGN__lookupKey__c</name>
+    </fields>
+    <fields>
+        <label><!-- sObject Type --></label>
+        <name>nDESIGN__sObject_Type__c</name>
+    </fields>
+    <validationRules>
+        <errorMessage><!-- Child configurations must follow their parents in display order. --></errorMessage>
+        <name>nDESIGN__Child_Display_Order</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Parent Configuration and Parent Relationship Name must both be set. --></errorMessage>
+        <name>nDESIGN__Parent_Integrity</name>
+    </validationRules>
+</CustomObjectTranslation>

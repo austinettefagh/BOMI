@@ -1,0 +1,828 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fieldSets>
+        <label><!-- Jack Henry jXchange Automated Booking --></label>
+        <name>JHJX__ABJX</name>
+    </fieldSets>
+    <fieldSets>
+        <label><!-- SBA Collateral Type --></label>
+        <name>nSBA__SBA_Collateral_Type</name>
+    </fieldSets>
+    <fields>
+        <help><!-- Used only for the Collateral with type Real Estate --></help>
+        <label><!-- Statutory Construction LTV Limit --></label>
+        <name>CF_Statutory_Construction_LTV_Limit__c</name>
+    </fields>
+    <fields>
+        <help><!-- Used only for the Collateral with type Real Estate --></help>
+        <label><!-- Statutory LTV Limit --></label>
+        <name>CF_Statutory_LTV_Limit__c</name>
+    </fields>
+    <fields>
+        <help><!-- Excluded Collateral Type from LaserPro extract --></help>
+        <label><!-- Exclude From LaserPro Extract --></label>
+        <name>LLCLP__Is_Excluded_From_LaserPro_Extract__c</name>
+    </fields>
+    <fields>
+        <label><!-- Active --></label>
+        <name>LLC_BI__Active__c</name>
+    </fields>
+    <fields>
+        <help><!-- The percentage of the value of a collateral that a lender is willing to extend for a loan. --></help>
+        <label><!-- Advance Rate --></label>
+        <name>LLC_BI__Advance_Rate__c</name>
+    </fields>
+    <fields>
+        <help><!-- Select this checkbox to enable automatic updates for collateral management records with collateral valuation details. This functionality applies to records with collateral valuation details with a primary valuation type that receive a newer valuation. --></help>
+        <label><!-- Auto-Update Collateral Value --></label>
+        <name>LLC_BI__Auto_Update_Collateral_Value__c</name>
+    </fields>
+    <fields>
+        <label><!-- Category --></label>
+        <name>LLC_BI__Category__c</name>
+    </fields>
+    <fields>
+        <help><!-- The code for a piece of Collateral. --></help>
+        <label><!-- Collateral Code --></label>
+        <name>LLC_BI__Collateral_Code__c</name>
+    </fields>
+    <fields>
+        <help><!-- Complex Collateral configuration and control data --></help>
+        <label><!-- Collateral Configuration --></label>
+        <name>LLC_BI__Collateral_Configuration__c</name>
+    </fields>
+    <fields>
+        <label><!-- Condo/PUD --></label>
+        <name>LLC_BI__Condo_PUD__c</name>
+    </fields>
+    <fields>
+        <help><!-- The date that this type of collateral is no longer valid. --></help>
+        <label><!-- Expire Date --></label>
+        <name>LLC_BI__Expire_Date__c</name>
+    </fields>
+    <fields>
+        <help><!-- Determines the field set that is used for this Collateral Type on the Manage Collateral Page --></help>
+        <label><!-- Field Set --></label>
+        <name>LLC_BI__Field_Set__c</name>
+    </fields>
+    <fields>
+        <help><!-- If the collateral type and subtype pairing is a group, select the type of group. --></help>
+        <label><!-- Group Type --></label>
+        <name>LLC_BI__Group_Type__c</name>
+        <picklistValues>
+            <masterLabel>Single Relationship</masterLabel>
+            <translation><!-- Single Relationship --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Standard</masterLabel>
+            <translation><!-- Standard --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Highest Type --></label>
+        <name>LLC_BI__Highest_Type__c</name>
+        <relationshipLabel><!-- Collateral Types (Highest Type) --></relationshipLabel>
+    </fields>
+    <fields>
+        <help><!-- Please enter a hexadecimal color. --></help>
+        <label><!-- Icon Background Color --></label>
+        <name>LLC_BI__Icon_Background_Color__c</name>
+    </fields>
+    <fields>
+        <help><!-- Please enter a hexadecimal color. --></help>
+        <label><!-- Icon Color --></label>
+        <name>LLC_BI__Icon_Color__c</name>
+    </fields>
+    <fields>
+        <help><!-- Please enter the icon folder name then a &quot;/&quot; followed by the icon name. Example &quot;standard/client&quot; --></help>
+        <label><!-- Icon Type --></label>
+        <name>LLC_BI__Icon_Type__c</name>
+    </fields>
+    <fields>
+        <label><!-- Is Complex --></label>
+        <name>LLC_BI__Is_Complex__c</name>
+    </fields>
+    <fields>
+        <help><!-- Use this optional field to define the screen that displays when users add or edit an asset on a lease. If a screen is not defined, the LLC_BI_Screen_c screen will be used by default. --></help>
+        <label><!-- Leasing Screen --></label>
+        <name>LLC_BI__Leasing_Screen__c</name>
+        <relationshipLabel><!-- Leasing Screen --></relationshipLabel>
+    </fields>
+    <fields>
+        <help><!-- This is a checkbox to be marked if this piece of collateral is a manufactured home. --></help>
+        <label><!-- Manufactured Home --></label>
+        <name>LLC_BI__Manufactured_Home__c</name>
+    </fields>
+    <fields>
+        <label><!-- Parent Type --></label>
+        <name>LLC_BI__Parent_Type__c</name>
+        <relationshipLabel><!-- Collateral Types --></relationshipLabel>
+    </fields>
+    <fields>
+        <help><!-- Select the acceptable primary valuation sources applicable to this collateral type. --></help>
+        <label><!-- Primary Valuation Sources --></label>
+        <name>LLC_BI__Primary_Valuation_Sources__c</name>
+        <picklistValues>
+            <masterLabel>Account Balance / Statement</masterLabel>
+            <translation><!-- Account Balance / Statement --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Appraisal</masterLabel>
+            <translation><!-- Appraisal --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Credit Officer</masterLabel>
+            <translation><!-- Credit Officer --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Financial Statement</masterLabel>
+            <translation><!-- Financial Statement --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Insurance Agent</masterLabel>
+            <translation><!-- Insurance Agent --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Internal Valuation</masterLabel>
+            <translation><!-- Internal Valuation --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Inventory Report</masterLabel>
+            <translation><!-- Inventory Report --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Invoice / Bill of Sale</masterLabel>
+            <translation><!-- Invoice / Bill of Sale --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Real Estate Abundance of Caution</masterLabel>
+            <translation><!-- Real Estate Abundance of Caution --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Real Estate Evaluation</masterLabel>
+            <translation><!-- Real Estate Evaluation --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Real Estate Restricted Appraisal</masterLabel>
+            <translation><!-- Real Estate Restricted Appraisal --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Receivables Aging</masterLabel>
+            <translation><!-- Receivables Aging --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Third Party Source</masterLabel>
+            <translation><!-- Third Party Source --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Valuation Service Vendor</masterLabel>
+            <translation><!-- Valuation Service Vendor --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- Regulatory Advance Rate, typically used for real estate. An advance rate above this will require specific reporting. --></help>
+        <label><!-- Regulatory Rate --></label>
+        <name>LLC_BI__Regulatory_Rate__c</name>
+    </fields>
+    <fields>
+        <help><!-- Use this optional text field to define the screen that displays when users add or edit collateral on a loan. --></help>
+        <label><!-- Screen --></label>
+        <name>LLC_BI__Screen__c</name>
+        <relationshipLabel><!-- Collateral Types --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Start Date --></label>
+        <name>LLC_BI__Start_Date__c</name>
+    </fields>
+    <fields>
+        <help><!-- The subtype of a piece of Collateral. --></help>
+        <label><!-- Subtype --></label>
+        <name>LLC_BI__Subtype__c</name>
+        <picklistValues>
+            <masterLabel>1-4 Family Rental Real Estate</masterLabel>
+            <translation><!-- 1-4 Family Rental Real Estate --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ATV / SUV</masterLabel>
+            <translation><!-- ATV / SUV --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Accounts Receivable</masterLabel>
+            <translation><!-- Accounts Receivable --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Agriculture Government Payments</masterLabel>
+            <translation><!-- Agriculture Government Payments --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Aircraft includes motor/instruments</masterLabel>
+            <translation><!-- Aircraft includes motor/instruments --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Annuities</masterLabel>
+            <translation><!-- Annuities --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Assignment of Lease</masterLabel>
+            <translation><!-- Assignment of Lease --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Barge / Vessel (Preferred Ship Mortgages)</masterLabel>
+            <translation><!-- Barge / Vessel (Preferred Ship Mortgages) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Blanket - Diversified Farm Assets</masterLabel>
+            <translation><!-- Blanket - Diversified Farm Assets --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Blanket Business</masterLabel>
+            <translation><!-- Blanket Business --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Boat includes motor/trailer (Titled)</masterLabel>
+            <translation><!-- Boat includes motor/trailer (Titled) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Bonds</masterLabel>
+            <translation><!-- Bonds --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Broker Accounts</masterLabel>
+            <translation><!-- Broker Accounts --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Business - New or Used Vehicles</masterLabel>
+            <translation><!-- Business - New or Used Vehicles --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Business Machinery and Equipment</masterLabel>
+            <translation><!-- Business Machinery and Equipment --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Cattle</masterLabel>
+            <translation><!-- Cattle --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Certificate of Deposit</masterLabel>
+            <translation><!-- Certificate of Deposit --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Daycare - Non Owner Occupied</masterLabel>
+            <translation><!-- Daycare - Non Owner Occupied --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Daycare - Owner Occupied</masterLabel>
+            <translation><!-- Daycare - Owner Occupied --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Entertainment Venues</masterLabel>
+            <translation><!-- Entertainment Venues --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Equipment Leased to Equipment Share</masterLabel>
+            <translation><!-- Equipment Leased to Equipment Share --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Farm Machinery and Equipment</masterLabel>
+            <translation><!-- Farm Machinery and Equipment --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Farmland</masterLabel>
+            <translation><!-- Farmland --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Farmland and Buildings</masterLabel>
+            <translation><!-- Farmland and Buildings --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Farmland and Residence</masterLabel>
+            <translation><!-- Farmland and Residence --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Furniture and Fixtures</masterLabel>
+            <translation><!-- Furniture and Fixtures --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Growing Crops</masterLabel>
+            <translation><!-- Growing Crops --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Hogs</masterLabel>
+            <translation><!-- Hogs --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Hospital</masterLabel>
+            <translation><!-- Hospital --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Hotel / Motel</masterLabel>
+            <translation><!-- Hotel / Motel --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Industrial/Manufacturing - Non Owner Occupied</masterLabel>
+            <translation><!-- Industrial/Manufacturing - Non Owner Occupied --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Industrial/Manufacturing - Owner Occupied</masterLabel>
+            <translation><!-- Industrial/Manufacturing - Owner Occupied --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Inventory</masterLabel>
+            <translation><!-- Inventory --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Inventory - Floor Plan</masterLabel>
+            <translation><!-- Inventory - Floor Plan --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Lawn Equipment</masterLabel>
+            <translation><!-- Lawn Equipment --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Legacy - Boats, Ships, Barges</masterLabel>
+            <translation><!-- Legacy - Boats, Ships, Barges --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Legacy - CD or Savings Accounts</masterLabel>
+            <translation><!-- Legacy - CD or Savings Accounts --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Legacy - CD, Savings, Investments or Other</masterLabel>
+            <translation><!-- Legacy - CD, Savings, Investments or Other --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Legacy - Consumer - All others</masterLabel>
+            <translation><!-- Legacy - Consumer - All others --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Legacy - Crops</masterLabel>
+            <translation><!-- Legacy - Crops --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Legacy - Improved Business Real Estate</masterLabel>
+            <translation><!-- Legacy - Improved Business Real Estate --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Legacy - Livestock</masterLabel>
+            <translation><!-- Legacy - Livestock --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Legacy - Machinery &amp; Equipment</masterLabel>
+            <translation><!-- Legacy - Machinery &amp; Equipment --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Legacy - Other Possessory Collateral</masterLabel>
+            <translation><!-- Legacy - Other Possessory Collateral --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Legacy - Real Estate &amp; CD, Savings or Investments</masterLabel>
+            <translation><!-- Legacy - Real Estate &amp; CD, Savings or Investments --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Legacy - Recreational Vehicles</masterLabel>
+            <translation><!-- Legacy - Recreational Vehicles --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Legacy - Stocks,Bonds &amp; Investments</masterLabel>
+            <translation><!-- Legacy - Stocks,Bonds &amp; Investments --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Legacy - Unimproved Business Real Estate</masterLabel>
+            <translation><!-- Legacy - Unimproved Business Real Estate --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Legacy - Unimproved Business Real Estate &amp; Improved Real Estate</masterLabel>
+            <translation><!-- Legacy - Unimproved Business Real Estate &amp; Improved Real Estate --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Legacy - Unimproved Real Estate</masterLabel>
+            <translation><!-- Legacy - Unimproved Real Estate --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Legacy - Unimproved Real Estate &amp; Improved Real Estate</masterLabel>
+            <translation><!-- Legacy - Unimproved Real Estate &amp; Improved Real Estate --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Life Insurance</masterLabel>
+            <translation><!-- Life Insurance --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Long Term Care Facility</masterLabel>
+            <translation><!-- Long Term Care Facility --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Low-To-Moderate/HUD Income Housing Properties</masterLabel>
+            <translation><!-- Low-To-Moderate/HUD Income Housing Properties --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Manufactured Home</masterLabel>
+            <translation><!-- Manufactured Home --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Manufactured Home &amp; Real Estate</masterLabel>
+            <translation><!-- Manufactured Home &amp; Real Estate --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Manufactured Home Parks</masterLabel>
+            <translation><!-- Manufactured Home Parks --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Manufactured Home affixed to Real Estate</masterLabel>
+            <translation><!-- Manufactured Home affixed to Real Estate --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Medical Office</masterLabel>
+            <translation><!-- Medical Office --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Mini Storage</masterLabel>
+            <translation><!-- Mini Storage --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Modular Home (pre-fabricated &amp; assembled on site)</masterLabel>
+            <translation><!-- Modular Home (pre-fabricated &amp; assembled on site) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Money Market Account</masterLabel>
+            <translation><!-- Money Market Account --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Motorcycle</masterLabel>
+            <translation><!-- Motorcycle --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Multi Family Residential (5+ units)</masterLabel>
+            <translation><!-- Multi Family Residential (5+ units) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Mutual Funds</masterLabel>
+            <translation><!-- Mutual Funds --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>New Vehicles (Cars/Pickups)</masterLabel>
+            <translation><!-- New Vehicles (Cars/Pickups) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Nightly Rentals</masterLabel>
+            <translation><!-- Nightly Rentals --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Non-R/E Leasehold Improvements</masterLabel>
+            <translation><!-- Non-R/E Leasehold Improvements --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Notes Receivable</masterLabel>
+            <translation><!-- Notes Receivable --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Office - Multiple Tenant</masterLabel>
+            <translation><!-- Office - Multiple Tenant --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Office - Owner Occupied</masterLabel>
+            <translation><!-- Office - Owner Occupied --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Office - Single Tenant</masterLabel>
+            <translation><!-- Office - Single Tenant --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Office Equipment</masterLabel>
+            <translation><!-- Office Equipment --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Other - Improved R/E</masterLabel>
+            <translation><!-- Other - Improved R/E --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Other - Medical</masterLabel>
+            <translation><!-- Other - Medical --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Other - if not else where classified</masterLabel>
+            <translation><!-- Other - if not else where classified --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Other Agriculture</masterLabel>
+            <translation><!-- Other Agriculture --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Other Bank Stock</masterLabel>
+            <translation><!-- Other Bank Stock --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Other Financial Instrument</masterLabel>
+            <translation><!-- Other Financial Instrument --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Other Investments</masterLabel>
+            <translation><!-- Other Investments --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Other Livestock</masterLabel>
+            <translation><!-- Other Livestock --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Ownership Interest in Privately Held Co.</masterLabel>
+            <translation><!-- Ownership Interest in Privately Held Co. --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>PMSI (except Equipment Share)</masterLabel>
+            <translation><!-- PMSI (except Equipment Share) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Primary Residence</masterLabel>
+            <translation><!-- Primary Residence --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>RV</masterLabel>
+            <translation><!-- RV --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>RV Parks</masterLabel>
+            <translation><!-- RV Parks --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Raw Land - Held for Future Development</masterLabel>
+            <translation><!-- Raw Land - Held for Future Development --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Raw Land - Recreational</masterLabel>
+            <translation><!-- Raw Land - Recreational --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Recreational Real Estate/Secondary Residence</masterLabel>
+            <translation><!-- Recreational Real Estate/Secondary Residence --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Reliable Community Bancshares, Inc. Stock</masterLabel>
+            <translation><!-- Reliable Community Bancshares, Inc. Stock --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Restaurant - Non Owner Occupied</masterLabel>
+            <translation><!-- Restaurant - Non Owner Occupied --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Restaurant - Owner Occupied</masterLabel>
+            <translation><!-- Restaurant - Owner Occupied --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Retail - Multiple Tenant</masterLabel>
+            <translation><!-- Retail - Multiple Tenant --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Retail - Owner Occupied</masterLabel>
+            <translation><!-- Retail - Owner Occupied --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Retail - Single Tenant</masterLabel>
+            <translation><!-- Retail - Single Tenant --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Savings Account</masterLabel>
+            <translation><!-- Savings Account --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Stocks - Unlisted</masterLabel>
+            <translation><!-- Stocks - Unlisted --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Stocks Publicly Traded</masterLabel>
+            <translation><!-- Stocks Publicly Traded --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Stored Crops</masterLabel>
+            <translation><!-- Stored Crops --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Subdivision - Commercial</masterLabel>
+            <translation><!-- Subdivision - Commercial --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Subdivision - Residential</masterLabel>
+            <translation><!-- Subdivision - Residential --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Tax Credits - Historic</masterLabel>
+            <translation><!-- Tax Credits - Historic --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Tax Credits - Low Income Housing</masterLabel>
+            <translation><!-- Tax Credits - Low Income Housing --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Tax Credits - Other</masterLabel>
+            <translation><!-- Tax Credits - Other --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Treasuries</masterLabel>
+            <translation><!-- Treasuries --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Used Vehicles (Cars/Pickups)</masterLabel>
+            <translation><!-- Used Vehicles (Cars/Pickups) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Warehouse - Non Owner Occupied</masterLabel>
+            <translation><!-- Warehouse - Non Owner Occupied --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Warehouse - Owner Occupied</masterLabel>
+            <translation><!-- Warehouse - Owner Occupied --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yacht/House Boat (Preferred Ship Mortgages)</masterLabel>
+            <translation><!-- Yacht/House Boat (Preferred Ship Mortgages) --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- The type of Collateral. --></help>
+        <label><!-- Type --></label>
+        <name>LLC_BI__Type__c</name>
+        <picklistValues>
+            <masterLabel>Aircraft/Non Titled Marine</masterLabel>
+            <translation><!-- Aircraft/Non Titled Marine --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Financial Instruments/ Possessory</masterLabel>
+            <translation><!-- Financial Instruments/ Possessory --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Real Estate</masterLabel>
+            <translation><!-- Real Estate --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Titled</masterLabel>
+            <translation><!-- Titled --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>UCC</masterLabel>
+            <translation><!-- UCC --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- Enter the desired field set&apos;s API name in this field. This field set must exist on the collateral valuation object. If blank, the system uses the default field set for valuation creation. --></help>
+        <label><!-- Valuation Field Set --></label>
+        <name>LLC_BI__Valuation_Field_Set__c</name>
+    </fields>
+    <fields>
+        <help><!-- The potential sources of collateral valuation --></help>
+        <label><!-- Valuation Source --></label>
+        <name>LLC_BI__Valuation_Source__c</name>
+        <picklistValues>
+            <masterLabel>Account Balance / Statement</masterLabel>
+            <translation><!-- Account Balance / Statement --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Appraisal</masterLabel>
+            <translation><!-- Appraisal --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Credit Officer</masterLabel>
+            <translation><!-- Credit Officer --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Financial Statement</masterLabel>
+            <translation><!-- Financial Statement --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Insurance Agent</masterLabel>
+            <translation><!-- Insurance Agent --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Internal Valuation</masterLabel>
+            <translation><!-- Internal Valuation --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Inventory Report</masterLabel>
+            <translation><!-- Inventory Report --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Invoice / Bill of Sale</masterLabel>
+            <translation><!-- Invoice / Bill of Sale --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Real Estate Abundance of Caution</masterLabel>
+            <translation><!-- Real Estate Abundance of Caution --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Real Estate Evaluation</masterLabel>
+            <translation><!-- Real Estate Evaluation --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Real Estate Restricted Appraisal</masterLabel>
+            <translation><!-- Real Estate Restricted Appraisal --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Receivables Aging</masterLabel>
+            <translation><!-- Receivables Aging --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Third Party Source</masterLabel>
+            <translation><!-- Third Party Source --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Valuation Service Vendor</masterLabel>
+            <translation><!-- Valuation Service Vendor --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- The potential types of collateral valuation --></help>
+        <label><!-- Valuation Type --></label>
+        <name>LLC_BI__Valuation_Type__c</name>
+        <picklistValues>
+            <masterLabel>Actual Cash Value</masterLabel>
+            <translation><!-- Actual Cash Value --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>As Complete Value</masterLabel>
+            <translation><!-- As Complete Value --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>As Is Value</masterLabel>
+            <translation><!-- As Is Value --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>As Stabilized Value</masterLabel>
+            <translation><!-- As Stabilized Value --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Balance Sheet</masterLabel>
+            <translation><!-- Balance Sheet --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Book Value</masterLabel>
+            <translation><!-- Book Value --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Cash Balance</masterLabel>
+            <translation><!-- Cash Balance --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Contents Value</masterLabel>
+            <translation><!-- Contents Value --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Fair Market Value - Equipment / Transportation</masterLabel>
+            <translation><!-- Fair Market Value - Equipment / Transportation --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Fair Market Value - Real Estate</masterLabel>
+            <translation><!-- Fair Market Value - Real Estate --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Net Orderly Liquidation Value</masterLabel>
+            <translation><!-- Net Orderly Liquidation Value --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Orderly Liquidation Value</masterLabel>
+            <translation><!-- Orderly Liquidation Value --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Preliminary Value</masterLabel>
+            <translation><!-- Preliminary Value --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Purchase Price</masterLabel>
+            <translation><!-- Purchase Price --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Replacement Cost Value</masterLabel>
+            <translation><!-- Replacement Cost Value --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Waived Value</masterLabel>
+            <translation><!-- Waived Value --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- lookupKey --></label>
+        <name>LLC_BI__lookupKey__c</name>
+    </fields>
+    <fields>
+        <help><!-- For an image hosted online, use the image URL. Alternately, upload an image to Documents, make image visibility public, and populate the field with the image URL. --></help>
+        <label><!-- OA Collateral Image --></label>
+        <name>nPortal__OA_Collateral_Image__c</name>
+    </fields>
+    <fields>
+        <label><!-- OA Collateral Name --></label>
+        <name>nPortal__OA_Collateral_Name__c</name>
+    </fields>
+    <fields>
+        <label><!-- OA Collateral Type Display Field Set --></label>
+        <name>nPortal__OA_Collateral_Type_Display_Field_Set__c</name>
+    </fields>
+    <fields>
+        <label><!-- OA Collateral Type Screen --></label>
+        <name>nPortal__OA_Collateral_Type_Screen__c</name>
+        <relationshipLabel><!-- OA Collateral Type Screens --></relationshipLabel>
+    </fields>
+    <validationRules>
+        <errorMessage><!-- Please enter an advance rate for the collateral type. --></errorMessage>
+        <name>LLC_BI__Advance_Rate_should_not_be_null</name>
+    </validationRules>
+    <webLinks>
+        <label><!-- CreateCollateralTypeScreen --></label>
+        <name>LLC_BI__CreateCollateralTypeScreen</name>
+    </webLinks>
+</CustomObjectTranslation>

@@ -1,0 +1,837 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fieldSets>
+        <label><!-- Collapsed Offer Card Summary --></label>
+        <name>LLC_BI__Collapsed_Offer_Card_Summary</name>
+    </fieldSets>
+    <fieldSets>
+        <label><!-- Default Field Set --></label>
+        <name>LLC_BI__Default_Field_Set</name>
+    </fieldSets>
+    <fieldSets>
+        <label><!-- Default Field Set Bottom --></label>
+        <name>LLC_BI__Default_Field_Set_Bottom</name>
+    </fieldSets>
+    <fieldSets>
+        <label><!-- Default Field Set Top --></label>
+        <name>LLC_BI__Default_Field_Set_Top</name>
+    </fieldSets>
+    <fieldSets>
+        <label><!-- Expanded Offer Card Summary --></label>
+        <name>LLC_BI__Expanded_Offer_Card_Summary</name>
+    </fieldSets>
+    <fieldSets>
+        <label><!-- Modal Bottom Component --></label>
+        <name>LLC_BI__Modal_Bottom_Component</name>
+    </fieldSets>
+    <fieldSets>
+        <label><!-- Modal Middle Component --></label>
+        <name>LLC_BI__Modal_Middle_Component</name>
+    </fieldSets>
+    <fieldSets>
+        <label><!-- Modal Top Component --></label>
+        <name>LLC_BI__Modal_Top_Component</name>
+    </fieldSets>
+    <fieldSets>
+        <label><!-- Pricing Modal Fees --></label>
+        <name>LLC_BI__Pricing_Modal_Fees</name>
+    </fieldSets>
+    <fieldSets>
+        <label><!-- Pricing Option Loan Details --></label>
+        <name>LLC_BI__Pricing_Option_Loan_Details</name>
+    </fieldSets>
+    <fieldSets>
+        <label><!-- Pricing Option Risk Assumptions --></label>
+        <name>LLC_BI__Pricing_Option_Risk_Assumptions</name>
+    </fieldSets>
+    <fieldSets>
+        <label><!-- Pricing Scenario Sort --></label>
+        <name>LLC_BI__Pricing_Scenario_Sort</name>
+    </fieldSets>
+    <fieldSets>
+        <label><!-- Quick Price Adjustments Panel Fields --></label>
+        <name>LLC_BI__Quick_Price_Adjustments_Panel_Fields</name>
+    </fieldSets>
+    <fieldSets>
+        <label><!-- Quick Price Bottom --></label>
+        <name>LLC_BI__Quick_Price_Bottom</name>
+    </fieldSets>
+    <fieldSets>
+        <label><!-- Quick Price Calculator --></label>
+        <name>LLC_BI__Quick_Price_Calculator</name>
+    </fieldSets>
+    <fieldSets>
+        <label><!-- Quick Price History --></label>
+        <name>LLC_BI__Quick_Price_History</name>
+    </fieldSets>
+    <fieldSets>
+        <label><!-- Quick Price Interest Rate --></label>
+        <name>LLC_BI__Quick_Price_Interest_Rate</name>
+    </fieldSets>
+    <fieldSets>
+        <label><!-- Quick Price Loan Terms --></label>
+        <name>LLC_BI__Quick_Price_Loan_Terms</name>
+    </fieldSets>
+    <fieldSets>
+        <label><!-- Quick Price Payment Information --></label>
+        <name>LLC_BI__Quick_Price_Payment_Information</name>
+    </fieldSets>
+    <fieldSets>
+        <label><!-- Quick Price Product Selection Step --></label>
+        <name>LLC_BI__Quick_Price_Product_Selection_Step</name>
+    </fieldSets>
+    <fieldSets>
+        <label><!-- Rate Sheet Pricing Generate Scenarios --></label>
+        <name>LLC_BI__Rate_Sheet_Pricing_Generate_Scenarios</name>
+    </fieldSets>
+    <fieldSets>
+        <label><!-- Rate Sheet Pricing Loan Options --></label>
+        <name>LLC_BI__Rate_Sheet_Pricing_Loan_Options</name>
+    </fieldSets>
+    <fieldSets>
+        <label><!-- Scenario Card Bottom Component --></label>
+        <name>LLC_BI__Scenario_Card_Bottom_Component</name>
+    </fieldSets>
+    <fieldSets>
+        <label><!-- Scenario Card Top Component --></label>
+        <name>LLC_BI__Scenario_Card_Top</name>
+    </fieldSets>
+    <fieldSets>
+        <label><!-- Scenario Profitability Top Component --></label>
+        <name>LLC_BI__Scenario_Profitability_Top_Component</name>
+    </fieldSets>
+    <fieldSets>
+        <label><!-- OA Collapsed Offer Card Summary --></label>
+        <name>nPortal__OA_Collapsed_Offer_Card_Summary</name>
+    </fieldSets>
+    <fields>
+        <help><!-- When populated, this field contains the annual percentage rate (APR) without any applied credit protections. --></help>
+        <label><!-- APR Without Credit Protection --></label>
+        <name>LLC_BI__APR_Without_Credit_Protection__c</name>
+    </fields>
+    <fields>
+        <label><!-- APR --></label>
+        <name>LLC_BI__APR__c</name>
+    </fields>
+    <fields>
+        <label><!-- Relationship --></label>
+        <name>LLC_BI__Account__c</name>
+        <relationshipLabel><!-- Pricing Options --></relationshipLabel>
+    </fields>
+    <fields>
+        <help><!-- Use this field to note any comments related to the rate adjustment. --></help>
+        <label><!-- Adjustment Comments --></label>
+        <name>LLC_BI__Adjustment_Comments__c</name>
+    </fields>
+    <fields>
+        <label><!-- Adjustment Frequency --></label>
+        <name>LLC_BI__Adjustment_Frequency__c</name>
+    </fields>
+    <fields>
+        <help><!-- Select the reason for the rate adjustment. --></help>
+        <label><!-- Adjustment Reason --></label>
+        <name>LLC_BI__Adjustment_Reason__c</name>
+        <picklistValues>
+            <masterLabel>Additional Cross Product Sell</masterLabel>
+            <translation><!-- Additional Cross Product Sell --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Competitive Adjustment</masterLabel>
+            <translation><!-- Competitive Adjustment --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Customer Loyalty</masterLabel>
+            <translation><!-- Customer Loyalty --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Market Adjustment</masterLabel>
+            <translation><!-- Market Adjustment --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- When populated, this field contains the aggregated daily cost of all the credit protections applied. --></help>
+        <label><!-- Aggregated Daily Insurance Cost --></label>
+        <name>LLC_BI__Aggregated_Daily_Insurance_Cost__c</name>
+    </fields>
+    <fields>
+        <label><!-- Amortization Notes --></label>
+        <name>LLC_BI__Amortization_Notes__c</name>
+    </fields>
+    <fields>
+        <label><!-- Amortization --></label>
+        <name>LLC_BI__Amortization__c</name>
+    </fields>
+    <fields>
+        <help><!-- This field displays the amount of credit provided to the borrower. --></help>
+        <label><!-- Amount Financed --></label>
+        <name>LLC_BI__Amount_Financed__c</name>
+    </fields>
+    <fields>
+        <label><!-- Amount --></label>
+        <name>LLC_BI__Amount__c</name>
+    </fields>
+    <fields>
+        <label><!-- Annual Fees --></label>
+        <name>LLC_BI__Annual_Fees__c</name>
+    </fields>
+    <fields>
+        <label><!-- Applied Date --></label>
+        <name>LLC_BI__Applied_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Average Assets --></label>
+        <name>LLC_BI__Average_Assets__c</name>
+    </fields>
+    <fields>
+        <label><!-- Average Equity --></label>
+        <name>LLC_BI__Average_Equity__c</name>
+    </fields>
+    <fields>
+        <label><!-- Average Yield --></label>
+        <name>LLC_BI__Average_Yield__c</name>
+    </fields>
+    <fields>
+        <label><!-- Effective LTV --></label>
+        <name>LLC_BI__CalculatedEffectiveLoanToValue__c</name>
+    </fields>
+    <fields>
+        <help><!-- Balloon amount calculated via a payment structure. --></help>
+        <label><!-- Calculated Balloon Amount --></label>
+        <name>LLC_BI__Calculated_Balloon_Amount__c</name>
+    </fields>
+    <fields>
+        <help><!-- This system-populated field indicates the principal portion of a calculated balloon amount. --></help>
+        <label><!-- Calculated Balloon Principal Amount --></label>
+        <name>LLC_BI__Calculated_Balloon_Principal_Amount__c</name>
+    </fields>
+    <fields>
+        <label><!-- Caps &amp; Floors Summary --></label>
+        <name>LLC_BI__Caps_Floors_Summary__c</name>
+    </fields>
+    <fields>
+        <help><!-- This field displays the predetermined total cash to close value. --></help>
+        <label><!-- Cash to Close --></label>
+        <name>LLC_BI__Cash_to_Close__c</name>
+    </fields>
+    <fields>
+        <label><!-- Changes Approved --></label>
+        <name>LLC_BI__Changes_Approved__c</name>
+    </fields>
+    <fields>
+        <help><!-- This field displays the total closing costs value. --></help>
+        <label><!-- Closing Costs --></label>
+        <name>LLC_BI__Closing_Costs__c</name>
+    </fields>
+    <fields>
+        <label><!-- Comments --></label>
+        <name>LLC_BI__Comments__c</name>
+    </fields>
+    <fields>
+        <label><!-- Competitor Name --></label>
+        <name>LLC_BI__Competitor_Name__c</name>
+    </fields>
+    <fields>
+        <label><!-- Debt to Income Ratio --></label>
+        <name>LLC_BI__DTI__c</name>
+    </fields>
+    <fields>
+        <label><!-- Data Snapshot --></label>
+        <name>LLC_BI__Data_Snapshot__c</name>
+        <relationshipLabel><!-- Pricing Options --></relationshipLabel>
+    </fields>
+    <fields>
+        <help><!-- This field contains the value of the calculated EIR. --></help>
+        <label><!-- EIR --></label>
+        <name>LLC_BI__Effective_Interest_Rate__c</name>
+    </fields>
+    <fields>
+        <label><!-- Expected Life --></label>
+        <name>LLC_BI__Expected_Life__c</name>
+    </fields>
+    <fields>
+        <label><!-- Fee Aggregate --></label>
+        <name>LLC_BI__Fee_Aggregate__c</name>
+        <relationshipLabel><!-- Pricing Option --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Fees --></label>
+        <name>LLC_BI__Fees__c</name>
+    </fields>
+    <fields>
+        <help><!-- This field displays the final payment amount at the end of the loan term. --></help>
+        <label><!-- Final Payment Amount --></label>
+        <name>LLC_BI__Final_Payment_Amount__c</name>
+    </fields>
+    <fields>
+        <help><!-- This field displays the cost of credit to the borrower. --></help>
+        <label><!-- Finance Charge --></label>
+        <name>LLC_BI__Finance_Charge__c</name>
+    </fields>
+    <fields>
+        <label><!-- Fixed Period --></label>
+        <name>LLC_BI__Fixed_Period__c</name>
+    </fields>
+    <fields>
+        <label><!-- Fixed Rate Lock Summary --></label>
+        <name>LLC_BI__Fixed_Rate_Lock_Summary__c</name>
+    </fields>
+    <fields>
+        <help><!-- This field displays the effective date of the APOR Index used to complete HCM compliance calculations for an offer. --></help>
+        <label><!-- HCM APOR Effective Date --></label>
+        <name>LLC_BI__HCM_APOR_Effective_Date__c</name>
+    </fields>
+    <fields>
+        <help><!-- This field displays the HCM rate-spread for an offer. --></help>
+        <label><!-- HCM APOR Spread --></label>
+        <name>LLC_BI__HCM_APOR_Spread__c</name>
+    </fields>
+    <fields>
+        <help><!-- This field indicates if the APR for an offer exceeds HCM APOR plus spread. --></help>
+        <label><!-- HCM APOR Test --></label>
+        <name>LLC_BI__HCM_APOR_Test__c</name>
+    </fields>
+    <fields>
+        <help><!-- This field displays the APOR for an offer when HCM compliance calculations are completed. --></help>
+        <label><!-- HCM APOR --></label>
+        <name>LLC_BI__HCM_APOR__c</name>
+    </fields>
+    <fields>
+        <help><!-- This field indicates the HCM maximum points and fees for an offer. --></help>
+        <label><!-- HCM Maximum Points and Fees --></label>
+        <name>LLC_BI__HCM_Maximum_Points_And_Fees__c</name>
+    </fields>
+    <fields>
+        <help><!-- This field indicates if the points and fees for an offer exceeds HCM maximum points and fees. --></help>
+        <label><!-- HCM Points and Fees Test --></label>
+        <name>LLC_BI__HCM_Points_And_Fees_Test__c</name>
+    </fields>
+    <fields>
+        <help><!-- This field displays the effective date of the APOR Index used to complete HPML compliance calculations for an offer. --></help>
+        <label><!-- HPML APOR Effective Date --></label>
+        <name>LLC_BI__HPML_APOR_Effective_Date__c</name>
+    </fields>
+    <fields>
+        <help><!-- This field displays the HPML rate-spread for an offer. --></help>
+        <label><!-- HPML APOR Spread --></label>
+        <name>LLC_BI__HPML_APOR_Spread__c</name>
+    </fields>
+    <fields>
+        <help><!-- This field displays the APOR for an offer when HPML compliance calculations are completed. --></help>
+        <label><!-- HPML APOR --></label>
+        <name>LLC_BI__HPML_APOR__c</name>
+    </fields>
+    <fields>
+        <help><!-- This system-populated field displays the current index value percentage. --></help>
+        <label><!-- Index Value --></label>
+        <name>LLC_BI__Index_Value__c</name>
+    </fields>
+    <fields>
+        <label><!-- Index --></label>
+        <name>LLC_BI__Index__c</name>
+    </fields>
+    <fields>
+        <label><!-- Initial Fees ($) --></label>
+        <name>LLC_BI__Initial_Fees_Currency__c</name>
+    </fields>
+    <fields>
+        <label><!-- Initial Fees --></label>
+        <name>LLC_BI__Initial_Fees_Text__c</name>
+    </fields>
+    <fields>
+        <label><!-- Initial Fees (%) --></label>
+        <name>LLC_BI__Initial_Fees__c</name>
+    </fields>
+    <fields>
+        <label><!-- Initial Rate --></label>
+        <name>LLC_BI__Initial_Rate__c</name>
+    </fields>
+    <fields>
+        <help><!-- This field displays the borrower’s monthly insurance cost. --></help>
+        <label><!-- Insurance --></label>
+        <name>LLC_BI__Insurance__c</name>
+    </fields>
+    <fields>
+        <label><!-- Interest Expense --></label>
+        <name>LLC_BI__Interest_Expense__c</name>
+    </fields>
+    <fields>
+        <label><!-- Interest Income --></label>
+        <name>LLC_BI__Interest_Income__c</name>
+    </fields>
+    <fields>
+        <label><!-- Interest Options --></label>
+        <name>LLC_BI__Interest_Options__c</name>
+    </fields>
+    <fields>
+        <help><!-- The system automatically populates this field. It is used to specify how often an interest rate will be updated. --></help>
+        <label><!-- Interest Rate Adjustment Frequency --></label>
+        <name>LLC_BI__Interest_Rate_Adjustment_Frequency__c</name>
+        <picklistValues>
+            <masterLabel>Daily</masterLabel>
+            <translation><!-- Daily --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Every Other Week</masterLabel>
+            <translation><!-- Every Other Week --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Monthly</masterLabel>
+            <translation><!-- Monthly --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Payment</masterLabel>
+            <translation><!-- Payment --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Quarterly</masterLabel>
+            <translation><!-- Quarterly --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Semiannually</masterLabel>
+            <translation><!-- Semiannually --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Semimonthly</masterLabel>
+            <translation><!-- Semimonthly --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Weekly</masterLabel>
+            <translation><!-- Weekly --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Years</masterLabel>
+            <translation><!-- Years --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- This system-populated field displays the percentage that the system adds to the index to determine the applicable rate for the account. --></help>
+        <label><!-- Interest Rate Margin Percent --></label>
+        <name>LLC_BI__Interest_Rate_Margin_Percent__c</name>
+    </fields>
+    <fields>
+        <help><!-- This field indicates if an offer qualifies as HCM. --></help>
+        <label><!-- Is HCM --></label>
+        <name>LLC_BI__Is_HCM__c</name>
+    </fields>
+    <fields>
+        <help><!-- This field indicates if an offer qualifies as HPML. --></help>
+        <label><!-- Is HPML --></label>
+        <name>LLC_BI__Is_HPML__c</name>
+    </fields>
+    <fields>
+        <label><!-- Is Pipeline Scenario --></label>
+        <name>LLC_BI__Is_Pipeline_Scenario__c</name>
+    </fields>
+    <fields>
+        <help><!-- The system uses a profitability calculator to determine the rate that will maximize the return of this scenario. --></help>
+        <label><!-- nIQ Rate Optimization --></label>
+        <name>LLC_BI__Is_Rate_Optimized__c</name>
+    </fields>
+    <fields>
+        <label><!-- Is Renewal Loan --></label>
+        <name>LLC_BI__Is_Renewal_Loan__c</name>
+    </fields>
+    <fields>
+        <label><!-- Is Synced --></label>
+        <name>LLC_BI__Is_Synced__c</name>
+    </fields>
+    <fields>
+        <label><!-- Loan Amount --></label>
+        <name>LLC_BI__Loan_Amount__c</name>
+    </fields>
+    <fields>
+        <label><!-- Loan Average Balance --></label>
+        <name>LLC_BI__Loan_Average_Balance__c</name>
+    </fields>
+    <fields>
+        <label><!-- Loan Commitment --></label>
+        <name>LLC_BI__Loan_Commitment__c</name>
+    </fields>
+    <fields>
+        <label><!-- Loan Gross Funding --></label>
+        <name>LLC_BI__Loan_Gross_Funding__c</name>
+    </fields>
+    <fields>
+        <label><!-- Loan Loss Reserves --></label>
+        <name>LLC_BI__Loan_Loss_Reserves__c</name>
+    </fields>
+    <fields>
+        <label><!-- Loan Net Commitment --></label>
+        <name>LLC_BI__Loan_Net_Commitment__c</name>
+    </fields>
+    <fields>
+        <label><!-- Loan Net Funding --></label>
+        <name>LLC_BI__Loan_Net_Funding__c</name>
+    </fields>
+    <fields>
+        <label><!-- Loan --></label>
+        <name>LLC_BI__Loan__c</name>
+        <relationshipLabel><!-- Pricing Options --></relationshipLabel>
+    </fields>
+    <fields>
+        <help><!-- The system automatically populates this optional field with a Military APR Sherman calculates when the MLA Status flag is set to true. --></help>
+        <label><!-- MAPR --></label>
+        <name>LLC_BI__MAPR__c</name>
+    </fields>
+    <fields>
+        <help><!-- Users select or integration populates this optional boolean field to indicate if a consumer qualifies for the Military Lending Act when using the pricing option. --></help>
+        <label><!-- MLA Status --></label>
+        <name>LLC_BI__MLA_Status__c</name>
+    </fields>
+    <fields>
+        <help><!-- The system automatically enters the audit lookup. --></help>
+        <label><!-- Matrix --></label>
+        <name>LLC_BI__Matrix__c</name>
+        <relationshipLabel><!-- Pricing Options --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Maturity Date --></label>
+        <name>LLC_BI__Maturity_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Maturity --></label>
+        <name>LLC_BI__Maturity__c</name>
+    </fields>
+    <fields>
+        <label><!-- Memo --></label>
+        <name>LLC_BI__Memo__c</name>
+        <relationshipLabel><!-- Pricing_Options --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Monthly Payment --></label>
+        <name>LLC_BI__Monthly_Payment__c</name>
+    </fields>
+    <fields>
+        <help><!-- This field displays the borrower’s monthly mortgage insurance rate. --></help>
+        <label><!-- Mortgage Insurance --></label>
+        <name>LLC_BI__Mortgage_Insurance__c</name>
+    </fields>
+    <fields>
+        <label><!-- Net Income --></label>
+        <name>LLC_BI__Net_Income__c</name>
+    </fields>
+    <fields>
+        <label><!-- Net Interest Income --></label>
+        <name>LLC_BI__Net_Interest_Income__c</name>
+    </fields>
+    <fields>
+        <label><!-- Net Interest Margin --></label>
+        <name>LLC_BI__Net_Interest_Margin__c</name>
+    </fields>
+    <fields>
+        <label><!-- Non Interest Expense --></label>
+        <name>LLC_BI__Non_Interest_Expense__c</name>
+    </fields>
+    <fields>
+        <help><!-- The number of days accumulating odd interest between closing and first payment. --></help>
+        <label><!-- Number of Odd Days --></label>
+        <name>LLC_BI__Number_of_Odd_Days__c</name>
+    </fields>
+    <fields>
+        <help><!-- The daily cost of odd days interest on a loan. --></help>
+        <label><!-- Odd Days Amount Per Diem --></label>
+        <name>LLC_BI__Odd_Days_Amount_Per_Diem__c</name>
+    </fields>
+    <fields>
+        <help><!-- The amount of odd days interest accrued for the loan. --></help>
+        <label><!-- Odd Days Amount --></label>
+        <name>LLC_BI__Odd_Days_Amount__c</name>
+    </fields>
+    <fields>
+        <label><!-- Opportunity --></label>
+        <name>LLC_BI__Opportunity__c</name>
+        <relationshipLabel><!-- Pricing_Options --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Other Income --></label>
+        <name>LLC_BI__Other_Income__c</name>
+    </fields>
+    <fields>
+        <label><!-- Payment Schedule --></label>
+        <name>LLC_BI__Payment_Schedule__c</name>
+    </fields>
+    <fields>
+        <label><!-- Payment Type --></label>
+        <name>LLC_BI__Payment_Type__c</name>
+    </fields>
+    <fields>
+        <label><!-- Pre-Tax Income --></label>
+        <name>LLC_BI__Pre_Tax_Income__c</name>
+    </fields>
+    <fields>
+        <label><!-- Prepayment Option --></label>
+        <name>LLC_BI__Prepayment_Option__c</name>
+    </fields>
+    <fields>
+        <label><!-- Pricing Basis --></label>
+        <name>LLC_BI__Pricing_Basis__c</name>
+    </fields>
+    <fields>
+        <label><!-- Principal Balance --></label>
+        <name>LLC_BI__Principal_Balance__c</name>
+    </fields>
+    <fields>
+        <help><!-- This field displays the monthly principal and insurance value. --></help>
+        <label><!-- -D Principal and Interest --></label>
+        <name>LLC_BI__Principal_and_Interest__c</name>
+    </fields>
+    <fields>
+        <label><!-- Product Name --></label>
+        <name>LLC_BI__Product_Name__c</name>
+    </fields>
+    <fields>
+        <help><!-- This field displays the API name for the Product record referenced. --></help>
+        <label><!-- Product --></label>
+        <name>LLC_BI__Product__c</name>
+        <relationshipLabel><!-- Pricing Options --></relationshipLabel>
+    </fields>
+    <fields>
+        <help><!-- Populate this field with the amount of a loan backed by collateral. --></help>
+        <label><!-- Proposed Secured Amount --></label>
+        <name>LLC_BI__Proposed_Secured_Amount__c</name>
+    </fields>
+    <fields>
+        <help><!-- This system-populated field displays the monthly payment used to calculate the proposed monthly debt. --></help>
+        <label><!-- Qualifying Payment --></label>
+        <name>LLC_BI__Qualifying_Payment__c</name>
+    </fields>
+    <fields>
+        <help><!-- This system-populated field displays the interest rate used to calculate proposed monthly debt. --></help>
+        <label><!-- Qualifying Rate --></label>
+        <name>LLC_BI__Qualifying_Rate__c</name>
+    </fields>
+    <fields>
+        <help><!-- This system-populated field displays the term used to calculate the proposed monthly debt. --></help>
+        <label><!-- Qualifying Term --></label>
+        <name>LLC_BI__Qualifying_Term__c</name>
+    </fields>
+    <fields>
+        <label><!-- ROA --></label>
+        <name>LLC_BI__ROA__c</name>
+    </fields>
+    <fields>
+        <label><!-- ROE --></label>
+        <name>LLC_BI__ROE__c</name>
+    </fields>
+    <fields>
+        <help><!-- Enter a number within the threshold to adjust the rate. --></help>
+        <label><!-- Rate Adjustment --></label>
+        <name>LLC_BI__Rate_Adjustment__c</name>
+    </fields>
+    <fields>
+        <help><!-- This system-populated field displays the maximum possible percentage of a loan&apos;s interest rate for a set period of time. --></help>
+        <label><!-- Rate Ceiling --></label>
+        <name>LLC_BI__Rate_Ceiling__c</name>
+    </fields>
+    <fields>
+        <help><!-- This system-populated field displays the minimum possible percentage of a loan&apos;s interest rate for a set period of time. --></help>
+        <label><!-- Rate Floor --></label>
+        <name>LLC_BI__Rate_Floor__c</name>
+    </fields>
+    <fields>
+        <label><!-- Rate Type --></label>
+        <name>LLC_BI__Rate_Type__c</name>
+    </fields>
+    <fields>
+        <label><!-- Rate --></label>
+        <name>LLC_BI__Rate__c</name>
+    </fields>
+    <fields>
+        <label><!-- Repricing Duration --></label>
+        <name>LLC_BI__Repricing_Duration__c</name>
+    </fields>
+    <fields>
+        <label><!-- Risk Grade --></label>
+        <name>LLC_BI__Risk_Grade__c</name>
+        <picklistValues>
+            <masterLabel>0</masterLabel>
+            <translation><!-- 0 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>1</masterLabel>
+            <translation><!-- 1 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>10</masterLabel>
+            <translation><!-- 10 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>11</masterLabel>
+            <translation><!-- 11 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>12</masterLabel>
+            <translation><!-- 12 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>13</masterLabel>
+            <translation><!-- 13 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>14</masterLabel>
+            <translation><!-- 14 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>15</masterLabel>
+            <translation><!-- 15 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>2</masterLabel>
+            <translation><!-- 2 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>3</masterLabel>
+            <translation><!-- 3 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>4</masterLabel>
+            <translation><!-- 4 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>5</masterLabel>
+            <translation><!-- 5 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>6</masterLabel>
+            <translation><!-- 6 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>7</masterLabel>
+            <translation><!-- 7 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>8</masterLabel>
+            <translation><!-- 8 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>9</masterLabel>
+            <translation><!-- 9 --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Risk Rating --></label>
+        <name>LLC_BI__Risk_Rating__c</name>
+    </fields>
+    <fields>
+        <label><!-- Scenario Description --></label>
+        <name>LLC_BI__Scenario_Description__c</name>
+    </fields>
+    <fields>
+        <label><!-- Scenario Name --></label>
+        <name>LLC_BI__Scenario_Name__c</name>
+    </fields>
+    <fields>
+        <label><!-- Scenario Type --></label>
+        <name>LLC_BI__Scenario_Type__c</name>
+        <picklistValues>
+            <masterLabel>Alternative</masterLabel>
+            <translation><!-- Alternative --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Competitive</masterLabel>
+            <translation><!-- Competitive --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Scenario Weight --></label>
+        <name>LLC_BI__Scenario_Weight__c</name>
+    </fields>
+    <fields>
+        <label><!-- Selected Date --></label>
+        <name>LLC_BI__Selected_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Short Code --></label>
+        <name>LLC_BI__Short_Code__c</name>
+    </fields>
+    <fields>
+        <label><!-- Spread --></label>
+        <name>LLC_BI__Spread__c</name>
+    </fields>
+    <fields>
+        <label><!-- Target Net Income --></label>
+        <name>LLC_BI__Target_Net_Income__c</name>
+    </fields>
+    <fields>
+        <label><!-- Target ROA --></label>
+        <name>LLC_BI__Target_ROA__c</name>
+    </fields>
+    <fields>
+        <label><!-- Target ROE --></label>
+        <name>LLC_BI__Target_ROE__c</name>
+    </fields>
+    <fields>
+        <label><!-- Tax Exempt Status --></label>
+        <name>LLC_BI__Tax_Exempt_Status__c</name>
+    </fields>
+    <fields>
+        <label><!-- Taxes --></label>
+        <name>LLC_BI__Taxes__c</name>
+    </fields>
+    <fields>
+        <help><!-- This system-populated field displays the interest rate initially applied to the loan. --></help>
+        <label><!-- Teaser Rate --></label>
+        <name>LLC_BI__Teaser_Rate__c</name>
+    </fields>
+    <fields>
+        <help><!-- This system-populated field displays the number of payments the teaser rate is in effect. --></help>
+        <label><!-- Teaser Term --></label>
+        <name>LLC_BI__Teaser_Term__c</name>
+    </fields>
+    <fields>
+        <label><!-- Term --></label>
+        <name>LLC_BI__Term__c</name>
+    </fields>
+    <fields>
+        <label><!-- Total Cost --></label>
+        <name>LLC_BI__Total_Cost__c</name>
+    </fields>
+    <fields>
+        <help><!-- When populated, this field contains the total cost of all the credit protections applied. --></help>
+        <label><!-- Total Insurance Cost --></label>
+        <name>LLC_BI__Total_Insurance_Cost__c</name>
+    </fields>
+    <fields>
+        <help><!-- This field indicates the total interest the borrower pays over the loan term as a percentage of the loan amount. --></help>
+        <label><!-- Total Interest Percentage --></label>
+        <name>LLC_BI__Total_Interest_Percentage__c</name>
+    </fields>
+    <fields>
+        <help><!-- This field displays the amount of interest paid for a loan. --></help>
+        <label><!-- Interest Charge --></label>
+        <name>LLC_BI__Total_Interest__c</name>
+    </fields>
+    <fields>
+        <help><!-- This field indicates the total principal, interest,  and loan costs the borrower pays over the first five years of the loan term. --></help>
+        <label><!-- Total Payment Over 5 Years --></label>
+        <name>LLC_BI__Total_Payment_Over_5_Years__c</name>
+    </fields>
+    <fields>
+        <help><!-- This field indicates the total points and fees for an offer. --></help>
+        <label><!-- Total Points And Fees --></label>
+        <name>LLC_BI__Total_Points_And_Fees__c</name>
+    </fields>
+    <fields>
+        <help><!-- This field indicates the total principal the borrower pays over the first five years of the loan term. --></help>
+        <label><!-- Total Principal Over 5 Years --></label>
+        <name>LLC_BI__Total_Principal_Over_5_Years__c</name>
+    </fields>
+    <fields>
+        <label><!-- Total Principal --></label>
+        <name>LLC_BI__Total_Principal__c</name>
+    </fields>
+    <fields>
+        <help><!-- This field indicates the total principal, interest, and loan costs the borrower pays over the loan term. --></help>
+        <label><!-- Total of Payments --></label>
+        <name>LLC_BI__Total_of_Payments__c</name>
+    </fields>
+    <fields>
+        <help><!-- Populate this field with the percentage of a line of credit that a borrower is expected to draw down. --></help>
+        <label><!-- Utilization --></label>
+        <name>LLC_BI__Utilization__c</name>
+    </fields>
+    <fields>
+        <label><!-- lookupKey --></label>
+        <name>LLC_BI__lookupKey__c</name>
+    </fields>
+</CustomObjectTranslation>

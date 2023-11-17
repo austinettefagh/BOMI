@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <help><!-- This lookup field indicates the parent business activity associated with the business activity. --></help>
+        <label><!-- Conditional From --></label>
+        <name>nFORCE__Conditional_From__c</name>
+        <relationshipLabel><!-- Conditional To --></relationshipLabel>
+    </fields>
+    <fields>
+        <help><!-- This lookup field indicates the child business activity associated with the business activity. --></help>
+        <label><!-- Conditional To --></label>
+        <name>nFORCE__Conditional_To__c</name>
+        <relationshipLabel><!-- Conditional From --></relationshipLabel>
+    </fields>
+    <fields>
+        <help><!-- This system-populated field indicates the conditional type of the business activity. --></help>
+        <label><!-- Conditional Type --></label>
+        <name>nFORCE__Conditional_Type__c</name>
+        <picklistValues>
+            <masterLabel>Error Conditional</masterLabel>
+            <translation><!-- Error Conditional --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Finalizer Error Conditional</masterLabel>
+            <translation><!-- Finalizer Error Conditional --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Finalizer Success Conditional</masterLabel>
+            <translation><!-- Finalizer Success Conditional --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Success Conditional</masterLabel>
+            <translation><!-- Success Conditional --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- This field contains the External ID for the Business Activity Conditional. --></help>
+        <label><!-- Lookup Key --></label>
+        <name>nFORCE__lookupKey__c</name>
+    </fields>
+</CustomObjectTranslation>

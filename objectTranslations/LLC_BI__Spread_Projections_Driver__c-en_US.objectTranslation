@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <label><!-- Classification --></label>
+        <name>LLC_BI__Classification__c</name>
+        <relationshipLabel><!-- Drivers --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Spread Projections Template --></label>
+        <name>LLC_BI__Spread_Projections_Template__c</name>
+        <relationshipLabel><!-- Drivers --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Spread Statement Record Value --></label>
+        <name>LLC_BI__Spread_Statement_Record_Value__c</name>
+        <relationshipLabel><!-- Driver --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Spread Statement Record --></label>
+        <name>LLC_BI__Spread_Statement_Record__c</name>
+        <relationshipLabel><!-- Drivers --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Type --></label>
+        <name>LLC_BI__Type__c</name>
+        <picklistValues>
+            <masterLabel>Dollar Amount Change</masterLabel>
+            <translation><!-- Dollar Amount Change --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>No Change</masterLabel>
+            <translation><!-- No Change --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Percent Amount Change</masterLabel>
+            <translation><!-- Percent Amount Change --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Percent of Revenue</masterLabel>
+            <translation><!-- Percent of Revenue --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Value --></label>
+        <name>LLC_BI__Value__c</name>
+    </fields>
+    <fields>
+        <label><!-- lookupKey --></label>
+        <name>LLC_BI__lookupKey__c</name>
+    </fields>
+</CustomObjectTranslation>

@@ -1,0 +1,549 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <help><!-- Average is an Arithmetic mean of values. Use this field if the underlying analytic reports on average. --></help>
+        <label><!-- Average --></label>
+        <name>nFORCE__Average__c</name>
+    </fields>
+    <fields>
+        <help><!-- Use this field if the underlying analytic data reports on count. Count is a count of data fields --></help>
+        <label><!-- Count --></label>
+        <name>nFORCE__Count__c</name>
+    </fields>
+    <fields>
+        <label><!-- Currency 10 --></label>
+        <name>nFORCE__Currency_10__c</name>
+    </fields>
+    <fields>
+        <label><!-- Currency 1 --></label>
+        <name>nFORCE__Currency_1__c</name>
+    </fields>
+    <fields>
+        <label><!-- Currency 2 --></label>
+        <name>nFORCE__Currency_2__c</name>
+    </fields>
+    <fields>
+        <label><!-- Currency 3 --></label>
+        <name>nFORCE__Currency_3__c</name>
+    </fields>
+    <fields>
+        <label><!-- Currency 4 --></label>
+        <name>nFORCE__Currency_4__c</name>
+    </fields>
+    <fields>
+        <label><!-- Currency 5 --></label>
+        <name>nFORCE__Currency_5__c</name>
+    </fields>
+    <fields>
+        <label><!-- Currency 6 --></label>
+        <name>nFORCE__Currency_6__c</name>
+    </fields>
+    <fields>
+        <label><!-- Currency 7 --></label>
+        <name>nFORCE__Currency_7__c</name>
+    </fields>
+    <fields>
+        <label><!-- Currency 8 --></label>
+        <name>nFORCE__Currency_8__c</name>
+    </fields>
+    <fields>
+        <label><!-- Currency 9 --></label>
+        <name>nFORCE__Currency_9__c</name>
+    </fields>
+    <fields>
+        <help><!-- data source ID property --></help>
+        <label><!-- Data Source Id --></label>
+        <name>nFORCE__Data_Source_Id__c</name>
+    </fields>
+    <fields>
+        <help><!-- A string that has an associated data structure used to describe a connection to a data source. --></help>
+        <label><!-- Data Source Name --></label>
+        <name>nFORCE__Data_Source_Name__c</name>
+    </fields>
+    <fields>
+        <help><!-- Data Source will be &quot;Salesforce Org&quot; for analytics as all data comes from child orgs.  The Data Store object, however, is generic enough to hold data from additional sources such as the FDIC. --></help>
+        <label><!-- Data Source --></label>
+        <name>nFORCE__Data_Source__c</name>
+        <picklistValues>
+            <masterLabel>Salesforce Org</masterLabel>
+            <translation><!-- Salesforce Org --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- A DateTime field used for grouping. --></help>
+        <label><!-- DateTime 10 --></label>
+        <name>nFORCE__DateTime_10__c</name>
+    </fields>
+    <fields>
+        <help><!-- A DateTime field used for grouping. --></help>
+        <label><!-- DateTime 1 --></label>
+        <name>nFORCE__DateTime_1__c</name>
+    </fields>
+    <fields>
+        <help><!-- A DateTime field used for grouping. --></help>
+        <label><!-- DateTime 2 --></label>
+        <name>nFORCE__DateTime_2__c</name>
+    </fields>
+    <fields>
+        <help><!-- A DateTime field used for grouping. --></help>
+        <label><!-- DateTime 3 --></label>
+        <name>nFORCE__DateTime_3__c</name>
+    </fields>
+    <fields>
+        <help><!-- A DateTime field used for grouping. --></help>
+        <label><!-- DateTime 4 --></label>
+        <name>nFORCE__DateTime_4__c</name>
+    </fields>
+    <fields>
+        <help><!-- A DateTime field used for grouping. --></help>
+        <label><!-- DateTime 5 --></label>
+        <name>nFORCE__DateTime_5__c</name>
+    </fields>
+    <fields>
+        <help><!-- A DateTime field used for grouping. --></help>
+        <label><!-- DateTime 6 --></label>
+        <name>nFORCE__DateTime_6__c</name>
+    </fields>
+    <fields>
+        <help><!-- A DateTime field used for grouping. --></help>
+        <label><!-- DateTime 7 --></label>
+        <name>nFORCE__DateTime_7__c</name>
+    </fields>
+    <fields>
+        <help><!-- A DateTime field used for grouping. --></help>
+        <label><!-- DateTime 8 --></label>
+        <name>nFORCE__DateTime_8__c</name>
+    </fields>
+    <fields>
+        <help><!-- A DateTime field used for grouping. --></help>
+        <label><!-- DateTime 9 --></label>
+        <name>nFORCE__DateTime_9__c</name>
+    </fields>
+    <fields>
+        <label><!-- Decimal 10 --></label>
+        <name>nFORCE__Decimal_10__c</name>
+    </fields>
+    <fields>
+        <label><!-- Decimal 1 --></label>
+        <name>nFORCE__Decimal_1__c</name>
+    </fields>
+    <fields>
+        <label><!-- Decimal 2 --></label>
+        <name>nFORCE__Decimal_2__c</name>
+    </fields>
+    <fields>
+        <label><!-- Decimal 3 --></label>
+        <name>nFORCE__Decimal_3__c</name>
+    </fields>
+    <fields>
+        <label><!-- Decimal 4 --></label>
+        <name>nFORCE__Decimal_4__c</name>
+    </fields>
+    <fields>
+        <label><!-- Decimal 5 --></label>
+        <name>nFORCE__Decimal_5__c</name>
+    </fields>
+    <fields>
+        <label><!-- Decimal 6 --></label>
+        <name>nFORCE__Decimal_6__c</name>
+    </fields>
+    <fields>
+        <label><!-- Decimal 7 --></label>
+        <name>nFORCE__Decimal_7__c</name>
+    </fields>
+    <fields>
+        <label><!-- Decimal 8 --></label>
+        <name>nFORCE__Decimal_8__c</name>
+    </fields>
+    <fields>
+        <label><!-- Decimal 9 --></label>
+        <name>nFORCE__Decimal_9__c</name>
+    </fields>
+    <fields>
+        <help><!-- End of the timeframe for the captured data.  If the aggregate data is captured daily, the start and end dates will be the same date.  If the aggregate data is for one week, the start and end date would be a week apart. --></help>
+        <label><!-- End Date --></label>
+        <name>nFORCE__End_Date__c</name>
+    </fields>
+    <fields>
+        <help><!-- Fields may be grouped into measures and dimensions. --></help>
+        <label><!-- Grouping 1 --></label>
+        <name>nFORCE__Grouping_1__c</name>
+    </fields>
+    <fields>
+        <help><!-- Fields may be grouped into measures and dimensions. --></help>
+        <label><!-- Grouping 2 --></label>
+        <name>nFORCE__Grouping_2__c</name>
+    </fields>
+    <fields>
+        <help><!-- Fields may be grouped into measures and dimensions. --></help>
+        <label><!-- Grouping 3 --></label>
+        <name>nFORCE__Grouping_3__c</name>
+    </fields>
+    <fields>
+        <help><!-- Fields may be grouped into measures and dimensions. --></help>
+        <label><!-- Grouping 4 --></label>
+        <name>nFORCE__Grouping_4__c</name>
+    </fields>
+    <fields>
+        <help><!-- Fields may be grouped into measures and dimensions. --></help>
+        <label><!-- Grouping 5 --></label>
+        <name>nFORCE__Grouping_5__c</name>
+    </fields>
+    <fields>
+        <help><!-- Formula to determine if dirty --></help>
+        <label><!-- Is Dirty --></label>
+        <name>nFORCE__Is_Dirty__c</name>
+    </fields>
+    <fields>
+        <help><!-- Max is the Largest Value. Use this field if the underlying analytic data reports on max. --></help>
+        <label><!-- Max --></label>
+        <name>nFORCE__Max__c</name>
+    </fields>
+    <fields>
+        <help><!-- Min is the Smallest Value. Use this field if the underlying analytic data reports on min. --></help>
+        <label><!-- Min --></label>
+        <name>nFORCE__Min__c</name>
+    </fields>
+    <fields>
+        <help><!-- A number field used for grouping. --></help>
+        <label><!-- Number 10 --></label>
+        <name>nFORCE__Number_10__c</name>
+    </fields>
+    <fields>
+        <help><!-- A number field used for grouping. --></help>
+        <label><!-- Number 11 --></label>
+        <name>nFORCE__Number_11__c</name>
+    </fields>
+    <fields>
+        <help><!-- A number field used for grouping. --></help>
+        <label><!-- Number 12 --></label>
+        <name>nFORCE__Number_12__c</name>
+    </fields>
+    <fields>
+        <help><!-- A number field used for grouping. --></help>
+        <label><!-- Number 13 --></label>
+        <name>nFORCE__Number_13__c</name>
+    </fields>
+    <fields>
+        <help><!-- A number field used for grouping. --></help>
+        <label><!-- Number 14 --></label>
+        <name>nFORCE__Number_14__c</name>
+    </fields>
+    <fields>
+        <help><!-- A number field used for grouping. --></help>
+        <label><!-- Number 15 --></label>
+        <name>nFORCE__Number_15__c</name>
+    </fields>
+    <fields>
+        <help><!-- A number field used for grouping. --></help>
+        <label><!-- Number 16 --></label>
+        <name>nFORCE__Number_16__c</name>
+    </fields>
+    <fields>
+        <help><!-- A number field used for grouping. --></help>
+        <label><!-- Number 17 --></label>
+        <name>nFORCE__Number_17__c</name>
+    </fields>
+    <fields>
+        <help><!-- A number field used for grouping. --></help>
+        <label><!-- Number 18 --></label>
+        <name>nFORCE__Number_18__c</name>
+    </fields>
+    <fields>
+        <help><!-- A number field used for grouping. --></help>
+        <label><!-- Number 19 --></label>
+        <name>nFORCE__Number_19__c</name>
+    </fields>
+    <fields>
+        <help><!-- A number field used for grouping. --></help>
+        <label><!-- Number 1 --></label>
+        <name>nFORCE__Number_1__c</name>
+    </fields>
+    <fields>
+        <help><!-- A number field used for grouping. --></help>
+        <label><!-- Number 20 --></label>
+        <name>nFORCE__Number_20__c</name>
+    </fields>
+    <fields>
+        <help><!-- A number field used for grouping. --></help>
+        <label><!-- Number 21 --></label>
+        <name>nFORCE__Number_21__c</name>
+    </fields>
+    <fields>
+        <help><!-- A number field used for grouping. --></help>
+        <label><!-- Number 22 --></label>
+        <name>nFORCE__Number_22__c</name>
+    </fields>
+    <fields>
+        <help><!-- A number field used for grouping. --></help>
+        <label><!-- Number 23 --></label>
+        <name>nFORCE__Number_23__c</name>
+    </fields>
+    <fields>
+        <help><!-- A number field used for grouping. --></help>
+        <label><!-- Number 24 --></label>
+        <name>nFORCE__Number_24__c</name>
+    </fields>
+    <fields>
+        <help><!-- A number field used for grouping. --></help>
+        <label><!-- Number 25 --></label>
+        <name>nFORCE__Number_25__c</name>
+    </fields>
+    <fields>
+        <help><!-- A number field used for grouping. --></help>
+        <label><!-- Number 2 --></label>
+        <name>nFORCE__Number_2__c</name>
+    </fields>
+    <fields>
+        <help><!-- A number field used for grouping. --></help>
+        <label><!-- Number 3 --></label>
+        <name>nFORCE__Number_3__c</name>
+    </fields>
+    <fields>
+        <help><!-- A number field used for grouping. --></help>
+        <label><!-- Number 4 --></label>
+        <name>nFORCE__Number_4__c</name>
+    </fields>
+    <fields>
+        <help><!-- A number field used for grouping. --></help>
+        <label><!-- Number 5 --></label>
+        <name>nFORCE__Number_5__c</name>
+    </fields>
+    <fields>
+        <help><!-- A number field used for grouping. --></help>
+        <label><!-- Number 6 --></label>
+        <name>nFORCE__Number_6__c</name>
+    </fields>
+    <fields>
+        <help><!-- A number field used for grouping. --></help>
+        <label><!-- Number 7 --></label>
+        <name>nFORCE__Number_7__c</name>
+    </fields>
+    <fields>
+        <help><!-- A number field used for grouping. --></help>
+        <label><!-- Number 8 --></label>
+        <name>nFORCE__Number_8__c</name>
+    </fields>
+    <fields>
+        <help><!-- A number field used for grouping. --></help>
+        <label><!-- Number 9 --></label>
+        <name>nFORCE__Number_9__c</name>
+    </fields>
+    <fields>
+        <label><!-- Percent 10 --></label>
+        <name>nFORCE__Percent_10__c</name>
+    </fields>
+    <fields>
+        <label><!-- Percent 1 --></label>
+        <name>nFORCE__Percent_1__c</name>
+    </fields>
+    <fields>
+        <label><!-- Percent 2 --></label>
+        <name>nFORCE__Percent_2__c</name>
+    </fields>
+    <fields>
+        <label><!-- Percent 3 --></label>
+        <name>nFORCE__Percent_3__c</name>
+    </fields>
+    <fields>
+        <label><!-- Percent 4 --></label>
+        <name>nFORCE__Percent_4__c</name>
+    </fields>
+    <fields>
+        <label><!-- Percent 5 --></label>
+        <name>nFORCE__Percent_5__c</name>
+    </fields>
+    <fields>
+        <label><!-- Percent 6 --></label>
+        <name>nFORCE__Percent_6__c</name>
+    </fields>
+    <fields>
+        <label><!-- Percent 7 --></label>
+        <name>nFORCE__Percent_7__c</name>
+    </fields>
+    <fields>
+        <label><!-- Percent 8 --></label>
+        <name>nFORCE__Percent_8__c</name>
+    </fields>
+    <fields>
+        <label><!-- Percent 9 --></label>
+        <name>nFORCE__Percent_9__c</name>
+    </fields>
+    <fields>
+        <help><!-- Send date and time --></help>
+        <label><!-- Send Date Time --></label>
+        <name>nFORCE__Send_Date_Time__c</name>
+    </fields>
+    <fields>
+        <help><!-- The beginning of the timeframe for the captured data. --></help>
+        <label><!-- Start Date --></label>
+        <name>nFORCE__Start_Date__c</name>
+    </fields>
+    <fields>
+        <help><!-- Use this field if the underlying analytic data reports on sum. Sum is an additive function. --></help>
+        <label><!-- Sum --></label>
+        <name>nFORCE__Sum__c</name>
+    </fields>
+    <fields>
+        <help><!-- A predefined list to assist in filtering on reports. --></help>
+        <label><!-- Tags --></label>
+        <name>nFORCE__Tags__c</name>
+        <picklistValues>
+            <masterLabel>Login Count</masterLabel>
+            <translation><!-- Login Count --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>User Analytics</masterLabel>
+            <translation><!-- User Analytics --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- A text field used for grouping. --></help>
+        <label><!-- Text 10 --></label>
+        <name>nFORCE__Text_10__c</name>
+    </fields>
+    <fields>
+        <help><!-- A text field used for grouping. --></help>
+        <label><!-- Text 11 --></label>
+        <name>nFORCE__Text_11__c</name>
+    </fields>
+    <fields>
+        <help><!-- A text field used for grouping. --></help>
+        <label><!-- Text 12 --></label>
+        <name>nFORCE__Text_12__c</name>
+    </fields>
+    <fields>
+        <help><!-- A text field used for grouping. --></help>
+        <label><!-- Text 13 --></label>
+        <name>nFORCE__Text_13__c</name>
+    </fields>
+    <fields>
+        <help><!-- A text field used for grouping. --></help>
+        <label><!-- Text 14 --></label>
+        <name>nFORCE__Text_14__c</name>
+    </fields>
+    <fields>
+        <help><!-- A text field used for grouping. --></help>
+        <label><!-- Text 15 --></label>
+        <name>nFORCE__Text_15__c</name>
+    </fields>
+    <fields>
+        <help><!-- A text field used for grouping. --></help>
+        <label><!-- Text 16 --></label>
+        <name>nFORCE__Text_16__c</name>
+    </fields>
+    <fields>
+        <help><!-- A text field used for grouping. --></help>
+        <label><!-- Text 17 --></label>
+        <name>nFORCE__Text_17__c</name>
+    </fields>
+    <fields>
+        <help><!-- A text field used for grouping. --></help>
+        <label><!-- Text 18 --></label>
+        <name>nFORCE__Text_18__c</name>
+    </fields>
+    <fields>
+        <help><!-- A text field used for grouping. --></help>
+        <label><!-- Text 19 --></label>
+        <name>nFORCE__Text_19__c</name>
+    </fields>
+    <fields>
+        <help><!-- A text field used for grouping. --></help>
+        <label><!-- Text 1 --></label>
+        <name>nFORCE__Text_1__c</name>
+    </fields>
+    <fields>
+        <help><!-- A text field used for grouping. --></help>
+        <label><!-- Text 20 --></label>
+        <name>nFORCE__Text_20__c</name>
+    </fields>
+    <fields>
+        <help><!-- A text field used for grouping. --></help>
+        <label><!-- Text 21 --></label>
+        <name>nFORCE__Text_21__c</name>
+    </fields>
+    <fields>
+        <help><!-- A text field used for grouping. --></help>
+        <label><!-- Text 22 --></label>
+        <name>nFORCE__Text_22__c</name>
+    </fields>
+    <fields>
+        <help><!-- A text field used for grouping. --></help>
+        <label><!-- Text 23 --></label>
+        <name>nFORCE__Text_23__c</name>
+    </fields>
+    <fields>
+        <help><!-- A text field used for grouping. --></help>
+        <label><!-- Text 24 --></label>
+        <name>nFORCE__Text_24__c</name>
+    </fields>
+    <fields>
+        <help><!-- A text field used for grouping. --></help>
+        <label><!-- Text 25 --></label>
+        <name>nFORCE__Text_25__c</name>
+    </fields>
+    <fields>
+        <help><!-- A text field used for grouping. --></help>
+        <label><!-- Text 2 --></label>
+        <name>nFORCE__Text_2__c</name>
+    </fields>
+    <fields>
+        <help><!-- A text field used for grouping. --></help>
+        <label><!-- Text 3 --></label>
+        <name>nFORCE__Text_3__c</name>
+    </fields>
+    <fields>
+        <help><!-- A text field used for grouping. --></help>
+        <label><!-- Text 4 --></label>
+        <name>nFORCE__Text_4__c</name>
+    </fields>
+    <fields>
+        <help><!-- A text field used for grouping. --></help>
+        <label><!-- Text 5 --></label>
+        <name>nFORCE__Text_5__c</name>
+    </fields>
+    <fields>
+        <help><!-- A text field used for grouping. --></help>
+        <label><!-- Text 6 --></label>
+        <name>nFORCE__Text_6__c</name>
+    </fields>
+    <fields>
+        <help><!-- A text field used for grouping. --></help>
+        <label><!-- Text 7 --></label>
+        <name>nFORCE__Text_7__c</name>
+    </fields>
+    <fields>
+        <help><!-- A text field used for grouping. --></help>
+        <label><!-- Text 8 --></label>
+        <name>nFORCE__Text_8__c</name>
+    </fields>
+    <fields>
+        <help><!-- A text field used for grouping. --></help>
+        <label><!-- Text 9 --></label>
+        <name>nFORCE__Text_9__c</name>
+    </fields>
+    <fields>
+        <help><!-- Timestamp is the time the analytic snapshot ran on the child org. --></help>
+        <label><!-- Timestamp --></label>
+        <name>nFORCE__Timestamp__c</name>
+    </fields>
+    <fields>
+        <help><!-- Unique name for the data store that is a name of the analytic snapshot that captured the original data.  Examples may be something like &quot;Daily Login Count&quot;, &quot;Total Loan Count&quot;, etc...  You will use this unique name to filter down the data when reporting. --></help>
+        <label><!-- Unique Name --></label>
+        <name>nFORCE__Unique_Name__c</name>
+    </fields>
+    <fields>
+        <help><!-- Data store value is a generic value.  This will likely not be used in user analytics, but could be used if capturing data from the FDIC or another source. --></help>
+        <label><!-- Value --></label>
+        <name>nFORCE__Value__c</name>
+    </fields>
+    <fields>
+        <help><!-- Key for query joining the base table and lookup table. --></help>
+        <label><!-- lookupKey --></label>
+        <name>nFORCE__lookupKey__c</name>
+    </fields>
+    <webLinks>
+        <label><!-- Push_Data --></label>
+        <name>nFORCE__Push_Data</name>
+    </webLinks>
+</CustomObjectTranslation>

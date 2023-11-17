@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <help><!-- Displays the DocType lookup value. --></help>
+        <label><!-- DocType --></label>
+        <name>LLC_BI__DocType__c</name>
+        <relationshipLabel><!-- DocTypeRoles --></relationshipLabel>
+    </fields>
+    <fields>
+        <help><!-- Displays the Role lookup value. --></help>
+        <label><!-- Role --></label>
+        <name>LLC_BI__Role__c</name>
+        <relationshipLabel><!-- DocTypeRoles --></relationshipLabel>
+    </fields>
+    <fields>
+        <help><!-- Enter a unique external identifier. --></help>
+        <label><!-- lookupKey --></label>
+        <name>LLC_BI__lookupKey__c</name>
+    </fields>
+</CustomObjectTranslation>

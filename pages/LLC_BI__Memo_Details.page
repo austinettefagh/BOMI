@@ -1,0 +1,16 @@
+<apex:page >
+	<nFORCE:ncDataProvidersIncludes />
+	<nFORCE:ncPubsubIncludes />
+	<apex:includeScript value="{!URLFOR($Resource.LLC_BI__ncMemo, 'application/App.js')}" />
+	<apex:includeScript value="{!URLFOR($Resource.LLC_BI__ncMemo, 'application/Bootstrap.js')}" />
+	<apex:includeScript value="{!URLFOR($Resource.LLC_BI__ncMemo, 'controllers/MemoDetailsAppController.js')}" />
+	<c:MemoDetailsConfiguration />
+	<style>
+        input[type="checkbox"][disabled].form-control-static {
+			filter: sepia(100%) saturate(10000%) grayscale(100%) brightness(100%) drop-shadow(0px 0px 0px black);
+        }
+	</style>
+	<div id="ncMemo" ng-controller="MemoDetailsAppController" />
+	<apex:include pageName="nFORCE__KoDataGrid" />
+	<apex:include pageName="LLC_BI__MemoData" />
+</apex:page>

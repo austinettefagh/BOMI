@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ApprovalProcess xmlns="http://soap.sforce.com/2006/04/metadata">
+    <active>true</active>
+    <allowRecall>false</allowRecall>
+    <allowedSubmitters>
+        <type>owner</type>
+    </allowedSubmitters>
+    <allowedSubmitters>
+        <submitter>Treasury_Sales_Officers</submitter>
+        <type>role</type>
+    </allowedSubmitters>
+    <allowedSubmitters>
+        <submitter>Treasury_Sales_Specialist</submitter>
+        <type>role</type>
+    </allowedSubmitters>
+    <approvalPageFields>
+        <field>Name</field>
+        <field>Owner</field>
+        <field>CF_Comments__c</field>
+    </approvalPageFields>
+    <approvalStep>
+        <allowDelegate>false</allowDelegate>
+        <assignedApprover>
+            <approver>
+                <name>CQ_Scenario_Approval_Queue</name>
+                <type>queue</type>
+            </approver>
+            <whenMultipleApprovers>FirstResponse</whenMultipleApprovers>
+        </assignedApprover>
+        <label>Approval Step 1</label>
+        <name>Approval_Step_1</name>
+    </approvalStep>
+    <description>Approval Process enters when Proforma has Exception Pricing less than Cost OR when Earnings Credit Rate (%) &gt;= .30</description>
+    <emailTemplate>TBoM_Email_Templates/CE_Proforma_Approval_Email</emailTemplate>
+    <enableMobileDeviceAccess>false</enableMobileDeviceAccess>
+    <entryCriteria>
+        <booleanFilter>1 OR 2</booleanFilter>
+        <criteriaItems>
+            <field>LLC_BI__Scenario__c.CF_Earnings_Credit_Rate__c</field>
+            <operation>equals</operation>
+            <value>.35,.40,.30</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>LLC_BI__Scenario__c.CF_Exception_Price_less_than_Cost__c</field>
+            <operation>equals</operation>
+            <value>True</value>
+        </criteriaItems>
+    </entryCriteria>
+    <finalApprovalActions>
+        <action>
+            <name>Update_Date_Approved_field</name>
+            <type>FieldUpdate</type>
+        </action>
+        <action>
+            <name>Update_Status_field</name>
+            <type>FieldUpdate</type>
+        </action>
+    </finalApprovalActions>
+    <finalApprovalRecordLock>false</finalApprovalRecordLock>
+    <finalRejectionRecordLock>false</finalRejectionRecordLock>
+    <initialSubmissionActions>
+        <action>
+            <name>CEA_Scenario_Approval_Email_Notification1</name>
+            <type>Alert</type>
+        </action>
+        <action>
+            <name>Update_Date_Submitted_for_Approval</name>
+            <type>FieldUpdate</type>
+        </action>
+    </initialSubmissionActions>
+    <label>Scenario Approval Process</label>
+    <processOrder>2</processOrder>
+    <recordEditability>AdminOnly</recordEditability>
+    <showApprovalHistory>true</showApprovalHistory>
+</ApprovalProcess>

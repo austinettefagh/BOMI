@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Flow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <apiVersion>57.0</apiVersion>
+    <assignments>
+        <name>Update_Date_Docusign_sent</name>
+        <label>Update Date Docusign sent</label>
+        <locationX>50</locationX>
+        <locationY>503</locationY>
+        <assignmentItems>
+            <assignToReference>$Record.CF_Date_DocuSign_Sent__c</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>$Flow.CurrentDate</elementReference>
+            </value>
+        </assignmentItems>
+    </assignments>
+    <decisions>
+        <name>Sent_for_E_Sign</name>
+        <label>Sent for E-Sign ?</label>
+        <locationX>182</locationX>
+        <locationY>395</locationY>
+        <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
+        <rules>
+            <name>Sent</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record.LLC_BI__reviewStatus__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>E-Signature Pending</stringValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.LLC_BI__reviewStatus__c</leftValueReference>
+                <operator>IsChanged</operator>
+                <rightValue>
+                    <booleanValue>true</booleanValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Update_Date_Docusign_sent</targetReference>
+            </connector>
+            <label>Sent</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <name>User_Check</name>
+        <label>User Check</label>
+        <locationX>380</locationX>
+        <locationY>287</locationY>
+        <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
+        <rules>
+            <name>No_Workflow</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>$User.No_Workflow__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <booleanValue>false</booleanValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Sent_for_E_Sign</targetReference>
+            </connector>
+            <label>No Workflow</label>
+        </rules>
+    </decisions>
+    <description>Account Document object&apos;s before update flow.</description>
+    <environments>Default</environments>
+    <formulas>
+        <name>IsNewRecord</name>
+        <dataType>Boolean</dataType>
+        <expression>ISNEW()</expression>
+    </formulas>
+    <formulas>
+        <name>UpdatedPortalName_Year</name>
+        <dataType>String</dataType>
+        <expression>{!$Record.LLC_BI__Portal_Doc_Name__c}+&apos; &apos;+{!$Record.NDOC__Year__c}</expression>
+    </formulas>
+    <formulas>
+        <name>UpdatePlaceholderName_Year</name>
+        <dataType>String</dataType>
+        <expression>{!$Record.Name}+&apos; &apos;+{!$Record.NDOC__Year__c}</expression>
+    </formulas>
+    <interviewLabel>ACDC_AccountDocument_Create_Update_FF_FLOW {!$Flow.CurrentDateTime}</interviewLabel>
+    <label>ACDC_AccountDocument_Create_Update_FF_FLOW</label>
+    <processMetadataValues>
+        <name>BuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>CanvasMode</name>
+        <value>
+            <stringValue>AUTO_LAYOUT_CANVAS</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>OriginBuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processType>AutoLaunchedFlow</processType>
+    <start>
+        <locationX>254</locationX>
+        <locationY>0</locationY>
+        <connector>
+            <targetReference>User_Check</targetReference>
+        </connector>
+        <object>LLC_BI__AccountDocument__c</object>
+        <recordTriggerType>CreateAndUpdate</recordTriggerType>
+        <triggerType>RecordBeforeSave</triggerType>
+    </start>
+    <status>Active</status>
+</Flow>

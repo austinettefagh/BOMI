@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <label><!-- App --></label>
+        <name>nDESIGN__App__c</name>
+    </fields>
+    <fields>
+        <label><!-- Banner --></label>
+        <name>nDESIGN__Banner__c</name>
+    </fields>
+    <fields>
+        <label><!-- Body --></label>
+        <name>nDESIGN__Body__c</name>
+    </fields>
+    <fields>
+        <label><!-- Group --></label>
+        <name>nDESIGN__Group__c</name>
+    </fields>
+    <fields>
+        <label><!-- Icon Class --></label>
+        <name>nDESIGN__Icon_Class__c</name>
+    </fields>
+    <fields>
+        <label><!-- Is Hidden --></label>
+        <name>nDESIGN__Is_Hidden__c</name>
+    </fields>
+    <fields>
+        <label><!-- Order --></label>
+        <name>nDESIGN__Order__c</name>
+    </fields>
+    <fields>
+        <label><!-- Parent App --></label>
+        <name>nDESIGN__Parent_App__c</name>
+    </fields>
+    <fields>
+        <label><!-- Side Bar --></label>
+        <name>nDESIGN__Side_Bar__c</name>
+    </fields>
+    <fields>
+        <label><!-- Top Bar --></label>
+        <name>nDESIGN__Top_Bar__c</name>
+    </fields>
+</CustomObjectTranslation>

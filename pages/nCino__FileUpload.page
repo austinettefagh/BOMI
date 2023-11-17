@@ -1,0 +1,17 @@
+<apex:page docType="html-5.0"
+	showHeader="false"
+	sidebar="false"
+	applyHtmlTag="false"
+	standardStylesheets="false"
+>
+	<script>
+		(function () {
+			window.nFileUploadToken = '{!JSENCODE($Api.Session_ID)}';
+		})();
+	</script>
+	<script type="module" src="{!URLFOR($Resource.n_file_upload, 'nFileUpload.js')}"></script>
+	<script
+		type="module"
+		src="{!URLFOR($Resource.n_file_upload, 'nFileUploadConfiguration.js')}"
+	></script>
+</apex:page>

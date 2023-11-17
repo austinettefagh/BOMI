@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <label><!-- Event State Data Encrypted Flag --></label>
+        <name>EFPIO__IsEncrypted__c</name>
+    </fields>
+    <fields>
+        <label><!-- State Key --></label>
+        <name>EFPIO__Key__c</name>
+    </fields>
+    <fields>
+        <label><!-- Time to Live --></label>
+        <name>EFPIO__TTL__c</name>
+    </fields>
+    <fields>
+        <label><!-- Timestamp --></label>
+        <name>EFPIO__Timestamp__c</name>
+    </fields>
+</CustomObjectTranslation>

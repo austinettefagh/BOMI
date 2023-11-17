@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Injections</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Injections</value>
+    </caseValues>
+    <fieldSets>
+        <label><!-- Injections --></label>
+        <name>nSBA__SBA_7a_Loan_Authorization</name>
+    </fieldSets>
+    <fieldSets>
+        <label><!-- SBA Boarding Sheet Injections --></label>
+        <name>nSBA__SBA_Boarding_Sheet_Injections</name>
+    </fieldSets>
+    <fieldSets>
+        <label><!-- SBA Injections --></label>
+        <name>nSBA__SBA_Injections</name>
+    </fieldSets>
+    <fieldSets>
+        <label><!-- SBEOC Injections --></label>
+        <name>nSBA__SBEOC_Injections</name>
+    </fieldSets>
+    <fields>
+        <label><!-- Application --></label>
+        <name>nSBA__Application__c</name>
+        <relationshipLabel><!-- Injections --></relationshipLabel>
+    </fields>
+    <fields>
+        <help><!-- Name of Creditor who provides Standby Debtor Cash Injection. This field is used in SBA Loan Authorization only. --></help>
+        <label><!-- Creditor Name --></label>
+        <name>nSBA__Creditor_Name__c</name>
+    </fields>
+    <fields>
+        <help><!-- The Amount of the actual injection --></help>
+        <label><!-- Injection Amount --></label>
+        <name>nSBA__Injection_Amount__c</name>
+    </fields>
+    <fields>
+        <help><!-- Describe use of Injection on this loan. This field is used in SBA Loan Authorization only. --></help>
+        <label><!-- Injection Description --></label>
+        <name>nSBA__Injection_Description__c</name>
+    </fields>
+    <fields>
+        <help><!-- Text that describes the source of the particular injection --></help>
+        <label><!-- Injection Other Description --></label>
+        <name>nSBA__Injection_Other_Description__c</name>
+    </fields>
+    <fields>
+        <help><!-- A code that identifies the type of this injection. (e.g. cash) --></help>
+        <label><!-- Injection Type Code --></label>
+        <name>nSBA__Injection_Type_Code__c</name>
+        <picklistValues>
+            <masterLabel>1</masterLabel>
+            <translation>Non-cash Assets</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>2</masterLabel>
+            <translation>Cash-Borrower</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>3</masterLabel>
+            <translation>Cash-Debt</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>4</masterLabel>
+            <translation>Subordinate Funding</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>5</masterLabel>
+            <translation>Cash-Gift</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>6</masterLabel>
+            <translation>Other</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>7</masterLabel>
+            <translation>Pari Passu Financing</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>8</masterLabel>
+            <translation>Standby Debt</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- Use this option if Standby Debt payment doesn&apos;t fall in four standard repayment options. This field is used in SBA Loan Authorization only. --></help>
+        <label><!-- Standby Debt Customize Repayment Option --></label>
+        <name>nSBA__Standby_Debt_Customize_Repayment_Option__c</name>
+    </fields>
+    <fields>
+        <help><!-- Yearly interest rate applied to Standby Debt. This field is used in SBA Loan Authorization only. --></help>
+        <label><!-- Standby Debt Interest Rate --></label>
+        <name>nSBA__Standby_Debt_Interest_Rate__c</name>
+    </fields>
+    <fields>
+        <help><!-- Monthly payments amount that consists of principal and interest on Standby Debt. This field is used in SBA Loan Authorization only. --></help>
+        <label><!-- Standby Debt Monthly Payment Amount --></label>
+        <name>nSBA__Standby_Debt_Monthly_Payment_Amount__c</name>
+    </fields>
+    <fields>
+        <help><!-- Date Standby Debt Payment Begins. Complete if Standby Debt payments are postponed. This field is used in SBA Loan Authorization only. --></help>
+        <label><!-- Standby Debt Payment Begin Date --></label>
+        <name>nSBA__Standby_Debt_Payment_Begin_Date__c</name>
+    </fields>
+    <fields>
+        <help><!-- Check if Standby Debt Payments are postponed so the Standby Debt is considered as Equity Injection based on current SBA SOP.  This field is used in SBA Loan Authorization only. --></help>
+        <label><!-- Standby Debt Payment Date Meets Deadline --></label>
+        <name>nSBA__Standby_Debt_Payment_Date_Meets_Deadline__c</name>
+    </fields>
+    <fields>
+        <help><!-- Indicates that no payment of principal or interest is to be made on Standby Debt during the term of the Loan. This field is used in SBA Loan Authorization only. --></help>
+        <label><!-- Standby No Principal Interest Payments --></label>
+        <name>nSBA__Standby_No_Principal_Interest_Payments__c</name>
+    </fields>
+    <fields>
+        <help><!-- Standby Repayment Type defines terms of how the standby agreement will be repaid. --></help>
+        <label><!-- Standby Repayment Type --></label>
+        <name>nSBA__Standby_Repayment_Type__c</name>
+        <picklistValues>
+            <masterLabel>Interest rate only</masterLabel>
+            <translation><!-- Interest rate only --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Monthly payment and interest rate</masterLabel>
+            <translation><!-- Monthly payment and interest rate --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Monthly payment, interest rate and begin date</masterLabel>
+            <translation><!-- Monthly payment, interest rate and begin date --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>No payments</masterLabel>
+            <translation><!-- No payments --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Other</masterLabel>
+            <translation><!-- Other --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Use Of Proceeds --></label>
+        <name>nSBA__Use_Of_Proceeds__c</name>
+        <relationshipLabel><!-- Injections --></relationshipLabel>
+    </fields>
+    <nameFieldLabel>Sources Name</nameFieldLabel>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

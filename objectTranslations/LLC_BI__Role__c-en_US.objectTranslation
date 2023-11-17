@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <label><!-- Description --></label>
+        <name>LLC_BI__Description__c</name>
+    </fields>
+    <fields>
+        <label><!-- Type --></label>
+        <name>LLC_BI__Type__c</name>
+        <picklistValues>
+            <masterLabel>Team_Member__c</masterLabel>
+            <translation><!-- Team_Member__c --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- lookupKey --></label>
+        <name>LLC_BI__lookupKey__c</name>
+    </fields>
+</CustomObjectTranslation>

@@ -1,0 +1,356 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fieldSets>
+        <label><!-- Jack Henry jXchange Automated Booking --></label>
+        <name>JHJX__ABJX</name>
+    </fieldSets>
+    <fields>
+        <label><!-- Transaction ID --></label>
+        <name>JHJX__TrnRcptId__c</name>
+    </fields>
+    <fields>
+        <help><!-- Select the APR method you would like to associate with your APR calculation. --></help>
+        <label><!-- APR Method --></label>
+        <name>LLC_BI__APR_Method__c</name>
+        <picklistValues>
+            <masterLabel>Actual_360</masterLabel>
+            <translation><!-- Actual_360 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Actual_365</masterLabel>
+            <translation><!-- Actual_365 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Actual_365.25</masterLabel>
+            <translation><!-- Actual_365.25 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Actual_Actual</masterLabel>
+            <translation><!-- Actual_Actual --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Actuarial</masterLabel>
+            <translation><!-- Actuarial --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CAN</masterLabel>
+            <translation><!-- CAN --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>EU</masterLabel>
+            <translation><!-- EU --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Midnight_366</masterLabel>
+            <translation><!-- Midnight_366 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>OpenEnd</masterLabel>
+            <translation><!-- OpenEnd --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>True365_360</masterLabel>
+            <translation><!-- True365_360 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>True365_365</masterLabel>
+            <translation><!-- True365_365 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>US_Rule</masterLabel>
+            <translation><!-- US_Rule --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>UnitPeriod_360</masterLabel>
+            <translation><!-- UnitPeriod_360 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>UnitPeriod_360_IRR</masterLabel>
+            <translation><!-- UnitPeriod_360_IRR --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>UnitPeriod_365</masterLabel>
+            <translation><!-- UnitPeriod_365 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>UnitPeriod_365.25</masterLabel>
+            <translation><!-- UnitPeriod_365.25 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>UnitPeriod_DaysPerPeriod</masterLabel>
+            <translation><!-- UnitPeriod_DaysPerPeriod --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>UnitPeriod_FederalCalendar</masterLabel>
+            <translation><!-- UnitPeriod_FederalCalendar --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>UnitPeriod_True360_360</masterLabel>
+            <translation><!-- UnitPeriod_True360_360 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>UnitPeriod_True360_365</masterLabel>
+            <translation><!-- UnitPeriod_True360_365 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>UnitPeriod_True360_365.25</masterLabel>
+            <translation><!-- UnitPeriod_True360_365.25 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>UnitPeriod_True360_DaysPerPeriod</masterLabel>
+            <translation><!-- UnitPeriod_True360_DaysPerPeriod --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>YieldPeriod_UnitPeriod_IRR</masterLabel>
+            <translation><!-- YieldPeriod_UnitPeriod_IRR --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- When populated, this field contains the annual percentage rate (APR) without any applied credit protections. --></help>
+        <label><!-- APR Without Credit Protection --></label>
+        <name>LLC_BI__APR_Without_Credit_Protection__c</name>
+    </fields>
+    <fields>
+        <help><!-- Use this field to specify additional purposes of the loan. --></help>
+        <label><!-- Additional Loan Purposes --></label>
+        <name>LLC_BI__Additional_Loan_Purposes__c</name>
+    </fields>
+    <fields>
+        <help><!-- Date application is completed. --></help>
+        <label><!-- Application Date --></label>
+        <name>LLC_BI__ApplicationDate__c</name>
+    </fields>
+    <fields>
+        <help><!-- Select a value to describe which method the applicant uses to submit the application. --></help>
+        <label><!-- Application Method --></label>
+        <name>LLC_BI__Application_Method__c</name>
+        <picklistValues>
+            <masterLabel>In-person</masterLabel>
+            <translation><!-- In-person --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Mail</masterLabel>
+            <translation><!-- Mail --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Online</masterLabel>
+            <translation><!-- Online --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Telephone</masterLabel>
+            <translation><!-- Telephone --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- This field indicates the loan’s balloon payment due date. --></help>
+        <label><!-- Balloon Payment Date --></label>
+        <name>LLC_BI__Balloon_Payment_Date__c</name>
+    </fields>
+    <fields>
+        <help><!-- This field will populate after a user enters a rate and payment stream and an amortization term greater than the loan term. This results in a calculated balloon payment. --></help>
+        <label><!-- Calculated Balloon Principal Amount --></label>
+        <name>LLC_BI__Calculated_Balloon_Principal_Amount__c</name>
+    </fields>
+    <fields>
+        <help><!-- Select an option to collect odd days interest. --></help>
+        <label><!-- Collect Odd Days Interest --></label>
+        <name>LLC_BI__Collect_Odd_Days_Interest__c</name>
+        <picklistValues>
+            <masterLabel>Add to First Payment</masterLabel>
+            <translation><!-- Add to First Payment --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Collect When Due</masterLabel>
+            <translation><!-- Collect When Due --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- The system automatically populates this optional field to indicate a loan&apos;s eligibility for Dodd-Frank 1071 compliance reporting. By default, it is empty. --></help>
+        <label><!-- DF1071 Reportable --></label>
+        <name>LLC_BI__DF1071_Reportable__c</name>
+    </fields>
+    <fields>
+        <help><!-- This field contains the value of the calculated EIR. --></help>
+        <label><!-- EIR --></label>
+        <name>LLC_BI__Effective_Interest_Rate__c</name>
+    </fields>
+    <fields>
+        <help><!-- This field reflects the date of your final payment on the loan. --></help>
+        <label><!-- Final Payment Date --></label>
+        <name>LLC_BI__Final_Payment_Date__c</name>
+    </fields>
+    <fields>
+        <help><!-- This field indicates the initial date loan moves from the Active to Default status. --></help>
+        <label><!-- Gross Charge Off Date --></label>
+        <name>LLC_BI__Gross_Charge_Off_Date__c</name>
+    </fields>
+    <fields>
+        <help><!-- Select the guarantee type(s) that apply to the loan. --></help>
+        <label><!-- Guarantee Type --></label>
+        <name>LLC_BI__Guarantee_Type__c</name>
+        <picklistValues>
+            <masterLabel>Bureau of Indian Affairs guarantee</masterLabel>
+            <translation><!-- Bureau of Indian Affairs guarantee --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>FHA insurance</masterLabel>
+            <translation><!-- FHA insurance --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Local government guarantee</masterLabel>
+            <translation><!-- Local government guarantee --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>No guarantee</masterLabel>
+            <translation><!-- No guarantee --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Other Federal guarantee</masterLabel>
+            <translation><!-- Other Federal guarantee --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Personal guarantee - non-owner(s)</masterLabel>
+            <translation><!-- Personal guarantee - non-owner(s) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Personal guarantee - owner(s)</masterLabel>
+            <translation><!-- Personal guarantee - owner(s) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SBA guarantee - 504 program</masterLabel>
+            <translation><!-- SBA guarantee - 504 program --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SBA guarantee - 7(a) program</masterLabel>
+            <translation><!-- SBA guarantee - 7(a) program --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SBA guarantee - other</masterLabel>
+            <translation><!-- SBA guarantee - other --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>State government guarantee</masterLabel>
+            <translation><!-- State government guarantee --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>USDA guarantee</masterLabel>
+            <translation><!-- USDA guarantee --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- This field displays the applicant’s APR without rate discounts applied to the loan. --></help>
+        <label><!-- Initial APR --></label>
+        <name>LLC_BI__Initial_APR__c</name>
+    </fields>
+    <fields>
+        <help><!-- This field displays the applicant’s calculated monthly payment without rate discounts applied to the loan. --></help>
+        <label><!-- Initial Monthly Payment --></label>
+        <name>LLC_BI__Initial_Monthly_Payment__c</name>
+    </fields>
+    <fields>
+        <help><!-- This field indicates if a loan is Interest Only. --></help>
+        <label><!-- Interest Only Indicator --></label>
+        <name>LLC_BI__Is_Interest_Only__c</name>
+    </fields>
+    <fields>
+        <help><!-- This field indicates the date at which loan line of credit expires and converts to a loan. --></help>
+        <label><!-- Line Of Credit Draw Expiration Date --></label>
+        <name>LLC_BI__Line_Of_Credit_Draw_Expiration_Date__c</name>
+    </fields>
+    <fields>
+        <help><!-- This master-detail relationship contains the associated Loan record’s Id. --></help>
+        <label><!-- Loan --></label>
+        <name>LLC_BI__Loan__c</name>
+        <relationshipLabel><!-- Loan Details --></relationshipLabel>
+    </fields>
+    <fields>
+        <help><!-- Enter a unique identifier. --></help>
+        <label><!-- Lookup Key --></label>
+        <name>LLC_BI__Lookup_Key__c</name>
+    </fields>
+    <fields>
+        <label><!-- Action Type --></label>
+        <name>LLC_BI__Mod_Type__c</name>
+        <picklistValues>
+            <masterLabel>Add New Sub-Loan</masterLabel>
+            <translation><!-- Add New Sub-Loan --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Copy Loan</masterLabel>
+            <translation><!-- Copy Loan --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Modification</masterLabel>
+            <translation><!-- Modification --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Renewal</masterLabel>
+            <translation><!-- Renewal --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- The number of days accumulating odd interest between closing and first payment. --></help>
+        <label><!-- Number of Odd Days --></label>
+        <name>LLC_BI__Number_of_Odd_Days__c</name>
+    </fields>
+    <fields>
+        <help><!-- The daily cost of odd days interest on a loan. --></help>
+        <label><!-- Odd Days Amount Per Diem --></label>
+        <name>LLC_BI__Odd_Days_Amount_Per_Diem__c</name>
+    </fields>
+    <fields>
+        <help><!-- The amount of odd days interest accrued for the loan. --></help>
+        <label><!-- Odd Days Amount --></label>
+        <name>LLC_BI__Odd_Days_Amount__c</name>
+    </fields>
+    <fields>
+        <help><!-- This field automatically calculates a customer’s discounted interest rate for a loan. --></help>
+        <label><!-- Preferred Rate --></label>
+        <name>LLC_BI__Preferred_Rate__c</name>
+    </fields>
+    <fields>
+        <help><!-- Use this field to specify the primary purpose of the loan. --></help>
+        <label><!-- Primary Loan Purpose --></label>
+        <name>LLC_BI__Primary_Loan_Purpose__c</name>
+    </fields>
+    <fields>
+        <help><!-- This system-populated field displays the monthly payment used to calculate the proposed monthly debt. --></help>
+        <label><!-- Qualifying Payment --></label>
+        <name>LLC_BI__Qualifying_Payment__c</name>
+    </fields>
+    <fields>
+        <help><!-- This system-populated field displays the interest rate used to calculate proposed monthly debt. --></help>
+        <label><!-- Qualifying Rate --></label>
+        <name>LLC_BI__Qualifying_Rate__c</name>
+    </fields>
+    <fields>
+        <help><!-- This field indicates the date tied to the loan recovery amount. --></help>
+        <label><!-- Recovery Date --></label>
+        <name>LLC_BI__Recovery_Date__c</name>
+    </fields>
+    <fields>
+        <help><!-- This field indicates the total interest the borrower pays over the loan term as a percentage of the loan amount. --></help>
+        <label><!-- Total Interest Percentage --></label>
+        <name>LLC_BI__Total_Interest_Percentage__c</name>
+    </fields>
+    <fields>
+        <help><!-- This field indicates the total principal, interest,  and loan costs the borrower pays over the first five years of the loan term. --></help>
+        <label><!-- Total Payment Over 5 Years --></label>
+        <name>LLC_BI__Total_Payment_Over_5_Years__c</name>
+    </fields>
+    <fields>
+        <help><!-- This field indicates the total principal the borrower pays over the first five years of the loan term. --></help>
+        <label><!-- Total Principal Over 5 Years --></label>
+        <name>LLC_BI__Total_Principal_Over_5_Years__c</name>
+    </fields>
+    <fields>
+        <help><!-- This field indicates the total principal, interest, and loan costs the borrower pays over the loan term. --></help>
+        <label><!-- Total of Payments --></label>
+        <name>LLC_BI__Total_of_Payments__c</name>
+    </fields>
+    <fields>
+        <help><!-- Select this checkbox to use the Preferred Rate in loan calculations. --></help>
+        <label><!-- Calculate with Preferred Rate --></label>
+        <name>LLC_BI__Use_Preferred_Rate__c</name>
+    </fields>
+</CustomObjectTranslation>

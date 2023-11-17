@@ -1,0 +1,1500 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <comment>Action override created by Lightning App Builder during activation.</comment>
+        <content>Memo_Record_Page</content>
+        <formFactor>Large</formFactor>
+        <skipRecordTypeSelect>false</skipRecordTypeSelect>
+        <type>Flexipage</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <allowInChatterGroups>false</allowInChatterGroups>
+    <compactLayoutAssignment>SYSTEM</compactLayoutAssignment>
+    <deploymentStatus>Deployed</deploymentStatus>
+    <deprecated>false</deprecated>
+    <description>This object is used to make changes to a Loan after the initial approval, but before it is closed/ booked.</description>
+    <enableActivities>true</enableActivities>
+    <enableBulkApi>true</enableBulkApi>
+    <enableEnhancedLookup>false</enableEnhancedLookup>
+    <enableFeeds>true</enableFeeds>
+    <enableHistory>false</enableHistory>
+    <enableLicensing>false</enableLicensing>
+    <enableReports>true</enableReports>
+    <enableSearch>true</enableSearch>
+    <enableSharing>true</enableSharing>
+    <enableStreamingApi>true</enableStreamingApi>
+    <externalSharingModel>ControlledByParent</externalSharingModel>
+    <fieldSets>
+        <fullName>FS_Does_Not_Require_Approval</fullName>
+        <description>It will be used in the read only  &apos;Does Not Require Approval&apos; section in memo.</description>
+        <displayedFields>
+            <field>CF_Loan_Amount_Decrease__c</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </displayedFields>
+        <displayedFields>
+            <field>CF_Minor_Loan_Amount_Increase_5_or_5_00__c</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </displayedFields>
+        <displayedFields>
+            <field>CF_Add_Covenant__c</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </displayedFields>
+        <displayedFields>
+            <field>CF_Add_Collateral__c</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </displayedFields>
+        <displayedFields>
+            <field>CF_Add_Guarantor__c</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </displayedFields>
+        <displayedFields>
+            <field>CF_First_Payment_Date__c</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </displayedFields>
+        <displayedFields>
+            <field>CF_Minor_Non_Credit_Edits_Typos__c</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </displayedFields>
+        <displayedFields>
+            <field>CF_Minor_Pricing_Change__c</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </displayedFields>
+        <displayedFields>
+            <field>CF_Minor_Loan_Repayment_Term_Change__c</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </displayedFields>
+        <label>Does Not Require Approval</label>
+    </fieldSets>
+    <fieldSets>
+        <fullName>FS_InformationSection</fullName>
+        <description>It will be come in information section on edit mode of change memo</description>
+        <displayedFields>
+            <field>LLC_BI__Memo_Type__c</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>true</isRequired>
+        </displayedFields>
+        <displayedFields>
+            <field>LLC_BI__Approval_Status__c</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </displayedFields>
+        <displayedFields>
+            <field>LLC_BI__Loan__c</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </displayedFields>
+        <displayedFields>
+            <field>CF_Relationship_Manager__c</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </displayedFields>
+        <displayedFields>
+            <field>CF_PP_Final_Approver__c</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </displayedFields>
+        <displayedFields>
+            <field>CF_PP_Final_Approver_Queue__c</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </displayedFields>
+        <label>InformationSection</label>
+    </fieldSets>
+    <fieldSets>
+        <fullName>FS_Memo_Detail</fullName>
+        <description>It will be used in memo detail in memo</description>
+        <displayedFields>
+            <field>LLC_BI__Memo_Type__c</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </displayedFields>
+        <displayedFields>
+            <field>LLC_BI__Approval_Status__c</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </displayedFields>
+        <displayedFields>
+            <field>LLC_BI__Loan__c</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </displayedFields>
+        <displayedFields>
+            <field>CF_Relationship_Manager__c</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </displayedFields>
+        <displayedFields>
+            <field>CF_PP_Final_Approver__c</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </displayedFields>
+        <displayedFields>
+            <field>CF_PP_Final_Approver_Queue__c</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </displayedFields>
+        <label>Memo Detail</label>
+    </fieldSets>
+    <fieldSets>
+        <fullName>FS_Requires_Approval</fullName>
+        <description>This fieldset is being used on Requires Approval section on read only part of Change memo.</description>
+        <displayedFields>
+            <field>CF_Edit_Covenants__c</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </displayedFields>
+        <displayedFields>
+            <field>CF_Loan_Amount_Increase__c</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </displayedFields>
+        <displayedFields>
+            <field>CF_Loan_Pricing_Change__c</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </displayedFields>
+        <displayedFields>
+            <field>CF_Loan_Repayment_Term_Change__c</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </displayedFields>
+        <displayedFields>
+            <field>LLC_BI__Other__c</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </displayedFields>
+        <displayedFields>
+            <field>CF_Change_Borrower_Guarantor_Other_Enti__c</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </displayedFields>
+        <displayedFields>
+            <field>CF_Remove_Change_Collateral__c</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </displayedFields>
+        <displayedFields>
+            <field>CF_Add_New_Policy_Exception_Same_Better__c</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </displayedFields>
+        <displayedFields>
+            <field>CF_Add_New_Policy_Exception_More_Severe__c</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </displayedFields>
+        <displayedFields>
+            <field>CF_Edit_Existing_Policy_Exceptions__c</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </displayedFields>
+        <label>Requires Approval</label>
+    </fieldSets>
+    <fieldSets>
+        <fullName>LLC_BI__Does_Not_Require_Approval</fullName>
+        <availableFields>
+            <field>LLC_BI__Maturity_Date_Change__c</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </availableFields>
+        <description>Field set that appears in third section of Memo Detail</description>
+        <displayedFields>
+            <field>LLC_BI__Use_of_Proceeds_Change__c</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </displayedFields>
+        <displayedFields>
+            <field>LLC_BI__Guarantor_Added__c</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </displayedFields>
+        <label>Does Not Require Approval</label>
+    </fieldSets>
+    <fieldSets>
+        <fullName>LLC_BI__InformationSection</fullName>
+        <availableFields>
+            <field>CreatedById</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </availableFields>
+        <availableFields>
+            <field>CreatedDate</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </availableFields>
+        <availableFields>
+            <field>LastActivityDate</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </availableFields>
+        <availableFields>
+            <field>LastModifiedById</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </availableFields>
+        <availableFields>
+            <field>LastModifiedDate</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </availableFields>
+        <availableFields>
+            <field>LLC_BI__Notify_Attorney__c</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </availableFields>
+        <availableFields>
+            <field>LLC_BI__Ready_for_Approval__c</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </availableFields>
+        <description>The field set defines the list of fields that will be displayed in the Information section when a Memo is displayed.</description>
+        <displayedFields>
+            <field>LLC_BI__Memo_Type__c</field>
+            <isFieldManaged>true</isFieldManaged>
+            <isRequired>true</isRequired>
+        </displayedFields>
+        <displayedFields>
+            <field>LLC_BI__Approval_Status__c</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </displayedFields>
+        <displayedFields>
+            <field>LLC_BI__Loan__c</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </displayedFields>
+        <displayedFields>
+            <field>CF_Relationship_Manager__c</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </displayedFields>
+        <displayedFields>
+            <field>CF_PP_Final_Approver__c</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </displayedFields>
+        <displayedFields>
+            <field>CF_PP_Final_Approver_Queue__c</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </displayedFields>
+        <label>InformationSection</label>
+    </fieldSets>
+    <fieldSets>
+        <fullName>LLC_BI__Memo_Detail</fullName>
+        <availableFields>
+            <field>Name</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </availableFields>
+        <availableFields>
+            <field>LLC_BI__Notify_Attorney__c</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </availableFields>
+        <availableFields>
+            <field>LLC_BI__Ready_for_Approval__c</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </availableFields>
+        <description>Field set that appears in first section of Memo Detail page</description>
+        <displayedFields>
+            <field>LLC_BI__Memo_Type__c</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </displayedFields>
+        <displayedFields>
+            <field>LLC_BI__Approval_Status__c</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </displayedFields>
+        <displayedFields>
+            <field>LLC_BI__Loan__c</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </displayedFields>
+        <displayedFields>
+            <field>LLC_BI__Approval_Required__c</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </displayedFields>
+        <displayedFields>
+            <field>CF_PP_Final_Approver__c</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </displayedFields>
+        <displayedFields>
+            <field>CF_PP_Final_Approver_Queue__c</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </displayedFields>
+        <label>Memo Detail</label>
+    </fieldSets>
+    <fieldSets>
+        <fullName>LLC_BI__Modification_Description</fullName>
+        <description>Field set that appears in fourth section of Memo Details</description>
+        <displayedFields>
+            <field>LLC_BI__Description__c</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </displayedFields>
+        <label>Modification Description</label>
+    </fieldSets>
+    <fieldSets>
+        <fullName>LLC_BI__Requires_Approval</fullName>
+        <availableFields>
+            <field>LLC_BI__Amount_Change__c</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </availableFields>
+        <availableFields>
+            <field>LLC_BI__Equity_Injection_Change__c</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </availableFields>
+        <availableFields>
+            <field>LLC_BI__Guarantor_Removed__c</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </availableFields>
+        <availableFields>
+            <field>LLC_BI__Life_Insurance_Change__c</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </availableFields>
+        <availableFields>
+            <field>LLC_BI__Loan_Term_Change__c</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </availableFields>
+        <availableFields>
+            <field>LLC_BI__New_Rate_Requested__c</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </availableFields>
+        <availableFields>
+            <field>LLC_BI__Post_Close_Items__c</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </availableFields>
+        <availableFields>
+            <field>LLC_BI__Re_approval_After_Expiration__c</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </availableFields>
+        <availableFields>
+            <field>LLC_BI__Seller_Note_Change__c</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </availableFields>
+        <description>Field set that appears in second section of Memo Details</description>
+        <displayedFields>
+            <field>CLA_Budget_Amount_Change__c</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </displayedFields>
+        <displayedFields>
+            <field>CLA_Budget_Line_Item_Change__c</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </displayedFields>
+        <displayedFields>
+            <field>LLC_BI__Collateral_Change__c</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </displayedFields>
+        <displayedFields>
+            <field>LLC_BI__Maturity_Date_Change__c</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </displayedFields>
+        <displayedFields>
+            <field>LLC_BI__Other__c</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </displayedFields>
+        <label>Requires Approval</label>
+    </fieldSets>
+    <fieldSets>
+        <fullName>LLC_BI__UI_Memo_Action</fullName>
+        <availableFields>
+            <field>LLC_BI__Approval_Required__c</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </availableFields>
+        <availableFields>
+            <field>CreatedById</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </availableFields>
+        <availableFields>
+            <field>CreatedDate</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </availableFields>
+        <availableFields>
+            <field>LastModifiedById</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </availableFields>
+        <availableFields>
+            <field>LastModifiedDate</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </availableFields>
+        <availableFields>
+            <field>LLC_BI__Notify_Attorney__c</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </availableFields>
+        <availableFields>
+            <field>LLC_BI__Ready_for_Approval__c</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </availableFields>
+        <description>Standard list fields for memo action in UI.</description>
+        <displayedFields>
+            <field>Name</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </displayedFields>
+        <displayedFields>
+            <field>LLC_BI__Memo_Type__c</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </displayedFields>
+        <displayedFields>
+            <field>LLC_BI__Approval_Status__c</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </displayedFields>
+        <displayedFields>
+            <field>LLC_BI__Description__c</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </displayedFields>
+        <label>UI Memo Action</label>
+    </fieldSets>
+    <fieldSets>
+        <fullName>UI_Loan_Memo</fullName>
+        <description>New UI field set for Loan Memo</description>
+        <displayedFields>
+            <field>Name</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </displayedFields>
+        <displayedFields>
+            <field>LLC_BI__Memo_Type__c</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </displayedFields>
+        <displayedFields>
+            <field>LLC_BI__Description__c</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </displayedFields>
+        <displayedFields>
+            <field>LLC_BI__Loan__c</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </displayedFields>
+        <displayedFields>
+            <field>LLC_BI__Loan_Term_Change__c</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </displayedFields>
+        <displayedFields>
+            <field>LLC_BI__Other__c</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </displayedFields>
+        <label>UI Loan Memo</label>
+    </fieldSets>
+    <fieldSets>
+        <fullName>cm_Does_Not_Require_Approval</fullName>
+        <description>Field set that appears in third section of Memo Detail - unmanaged</description>
+        <displayedFields>
+            <field>Borrower_Added__c</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </displayedFields>
+        <displayedFields>
+            <field>Borrower_Removed__c</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </displayedFields>
+        <displayedFields>
+            <field>LLC_BI__Guarantor_Added__c</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </displayedFields>
+        <displayedFields>
+            <field>LLC_BI__Guarantor_Removed__c</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </displayedFields>
+        <label>Does Not Require Approval</label>
+    </fieldSets>
+    <fields>
+        <fullName>Borrower_Added__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <label>Borrower Added</label>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Borrower_Removed__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <label>Borrower Removed</label>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>CF_Add_Collateral__c</fullName>
+        <defaultValue>false</defaultValue>
+        <description>Will be used in &apos;Does Not Require Approval&apos; section.</description>
+        <externalId>false</externalId>
+        <label>Add Collateral</label>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>CF_Add_Covenant__c</fullName>
+        <defaultValue>false</defaultValue>
+        <description>N/A - Description field will be used to detail proposed changes. Once approved, the user will go back to the loan and make those updates</description>
+        <externalId>false</externalId>
+        <label>Add Covenant</label>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>CF_Add_Guarantor__c</fullName>
+        <defaultValue>false</defaultValue>
+        <description>Will be used in &apos;Does Not Require Approval&apos; section.</description>
+        <externalId>false</externalId>
+        <label>Add Guarantor</label>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>CF_Add_New_Policy_Exception_More_Severe__c</fullName>
+        <defaultValue>false</defaultValue>
+        <description>This field is used on Change Memo for Require Approval</description>
+        <externalId>false</externalId>
+        <label>Add New Policy Exception-More Severe</label>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>CF_Add_New_Policy_Exception_Same_Better__c</fullName>
+        <defaultValue>false</defaultValue>
+        <description>This field is used on Change Memo for Requires Approval</description>
+        <externalId>false</externalId>
+        <label>Add New Policy Exception-Same/Better</label>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>CF_Change_Borrower_Guarantor_Other_Enti__c</fullName>
+        <defaultValue>false</defaultValue>
+        <description>This field is being used on Requires Approval section on Change Memo</description>
+        <externalId>false</externalId>
+        <label>Remove / Change Borrower or Guarantor</label>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>CF_Edit_Covenants__c</fullName>
+        <defaultValue>false</defaultValue>
+        <description>This field is being used on Requires approval section on Change Memo</description>
+        <externalId>false</externalId>
+        <label>Edit Covenants</label>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>CF_Edit_Existing_Policy_Exceptions__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <label>Edit Existing Policy Exceptions</label>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>CF_Edit_Policy_Exceptions__c</fullName>
+        <defaultValue>false</defaultValue>
+        <description>This field is being used on Requires Approval section on Change memo</description>
+        <externalId>false</externalId>
+        <label>Edit Policy Exceptions</label>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>CF_First_Payment_Date__c</fullName>
+        <defaultValue>false</defaultValue>
+        <description>Will be used in &apos;Does Not Require Approval&apos; section.</description>
+        <externalId>false</externalId>
+        <label>First Payment Date</label>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>CF_Loan_Amount_Decrease__c</fullName>
+        <defaultValue>false</defaultValue>
+        <description>This field is being used on Change Memo Requires Approval section on read only part.</description>
+        <externalId>false</externalId>
+        <label>Loan Amount Decrease</label>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>CF_Loan_Amount_Increase__c</fullName>
+        <defaultValue>false</defaultValue>
+        <description>This field is being used on Change Memo</description>
+        <externalId>false</externalId>
+        <label>Loan Amount Increase</label>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>CF_Loan_Pricing_Change__c</fullName>
+        <defaultValue>false</defaultValue>
+        <description>This field is being used on Requires Approval section on Change Memo</description>
+        <externalId>false</externalId>
+        <label>Loan Pricing Change</label>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>CF_Loan_Repayment_Term_Change__c</fullName>
+        <defaultValue>false</defaultValue>
+        <description>This field is being used on Requires Approval section on change memo</description>
+        <externalId>false</externalId>
+        <label>Loan Repayment / Term Change</label>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>CF_Minor_Loan_Amount_Increase_5_or_5_00__c</fullName>
+        <defaultValue>false</defaultValue>
+        <description>This field is being used on Change Memo</description>
+        <externalId>false</externalId>
+        <label>Minor Loan Amount Increase(&lt;5% or $25k)</label>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>CF_Minor_Loan_Repayment_Term_Change__c</fullName>
+        <defaultValue>false</defaultValue>
+        <description>used on change memo for Does Not Require Approval</description>
+        <externalId>false</externalId>
+        <label>Minor Loan Repayment/Term Change</label>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>CF_Minor_Non_Credit_Edits_Typos__c</fullName>
+        <defaultValue>false</defaultValue>
+        <description>Will be used in &apos;Does Not Require Approval&apos; section.</description>
+        <externalId>false</externalId>
+        <label>Minor Non-Credit Edits / Typos</label>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>CF_Minor_Pricing_Change__c</fullName>
+        <defaultValue>false</defaultValue>
+        <description>This field is used on Change Memo Does not Require Approval</description>
+        <externalId>false</externalId>
+        <label>Minor Pricing Change</label>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>CF_Other__c</fullName>
+        <defaultValue>false</defaultValue>
+        <description>DONT USE THIS FIELD</description>
+        <externalId>false</externalId>
+        <label>Other -D</label>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>CF_PP_Final_Approver_Queue__c</fullName>
+        <description>This field is populated from flow and it holds the PP final approver queue i.e approver 4 from PP</description>
+        <encryptionScheme>None</encryptionScheme>
+        <externalId>false</externalId>
+        <inlineHelpText>This field will have value only when the corresponding PP approvers are till level 4</inlineHelpText>
+        <label>Product Package Final Approver Queue</label>
+        <length>200</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>CF_PP_Final_Approver__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <description>This field is populated from flow and it holds the PP final approver - either approver 1 or approver 2 or approver 3.
+If the final approver is queue it will be stored in other field since the queue will not be stored on this field</description>
+        <externalId>false</externalId>
+        <inlineHelpText>This field will have value only when the corresponding PP approvers are till level 3</inlineHelpText>
+        <label>Product Package Final Approver</label>
+        <referenceTo>User</referenceTo>
+        <relationshipName>Memos</relationshipName>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>CF_ProposedIncreaseAmount10__c</fullName>
+        <externalId>false</externalId>
+        <label>ProposedIncreaseAmount10%</label>
+        <summaryFilterItems>
+            <field>LLC_BI__Memo_Data__c.CF_ProposedIncreaseAmount10__c</field>
+            <operation>equals</operation>
+            <value>True</value>
+        </summaryFilterItems>
+        <summaryForeignKey>LLC_BI__Memo_Data__c.LLC_BI__Memo__c</summaryForeignKey>
+        <summaryOperation>count</summaryOperation>
+        <trackTrending>false</trackTrending>
+        <type>Summary</type>
+    </fields>
+    <fields>
+        <fullName>CF_ProposedIncreaseAmount5__c</fullName>
+        <externalId>false</externalId>
+        <label>ProposedIncreaseAmount5%</label>
+        <summaryFilterItems>
+            <field>LLC_BI__Memo_Data__c.CF_ProposedIncreaseAmount5__c</field>
+            <operation>equals</operation>
+            <value>True</value>
+        </summaryFilterItems>
+        <summaryForeignKey>LLC_BI__Memo_Data__c.LLC_BI__Memo__c</summaryForeignKey>
+        <summaryOperation>count</summaryOperation>
+        <trackTrending>false</trackTrending>
+        <type>Summary</type>
+    </fields>
+    <fields>
+        <fullName>CF_ProposedNewMoney__c</fullName>
+        <externalId>false</externalId>
+        <label>ProposedNewMoney</label>
+        <summaryFilterItems>
+            <field>LLC_BI__Memo_Data__c.CF_ProposedNewMoney__c</field>
+            <operation>equals</operation>
+            <value>True</value>
+        </summaryFilterItems>
+        <summaryForeignKey>LLC_BI__Memo_Data__c.LLC_BI__Memo__c</summaryForeignKey>
+        <summaryOperation>count</summaryOperation>
+        <trackTrending>false</trackTrending>
+        <type>Summary</type>
+    </fields>
+    <fields>
+        <fullName>CF_Relationship_Manager__c</fullName>
+        <description>It shows the relation manager from associated loan</description>
+        <externalId>false</externalId>
+        <formula>LLC_BI__Loan__r.LLC_BI__Loan_Officer__r.FirstName + &apos; &apos; +  LLC_BI__Loan__r.LLC_BI__Loan_Officer__r.LastName</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Relationship Manager</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>CF_Remove_Change_Collateral__c</fullName>
+        <defaultValue>false</defaultValue>
+        <description>This field is being used on Requires Approval section on Change Memo</description>
+        <externalId>false</externalId>
+        <label>Remove / Change Collateral</label>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>CLA_Budget_Amount_Change__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <label>CLA Budget Amount Change</label>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>CLA_Budget_Line_Item_Change__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <label>CLA Budget Line Item Change</label>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>LLC_BI__Amount_Change__c</fullName>
+        <defaultValue>false</defaultValue>
+        <deprecated>false</deprecated>
+        <description>This field is manually selected and optional. This check box indicates if a change of amount is the reason a modification is being created.</description>
+        <externalId>false</externalId>
+        <label>Loan Amount Change</label>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>LLC_BI__Approval_Required__c</fullName>
+        <defaultValue>false</defaultValue>
+        <deprecated>false</deprecated>
+        <description>This field is automatically populated based on system configuration. The checkbox is populated based on change request&apos;s category.</description>
+        <externalId>false</externalId>
+        <label>Approval Required</label>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>LLC_BI__Approval_Status__c</fullName>
+        <deprecated>false</deprecated>
+        <description>This field is automatically set by the approval process and is used in triggers to update the loan wall. It is used to specify the status of the memo.</description>
+        <externalId>false</externalId>
+        <label>Approval Status</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Approved</fullName>
+                    <default>false</default>
+                    <label>Approved</label>
+                </value>
+                <value>
+                    <fullName>Rejected</fullName>
+                    <default>false</default>
+                    <label>Rejected</label>
+                </value>
+                <value>
+                    <fullName>Not Approved</fullName>
+                    <default>true</default>
+                    <label>Not Approved</label>
+                </value>
+                <value>
+                    <fullName>In Review</fullName>
+                    <default>false</default>
+                    <label>In Review</label>
+                </value>
+                <value>
+                    <fullName>Recalled</fullName>
+                    <default>false</default>
+                    <label>Recalled</label>
+                </value>
+                <value>
+                    <fullName>In Review with Pricing Committee</fullName>
+                    <default>false</default>
+                    <label>In Review with Pricing Committee</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>LLC_BI__Collateral_Change__c</fullName>
+        <defaultValue>false</defaultValue>
+        <deprecated>false</deprecated>
+        <description>This field is manually selected and optional. This checkbox is used to specify if the change on the loan is a change in collateral. This field can be associated to a field set on the loan,  IF associated to a field set, when selected the monitored fields section of the memo will display those fields.</description>
+        <externalId>false</externalId>
+        <label>Collateral Change</label>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>LLC_BI__Default_App__c</fullName>
+        <defaultValue>&apos;memo.memo-details&apos;</defaultValue>
+        <deprecated>false</deprecated>
+        <description>This field is used to determine the default landing page for this loan within the nCino User Interface.</description>
+        <encryptionScheme>None</encryptionScheme>
+        <externalId>false</externalId>
+        <inlineHelpText>This field is used to determine the default landing page for this loan within the nCino User Interface.</inlineHelpText>
+        <label>Default App</label>
+        <length>255</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>LLC_BI__Description__c</fullName>
+        <deprecated>false</deprecated>
+        <description>This field is a free form text field. It is optional and manually entered. It is used to input more information or details for the memo.</description>
+        <encryptionScheme>None</encryptionScheme>
+        <externalId>false</externalId>
+        <label>Description</label>
+        <length>32000</length>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackTrending>false</trackTrending>
+        <type>Html</type>
+        <visibleLines>25</visibleLines>
+    </fields>
+    <fields>
+        <fullName>LLC_BI__Equity_Injection_Change__c</fullName>
+        <defaultValue>false</defaultValue>
+        <deprecated>false</deprecated>
+        <description>This field is manually selected and optional. This checkbox is used to specify if the change to the loan is for the equity injection.This field can be associated to a field set on the loan,  IF associated to a field set, when selected the monitored fields section of the memo will display those fields.</description>
+        <externalId>false</externalId>
+        <label>Equity Injection Change</label>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>LLC_BI__Guarantor_Added__c</fullName>
+        <defaultValue>false</defaultValue>
+        <deprecated>false</deprecated>
+        <description>This field is manually selected and optional. This checkbox is used to specify if the change to the loan is adding a guarantor. This field can be associated to a field set on the loan,  IF associated to a field set, when selected the monitored fields section of the memo will display those fields.</description>
+        <externalId>false</externalId>
+        <label>Guarantor Added</label>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>LLC_BI__Guarantor_Removed__c</fullName>
+        <defaultValue>false</defaultValue>
+        <deprecated>false</deprecated>
+        <description>This field is manually selected and optional. This checkbox is used to specify if the change on the loan is removing a guarantor.</description>
+        <externalId>false</externalId>
+        <label>Guarantor Removed</label>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>LLC_BI__Life_Insurance_Change__c</fullName>
+        <defaultValue>false</defaultValue>
+        <deprecated>false</deprecated>
+        <description>This field is manually selected and optional. This checkbox is used to specify if the change on the loan is a life insurance change.This field can be associated to a field set on the loan,  IF associated to a field set, when selected the monitored fields section of the memo will display those fields.</description>
+        <externalId>false</externalId>
+        <label>Life Insurance Change</label>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>LLC_BI__Loan_Renewal__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <deprecated>false</deprecated>
+        <description>The system automatically populates when a user creates a non-material modification. This lookup field associates the Memo to the appropriate LoanRenewal record.</description>
+        <externalId>false</externalId>
+        <label>Loan Renewal</label>
+        <referenceTo>LLC_BI__LoanRenewal__c</referenceTo>
+        <relationshipLabel>Loan Renewal</relationshipLabel>
+        <relationshipName>LoanRenewal</relationshipName>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>LLC_BI__Loan_Term_Change__c</fullName>
+        <defaultValue>false</defaultValue>
+        <deprecated>false</deprecated>
+        <description>This field is manually selected and optional. This check box is used to specify if the change to the loan was that of a term change.This field can be associated to a field set on the loan,  IF associated to a field set, when selected the monitored fields section of the memo will display those fields.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Interest rate change, length, etc</inlineHelpText>
+        <label>Loan Term Change</label>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>LLC_BI__Loan__c</fullName>
+        <deprecated>false</deprecated>
+        <description>This field is a master-detail field to the loan object and is used to associate the Memo to a particular loan. This field is automatically populated when a memo is started from a loan, and is required to associate the correct memo with the loan it is associated to.</description>
+        <externalId>false</externalId>
+        <label>Loan</label>
+        <referenceTo>LLC_BI__Loan__c</referenceTo>
+        <relationshipLabel>Memos</relationshipLabel>
+        <relationshipName>Change_Memos</relationshipName>
+        <relationshipOrder>0</relationshipOrder>
+        <reparentableMasterDetail>false</reparentableMasterDetail>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackTrending>false</trackTrending>
+        <type>MasterDetail</type>
+        <writeRequiresMasterRead>false</writeRequiresMasterRead>
+    </fields>
+    <fields>
+        <fullName>LLC_BI__Maturity_Date_Change__c</fullName>
+        <defaultValue>false</defaultValue>
+        <deprecated>false</deprecated>
+        <description>Users select this optional checkbox field to specify if the change to the loan is a maturity date change. The system automatically populates this field during a Short Term Extension. Users can associate this field to a fieldset on the loan, and when selected the monitored fields section of the memo displays those fields.</description>
+        <externalId>false</externalId>
+        <label>Maturity Date Change</label>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>LLC_BI__Maturity_Date__c</fullName>
+        <deprecated>false</deprecated>
+        <description>--DEPRECATED-- Users populate this field, generally as part of a workflow, to store the proposed Maturity Date as part of an extension. Use this field to update the loan with the new value.</description>
+        <encryptionScheme>None</encryptionScheme>
+        <externalId>false</externalId>
+        <label>-D Maturity Date</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>LLC_BI__Memo_Type__c</fullName>
+        <deprecated>false</deprecated>
+        <description>This field is manually selected and is required when starting a memo. This field indicates the type of the Memo being created.</description>
+        <externalId>false</externalId>
+        <label>Memo Type</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Change Memo</fullName>
+                    <default>true</default>
+                    <label>Change Memo</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>LLC_BI__New_Rate_Requested__c</fullName>
+        <defaultValue>false</defaultValue>
+        <deprecated>false</deprecated>
+        <description>This field is manually selected and optional. This check box is used to specify if the change to the loan is a new rate being requested.This field can be associated to a field set on the loan,  IF associated to a field set, when selected the monitored fields section of the memo will display those fields.</description>
+        <externalId>false</externalId>
+        <label>New Rate Requested</label>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>LLC_BI__Notify_Attorney__c</fullName>
+        <defaultValue>false</defaultValue>
+        <deprecated>false</deprecated>
+        <description>This field is manually selected and optional. This check box is used to specify that the attorney will be notified of this Memo.This field can be associated to a field set on the loan,  IF associated to a field set, when selected the monitored fields section of the memo will display those fields.</description>
+        <externalId>false</externalId>
+        <label>Notify Attorney</label>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>LLC_BI__Other__c</fullName>
+        <defaultValue>false</defaultValue>
+        <deprecated>false</deprecated>
+        <description>This field is manually selected and optional. This check box is used to specify a change other than those listed on the Memo page. This field can be associated to a field set on the loan,  IF associated to a field set, when selected the monitored fields section of the memo will display those fields.</description>
+        <externalId>false</externalId>
+        <label>Other</label>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>LLC_BI__Post_Close_Items__c</fullName>
+        <defaultValue>false</defaultValue>
+        <deprecated>false</deprecated>
+        <description>This field is manually selected and optional. This check box is used to specify that the changes made to the loan relate to post close items.This field can be associated to a field set on the loan,  IF associated to a field set, when selected the monitored fields section of the memo will display those fields.</description>
+        <externalId>false</externalId>
+        <label>Post Close Items</label>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>LLC_BI__Re_approval_After_Expiration__c</fullName>
+        <defaultValue>false</defaultValue>
+        <deprecated>false</deprecated>
+        <description>This field is manually selected and optional. This check box is used to specify that the change is related to a re-approval of the loan after its expiry.This field can be associated to a field set on the loan,  IF associated to a field set, when selected the monitored fields section of the memo will display those fields.</description>
+        <externalId>false</externalId>
+        <label>Re-Approval After Expiration</label>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>LLC_BI__Ready_for_Approval__c</fullName>
+        <defaultValue>false</defaultValue>
+        <deprecated>false</deprecated>
+        <description>This field is manually selected and optional. This check box is used to specify that the Memo is ready to be sent for approval.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Check this when your loan modification is ready to be sent for approval.</inlineHelpText>
+        <label>Ready for Approval</label>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>LLC_BI__Seller_Note_Change__c</fullName>
+        <defaultValue>false</defaultValue>
+        <deprecated>false</deprecated>
+        <description>This field is manually selected and optional. This check box is used to specify that the change on the loan is related to a seller note change.This field can be associated to a field set on the loan,  IF associated to a field set, when selected the monitored fields section of the memo will display those fields.</description>
+        <externalId>false</externalId>
+        <label>Seller Note Change</label>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>LLC_BI__Use_of_Proceeds_Change__c</fullName>
+        <defaultValue>false</defaultValue>
+        <deprecated>false</deprecated>
+        <description>This field is manually selected and optional. This check box is used to specify that the change on the loan is a use of proceeds change.This field can be associated to a field set on the loan,  IF associated to a field set, when selected the monitored fields section of the memo will display those fields.</description>
+        <externalId>false</externalId>
+        <label>Use of Proceeds Change</label>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>LLC_BI__User_Initiated__c</fullName>
+        <defaultValue>true</defaultValue>
+        <deprecated>false</deprecated>
+        <description>This field is automatically set and is used to indicate if the Memo was initiated by a user. If the Memo was initiated via an automated process, then the value will be set to false and the record will be excluded from user initiated Memo restrictions.</description>
+        <externalId>false</externalId>
+        <label>User_Initiated</label>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>LLC_BI__lookupKey__c</fullName>
+        <caseSensitive>false</caseSensitive>
+        <deprecated>false</deprecated>
+        <description>This text field automatically populates and provides the object with a unique identifier.</description>
+        <encryptionScheme>None</encryptionScheme>
+        <externalId>true</externalId>
+        <label>lookupKey</label>
+        <length>255</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>true</unique>
+    </fields>
+    <fields>
+        <fullName>Loan_Information_Change__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <label>Loan Information Change</label>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Loan_Officer__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <externalId>false</externalId>
+        <label>Loan Officer</label>
+        <referenceTo>User</referenceTo>
+        <relationshipName>Change_Memos</relationshipName>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>cm_Approval_Required_Formula__c</fullName>
+        <externalId>false</externalId>
+        <formula>LLC_BI__Approval_Required__c</formula>
+        <label>Approval Required</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>cm_ChangeMemoFlag__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <label>ChangeMemoFlag</label>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <label>Memo</label>
+    <listViews>
+        <fullName>All_Change_Memos</fullName>
+        <columns>NAME</columns>
+        <columns>LLC_BI__Approval_Status__c</columns>
+        <columns>CREATEDBY_USER</columns>
+        <columns>CREATED_DATE</columns>
+        <columns>CF_PP_Final_Approver__c</columns>
+        <columns>CF_PP_Final_Approver_Queue__c</columns>
+        <columns>LLC_BI__Loan__c</columns>
+        <columns>CF_Relationship_Manager__c</columns>
+        <columns>LLC_BI__Description__c</columns>
+        <filterScope>Everything</filterScope>
+        <label>All Change Memos</label>
+    </listViews>
+    <listViews>
+        <fullName>Change_Memos_Pending_Approval</fullName>
+        <columns>NAME</columns>
+        <columns>CREATEDBY_USER</columns>
+        <columns>CREATED_DATE</columns>
+        <columns>CF_PP_Final_Approver__c</columns>
+        <columns>CF_PP_Final_Approver_Queue__c</columns>
+        <columns>LLC_BI__Loan__c</columns>
+        <columns>CF_Relationship_Manager__c</columns>
+        <columns>LLC_BI__Description__c</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>LLC_BI__Approval_Status__c</field>
+            <operation>equals</operation>
+            <value>In Review</value>
+        </filters>
+        <label>Change Memos Pending Approval</label>
+    </listViews>
+    <listViews>
+        <fullName>LLC_BI__All</fullName>
+        <filterScope>Everything</filterScope>
+        <label>All</label>
+    </listViews>
+    <nameField>
+        <encryptionScheme>None</encryptionScheme>
+        <label>Memo Name</label>
+        <trackFeedHistory>false</trackFeedHistory>
+        <type>Text</type>
+    </nameField>
+    <pluralLabel>Memos</pluralLabel>
+    <searchLayouts/>
+    <sharingModel>ControlledByParent</sharingModel>
+    <validationRules>
+        <fullName>VR_EXISTING_CHANGE_MEMO</fullName>
+        <active>false</active>
+        <description>Check for the existing Change Memo</description>
+        <errorConditionFormula>AND(
+$User.No_Validation__c = false,
+OR((ISPICKVAL(LLC_BI__Approval_Status__c, &apos;Not Approved&apos;)), (ISPICKVAL(LLC_BI__Approval_Status__c, &apos;In Review&apos;)))
+)</errorConditionFormula>
+        <errorDisplayField>LLC_BI__Approval_Required__c</errorDisplayField>
+        <errorMessage>Only one change memo can be in progress at a time.</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>VR_Memo_LoanAmount_Increase_1L_10Percent</fullName>
+        <active>true</active>
+        <errorConditionFormula>CF_ProposedIncreaseAmount10__c &gt;=1</errorConditionFormula>
+        <errorMessage>Please ensure proposed loan amount increase is less than 25% of the original loan amount. If it is greater than 25%, please create a new loan.</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>VR_Memo_LoanAmount_Increased_5K_5Percent</fullName>
+        <active>true</active>
+        <errorConditionFormula>CF_ProposedIncreaseAmount5__c &gt;=1</errorConditionFormula>
+        <errorMessage>Please ensure the proposed loan amount increase is within 5% of the originally approved loan amount or $25,000, whichever is greater.</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>VR_NewMoney_should_be_same_as_LoanAmount</fullName>
+        <active>true</active>
+        <errorConditionFormula>CF_ProposedNewMoney__c&gt;=1</errorConditionFormula>
+        <errorMessage>Please check that New Money has been updated to reflect the proposed increase in the Loan Amount.</errorMessage>
+    </validationRules>
+    <visibility>Public</visibility>
+    <webLinks>
+        <fullName>Change_Memo_Generate_Forms</fullName>
+        <availability>online</availability>
+        <displayType>button</displayType>
+        <encodingKey>UTF-8</encodingKey>
+        <hasMenubar>false</hasMenubar>
+        <hasScrollbars>true</hasScrollbars>
+        <hasToolbar>false</hasToolbar>
+        <height>600</height>
+        <isResizable>true</isResizable>
+        <linkType>url</linkType>
+        <masterLabel>Generate Forms</masterLabel>
+        <openType>newWindow</openType>
+        <position>none</position>
+        <protected>false</protected>
+        <showsLocation>false</showsLocation>
+        <showsStatus>false</showsStatus>
+        <url>/apex/nFORMS__FormGenerator?Type=LLC_BI__Credit_Memo_Modifcation__c&amp;Id={!LLC_BI__Credit_Memo_Modifcation__c.Id}</url>
+    </webLinks>
+    <webLinks>
+        <fullName>Custom_Submit_Button</fullName>
+        <availability>online</availability>
+        <displayType>button</displayType>
+        <encodingKey>UTF-8</encodingKey>
+        <height>600</height>
+        <linkType>url</linkType>
+        <masterLabel>Submit</masterLabel>
+        <openType>noSidebar</openType>
+        <protected>false</protected>
+        <url>{!URLFOR( $Action.LLC_BI__Credit_Memo_Modifcation__c.Submit,  LLC_BI__Credit_Memo_Modifcation__c.Id  )}</url>
+    </webLinks>
+</CustomObject>

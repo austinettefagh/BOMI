@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <label><!-- Conditional Mapping Criteria --></label>
+        <name>LLC_BI__Conditional_Mapping_Criteria__c</name>
+    </fields>
+    <fields>
+        <help><!-- This field displays the default value the system sets a Target Object field to if the field is blank. --></help>
+        <label><!-- Default Value --></label>
+        <name>LLC_BI__Default_Value__c</name>
+    </fields>
+    <fields>
+        <help><!-- Select this option to ensure the given field is provided from the source object. --></help>
+        <label><!-- Is Required --></label>
+        <name>LLC_BI__Is_Required__c</name>
+    </fields>
+    <fields>
+        <help><!-- Enter the desired value(s) to define the sequence of mappings. --></help>
+        <label><!-- Order --></label>
+        <name>LLC_BI__Order__c</name>
+    </fields>
+    <fields>
+        <label><!-- Originating Obj Field --></label>
+        <name>LLC_BI__Orig_Obj_Field__c</name>
+    </fields>
+    <fields>
+        <help><!-- Enter the value of the field you would like to map from the source object. For a picklist, this will be the API value of the selected option. --></help>
+        <label><!-- Originating Value --></label>
+        <name>LLC_BI__Orig_Obj_Value__c</name>
+    </fields>
+    <fields>
+        <label><!-- Originating Obj --></label>
+        <name>LLC_BI__Orig_Obj__c</name>
+    </fields>
+    <fields>
+        <label><!-- Relationship Type --></label>
+        <name>LLC_BI__Relationship_Type__c</name>
+        <picklistValues>
+            <masterLabel>Analyst</masterLabel>
+            <translation><!-- Analyst --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Association</masterLabel>
+            <translation><!-- Association --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Competitor</masterLabel>
+            <translation><!-- Competitor --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Corporation</masterLabel>
+            <translation><!-- Corporation --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Customer</masterLabel>
+            <translation><!-- Customer --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Employee Stock Ownership Plan(ESOP)</masterLabel>
+            <translation><!-- Employee Stock Ownership Plan(ESOP) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Financial Institution</masterLabel>
+            <translation><!-- Financial Institution --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Government</masterLabel>
+            <translation><!-- Government --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Individual</masterLabel>
+            <translation><!-- Individual --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Institutional Investor</masterLabel>
+            <translation><!-- Institutional Investor --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Integrator</masterLabel>
+            <translation><!-- Integrator --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Investor</masterLabel>
+            <translation><!-- Investor --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Limited Liability Company</masterLabel>
+            <translation><!-- Limited Liability Company --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Limited Liability Company(LLC)</masterLabel>
+            <translation><!-- Limited Liability Company(LLC) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Other</masterLabel>
+            <translation><!-- Other --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Partner</masterLabel>
+            <translation><!-- Partner --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Partnership</masterLabel>
+            <translation><!-- Partnership --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Press</masterLabel>
+            <translation><!-- Press --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Professional Association</masterLabel>
+            <translation><!-- Professional Association --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Prospect</masterLabel>
+            <translation><!-- Prospect --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Relationship</masterLabel>
+            <translation><!-- Relationship --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Reseller</masterLabel>
+            <translation><!-- Reseller --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Sole Proprietorship</masterLabel>
+            <translation><!-- Sole Proprietorship --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Subchapter S Corporation</masterLabel>
+            <translation><!-- Subchapter S Corporation --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Trust</masterLabel>
+            <translation><!-- Trust --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Source Feature --></label>
+        <name>LLC_BI__Source_Feature__c</name>
+    </fields>
+    <fields>
+        <label><!-- Source Formula --></label>
+        <name>LLC_BI__Source_Formula__c</name>
+    </fields>
+    <fields>
+        <label><!-- Target Obj Field --></label>
+        <name>LLC_BI__Target_Obj_Field__c</name>
+    </fields>
+    <fields>
+        <help><!-- Enter the value of the field you would like to map to the destination object. For a picklist, this will be the API value of the selected option. --></help>
+        <label><!-- Target Value --></label>
+        <name>LLC_BI__Target_Obj_Value__c</name>
+    </fields>
+    <fields>
+        <label><!-- Target Obj --></label>
+        <name>LLC_BI__Target_Obj__c</name>
+    </fields>
+    <fields>
+        <label><!-- lookupKey --></label>
+        <name>LLC_BI__lookupKey__c</name>
+    </fields>
+</CustomObjectTranslation>

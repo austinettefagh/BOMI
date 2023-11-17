@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <label><!-- Category --></label>
+        <name>LLC_BI__Category__c</name>
+        <picklistValues>
+            <masterLabel>Change Memo</masterLabel>
+            <translation><!-- Change Memo --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Change Product</masterLabel>
+            <translation><!-- Change Product --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Credit Action</masterLabel>
+            <translation><!-- Credit Action --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Delete_Feature_Enabled</masterLabel>
+            <translation><!-- Delete_Feature_Enabled --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Delete_Versions_Allowed</masterLabel>
+            <translation><!-- Delete_Versions_Allowed --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Deposit Stage</masterLabel>
+            <translation><!-- Deposit Stage --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Deposit Status</masterLabel>
+            <translation><!-- Deposit Status --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Document Manager</masterLabel>
+            <translation><!-- Document Manager --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Entity_Check_Enabled</masterLabel>
+            <translation><!-- Entity_Check_Enabled --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>General</masterLabel>
+            <translation><!-- General --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Label</masterLabel>
+            <translation><!-- Label --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Loan Stage</masterLabel>
+            <translation><!-- Loan Stage --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Loan Status</masterLabel>
+            <translation><!-- Loan Status --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Modification_Name_Format</masterLabel>
+            <translation><!-- Modification_Name_Format --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Original_Name_Format</masterLabel>
+            <translation><!-- Original_Name_Format --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Relatives_To_Clone</masterLabel>
+            <translation><!-- Relatives_To_Clone --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Renewal_Feature_Enabled</masterLabel>
+            <translation><!-- Renewal_Feature_Enabled --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Renewal_Fields_To_Clone</masterLabel>
+            <translation><!-- Renewal_Fields_To_Clone --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Renewal_History_Available_String</masterLabel>
+            <translation><!-- Renewal_History_Available_String --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Renewal_History_In_Progress_String</masterLabel>
+            <translation><!-- Renewal_History_In_Progress_String --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Renewal_History_Superceded_String</masterLabel>
+            <translation><!-- Renewal_History_Superceded_String --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Renewal_Name_Format</masterLabel>
+            <translation><!-- Renewal_Name_Format --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Renewal_Stage_Superceded_String</masterLabel>
+            <translation><!-- Renewal_Stage_Superceded_String --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Renewal_Starting_Stage</masterLabel>
+            <translation><!-- Renewal_Starting_Stage --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Renewal_Starting_Status</masterLabel>
+            <translation><!-- Renewal_Starting_Status --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Renewal_Status_Deleted_String</masterLabel>
+            <translation><!-- Renewal_Status_Deleted_String --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Renewal_Status_Superceded_String</masterLabel>
+            <translation><!-- Renewal_Status_Superceded_String --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Renewal_Supported</masterLabel>
+            <translation><!-- Renewal_Supported --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Roles_For_Loan_Deletion</masterLabel>
+            <translation><!-- Roles_For_Loan_Deletion --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Roles_For_Loan_Renewal</masterLabel>
+            <translation><!-- Roles_For_Loan_Renewal --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Roles_For_Multi-Renewal_Delete</masterLabel>
+            <translation><!-- Roles_For_Multi-Renewal_Delete --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Stages_Deletion_Allowed</masterLabel>
+            <translation><!-- Stages_Deletion_Allowed --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Stages_Renewal_Allowed</masterLabel>
+            <translation><!-- Stages_Renewal_Allowed --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Status_Deletion_Allowed</masterLabel>
+            <translation><!-- Status_Deletion_Allowed --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Status_Renewal_Allowed</masterLabel>
+            <translation><!-- Status_Renewal_Allowed --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Description --></label>
+        <name>LLC_BI__Description__c</name>
+    </fields>
+    <fields>
+        <help><!-- Any spaces in the Key&apos;s should be replaced with an underscore. --></help>
+        <label><!-- Key --></label>
+        <name>LLC_BI__Key__c</name>
+    </fields>
+    <fields>
+        <label><!-- Value --></label>
+        <name>LLC_BI__Value__c</name>
+    </fields>
+    <fields>
+        <label><!-- fieldValue --></label>
+        <name>LLC_BI__fieldValue__c</name>
+    </fields>
+    <fields>
+        <label><!-- lookupKey --></label>
+        <name>LLC_BI__lookupKey__c</name>
+    </fields>
+</CustomObjectTranslation>

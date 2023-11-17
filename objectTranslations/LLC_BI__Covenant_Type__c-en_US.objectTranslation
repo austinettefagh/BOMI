@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fieldSets>
+        <label><!-- Jack Henry jXchange Automated Booking --></label>
+        <name>JHJX__ABJX</name>
+    </fieldSets>
+    <fields>
+        <label><!-- Definition --></label>
+        <name>CF_Definition__c</name>
+    </fields>
+    <fields>
+        <label><!-- Category --></label>
+        <name>LLC_BI__Category__c</name>
+        <picklistValues>
+            <masterLabel>Collateral</masterLabel>
+            <translation><!-- Collateral --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Default Covenant</masterLabel>
+            <translation><!-- Default Covenant --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Financial Indicators</masterLabel>
+            <translation><!-- Financial Indicators --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Financial Statement Requirements</masterLabel>
+            <translation><!-- Financial Statement Requirements --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- Enter the number of grace days for covenants with this covenant type. --></help>
+        <label><!-- Grace Days --></label>
+        <name>LLC_BI__Grace_Days__c</name>
+    </fields>
+    <fields>
+        <label><!-- Financial Indicator --></label>
+        <name>LLC_BI__Is_Financial_Indicator__c</name>
+    </fields>
+    <fields>
+        <help><!-- Populate this field with the Requirement Template needed to generate an associated Requirement. The template generates the Requirement, and links it to a Covenant Compliance created by the system. --></help>
+        <label><!-- Requirement Template Lookup --></label>
+        <name>LLC_BI__Requirement_Template__c</name>
+        <relationshipLabel><!-- Covenant Types --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- lookupKey --></label>
+        <name>LLC_BI__lookupKey__c</name>
+    </fields>
+</CustomObjectTranslation>

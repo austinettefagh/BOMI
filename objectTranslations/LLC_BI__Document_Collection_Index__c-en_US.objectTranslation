@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <label><!-- Document Collection --></label>
+        <name>LLC_BI__Document_Collection_Reference__c</name>
+        <relationshipLabel><!-- Document Collection Indices --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- -D Document Collection --></label>
+        <name>LLC_BI__Document_Collection__c</name>
+        <relationshipLabel><!-- Document Collection Indices --></relationshipLabel>
+    </fields>
+    <fields>
+        <help><!-- This optional field is used for storing additional metadata relevant to the related document. --></help>
+        <label><!-- Document Metadata --></label>
+        <name>LLC_BI__Document_Metadata__c</name>
+    </fields>
+    <fields>
+        <label><!-- Document Store --></label>
+        <name>LLC_BI__Document_Store__c</name>
+        <relationshipLabel><!-- Document Store Collection Indices --></relationshipLabel>
+    </fields>
+    <fields>
+        <help><!-- Document Collection Index status --></help>
+        <label><!-- Status --></label>
+        <name>LLC_BI__Status__c</name>
+        <picklistValues>
+            <masterLabel>Failed</masterLabel>
+            <translation><!-- Failed --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>In Progress</masterLabel>
+            <translation><!-- In Progress --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Queued</masterLabel>
+            <translation><!-- Queued --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Uploaded</masterLabel>
+            <translation><!-- Uploaded --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Vendor Document Id --></label>
+        <name>LLC_BI__Vendor_Document_Id__c</name>
+    </fields>
+</CustomObjectTranslation>

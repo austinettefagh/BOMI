@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <label><!-- Context --></label>
+        <name>DOCU__Context__c</name>
+    </fields>
+    <fields>
+        <label><!-- Envelope ID --></label>
+        <name>DOCU__Envelope_ID__c</name>
+    </fields>
+    <fields>
+        <label><!-- Processing Status --></label>
+        <name>DOCU__Processing_Status__c</name>
+        <picklistValues>
+            <masterLabel>Complete</masterLabel>
+            <translation><!-- Complete --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Error</masterLabel>
+            <translation><!-- Error --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Pending</masterLabel>
+            <translation><!-- Pending --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Unsupported</masterLabel>
+            <translation><!-- Unsupported --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Recipient ID --></label>
+        <name>DOCU__Recipient_ID__c</name>
+    </fields>
+    <fields>
+        <label><!-- Status --></label>
+        <name>DOCU__Status__c</name>
+    </fields>
+</CustomObjectTranslation>

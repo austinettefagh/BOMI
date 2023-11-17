@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <help><!-- Select the associated dimension definition. --></help>
+        <label><!-- Dimension Definition --></label>
+        <name>LLC_BI__Dimension_Definition__c</name>
+        <relationshipLabel><!-- Dimensions --></relationshipLabel>
+    </fields>
+    <fields>
+        <help><!-- Select the associated matrix. --></help>
+        <label><!-- Matrix --></label>
+        <name>LLC_BI__Matrix__c</name>
+        <relationshipLabel><!-- Dimensions --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Order --></label>
+        <name>LLC_BI__Order__c</name>
+    </fields>
+    <fields>
+        <label><!-- lookupKey --></label>
+        <name>LLC_BI__lookupKey__c</name>
+    </fields>
+</CustomObjectTranslation>

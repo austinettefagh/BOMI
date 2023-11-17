@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Payoff</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Payoffs</value>
+    </caseValues>
+    <fields>
+        <label><!-- Additional Comments --></label>
+        <name>CF_Additional_Comments__c</name>
+    </fields>
+    <fields>
+        <label><!-- Amount of Funds Received --></label>
+        <name>CF_Amount_of_Funds_Received__c</name>
+    </fields>
+    <fields>
+        <label><!-- Collateral Release Status --></label>
+        <name>CF_Collateral_Release_Status__c</name>
+        <picklistValues>
+            <masterLabel>Complete</masterLabel>
+            <translation><!-- Complete --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>In Progress</masterLabel>
+            <translation><!-- In Progress --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Not Started</masterLabel>
+            <translation><!-- Not Started --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Collateral Released By --></label>
+        <name>CF_Collateral_Released_By__c</name>
+        <relationshipLabel><!-- Payoffs (Collateral Released By) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Comments --></label>
+        <name>CF_Comments__c</name>
+    </fields>
+    <fields>
+        <label><!-- Date Funds Received --></label>
+        <name>CF_Date_Funds_Received__c</name>
+    </fields>
+    <fields>
+        <label><!-- Date Letter Will Expire --></label>
+        <name>CF_Date_Letter_Will_Expire__c</name>
+    </fields>
+    <fields>
+        <label><!-- Date of Payoff Expiration --></label>
+        <name>CF_Date_of_Payoff_Expiration__c</name>
+    </fields>
+    <fields>
+        <label><!-- Expired --></label>
+        <name>CF_Expired__c</name>
+    </fields>
+    <fields>
+        <label><!-- Guarantor 1 --></label>
+        <name>CF_Guarantor_1__c</name>
+    </fields>
+    <fields>
+        <label><!-- Guarantor 2 --></label>
+        <name>CF_Guarantor_2__c</name>
+    </fields>
+    <fields>
+        <label><!-- Guarantor 3 --></label>
+        <name>CF_Guarantor_3__c</name>
+    </fields>
+    <fields>
+        <label><!-- Guarantor 4 --></label>
+        <name>CF_Guarantor_4__c</name>
+    </fields>
+    <fields>
+        <label><!-- Letter Approver --></label>
+        <name>CF_Letter_Approver__c</name>
+        <relationshipLabel><!-- Payoffs (Letter Approver) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Letter Sent to Borrower --></label>
+        <name>CF_Letter_Sent_to_Borrower__c</name>
+    </fields>
+    <fields>
+        <label><!-- Letter Type --></label>
+        <name>CF_Letter_Type__c</name>
+        <picklistValues>
+            <masterLabel>21-day Interest included</masterLabel>
+            <translation><!-- 21-day Interest included --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>21-day Interest not included</masterLabel>
+            <translation><!-- 21-day Interest not included --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Loan Ops Status --></label>
+        <name>CF_Loan_Ops_Status__c</name>
+        <picklistValues>
+            <masterLabel>Complete</masterLabel>
+            <translation><!-- Complete --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>In-Progress</masterLabel>
+            <translation><!-- In-Progress --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Issues Identified</masterLabel>
+            <translation><!-- Issues Identified --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Not Started</masterLabel>
+            <translation><!-- Not Started --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Peer Review</masterLabel>
+            <translation><!-- Peer Review --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Loan Ops --></label>
+        <name>CF_Loan_Ops__c</name>
+        <relationshipLabel><!-- Payoffs (Loan Ops) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Loan --></label>
+        <name>CF_Loan__c</name>
+        <relationshipLabel><!-- Payoffs --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Payoff Check --></label>
+        <name>CF_Payoff_Check__c</name>
+    </fields>
+    <fields>
+        <label><!-- Payoff Completed --></label>
+        <name>CF_Payoff_Completed__c</name>
+    </fields>
+    <fields>
+        <label><!-- Payoff Good Through Date --></label>
+        <name>CF_Payoff_Good_Through_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Payoff Status --></label>
+        <name>CF_Payoff_Status__c</name>
+        <picklistValues>
+            <masterLabel>Cancelled</masterLabel>
+            <translation><!-- Cancelled --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Expired</masterLabel>
+            <translation><!-- Expired --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Letter Approved</masterLabel>
+            <translation><!-- Letter Approved --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Letter In Review</masterLabel>
+            <translation><!-- Letter In Review --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Payoff Completed</masterLabel>
+            <translation><!-- Payoff Completed --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Payoff Requested</masterLabel>
+            <translation><!-- Payoff Requested --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Per Diem --></label>
+        <name>CF_Per_Diem__c</name>
+    </fields>
+    <fields>
+        <label><!-- Prepayment Penalty --></label>
+        <name>CF_Prepayment_Penalty__c</name>
+    </fields>
+    <fields>
+        <label><!-- Remaining Balance --></label>
+        <name>CF_Remaining_Balance__c</name>
+    </fields>
+    <fields>
+        <label><!-- Written Request Received Date --></label>
+        <name>CF_Written_Request_Received_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- hasAttachment --></label>
+        <name>CF_hasAttachment__c</name>
+    </fields>
+    <recordTypes>
+        <description><!-- Payoff record type for completed records - read only --></description>
+        <label><!-- Complete ReadOnly --></label>
+        <name>PAY_Complete_ReadOnly</name>
+    </recordTypes>
+    <recordTypes>
+        <description><!-- Payoff record type for pre-complete activities --></description>
+        <label><!-- PreComplete --></label>
+        <name>PAY_PreComplete</name>
+    </recordTypes>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

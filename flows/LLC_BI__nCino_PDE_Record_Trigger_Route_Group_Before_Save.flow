@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Flow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <apiVersion>57.0</apiVersion>
+    <assignments>
+        <description>When the Visibility Criteria field on a Route Group record is not blank, set the Has Visibility Criteria field to true. 
+The Has Visibility field is used in conjunction with Salesforce Sharing Settings to control record visibility which can help make the nCino UI more performant. 
+Migrated from Workflow(s): Has Visibility Criteria, Has No Visibility Criteria</description>
+        <name>Set_Has_Visibility_Criteria</name>
+        <label>Set Has Visibility Criteria</label>
+        <locationX>182</locationX>
+        <locationY>311</locationY>
+        <assignmentItems>
+            <assignToReference>$Record.nFORCE__Has_Visibility_Criteria__c</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>forB_HasVisibilityCriteria</elementReference>
+            </value>
+        </assignmentItems>
+        <connector>
+            <targetReference>Determine_Path</targetReference>
+        </connector>
+    </assignments>
+    <decisions>
+        <description>nCino&apos;s general purpose Record-Trigger flows are designed to bucket interactions into distinct pillars. 
+
+1. On Create. These actions occur at the time the record is created. 
+2. Progression (if applicable). These actions occur when a core process on the record progresses forward or backward. These should be picklists (Example: Loan Stage). 
+3. Adhoc. All other actions which occur when distinct criteria are met.
+
+A &quot;skip&quot; function is built into start conditions. This flow will not execute when the &quot;Exclude Flow&quot; permission set is assigned to the running user.</description>
+        <name>Determine_Path</name>
+        <label>Determine Path</label>
+        <locationX>182</locationX>
+        <locationY>431</locationY>
+        <defaultConnector>
+            <targetReference>Update_Route_Group_On_Edit</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>Adhoc</defaultConnectorLabel>
+        <rules>
+            <name>On_Create</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>forB_ISNEW</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <booleanValue>true</booleanValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Update_Route_Group_On_Create</targetReference>
+            </connector>
+            <label>On Create</label>
+        </rules>
+    </decisions>
+    <description>Managed flow handling various Route Group actions in Before Save context. When a Route Group record is created or edited, the resulting actions update the record which triggered the flow.</description>
+    <environments>Default</environments>
+    <formulas>
+        <description>This formula determines whether Has Visibility Criteria is set to true or false.</description>
+        <name>forB_HasVisibilityCriteria</name>
+        <dataType>Boolean</dataType>
+        <expression>IF( NOT(ISBLANK({!$Record.nFORCE__Visibility_Criteria__c})), true, false)</expression>
+    </formulas>
+    <formulas>
+        <description>Reusable variable. Drives &quot;On Create&quot; pillar.</description>
+        <name>forB_ISNEW</name>
+        <dataType>Boolean</dataType>
+        <expression>ISNEW()</expression>
+    </formulas>
+    <interviewLabel>nCino PDE - Record Trigger: Opportunity Before Save - V.1.0.0 {!$Flow.CurrentDateTime}</interviewLabel>
+    <isTemplate>true</isTemplate>
+    <label>nCino PDE - Record Trigger: Route Group Before Save - V.1.0.0</label>
+    <processMetadataValues>
+        <name>BuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>CanvasMode</name>
+        <value>
+            <stringValue>AUTO_LAYOUT_CANVAS</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>OriginBuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processType>AutoLaunchedFlow</processType>
+    <recordUpdates>
+        <description>A DML element to update the triggering Route Group.</description>
+        <name>Update_Route_Group_On_Create</name>
+        <label>Update Route Group On Create</label>
+        <locationX>50</locationX>
+        <locationY>551</locationY>
+        <inputAssignments>
+            <field>nFORCE__Has_Visibility_Criteria__c</field>
+            <value>
+                <elementReference>$Record.nFORCE__Has_Visibility_Criteria__c</elementReference>
+            </value>
+        </inputAssignments>
+        <inputReference>$Record</inputReference>
+    </recordUpdates>
+    <recordUpdates>
+        <description>A DML element to update the triggering Route Group.</description>
+        <name>Update_Route_Group_On_Edit</name>
+        <label>Update Route Group On Edit</label>
+        <locationX>314</locationX>
+        <locationY>551</locationY>
+        <inputAssignments>
+            <field>nFORCE__Has_Visibility_Criteria__c</field>
+            <value>
+                <elementReference>$Record.nFORCE__Has_Visibility_Criteria__c</elementReference>
+            </value>
+        </inputAssignments>
+        <inputReference>$Record</inputReference>
+    </recordUpdates>
+    <start>
+        <locationX>56</locationX>
+        <locationY>0</locationY>
+        <connector>
+            <targetReference>Set_Has_Visibility_Criteria</targetReference>
+        </connector>
+        <filterFormula>{!$Permission.LLC_BI__Exclude_Flow}=False</filterFormula>
+        <object>nFORCE__Route_Group__c</object>
+        <recordTriggerType>CreateAndUpdate</recordTriggerType>
+        <triggerType>RecordBeforeSave</triggerType>
+    </start>
+    <status>Draft</status>
+</Flow>

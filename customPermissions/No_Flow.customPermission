@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomPermission xmlns="http://soap.sforce.com/2006/04/metadata">
+    <description>Enabled in the &quot;No Flow&quot; permission set. If assigned to a user, the flows marked for No Flow in entry conditions will not execute. This allows users to bypass automation when needed.</description>
+    <isLicensed>false</isLicensed>
+    <label>No Flow</label>
+</CustomPermission>

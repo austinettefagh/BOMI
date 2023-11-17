@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fieldSets>
+        <label><!-- TM Manage Bill Points --></label>
+        <name>LLC_BI__TM_Manage_Bill_Points</name>
+    </fieldSets>
+    <fields>
+        <help><!-- This field is used to provide a description of the AFP Code of the bill point. --></help>
+        <label><!-- AFP Code Description --></label>
+        <name>LLC_BI__AFP_Code_Description__c</name>
+    </fields>
+    <fields>
+        <help><!-- This field identifies the AFP code of the bill point. --></help>
+        <label><!-- AFP Code --></label>
+        <name>LLC_BI__AFP_Code__c</name>
+    </fields>
+    <fields>
+        <label><!-- Allow Volume Override --></label>
+        <name>LLC_BI__Allow_Volume_Override__c</name>
+    </fields>
+    <fields>
+        <help><!-- This field is used to provide a description of the BSID code of the bill point. --></help>
+        <label><!-- BSID Code Description --></label>
+        <name>LLC_BI__BSID_Code_Description__c</name>
+    </fields>
+    <fields>
+        <label><!-- Block Exception Pricing --></label>
+        <name>LLC_BI__Block_Exception_Pricing__c</name>
+    </fields>
+    <fields>
+        <label><!-- Display Price --></label>
+        <name>LLC_BI__Display_Price__c</name>
+    </fields>
+    <fields>
+        <help><!-- This field is used to identify the fixed cost associated with a bill point. --></help>
+        <label><!-- Fixed Unit Cost --></label>
+        <name>LLC_BI__Fixed_Unit_Cost__c</name>
+    </fields>
+    <fields>
+        <help><!-- This field is used to indicate if the bill point is part of a reoccurring monthly fee or a one-time fee. --></help>
+        <label><!-- Is Monthly --></label>
+        <name>LLC_BI__Is_Monthly__c</name>
+    </fields>
+    <fields>
+        <label><!-- Is Perm Waive --></label>
+        <name>LLC_BI__Is_Perm_Waive__c</name>
+    </fields>
+    <fields>
+        <help><!-- This field is used to specify if the price of the bill point is a single price, tiered, or progressive tiered price structure. The default value is Single. --></help>
+        <label><!-- Price Structure --></label>
+        <name>LLC_BI__Price_Structure__c</name>
+        <picklistValues>
+            <masterLabel>Progressive Tiered</masterLabel>
+            <translation><!-- Progressive Tiered --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Single</masterLabel>
+            <translation><!-- Single --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Tiered</masterLabel>
+            <translation><!-- Tiered --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Standard Price --></label>
+        <name>LLC_BI__Price__c</name>
+    </fields>
+    <fields>
+        <label><!-- Product Type --></label>
+        <name>LLC_BI__Product_Type__c</name>
+        <relationshipLabel><!-- Bill Points --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Product --></label>
+        <name>LLC_BI__Product__c</name>
+        <relationshipLabel><!-- Bill Points --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- -D Progressive Tiers --></label>
+        <name>LLC_BI__Progressive_Tiers__c</name>
+    </fields>
+    <fields>
+        <help><!-- This field indicates the rate classes that are defined for the bill point. This is used to display the correct pricing on the Quantity &amp; Pricing page based on the rate classes configured by the financial institution. --></help>
+        <label><!-- Rate Class --></label>
+        <name>LLC_BI__Rate_Class__c</name>
+        <picklistValues>
+            <masterLabel>Community Banking Pricing</masterLabel>
+            <translation><!-- Community Banking Pricing --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Metro Market Pricing</masterLabel>
+            <translation><!-- Metro Market Pricing --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>N/A</masterLabel>
+            <translation><!-- N/A --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- This field is used to identify the semi-variable cost associated with a bill point. --></help>
+        <label><!-- Semi Variable Unit Cost --></label>
+        <name>LLC_BI__Semi_Variable_Unit_Cost__c</name>
+    </fields>
+    <fields>
+        <help><!-- This is used to store the price information for a given bill point. --></help>
+        <label><!-- Tiers --></label>
+        <name>LLC_BI__Tiers__c</name>
+    </fields>
+    <fields>
+        <help><!-- This field is used to identify the cost associated with a bill point. --></help>
+        <label><!-- Unit Cost --></label>
+        <name>LLC_BI__Unit_Cost__c</name>
+    </fields>
+    <fields>
+        <help><!-- This field identifies the BSID of the bill point. --></help>
+        <label><!-- BSID --></label>
+        <name>LLC_BI__lookupKey__c</name>
+    </fields>
+    <fields>
+        <help><!-- If populated, the value must be unique across all the records of this type. The field typically contains an external identifier that is used to associate the record with its matching record in an external system. --></help>
+        <label><!-- lookupKey --></label>
+        <name>LLC_BI__lookup_Key__c</name>
+    </fields>
+    <fields>
+        <label><!-- Override Default Volume --></label>
+        <name>Override_Default_Volume__c</name>
+    </fields>
+</CustomObjectTranslation>

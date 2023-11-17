@@ -1,0 +1,465 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Flow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <apiVersion>57.0</apiVersion>
+    <assignments>
+        <description>Update the Covenant Mgmt Due Date when the underlying compliance record is marked compliant, waived, or exception.
+Migrated from workflow(s): Covenant Extension with Due Date</description>
+        <name>Set_Cov_Mgmt_Due_Date</name>
+        <label>Set Cov Mgmt: Due Date</label>
+        <locationX>314</locationX>
+        <locationY>815</locationY>
+        <assignmentItems>
+            <assignToReference>Get_Related_Cov_Mgmt.LLC_BI__Due_Date__c</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>forD_DueDate</elementReference>
+            </value>
+        </assignmentItems>
+        <connector>
+            <targetReference>Status_or_Evaluation_Date_Changed</targetReference>
+        </connector>
+    </assignments>
+    <assignments>
+        <description>Update the Last Evaluation Date and Last Evaluation Status on the Covenant Mgmt record to capture when a compliance record is created.
+Migrated from Workflow(s): Covenant Compliance Update Last Evaluation Date, Covenant Compliance Update Last Evaluation Status</description>
+        <name>Set_Cov_Mgmt_Last_Evaluation_Date_Last_Evaluation_Status</name>
+        <label>Set Cov Mgmt: Last Evaluation Date &amp; Last Evaluation Status</label>
+        <locationX>50</locationX>
+        <locationY>575</locationY>
+        <assignmentItems>
+            <assignToReference>Get_Related_Cov_Mgmt.LLC_BI__Last_Evaluation_Date__c</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>$Record.LLC_BI__Evaluation_Date__c</elementReference>
+            </value>
+        </assignmentItems>
+        <assignmentItems>
+            <assignToReference>Get_Related_Cov_Mgmt.LLC_BI__Last_Evaluation_Status__c</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>$Record.LLC_BI__Status__c</elementReference>
+            </value>
+        </assignmentItems>
+        <assignmentItems>
+            <assignToReference>Get_Related_Cov_Mgmt.LLC_BI__Covenant_Status__c</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>$Record.LLC_BI__Status__c</elementReference>
+            </value>
+        </assignmentItems>
+        <connector>
+            <targetReference>Update_Related_Covenant_Mgmt_On_Create</targetReference>
+        </connector>
+    </assignments>
+    <assignments>
+        <description>Update the Last Evaluation Date and Last Evaluation Status on the Covenant Mgmt record to capture when a compliance record is reviewed.</description>
+        <name>Set_Cov_Mgmt_Last_Evaluation_Date_Last_Evaluation_Status_0</name>
+        <label>Set Cov Mgmt: Last Evaluation Date &amp; Last Evaluation Status</label>
+        <locationX>314</locationX>
+        <locationY>1151</locationY>
+        <assignmentItems>
+            <assignToReference>Get_Related_Cov_Mgmt.LLC_BI__Last_Evaluation_Date__c</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>$Record.LLC_BI__Evaluation_Date__c</elementReference>
+            </value>
+        </assignmentItems>
+        <assignmentItems>
+            <assignToReference>Get_Related_Cov_Mgmt.LLC_BI__Covenant_Status__c</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>$Record.LLC_BI__Status__c</elementReference>
+            </value>
+        </assignmentItems>
+        <assignmentItems>
+            <assignToReference>Get_Related_Cov_Mgmt.LLC_BI__Last_Evaluation_Status__c</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>$Record.LLC_BI__Status__c</elementReference>
+            </value>
+        </assignmentItems>
+        <connector>
+            <targetReference>Update_Related_Covenant_Mgmt_On_Edit</targetReference>
+        </connector>
+    </assignments>
+    <assignments>
+        <description>Update the Covenant Mgmt next evaluation date when the underlying compliance record is marked compliant, waived, or exception.
+Migrated from workflow(s): Covenant Compliance Set Next Evaluation Date</description>
+        <name>Set_Cov_Mgmt_Next_Evaluation_Date</name>
+        <label>Set Cov Mgmt: Next Evaluation Date</label>
+        <locationX>314</locationX>
+        <locationY>695</locationY>
+        <assignmentItems>
+            <assignToReference>Get_Related_Cov_Mgmt.LLC_BI__Next_Evaluation_Date__c</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>forD_NextEvaluationDate</elementReference>
+            </value>
+        </assignmentItems>
+        <connector>
+            <targetReference>Set_Cov_Mgmt_Due_Date</targetReference>
+        </connector>
+    </assignments>
+    <decisions>
+        <description>nCino&apos;s general purpose Record-Trigger flows are designed to bucket interactions into distinct pillars.
+
+1. On Create. These actions occur at the time the record is created.
+2. Progression (if applicable). These actions occur when a core process on the record progresses forward or backward. These should be picklists (Example: Loan Stage).
+3. Adhoc. All other actions which occur when distinct criteria are met.
+
+A &quot;skip&quot; function is build into start conditions. This flow will not execute when the &quot;Exclude Flow&quot; permission set is assigned to the running user.</description>
+        <name>Determine_Path</name>
+        <label>Determine Path</label>
+        <locationX>248</locationX>
+        <locationY>455</locationY>
+        <defaultConnector>
+            <targetReference>Status_change_from_Pending_to_Compliant_Waived_or_Exception</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>Adhoc</defaultConnectorLabel>
+        <rules>
+            <name>On_Create</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>forB_ISNEW</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <booleanValue>true</booleanValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Set_Cov_Mgmt_Last_Evaluation_Date_Last_Evaluation_Status</targetReference>
+            </connector>
+            <label>On Create</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <description>Update the Covenant Mgmt Next Evaluation Date based on the frequency and the last scheduled evaluation date. And update the Covenant Mgmt Due Date based on the frequency and the last due date.
+Migrated from workflow(s): Covenant Compliance Set Next Evaluation Date, Covenant Extension with Due Date</description>
+        <name>Status_change_from_Pending_to_Compliant_Waived_or_Exception</name>
+        <label>Status change from Pending to Compliant, Waived, or Exception?</label>
+        <locationX>446</locationX>
+        <locationY>575</locationY>
+        <defaultConnector>
+            <targetReference>Status_or_Evaluation_Date_Changed</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
+        <rules>
+            <name>Status_Changed</name>
+            <conditionLogic>1 AND (2 OR 3 OR 4)</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record__Prior.LLC_BI__Status__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Pending</stringValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.LLC_BI__Status__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Compliant</stringValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.LLC_BI__Status__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Waived</stringValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.LLC_BI__Status__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Exception</stringValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Set_Cov_Mgmt_Next_Evaluation_Date</targetReference>
+            </connector>
+            <label>Status Changed</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <description>Update the Covenant Mgmt Last Evaluation Date and Last Evaluation Status based on respective values from the underlying compliance record.
+Migrated from Workflow(s): Covenant Compliance Update Last Evaluation Date, Covenant Compliance Update Last Evaluation Status</description>
+        <name>Status_or_Evaluation_Date_Changed</name>
+        <label>Status or Evaluation Date Changed?</label>
+        <locationX>446</locationX>
+        <locationY>1031</locationY>
+        <defaultConnector>
+            <targetReference>Update_Related_Covenant_Mgmt_On_Edit</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
+        <rules>
+            <name>Value_Changed</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record.LLC_BI__Evaluation_Date__c</leftValueReference>
+                <operator>IsChanged</operator>
+                <rightValue>
+                    <booleanValue>true</booleanValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.LLC_BI__Status__c</leftValueReference>
+                <operator>IsChanged</operator>
+                <rightValue>
+                    <booleanValue>true</booleanValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Set_Cov_Mgmt_Last_Evaluation_Date_Last_Evaluation_Status_0</targetReference>
+            </connector>
+            <label>Value Changed</label>
+        </rules>
+    </decisions>
+    <description>Managed flow handling various Covenant Compliance actions in After Save context. When a Covenant Compliance record is created or edited, the resulting actions update records related to the record which triggered the flow.</description>
+    <environments>Default</environments>
+    <formulas>
+        <description>Reusable variable. Drives &quot;On Create&quot; pillar.</description>
+        <name>forB_ISNEW</name>
+        <dataType>Boolean</dataType>
+        <expression>ISNEW()</expression>
+    </formulas>
+    <formulas>
+        <description>Formula used to determine the appropriate Due Date for the Covenant Mgmt record.</description>
+        <name>forD_DueDate</name>
+        <dataType>Date</dataType>
+        <expression>DATE(
+YEAR({!Get_Related_Cov_Mgmt.LLC_BI__Due_Date__c}) +
+FLOOR((MONTH({!Get_Related_Cov_Mgmt.LLC_BI__Due_Date__c}) + {!Get_Related_Cov_Mgmt.LLC_BI__Frequency_Months__c}) / 12) +
+IF(
+MOD(MONTH({!Get_Related_Cov_Mgmt.LLC_BI__Due_Date__c}) + {!Get_Related_Cov_Mgmt.LLC_BI__Frequency_Months__c}, 12) = 0,
+-1,
+0
+),
+IF(
+MOD(MONTH({!Get_Related_Cov_Mgmt.LLC_BI__Due_Date__c}) + {!Get_Related_Cov_Mgmt.LLC_BI__Frequency_Months__c}, 12) = 0,
+12,
+MOD(MONTH({!Get_Related_Cov_Mgmt.LLC_BI__Due_Date__c}) + {!Get_Related_Cov_Mgmt.LLC_BI__Frequency_Months__c} , 12)
+),
+IF(
+IF(
+MONTH({!Get_Related_Cov_Mgmt.LLC_BI__Due_Date__c}) = 12,
+DATE(YEAR({!Get_Related_Cov_Mgmt.LLC_BI__Due_Date__c}), 12, 31),
+DATE(YEAR({!Get_Related_Cov_Mgmt.LLC_BI__Due_Date__c}), MONTH({!Get_Related_Cov_Mgmt.LLC_BI__Due_Date__c}) + 1, 1) - 1
+) = {!Get_Related_Cov_Mgmt.LLC_BI__Due_Date__c},
+CASE(
+IF(
+MOD(MONTH({!Get_Related_Cov_Mgmt.LLC_BI__Due_Date__c}) + {!Get_Related_Cov_Mgmt.LLC_BI__Frequency_Months__c}, 12) = 0,
+12,
+MOD(MONTH({!Get_Related_Cov_Mgmt.LLC_BI__Due_Date__c}) + {!Get_Related_Cov_Mgmt.LLC_BI__Frequency_Months__c} , 12)
+),
+2, IF(
+MOD(
+YEAR({!Get_Related_Cov_Mgmt.LLC_BI__Due_Date__c}) +
+FLOOR((MONTH({!Get_Related_Cov_Mgmt.LLC_BI__Due_Date__c}) + {!Get_Related_Cov_Mgmt.LLC_BI__Frequency_Months__c}) / 12) +
+IF(
+MOD(MONTH({!Get_Related_Cov_Mgmt.LLC_BI__Due_Date__c}) + {!Get_Related_Cov_Mgmt.LLC_BI__Frequency_Months__c}, 12) = 0,
+-1,
+0
+),
+4
+) = 0,
+29,
+28
+),
+4,30,
+6,30,
+9,30,
+11,30,
+31
+),
+MIN(
+DAY({!Get_Related_Cov_Mgmt.LLC_BI__Due_Date__c}),
+CASE(
+IF(
+MOD(MONTH({!Get_Related_Cov_Mgmt.LLC_BI__Due_Date__c}) + {!Get_Related_Cov_Mgmt.LLC_BI__Frequency_Months__c}, 12) = 0,
+12,
+MOD(MONTH({!Get_Related_Cov_Mgmt.LLC_BI__Due_Date__c}) + {!Get_Related_Cov_Mgmt.LLC_BI__Frequency_Months__c} , 12)
+),
+2, IF(
+MOD(
+YEAR({!Get_Related_Cov_Mgmt.LLC_BI__Due_Date__c}) +
+FLOOR((MONTH({!Get_Related_Cov_Mgmt.LLC_BI__Due_Date__c}) + {!Get_Related_Cov_Mgmt.LLC_BI__Frequency_Months__c}) / 12) +
+IF(
+MOD(MONTH({!Get_Related_Cov_Mgmt.LLC_BI__Due_Date__c}) + {!Get_Related_Cov_Mgmt.LLC_BI__Frequency_Months__c}, 12) = 0,
+-1,
+0
+),
+4
+) = 0,
+29,
+28
+),
+4,30,
+6,30,
+9,30,
+11,30,
+31
+)
+)
+)
+)</expression>
+    </formulas>
+    <formulas>
+        <description>Formula used to determine the appropriate Next Evaluation Date for the Covenant Mgmt record.</description>
+        <name>forD_NextEvaluationDate</name>
+        <dataType>Date</dataType>
+        <expression>DATE(
+YEAR({!Get_Related_Cov_Mgmt.LLC_BI__Next_Evaluation_Date__c}) +
+FLOOR((MONTH({!Get_Related_Cov_Mgmt.LLC_BI__Next_Evaluation_Date__c}) + {!Get_Related_Cov_Mgmt.LLC_BI__Frequency_Months__c}) / 12) +
+IF(
+MOD(MONTH({!Get_Related_Cov_Mgmt.LLC_BI__Next_Evaluation_Date__c}) + {!Get_Related_Cov_Mgmt.LLC_BI__Frequency_Months__c}, 12) = 0,
+-1,
+0
+),
+IF(
+MOD(MONTH({!Get_Related_Cov_Mgmt.LLC_BI__Next_Evaluation_Date__c}) + {!Get_Related_Cov_Mgmt.LLC_BI__Frequency_Months__c}, 12) = 0,
+12,
+MOD(MONTH({!Get_Related_Cov_Mgmt.LLC_BI__Next_Evaluation_Date__c}) + {!Get_Related_Cov_Mgmt.LLC_BI__Frequency_Months__c}, 12)
+),
+IF(
+IF(
+MONTH({!Get_Related_Cov_Mgmt.LLC_BI__Next_Evaluation_Date__c}) = 12,
+DATE(YEAR({!Get_Related_Cov_Mgmt.LLC_BI__Next_Evaluation_Date__c}), 12, 31),
+DATE(YEAR({!Get_Related_Cov_Mgmt.LLC_BI__Next_Evaluation_Date__c}), MONTH({!Get_Related_Cov_Mgmt.LLC_BI__Next_Evaluation_Date__c}) + 1, 1) - 1
+) = {!Get_Related_Cov_Mgmt.LLC_BI__Next_Evaluation_Date__c},
+CASE(
+IF(
+MOD(MONTH({!Get_Related_Cov_Mgmt.LLC_BI__Next_Evaluation_Date__c}) + {!Get_Related_Cov_Mgmt.LLC_BI__Frequency_Months__c}, 12) = 0,
+12,
+MOD(MONTH({!Get_Related_Cov_Mgmt.LLC_BI__Next_Evaluation_Date__c}) + {!Get_Related_Cov_Mgmt.LLC_BI__Frequency_Months__c} , 12)
+),
+2, IF(
+MOD(
+YEAR({!Get_Related_Cov_Mgmt.LLC_BI__Next_Evaluation_Date__c}) +
+FLOOR((MONTH({!Get_Related_Cov_Mgmt.LLC_BI__Next_Evaluation_Date__c}) + {!Get_Related_Cov_Mgmt.LLC_BI__Frequency_Months__c}) / 12) +
+IF(
+MOD(MONTH({!Get_Related_Cov_Mgmt.LLC_BI__Next_Evaluation_Date__c}) + {!Get_Related_Cov_Mgmt.LLC_BI__Frequency_Months__c}, 12) = 0,
+-1,
+0
+),
+4
+) = 0,
+29,
+28
+),
+4,30,
+6,30,
+9,30,
+11,30,
+31
+),
+MIN(
+DAY({!Get_Related_Cov_Mgmt.LLC_BI__Next_Evaluation_Date__c}),
+CASE(
+IF(
+MOD(MONTH({!Get_Related_Cov_Mgmt.LLC_BI__Next_Evaluation_Date__c}) + {!Get_Related_Cov_Mgmt.LLC_BI__Frequency_Months__c}, 12) = 0,
+12,
+MOD(MONTH({!Get_Related_Cov_Mgmt.LLC_BI__Next_Evaluation_Date__c}) + {!Get_Related_Cov_Mgmt.LLC_BI__Frequency_Months__c} , 12)
+),
+2, IF(
+MOD(
+YEAR({!Get_Related_Cov_Mgmt.LLC_BI__Next_Evaluation_Date__c}) +
+FLOOR((MONTH({!Get_Related_Cov_Mgmt.LLC_BI__Next_Evaluation_Date__c}) + {!Get_Related_Cov_Mgmt.LLC_BI__Frequency_Months__c}) / 12) +
+IF(
+MOD(MONTH({!Get_Related_Cov_Mgmt.LLC_BI__Next_Evaluation_Date__c}) + {!Get_Related_Cov_Mgmt.LLC_BI__Frequency_Months__c}, 12) = 0,
+-1,
+0
+),
+4
+) = 0,
+29,
+28
+),
+4,30,
+6,30,
+9,30,
+11,30,
+31
+)
+)
+)
+)</expression>
+    </formulas>
+    <interviewLabel>nCino PDE - Record Trigger: Covenant Compliance After Save - V.1.0.0 {!$Flow.CurrentDateTime}</interviewLabel>
+    <isTemplate>true</isTemplate>
+    <label>nCino PDE - Record Trigger: Covenant Compliance After Save - V.1.0.0</label>
+    <processMetadataValues>
+        <name>BuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>CanvasMode</name>
+        <value>
+            <stringValue>AUTO_LAYOUT_CANVAS</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>OriginBuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processType>AutoLaunchedFlow</processType>
+    <recordLookups>
+        <name>Get_Related_Cov_Mgmt</name>
+        <label>Get Related Cov Mgmt</label>
+        <locationX>248</locationX>
+        <locationY>335</locationY>
+        <assignNullValuesIfNoRecordsFound>false</assignNullValuesIfNoRecordsFound>
+        <connector>
+            <targetReference>Determine_Path</targetReference>
+        </connector>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <field>Id</field>
+            <operator>EqualTo</operator>
+            <value>
+                <elementReference>$Record.LLC_BI__Covenant__c</elementReference>
+            </value>
+        </filters>
+        <getFirstRecordOnly>true</getFirstRecordOnly>
+        <object>LLC_BI__Covenant2__c</object>
+        <queriedFields>Id</queriedFields>
+        <queriedFields>LLC_BI__Next_Evaluation_Date__c</queriedFields>
+        <queriedFields>LLC_BI__Last_Evaluation_Date__c</queriedFields>
+        <queriedFields>LLC_BI__Last_Evaluation_Status__c</queriedFields>
+        <queriedFields>LLC_BI__Frequency_Months__c</queriedFields>
+        <queriedFields>LLC_BI__Frequency__c</queriedFields>
+        <queriedFields>LLC_BI__Due_Date__c</queriedFields>
+        <storeOutputAutomatically>true</storeOutputAutomatically>
+    </recordLookups>
+    <recordUpdates>
+        <description>A DML element to update the Covenant Mgmt record related to the triggering Covenant Compliance record.</description>
+        <name>Update_Related_Covenant_Mgmt_On_Create</name>
+        <label>Update Related Covenant Mgmt On Create</label>
+        <locationX>50</locationX>
+        <locationY>695</locationY>
+        <inputReference>Get_Related_Cov_Mgmt</inputReference>
+    </recordUpdates>
+    <recordUpdates>
+        <description>A DML element to update the Covenant Mgmt record related to the triggering Covenant Compliance record.</description>
+        <name>Update_Related_Covenant_Mgmt_On_Edit</name>
+        <label>Update Related Covenant Mgmt On Edit</label>
+        <locationX>446</locationX>
+        <locationY>1367</locationY>
+        <inputReference>Get_Related_Cov_Mgmt</inputReference>
+    </recordUpdates>
+    <start>
+        <locationX>122</locationX>
+        <locationY>0</locationY>
+        <connector>
+            <targetReference>Get_Related_Cov_Mgmt</targetReference>
+        </connector>
+        <filterFormula>{!$Permission.LLC_BI__Exclude_Flow} = False</filterFormula>
+        <object>LLC_BI__Covenant_Compliance2__c</object>
+        <recordTriggerType>CreateAndUpdate</recordTriggerType>
+        <triggerType>RecordAfterSave</triggerType>
+    </start>
+    <status>Draft</status>
+</Flow>

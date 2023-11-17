@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RecommendationStrategy xmlns="http://soap.sforce.com/2006/04/metadata">
+    <contextRecordType>Opportunity</contextRecordType>
+    <if>
+        <childNode>Deposit_ClosedDate</childNode>
+        <label>Deposit Overdue CloseDate</label>
+        <name>Deposit_Overdue_CloseDate</name>
+        <childNodeExpression>
+            <childName>Deposit_ClosedDate</childName>
+            <expression>$Record.RecordType.Name = &apos;Track Deposit Pipeline&apos; &amp;&amp; $Record.TM_Expected_Open_Date__c &lt; TODAY()</expression>
+        </childNodeExpression>
+        <onlyFirstMatch>false</onlyFirstMatch>
+    </if>
+    <if>
+        <childNode>Deposit_Amount</childNode>
+        <label>Deposit Empty Amount</label>
+        <name>Deposit_Empty_Amount</name>
+        <childNodeExpression>
+            <childName>Deposit_Amount</childName>
+            <expression>$Record.RecordType.Name = &apos;Track Deposit Pipeline&apos; &amp;&amp; $Record.TM_Anticipated_Deposit_Amount__c &lt;= 0</expression>
+        </childNodeExpression>
+        <onlyFirstMatch>false</onlyFirstMatch>
+    </if>
+    <if>
+        <childNode>Treasury_ClosedDate</childNode>
+        <label>Treasury Overdue CloseDate</label>
+        <name>Treasury_Overdue_CloseDate</name>
+        <childNodeExpression>
+            <childName>Treasury_ClosedDate</childName>
+            <expression>$Record.TM_Expected_Install_Date__c &lt; TODAY() &amp;&amp; $Record.RecordType.Name = &apos;Track Treasury Products Sold&apos;</expression>
+        </childNodeExpression>
+        <onlyFirstMatch>false</onlyFirstMatch>
+    </if>
+    <if>
+        <childNode>Treasury_Amount</childNode>
+        <label>Treasury Empty Amount</label>
+        <name>Treasury_Empty_Amount</name>
+        <childNodeExpression>
+            <childName>Treasury_Amount</childName>
+            <expression>$Record.TM_Projected_Annual_Treasury_Fee_Income__c &lt;= 0 &amp;&amp; $Record.RecordType.Name = &apos;Track Treasury Products Sold&apos;</expression>
+        </childNodeExpression>
+        <onlyFirstMatch>false</onlyFirstMatch>
+    </if>
+    <label>Opportunity Strategy</label>
+    <recommendationLoad>
+        <label>Deposit ClosedDate</label>
+        <name>Deposit_ClosedDate</name>
+        <condition>
+            <field>Name</field>
+            <operator>EQUALS</operator>
+            <value>
+                <type>TEXT</type>
+                <value>Opportunity Deposit ClosedDate NBA</value>
+            </value>
+        </condition>
+        <conditionLogic>and</conditionLogic>
+        <object>Recommendation</object>
+    </recommendationLoad>
+    <recommendationLoad>
+        <label>Deposit Amount</label>
+        <name>Deposit_Amount</name>
+        <condition>
+            <field>Name</field>
+            <operator>EQUALS</operator>
+            <value>
+                <type>TEXT</type>
+                <value>Opportunity Deposit Empty Amount NBA</value>
+            </value>
+        </condition>
+        <conditionLogic>and</conditionLogic>
+        <object>Recommendation</object>
+    </recommendationLoad>
+    <recommendationLoad>
+        <label>Treasury ClosedDate</label>
+        <name>Treasury_ClosedDate</name>
+        <condition>
+            <field>Name</field>
+            <operator>EQUALS</operator>
+            <value>
+                <type>TEXT</type>
+                <value>Opportunity Treasury ClosedDate NBA</value>
+            </value>
+        </condition>
+        <conditionLogic>and</conditionLogic>
+        <object>Recommendation</object>
+    </recommendationLoad>
+    <recommendationLoad>
+        <label>Treasury Amount</label>
+        <name>Treasury_Amount</name>
+        <condition>
+            <field>Name</field>
+            <operator>EQUALS</operator>
+            <value>
+                <type>TEXT</type>
+                <value>Opportunity Treasury Empty Amount NBA</value>
+            </value>
+        </condition>
+        <conditionLogic>and</conditionLogic>
+        <object>Recommendation</object>
+    </recommendationLoad>
+    <union>
+        <childNode>Deposit_Overdue_CloseDate</childNode>
+        <childNode>Deposit_Empty_Amount</childNode>
+        <childNode>Treasury_Overdue_CloseDate</childNode>
+        <childNode>Treasury_Empty_Amount</childNode>
+        <label>Output</label>
+        <name>Output_cd059410b4d04fa09d94996542246ef0</name>
+    </union>
+</RecommendationStrategy>

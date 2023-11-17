@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <help><!-- Enter a failure message for users that unsuccessfully fund their account. --></help>
+        <label><!-- Failure Message --></label>
+        <name>LLC_BI__Failure_Message__c</name>
+    </fields>
+    <fields>
+        <help><!-- Select the funding method type associated with a product. --></help>
+        <label><!-- Funding Method Type --></label>
+        <name>LLC_BI__Funding_Method_Type__c</name>
+        <relationshipLabel><!-- Product Funding Method Type Junctions --></relationshipLabel>
+    </fields>
+    <fields>
+        <help><!-- Enter a unique identifier. --></help>
+        <label><!-- Lookup Key --></label>
+        <name>LLC_BI__Lookup_Key__c</name>
+    </fields>
+    <fields>
+        <help><!-- Enter a maximum funding amount. --></help>
+        <label><!-- Maximum Funding Amount --></label>
+        <name>LLC_BI__Maximum_Funding_Amount__c</name>
+    </fields>
+    <fields>
+        <help><!-- Enter a minimum funding amount. --></help>
+        <label><!-- Minimum Funding Amount --></label>
+        <name>LLC_BI__Minimum_Funding_Amount__c</name>
+    </fields>
+    <fields>
+        <help><!-- Select a product associated with the funding method type --></help>
+        <label><!-- Product --></label>
+        <name>LLC_BI__Product__c</name>
+        <relationshipLabel><!-- Product Funding Method Type Junctions --></relationshipLabel>
+    </fields>
+    <fields>
+        <help><!-- Enter a success message for users that successfully fund their account. --></help>
+        <label><!-- Success Message --></label>
+        <name>LLC_BI__Success_Message__c</name>
+    </fields>
+</CustomObjectTranslation>

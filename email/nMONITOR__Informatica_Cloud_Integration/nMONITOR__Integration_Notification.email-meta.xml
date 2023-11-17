@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>Monitoring generated notification from Informatica Cloud Integrations Unmanaged Package</description>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <name>Integration: Notification</name>
+    <style>none</style>
+    <subject>Integration Monitoring Report for {!nMONITOR__Informatica_Cloud_Integration__c.nMONITOR__Today__c}</subject>
+    <textOnly>Hello,  The Informatica Cloud Task Flow, {!nMONITOR__Informatica_Cloud_Integration__c.nMONITOR__Task_Flow_to_Monitor__c}, for {!Organization.Name} has completed with the results below.   Be sure to check Exception Reports, as well as the Bulk Data Load Jobs section under &apos;Setup,&apos; for additional troubleshooting details. For more information on troubleshooting errors using the Bulk Data Load Job Logs, or for specific information about Exceptions, please reference the corresponding Knowledge Articles in the nCino Community.
+
+Object Errors Exceptions
+Relationship  {!nMONITOR__Informatica_Cloud_Integration__c.nMONITOR__Relationship_Errors__c}  {!nMONITOR__Informatica_Cloud_Integration__c.nMONITOR__Relationship_Exceptions__c}
+Loan  {!nMONITOR__Informatica_Cloud_Integration__c.nMONITOR__Loan_Errors__c}  {!nMONITOR__Informatica_Cloud_Integration__c.nMONITOR__Loan_Exceptions__c}
+Entity Involvement  {!nMONITOR__Informatica_Cloud_Integration__c.nMONITOR__Entity_Involvement_Errors__c}  {!nMONITOR__Informatica_Cloud_Integration__c.nMONITOR__Entity_Involvement_Exceptions__c}
+Connections  {!nMONITOR__Informatica_Cloud_Integration__c.nMONITOR__Connection_Errors__c}  {!nMONITOR__Informatica_Cloud_Integration__c.nMONITOR__Connection_Exceptions__c}
+Participations  {!nMONITOR__Informatica_Cloud_Integration__c.nMONITOR__Participation_Errors__c}  {!nMONITOR__Informatica_Cloud_Integration__c.nMONITOR__Participation_Exceptions__c}
+Covenants  {!nMONITOR__Informatica_Cloud_Integration__c.nMONITOR__Covenant_Errors__c}  {!nMONITOR__Informatica_Cloud_Integration__c.nMONITOR__Covenant_Exceptions__c}
+Collateral  {!nMONITOR__Informatica_Cloud_Integration__c.nMONITOR__Collateral_Errors__c}  {!nMONITOR__Informatica_Cloud_Integration__c.nMONITOR__Collateral_Exceptions__c}
+Contact  {!nMONITOR__Informatica_Cloud_Integration__c.nMONITOR__Contact_Errors__c}  {!nMONITOR__Informatica_Cloud_Integration__c.nMONITOR__Contact_Exceptions__c}
+Deposit  {!nMONITOR__Informatica_Cloud_Integration__c.nMONITOR__Deposit_Errors__c}  {!nMONITOR__Informatica_Cloud_Integration__c.nMONITOR__Deposit_Exceptions__c}
+
+Thank you,   nCino Data Services</textOnly>
+    <type>custom</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

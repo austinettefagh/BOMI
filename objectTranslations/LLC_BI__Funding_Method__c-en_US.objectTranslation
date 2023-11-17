@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fieldSets>
+        <label><!-- Jack Henry jXchange Automated Booking --></label>
+        <name>JHJX__ABJX</name>
+    </fieldSets>
+    <fields>
+        <label><!-- Account Type --></label>
+        <name>LLC_BI__Account_Type__c</name>
+        <picklistValues>
+            <masterLabel>Business Checking</masterLabel>
+            <translation><!-- Business Checking --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Business Savings</masterLabel>
+            <translation><!-- Business Savings --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Checking</masterLabel>
+            <translation><!-- Checking --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MMA Checking</masterLabel>
+            <translation><!-- MMA Checking --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MMA Savings</masterLabel>
+            <translation><!-- MMA Savings --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Savings</masterLabel>
+            <translation><!-- Savings --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Funding Completion ID --></label>
+        <name>LLC_BI__Funding_Completion_ID__c</name>
+    </fields>
+    <fields>
+        <label><!-- Funding Failure Detail --></label>
+        <name>LLC_BI__Funding_Failure_Detail__c</name>
+    </fields>
+    <fields>
+        <label><!-- Funding Method Type --></label>
+        <name>LLC_BI__Funding_Method_Type__c</name>
+        <relationshipLabel><!-- Funding Methods --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Funding Session ID --></label>
+        <name>LLC_BI__Funding_Session_ID__c</name>
+    </fields>
+    <fields>
+        <label><!-- Funding Status --></label>
+        <name>LLC_BI__Funding_Status__c</name>
+        <picklistValues>
+            <masterLabel>Awaiting Trial Deposits</masterLabel>
+            <translation><!-- Awaiting Trial Deposits --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Funding Failure</masterLabel>
+            <translation><!-- Funding Failure --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Funding Success</masterLabel>
+            <translation><!-- Funding Success --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>In-Progress</masterLabel>
+            <translation><!-- In-Progress --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Trial Deposit Failure</masterLabel>
+            <translation><!-- Trial Deposit Failure --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Trial Deposit Reject</masterLabel>
+            <translation><!-- Trial Deposit Reject --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Trial Deposit Success</masterLabel>
+            <translation><!-- Trial Deposit Success --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Funding Target ID --></label>
+        <name>LLC_BI__Funding_Target_ID__c</name>
+    </fields>
+    <fields>
+        <label><!-- Funding User ID --></label>
+        <name>LLC_BI__Funding_User_ID__c</name>
+    </fields>
+    <fields>
+        <help><!-- Enter a unique external identifier. --></help>
+        <label><!-- lookupKey --></label>
+        <name>LLC_BI__lookupKey__c</name>
+    </fields>
+</CustomObjectTranslation>

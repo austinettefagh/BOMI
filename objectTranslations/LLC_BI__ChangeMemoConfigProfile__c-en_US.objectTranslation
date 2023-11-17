@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <label><!-- DocMan ID --></label>
+        <name>LLC_BI__DocManId__c</name>
+    </fields>
+    <fields>
+        <label><!-- DocTab ID --></label>
+        <name>LLC_BI__DocTabId__c</name>
+    </fields>
+    <fields>
+        <label><!-- DocType ID --></label>
+        <name>LLC_BI__DocTypeId__c</name>
+    </fields>
+    <fields>
+        <help><!-- Yes | No --></help>
+        <label><!-- Enabled --></label>
+        <name>LLC_BI__Enabled__c</name>
+    </fields>
+    <fields>
+        <help><!-- The name value that the change memo&apos;s names will be forced to. IE: &quot;Change Memo&quot; --></help>
+        <label><!-- Memo Name --></label>
+        <name>LLC_BI__Memo_Name__c</name>
+    </fields>
+</CustomObjectTranslation>

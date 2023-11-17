@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Setup Information</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Setup Informations</value>
+    </caseValues>
+    <fieldSets>
+        <label><!-- Management Solutions --></label>
+        <name>FS_Management_Solutions</name>
+    </fieldSets>
+    <fields>
+        <label><!-- Account Name --></label>
+        <name>CF_Account_Name__c</name>
+        <relationshipLabel><!-- Setup Informations --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Active --></label>
+        <name>CF_Active__c</name>
+    </fields>
+    <fields>
+        <label><!-- Branch --></label>
+        <name>CF_Branch__c</name>
+    </fields>
+    <fields>
+        <label><!-- CIF# --></label>
+        <name>CF_CIF__c</name>
+    </fields>
+    <fields>
+        <help><!-- Required for BillPay products --></help>
+        <label><!-- Is an Existing Retail Billpay User? --></label>
+        <name>CF_Is_an_Existing_Retail_Billpay_User__c</name>
+        <picklistValues>
+            <masterLabel>N/A</masterLabel>
+            <translation><!-- N/A --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>No</masterLabel>
+            <translation><!-- No --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes</masterLabel>
+            <translation><!-- Yes --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- Required for SFTP --></help>
+        <label><!-- SFTP Uses --></label>
+        <name>CF_SFTP_Uses__c</name>
+        <picklistValues>
+            <masterLabel>ACH Origination</masterLabel>
+            <translation><!-- ACH Origination --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ACH Returns</masterLabel>
+            <translation><!-- ACH Returns --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>BAI2</masterLabel>
+            <translation><!-- BAI2 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>I-Collect</masterLabel>
+            <translation><!-- I-Collect --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Positive Pay</masterLabel>
+            <translation><!-- Positive Pay --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Remittance</masterLabel>
+            <translation><!-- Remittance --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Treasury Service --></label>
+        <name>CF_Treasury_Service__c</name>
+        <relationshipLabel><!-- Setup Informations --></relationshipLabel>
+    </fields>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

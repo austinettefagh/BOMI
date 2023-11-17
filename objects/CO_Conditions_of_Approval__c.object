@@ -1,0 +1,528 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <allowInChatterGroups>true</allowInChatterGroups>
+    <compactLayoutAssignment>SYSTEM</compactLayoutAssignment>
+    <deploymentStatus>Deployed</deploymentStatus>
+    <description>This object holds the Condition of Approval details of the related Loan records.</description>
+    <enableActivities>true</enableActivities>
+    <enableBulkApi>true</enableBulkApi>
+    <enableFeeds>false</enableFeeds>
+    <enableHistory>true</enableHistory>
+    <enableLicensing>false</enableLicensing>
+    <enableReports>true</enableReports>
+    <enableSearch>true</enableSearch>
+    <enableSharing>true</enableSharing>
+    <enableStreamingApi>true</enableStreamingApi>
+    <externalSharingModel>ControlledByParent</externalSharingModel>
+    <fieldSets>
+        <fullName>FS_CM_Conditions_Of_Approval</fullName>
+        <description>CM for conditions of Approval</description>
+        <displayedFields>
+            <field>CF_Condition_Type__c</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </displayedFields>
+        <displayedFields>
+            <field>CF_Standard_Condition__c</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </displayedFields>
+        <displayedFields>
+            <field>CF_Free_Form_Condition__c</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </displayedFields>
+        <displayedFields>
+            <field>CF_Requested_by__c</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </displayedFields>
+        <displayedFields>
+            <field>CF_Required_By__c</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </displayedFields>
+        <label>CM Conditions Of Approval</label>
+    </fieldSets>
+    <fieldSets>
+        <fullName>FS_Condition_of_approval</fullName>
+        <description>Condition of approval</description>
+        <displayedFields>
+            <field>Name</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </displayedFields>
+        <displayedFields>
+            <field>CF_Condition_Type__c</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>true</isRequired>
+        </displayedFields>
+        <displayedFields>
+            <field>CF_Standard_Condition__c</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </displayedFields>
+        <displayedFields>
+            <field>CF_Free_Form_Condition__c</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </displayedFields>
+        <displayedFields>
+            <field>CF_Status__c</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </displayedFields>
+        <displayedFields>
+            <field>CF_Required_By__c</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>true</isRequired>
+        </displayedFields>
+        <displayedFields>
+            <field>CF_Due_Date__c</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </displayedFields>
+        <displayedFields>
+            <field>CF_Requested_by__c</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </displayedFields>
+        <label>Condition of approval</label>
+    </fieldSets>
+    <fields>
+        <fullName>CF_Condition_Type__c</fullName>
+        <externalId>false</externalId>
+        <label>Condition Type</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Standard</fullName>
+                    <default>false</default>
+                    <label>Standard</label>
+                </value>
+                <value>
+                    <fullName>Free Form</fullName>
+                    <default>false</default>
+                    <label>Free Form</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>CF_Conditions_of_Approval_Narrative__c</fullName>
+        <description>This field is used on Conditions of Approval Narrative section on Credit Memo</description>
+        <encryptionScheme>None</encryptionScheme>
+        <externalId>false</externalId>
+        <label>Conditions of Approval Narrative</label>
+        <length>32768</length>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Html</type>
+        <visibleLines>25</visibleLines>
+    </fields>
+    <fields>
+        <fullName>CF_Customer__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <externalId>false</externalId>
+        <label>Customer</label>
+        <referenceTo>Account</referenceTo>
+        <relationshipLabel>Conditions of Approvals</relationshipLabel>
+        <relationshipName>Conditions_of_Approvals</relationshipName>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>CF_Due_Date__c</fullName>
+        <encryptionScheme>None</encryptionScheme>
+        <externalId>false</externalId>
+        <label>Due Date</label>
+        <required>false</required>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>CF_Due_Days__c</fullName>
+        <description>It will use to know the number of days passed by due date.</description>
+        <externalId>false</externalId>
+        <formula>IF(TODAY()- CF_Due_Date__c &lt;0 , IF(CF_Due_Date__c - TODAY() &lt;= 30,&apos;Next 30 days&apos;,IF(CF_Due_Date__c - TODAY() &lt;= 60,&apos;Next 60 days&apos;,IF(CF_Due_Date__c - TODAY() &lt;= 90,&apos;Next 90 days&apos;,IF(CF_Due_Date__c - TODAY() &gt; 90,&apos;Next 90+ days&apos;,&apos;&apos;)))),IF(TODAY()- CF_Due_Date__c &lt;= 30,&apos;Past due 30 days&apos;,IF(TODAY()- CF_Due_Date__c  &gt; 30, &apos;Past due more than 30 days&apos;,&apos;&apos;)))</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Due Days</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>CF_Free_Form_Condition__c</fullName>
+        <encryptionScheme>None</encryptionScheme>
+        <externalId>false</externalId>
+        <label>Free Form Condition</label>
+        <length>255</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>CF_Loan__c</fullName>
+        <externalId>false</externalId>
+        <label>Loan</label>
+        <referenceTo>LLC_BI__Loan__c</referenceTo>
+        <relationshipLabel>Conditions of Approvals</relationshipLabel>
+        <relationshipName>Condition_of_Approvals</relationshipName>
+        <relationshipOrder>0</relationshipOrder>
+        <reparentableMasterDetail>false</reparentableMasterDetail>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>MasterDetail</type>
+        <writeRequiresMasterRead>false</writeRequiresMasterRead>
+    </fields>
+    <fields>
+        <fullName>CF_Requested_by__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <externalId>false</externalId>
+        <label>Requested by</label>
+        <referenceTo>User</referenceTo>
+        <relationshipName>Condition_of_Approvals</relationshipName>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>CF_Required_By__c</fullName>
+        <externalId>false</externalId>
+        <label>Required By</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Pre Closing</fullName>
+                    <default>false</default>
+                    <label>Pre Closing</label>
+                </value>
+                <value>
+                    <fullName>At Closing</fullName>
+                    <default>false</default>
+                    <label>At Closing</label>
+                </value>
+                <value>
+                    <fullName>Post Closing</fullName>
+                    <default>false</default>
+                    <label>Post Closing</label>
+                </value>
+                <value>
+                    <fullName>Pre Funding</fullName>
+                    <default>false</default>
+                    <label>Pre Funding</label>
+                </value>
+                <value>
+                    <fullName>At Funding</fullName>
+                    <default>false</default>
+                    <label>At Funding</label>
+                </value>
+                <value>
+                    <fullName>Pre-Doc Prep</fullName>
+                    <default>false</default>
+                    <isActive>false</isActive>
+                    <label>Pre-Doc Prep</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>CF_Standard_Condition__c</fullName>
+        <externalId>false</externalId>
+        <label>Standard Condition</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Certified Rent Roll/Lease Submitted</fullName>
+                    <default>false</default>
+                    <label>Certified Rent Roll/Lease Submitted</label>
+                </value>
+                <value>
+                    <fullName>Collection(s) Paid and Explanation Provided</fullName>
+                    <default>false</default>
+                    <label>Collection(s) Paid and Explanation Provided</label>
+                </value>
+                <value>
+                    <fullName>Judgment or Lien Paid and Explanation Provided</fullName>
+                    <default>false</default>
+                    <label>Judgment or Lien Paid and Explanation Provided</label>
+                </value>
+                <value>
+                    <fullName>Proof of Sufficient Cash Down</fullName>
+                    <default>false</default>
+                    <label>Proof of Sufficient Cash Down</label>
+                </value>
+                <value>
+                    <fullName>Satisfactory Appraisal and Review</fullName>
+                    <default>false</default>
+                    <label>Satisfactory Appraisal and Review</label>
+                </value>
+                <value>
+                    <fullName>Satisfactory Environmental Report</fullName>
+                    <default>false</default>
+                    <label>Satisfactory Environmental Report</label>
+                </value>
+                <value>
+                    <fullName>Find Financial Institution to Participate in the Transaction</fullName>
+                    <default>false</default>
+                    <label>Find Financial Institution to Participate in the Transaction</label>
+                </value>
+                <value>
+                    <fullName>Receipt of Additional Financial Information - Reviewed and Approved by Credit</fullName>
+                    <default>false</default>
+                    <label>Receipt of Additional Financial Information - Reviewed and Approved by Credit</label>
+                </value>
+                <value>
+                    <fullName>Add Additional Guarantor</fullName>
+                    <default>false</default>
+                    <label>Add Additional Guarantor</label>
+                </value>
+                <value>
+                    <fullName>Add Additional Collateral</fullName>
+                    <default>false</default>
+                    <label>Add Additional Collateral</label>
+                </value>
+                <value>
+                    <fullName>Subordination or Priority Lien Holder</fullName>
+                    <default>false</default>
+                    <label>Subordination or Priority Lien Holder</label>
+                </value>
+                <value>
+                    <fullName>Inspection</fullName>
+                    <default>false</default>
+                    <label>Inspection</label>
+                </value>
+                <value>
+                    <fullName>Deposit or Treasury Management Products</fullName>
+                    <default>false</default>
+                    <label>Deposit or Treasury Management Products</label>
+                </value>
+                <value>
+                    <fullName>Completion of Asset Sale</fullName>
+                    <default>false</default>
+                    <label>Completion of Asset Sale</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>CF_Status__c</fullName>
+        <externalId>false</externalId>
+        <label>Status</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>New</fullName>
+                    <default>true</default>
+                    <label>New</label>
+                </value>
+                <value>
+                    <fullName>Waived</fullName>
+                    <default>false</default>
+                    <label>Waived</label>
+                </value>
+                <value>
+                    <fullName>Satisfied</fullName>
+                    <default>false</default>
+                    <label>Satisfied</label>
+                </value>
+                <value>
+                    <fullName>Under Review</fullName>
+                    <default>false</default>
+                    <label>Under Review</label>
+                </value>
+                <value>
+                    <fullName>Not Satisfied</fullName>
+                    <default>false</default>
+                    <label>Not Satisfied</label>
+                </value>
+                <value>
+                    <fullName>No Longer Required</fullName>
+                    <default>false</default>
+                    <label>No Longer Required</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <label>Conditions of Approval</label>
+    <nameField>
+        <displayFormat>COA-{0000}</displayFormat>
+        <label>C.O.A</label>
+        <trackHistory>false</trackHistory>
+        <type>AutoNumber</type>
+    </nameField>
+    <pluralLabel>Conditions of Approvals</pluralLabel>
+    <searchLayouts/>
+    <sharingModel>ControlledByParent</sharingModel>
+    <visibility>Public</visibility>
+</CustomObject>

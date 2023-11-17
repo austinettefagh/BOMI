@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customSettingsType>List</customSettingsType>
+    <description>Provides a list of settings that correspond to a provider package that can be used for SBEOC integrations.</description>
+    <enableFeeds>false</enableFeeds>
+    <fields>
+        <fullName>nSBA__Display_Name__c</fullName>
+        <deprecated>false</deprecated>
+        <description>The administrator populates this required text field with the display name that corresponds with the intended provider plug-in.</description>
+        <encryptionScheme>None</encryptionScheme>
+        <externalId>false</externalId>
+        <inlineHelpText>Enter the display name that corresponds with your provider plug-in.</inlineHelpText>
+        <label>Provider Name</label>
+        <length>255</length>
+        <required>true</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>nSBA__Interaction_Type__c</fullName>
+        <deprecated>false</deprecated>
+        <description>The administrator populates this text field to indicate the desired interaction type for the record.</description>
+        <encryptionScheme>None</encryptionScheme>
+        <externalId>false</externalId>
+        <inlineHelpText>Enter the name of the desired interaction type in this field. This value must correspond with the picklist value selected for the transaction on the Interaction object.</inlineHelpText>
+        <label>Interaction Type</label>
+        <length>40</length>
+        <required>true</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>nSBA__Placement_Order__c</fullName>
+        <deprecated>false</deprecated>
+        <description>The administrator populates this optional numeric field to indicate the order by which to sort the transaction. By default, this field is blank.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>To customize field sorting on this object, enter a number.</inlineHelpText>
+        <label>Placement Order</label>
+        <precision>4</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>nSBA__Processing_Methods__c</fullName>
+        <deprecated>false</deprecated>
+        <description>The administrator populates this required text field with a comma separated list of the processing methods supported. For example: 7(a),504</description>
+        <encryptionScheme>None</encryptionScheme>
+        <externalId>false</externalId>
+        <inlineHelpText>Specify the supported processing methods.</inlineHelpText>
+        <label>Processing Methods</label>
+        <length>255</length>
+        <required>true</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>nSBA__Vendor_Provider__c</fullName>
+        <deprecated>false</deprecated>
+        <description>The administrator populates this required text field with the fully-qualified class name that corresponds with the intended provider plug-in.</description>
+        <encryptionScheme>None</encryptionScheme>
+        <externalId>false</externalId>
+        <inlineHelpText>Enter the fully-qualified class name that corresponds with your provider plug-in.</inlineHelpText>
+        <label>Vendor Provider</label>
+        <length>255</length>
+        <required>true</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <label>SBEOC Provider Settings</label>
+    <visibility>Public</visibility>
+</CustomObject>

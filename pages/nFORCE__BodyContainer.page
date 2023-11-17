@@ -1,0 +1,10 @@
+<apex:page controller="nFORCE.RouteController" standardStylesheets="false" applyHtmlTag="false" showHeader="false" sideBar="false"
+ title="{!route.Name}">
+	<apex:stylesheet value="{!URLFOR($Resource.nFORCE__accessibility, '/css/SLDSA11yOverrides.css')}" />
+
+	<apex:composition template="nFORCE__BodyContainerTemplate">
+		<apex:define name="body">
+			<apex:include id="route-body" pageName="{!route.Body__c}" />
+		</apex:define>
+	</apex:composition>
+</apex:page>

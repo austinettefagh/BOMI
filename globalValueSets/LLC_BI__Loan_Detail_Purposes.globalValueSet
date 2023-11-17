@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GlobalValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customValue>
+        <fullName>motor_vehicle</fullName>
+        <default>false</default>
+        <label>Purchase, Refinance, or Rehabilitation/Repair of Motor Vehicle(s)</label>
+    </customValue>
+    <customValue>
+        <fullName>business_startup</fullName>
+        <default>false</default>
+        <label>Business Start-Up</label>
+    </customValue>
+    <customValue>
+        <fullName>business_expansion</fullName>
+        <default>false</default>
+        <label>Business Expansion</label>
+    </customValue>
+    <customValue>
+        <fullName>business_acquisition</fullName>
+        <default>false</default>
+        <label>Business Acquisition</label>
+    </customValue>
+    <customValue>
+        <fullName>construction_owner_occupied</fullName>
+        <default>false</default>
+        <label>Construction - Owner Occupied Real Estate</label>
+    </customValue>
+    <customValue>
+        <fullName>construction_non_owner_occupied</fullName>
+        <default>false</default>
+        <label>Construction - Non-Owner Occupied Real Estate</label>
+    </customValue>
+    <customValue>
+        <fullName>consumer_credit_line_unsecured</fullName>
+        <default>false</default>
+        <label>Consumer Credit Line (Unsecured)</label>
+    </customValue>
+    <customValue>
+        <fullName>real_estate_purchase_owner_occupied</fullName>
+        <default>false</default>
+        <label>Real Estate Purchase - Owner Occupied</label>
+    </customValue>
+    <customValue>
+        <fullName>real_estate_purchase_non_owner_occupied</fullName>
+        <default>false</default>
+        <label>Real Estate Purchase - Non-Owner Occupied</label>
+    </customValue>
+    <customValue>
+        <fullName>business_credit_line</fullName>
+        <default>false</default>
+        <label>Business Credit Line</label>
+    </customValue>
+    <customValue>
+        <fullName>business_credit_line_increase</fullName>
+        <default>false</default>
+        <label>Business Credit Line Increase</label>
+    </customValue>
+    <customValue>
+        <fullName>home_equity_credit_line</fullName>
+        <default>false</default>
+        <label>Home Equity Credit Line</label>
+    </customValue>
+    <customValue>
+        <fullName>home_equity_loan</fullName>
+        <default>false</default>
+        <label>Home Equity Loan</label>
+    </customValue>
+    <customValue>
+        <fullName>property_improvement_owner_occupied</fullName>
+        <default>false</default>
+        <label>Property Improvement - Owner Occupied Real Estate</label>
+    </customValue>
+    <customValue>
+        <fullName>property_improvement_non_owner_occupied</fullName>
+        <default>false</default>
+        <label>Property Improvement - Non-Owner Occupied Real Estate</label>
+    </customValue>
+    <customValue>
+        <fullName>other</fullName>
+        <default>false</default>
+        <label>Other Purpose</label>
+    </customValue>
+    <customValue>
+        <fullName>pay_taxes_liens</fullName>
+        <default>false</default>
+        <label>Pay Taxes or Liens</label>
+    </customValue>
+    <customValue>
+        <fullName>equipment</fullName>
+        <default>false</default>
+        <label>Equipment Purchase, Refinance, or Repair</label>
+    </customValue>
+    <customValue>
+        <fullName>refinance_other_lender</fullName>
+        <default>false</default>
+        <label>Refinance Other Lender</label>
+    </customValue>
+    <customValue>
+        <fullName>refinance_our_loan</fullName>
+        <default>false</default>
+        <label>Refinance Our Loan</label>
+    </customValue>
+    <customValue>
+        <fullName>unknown</fullName>
+        <default>false</default>
+        <label>Unknown</label>
+    </customValue>
+    <customValue>
+        <fullName>consumer_loan_unsecured</fullName>
+        <default>false</default>
+        <label>Unsecured Consumer Loan</label>
+    </customValue>
+    <customValue>
+        <fullName>overdraft</fullName>
+        <default>false</default>
+        <label>Overdraft</label>
+    </customValue>
+    <description>Purpose values used for SBA loans.</description>
+    <masterLabel>Loan Purposes</masterLabel>
+    <sorted>false</sorted>
+</GlobalValueSet>

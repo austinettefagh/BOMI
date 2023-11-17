@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <help><!-- Enter the Account record to which this Account Demographic refers. --></help>
+        <label><!-- Account --></label>
+        <name>LLC_BI__Account__c</name>
+        <relationshipLabel><!-- Account Demographics --></relationshipLabel>
+    </fields>
+    <fields>
+        <help><!-- Select value(s) to indicate the business ownership status. --></help>
+        <label><!-- Business Ownership Status --></label>
+        <name>LLC_BI__Business_Ownership_Status__c</name>
+        <picklistValues>
+            <masterLabel>LGBTQI+-owned business</masterLabel>
+            <translation><!-- LGBTQI+-owned business --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Minority-owned business</masterLabel>
+            <translation><!-- Minority-owned business --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Other</masterLabel>
+            <translation><!-- Other --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Prefer not to answer</masterLabel>
+            <translation><!-- Prefer not to answer --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Women-owned business</masterLabel>
+            <translation><!-- Women-owned business --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- Use this field to specify the date when the business started. --></help>
+        <label><!-- Business Start Date --></label>
+        <name>LLC_BI__Business_Start_Date__c</name>
+    </fields>
+    <fields>
+        <help><!-- Use this field to specify the time in business if Business Start Date is missing. --></help>
+        <label><!-- Estimated Time in Business --></label>
+        <name>LLC_BI__Estimated_Time_In_Business__c</name>
+        <picklistValues>
+            <masterLabel>Applicant has been in business less than two years</masterLabel>
+            <translation><!-- Applicant has been in business less than two years --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Applicant has been in business two or more years</masterLabel>
+            <translation><!-- Applicant has been in business two or more years --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Not provided by applicant and otherwise undetermined</masterLabel>
+            <translation><!-- Not provided by applicant and otherwise undetermined --></translation>
+        </picklistValues>
+    </fields>
+</CustomObjectTranslation>

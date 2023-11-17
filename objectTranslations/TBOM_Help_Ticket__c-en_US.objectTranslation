@@ -1,0 +1,313 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>TBOM Help Ticket</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>TBOM Help Tickets</value>
+    </caseValues>
+    <fields>
+        <label><!-- Administrator Notes --></label>
+        <name>Administrator_Notes__c</name>
+    </fields>
+    <fields>
+        <help><!-- Briefly describe your request. --></help>
+        <label><!-- Brief Description of Request --></label>
+        <name>Brief_Description_of_Request__c</name>
+    </fields>
+    <fields>
+        <label><!-- DTO Team Member --></label>
+        <name>DTO_Team_Member__c</name>
+        <picklistValues>
+            <masterLabel>Chris</masterLabel>
+            <translation><!-- Chris --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Denise</masterLabel>
+            <translation><!-- Denise --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Rebecca</masterLabel>
+            <translation><!-- Rebecca --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Ryan</masterLabel>
+            <translation><!-- Ryan --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Date change will be deployed --></label>
+        <name>Date_change_will_be_deployed__c</name>
+    </fields>
+    <fields>
+        <label><!-- Defect Number --></label>
+        <name>Defect_Number__c</name>
+    </fields>
+    <fields>
+        <label><!-- Department --></label>
+        <name>Department__c</name>
+    </fields>
+    <fields>
+        <help><!-- Please provide any details that might be of assistance in diagnosing the problem.   Screen shots, details, etc. --></help>
+        <label><!-- Description of Request --></label>
+        <name>Description_of_Request__c</name>
+    </fields>
+    <fields>
+        <label><!-- Help Ticket Name --></label>
+        <name>Help_Ticket_Name__c</name>
+    </fields>
+    <fields>
+        <help><!-- What is the primary object related to this request? --></help>
+        <label><!-- Primary Object --></label>
+        <name>Primary_Object__c</name>
+        <picklistValues>
+            <masterLabel>Account</masterLabel>
+            <translation><!-- Account --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Collateral</masterLabel>
+            <translation><!-- Collateral --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Contact</masterLabel>
+            <translation><!-- Contact --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Dashboard</masterLabel>
+            <translation><!-- Dashboard --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>DocMan Placeholders/Smart Checklist</masterLabel>
+            <translation><!-- DocMan Placeholders/Smart Checklist --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Lead/Referral</masterLabel>
+            <translation><!-- Lead/Referral --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Loan</masterLabel>
+            <translation><!-- Loan --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Opportunity</masterLabel>
+            <translation><!-- Opportunity --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Other</masterLabel>
+            <translation><!-- Other --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Product Package</masterLabel>
+            <translation><!-- Product Package --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Report</masterLabel>
+            <translation><!-- Report --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- What is the priority of this request?  
+TBOM Help Tickets Priority Requirements:
+
+Critical - Direct Customer Facing Issue. User is unable to move forward. (Resolution ETA - Same Day)
+High - Issue is customer related, however user is able to move forward and it does not need immediate resolution. (Resolution ETA within 24 hours)
+Medium  - Workaround is available, resolution still needed but is not urgent. (Resolution ETA 48-72 hours)
+Low - Issue has low impact and can be addressed when time permits. --></help>
+        <label><!-- Priority --></label>
+        <name>Priority__c</name>
+        <picklistValues>
+            <masterLabel>Critical</masterLabel>
+            <translation><!-- Critical --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>High</masterLabel>
+            <translation><!-- High --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Low</masterLabel>
+            <translation><!-- Low --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Medium</masterLabel>
+            <translation><!-- Medium --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Reassigned to PWC or nCino --></label>
+        <name>Reassigned_to_PWC_or_nCino__c</name>
+        <picklistValues>
+            <masterLabel>PWC</masterLabel>
+            <translation><!-- PWC --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>nCino</masterLabel>
+            <translation><!-- nCino --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Reassigned to TBOM Resource --></label>
+        <name>Reassigned_to_TBOM_Resource__c</name>
+        <picklistValues>
+            <masterLabel>Data Team</masterLabel>
+            <translation><!-- Data Team --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>IT</masterLabel>
+            <translation><!-- IT --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Learning and Development</masterLabel>
+            <translation><!-- Learning and Development --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Other</masterLabel>
+            <translation><!-- Other --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Subject Matter Expert (SME)</masterLabel>
+            <translation><!-- Subject Matter Expert (SME) --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- Please copy and past the URL of the Account, Contact, Lead, Opportunity, Loan, Product Package or any other record in question. --></help>
+        <label><!-- Related Record URL --></label>
+        <name>Related_Record_URL__c</name>
+    </fields>
+    <fields>
+        <label><!-- Requested By: --></label>
+        <name>Requested_By__c</name>
+    </fields>
+    <fields>
+        <label><!-- Requested Date --></label>
+        <name>Requested_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Resolution Type --></label>
+        <name>Resolution_Type__c</name>
+        <picklistValues>
+            <masterLabel>Closed - No Action Taken</masterLabel>
+            <translation><!-- Closed - No Action Taken --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Configuration</masterLabel>
+            <translation><!-- Configuration --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Deployment</masterLabel>
+            <translation><!-- Deployment --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Development</masterLabel>
+            <translation><!-- Development --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Other</masterLabel>
+            <translation><!-- Other --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Training</masterLabel>
+            <translation><!-- Training --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- Current status of this request --></help>
+        <label><!-- Status --></label>
+        <name>Status__c</name>
+        <picklistValues>
+            <masterLabel>Duplicate Request</masterLabel>
+            <translation><!-- Duplicate Request --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Enhancement Request Rejected</masterLabel>
+            <translation><!-- Enhancement Request Rejected --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>In Development</masterLabel>
+            <translation><!-- In Development --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>In Progress</masterLabel>
+            <translation><!-- In Progress --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>New</masterLabel>
+            <translation><!-- New --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>On Hold</masterLabel>
+            <translation><!-- On Hold --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Pending User Feedback</masterLabel>
+            <translation><!-- Pending User Feedback --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Re-Assigned to PWC/nCino</masterLabel>
+            <translation><!-- Re-Assigned to PWC/nCino --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Re-Assigned to TBOM Resource</masterLabel>
+            <translation><!-- Re-Assigned to TBOM Resource --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Ready for Deployment</masterLabel>
+            <translation><!-- Ready for Deployment --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Request Cancelled by User</masterLabel>
+            <translation><!-- Request Cancelled by User --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Resolved/Closed</masterLabel>
+            <translation><!-- Resolved/Closed --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>User Testing</masterLabel>
+            <translation><!-- User Testing --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- What type of request is this? --></help>
+        <label><!-- Type of Request --></label>
+        <name>Type_of_Request__c</name>
+        <picklistValues>
+            <masterLabel>Custom Report Request</masterLabel>
+            <translation><!-- Custom Report Request --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Customer Does Not Have Email Address</masterLabel>
+            <translation><!-- Customer Does Not Have Email Address --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Enhancement Request</masterLabel>
+            <translation><!-- Enhancement Request --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>General Questions</masterLabel>
+            <translation><!-- General Questions --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>New User Set Up Request</masterLabel>
+            <translation><!-- New User Set Up Request --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>System Error</masterLabel>
+            <translation><!-- System Error --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>UAT Testing Issue</masterLabel>
+            <translation><!-- UAT Testing Issue --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>User Detail Change Request</masterLabel>
+            <translation><!-- User Detail Change Request --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- User Profile --></label>
+        <name>User_Profile__c</name>
+    </fields>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

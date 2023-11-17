@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PathAssistant xmlns="http://soap.sforce.com/2006/04/metadata">
+    <active>true</active>
+    <entityName>Case</entityName>
+    <fieldName>Status</fieldName>
+    <masterLabel>BaaS Approval</masterLabel>
+    <pathAssistantSteps>
+        <fieldNames>Status</fieldNames>
+        <info>&lt;p&gt;&lt;span style=&quot;font-size: 13px;&quot;&gt;The case has been &lt;/span&gt;&lt;b style=&quot;font-size: 13px;&quot;&gt;Approved &lt;/b&gt;&lt;span style=&quot;font-size: 13px;&quot;&gt;and is awaiting final follow up. At this point the case can be &lt;/span&gt;&lt;b style=&quot;font-size: 13px;&quot;&gt;Closed &lt;/b&gt;&lt;span style=&quot;font-size: 13px;&quot;&gt;by changing the Status field to &lt;/span&gt;&lt;b style=&quot;font-size: 13px;&quot;&gt;Closed&lt;/b&gt;&lt;span style=&quot;font-size: 13px;&quot;&gt; once all final tasks have been completed.&lt;/span&gt;&lt;/p&gt;</info>
+        <picklistValueName>Approved</picklistValueName>
+    </pathAssistantSteps>
+    <pathAssistantSteps>
+        <info>&lt;p&gt;&lt;span style=&quot;font-size: 13px;&quot;&gt;All materials have been returned as approved to the Relationship and no further action is needed.&lt;/span&gt;&lt;/p&gt;</info>
+        <picklistValueName>Closed</picklistValueName>
+    </pathAssistantSteps>
+    <pathAssistantSteps>
+        <fieldNames>Status</fieldNames>
+        <fieldNames>Returned_To_Relationship__c</fieldNames>
+        <info>&lt;p&gt;&lt;b style=&quot;font-size: 13px;&quot;&gt;In Process&lt;/b&gt;&lt;span style=&quot;font-size: 13px;&quot;&gt; indicates that the case is being prepared to be submitted for approval. If materials must go back to the third party relationship with feedback and/or update requests, a User will update the status to With Relationship. If the case is ready to be submitted for approval, a User will &lt;/span&gt;&lt;b style=&quot;font-size: 13px;&quot;&gt;change the status to &amp;quot;In Review&amp;quot; and tag the &amp;quot;BaaS Approver&amp;quot; group (@ group name) in case comments&lt;/b&gt;&lt;span style=&quot;font-size: 13px;&quot;&gt;. If an additional SME or External Legal review is required, please tag those individual reviewers by tagging one of the following &lt;/span&gt;&lt;b style=&quot;font-size: 13px;&quot;&gt;groups &lt;/b&gt;&lt;span style=&quot;font-size: 13px;&quot;&gt;or the &lt;/span&gt;&lt;b style=&quot;font-size: 13px;&quot;&gt;individual user&lt;/b&gt;&lt;span style=&quot;font-size: 13px;&quot;&gt; (@ group name or @ user name) that needs to review: External Legal; TBOM Operations; TBOM IT; or TBOM Fraud.&lt;/span&gt;&lt;/p&gt;</info>
+        <picklistValueName>In Process</picklistValueName>
+    </pathAssistantSteps>
+    <pathAssistantSteps>
+        <info>&lt;p&gt;&lt;b style=&quot;font-size: 13px;&quot;&gt;In Review&lt;/b&gt;&lt;span style=&quot;font-size: 13px;&quot;&gt; indicates that the case has been submitted for Approval but not yet approved or rejected by the groups within the Approval queue.&lt;/span&gt;&lt;/p&gt;</info>
+        <picklistValueName>In_Review_with_TBOM</picklistValueName>
+    </pathAssistantSteps>
+    <pathAssistantSteps>
+        <fieldNames>Status</fieldNames>
+        <info>&lt;p&gt;&lt;span style=&quot;font-size: 13px;&quot;&gt;Once updated material has been received from the Relationship, update the status of the case to &lt;/span&gt;&lt;b style=&quot;font-size: 13px;&quot;&gt;In Process. &lt;/b&gt;This stage is only applicable if feedback is issued to the Relationship.&lt;/p&gt;</info>
+        <picklistValueName>With Relationship</picklistValueName>
+    </pathAssistantSteps>
+    <recordTypeName>BaaS_Approval</recordTypeName>
+</PathAssistant>

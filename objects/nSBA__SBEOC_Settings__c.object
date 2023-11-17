@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customSettingsType>Hierarchy</customSettingsType>
+    <description>Provides the ability to specify custom settings at the org, user or profile level.</description>
+    <enableFeeds>false</enableFeeds>
+    <fields>
+        <fullName>nSBA__Encrypt_Cache__c</fullName>
+        <defaultValue>false</defaultValue>
+        <deprecated>false</deprecated>
+        <description>The administrator selects this checkbox to enable encryption of the Event Cache. The default is false. If enabled, only data less than 1MB in size can be encrypted.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Select this checkbox to enable encryption of the Event Cache.</inlineHelpText>
+        <label>Encrypt Cache</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>nSBA__Encrypt_Events__c</fullName>
+        <defaultValue>false</defaultValue>
+        <deprecated>false</deprecated>
+        <description>The administrator selects this checkbox to enable encryption of events objects. The default is false. If enabled, only events less than 1MB in size can be encrypted.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Select this checkbox to enable encryption of Event data.</inlineHelpText>
+        <label>Encrypt Events</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>nSBA__Include_Method_Telemetry__c</fullName>
+        <defaultValue>false</defaultValue>
+        <deprecated>false</deprecated>
+        <description>The administrator selects this checkbox to indicate to the logging system to include method telemetry. By default, it is false.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Select this checkbox to include method telemetry in your captured log, which is written by the configured logging provider.</inlineHelpText>
+        <label>Include Method Telemetry</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>nSBA__Logging_Levels__c</fullName>
+        <deprecated>false</deprecated>
+        <description>The administrator populates this optional text field with the System.LoggingLevel value to set the logging detail level. By default, it is blank.</description>
+        <encryptionScheme>None</encryptionScheme>
+        <externalId>false</externalId>
+        <inlineHelpText>Enter the value to set the logging detail level.</inlineHelpText>
+        <label>Logging Levels to Capture</label>
+        <length>255</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>nSBA__Logging_Max_Retry_Attempts__c</fullName>
+        <deprecated>false</deprecated>
+        <description>The administrator populates this optional numeric field with the maximum number of attempts to retry a DML transaction before erroring. By default, it is blank.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Enter the maximum number of attempts before erroring.</inlineHelpText>
+        <label>Logging Max Retry Attempts</label>
+        <precision>4</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>nSBA__Logging_Provider__c</fullName>
+        <deprecated>false</deprecated>
+        <description>The administrator populates this optional text field with the qualified class name of the logging provider. By default, it is blank.</description>
+        <encryptionScheme>None</encryptionScheme>
+        <externalId>false</externalId>
+        <inlineHelpText>Enter the qualified class name of the logging provider.</inlineHelpText>
+        <label>Logging Provider</label>
+        <length>255</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>nSBA__Use_Localized_Platform_Events__c</fullName>
+        <defaultValue>false</defaultValue>
+        <deprecated>false</deprecated>
+        <description>The administrator selects this checkbox to use local platform events. The default is false. If daily platform event limits are reached, the administrator needs to deselect to disable.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Select this checkbox to use local platform events. Deselect when daily platform event limits are reached.</inlineHelpText>
+        <label>Use Localized Platform Events</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <label>SBEOC Settings</label>
+    <visibility>Public</visibility>
+</CustomObject>

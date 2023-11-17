@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <label><!-- Instruction Category --></label>
+        <name>MTRNS__Category__c</name>
+    </fields>
+    <fields>
+        <label><!-- Compiled Instructions --></label>
+        <name>MTRNS__CompiledInstructions__c</name>
+    </fields>
+    <fields>
+        <label><!-- Instruction Context --></label>
+        <name>MTRNS__Context__c</name>
+    </fields>
+    <fields>
+        <label><!-- Instruction Differentiator --></label>
+        <name>MTRNS__Differentiator__c</name>
+    </fields>
+    <fields>
+        <label><!-- Instruction Type --></label>
+        <name>MTRNS__InstructionType__c</name>
+    </fields>
+    <fields>
+        <label><!-- Is Active --></label>
+        <name>MTRNS__Is_Active__c</name>
+    </fields>
+    <fields>
+        <label><!-- Instruction Package Name --></label>
+        <name>MTRNS__PackageName__c</name>
+    </fields>
+    <fields>
+        <label><!-- Instruction Processing Order --></label>
+        <name>MTRNS__ProcessingOrder__c</name>
+    </fields>
+    <fields>
+        <label><!-- Instruction Selector Key --></label>
+        <name>MTRNS__SelectorKey__c</name>
+    </fields>
+    <fields>
+        <label><!-- Instruction Sub-Context --></label>
+        <name>MTRNS__SubContext__c</name>
+    </fields>
+</CustomObjectTranslation>

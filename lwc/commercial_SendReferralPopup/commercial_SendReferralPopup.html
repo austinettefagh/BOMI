@@ -1,0 +1,146 @@
+<template>
+    <!--Use template if:true to display/hide popup based on isModalOpen value--> 
+    <template if:true={isModalOpen}>
+        <!-- Modal/Popup Box LWC starts here -->
+        <template if:false={isQuickAction}>
+        <section role="dialog" tabindex="-1" aria-labelledby="modal-heading-01" aria-modal="true" aria-describedby="modal-content-id-1" class="slds-modal slds-fade-in-open">
+            <div class="slds-modal__container">
+               <!-- modal header start -->
+               <header class="slds-modal__header">
+                  <button class="slds-button slds-button_icon slds-modal__close slds-button_icon-inverse" title="Close" onclick={closeModal}>
+                     <lightning-icon icon-name="utility:close"
+                        alternative-text="close"
+                        variant="inverse"
+                        size="small" ></lightning-icon>
+                     <span class="slds-assistive-text">Close</span>
+                  </button>
+                  <h2 id="modal-heading-01" class="slds-text-heading_medium slds-hyphenate">Send Referral</h2>
+               </header>
+               <!-- modal body start -->
+               <div class="slds-modal__content slds-p-around_medium" id="modal-content-id-1">
+                    <lightning-record-edit-form  object-api-name="Opportunity" onsuccess={handleSuccess} onsubmit ={handleSubmit} record-type-id={OppRecordTypeId}>
+                        <lightning-messages>
+                        </lightning-messages>
+                        <label class="slds-form-element__label">Related Account</label>
+                        <lightning-input-field field-name='AccountId' value={accountRecordId} variant="label-hidden"></lightning-input-field>
+
+                        <label class="slds-form-element__label" for="recordType">Opportunity Record Type</label>
+                        <lightning-combobox name="recordType" label="Record Type" value={OppRecordTypeId} options={OppRecordType} variant="label-hidden" onchange={handleRecordTypeChange} required></lightning-combobox>
+
+                        <template if:true={isTreasuryOpp}>
+                          <label class="slds-form-element__label">Opportunity Name</label>
+                          <lightning-input-field required field-name='Name' variant="label-hidden"></lightning-input-field>
+                        </template>
+
+                        <template if:true={stageNameOptions}>
+                          <label class="slds-form-element__label">Stage</label>
+                          <lightning-combobox name="StageName" label="Stage" value={stageNameValue} options={stageNameOptions} variant="label-hidden" onchange={handleStageChange} required></lightning-combobox>
+                        </template>
+
+                        <label class="slds-form-element__label">Expected Close Date</label>
+                        <lightning-input-field required field-name='CloseDate' variant="label-hidden"></lightning-input-field>
+
+                        <template if:true={productLineOptions}>
+                          <label class="slds-form-element__label">Product Line</label>
+                          <lightning-combobox name="ProductLine" label="Product Line" value={productLineValue} options={productLineOptions} variant="label-hidden" onchange={handleproductLineChange} required></lightning-combobox>
+
+                          <label class="slds-form-element__label">Product Type</label>
+                          <lightning-combobox name="ProductType" label="Product Type" value={productTypeValue} options={productTypeOptions} variant="label-hidden" onchange={handleproductTypeChange} required></lightning-combobox>
+
+                          <label class="slds-form-element__label">Product</label>
+                          <lightning-combobox name="Product" label="Product" value={productValue} options={productOptions} variant="label-hidden" onchange={handleproductChange} required></lightning-combobox>
+                        </template>
+
+                        <label class="slds-form-element__label">Referrer Owner</label>
+                        <div class="slds-list_horizontal slds-wrap">
+                        <lightning-input type="toggle"
+                            onclick={handleClick}
+                            message-toggle-active="Queue" message-toggle-inactive="Queue"
+                            class="slds-p-top_large slds-p-right_small">
+                         </lightning-input>
+                         <template if:true={boolVisible} class="slds-p-bottom_x-large" >  
+                            <div >
+                                <c-commercial_-Generic-Lookup lookup-label="" object-api-name="Group" icon-name="standard:queue"  
+                                onrecordselection={onAccountSelection} lookup-filter-id='' search-bar-message="Search Queue..."></c-commercial_-Generic-Lookup> 
+                            </div> 
+                           
+                          </template>
+                          <template if:false={boolVisible} class="slds-p-bottom_small">  
+                            <div >
+                                <c-commercial_-Generic-Lookup lookup-label="" object-api-name="User" icon-name="standard:user"  
+                                  onrecordselection={onAccountSelection} lookup-filter-id='' search-bar-message="Search User..."></c-commercial_-Generic-Lookup> 
+                                </div> 
+                          </template >  
+                        </div>
+
+                        <label class="slds-form-element__label">Internal Referrer</label>
+                        <lightning-input-field field-name='FinServ__ReferredByUser__c' value={userId} variant="label-hidden"></lightning-input-field>
+
+                        <label class="slds-form-element__label">Description</label>
+                        <lightning-input-field field-name='Description' variant="label-hidden"></lightning-input-field>
+                        
+                    <footer class="slds-p-top_large slds-float_right">
+                        <lightning-button icon-position="right" variant="brand" icon-name="utility:save" class="slds-m-top_small" type="submit" label="Save" >  </lightning-button> &nbsp;&nbsp;
+                        <lightning-button icon-position="right" variant="brand" icon-name="utility:close" class="slds-m-top_small" label="Cancel" onclick={closeModal} ></lightning-button>
+                     </footer>
+                    </lightning-record-edit-form>
+                  
+                <!-- Modal/Popup Box LWC footer starts here -->
+            </div>
+            
+            </div>
+        </section>
+        <div class="slds-backdrop slds-backdrop_open"></div>
+        </template>
+        <template if:true={isQuickAction}>
+            <!-- modal body start -->
+           <!-- <div class="slds-modal__content slds-p-around_medium" id="modal-content-id-2">-->
+                <lightning-record-edit-form object-api-name="Lead" onsuccess={handleSuccess} onsubmit ={handleSubmit} record-type-id={recordPersonTypeId}>
+                    <lightning-messages>
+                    </lightning-messages>
+                   <!--- <label for="pInterest">Product of Intrest</label>-->
+                   <lightning-input-field id="pInterest1" label='Product of Intrest' field-name='FinServ__ExpressedInterest__c'></lightning-input-field>
+                    <lightning-input-field field-name='FinServ__RelatedAccount__c' value={accountRecordId}></lightning-input-field>
+                    <lightning-input-field  field-name='Rating' ></lightning-input-field>
+                    <lightning-input-field  field-name='FinServ__PotentialValue__c' ></lightning-input-field>
+                    <lightning-input-field class="slds-hide" field-name='LastName' value= {accountinfo.fields.Name.value}></lightning-input-field>
+                    <label class="slds-form-element__label">Referrer Owner</label>
+                    <div class="slds-list_horizontal slds-wrap">
+                        
+                        <lightning-input type="toggle"
+                            onclick={handleClick}
+                            message-toggle-active="Queue" message-toggle-inactive="Queue"
+                            class="slds-p-top_large slds-p-right_small">
+                         </lightning-input>
+                         <template  if:true={boolVisible} >  
+                             
+                            <div class="slds-p-bottom_small">
+                                <c-commercial_-Generic-Lookup lookup-label=""  lookup-filter-id='' object-api-name="Group" icon-name="standard:queue"  
+                                onrecordselection={onAccountSelection} search-bar-message="Search Queue..." ></c-commercial_-Generic-Lookup>  
+                              </div>
+                          </template>
+                          <template  if:false={boolVisible}>  
+                             <div class="slds-p-bottom_small">
+                            <c-commercial_-Generic-Lookup lookup-label=""  lookup-filter-id='' object-api-name="User" icon-name="standard:user"  
+                              onrecordselection={onAccountSelection} search-bar-message="Search User..."></c-commercial_-Generic-Lookup>  
+                            </div>
+                          </template>  
+                        </div>
+                    <lightning-input-field class="slds-hide" field-name='LeadSource'  ></lightning-input-field>
+                    <lightning-input-field class="slds-hide" field-name='OwnerId'  ></lightning-input-field>
+                    <lightning-input-field field-name='FinServ__ReferredByUser__c' value={userId}></lightning-input-field>
+                    <lightning-input-field field-name='Description'></lightning-input-field>
+                    <lightning-input-field class="slds-hide" field-name='Status' ></lightning-input-field>
+                    <lightning-input-field field-name='recordTypeId' ></lightning-input-field>
+                <footer class="slds-float_right slds-p-top_large">
+                    <lightning-button icon-position="right" variant="brand" icon-name="utility:save"  class="slds-m-top_small" type="submit" label="Save" >  </lightning-button> &nbsp;&nbsp;
+                    <lightning-button icon-position="right" variant="brand"  icon-name="utility:close" class="slds-m-top_small" label="Cancel" onclick={closeModal} ></lightning-button>
+                 </footer>
+                </lightning-record-edit-form>
+            <!-- Modal/Popup Box LWC footer starts here -->
+      <!--  </div>-->
+
+        </template>
+      <!--  <div class="slds-backdrop slds-backdrop_open"></div>-->
+    </template>
+ </template>

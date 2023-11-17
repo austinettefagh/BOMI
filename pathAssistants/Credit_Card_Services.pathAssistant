@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PathAssistant xmlns="http://soap.sforce.com/2006/04/metadata">
+    <active>true</active>
+    <entityName>Case</entityName>
+    <fieldName>Status</fieldName>
+    <masterLabel>Credit Card Services</masterLabel>
+    <pathAssistantSteps>
+        <info>&lt;p&gt;An &amp;quot;Active&amp;quot; status is a case where a back office credit card support team member has started working a case and it is in-process. &lt;/p&gt;</info>
+        <picklistValueName>Active</picklistValueName>
+    </pathAssistantSteps>
+    <pathAssistantSteps>
+        <info>&lt;p&gt;A &amp;quot;Closed&amp;quot; status indicates that the case request has been fully worked and does not require further action. &lt;/p&gt;</info>
+        <picklistValueName>Closed</picklistValueName>
+    </pathAssistantSteps>
+    <pathAssistantSteps>
+        <info>&lt;p&gt;An &amp;quot;Escalated&amp;quot; status indicates a case that has been sent to a supervisor/manager or other department for review before final action can be taken. &lt;/p&gt;</info>
+        <picklistValueName>Escalated</picklistValueName>
+    </pathAssistantSteps>
+    <pathAssistantSteps>
+        <info>&lt;p&gt;An &amp;quot;In-Review&amp;quot; status indicates that the requested information from the &amp;quot;Pending&amp;quot; status has been received and the back office team is reviewing that information and working the case. &lt;/p&gt;</info>
+        <picklistValueName>In_Review_with_TBOM</picklistValueName>
+    </pathAssistantSteps>
+    <pathAssistantSteps>
+        <info>&lt;p&gt;A &amp;quot;New&amp;quot; case is one that has yet to be assigned and/or worked by a back office credit card support team member. &lt;/p&gt;</info>
+        <picklistValueName>New</picklistValueName>
+    </pathAssistantSteps>
+    <pathAssistantSteps>
+        <info>&lt;p&gt;A &amp;quot;Pending&amp;quot; case is where we need additional information from the customer, client bank/branch, or other back-office department before the case can be fully worked. In this instance, it is possible that correspondence has been sent to the customer requesting information. Please check case notes. &lt;/p&gt;</info>
+        <picklistValueName>Pending</picklistValueName>
+    </pathAssistantSteps>
+    <recordTypeName>Credit_Card_Back_Office_Request</recordTypeName>
+</PathAssistant>

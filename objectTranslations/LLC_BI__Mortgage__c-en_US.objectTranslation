@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fieldSets>
+        <label><!-- Purchase - Mortgage Loan Information Test --></label>
+        <name>LLC_BI__Purchase_Mortgage_Test</name>
+    </fieldSets>
+    <fieldSets>
+        <label><!-- Recalculate Offers --></label>
+        <name>LLC_BI__Recalculate_Offers</name>
+    </fieldSets>
+    <fields>
+        <help><!-- Enter the total requested amount of cash out by the borrower. Must be a numerical value. --></help>
+        <label><!-- Desired Cash Out Amount --></label>
+        <name>LLC_BI__Desired_Cash_Out_Amount_2__c</name>
+    </fields>
+    <fields>
+        <help><!-- Enter the total down payment amount. Must be a numerical value. --></help>
+        <label><!-- Down Payment --></label>
+        <name>LLC_BI__Down_Payment_2__c</name>
+    </fields>
+    <fields>
+        <help><!-- Select this checkbox if the applicant is a first-time home buyer. --></help>
+        <label><!-- Is A First-Time Home Buyer? --></label>
+        <name>LLC_BI__First_Time_Home_Buyer__c</name>
+    </fields>
+    <fields>
+        <help><!-- Select this checkbox if the lender will inspect the property. --></help>
+        <label><!-- Is Inspected By The Lender? --></label>
+        <name>LLC_BI__Is_Inspected_By_The_Lender__c</name>
+    </fields>
+    <fields>
+        <help><!-- Select this checkbox to indicate that the loan is a jumbo loan. --></help>
+        <label><!-- -D Is Jumbo --></label>
+        <name>LLC_BI__Is_Jumbo__c</name>
+    </fields>
+    <fields>
+        <help><!-- Select this checkbox if the loan will be dispersed in one payment or multiple payments. --></help>
+        <label><!-- Is Multiple Advance? --></label>
+        <name>LLC_BI__Is_Multiple_Advance__c</name>
+    </fields>
+    <fields>
+        <help><!-- The system automatically populates this field with a lookup key that associates the loan record to the mortgage values. --></help>
+        <label><!-- Loan --></label>
+        <name>LLC_BI__Loan__c</name>
+        <relationshipLabel><!-- Mortgages --></relationshipLabel>
+    </fields>
+    <fields>
+        <help><!-- This field displays the applicant’s mortgage insurance premium. --></help>
+        <label><!-- Mortgage Insurance Premium --></label>
+        <name>LLC_BI__Mortgage_Insurance_Premium__c</name>
+    </fields>
+    <fields>
+        <help><!-- Select the reason for multiple advances of the loan. --></help>
+        <label><!-- Multiple Advance Rationale --></label>
+        <name>LLC_BI__Multiple_Advance_Rationale__c</name>
+        <picklistValues>
+            <masterLabel>Builder</masterLabel>
+            <translation><!-- Builder --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Contractor</masterLabel>
+            <translation><!-- Contractor --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Pre-Fabricated</masterLabel>
+            <translation><!-- Pre-Fabricated --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Self-Build</masterLabel>
+            <translation><!-- Self-Build --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- Enter the purchase price for the property. Must be a numerical value. --></help>
+        <label><!-- Purchase Price --></label>
+        <name>LLC_BI__Purchase_Price_2__c</name>
+    </fields>
+    <fields>
+        <help><!-- Enter the renovation cost for the property. --></help>
+        <label><!-- Property Renovation Cost --></label>
+        <name>LLC_BI__Renovation_Cost__c</name>
+    </fields>
+    <fields>
+        <help><!-- This system-populated field displays the percentage of total interest a borrower pays over the life of the loan. --></help>
+        <label><!-- Total Interest Percentage --></label>
+        <name>LLC_BI__Total_Interest_Percentage__c</name>
+    </fields>
+    <fields>
+        <help><!-- This system-populated field displays the total loan cost the borrower will pay over 5 years. --></help>
+        <label><!-- Total Loan Cost Over 5 Years --></label>
+        <name>LLC_BI__Total_Loan_Cost_Over_5_Years__c</name>
+    </fields>
+    <fields>
+        <help><!-- This system-populated field displays the total principal amount the user will pay over 5 years. --></help>
+        <label><!-- Total Principal Over 5 Years --></label>
+        <name>LLC_BI__Total_Principal_Over_5_Years__c</name>
+    </fields>
+</CustomObjectTranslation>

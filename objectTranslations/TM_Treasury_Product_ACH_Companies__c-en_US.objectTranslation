@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>ACH Company</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>ACH Companies</value>
+    </caseValues>
+    <fieldSets>
+        <label><!-- ACH Companies --></label>
+        <name>FS_ACH_Companies</name>
+    </fieldSets>
+    <fields>
+        <label><!-- ACH Exposure Value --></label>
+        <name>CF_ACH_Exposure_Value__c</name>
+    </fields>
+    <fields>
+        <label><!-- Active --></label>
+        <name>CF_Active__c</name>
+    </fields>
+    <fields>
+        <label><!-- Additional Offset Account --></label>
+        <name>CF_Additional_Offset_Account__c</name>
+        <relationshipLabel><!-- ACH Companies (Additional Offset Account) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- File Frequency Value --></label>
+        <name>CF_File_Frequency_Value__c</name>
+    </fields>
+    <fields>
+        <label><!-- Offset Account --></label>
+        <name>CF_Offset_Account__c</name>
+        <relationshipLabel><!-- ACH Companies (Offset Account) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Other Transaction Type Description --></label>
+        <name>CF_Other_Description__c</name>
+    </fields>
+    <fields>
+        <label><!-- Requested ACH Company Limit --></label>
+        <name>CF_Requested_ACH_Company_Limit__c</name>
+    </fields>
+    <fields>
+        <label><!-- SEC Codes --></label>
+        <name>CF_SEC_Codes__c</name>
+        <picklistValues>
+            <masterLabel>CCD+/CTX-Tax Payment</masterLabel>
+            <translation><!-- CCD+/CTX-Tax Payment --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CCD-Corporate Credit or Debit</masterLabel>
+            <translation><!-- CCD-Corporate Credit or Debit --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CTX-Corporate Trade Exchange</masterLabel>
+            <translation><!-- CTX-Corporate Trade Exchange --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>PPD-Direct Deposit/Direct Payment</masterLabel>
+            <translation><!-- PPD-Direct Deposit/Direct Payment --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>TEL- Telephone Initiated Entries</masterLabel>
+            <translation><!-- TEL- Telephone Initiated Entries --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>WEB-Internet Initiated Entries</masterLabel>
+            <translation><!-- WEB-Internet Initiated Entries --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Treasury Service --></label>
+        <name>CF_Treasury_Service__c</name>
+        <relationshipLabel><!-- ACH Companies --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Additional Offset Account --></label>
+        <name>TM_Additional_Offset_account__c</name>
+    </fields>
+    <fields>
+        <label><!-- Credits/Debits --></label>
+        <name>TM_Credits_Debits__c</name>
+        <picklistValues>
+            <masterLabel>Credits only</masterLabel>
+            <translation><!-- Credits only --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Debits only</masterLabel>
+            <translation><!-- Debits only --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- File Frequency --></label>
+        <name>TM_Frequency__c</name>
+        <picklistValues>
+            <masterLabel>Daily</masterLabel>
+            <translation><!-- Daily --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Monthly/Bi-monthly</masterLabel>
+            <translation><!-- Monthly/Bi-monthly --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Quarterly/Annually</masterLabel>
+            <translation><!-- Quarterly/Annually --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Weekly/Bi-weekly</masterLabel>
+            <translation><!-- Weekly/Bi-weekly --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Offset Account --></label>
+        <name>TM_Offset_account__c</name>
+    </fields>
+    <fields>
+        <label><!-- Other Transaction Type --></label>
+        <name>TM_Other_Transaction_Type__c</name>
+    </fields>
+    <fields>
+        <label><!-- Requested ACH Limit --></label>
+        <name>TM_Requested_ACH_Limit__c</name>
+    </fields>
+    <fields>
+        <label><!-- Same Day ACH --></label>
+        <name>TM_Same_Day_ACH__c</name>
+        <picklistValues>
+            <masterLabel>No</masterLabel>
+            <translation><!-- No --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes</masterLabel>
+            <translation><!-- Yes --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Transaction Type --></label>
+        <name>TM_Transaction_Type__c</name>
+        <picklistValues>
+            <masterLabel>Other</masterLabel>
+            <translation><!-- Other --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Payroll</masterLabel>
+            <translation><!-- Payroll --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Vendor payments</masterLabel>
+            <translation><!-- Vendor payments --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Treasury Application Product --></label>
+        <name>TM_Treasury_Application_Product__c</name>
+        <relationshipLabel><!-- ACH Companies --></relationshipLabel>
+    </fields>
+    <startsWith>Consonant</startsWith>
+    <validationRules>
+        <errorMessage><!-- A current Treasury Review must be completed in order to update product limits. --></errorMessage>
+        <name>CVR_ACH_Company_Maintenance_Validation</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- This ACH Companies can’t be edited anymore as it’s at/after Signature Required stage. --></errorMessage>
+        <name>TM_This_ACH_Companies_cant_be_edited</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Other Transaction Type Description need to be filled when Transaction type is Other --></errorMessage>
+        <name>Transaction_Type_Other_need_Description</name>
+    </validationRules>
+</CustomObjectTranslation>

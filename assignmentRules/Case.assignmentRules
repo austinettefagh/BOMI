@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<AssignmentRules xmlns="http://soap.sforce.com/2006/04/metadata">
+    <assignmentRule>
+        <fullName>Case Assignment</fullName>
+        <active>true</active>
+        <ruleEntry>
+            <assignedTo>Core_Bank_Treasury_Support</assignedTo>
+            <assignedToType>Queue</assignedToType>
+            <criteriaItems>
+                <field>Case.RecordTypeId</field>
+                <operation>equals</operation>
+                <value>Core Bank Treasury Support</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Case.Status</field>
+                <operation>equals</operation>
+                <value>New</value>
+            </criteriaItems>
+        </ruleEntry>
+        <ruleEntry>
+            <assignedTo>Underwriters</assignedTo>
+            <assignedToType>Queue</assignedToType>
+            <criteriaItems>
+                <field>Case.Category__c</field>
+                <operation>equals</operation>
+                <value>Increase Credit Limit,Adverse Action Letter</value>
+            </criteriaItems>
+            <template>unfiled$public/New_Dex_Back_Office_Case</template>
+        </ruleEntry>
+    </assignmentRule>
+</AssignmentRules>

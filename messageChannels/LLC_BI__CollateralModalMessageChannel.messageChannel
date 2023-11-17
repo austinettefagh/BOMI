@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LightningMessageChannel xmlns="http://soap.sforce.com/2006/04/metadata">
+    <description>Message channel for communication between Lightning Modals and Lightning Element</description>
+    <isExposed>true</isExposed>
+    <lightningMessageFields>
+        <description>The message from the modal</description>
+        <fieldName>message</fieldName>
+    </lightningMessageFields>
+    <masterLabel>CollateralModalMessageChannel</masterLabel>
+</LightningMessageChannel>

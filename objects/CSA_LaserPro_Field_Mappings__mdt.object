@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <description>Define additional data points to map to the LaserPro Extract</description>
+    <fields>
+        <fullName>Active__c</fullName>
+        <defaultValue>true</defaultValue>
+        <description>Enable the label by checking this box</description>
+        <externalId>false</externalId>
+        <fieldManageability>SubscriberControlled</fieldManageability>
+        <inlineHelpText>Enable the label by checking this box</inlineHelpText>
+        <label>Active</label>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Data_Resides_on_Account_Object__c</fullName>
+        <defaultValue>false</defaultValue>
+        <description>Override the Pertains To object and pull data from Account</description>
+        <externalId>false</externalId>
+        <fieldManageability>SubscriberControlled</fieldManageability>
+        <inlineHelpText>Override the Pertains To object and pull data from Account</inlineHelpText>
+        <label>Data Resides on Account Object</label>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Field_API_Name__c</fullName>
+        <description>What field should this value be pulled from?</description>
+        <externalId>false</externalId>
+        <fieldManageability>SubscriberControlled</fieldManageability>
+        <inlineHelpText>What field should this value be pulled from?</inlineHelpText>
+        <label>Field API Name</label>
+        <length>255</length>
+        <required>false</required>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Field_Value_Translation__c</fullName>
+        <description>Key Value pair for translating the nCino value to the desired laserpro value. Separated by a carrige returns. For example;
+A=B
+C=D
+E=F</description>
+        <externalId>false</externalId>
+        <fieldManageability>SubscriberControlled</fieldManageability>
+        <inlineHelpText>Key Value pair for translating the nCino value to the desired laserpro value. Separated by a carrige returns. For example;
+A=B
+C=D
+E=F</inlineHelpText>
+        <label>Field Value Translation</label>
+        <length>32768</length>
+        <type>LongTextArea</type>
+        <visibleLines>3</visibleLines>
+    </fields>
+    <fields>
+        <fullName>Filter_Criteria__c</fullName>
+        <description>Enter the SOQL to be included if you need to filter out certain data from your &apos;Data resides on object&quot;. For example if you only want to include certain Legal Entities that are borrowers only</description>
+        <externalId>false</externalId>
+        <fieldManageability>DeveloperControlled</fieldManageability>
+        <inlineHelpText>Enter the SOQL to be included if you need to filter out certain data from your &apos;Data resides on object&quot;. For example if you only want to include certain Legal Entities that are borrowers only</inlineHelpText>
+        <label>Filter Criteria</label>
+        <length>32768</length>
+        <type>LongTextArea</type>
+        <visibleLines>3</visibleLines>
+    </fields>
+    <fields>
+        <fullName>LaserPro_Extract_Data_Label__c</fullName>
+        <description>What is the LaserPro Mapping to be used?</description>
+        <externalId>false</externalId>
+        <fieldManageability>SubscriberControlled</fieldManageability>
+        <inlineHelpText>What is the LaserPro Mapping to be used?</inlineHelpText>
+        <label>LaserPro Extract Data Label</label>
+        <length>255</length>
+        <required>true</required>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Pertains_to_Object_API__c</fullName>
+        <description>Enter the API name for the object this data element pertains to. Only populate this field if you are adding a label to the extract. Can be left blank if you&apos;re ONLY removing the label.</description>
+        <externalId>false</externalId>
+        <fieldManageability>DeveloperControlled</fieldManageability>
+        <inlineHelpText>Enter the API name for the object this data element pertains to. Only populate this field if you are adding a label to the extract. Can be left blank if you&apos;re ONLY removing the label.</inlineHelpText>
+        <label>Pertains to Object API</label>
+        <length>255</length>
+        <required>false</required>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Relationship_to_Account__c</fullName>
+        <description>If your data point is being pulled from the Account object, enter the API name of the Account Lookup from the object used in the Pertains To field</description>
+        <externalId>false</externalId>
+        <fieldManageability>DeveloperControlled</fieldManageability>
+        <label>Relationship to Account</label>
+        <length>255</length>
+        <required>false</required>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Remove_Value_from_Extract__c</fullName>
+        <defaultValue>false</defaultValue>
+        <description>Removes the managed package value from the extract. Required if adding your own custom label in it&apos;s place.</description>
+        <externalId>false</externalId>
+        <fieldManageability>SubscriberControlled</fieldManageability>
+        <inlineHelpText>Removes the managed package value from the extract. Required if adding your own custom label in it&apos;s place.</inlineHelpText>
+        <label>Remove Managed Package Label</label>
+        <type>Checkbox</type>
+    </fields>
+    <label>LaserPro Field Mapping</label>
+    <pluralLabel>LaserPro Field Mappings</pluralLabel>
+    <visibility>Public</visibility>
+</CustomObject>

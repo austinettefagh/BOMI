@@ -1,0 +1,2005 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fieldSets>
+        <label><!-- Account Deposit Details --></label>
+        <name>FS_Account_Deposit_Details</name>
+    </fieldSets>
+    <fieldSets>
+        <label><!-- Jack Henry jXchange Automated Booking --></label>
+        <name>JHJX__ABJX</name>
+    </fieldSets>
+    <fieldSets>
+        <label><!-- Deposit Details --></label>
+        <name>LLC_BI__Deposit_Details</name>
+    </fieldSets>
+    <fieldSets>
+        <label><!-- Deposit Maintenance Delta --></label>
+        <name>LLC_BI__Deposit_Maintenance_Delta</name>
+    </fieldSets>
+    <fieldSets>
+        <label><!-- Deposits --></label>
+        <name>LLC_BI__Deposit_Product_Package</name>
+    </fieldSets>
+    <fieldSets>
+        <label><!-- Related Deposits --></label>
+        <name>LLC_BI__Related_Deposits</name>
+    </fieldSets>
+    <fieldSets>
+        <label><!-- Secondary Mailing Address --></label>
+        <name>LLC_BI__Secondary_Mailing_Address</name>
+    </fieldSets>
+    <fieldSets>
+        <label><!-- Credit Memo Standard Product Package --></label>
+        <name>LLC_BI__Standard_Product_Package_Credit_Memo</name>
+    </fieldSets>
+    <fieldSets>
+        <label><!-- Treasury Mass Actions Deposits --></label>
+        <name>LLC_BI__Treasury_Mass_Actions_Deposits</name>
+    </fieldSets>
+    <fieldSets>
+        <label><!-- UI Lookup Fields --></label>
+        <name>LLC_BI__UI_Lookup_Fields</name>
+    </fieldSets>
+    <fieldSets>
+        <label><!-- Your Products Deposit Information --></label>
+        <name>nPortal__Your_Products_Deposit</name>
+    </fieldSets>
+    <fields>
+        <label><!-- Employee Deposit --></label>
+        <name>CF_Employee_Deposit__c</name>
+    </fields>
+    <fields>
+        <label><!-- Company Discretionary --></label>
+        <name>JHJX__ACHCompDiscrData__c</name>
+    </fields>
+    <fields>
+        <label><!-- Company Entry Desc --></label>
+        <name>JHJX__ACHCompEntryDesc__c</name>
+    </fields>
+    <fields>
+        <label><!-- Company ID --></label>
+        <name>JHJX__ACHCompId__c</name>
+    </fields>
+    <fields>
+        <label><!-- Company Name --></label>
+        <name>JHJX__ACHCompName__c</name>
+    </fields>
+    <fields>
+        <label><!-- Credit Account Number --></label>
+        <name>JHJX__ACHCrAcctId__c</name>
+    </fields>
+    <fields>
+        <label><!-- Individual Name --></label>
+        <name>JHJX__ACHCrName__c</name>
+    </fields>
+    <fields>
+        <label><!-- Credit Bank Number --></label>
+        <name>JHJX__ACHCrRtNum__c</name>
+    </fields>
+    <fields>
+        <label><!-- Send Prenotice --></label>
+        <name>JHJX__ACHSendPreNoteCode__c</name>
+    </fields>
+    <fields>
+        <label><!-- Standard Entry Class --></label>
+        <name>JHJX__ACHStdEntryClass__c</name>
+        <picklistValues>
+            <masterLabel>Accounts Receivable Entry</masterLabel>
+            <translation><!-- Accounts Receivable Entry --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Automated Notification of Change</masterLabel>
+            <translation><!-- Automated Notification of Change --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Cash Concentration and Disbursement</masterLabel>
+            <translation><!-- Cash Concentration and Disbursement --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Corporate Trade Exchange</masterLabel>
+            <translation><!-- Corporate Trade Exchange --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Cross Border Entry</masterLabel>
+            <translation><!-- Cross Border Entry --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Customer Initiated Entry</masterLabel>
+            <translation><!-- Customer Initiated Entry --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Internet-Initiated Entry</masterLabel>
+            <translation><!-- Internet-Initiated Entry --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Machine Transfer Entry</masterLabel>
+            <translation><!-- Machine Transfer Entry --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Point-of-Purchase Entry</masterLabel>
+            <translation><!-- Point-of-Purchase Entry --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Point-of-Sale Entry</masterLabel>
+            <translation><!-- Point-of-Sale Entry --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Prearranged Payment and Deposit</masterLabel>
+            <translation><!-- Prearranged Payment and Deposit --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Re-presented Check Entry</masterLabel>
+            <translation><!-- Re-presented Check Entry --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Telephone-Initiated Entry</masterLabel>
+            <translation><!-- Telephone-Initiated Entry --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Credit Tran Code --></label>
+        <name>JHJX__ACHTrnCode__c</name>
+    </fields>
+    <fields>
+        <label><!-- Class Code --></label>
+        <name>JHJX__AcctClsfCode__c</name>
+        <picklistValues>
+            <masterLabel>A - Association/Organization</masterLabel>
+            <translation><!-- A - Association/Organization --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>B - Business</masterLabel>
+            <translation><!-- B - Business --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>C - Corporation</masterLabel>
+            <translation><!-- C - Corporation --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>D - Deposit Institution</masterLabel>
+            <translation><!-- D - Deposit Institution --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>E - Estate</masterLabel>
+            <translation><!-- E - Estate --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>F - Fiduciary Organization</masterLabel>
+            <translation><!-- F - Fiduciary Organization --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>G - Conserv/Guard</masterLabel>
+            <translation><!-- G - Conserv/Guard --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>I - Individual/Entity</masterLabel>
+            <translation><!-- I - Individual/Entity --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>K - Landlord</masterLabel>
+            <translation><!-- K - Landlord --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>L - Limited Liability Corporation</masterLabel>
+            <translation><!-- L - Limited Liability Corporation --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>M - Partnership</masterLabel>
+            <translation><!-- M - Partnership --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>N - Non Profit</masterLabel>
+            <translation><!-- N - Non Profit --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>O - IOLTA</masterLabel>
+            <translation><!-- O - IOLTA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>P - Personal</masterLabel>
+            <translation><!-- P - Personal --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Q - Fed Fiduciary</masterLabel>
+            <translation><!-- Q - Fed Fiduciary --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>R - Rep Payee</masterLabel>
+            <translation><!-- R - Rep Payee --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>S - Sole Proprietor</masterLabel>
+            <translation><!-- S - Sole Proprietor --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>T - Irrevocable Trust</masterLabel>
+            <translation><!-- T - Irrevocable Trust --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>U - TNUTMA</masterLabel>
+            <translation><!-- U - TNUTMA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>V - Revocable Trust</masterLabel>
+            <translation><!-- V - Revocable Trust --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>X - Power of Attorney</masterLabel>
+            <translation><!-- X - Power of Attorney --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Z - Public Funds</masterLabel>
+            <translation><!-- Z - Public Funds --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Additional Name #1 --></label>
+        <name>JHJX__Additional_Name_1__c</name>
+    </fields>
+    <fields>
+        <label><!-- Additional Name #2 --></label>
+        <name>JHJX__Additional_Name_2__c</name>
+    </fields>
+    <fields>
+        <label><!-- Club Transfer Account Number --></label>
+        <name>JHJX__Club_Transfer_Account_Number__c</name>
+    </fields>
+    <fields>
+        <label><!-- Club Transfer Account Type --></label>
+        <name>JHJX__Club_Transfer_Account_Type__c</name>
+        <picklistValues>
+            <masterLabel>Checking</masterLabel>
+            <translation><!-- Checking --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Savings</masterLabel>
+            <translation><!-- Savings --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Interest Disbursement Account ID --></label>
+        <name>JHJX__IntDispAcctId__c</name>
+    </fields>
+    <fields>
+        <label><!-- Interest Disbursement Account Types --></label>
+        <name>JHJX__IntDispAcctType__c</name>
+        <picklistValues>
+            <masterLabel>Checking</masterLabel>
+            <translation><!-- Checking --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Savings</masterLabel>
+            <translation><!-- Savings --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Disposition of Interest --></label>
+        <name>JHJX__IntDisp__c</name>
+        <picklistValues>
+            <masterLabel>Add Back To Account</masterLabel>
+            <translation><!-- Add Back To Account --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Deposit To Account</masterLabel>
+            <translation><!-- Deposit To Account --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Pay By ACH</masterLabel>
+            <translation><!-- Pay By ACH --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Pay By Check</masterLabel>
+            <translation><!-- Pay By Check --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Officer Code --></label>
+        <name>JHJX__OffCode__c</name>
+    </fields>
+    <fields>
+        <label><!-- HSA Account Type --></label>
+        <name>JHJX__PlnCvrgType__c</name>
+        <picklistValues>
+            <masterLabel>Family</masterLabel>
+            <translation><!-- Family --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Individual</masterLabel>
+            <translation><!-- Individual --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Pass/Fail Status --></label>
+        <name>JHJX__RsStat__c</name>
+    </fields>
+    <fields>
+        <label><!-- Sales Person --></label>
+        <name>JHJX__SalesPerson__c</name>
+    </fields>
+    <fields>
+        <label><!-- Transaction ID --></label>
+        <name>JHJX__TrnRcptId__c</name>
+    </fields>
+    <fields>
+        <label><!-- Is Renewal --></label>
+        <name>JHJX__isRenewal__c</name>
+    </fields>
+    <fields>
+        <help><!-- Annual Percentage Yield --></help>
+        <label><!-- APY --></label>
+        <name>LLC_BI__APY__c</name>
+    </fields>
+    <fields>
+        <label><!-- Account Number --></label>
+        <name>LLC_BI__Account_Number__c</name>
+    </fields>
+    <fields>
+        <help><!-- Enter the Account that receives the accrued interest. --></help>
+        <label><!-- Account to Receive Accrued Interest --></label>
+        <name>LLC_BI__Account_To_Receive_Accrued_Interest__c</name>
+        <relationshipLabel><!-- Accrued Interest Deposit Accounts --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Relationship --></label>
+        <name>LLC_BI__Account__c</name>
+        <relationshipLabel><!-- Deposits --></relationshipLabel>
+    </fields>
+    <fields>
+        <help><!-- Additional terms to be added to the safe deposit box lease. --></help>
+        <label><!-- Additional Terms --></label>
+        <name>LLC_BI__Additional_Terms__c</name>
+    </fields>
+    <fields>
+        <help><!-- A description of the alternate text to print under a signature line for the responsible party on a CESA. This would be used if something other than the responsible party&apos;s name should print under their signature line. --></help>
+        <label><!-- Alternate Signature Description --></label>
+        <name>LLC_BI__Alternate_Signature_Description__c</name>
+    </fields>
+    <fields>
+        <label><!-- Amount --></label>
+        <name>LLC_BI__Amount__c</name>
+    </fields>
+    <fields>
+        <label><!-- Annual Percentage Yield --></label>
+        <name>LLC_BI__Annual_Percentage_Yield__c</name>
+    </fields>
+    <fields>
+        <help><!-- The amount of the initial annual rent for the safe deposit box. --></help>
+        <label><!-- Annual Rent Amount --></label>
+        <name>LLC_BI__Annual_Rent_Amount__c</name>
+    </fields>
+    <fields>
+        <label><!-- Application --></label>
+        <name>LLC_BI__Application__c</name>
+        <relationshipLabel><!-- Deposits --></relationshipLabel>
+    </fields>
+    <fields>
+        <help><!-- Capacity of a designated appointee, often by court order/will. Acts for a fiduciary or estate account ward. Capacity identified by court order/legal document as guardian, conservator, or legal representative. Captured once and applied to appointee(s). --></help>
+        <label><!-- Appointee Capacity Description --></label>
+        <name>LLC_BI__Appointee_Capacity_Description__c</name>
+    </fields>
+    <fields>
+        <label><!-- Average Balance --></label>
+        <name>LLC_BI__Average_Deposit_Account_Balance__c</name>
+    </fields>
+    <fields>
+        <help><!-- Describes the frequency with which the safe deposit box rent amount will be debited from the account. --></help>
+        <label><!-- Billing Frequency Other --></label>
+        <name>LLC_BI__Billing_Frequency_Other__c</name>
+    </fields>
+    <fields>
+        <help><!-- Specifies how often billing for the safe deposit box will occur. --></help>
+        <label><!-- Billing Frequency --></label>
+        <name>LLC_BI__Billing_Frequency__c</name>
+        <picklistValues>
+            <masterLabel>Annually</masterLabel>
+            <translation><!-- Annually --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Biannually</masterLabel>
+            <translation><!-- Biannually --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Monthly</masterLabel>
+            <translation><!-- Monthly --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Monthly on the lease date anniversary</masterLabel>
+            <translation><!-- Monthly on the lease date anniversary --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Other</masterLabel>
+            <translation><!-- Other --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Quarterly</masterLabel>
+            <translation><!-- Quarterly --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Semiannually</masterLabel>
+            <translation><!-- Semiannually --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yearly on the lease date anniversary</masterLabel>
+            <translation><!-- Yearly on the lease date anniversary --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- Describes how the billing for the safe deposit box will be communicated to the lessee. --></help>
+        <label><!-- Billing Type --></label>
+        <name>LLC_BI__Billing_Type__c</name>
+        <picklistValues>
+            <masterLabel>Debit Account</masterLabel>
+            <translation><!-- Debit Account --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Give Notice</masterLabel>
+            <translation><!-- Give Notice --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- The length of time from the opening date of the time deposit to the maturity date (e.g. 91 days 18 months). --></help>
+        <label><!-- CD Term --></label>
+        <name>LLC_BI__CD_Term__c</name>
+    </fields>
+    <fields>
+        <help><!-- If true the Designated Beneficiary of a CESA will become the Responsible Individual at age of majority. --></help>
+        <label><!-- CESA Responsible Individual Indicator --></label>
+        <name>LLC_BI__CESA_Responsible_Individual_Indicator__c</name>
+    </fields>
+    <fields>
+        <help><!-- The number of the Certificate of Deposit. This is used when a certificate of deposit has an account number and a certificate number. --></help>
+        <label><!-- Certificate Number --></label>
+        <name>LLC_BI__Certificate_Number__c</name>
+    </fields>
+    <fields>
+        <help><!-- If true the Responsible Party on the CESA may change the Designated Beneficiary. --></help>
+        <label><!-- Change Designated Beneficiary Indicator --></label>
+        <name>LLC_BI__Change_Designated_Beneficiary_Indicator__c</name>
+    </fields>
+    <fields>
+        <help><!-- Specifies an institution&apos;s general policy regarding how often accrued earnings are added to the principal balance of an account for the purpose of computing additional earnings. --></help>
+        <label><!-- Compounding Frequency --></label>
+        <name>LLC_BI__Compounding_Frequency__c</name>
+        <picklistValues>
+            <masterLabel>Annually</masterLabel>
+            <translation><!-- Annually --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Continuous</masterLabel>
+            <translation><!-- Continuous --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Daily</masterLabel>
+            <translation><!-- Daily --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Every Other Week</masterLabel>
+            <translation><!-- Every Other Week --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Monthly</masterLabel>
+            <translation><!-- Monthly --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>No compounding/Simple</masterLabel>
+            <translation><!-- No compounding/Simple --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Quarterly</masterLabel>
+            <translation><!-- Quarterly --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Semiannually</masterLabel>
+            <translation><!-- Semiannually --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Semimonthly</masterLabel>
+            <translation><!-- Semimonthly --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Weekly</masterLabel>
+            <translation><!-- Weekly --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Contact --></label>
+        <name>LLC_BI__Contact__c</name>
+        <relationshipLabel><!-- Deposits --></relationshipLabel>
+    </fields>
+    <fields>
+        <help><!-- If true the deceased IRA owner&apos;s death occurred before his/her required beginning date (RBD). --></help>
+        <label><!-- Death Before Required Beginning --></label>
+        <name>LLC_BI__Death_Before_Required_Beginning__c</name>
+    </fields>
+    <fields>
+        <help><!-- The system populates this text field through a workflow. --></help>
+        <label><!-- Default App --></label>
+        <name>LLC_BI__Default_App__c</name>
+    </fields>
+    <fields>
+        <label><!-- Deposit Account Type --></label>
+        <name>LLC_BI__Deposit_Account_Type__c</name>
+        <picklistValues>
+            <masterLabel>Checking</masterLabel>
+            <translation><!-- Checking --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Money Market Checking</masterLabel>
+            <translation><!-- Money Market Checking --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Money Market Savings</masterLabel>
+            <translation><!-- Money Market Savings --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Savings</masterLabel>
+            <translation><!-- Savings --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Deposit Rate Structure --></label>
+        <name>LLC_BI__Deposit_Rate_Structure__c</name>
+        <relationshipLabel><!-- Deposits --></relationshipLabel>
+    </fields>
+    <fields>
+        <help><!-- A description of any safe deposit box keys that have been issued. --></help>
+        <label><!-- Description of Keys --></label>
+        <name>LLC_BI__Description_of_Keys__c</name>
+    </fields>
+    <fields>
+        <help><!-- Specifies the manner in which the distribution should be made. --></help>
+        <label><!-- Distribution Payment Type --></label>
+        <name>LLC_BI__Distribution_Payment_Type__c</name>
+        <picklistValues>
+            <masterLabel>Immediate</masterLabel>
+            <translation><!-- Immediate --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>None</masterLabel>
+            <translation><!-- None --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Other</masterLabel>
+            <translation><!-- Other --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Periodic</masterLabel>
+            <translation><!-- Periodic --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Periodic RMD as calculated (Traditional or SIMPLE only)</masterLabel>
+            <translation><!-- Periodic RMD as calculated (Traditional or SIMPLE only) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Total</masterLabel>
+            <translation><!-- Total --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- The starting date for the periodic distributions. --></help>
+        <label><!-- Distribution Start Date --></label>
+        <name>LLC_BI__Distribution_Start_Date__c</name>
+    </fields>
+    <fields>
+        <help><!-- The authority granted to the deputy/agent on the safe deposit box lease is a durable power continuing after legal incapacity and terminating only at death of the appointing renter. --></help>
+        <label><!-- Durable Agency --></label>
+        <name>LLC_BI__Durable_Agency__c</name>
+    </fields>
+    <fields>
+        <help><!-- Select this checkbox to give consent to receive electronic disclosures regarding periodic account statements. --></help>
+        <label><!-- E Disclosures And Statement Consent --></label>
+        <name>LLC_BI__E_Disclosures_And_Statement_Consent__c</name>
+    </fields>
+    <fields>
+        <help><!-- Select this checkbox if the Electronic Procedure Disclosure should include disclosures for electronic documents and notices. This content also automatically populates in the disclosure if previously included in the associated Terms and Conditions policy. --></help>
+        <label><!-- Electronic Notice Delivery Consent --></label>
+        <name>LLC_BI__Electronic_Notice_Delivery_Consent__c</name>
+    </fields>
+    <fields>
+        <help><!-- This field specifies when a deposit belongs to an employee of the financial institution. --></help>
+        <label><!-- Employee Deposit --></label>
+        <name>LLC_BI__Employee_Deposit__c</name>
+    </fields>
+    <fields>
+        <help><!-- The system automatically populates this checkbox when the deposit translation needs portal-enabled documents. --></help>
+        <label><!-- Enable Portal Documents --></label>
+        <name>LLC_BI__Enable_Portal_Documents__c</name>
+    </fields>
+    <fields>
+        <help><!-- Select this field if the account type or account holder is excluded from coverage under the Minnesota Transaction Account Application Disclosure requirement. This is only applicable to users in Minnesota. --></help>
+        <label><!-- Exclude Transaction Account Disclosure --></label>
+        <name>LLC_BI__Exclude_Transaction_Account_Disclosure__c</name>
+    </fields>
+    <fields>
+        <help><!-- Select the authorized signer for your financial institution. --></help>
+        <label><!-- Financial Institution Authorized Signer --></label>
+        <name>LLC_BI__Financial_Institution_Authorized_Signer__c</name>
+        <relationshipLabel><!-- Deposits --></relationshipLabel>
+    </fields>
+    <fields>
+        <help><!-- The year in which the five year period will end. --></help>
+        <label><!-- Five Year Period Ends Year --></label>
+        <name>LLC_BI__Five_Year_Period_Ends_Year__c</name>
+    </fields>
+    <fields>
+        <help><!-- Specifies the frequency of the periodic distributions. --></help>
+        <label><!-- Frequency of Distributions --></label>
+        <name>LLC_BI__Frequency_of_Distributions__c</name>
+        <picklistValues>
+            <masterLabel>Annual</masterLabel>
+            <translation><!-- Annual --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Monthly</masterLabel>
+            <translation><!-- Monthly --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Other</masterLabel>
+            <translation><!-- Other --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Quarterly</masterLabel>
+            <translation><!-- Quarterly --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Funding Amount --></label>
+        <name>LLC_BI__Funding_Amount__c</name>
+    </fields>
+    <fields>
+        <label><!-- Funding Method --></label>
+        <name>LLC_BI__Funding_Method__c</name>
+        <relationshipLabel><!-- Deposits --></relationshipLabel>
+    </fields>
+    <fields>
+        <help><!-- If true the IRA is self-directed. --></help>
+        <label><!-- IRA is Self-Directed --></label>
+        <name>LLC_BI__IRA_Is_Self_Directed__c</name>
+    </fields>
+    <fields>
+        <help><!-- Select the tax-favored account (TFA) type. --></help>
+        <label><!-- TFA Plan Type --></label>
+        <name>LLC_BI__IRA_Plan_Type__c</name>
+        <picklistValues>
+            <masterLabel>Coverdell Education Savings Account</masterLabel>
+            <translation><!-- Coverdell Education Savings Account --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Health Savings Account</masterLabel>
+            <translation><!-- Health Savings Account --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Roth Beneficiary IRA</masterLabel>
+            <translation><!-- Roth Beneficiary IRA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Roth IRA</masterLabel>
+            <translation><!-- Roth IRA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SIMPLE IRA</masterLabel>
+            <translation><!-- SIMPLE IRA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Traditional Beneficiary IRA</masterLabel>
+            <translation><!-- Traditional Beneficiary IRA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Traditional IRA</masterLabel>
+            <translation><!-- Traditional IRA --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- The initial contribution amount of the assets being recharacterized. --></help>
+        <label><!-- IRA Recharacterization Initial Cont Amt --></label>
+        <name>LLC_BI__IRA_Recharacterization_Initial_Cont_Amt__c</name>
+    </fields>
+    <fields>
+        <help><!-- The initial contribution date of the assets being recharacterized. --></help>
+        <label><!-- IRA Recharacterization Initial Cont Date --></label>
+        <name>LLC_BI__IRA_Recharacterization_Initial_Cont_Date__c</name>
+    </fields>
+    <fields>
+        <help><!-- Specifies the type of recharacterization. --></help>
+        <label><!-- IRA Recharacterization Type --></label>
+        <name>LLC_BI__IRA_Recharacterization_Type__c</name>
+        <picklistValues>
+            <masterLabel>Erroneous rollover or transfer from Traditional to SIMPLE and back to Traditional</masterLabel>
+            <translation><!-- Erroneous rollover or transfer from Traditional to SIMPLE and back to Traditional --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Roth beneficiary direct rollover from an ERP to traditional beneficiary</masterLabel>
+            <translation><!-- Roth beneficiary direct rollover from an ERP to traditional beneficiary --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Roth conversion back to Traditional or SIMPLE</masterLabel>
+            <translation><!-- Roth conversion back to Traditional or SIMPLE --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Roth rollover or direct rollover from an ERP to Traditional</masterLabel>
+            <translation><!-- Roth rollover or direct rollover from an ERP to Traditional --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Roth to Traditional</masterLabel>
+            <translation><!-- Roth to Traditional --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Traditional to Roth</masterLabel>
+            <translation><!-- Traditional to Roth --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- This item indicates the name of the index tied to the variable rate account. --></help>
+        <label><!-- Index Name --></label>
+        <name>LLC_BI__Index_Name__c</name>
+    </fields>
+    <fields>
+        <help><!-- This indicates whether the plan is an inherited IRA. An IRA is inherited when the original owner of the IRA dies and ownership of the IRA passes to the named beneficiary of the original IRA. --></help>
+        <label><!-- Inherited IRA --></label>
+        <name>LLC_BI__Inherited_IRA__c</name>
+    </fields>
+    <fields>
+        <label><!-- Initial Deposit --></label>
+        <name>LLC_BI__Initial_Deposit__c</name>
+    </fields>
+    <fields>
+        <help><!-- Specifies what kind of rate is used to determine the initial rate of interest on the account. --></help>
+        <label><!-- Initial Interest Rate Type --></label>
+        <name>LLC_BI__Initial_Interest_Rate_Type__c</name>
+        <picklistValues>
+            <masterLabel>Fixed</masterLabel>
+            <translation><!-- Fixed --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Variable</masterLabel>
+            <translation><!-- Variable --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- The initial interest rate on the account. --></help>
+        <label><!-- Initial Interest Rate --></label>
+        <name>LLC_BI__Initial_Interest_Rate__c</name>
+    </fields>
+    <fields>
+        <help><!-- If true an initial rate (i.e. a teaser rate) was applied to the account. --></help>
+        <label><!-- Initial Rate Indicator --></label>
+        <name>LLC_BI__Initial_Rate_Indicator__c</name>
+    </fields>
+    <fields>
+        <help><!-- The percentage that is added to the index rate to determine the initial (teaser) rate. --></help>
+        <label><!-- Initial Rate Margin --></label>
+        <name>LLC_BI__Initial_Rate_Margin__c</name>
+    </fields>
+    <fields>
+        <help><!-- The number of periods that the initial rate will be in effect. --></help>
+        <label><!-- Initial Rate Period Number --></label>
+        <name>LLC_BI__Initial_Rate_Period_Number__c</name>
+    </fields>
+    <fields>
+        <help><!-- Specifies the period of time the initial rate will apply. --></help>
+        <label><!-- Initial Rate Period Type --></label>
+        <name>LLC_BI__Initial_Rate_Period_Type__c</name>
+        <picklistValues>
+            <masterLabel>Day(s)</masterLabel>
+            <translation><!-- Day(s) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Month(s)</masterLabel>
+            <translation><!-- Month(s) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Week(s)</masterLabel>
+            <translation><!-- Week(s) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Year(s)</masterLabel>
+            <translation><!-- Year(s) --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Interest Payment Method Type --></label>
+        <name>LLC_BI__Interest_Payment_Method_Type__c</name>
+        <picklistValues>
+            <masterLabel>Add to Principal</masterLabel>
+            <translation><!-- Add to Principal --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Credit Account</masterLabel>
+            <translation><!-- Credit Account --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Credit Account at other financial institution</masterLabel>
+            <translation><!-- Credit Account at other financial institution --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Receive Periodic Check</masterLabel>
+            <translation><!-- Receive Periodic Check --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- If true a margin is used in determining the interest rate for a variable rate account. --></help>
+        <label><!-- Interest Rate Margin Indicator --></label>
+        <name>LLC_BI__Interest_Rate_Margin_Indicator__c</name>
+    </fields>
+    <fields>
+        <help><!-- This percentage that is added to the index to determine the applicable rate for the account. --></help>
+        <label><!-- Interest Rate Margin Percent --></label>
+        <name>LLC_BI__Interest_Rate_Margin_Percent__c</name>
+    </fields>
+    <fields>
+        <help><!-- Specifies the type of interest rate on the account. --></help>
+        <label><!-- Interest Rate Type --></label>
+        <name>LLC_BI__Interest_Rate_Type__c</name>
+        <picklistValues>
+            <masterLabel>Fixed</masterLabel>
+            <translation><!-- Fixed --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Variable</masterLabel>
+            <translation><!-- Variable --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- The interest rate of the deposit account. If an initial rate (i.e. a teaser) applies this is the rate that is in effect after the expiration of the teaser period. --></help>
+        <label><!-- Interest Rate --></label>
+        <name>LLC_BI__Interest_Rate__c</name>
+    </fields>
+    <fields>
+        <help><!-- If true accrued earnings are required to be distributed out of the account. --></help>
+        <label><!-- Interest Withdrawal Required --></label>
+        <name>LLC_BI__Interest_Withdrawal_Required__c</name>
+    </fields>
+    <fields>
+        <help><!-- When selected, this checkbox indicates that the Deposit is booked. --></help>
+        <label><!-- Is Booked --></label>
+        <name>LLC_BI__Is_Booked__c</name>
+    </fields>
+    <fields>
+        <label><!-- Is Superseded By --></label>
+        <name>LLC_BI__Is_Superseded_By__c</name>
+    </fields>
+    <fields>
+        <help><!-- Select this checkbox to indicate that a current deposit is under maintenance. --></help>
+        <label><!-- Is Under Maintenance --></label>
+        <name>LLC_BI__Is_Under_Maintenance__c</name>
+    </fields>
+    <fields>
+        <help><!-- Describes the other type of safe deposit box lease. --></help>
+        <label><!-- Lease Type Other --></label>
+        <name>LLC_BI__Lease_Type_Other__c</name>
+    </fields>
+    <fields>
+        <help><!-- The life expectancy factor as reflected in the appropriate IRS table. --></help>
+        <label><!-- Life Expectancy Factor --></label>
+        <name>LLC_BI__Life_Expectancy_Factor__c</name>
+    </fields>
+    <fields>
+        <help><!-- Street address used for a deposit product. This field is optional and can be populated during the Deposit Origination workflow. --></help>
+        <label><!-- Mailing Address --></label>
+        <name>LLC_BI__Mailing_Address__c</name>
+    </fields>
+    <fields>
+        <help><!-- City for address used for a deposit product. This field is optional and can be populated during the Deposit Origination workflow. --></help>
+        <label><!-- City --></label>
+        <name>LLC_BI__Mailing_City__c</name>
+    </fields>
+    <fields>
+        <help><!-- State for address used for a deposit product. This field is optional and can be populated during the Deposit Origination workflow. --></help>
+        <label><!-- State --></label>
+        <name>LLC_BI__Mailing_State__c</name>
+        <picklistValues>
+            <masterLabel>AK</masterLabel>
+            <translation><!-- AK --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>AL</masterLabel>
+            <translation><!-- AL --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>AR</masterLabel>
+            <translation><!-- AR --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>AZ</masterLabel>
+            <translation><!-- AZ --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CA</masterLabel>
+            <translation><!-- CA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CO</masterLabel>
+            <translation><!-- CO --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CT</masterLabel>
+            <translation><!-- CT --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>DC</masterLabel>
+            <translation><!-- DC --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>DE</masterLabel>
+            <translation><!-- DE --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>FL</masterLabel>
+            <translation><!-- FL --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>GA</masterLabel>
+            <translation><!-- GA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>HI</masterLabel>
+            <translation><!-- HI --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>IA</masterLabel>
+            <translation><!-- IA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ID</masterLabel>
+            <translation><!-- ID --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>IL</masterLabel>
+            <translation><!-- IL --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>IN</masterLabel>
+            <translation><!-- IN --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>KS</masterLabel>
+            <translation><!-- KS --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>KY</masterLabel>
+            <translation><!-- KY --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>LA</masterLabel>
+            <translation><!-- LA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MA</masterLabel>
+            <translation><!-- MA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MD</masterLabel>
+            <translation><!-- MD --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ME</masterLabel>
+            <translation><!-- ME --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MI</masterLabel>
+            <translation><!-- MI --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MN</masterLabel>
+            <translation><!-- MN --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MO</masterLabel>
+            <translation><!-- MO --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MS</masterLabel>
+            <translation><!-- MS --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MT</masterLabel>
+            <translation><!-- MT --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>NC</masterLabel>
+            <translation><!-- NC --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ND</masterLabel>
+            <translation><!-- ND --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>NE</masterLabel>
+            <translation><!-- NE --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>NH</masterLabel>
+            <translation><!-- NH --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>NJ</masterLabel>
+            <translation><!-- NJ --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>NM</masterLabel>
+            <translation><!-- NM --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>NV</masterLabel>
+            <translation><!-- NV --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>NY</masterLabel>
+            <translation><!-- NY --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>OH</masterLabel>
+            <translation><!-- OH --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>OK</masterLabel>
+            <translation><!-- OK --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>OR</masterLabel>
+            <translation><!-- OR --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>PA</masterLabel>
+            <translation><!-- PA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>RI</masterLabel>
+            <translation><!-- RI --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SC</masterLabel>
+            <translation><!-- SC --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SD</masterLabel>
+            <translation><!-- SD --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>TN</masterLabel>
+            <translation><!-- TN --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>TX</masterLabel>
+            <translation><!-- TX --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>UT</masterLabel>
+            <translation><!-- UT --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>VA</masterLabel>
+            <translation><!-- VA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>VI</masterLabel>
+            <translation><!-- VI --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>VT</masterLabel>
+            <translation><!-- VT --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>WA</masterLabel>
+            <translation><!-- WA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>WI</masterLabel>
+            <translation><!-- WI --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>WV</masterLabel>
+            <translation><!-- WV --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>WY</masterLabel>
+            <translation><!-- WY --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- Zip Code for address used for a deposit product. This field is optional and can be populated during the Deposit Origination workflow. --></help>
+        <label><!-- Zip Code --></label>
+        <name>LLC_BI__Mailing_Zip_Code__c</name>
+    </fields>
+    <fields>
+        <label><!-- Maturity Date --></label>
+        <name>LLC_BI__Maturity_Date__c</name>
+    </fields>
+    <fields>
+        <help><!-- The amount of the maximum tier balance that may be in the account in order to earn the disclosed rate for that tier. This is the high end dollar amount for a given tier. --></help>
+        <label><!-- Maximum Balance Tiered Account --></label>
+        <name>LLC_BI__Maximum_Balance_Tiered_Account__c</name>
+    </fields>
+    <fields>
+        <help><!-- If true a rate ceiling applies on the account. --></help>
+        <label><!-- Maximum Rate Indicator --></label>
+        <name>LLC_BI__Maximum_Rate_Indicator__c</name>
+    </fields>
+    <fields>
+        <help><!-- The highest interest rate that can apply to the account. --></help>
+        <label><!-- Maximum Rate --></label>
+        <name>LLC_BI__Maximum_Rate__c</name>
+    </fields>
+    <fields>
+        <help><!-- The amount of the minimum tier balance that must be in the account in order to earn the disclosed rate for that tier. This is the low end dollar amount for a given tier. --></help>
+        <label><!-- Minimum Balance Tiered Account --></label>
+        <name>LLC_BI__Minimum_Balance_Tiered_Account__c</name>
+    </fields>
+    <fields>
+        <help><!-- If true a rate floor applies to the account. --></help>
+        <label><!-- Minimum Rate Indicator --></label>
+        <name>LLC_BI__Minimum_Rate_Indicator__c</name>
+    </fields>
+    <fields>
+        <help><!-- The lowest interest rate that can apply to the account. --></help>
+        <label><!-- Minimum Rate --></label>
+        <name>LLC_BI__Minimum_Rate__c</name>
+    </fields>
+    <fields>
+        <help><!-- Specifies how often accrued earnings are added to the principal balance of an account for the purpose of computing additional earnings/interest/dividends.  Should only be passed if negotiation has occurred at account opening. --></help>
+        <label><!-- Negotiated Compounding Frequency --></label>
+        <name>LLC_BI__Negotiated_Compounding_Frequency__c</name>
+        <picklistValues>
+            <masterLabel>Annually</masterLabel>
+            <translation><!-- Annually --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Continuous</masterLabel>
+            <translation><!-- Continuous --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Daily</masterLabel>
+            <translation><!-- Daily --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Every Other Week</masterLabel>
+            <translation><!-- Every Other Week --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Monthly</masterLabel>
+            <translation><!-- Monthly --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>No compounding/Simple</masterLabel>
+            <translation><!-- No compounding/Simple --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Quarterly</masterLabel>
+            <translation><!-- Quarterly --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Semiannually</masterLabel>
+            <translation><!-- Semiannually --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Semimonthly</masterLabel>
+            <translation><!-- Semimonthly --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Weekly</masterLabel>
+            <translation><!-- Weekly --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Notes --></label>
+        <name>LLC_BI__Notes__c</name>
+    </fields>
+    <fields>
+        <help><!-- Specifies the alternate maturity of an account if any. This only applies to notice accounts. --></help>
+        <label><!-- Notice Account Maturity Type --></label>
+        <name>LLC_BI__Notice_Account_Maturity_Type__c</name>
+        <picklistValues>
+            <masterLabel>Date</masterLabel>
+            <translation><!-- Date --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>No Alternate Maturity</masterLabel>
+            <translation><!-- No Alternate Maturity --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Period</masterLabel>
+            <translation><!-- Period --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- The number of agents required to be present before any action can be made regarding the safe deposit box account. --></help>
+        <label><!-- Number of Agents Required --></label>
+        <name>LLC_BI__Number_of_Agents_Required__c</name>
+    </fields>
+    <fields>
+        <help><!-- The number of lessees (holders) required to be present in order to gain access to the safe deposit box. --></help>
+        <label><!-- Number of Lessees Required --></label>
+        <name>LLC_BI__Number_of_Lessees_Required__c</name>
+    </fields>
+    <fields>
+        <label><!-- Number of Required Signers --></label>
+        <name>LLC_BI__Number_of_Required_Signers__c</name>
+        <picklistValues>
+            <masterLabel>1 - One signature line</masterLabel>
+            <translation><!-- 1 - One signature line --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>10 - Ten signature lines</masterLabel>
+            <translation><!-- 10 - Ten signature lines --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>2 - Two signature lines</masterLabel>
+            <translation><!-- 2 - Two signature lines --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>3 - Three signature lines</masterLabel>
+            <translation><!-- 3 - Three signature lines --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>4 - Four signature lines</masterLabel>
+            <translation><!-- 4 - Four signature lines --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>5 - Five signature lines</masterLabel>
+            <translation><!-- 5 - Five signature lines --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>6 - Six signature lines</masterLabel>
+            <translation><!-- 6 - Six signature lines --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>7 - Seven signature lines</masterLabel>
+            <translation><!-- 7 - Seven signature lines --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>8 - Eight signature lines</masterLabel>
+            <translation><!-- 8 - Eight signature lines --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>9 - Nine signature lines</masterLabel>
+            <translation><!-- 9 - Nine signature lines --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Open Date --></label>
+        <name>LLC_BI__Open_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Originating Branch --></label>
+        <name>LLC_BI__Originating_Branch__c</name>
+        <relationshipLabel><!-- Deposits --></relationshipLabel>
+    </fields>
+    <fields>
+        <help><!-- A description of the other payment election type. --></help>
+        <label><!-- Other Distribution Payment --></label>
+        <name>LLC_BI__Other_Distribution_Payment__c</name>
+    </fields>
+    <fields>
+        <help><!-- A description of the other frequency of the periodic distributions. --></help>
+        <label><!-- Other Frequency of Distributions --></label>
+        <name>LLC_BI__Other_Frequency_of_Distributions__c</name>
+    </fields>
+    <fields>
+        <help><!-- If true consent to pay overdrafts out of the account is being given. --></help>
+        <label><!-- Overdraft Consent Indicator --></label>
+        <name>LLC_BI__Overdraft_Consent_Indicator__c</name>
+    </fields>
+    <fields>
+        <label><!-- Overdraft Services --></label>
+        <name>LLC_BI__Overdraft_Services__c</name>
+        <picklistValues>
+            <masterLabel>No Decision</masterLabel>
+            <translation><!-- No Decision --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Opt-In</masterLabel>
+            <translation><!-- Opt-In --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Opt-Out</masterLabel>
+            <translation><!-- Opt-Out --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- If true the party passed as the Owner of the IRA is deceased. Typically used in connection with situations where the IRA Owner has died but a formal Beneficiary IRA has not been created. --></help>
+        <label><!-- Owner Deceased Indicator --></label>
+        <name>LLC_BI__Owner_Deceased_Indicator__c</name>
+    </fields>
+    <fields>
+        <label><!-- Ownership Structure Type --></label>
+        <name>LLC_BI__Ownership_Structure_Type__c</name>
+        <relationshipLabel><!-- Deposits --></relationshipLabel>
+    </fields>
+    <fields>
+        <help><!-- The account number to be debited for the rental fee of the safe deposit box. --></help>
+        <label><!-- Payment Account Number --></label>
+        <name>LLC_BI__Payment_Account_Number__c</name>
+    </fields>
+    <fields>
+        <help><!-- If true there is a limit to the amount that a variable rate can change over successive specified periods. --></help>
+        <label><!-- Periodic Change Limit Indicator --></label>
+        <name>LLC_BI__Periodic_Change_Limit_Indicator__c</name>
+    </fields>
+    <fields>
+        <help><!-- The number of periods between periodic rate changes. --></help>
+        <label><!-- Periods Between Rate Changes --></label>
+        <name>LLC_BI__Periods_Between_Rate_Changes__c</name>
+    </fields>
+    <fields>
+        <help><!-- The day on which the regular interest rate takes effect on a variable rate account having a different/special initial or promotional rate (i.e. the date corresponding to the day after expiration of initial rate period for the specified account). --></help>
+        <label><!-- Permanent Rate Effective Date --></label>
+        <name>LLC_BI__Permanent_Rate_Effective_Date__c</name>
+    </fields>
+    <fields>
+        <help><!-- The plan number with the institution under which accounts will be opened for funds investment. Not the investment account number. The owner may have multiple plans with the institution when some funds can’t commingle, such as rolled over retirement funds. --></help>
+        <label><!-- Plan Number --></label>
+        <name>LLC_BI__Plan_Number__c</name>
+    </fields>
+    <fields>
+        <help><!-- If true the owner of the account that would otherwise automatically renew has determined at account opening to prevent renewals. --></help>
+        <label><!-- Prevent Automatic Renewal --></label>
+        <name>LLC_BI__Prevent_Automatic_Renewal__c</name>
+    </fields>
+    <fields>
+        <label><!-- Product Line --></label>
+        <name>LLC_BI__Product_Line__c</name>
+        <picklistValues>
+            <masterLabel>Business Deposits</masterLabel>
+            <translation><!-- Business Deposits --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Commercial Deposits</masterLabel>
+            <translation><!-- Commercial Deposits --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Consumer Deposits</masterLabel>
+            <translation><!-- Consumer Deposits --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Contract Services Deposits</masterLabel>
+            <translation><!-- Contract Services Deposits --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Public Funds Deposits</masterLabel>
+            <translation><!-- Public Funds Deposits --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Treasury Deposits</masterLabel>
+            <translation><!-- Treasury Deposits --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Product Package --></label>
+        <name>LLC_BI__Product_Package__c</name>
+        <relationshipLabel><!-- Deposits --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Product --></label>
+        <name>LLC_BI__Product_Reference__c</name>
+        <relationshipLabel><!-- Deposits --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Product Type --></label>
+        <name>LLC_BI__Product_Type__c</name>
+        <picklistValues>
+            <masterLabel>BaaS Deposits</masterLabel>
+            <translation><!-- BaaS Deposits --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Business Deposits</masterLabel>
+            <translation><!-- Business Deposits --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CDs</masterLabel>
+            <translation><!-- CDs --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CML Savings</masterLabel>
+            <translation><!-- CML Savings --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CML Transaction Products</masterLabel>
+            <translation><!-- CML Transaction Products --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CS Transaction Products</masterLabel>
+            <translation><!-- CS Transaction Products --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Checking</masterLabel>
+            <translation><!-- Checking --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Con Savings</masterLabel>
+            <translation><!-- Con Savings --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Con Time Deposits</masterLabel>
+            <translation><!-- Con Time Deposits --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Con Transaction Products</masterLabel>
+            <translation><!-- Con Transaction Products --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Contract Services</masterLabel>
+            <translation><!-- Contract Services --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Deposit Solutions</masterLabel>
+            <translation><!-- Deposit Solutions --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>HSAs</masterLabel>
+            <translation><!-- HSAs --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>IRAs</masterLabel>
+            <translation><!-- IRAs --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Other</masterLabel>
+            <translation><!-- Other --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>PF Savings</masterLabel>
+            <translation><!-- PF Savings --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>PF Time Deposits</masterLabel>
+            <translation><!-- PF Time Deposits --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>PF Transaction Products</masterLabel>
+            <translation><!-- PF Transaction Products --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Public Funds</masterLabel>
+            <translation><!-- Public Funds --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Savings</masterLabel>
+            <translation><!-- Savings --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Product --></label>
+        <name>LLC_BI__Product__c</name>
+        <picklistValues>
+            <masterLabel>12 Month</masterLabel>
+            <translation><!-- 12 Month --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>18 Month</masterLabel>
+            <translation><!-- 18 Month --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>24 Month</masterLabel>
+            <translation><!-- 24 Month --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>3 Month</masterLabel>
+            <translation><!-- 3 Month --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>36 Month</masterLabel>
+            <translation><!-- 36 Month --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>48 Month</masterLabel>
+            <translation><!-- 48 Month --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>6 Month</masterLabel>
+            <translation><!-- 6 Month --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>60 Month</masterLabel>
+            <translation><!-- 60 Month --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Business High Performance Savings</masterLabel>
+            <translation><!-- Business High Performance Savings --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Business Managed Money Market</masterLabel>
+            <translation><!-- Business Managed Money Market --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Business Money Market</masterLabel>
+            <translation><!-- Business Money Market --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Business Savings</masterLabel>
+            <translation><!-- Business Savings --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>C1 - Contract Services Checking</masterLabel>
+            <translation><!-- C1 - Contract Services Checking --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>C2 - Contract Services Interest Checking</masterLabel>
+            <translation><!-- C2 - Contract Services Interest Checking --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CA - Contstruction Account</masterLabel>
+            <translation><!-- CA - Contstruction Account --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CDARS</masterLabel>
+            <translation><!-- CDARS --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Certificates of Deposit</masterLabel>
+            <translation><!-- Certificates of Deposit --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Christmas Club</masterLabel>
+            <translation><!-- Christmas Club --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Club Savings</masterLabel>
+            <translation><!-- Club Savings --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Commercial Checking</masterLabel>
+            <translation><!-- Commercial Checking --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Community Checking</masterLabel>
+            <translation><!-- Community Checking --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Consumer Savings</masterLabel>
+            <translation><!-- Consumer Savings --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>DA - Aspire Checking</masterLabel>
+            <translation><!-- DA - Aspire Checking --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>FA - Fiduciary Checking</masterLabel>
+            <translation><!-- FA - Fiduciary Checking --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>HM - Health Savings Family</masterLabel>
+            <translation><!-- HM - Health Savings Family --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>HS - Health Savings Individual</masterLabel>
+            <translation><!-- HS - Health Savings Individual --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>IC - Investor&apos;s Club</masterLabel>
+            <translation><!-- IC - Investor&apos;s Club --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ICS</masterLabel>
+            <translation><!-- ICS --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>IRA</masterLabel>
+            <translation><!-- IRA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>IV - Veterans Checking</masterLabel>
+            <translation><!-- IV - Veterans Checking --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Interest Bearing Checking</masterLabel>
+            <translation><!-- Interest Bearing Checking --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>K1 - Kasasa Cash</masterLabel>
+            <translation><!-- K1 - Kasasa Cash --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>K2 - Kasasa Cash Back</masterLabel>
+            <translation><!-- K2 - Kasasa Cash Back --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>K3 - Kasasa Tunes</masterLabel>
+            <translation><!-- K3 - Kasasa Tunes --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>LT - Lawyer Trust</masterLabel>
+            <translation><!-- LT - Lawyer Trust --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MM - Money Market Plus</masterLabel>
+            <translation><!-- MM - Money Market Plus --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MX - Managed Money Market</masterLabel>
+            <translation><!-- MX - Managed Money Market --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Money Market Checking</masterLabel>
+            <translation><!-- Money Market Checking --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Non-Interest Bearing Checking</masterLabel>
+            <translation><!-- Non-Interest Bearing Checking --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>P4 - PF Managed Money Market</masterLabel>
+            <translation><!-- P4 - PF Managed Money Market --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>PB - PF Checking</masterLabel>
+            <translation><!-- PB - PF Checking --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>PF Savings</masterLabel>
+            <translation><!-- PF Savings --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>PH - PF High Performance Savings</masterLabel>
+            <translation><!-- PH - PF High Performance Savings --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>PM - PF Money Market</masterLabel>
+            <translation><!-- PM - PF Money Market --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>PX - PF Interest Checking</masterLabel>
+            <translation><!-- PX - PF Interest Checking --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Public Funds CD</masterLabel>
+            <translation><!-- Public Funds CD --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Public Funds Interest Bearing Checking</masterLabel>
+            <translation><!-- Public Funds Interest Bearing Checking --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Public Funds Non-Interest Bearing Checking</masterLabel>
+            <translation><!-- Public Funds Non-Interest Bearing Checking --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Public Funds Time Deposits</masterLabel>
+            <translation><!-- Public Funds Time Deposits --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Repurchase</masterLabel>
+            <translation><!-- Repurchase --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Repurchase Agreement</masterLabel>
+            <translation><!-- Repurchase Agreement --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>S2 - Select 2 checking</masterLabel>
+            <translation><!-- S2 - Select 2 checking --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SH - High Performance Savings</masterLabel>
+            <translation><!-- SH - High Performance Savings --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SS - Show Me Savers</masterLabel>
+            <translation><!-- SS - Show Me Savers --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ST - Student Checking</masterLabel>
+            <translation><!-- ST - Student Checking --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SV - Statement Savings</masterLabel>
+            <translation><!-- SV - Statement Savings --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Small Business Checking</masterLabel>
+            <translation><!-- Small Business Checking --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- The amount by which a variable rate may change within the specified term. --></help>
+        <label><!-- Rate Change Percent --></label>
+        <name>LLC_BI__Rate_Change_Percent__c</name>
+    </fields>
+    <fields>
+        <help><!-- Specifies the period of time between periodic rate changes. --></help>
+        <label><!-- Rate Change Period Type --></label>
+        <name>LLC_BI__Rate_Change_Period_Type__c</name>
+        <picklistValues>
+            <masterLabel>Day(s)</masterLabel>
+            <translation><!-- Day(s) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Month(s)</masterLabel>
+            <translation><!-- Month(s) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Week(s)</masterLabel>
+            <translation><!-- Week(s) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Year(s)</masterLabel>
+            <translation><!-- Year(s) --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- Specifies how often the variable rate can change. --></help>
+        <label><!-- Rate Change Period --></label>
+        <name>LLC_BI__Rate_Change_Period__c</name>
+        <picklistValues>
+            <masterLabel>Annually</masterLabel>
+            <translation><!-- Annually --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>At any time</masterLabel>
+            <translation><!-- At any time --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Daily</masterLabel>
+            <translation><!-- Daily --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Every Other Week</masterLabel>
+            <translation><!-- Every Other Week --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Monthly</masterLabel>
+            <translation><!-- Monthly --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Quarterly</masterLabel>
+            <translation><!-- Quarterly --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Semiannually</masterLabel>
+            <translation><!-- Semiannually --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Weekly</masterLabel>
+            <translation><!-- Weekly --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- The date the on-request account disclosure was created. The rate(s) are accurate as of this date. --></help>
+        <label><!-- Rate Disclosure As Of Date --></label>
+        <name>LLC_BI__Rate_Disclosure_As_Of_Date__c</name>
+    </fields>
+    <fields>
+        <help><!-- Specifies the rate type that will apply to the account. --></help>
+        <label><!-- Rate Type --></label>
+        <name>LLC_BI__Rate_Type__c</name>
+        <picklistValues>
+            <masterLabel>Exchange</masterLabel>
+            <translation><!-- Exchange --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Single</masterLabel>
+            <translation><!-- Single --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Stepped</masterLabel>
+            <translation><!-- Stepped --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Tier A</masterLabel>
+            <translation><!-- Tier A --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Tier B</masterLabel>
+            <translation><!-- Tier B --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Related Deposit --></label>
+        <name>LLC_BI__Related_Deposit__c</name>
+        <relationshipLabel><!-- Related Deposits --></relationshipLabel>
+    </fields>
+    <fields>
+        <help><!-- Enter the Relationship name associated to the Deposit under maintenance. --></help>
+        <label><!-- Relationship Under Maintenance --></label>
+        <name>LLC_BI__Relationship_Under_Maintenance__c</name>
+        <relationshipLabel><!-- Maintenanced Deposits --></relationshipLabel>
+    </fields>
+    <fields>
+        <help><!-- Specifies the interest rate at which the account will be renewed. --></help>
+        <label><!-- Renewal Interest Rate Type --></label>
+        <name>LLC_BI__Renewal_Interest_Rate_Type__c</name>
+        <picklistValues>
+            <masterLabel>Other</masterLabel>
+            <translation><!-- Other --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Same Basis</masterLabel>
+            <translation><!-- Same Basis --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- The new interest or dividend rate upon automatic renewal. --></help>
+        <label><!-- Renewal Interest Rate --></label>
+        <name>LLC_BI__Renewal_Interest_Rate__c</name>
+    </fields>
+    <fields>
+        <label><!-- -D Routing Number --></label>
+        <name>LLC_BI__Routing_Number__c</name>
+    </fields>
+    <fields>
+        <label><!-- Routing Number --></label>
+        <name>LLC_BI__Routing_Transit_Number__c</name>
+    </fields>
+    <fields>
+        <help><!-- The amount of any security deposit for the safe deposit box. --></help>
+        <label><!-- Security Deposit Amount --></label>
+        <name>LLC_BI__Security_Deposit_Amount__c</name>
+    </fields>
+    <fields>
+        <help><!-- The year in which single life expectancy payments must begin. --></help>
+        <label><!-- Single Life Expectancy Begins --></label>
+        <name>LLC_BI__Single_Life_Expectancy_Begins__c</name>
+    </fields>
+    <fields>
+        <help><!-- The size of the safe deposit box that is being leased. --></help>
+        <label><!-- Size of Box --></label>
+        <name>LLC_BI__Size_of_Box__c</name>
+    </fields>
+    <fields>
+        <label><!-- Stage --></label>
+        <name>LLC_BI__Stage__c</name>
+        <picklistValues>
+            <masterLabel>Active</masterLabel>
+            <translation><!-- Active --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Application</masterLabel>
+            <translation><!-- Application --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Booked</masterLabel>
+            <translation><!-- Booked --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Declined</masterLabel>
+            <translation><!-- Declined --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Qualification</masterLabel>
+            <translation><!-- Qualification --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Signature Signed</masterLabel>
+            <translation><!-- Signature Signed --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Status --></label>
+        <name>LLC_BI__Status__c</name>
+        <picklistValues>
+            <masterLabel>Booked</masterLabel>
+            <translation><!-- Booked --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Complete</masterLabel>
+            <translation><!-- Complete --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Declined</masterLabel>
+            <translation><!-- Declined --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Hold</masterLabel>
+            <translation><!-- Hold --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Open</masterLabel>
+            <translation><!-- Open --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Superseded</masterLabel>
+            <translation><!-- Superseded --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Withdrawn</masterLabel>
+            <translation><!-- Withdrawn --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- The interest rate that applies to the corresponding step. --></help>
+        <label><!-- Step Interest Rate --></label>
+        <name>LLC_BI__Step_Interest_Rate__c</name>
+    </fields>
+    <fields>
+        <help><!-- Specifies the period of time the corresponding step rate will apply. --></help>
+        <label><!-- Step Rate Period Type --></label>
+        <name>LLC_BI__Step_Rate_Period_Type__c</name>
+        <picklistValues>
+            <masterLabel>Day(s)</masterLabel>
+            <translation><!-- Day(s) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Month(s)</masterLabel>
+            <translation><!-- Month(s) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Week(s)</masterLabel>
+            <translation><!-- Week(s) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Year(s)</masterLabel>
+            <translation><!-- Year(s) --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- The number of periods that the corresponding stepped rate will apply. --></help>
+        <label><!-- Step Rate Period --></label>
+        <name>LLC_BI__Step_Rate_Period__c</name>
+    </fields>
+    <fields>
+        <help><!-- This indicates the type of activity that will be performed for the plan. --></help>
+        <label><!-- TFA Activity Type --></label>
+        <name>LLC_BI__TFA_Activity_Type__c</name>
+        <picklistValues>
+            <masterLabel>Manage or maintain an existing plan</masterLabel>
+            <translation><!-- Manage or maintain an existing plan --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Open a new plan</masterLabel>
+            <translation><!-- Open a new plan --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- The tax year of first Roth IRA contribution or conversion. --></help>
+        <label><!-- Tax Year of First Roth Contribution --></label>
+        <name>LLC_BI__Tax_Year_of_First_Roth_Contribution__c</name>
+    </fields>
+    <fields>
+        <label><!-- Term Type --></label>
+        <name>LLC_BI__Term_Type__c</name>
+        <picklistValues>
+            <masterLabel>day(s)</masterLabel>
+            <translation><!-- day(s) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>month(s)</masterLabel>
+            <translation><!-- month(s) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>quarter(s)</masterLabel>
+            <translation><!-- quarter(s) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>year(s)</masterLabel>
+            <translation><!-- year(s) --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- The interest rate that applies to the corresponding tier. --></help>
+        <label><!-- Tiered Interest Rate --></label>
+        <name>LLC_BI__Tiered_Interest_Rate__c</name>
+    </fields>
+    <fields>
+        <help><!-- The percentage that is added to (or subtracted from) the index to determine the applicable rate for a given account tier with variable rate tiers. --></help>
+        <label><!-- Tiered Margin Percent --></label>
+        <name>LLC_BI__Tiered_Margin_Percent__c</name>
+    </fields>
+    <fields>
+        <help><!-- A description of any vault keys that have been issued for the safe deposit box. --></help>
+        <label><!-- Vault Key Description --></label>
+        <name>LLC_BI__Vault_Key_Description__c</name>
+    </fields>
+    <fields>
+        <label><!-- isConvert --></label>
+        <name>LLC_BI__isConvert__c</name>
+    </fields>
+    <fields>
+        <label><!-- lookupKey --></label>
+        <name>LLC_BI__lookupKey__c</name>
+    </fields>
+    <validationRules>
+        <errorMessage><!-- The fields Interest Disbursement Account ID and Interest Disbursement Account Types must be populated. --></errorMessage>
+        <name>JHJX__Interest_Disposition_Deposit_To_Account</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Additional fields required when Disposition of Interest is set to Pay By ACH. --></errorMessage>
+        <name>JHJX__Interest_Disposition_Pay_By_ACH</name>
+    </validationRules>
+    <webLinks>
+        <label><!-- New_Deposit --></label>
+        <name>LLC_BI__New_Deposit</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Perform_Maintenance --></label>
+        <name>LLC_BI__Perform_Maintenance</name>
+    </webLinks>
+</CustomObjectTranslation>

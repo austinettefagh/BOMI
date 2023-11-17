@@ -1,0 +1,441 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fieldSets>
+        <label><!-- Use of Proceeds Table --></label>
+        <name>FS_Use_of_Proceeds_Table</name>
+    </fieldSets>
+    <fieldSets>
+        <label><!-- Use of Proceeds --></label>
+        <name>nSBA__LA_Use_Of_Proceeds</name>
+    </fieldSets>
+    <fieldSets>
+        <label><!-- SBA Boarding Sheet Use of Proceeds --></label>
+        <name>nSBA__SBA_Boarding_Sheet_Use_Of_Proceeds</name>
+    </fieldSets>
+    <fieldSets>
+        <label><!-- SBA Use --></label>
+        <name>nSBA__SBA_Use</name>
+    </fieldSets>
+    <fieldSets>
+        <label><!-- SBA Use --></label>
+        <name>nSBA__SBA_Use_Of_Proceeds</name>
+    </fieldSets>
+    <fieldSets>
+        <label><!-- SBEOC Use Of Proceeds --></label>
+        <name>nSBA__SBEOC_Use_Of_Proceeds</name>
+    </fieldSets>
+    <fields>
+        <label><!-- Borrower Injection --></label>
+        <name>CF_BorrowerInjection__c</name>
+        <relationshipLabel><!-- Use Of Proceeds --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Form 1920 Other Financing --></label>
+        <name>CF_Form1920OtherFinancing__c</name>
+    </fields>
+    <fields>
+        <label><!-- Total By Use --></label>
+        <name>CF_Total_By_Use__c</name>
+    </fields>
+    <fields>
+        <help><!-- This field is used to summarize the Amount Disbursed for Use of Proceeds. --></help>
+        <label><!-- Amount Disbursed --></label>
+        <name>nSBA__Amount_Disbursed__c</name>
+    </fields>
+    <fields>
+        <help><!-- This field is used to summarize the Applicant Equity Injection for Use of Proceeds. --></help>
+        <label><!-- Applicant Equity Injection --></label>
+        <name>nSBA__Applicant_Equity_Injection__c</name>
+    </fields>
+    <fields>
+        <label><!-- Application --></label>
+        <name>nSBA__Application__c</name>
+        <relationshipLabel><!-- Use Of Proceeds --></relationshipLabel>
+    </fields>
+    <fields>
+        <help><!-- This field is used to summarize the Authorized Amount Remaining for Use of Proceeds. --></help>
+        <label><!-- Authorized Amount Remaining --></label>
+        <name>nSBA__Authorized_Amount_Remaining__c</name>
+    </fields>
+    <fields>
+        <help><!-- Name of the Business being purchased. Use this field only for business/stock purchase use of proceeds types. This field is used in SBA Loan Authorization only. --></help>
+        <label><!-- Business Name --></label>
+        <name>nSBA__Business_Name__c</name>
+    </fields>
+    <fields>
+        <help><!-- Interim Loan use of Description. Use this field only for Pay Off Interim Loan use of proceeds type. This field is used in SBA Loan Authorization only. --></help>
+        <label><!-- Interim Loan Description --></label>
+        <name>nSBA__Description__c</name>
+    </fields>
+    <fields>
+        <help><!-- The dollar amount of proceeds to be used for the intangible assets in business/stock purchase. Use this field only for business/stock purchase use of proceeds types. This field is used in SBA Loan Authorization only. --></help>
+        <label><!-- Intangible Asset Amount --></label>
+        <name>nSBA__Intangible_Asset_Amount__c</name>
+    </fields>
+    <fields>
+        <help><!-- Intangible Assets Description. Use this field only for business/stock purchase use of proceeds types. This field is used in SBA Loan Authorization only. --></help>
+        <label><!-- Intangible Assets Description --></label>
+        <name>nSBA__Intangible_Asset_Description__c</name>
+    </fields>
+    <fields>
+        <help><!-- Name of Lender. Use this field only for Pay Off Interim Construction Loan not guaranteed by SBA use of proceeds type. This field is used in SBA Loan Authorization only. --></help>
+        <label><!-- Lender Name --></label>
+        <name>nSBA__Lender_Name__c</name>
+    </fields>
+    <fields>
+        <help><!-- Indicates how loan proceeds will be used. --></help>
+        <label>Project Cost Code</label>
+        <name>nSBA__Loan_Proceed_Type_Code__c</name>
+        <picklistValues>
+            <masterLabel>01</masterLabel>
+            <translation>Purchase Land Only</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>02</masterLabel>
+            <translation>Purchase Land and Improvements</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>03</masterLabel>
+            <translation>Purchase Improvements Only</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>04</masterLabel>
+            <translation>Construct a Building</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>05</masterLabel>
+            <translation>Add an Addition to an Existing Building</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>06</masterLabel>
+            <translation>Make Renovations to an Existing Building</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>07</masterLabel>
+            <translation>Pay Off Interim Construction Loan</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>08</masterLabel>
+            <translation>Pay Off Lender&apos;s Interim Loan</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>09</masterLabel>
+            <translation>Leasehold Improvements</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>10</masterLabel>
+            <translation>Purchase Equipment</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>11</masterLabel>
+            <translation>Purchase Furniture and Fixtures</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>12</masterLabel>
+            <translation>Purchase Inventory</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>13</masterLabel>
+            <translation>Pay Trade or Accounts Payable</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>14</masterLabel>
+            <translation>Pay Notes Payable - not Same Institution Debt</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>15</masterLabel>
+            <translation>Pay Notes Payable - Same Institution Debt</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>16</masterLabel>
+            <translation>Purchase Business - Asset Purchase</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>17</masterLabel>
+            <translation>Purchase Business - Stock Purchase</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>18</masterLabel>
+            <translation>Refinance SBA Loan - Same Institution Debt</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>19</masterLabel>
+            <translation>Working Capital</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>20</masterLabel>
+            <translation>SBA Guaranty Fee</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>21</masterLabel>
+            <translation>Other</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>22</masterLabel>
+            <translation>Refinance SBA Loan- not Same Institution Debt</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- Physical City of Real Estate. Use this field only for Real Estate use of proceeds types. This field is used in SBA Loan Authorization only. --></help>
+        <label><!-- City --></label>
+        <name>nSBA__Location_City__c</name>
+    </fields>
+    <fields>
+        <help><!-- Physical State of Real Estate. Use this field only for Real Estate use of proceeds types. This field is used in SBA Loan Authorization only. --></help>
+        <label><!-- State --></label>
+        <name>nSBA__Location_State__c</name>
+        <picklistValues>
+            <masterLabel>AK</masterLabel>
+            <translation><!-- AK --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>AL</masterLabel>
+            <translation><!-- AL --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>AR</masterLabel>
+            <translation><!-- AR --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>AZ</masterLabel>
+            <translation><!-- AZ --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CA</masterLabel>
+            <translation><!-- CA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CO</masterLabel>
+            <translation><!-- CO --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CT</masterLabel>
+            <translation><!-- CT --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>DE</masterLabel>
+            <translation><!-- DE --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>FL</masterLabel>
+            <translation><!-- FL --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>GA</masterLabel>
+            <translation><!-- GA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>HI</masterLabel>
+            <translation><!-- HI --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>IA</masterLabel>
+            <translation><!-- IA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ID</masterLabel>
+            <translation><!-- ID --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>IL</masterLabel>
+            <translation><!-- IL --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>IN</masterLabel>
+            <translation><!-- IN --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>KS</masterLabel>
+            <translation><!-- KS --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>KY</masterLabel>
+            <translation><!-- KY --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>LA</masterLabel>
+            <translation><!-- LA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MA</masterLabel>
+            <translation><!-- MA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MD</masterLabel>
+            <translation><!-- MD --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ME</masterLabel>
+            <translation><!-- ME --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MI</masterLabel>
+            <translation><!-- MI --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MN</masterLabel>
+            <translation><!-- MN --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MO</masterLabel>
+            <translation><!-- MO --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MS</masterLabel>
+            <translation><!-- MS --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MT</masterLabel>
+            <translation><!-- MT --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>NC</masterLabel>
+            <translation><!-- NC --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ND</masterLabel>
+            <translation><!-- ND --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>NE</masterLabel>
+            <translation><!-- NE --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>NH</masterLabel>
+            <translation><!-- NH --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>NJ</masterLabel>
+            <translation><!-- NJ --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>NM</masterLabel>
+            <translation><!-- NM --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>NV</masterLabel>
+            <translation><!-- NV --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>NY</masterLabel>
+            <translation><!-- NY --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>OH</masterLabel>
+            <translation><!-- OH --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>OK</masterLabel>
+            <translation><!-- OK --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>OR</masterLabel>
+            <translation><!-- OR --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>PA</masterLabel>
+            <translation><!-- PA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>RI</masterLabel>
+            <translation><!-- RI --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SC</masterLabel>
+            <translation><!-- SC --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SD</masterLabel>
+            <translation><!-- SD --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>TN</masterLabel>
+            <translation><!-- TN --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>TX</masterLabel>
+            <translation><!-- TX --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>UT</masterLabel>
+            <translation><!-- UT --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>VA</masterLabel>
+            <translation><!-- VA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>VT</masterLabel>
+            <translation><!-- VT --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>WA</masterLabel>
+            <translation><!-- WA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>WI</masterLabel>
+            <translation><!-- WI --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>WV</masterLabel>
+            <translation><!-- WV --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>WY</masterLabel>
+            <translation><!-- WY --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- Physical Street Address of Real Estate. Use this field only for Real Estate use of proceeds types. This field is used in SBA Loan Authorization only. --></help>
+        <label><!-- Street Address --></label>
+        <name>nSBA__Location_Street__c</name>
+    </fields>
+    <fields>
+        <help><!-- Physical ZIP Code of Real Estate. Use this field only for Real Estate use of proceeds types. This field is used in SBA Loan Authorization only. --></help>
+        <label><!-- ZIP Code --></label>
+        <name>nSBA__Location_Zipcode__c</name>
+    </fields>
+    <fields>
+        <help><!-- This field is used to provide the name of payee on SBA Form 1050. --></help>
+        <label><!-- Name of Payee --></label>
+        <name>nSBA__Name_of_Payee__c</name>
+    </fields>
+    <fields>
+        <help><!-- This field is used to summarize the Other Financing for Use of Proceeds. --></help>
+        <label><!-- Other Financing --></label>
+        <name>nSBA__Other_Financing__c</name>
+    </fields>
+    <fields>
+        <help><!-- The dollar amount of proceeds to be used for this particular use of proceeds. --></help>
+        <label>Project Amount</label>
+        <name>nSBA__Proceed_Amount__c</name>
+    </fields>
+    <fields>
+        <help><!-- Text that describes this particular use of loan proceeds. --></help>
+        <label>Other Project Cost Text</label>
+        <name>nSBA__Proceed_Other_Type_Text__c</name>
+    </fields>
+    <fields>
+        <label>Proceed Type Category</label>
+        <name>nSBA__Proceed_Type_Code__c</name>
+    </fields>
+    <fields>
+        <label><!-- Purchase Agreement Date --></label>
+        <name>nSBA__Purchase_Agreement_Date__c</name>
+    </fields>
+    <fields>
+        <help><!-- SBA Loan Number. Use this field only for refinance SBA Loan use of proceeds types. This field is used in SBA Loan Authorization only. --></help>
+        <label><!-- Refinanced Loan Number --></label>
+        <name>nSBA__SBA_Loan_Number__c</name>
+    </fields>
+    <fields>
+        <help><!-- Name of Stockholder selling all outstanding stock. Use this field only for business/stock purchase use of proceeds types. This field is used in SBA Loan Authorization only. --></help>
+        <label><!-- Stockholder Name --></label>
+        <name>nSBA__Stockholder_Name__c</name>
+    </fields>
+    <fields>
+        <help><!-- This field is used to summarize the Total for Line for Use of Proceeds. --></help>
+        <label><!-- Total for Line --></label>
+        <name>nSBA__Total_for_Line__c</name>
+    </fields>
+</CustomObjectTranslation>

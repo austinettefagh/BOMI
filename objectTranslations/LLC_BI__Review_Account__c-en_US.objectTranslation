@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <label><!-- Account --></label>
+        <name>LLC_BI__Account__c</name>
+        <relationshipLabel><!-- Review Accounts --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Data --></label>
+        <name>LLC_BI__Data__c</name>
+    </fields>
+    <fields>
+        <label><!-- Review --></label>
+        <name>LLC_BI__Review__c</name>
+        <relationshipLabel><!-- Review Accounts --></relationshipLabel>
+    </fields>
+</CustomObjectTranslation>

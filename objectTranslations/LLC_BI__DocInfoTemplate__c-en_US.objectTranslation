@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <label><!-- Document Class --></label>
+        <name>LLC_BI__DocClass__c</name>
+        <relationshipLabel><!-- DocInfo Templates --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Document Type --></label>
+        <name>LLC_BI__DocType__c</name>
+        <relationshipLabel><!-- DocInfo Templates --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Loan Type --></label>
+        <name>LLC_BI__LoanType__c</name>
+        <picklistValues>
+            <masterLabel>Acquisition</masterLabel>
+            <translation><!-- Acquisition --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Expansion</masterLabel>
+            <translation><!-- Expansion --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Refinance</masterLabel>
+            <translation><!-- Refinance --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Start-up</masterLabel>
+            <translation><!-- Start-up --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Stage --></label>
+        <name>LLC_BI__Stage__c</name>
+    </fields>
+</CustomObjectTranslation>

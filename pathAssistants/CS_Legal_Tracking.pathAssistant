@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PathAssistant xmlns="http://soap.sforce.com/2006/04/metadata">
+    <active>true</active>
+    <entityName>Case</entityName>
+    <fieldName>Status</fieldName>
+    <masterLabel>CS Legal Tracking</masterLabel>
+    <pathAssistantSteps>
+        <fieldNames>Probable_Merit__c</fieldNames>
+        <fieldNames>Potential_Maximum_Exposure__c</fieldNames>
+        <fieldNames>Litigation_Category__c</fieldNames>
+        <fieldNames>Litigation_Sub_Category__c</fieldNames>
+        <fieldNames>Litigation_Sub_Category_Other__c</fieldNames>
+        <info>&lt;p&gt;&amp;quot;&lt;b&gt;Active&lt;/b&gt;&amp;quot; cases are those that are currently in process and have not yet reached conclusion. &lt;/p&gt;</info>
+        <picklistValueName>Active</picklistValueName>
+    </pathAssistantSteps>
+    <pathAssistantSteps>
+        <fieldNames>Disposition_of_Legal_Case__c</fieldNames>
+        <fieldNames>Date_Addressed_or_Closed__c</fieldNames>
+        <fieldNames>Actual_Settlement_or_Damages__c</fieldNames>
+        <info>&lt;p&gt;&amp;quot;&lt;b&gt;Closed&lt;/b&gt;&amp;quot; cases have reached a resolution. &lt;/p&gt;</info>
+        <picklistValueName>Closed</picklistValueName>
+    </pathAssistantSteps>
+    <pathAssistantSteps>
+        <fieldNames>Date_Legal_Case_Opened__c</fieldNames>
+        <fieldNames>Date_Received_or_Served_to_TBOM__c</fieldNames>
+        <fieldNames>Origin</fieldNames>
+        <fieldNames>Legal_Request_Type__c</fieldNames>
+        <fieldNames>Legal_Case_Answer_Deadline__c</fieldNames>
+        <info>&lt;p&gt;&amp;quot;&lt;b&gt;New&lt;/b&gt;&amp;quot; cases are those that have been received for processing by the legal or complaint management team. Once a new case has been added to Salesforce and the documents uploaded to the files section, please tag the @ CS Legal group for them to be alerted to the new case. Once legal counsel has opened the case for initial notes and additional details to be added to the case, the status should be updated to &amp;quot;&lt;b&gt;Active&lt;/b&gt;&amp;quot; by legal counsel. &lt;/p&gt;</info>
+        <picklistValueName>New</picklistValueName>
+    </pathAssistantSteps>
+    <pathAssistantSteps>
+        <fieldNames>Trial_or_Hearing_Date__c</fieldNames>
+        <info>&lt;p&gt;&amp;quot;&lt;b&gt;Proceeding Scheduled&lt;/b&gt;&amp;quot; indicates that a trial or hearing date has been scheduled. &lt;/p&gt;</info>
+        <picklistValueName>Proceeding Scheduled</picklistValueName>
+    </pathAssistantSteps>
+    <pathAssistantSteps>
+        <info>&lt;p&gt;&amp;quot;&lt;b&gt;Re-Opened&lt;/b&gt;&amp;quot; cases are those that were previously closed and have since been re-opened. Case closure and re-opening can occur for a variety of reasons (ex. incorrect service of legal documents, clerical issues, etc.) &lt;/p&gt;</info>
+        <picklistValueName>Re-Opened</picklistValueName>
+    </pathAssistantSteps>
+    <recordTypeName>CS_Legal_Tracking</recordTypeName>
+</PathAssistant>

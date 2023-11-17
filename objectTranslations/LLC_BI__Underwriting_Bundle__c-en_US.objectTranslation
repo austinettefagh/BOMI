@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fieldSets>
+        <label><!-- Bundle_ID --></label>
+        <name>LLC_BI__Bundle_ID</name>
+    </fieldSets>
+    <fieldSets>
+        <label><!-- Upgradeable Fields --></label>
+        <name>LLC_BI__Upgradeable_Fields</name>
+    </fieldSets>
+    <fields>
+        <label><!-- Collateral --></label>
+        <name>LLC_BI__Collateral__c</name>
+        <relationshipLabel><!-- Underwriting Bundle --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Description --></label>
+        <name>LLC_BI__Description__c</name>
+    </fields>
+    <fields>
+        <label><!-- End Date --></label>
+        <name>LLC_BI__End_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Financial Consolidation --></label>
+        <name>LLC_BI__Financial_Consolidation__c</name>
+        <relationshipLabel><!-- Underwriting Bundle --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Import Data Source --></label>
+        <name>LLC_BI__Import_Data_Source__c</name>
+        <relationshipLabel><!-- Underwriting Bundle --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Is Consolidation --></label>
+        <name>LLC_BI__Is_Consolidation__c</name>
+    </fields>
+    <fields>
+        <help><!-- Disabled templates are not visible in the underwriting start application. --></help>
+        <label><!-- Is Disabled --></label>
+        <name>LLC_BI__Is_Disabled__c</name>
+    </fields>
+    <fields>
+        <help><!-- Determines whether or not this bundle can be used as a template for Relationship specific bundles. --></help>
+        <label><!-- Is Template --></label>
+        <name>LLC_BI__Is_Template__c</name>
+    </fields>
+    <fields>
+        <label><!-- Migration Target --></label>
+        <name>LLC_BI__Migration_Target__c</name>
+        <relationshipLabel><!-- Migration Target Bundles --></relationshipLabel>
+    </fields>
+    <fields>
+        <help><!-- The API name of the object this bundle is used on. --></help>
+        <label><!-- Object API Name --></label>
+        <name>LLC_BI__Object_API_Name__c</name>
+    </fields>
+    <fields>
+        <help><!-- Relationship to which this bundle belongs. --></help>
+        <label><!-- Relationship --></label>
+        <name>LLC_BI__Relationship__c</name>
+        <relationshipLabel><!-- Underwriting Bundle --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Selected Scale --></label>
+        <name>LLC_BI__Selected_Scale__c</name>
+        <picklistValues>
+            <masterLabel>$</masterLabel>
+            <translation><!-- $ --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>k</masterLabel>
+            <translation><!-- k --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>m</masterLabel>
+            <translation><!-- m --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- Indicates whether Footnotes will be displayed for its statements. --></help>
+        <label><!-- Show Footnotes --></label>
+        <name>LLC_BI__Show_Footnotes__c</name>
+    </fields>
+    <fields>
+        <label><!-- Source Template --></label>
+        <name>LLC_BI__Source_Template__c</name>
+        <relationshipLabel><!-- Cloned Bundles --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Start Date --></label>
+        <name>LLC_BI__Start_Date__c</name>
+    </fields>
+    <fields>
+        <help><!-- Populate this field to indicate the version of the template. For example, “1.5”. --></help>
+        <label><!-- Version --></label>
+        <name>LLC_BI__Version__c</name>
+    </fields>
+    <fields>
+        <label><!-- lookupKey --></label>
+        <name>LLC_BI__lookupKey__c</name>
+    </fields>
+    <validationRules>
+        <errorMessage><!-- - - DEPRECATED- -  If this bundle is new or a template, the start and end dates must be blank.  If the bundle is not new and not a template, the start and end dates must be set and must not reduce the period range of the statements. --></errorMessage>
+        <name>LLC_BI__Date_Range_Must_Be_Valid</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- A template cannot be related to a Relationship. --></errorMessage>
+        <name>LLC_BI__Template_Cannot_Have_Relationship</name>
+    </validationRules>
+    <webLinks>
+        <label><!-- ConvertBundleToTemplate --></label>
+        <name>nCRED__ConvertBundleToTemplate</name>
+    </webLinks>
+</CustomObjectTranslation>

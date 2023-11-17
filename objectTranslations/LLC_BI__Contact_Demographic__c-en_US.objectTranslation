@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <help><!-- Use this field to specify the applicant’s American Indian or Alaska Native race. --></help>
+        <label><!-- American Indian or Alaska Native --></label>
+        <name>LLC_BI__American_Indian_Alaska_Native__c</name>
+    </fields>
+    <fields>
+        <help><!-- Use this field to specify the applicant’s Asian race. --></help>
+        <label><!-- Asian Race --></label>
+        <name>LLC_BI__Asian_Race__c</name>
+    </fields>
+    <fields>
+        <help><!-- Use this field to specify the applicant’s Black or African American race. --></help>
+        <label><!-- Black or African American Race --></label>
+        <name>LLC_BI__Black_African_American_Race__c</name>
+    </fields>
+    <fields>
+        <help><!-- Enter the Contact record to which this Contact Demographic refers. --></help>
+        <label><!-- Contact --></label>
+        <name>LLC_BI__Contact__c</name>
+        <relationshipLabel><!-- Contact Demographics --></relationshipLabel>
+    </fields>
+    <fields>
+        <help><!-- Use this field to indicate the individual declined to provide their gender information. --></help>
+        <label><!-- Declined to Provide Gender --></label>
+        <name>LLC_BI__Declined_To_Provide_Gender__c</name>
+    </fields>
+    <fields>
+        <help><!-- Use this field to specify the applicant’s ethnicity if they select Other Hispanic or Latino Ethnicity. --></help>
+        <label><!-- Ethnicity Free Form --></label>
+        <name>LLC_BI__Ethnicity_FF__c</name>
+    </fields>
+    <fields>
+        <help><!-- Select value(s) to indicate the applicant’s ethnicity. --></help>
+        <label><!-- Ethnicity --></label>
+        <name>LLC_BI__Ethnicity__c</name>
+        <picklistValues>
+            <masterLabel>Cuban</masterLabel>
+            <translation><!-- Cuban --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Hispanic or Latino</masterLabel>
+            <translation><!-- Hispanic or Latino --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Mexican</masterLabel>
+            <translation><!-- Mexican --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Not Hispanic or Latino</masterLabel>
+            <translation><!-- Not Hispanic or Latino --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Other Hispanic or Latino Ethnicity</masterLabel>
+            <translation><!-- Other Hispanic or Latino Ethnicity --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Prefer not to answer</masterLabel>
+            <translation><!-- Prefer not to answer --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Puerto Rican</masterLabel>
+            <translation><!-- Puerto Rican --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- Use this field to specify the applicant’s gender. --></help>
+        <label><!-- Gender Free Form --></label>
+        <name>LLC_BI__Gender_FF__c</name>
+    </fields>
+    <fields>
+        <help><!-- Use this field to specify the applicant’s Pacific Islander race. --></help>
+        <label><!-- Pacific Islander Race --></label>
+        <name>LLC_BI__Pacific_Islander_Race__c</name>
+    </fields>
+    <fields>
+        <help><!-- Select value(s) to indicate the applicant’s race. --></help>
+        <label><!-- Race --></label>
+        <name>LLC_BI__Race__c</name>
+        <picklistValues>
+            <masterLabel>African American</masterLabel>
+            <translation><!-- African American --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>American Indian or Alaska Native</masterLabel>
+            <translation><!-- American Indian or Alaska Native --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Asian</masterLabel>
+            <translation><!-- Asian --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Asian Indian</masterLabel>
+            <translation><!-- Asian Indian --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Black or African American</masterLabel>
+            <translation><!-- Black or African American --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Chinese</masterLabel>
+            <translation><!-- Chinese --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Ethiopian</masterLabel>
+            <translation><!-- Ethiopian --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Filipino</masterLabel>
+            <translation><!-- Filipino --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Guamanian or Chamorro</masterLabel>
+            <translation><!-- Guamanian or Chamorro --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Haitian</masterLabel>
+            <translation><!-- Haitian --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Jamaican</masterLabel>
+            <translation><!-- Jamaican --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Japanese</masterLabel>
+            <translation><!-- Japanese --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Korean</masterLabel>
+            <translation><!-- Korean --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Native Hawaiian</masterLabel>
+            <translation><!-- Native Hawaiian --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Native Hawaiian or Other Pacific Islander</masterLabel>
+            <translation><!-- Native Hawaiian or Other Pacific Islander --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Nigerian</masterLabel>
+            <translation><!-- Nigerian --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Other Asian Race</masterLabel>
+            <translation><!-- Other Asian Race --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Other Black or African American Race</masterLabel>
+            <translation><!-- Other Black or African American Race --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Other Pacific Islander Race</masterLabel>
+            <translation><!-- Other Pacific Islander Race --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Prefer not to answer</masterLabel>
+            <translation><!-- Prefer not to answer --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Samoan</masterLabel>
+            <translation><!-- Samoan --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Somali</masterLabel>
+            <translation><!-- Somali --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Vietnamese</masterLabel>
+            <translation><!-- Vietnamese --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>White</masterLabel>
+            <translation><!-- White --></translation>
+        </picklistValues>
+    </fields>
+</CustomObjectTranslation>

@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>LaserPro Field Mapping</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>LaserPro Field Mappings</value>
+    </caseValues>
+    <fields>
+        <help><!-- Enable the label by checking this box --></help>
+        <label><!-- Active --></label>
+        <name>Active__c</name>
+    </fields>
+    <fields>
+        <help><!-- Override the Pertains To object and pull data from Account --></help>
+        <label><!-- Data Resides on Account Object --></label>
+        <name>Data_Resides_on_Account_Object__c</name>
+    </fields>
+    <fields>
+        <help><!-- What field should this value be pulled from? --></help>
+        <label><!-- Field API Name --></label>
+        <name>Field_API_Name__c</name>
+    </fields>
+    <fields>
+        <help><!-- Key Value pair for translating the nCino value to the desired laserpro value. Separated by a carrige returns. For example;
+A=B
+C=D
+E=F --></help>
+        <label><!-- Field Value Translation --></label>
+        <name>Field_Value_Translation__c</name>
+    </fields>
+    <fields>
+        <help><!-- Enter the SOQL to be included if you need to filter out certain data from your &apos;Data resides on object&quot;. For example if you only want to include certain Legal Entities that are borrowers only --></help>
+        <label><!-- Filter Criteria --></label>
+        <name>Filter_Criteria__c</name>
+    </fields>
+    <fields>
+        <help><!-- What is the LaserPro Mapping to be used? --></help>
+        <label><!-- LaserPro Extract Data Label --></label>
+        <name>LaserPro_Extract_Data_Label__c</name>
+    </fields>
+    <fields>
+        <help><!-- Enter the API name for the object this data element pertains to. Only populate this field if you are adding a label to the extract. Can be left blank if you&apos;re ONLY removing the label. --></help>
+        <label><!-- Pertains to Object API --></label>
+        <name>Pertains_to_Object_API__c</name>
+    </fields>
+    <fields>
+        <label><!-- Relationship to Account --></label>
+        <name>Relationship_to_Account__c</name>
+    </fields>
+    <fields>
+        <help><!-- Removes the managed package value from the extract. Required if adding your own custom label in it&apos;s place. --></help>
+        <label><!-- Remove Managed Package Label --></label>
+        <name>Remove_Value_from_Extract__c</name>
+    </fields>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <label><!-- Document Class --></label>
+        <name>LLC_BI__DocClass__c</name>
+        <relationshipLabel><!-- DocInfos --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Document Type --></label>
+        <name>LLC_BI__DocType__c</name>
+        <relationshipLabel><!-- DocInfos --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- attachmentId --></label>
+        <name>LLC_BI__attachmentId__c</name>
+    </fields>
+    <fields>
+        <label><!-- fileSize --></label>
+        <name>LLC_BI__fileSize__c</name>
+    </fields>
+    <fields>
+        <label><!-- isFolder --></label>
+        <name>LLC_BI__isFolder__c</name>
+    </fields>
+    <fields>
+        <label><!-- ownerObjectId --></label>
+        <name>LLC_BI__ownerObjectId__c</name>
+    </fields>
+    <fields>
+        <label><!-- parentId --></label>
+        <name>LLC_BI__parentId__c</name>
+    </fields>
+    <fields>
+        <label><!-- version --></label>
+        <name>LLC_BI__version__c</name>
+    </fields>
+    <webLinks>
+        <label><!-- docManager --></label>
+        <name>LLC_BI__docManager</name>
+    </webLinks>
+</CustomObjectTranslation>

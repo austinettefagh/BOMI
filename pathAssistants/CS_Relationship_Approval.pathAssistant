@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PathAssistant xmlns="http://soap.sforce.com/2006/04/metadata">
+    <active>true</active>
+    <entityName>Case</entityName>
+    <fieldName>Status</fieldName>
+    <masterLabel>CS Relationship Approval</masterLabel>
+    <pathAssistantSteps>
+        <fieldNames>TBOM_Approval_Date__c</fieldNames>
+        <info>&lt;p&gt;&lt;b&gt;&amp;quot;Approved&amp;quot;&lt;/b&gt; indicates that the collateral item has been approved by the appropriate tier approvers at TBOM.&lt;/p&gt;</info>
+        <picklistValueName>Approved</picklistValueName>
+    </pathAssistantSteps>
+    <pathAssistantSteps>
+        <fieldNames>Final_Outcome_of_Review__c</fieldNames>
+        <fieldNames>Relationship_Notified_of_Outcome__c</fieldNames>
+        <info>&lt;p&gt;&lt;b&gt;&amp;quot;Closed&amp;quot;&lt;/b&gt; indicates the approval process is complete and the relationship has been notified of the approval, rejection of the approval request, or the case has been withdrawn by the relationship. Approval submitter (i.e. relationship manager) must update &lt;b&gt;&amp;quot;Final Outcome of Review&amp;quot;&lt;/b&gt; field prior to closing the case.&lt;/p&gt;</info>
+        <picklistValueName>Closed</picklistValueName>
+    </pathAssistantSteps>
+    <pathAssistantSteps>
+        <fieldNames>Date_Additional_Feedback_Received__c</fieldNames>
+        <info>&lt;p&gt;&lt;b&gt;&amp;quot;Feedback in Review&amp;quot;&lt;/b&gt; indicates that TBOM has received feedback from the relationship and the approver&amp;#39;s need to review and either provide additional feedback/questions for the relationship &lt;u&gt;or&lt;/u&gt; approve the collateral item.&lt;/p&gt;</info>
+        <picklistValueName>Feedback in Review</picklistValueName>
+    </pathAssistantSteps>
+    <pathAssistantSteps>
+        <fieldNames>Collateral_Item__c</fieldNames>
+        <fieldNames>New_Material__c</fieldNames>
+        <fieldNames>Description_of_Collateral_Changes__c</fieldNames>
+        <info>&lt;p&gt;&lt;b&gt;&amp;quot;New&amp;quot;&lt;/b&gt; approvals are those from the relationship where the approvers did not have (or do not yet have) questions/comments for the relationship.&lt;/p&gt;</info>
+        <picklistValueName>New</picklistValueName>
+    </pathAssistantSteps>
+    <pathAssistantSteps>
+        <fieldNames>Collateral_Item__c</fieldNames>
+        <fieldNames>New_Material__c</fieldNames>
+        <fieldNames>Description_of_Collateral_Changes__c</fieldNames>
+        <info>&lt;p&gt;&lt;b&gt;New Approval Preparation&lt;/b&gt; indicates that the case is being prepared to be submitted for approval - including any follow ups to the relationship prior to approval submission request. If the case is ready to be submitted for approval, a User will &lt;b&gt;change the status to &amp;quot;New&amp;quot;&lt;/b&gt; and &lt;b&gt;tag &lt;/b&gt;the applicable &lt;b&gt;T1 or T2-T3 approver group&lt;/b&gt; (@group name) in case &lt;b&gt;Chatter&lt;/b&gt;. If an additional TBOM SME review is required, please tag those individual reviewers by tagging the individual user (@ user name) in case Chatter. &lt;/p&gt;</info>
+        <picklistValueName>New Approval Preparation</picklistValueName>
+    </pathAssistantSteps>
+    <pathAssistantSteps>
+        <fieldNames>Returned_To_Relationship__c</fieldNames>
+        <info>&lt;p&gt;&lt;b&gt;&amp;quot;With Relationship&amp;quot;&lt;/b&gt; indicates that questions/feedback have been provided to the relationship (or TBOM internal department for Corserv marketing as applicable) and we have not yet been provided with a response to the approver&amp;#39;s questions.&lt;/p&gt;</info>
+        <picklistValueName>With Relationship</picklistValueName>
+    </pathAssistantSteps>
+    <recordTypeName>CS_Relationship_Approval</recordTypeName>
+</PathAssistant>

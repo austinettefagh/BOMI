@@ -1,0 +1,282 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Flow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <apiVersion>57.0</apiVersion>
+    <assignments>
+        <name>Add_Cash_Pledged</name>
+        <label>Add Cash Pledged</label>
+        <locationX>138</locationX>
+        <locationY>827</locationY>
+        <assignmentItems>
+            <assignToReference>CashPledged</assignToReference>
+            <operator>Add</operator>
+            <value>
+                <elementReference>Loop_over_Collateral_Pledge_Records.LLC_BI__Amount_Pledged__c</elementReference>
+            </value>
+        </assignmentItems>
+        <connector>
+            <targetReference>Loop_over_Collateral_Pledge_Records</targetReference>
+        </connector>
+    </assignments>
+    <assignments>
+        <name>subtract_current_pledge</name>
+        <label>subtract current pledge</label>
+        <locationX>50</locationX>
+        <locationY>1103</locationY>
+        <assignmentItems>
+            <assignToReference>CashPledged</assignToReference>
+            <operator>Subtract</operator>
+            <value>
+                <elementReference>$Record.LLC_BI__Amount_Pledged__c</elementReference>
+            </value>
+        </assignmentItems>
+        <connector>
+            <targetReference>Is_Loan_Fully_cash_Secured</targetReference>
+        </connector>
+    </assignments>
+    <decisions>
+        <name>Check_Financial_Pledge</name>
+        <label>Check Financial Pledge</label>
+        <locationX>270</locationX>
+        <locationY>719</locationY>
+        <defaultConnector>
+            <targetReference>Loop_over_Collateral_Pledge_Records</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
+        <rules>
+            <name>IS_Financial</name>
+            <conditionLogic>1 AND (2 OR 3 OR 4)</conditionLogic>
+            <conditions>
+                <leftValueReference>Loop_over_Collateral_Pledge_Records.LLC_BI__Collateral__r.LLC_BI__Collateral_Type__r.LLC_BI__Type__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Financial Instruments/ Possessory</stringValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>Loop_over_Collateral_Pledge_Records.LLC_BI__Collateral__r.LLC_BI__Collateral_Type__r.LLC_BI__Subtype__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Savings Account</stringValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>Loop_over_Collateral_Pledge_Records.LLC_BI__Collateral__r.LLC_BI__Collateral_Type__r.LLC_BI__Subtype__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Certificate of Deposit</stringValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>Loop_over_Collateral_Pledge_Records.LLC_BI__Collateral__r.LLC_BI__Collateral_Type__r.LLC_BI__Subtype__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Checking/Money Market Account</stringValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Add_Cash_Pledged</targetReference>
+            </connector>
+            <label>IS Financial</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <name>Check_for_Loan_Stage</name>
+        <label>Check for Loan Stage</label>
+        <locationX>248</locationX>
+        <locationY>395</locationY>
+        <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
+        <rules>
+            <name>Filter_Loans_which_are_not_Booked_and_Complete</name>
+            <conditionLogic>1 AND 2 AND 3 AND 4 AND (5 OR 6 OR 7)</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record.LLC_BI__Loan__r.LLC_BI__Stage__c</leftValueReference>
+                <operator>NotEqualTo</operator>
+                <rightValue>
+                    <stringValue>Booked</stringValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.LLC_BI__Loan__r.LLC_BI__Stage__c</leftValueReference>
+                <operator>NotEqualTo</operator>
+                <rightValue>
+                    <stringValue>Complete</stringValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.LLC_BI__Loan__r.CF_Loan_Fully_Cash_Secured__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <booleanValue>true</booleanValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.LLC_BI__Collateral__r.LLC_BI__Collateral_Type__r.LLC_BI__Type__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Financial Instruments/ Possessory</stringValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.CF_Collateral_SubType_Fetch__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Savings Account</stringValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.CF_Collateral_SubType_Fetch__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Certificate of Deposit</stringValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.CF_Collateral_SubType_Fetch__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Checking/Money Market Account</stringValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Collateral_Pledged_Records</targetReference>
+            </connector>
+            <label>Filter Loans which are not Booked and Complete</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <name>Is_Loan_Fully_cash_Secured</name>
+        <label>Is Loan Fully cash Secured</label>
+        <locationX>50</locationX>
+        <locationY>1211</locationY>
+        <defaultConnector>
+            <targetReference>Update_Loan</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
+        <rules>
+            <name>Fully_Cash_Secured</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record.LLC_BI__Loan__r.LLC_BI__Amount__c</leftValueReference>
+                <operator>LessThanOrEqualTo</operator>
+                <rightValue>
+                    <elementReference>CashPledged</elementReference>
+                </rightValue>
+            </conditions>
+            <label>Fully Cash Secured</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <name>No_Flow</name>
+        <label>No Flow</label>
+        <locationX>479</locationX>
+        <locationY>287</locationY>
+        <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
+        <rules>
+            <name>No_Workflow</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>$User.No_Workflow__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <booleanValue>false</booleanValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Check_for_Loan_Stage</targetReference>
+            </connector>
+            <label>No Workflow</label>
+        </rules>
+    </decisions>
+    <environments>Default</environments>
+    <interviewLabel>COL_ {!$Flow.CurrentDateTime}</interviewLabel>
+    <label>COL_DELETE_PLEDGE_FLOW</label>
+    <loops>
+        <name>Loop_over_Collateral_Pledge_Records</name>
+        <label>Loop over Collateral Pledge Records</label>
+        <locationX>50</locationX>
+        <locationY>611</locationY>
+        <collectionReference>Collateral_Pledged_Records</collectionReference>
+        <iterationOrder>Asc</iterationOrder>
+        <nextValueConnector>
+            <targetReference>Check_Financial_Pledge</targetReference>
+        </nextValueConnector>
+        <noMoreValuesConnector>
+            <targetReference>subtract_current_pledge</targetReference>
+        </noMoreValuesConnector>
+    </loops>
+    <processMetadataValues>
+        <name>BuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>CanvasMode</name>
+        <value>
+            <stringValue>AUTO_LAYOUT_CANVAS</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>OriginBuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processType>AutoLaunchedFlow</processType>
+    <recordLookups>
+        <name>Collateral_Pledged_Records</name>
+        <label>Collateral Pledged Records</label>
+        <locationX>50</locationX>
+        <locationY>503</locationY>
+        <assignNullValuesIfNoRecordsFound>false</assignNullValuesIfNoRecordsFound>
+        <connector>
+            <targetReference>Loop_over_Collateral_Pledge_Records</targetReference>
+        </connector>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <field>LLC_BI__Loan__c</field>
+            <operator>EqualTo</operator>
+            <value>
+                <elementReference>$Record.LLC_BI__Loan__r.Id</elementReference>
+            </value>
+        </filters>
+        <getFirstRecordOnly>false</getFirstRecordOnly>
+        <object>LLC_BI__Loan_Collateral2__c</object>
+        <storeOutputAutomatically>true</storeOutputAutomatically>
+    </recordLookups>
+    <recordUpdates>
+        <name>Update_Loan</name>
+        <label>Update Loan</label>
+        <locationX>182</locationX>
+        <locationY>1319</locationY>
+        <inputAssignments>
+            <field>CF_Loan_Fully_Cash_Secured__c</field>
+            <value>
+                <booleanValue>false</booleanValue>
+            </value>
+        </inputAssignments>
+        <inputReference>$Record.LLC_BI__Loan__r</inputReference>
+    </recordUpdates>
+    <start>
+        <locationX>353</locationX>
+        <locationY>0</locationY>
+        <connector>
+            <targetReference>No_Flow</targetReference>
+        </connector>
+        <object>LLC_BI__Loan_Collateral2__c</object>
+        <recordTriggerType>Delete</recordTriggerType>
+        <triggerType>RecordBeforeDelete</triggerType>
+    </start>
+    <status>Active</status>
+    <variables>
+        <name>CashPledged</name>
+        <dataType>Currency</dataType>
+        <isCollection>false</isCollection>
+        <isInput>false</isInput>
+        <isOutput>false</isOutput>
+        <scale>2</scale>
+        <value>
+            <numberValue>0.0</numberValue>
+        </value>
+    </variables>
+</Flow>

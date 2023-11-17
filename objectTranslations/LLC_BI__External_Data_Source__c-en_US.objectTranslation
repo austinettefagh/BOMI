@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <label><!-- Data Category --></label>
+        <name>LLC_BI__Data_Category__c</name>
+    </fields>
+    <fields>
+        <label><!-- Data Source --></label>
+        <name>LLC_BI__Data_Source__c</name>
+    </fields>
+    <fields>
+        <label><!-- Matrix --></label>
+        <name>LLC_BI__Matrix__c</name>
+        <relationshipLabel><!-- External Data Sources --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- lookupKey --></label>
+        <name>LLC_BI__lookupKey__c</name>
+    </fields>
+</CustomObjectTranslation>

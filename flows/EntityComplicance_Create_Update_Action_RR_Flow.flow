@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Flow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <apiVersion>59.0</apiVersion>
+    <decisions>
+        <description>Is this a new or existing Entity Compliance record</description>
+        <name>Is_New_Record</name>
+        <label>Is New Record?</label>
+        <locationX>182</locationX>
+        <locationY>323</locationY>
+        <defaultConnectorLabel>Record Changed</defaultConnectorLabel>
+        <rules>
+            <name>Is_New</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>IsNewRecord</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <booleanValue>true</booleanValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Update_Entity_Involvement</targetReference>
+            </connector>
+            <label>Is New</label>
+        </rules>
+    </decisions>
+    <description>Update Entity Compliance and related records when record created or updated.
+2023.10.27 - Update Entity Involvement Record to indicate Entity Compliance Record created</description>
+    <environments>Default</environments>
+    <formulas>
+        <description>Is this a new record</description>
+        <name>IsNewRecord</name>
+        <dataType>Boolean</dataType>
+        <expression>ISNEW()</expression>
+    </formulas>
+    <interviewLabel>EntityComplicance_CreateUpdate {!$Flow.CurrentDateTime}</interviewLabel>
+    <label>EntityComplicance_Create_Update_Action_RR_Flow</label>
+    <processMetadataValues>
+        <name>BuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>CanvasMode</name>
+        <value>
+            <stringValue>AUTO_LAYOUT_CANVAS</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>OriginBuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processType>AutoLaunchedFlow</processType>
+    <recordUpdates>
+        <description>Update Entity Involvement record to indicate Entity Compliance Created</description>
+        <name>Update_Entity_Involvement</name>
+        <label>Update Entity Involvement</label>
+        <locationX>50</locationX>
+        <locationY>431</locationY>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <field>Id</field>
+            <operator>EqualTo</operator>
+            <value>
+                <elementReference>$Record.LLC_BI__Entity__r.Id</elementReference>
+            </value>
+        </filters>
+        <inputAssignments>
+            <field>CF_Entity_Compliance_Created__c</field>
+            <value>
+                <booleanValue>true</booleanValue>
+            </value>
+        </inputAssignments>
+        <object>LLC_BI__Legal_Entities__c</object>
+    </recordUpdates>
+    <start>
+        <locationX>56</locationX>
+        <locationY>0</locationY>
+        <connector>
+            <targetReference>Is_New_Record</targetReference>
+        </connector>
+        <filterFormula>{!$Permission.No_Flow} =  FALSE</filterFormula>
+        <object>LLC_BI__Entity_Compliance__c</object>
+        <recordTriggerType>CreateAndUpdate</recordTriggerType>
+        <triggerType>RecordAfterSave</triggerType>
+    </start>
+    <status>Active</status>
+</Flow>

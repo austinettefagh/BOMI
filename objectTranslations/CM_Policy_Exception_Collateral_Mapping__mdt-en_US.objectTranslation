@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Policy Exception - Policy Mapping</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Policy Exception - Policy Mappings</value>
+    </caseValues>
+    <fields>
+        <label><!-- Collateral Code --></label>
+        <name>CF_Collateral_Code__c</name>
+    </fields>
+    <fields>
+        <label><!-- PE Name --></label>
+        <name>CF_PE_Name__c</name>
+    </fields>
+    <fields>
+        <label><!-- PE Type --></label>
+        <name>CF_PE_Type__c</name>
+    </fields>
+    <fields>
+        <label><!-- Statutory LTV Limit --></label>
+        <name>CF_Statutory_LTV_Limit__c</name>
+    </fields>
+    <fields>
+        <label><!-- Default Policy --></label>
+        <name>Default_Policy__c</name>
+    </fields>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

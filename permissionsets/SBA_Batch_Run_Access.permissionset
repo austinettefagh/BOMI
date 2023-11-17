@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PermissionSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customPermissions>
+        <enabled>true</enabled>
+        <name>eTran_Access</name>
+    </customPermissions>
+    <customPermissions>
+        <enabled>true</enabled>
+        <name>eTran_Batch_Access</name>
+    </customPermissions>
+    <description>This permission set gives the ability to run the loan status batch.</description>
+    <hasActivationRequired>false</hasActivationRequired>
+    <label>SBA Batch Run Access</label>
+</PermissionSet>

@@ -1,0 +1,699 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fieldSets>
+        <label><!-- Third Party Management Loan UI --></label>
+        <name>FS_Third_Party_Management_Loan_UI</name>
+    </fieldSets>
+    <fields>
+        <label><!-- Additional Info Included --></label>
+        <name>Additional_Info_Included__c</name>
+        <picklistValues>
+            <masterLabel>Const Estimates</masterLabel>
+            <translation><!-- Const Estimates --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Legal Description</masterLabel>
+            <translation><!-- Legal Description --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Plans &amp; Specs</masterLabel>
+            <translation><!-- Plans &amp; Specs --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Sales Contract</masterLabel>
+            <translation><!-- Sales Contract --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Appraiser Contact Phone Number --></label>
+        <name>Appraiser_Contact_Phone_Number__c</name>
+    </fields>
+    <fields>
+        <label><!-- Amount of Invoice --></label>
+        <name>CF_Amount_of_Invoice__c</name>
+    </fields>
+    <fields>
+        <label><!-- Appraisal Review Region --></label>
+        <name>CF_Appraisal_Review_Region__c</name>
+        <picklistValues>
+            <masterLabel>Central Region 4</masterLabel>
+            <translation><!-- Central Region 4 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Southeast Region 1</masterLabel>
+            <translation><!-- Southeast Region 1 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Southeast Region 2</masterLabel>
+            <translation><!-- Southeast Region 2 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Southwest Region 3</masterLabel>
+            <translation><!-- Southwest Region 3 --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Bank Appraiser Name --></label>
+        <name>CF_Bank_Appraiser_Name__c</name>
+        <relationshipLabel><!-- Service Mgmt (Bank Appraiser Name) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Date Appraisal Review Completed --></label>
+        <name>CF_Date_Appraisal_Review_Completed__c</name>
+    </fields>
+    <fields>
+        <label><!-- Date Documents Ordered --></label>
+        <name>CF_Date_Documents_Ordered__c</name>
+    </fields>
+    <fields>
+        <label><!-- Date Documents Received --></label>
+        <name>CF_Date_Documents_Received__c</name>
+    </fields>
+    <fields>
+        <label><!-- Date Invoice Paid --></label>
+        <name>CF_Date_Invoice_Paid__c</name>
+    </fields>
+    <fields>
+        <label><!-- Date of Signature &amp; Report --></label>
+        <name>CF_Date_of_Signature_Report__c</name>
+    </fields>
+    <fields>
+        <label><!-- Effective Date of Appraisal --></label>
+        <name>CF_Effective_Date_of_Appraisal__c</name>
+    </fields>
+    <fields>
+        <label><!-- Invoice Status --></label>
+        <name>CF_Invoice_Status__c</name>
+        <picklistValues>
+            <masterLabel>Invoice Not Received</masterLabel>
+            <translation><!-- Invoice Not Received --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Invoice Not Sent to A/P</masterLabel>
+            <translation><!-- Invoice Not Sent to A/P --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Invoice Paid</masterLabel>
+            <translation><!-- Invoice Paid --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Invoice Sent to A/P</masterLabel>
+            <translation><!-- Invoice Sent to A/P --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Loan Assistant --></label>
+        <name>CF_Loan_Assistant__c</name>
+        <relationshipLabel><!-- Service Mgmt (Loan Assistant) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Relationship Manager --></label>
+        <name>CF_Relationship_Manager__c</name>
+        <relationshipLabel><!-- Service Mgmt (Relationship Manager) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Street Address --></label>
+        <name>CF_Street_Address__c</name>
+    </fields>
+    <fields>
+        <label><!-- Today&apos;s Date --></label>
+        <name>CF_Today_s_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Vendor Rating Comments --></label>
+        <name>CF_Vendor_Rating_Comments__c</name>
+    </fields>
+    <fields>
+        <label><!-- Vendor Rating --></label>
+        <name>CF_Vendor_Rating__c</name>
+        <picklistValues>
+            <masterLabel>satisfied</masterLabel>
+            <translation><!-- satisfied --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>unsatisfied</masterLabel>
+            <translation><!-- unsatisfied --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Contact for Appraiser --></label>
+        <name>Contact_for_Appraiser__c</name>
+    </fields>
+    <fields>
+        <help><!-- Enter the correct Account object lookup in this field. --></help>
+        <label><!-- Account --></label>
+        <name>LLC_BI__Account__c</name>
+        <relationshipLabel><!-- Service Mgmt --></relationshipLabel>
+    </fields>
+    <fields>
+        <help><!-- Enter the correct Collateral Mgmt object lookup in this field. --></help>
+        <label><!-- Collateral Mgmt --></label>
+        <name>LLC_BI__Collateral__c</name>
+        <relationshipLabel><!-- Service Mgmt --></relationshipLabel>
+    </fields>
+    <fields>
+        <help><!-- Enter the correct Contact object lookup in this field. --></help>
+        <label><!-- Contact --></label>
+        <name>LLC_BI__Contact__c</name>
+        <relationshipLabel><!-- Service Mgmt --></relationshipLabel>
+    </fields>
+    <fields>
+        <help><!-- Indicates the item being serviced. --></help>
+        <label><!-- Context Id --></label>
+        <name>LLC_BI__Context_Id__c</name>
+    </fields>
+    <fields>
+        <help><!-- Enter the related Service Mgmt object lookupKey in this field to determine the related Service Mgmt record. --></help>
+        <label><!-- Highest --></label>
+        <name>LLC_BI__Highest__c</name>
+        <relationshipLabel><!-- Service Mgmts (Highest) --></relationshipLabel>
+    </fields>
+    <fields>
+        <help><!-- Enter the correct Loan object lookup in this field. --></help>
+        <label><!-- Loan --></label>
+        <name>LLC_BI__Loan__c</name>
+        <relationshipLabel><!-- Service Mgmt --></relationshipLabel>
+    </fields>
+    <fields>
+        <help><!-- Enter the professional license number for the relationship, such as a mortgage or real estate broker license number. --></help>
+        <label><!-- Professional License Number (Firm) --></label>
+        <name>LLC_BI__Professional_License_Number_Firm__c</name>
+    </fields>
+    <fields>
+        <help><!-- Enter the professional license number for the individual, such as a mortgage or real estate broker license number. --></help>
+        <label><!-- Professional License Number (Individual) --></label>
+        <name>LLC_BI__Professional_License_Number_Individual__c</name>
+    </fields>
+    <fields>
+        <help><!-- Select the state in which the license is issued for the relationship. --></help>
+        <label><!-- Professional License State (Firm) --></label>
+        <name>LLC_BI__Professional_License_State_Firm__c</name>
+        <picklistValues>
+            <masterLabel>AK</masterLabel>
+            <translation><!-- AK --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>AL</masterLabel>
+            <translation><!-- AL --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>AR</masterLabel>
+            <translation><!-- AR --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>AZ</masterLabel>
+            <translation><!-- AZ --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CA</masterLabel>
+            <translation><!-- CA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CO</masterLabel>
+            <translation><!-- CO --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CT</masterLabel>
+            <translation><!-- CT --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>DC</masterLabel>
+            <translation><!-- DC --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>DE</masterLabel>
+            <translation><!-- DE --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>FL</masterLabel>
+            <translation><!-- FL --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>GA</masterLabel>
+            <translation><!-- GA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>HI</masterLabel>
+            <translation><!-- HI --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>IA</masterLabel>
+            <translation><!-- IA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ID</masterLabel>
+            <translation><!-- ID --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>IL</masterLabel>
+            <translation><!-- IL --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>IN</masterLabel>
+            <translation><!-- IN --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>KS</masterLabel>
+            <translation><!-- KS --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>KY</masterLabel>
+            <translation><!-- KY --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>LA</masterLabel>
+            <translation><!-- LA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MA</masterLabel>
+            <translation><!-- MA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MD</masterLabel>
+            <translation><!-- MD --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ME</masterLabel>
+            <translation><!-- ME --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MI</masterLabel>
+            <translation><!-- MI --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MN</masterLabel>
+            <translation><!-- MN --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MO</masterLabel>
+            <translation><!-- MO --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MS</masterLabel>
+            <translation><!-- MS --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MT</masterLabel>
+            <translation><!-- MT --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>NC</masterLabel>
+            <translation><!-- NC --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ND</masterLabel>
+            <translation><!-- ND --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>NE</masterLabel>
+            <translation><!-- NE --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>NH</masterLabel>
+            <translation><!-- NH --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>NJ</masterLabel>
+            <translation><!-- NJ --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>NM</masterLabel>
+            <translation><!-- NM --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>NV</masterLabel>
+            <translation><!-- NV --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>NY</masterLabel>
+            <translation><!-- NY --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>OH</masterLabel>
+            <translation><!-- OH --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>OK</masterLabel>
+            <translation><!-- OK --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>OR</masterLabel>
+            <translation><!-- OR --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>PA</masterLabel>
+            <translation><!-- PA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>RI</masterLabel>
+            <translation><!-- RI --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SC</masterLabel>
+            <translation><!-- SC --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SD</masterLabel>
+            <translation><!-- SD --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>TN</masterLabel>
+            <translation><!-- TN --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>TX</masterLabel>
+            <translation><!-- TX --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>UT</masterLabel>
+            <translation><!-- UT --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>VA</masterLabel>
+            <translation><!-- VA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>VT</masterLabel>
+            <translation><!-- VT --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>WA</masterLabel>
+            <translation><!-- WA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>WI</masterLabel>
+            <translation><!-- WI --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>WV</masterLabel>
+            <translation><!-- WV --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>WY</masterLabel>
+            <translation><!-- WY --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- Select the state in which the professional license is issued for the individual. --></help>
+        <label><!-- Professional License State (Individual) --></label>
+        <name>LLC_BI__Professional_License_State_Individual__c</name>
+        <picklistValues>
+            <masterLabel>AK</masterLabel>
+            <translation><!-- AK --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>AL</masterLabel>
+            <translation><!-- AL --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>AR</masterLabel>
+            <translation><!-- AR --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>AZ</masterLabel>
+            <translation><!-- AZ --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CA</masterLabel>
+            <translation><!-- CA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CO</masterLabel>
+            <translation><!-- CO --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CT</masterLabel>
+            <translation><!-- CT --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>DC</masterLabel>
+            <translation><!-- DC --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>DE</masterLabel>
+            <translation><!-- DE --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>FL</masterLabel>
+            <translation><!-- FL --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>GA</masterLabel>
+            <translation><!-- GA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>HI</masterLabel>
+            <translation><!-- HI --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>IA</masterLabel>
+            <translation><!-- IA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ID</masterLabel>
+            <translation><!-- ID --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>IL</masterLabel>
+            <translation><!-- IL --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>IN</masterLabel>
+            <translation><!-- IN --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>KS</masterLabel>
+            <translation><!-- KS --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>KY</masterLabel>
+            <translation><!-- KY --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>LA</masterLabel>
+            <translation><!-- LA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MA</masterLabel>
+            <translation><!-- MA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MD</masterLabel>
+            <translation><!-- MD --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ME</masterLabel>
+            <translation><!-- ME --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MI</masterLabel>
+            <translation><!-- MI --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MN</masterLabel>
+            <translation><!-- MN --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MO</masterLabel>
+            <translation><!-- MO --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MS</masterLabel>
+            <translation><!-- MS --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MT</masterLabel>
+            <translation><!-- MT --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>NC</masterLabel>
+            <translation><!-- NC --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ND</masterLabel>
+            <translation><!-- ND --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>NE</masterLabel>
+            <translation><!-- NE --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>NH</masterLabel>
+            <translation><!-- NH --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>NJ</masterLabel>
+            <translation><!-- NJ --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>NM</masterLabel>
+            <translation><!-- NM --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>NV</masterLabel>
+            <translation><!-- NV --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>NY</masterLabel>
+            <translation><!-- NY --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>OH</masterLabel>
+            <translation><!-- OH --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>OK</masterLabel>
+            <translation><!-- OK --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>OR</masterLabel>
+            <translation><!-- OR --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>PA</masterLabel>
+            <translation><!-- PA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>RI</masterLabel>
+            <translation><!-- RI --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SC</masterLabel>
+            <translation><!-- SC --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SD</masterLabel>
+            <translation><!-- SD --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>TN</masterLabel>
+            <translation><!-- TN --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>TX</masterLabel>
+            <translation><!-- TX --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>UT</masterLabel>
+            <translation><!-- UT --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>VA</masterLabel>
+            <translation><!-- VA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>VT</masterLabel>
+            <translation><!-- VT --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>WA</masterLabel>
+            <translation><!-- WA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>WI</masterLabel>
+            <translation><!-- WI --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>WV</masterLabel>
+            <translation><!-- WV --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>WY</masterLabel>
+            <translation><!-- WY --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- Enter the Contact lookup providing the service in this field. --></help>
+        <label><!-- Service Provider Contact --></label>
+        <name>LLC_BI__Service_Provider_Contact__c</name>
+        <relationshipLabel><!-- Service Mgmt Provided --></relationshipLabel>
+    </fields>
+    <fields>
+        <help><!-- Enter the Account lookup providing the service in this field. --></help>
+        <label><!-- Service Provider --></label>
+        <name>LLC_BI__Service_Provider__c</name>
+        <relationshipLabel><!-- Service Mgmt Provided --></relationshipLabel>
+    </fields>
+    <fields>
+        <help><!-- Select the correct Service type. --></help>
+        <label><!-- Service Type --></label>
+        <name>LLC_BI__Service_Type__c</name>
+        <picklistValues>
+            <masterLabel>Appraiser</masterLabel>
+            <translation><!-- Appraiser --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Attorney</masterLabel>
+            <translation><!-- Attorney --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>General Contractor</masterLabel>
+            <translation><!-- General Contractor --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Inspector</masterLabel>
+            <translation><!-- Inspector --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Insurance</masterLabel>
+            <translation><!-- Insurance --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Third Party Reports</masterLabel>
+            <translation><!-- Third Party Reports --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- Select the appropriate status of the service. --></help>
+        <label><!-- Status --></label>
+        <name>LLC_BI__Status__c</name>
+        <picklistValues>
+            <masterLabel>Appraisal Cancelled</masterLabel>
+            <translation><!-- Appraisal Cancelled --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Appraisal ordered</masterLabel>
+            <translation><!-- Appraisal ordered --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Appraisal received</masterLabel>
+            <translation><!-- Appraisal received --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Appraisal review complete</masterLabel>
+            <translation><!-- Appraisal review complete --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Evaluation complete</masterLabel>
+            <translation><!-- Evaluation complete --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Evaluation to be done</masterLabel>
+            <translation><!-- Evaluation to be done --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>LA Notifies AR</masterLabel>
+            <translation><!-- LA Notifies AR --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Questions on appraisal</masterLabel>
+            <translation><!-- Questions on appraisal --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Waiting on borrower docs</masterLabel>
+            <translation><!-- Waiting on borrower docs --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Notes --></label>
+        <name>Notes__c</name>
+    </fields>
+    <validationRules>
+        <errorMessage><!-- Service type should be appraiser to update Appraisal Review Region --></errorMessage>
+        <name>Service_Mgmt_VR_Appraisal_Review_Region</name>
+    </validationRules>
+    <webLinks>
+        <label><!-- Service_Mgmt_Generate_Forms --></label>
+        <name>Service_Mgmt_Generate_Forms</name>
+    </webLinks>
+</CustomObjectTranslation>

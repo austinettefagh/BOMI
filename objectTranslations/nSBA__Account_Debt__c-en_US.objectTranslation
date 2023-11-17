@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fieldSets>
+        <label><!-- Form 1920 Account Debt --></label>
+        <name>nSBA__Form_1920_Account_Debt</name>
+    </fieldSets>
+    <fields>
+        <label><!-- Account --></label>
+        <name>nSBA__Account__c</name>
+        <relationshipLabel><!-- Account Debt --></relationshipLabel>
+    </fields>
+    <fields>
+        <help><!-- Loan Amount --></help>
+        <label><!-- Loan Amount --></label>
+        <name>nSBA__Loan_Amount__c</name>
+    </fields>
+    <fields>
+        <help><!-- Loan Term in Months --></help>
+        <label><!-- Loan Term Months --></label>
+        <name>nSBA__Loan_Term_Months__c</name>
+    </fields>
+    <fields>
+        <help><!-- SBA Approval Date --></help>
+        <label><!-- SBA Approval Date --></label>
+        <name>nSBA__SBA_Approval_Date__c</name>
+    </fields>
+    <fields>
+        <help><!-- SBA Guaranty Percentage --></help>
+        <label><!-- SBA Guaranty Percentage --></label>
+        <name>nSBA__SBA_Guaranty_Percentage__c</name>
+    </fields>
+    <fields>
+        <help><!-- SBA Loan Number --></help>
+        <label><!-- SBA Loan Number --></label>
+        <name>nSBA__SBA_Loan_Number__c</name>
+    </fields>
+</CustomObjectTranslation>

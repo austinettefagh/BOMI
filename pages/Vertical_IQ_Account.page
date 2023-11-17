@@ -1,0 +1,10 @@
+<apex:page standardController="Account" sidebar="false" >
+<!--
+<apex:iframe src="https://verticaliq.com/sfsearch?api_key=5d6ae51ef9126fdc22cf1cd2ddea0c9d&user={!User.FederationIdentifier}&naicscode={!Account.CF_Naics_Code__c}" scrolling="false"/>
+user=RWilliams@bankofmissouri.com&naicscode={!Account.CF_Naics_Code__c}
+-->
+
+<apex:iframe src="https://verticaliq.com/sfsearch?api_key=5d6ae51ef9126fdc22cf1cd2ddea0c9d&user={!$User.FederationIdentifier}&naicscode={!Account.CF_Naics_Code__c}" scrolling="true" height="1440px"/>
+
+
+</apex:page>

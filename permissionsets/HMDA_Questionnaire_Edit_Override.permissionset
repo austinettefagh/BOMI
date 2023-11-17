@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PermissionSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customPermissions>
+        <enabled>true</enabled>
+        <name>HMDA_Questionnaire_Edit_Override</name>
+    </customPermissions>
+    <description>A permission set that allows users to edit the HMDA questionnaire on a loan at any time in the process, including after booking.</description>
+    <hasActivationRequired>false</hasActivationRequired>
+    <label>HMDA_Questionnaire_Edit_Override</label>
+</PermissionSet>

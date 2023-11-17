@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <label><!-- Context --></label>
+        <name>nFORCE__Context__c</name>
+    </fields>
+    <fields>
+        <label><!-- Description --></label>
+        <name>nFORCE__Description__c</name>
+    </fields>
+    <fields>
+        <label><!-- IP Address --></label>
+        <name>nFORCE__IP_Address__c</name>
+    </fields>
+    <fields>
+        <label><!-- Log DateTime --></label>
+        <name>nFORCE__Log_DateTime__c</name>
+    </fields>
+    <fields>
+        <label><!-- Type --></label>
+        <name>nFORCE__Type__c</name>
+    </fields>
+    <fields>
+        <label><!-- User --></label>
+        <name>nFORCE__User__c</name>
+        <relationshipLabel><!-- Audit Logs --></relationshipLabel>
+    </fields>
+</CustomObjectTranslation>

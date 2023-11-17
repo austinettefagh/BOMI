@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <label><!-- Business Credit Report --></label>
+        <name>nXBI__Business_Credit_Report__c</name>
+        <relationshipLabel><!-- Business Credit Business Information --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Business Name --></label>
+        <name>nXBI__Business_Name__c</name>
+    </fields>
+    <fields>
+        <label><!-- City --></label>
+        <name>nXBI__City__c</name>
+    </fields>
+    <fields>
+        <label><!-- Phone --></label>
+        <name>nXBI__Phone__c</name>
+    </fields>
+    <fields>
+        <label><!-- SIC Code --></label>
+        <name>nXBI__SIC_Code__c</name>
+    </fields>
+    <fields>
+        <label><!-- SIC Description --></label>
+        <name>nXBI__SIC_Description__c</name>
+    </fields>
+    <fields>
+        <label><!-- State --></label>
+        <name>nXBI__State__c</name>
+    </fields>
+    <fields>
+        <label><!-- Street --></label>
+        <name>nXBI__Street__c</name>
+    </fields>
+    <fields>
+        <label><!-- Zip --></label>
+        <name>nXBI__Zip__c</name>
+    </fields>
+</CustomObjectTranslation>

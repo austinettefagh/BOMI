@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fieldSets>
+        <label><!-- Participations Loan UI --></label>
+        <name>FS_Participations_Loan_UI</name>
+    </fieldSets>
+    <fieldSets>
+        <label><!-- Counterparty Report --></label>
+        <name>LLC_BI__Counterparty_Report</name>
+    </fieldSets>
+    <fieldSets>
+        <label><!-- Credit Memo Standard Product Package --></label>
+        <name>LLC_BI__Standard_Product_Package_Credit_Memo</name>
+    </fieldSets>
+    <fieldSets>
+        <label><!-- Syndication Summary --></label>
+        <name>LLC_BI__Syndication_Summary</name>
+    </fieldSets>
+    <fieldSets>
+        <label><!-- Syndications Summary Row --></label>
+        <name>LLC_BI__Syndications_Summary_Row</name>
+    </fieldSets>
+    <fields>
+        <label><!-- Available Amount --></label>
+        <name>CF_Available_Amount__c</name>
+    </fields>
+    <fields>
+        <label><!-- Participation Record Type --></label>
+        <name>CF_Participation_Record_Type__c</name>
+        <picklistValues>
+            <masterLabel>Partial Charge Off</masterLabel>
+            <translation><!-- Partial Charge Off --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Sold</masterLabel>
+            <translation><!-- Sold --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Allocated Amount --></label>
+        <name>LLC_BI__Allocated_Amount__c</name>
+    </fields>
+    <fields>
+        <label><!-- Bank --></label>
+        <name>LLC_BI__Bank__c</name>
+        <picklistValues>
+            <masterLabel>Carolina Premier Bank</masterLabel>
+            <translation><!-- Carolina Premier Bank --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Commonwealth</masterLabel>
+            <translation><!-- Commonwealth --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Mountain First</masterLabel>
+            <translation><!-- Mountain First --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>NWFCU</masterLabel>
+            <translation><!-- NWFCU --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Commitment Amount --></label>
+        <name>LLC_BI__Commitment_Amount__c</name>
+    </fields>
+    <fields>
+        <label><!-- GTD Amount --></label>
+        <name>LLC_BI__GTD_Amount__c</name>
+    </fields>
+    <fields>
+        <label><!-- Invite Amount --></label>
+        <name>LLC_BI__Invite_Amount__c</name>
+    </fields>
+    <fields>
+        <label><!-- Is My Financial Institution --></label>
+        <name>LLC_BI__Is_My_Financial_Institution__c</name>
+    </fields>
+    <fields>
+        <label><!-- Loan --></label>
+        <name>LLC_BI__Loan__c</name>
+        <relationshipLabel><!-- Participations --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Participant --></label>
+        <name>LLC_BI__Participant__c</name>
+        <relationshipLabel><!-- Participations --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- % Participated --></label>
+        <name>LLC_BI__Participated__c</name>
+    </fields>
+    <fields>
+        <label><!-- Participation Amount --></label>
+        <name>LLC_BI__Participation_Amount__c</name>
+    </fields>
+    <fields>
+        <label><!-- -D Product Package --></label>
+        <name>LLC_BI__Product_Package__c</name>
+        <relationshipLabel><!-- Participations --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Role --></label>
+        <name>LLC_BI__Role__c</name>
+        <picklistValues>
+            <masterLabel>Administrative Agent</masterLabel>
+            <translation><!-- Administrative Agent --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Agent</masterLabel>
+            <translation><!-- Agent --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Book Runner</masterLabel>
+            <translation><!-- Book Runner --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Co-Agent</masterLabel>
+            <translation><!-- Co-Agent --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Participant</masterLabel>
+            <translation><!-- Participant --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- UNGTD Amount --></label>
+        <name>LLC_BI__UNGTD_Amount__c</name>
+    </fields>
+    <fields>
+        <label><!-- % Voting Rights --></label>
+        <name>LLC_BI__Voting_Percent__c</name>
+    </fields>
+    <fields>
+        <label><!-- Unique Identifier --></label>
+        <name>nMONITOR__Unique_Identifier__c</name>
+    </fields>
+</CustomObjectTranslation>

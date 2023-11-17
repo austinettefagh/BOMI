@@ -1,0 +1,8 @@
+<apex:page standardController="LLC_BI__Product_Package__c">
+<script>
+
+window.open("/apex/nFORMS__NewFormGenerator?Type=LLC_BI__Product_Package__c&id={!LLC_BI__Product_Package__c.Id}&form_purpose=Credit Memo","_self");
+
+</script>
+
+</apex:page>

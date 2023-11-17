@@ -1,0 +1,411 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <allowInChatterGroups>false</allowInChatterGroups>
+    <compactLayoutAssignment>SYSTEM</compactLayoutAssignment>
+    <deploymentStatus>Deployed</deploymentStatus>
+    <deprecated>false</deprecated>
+    <description>This object indicates the individual business activity that the system runs as part of a business process.</description>
+    <enableActivities>false</enableActivities>
+    <enableBulkApi>true</enableBulkApi>
+    <enableFeeds>false</enableFeeds>
+    <enableHistory>false</enableHistory>
+    <enableLicensing>false</enableLicensing>
+    <enableReports>false</enableReports>
+    <enableSearch>false</enableSearch>
+    <enableSharing>true</enableSharing>
+    <enableStreamingApi>true</enableStreamingApi>
+    <externalSharingModel>ControlledByParent</externalSharingModel>
+    <fields>
+        <fullName>nFORCE__Business_Process__c</fullName>
+        <deprecated>false</deprecated>
+        <description>The user populates this master-detail relationship field to indicate the business activity&apos;s corresponding business process.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Enter the name of the business process you want to associate with the business activity.</inlineHelpText>
+        <label>Business Process</label>
+        <referenceTo>nFORCE__Business_Process__c</referenceTo>
+        <relationshipLabel>Business Process Activities</relationshipLabel>
+        <relationshipName>Business_Process</relationshipName>
+        <relationshipOrder>0</relationshipOrder>
+        <reparentableMasterDetail>true</reparentableMasterDetail>
+        <trackTrending>false</trackTrending>
+        <type>MasterDetail</type>
+        <writeRequiresMasterRead>false</writeRequiresMasterRead>
+    </fields>
+    <fields>
+        <fullName>nFORCE__Chain_State_Data__c</fullName>
+        <defaultValue>false</defaultValue>
+        <deprecated>false</deprecated>
+        <description>The user populates this optional checkbox field to indicate if the state data from this business activity should be passed to the next business activity. By default, it is false.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>When set to true, this checkbox indicates that state data from this business activity should be passed to the next business activity.</inlineHelpText>
+        <label>Chain State Data</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>nFORCE__Description__c</fullName>
+        <deprecated>false</deprecated>
+        <description>The user populates this optional text field to indicate the description of the business activity. By default, it is blank.</description>
+        <encryptionScheme>None</encryptionScheme>
+        <externalId>false</externalId>
+        <inlineHelpText>This text field indicates the purpose of the business activity.</inlineHelpText>
+        <label>Description</label>
+        <length>255</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>nFORCE__Expected_Child_Count__c</fullName>
+        <defaultValue>0</defaultValue>
+        <deprecated>false</deprecated>
+        <description>The user populates this optional number field with the number of expected child business activities (success or error) the business activity parent has. By default, it is zero.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>This number field indicates how many expected child business activities this business activity has.</inlineHelpText>
+        <label>Expected Child Count</label>
+        <precision>4</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>nFORCE__FQCN__c</fullName>
+        <deprecated>false</deprecated>
+        <description>The user populates this required text field with the fully qualified class name of the business activity&apos;s handler.</description>
+        <encryptionScheme>None</encryptionScheme>
+        <externalId>false</externalId>
+        <inlineHelpText>This text field indicates the fully qualified class name of the business activity&apos;s handler.</inlineHelpText>
+        <label>Fully Qualified Class Name</label>
+        <length>255</length>
+        <required>true</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>nFORCE__Is_Scheduled_Single_Run__c</fullName>
+        <defaultValue>true</defaultValue>
+        <deprecated>false</deprecated>
+        <description>The user populates this optional checkbox field to indicate if the system should schedule the business activity for a single run.  If set to true, it will run once, otherwise it will run on a recurring basis. By default, it is true.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>This checkbox field indicates if the system should schedule the business activity to run once.</inlineHelpText>
+        <label>Is Scheduled Single Run</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>nFORCE__Is_Scheduled__c</fullName>
+        <defaultValue>false</defaultValue>
+        <deprecated>false</deprecated>
+        <description>The user populates this optional checkbox field to indicate if the system should schedule to run the business activity at a particular time. By default, it is false.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>This checkbox field indicates if the system should schedule the business activity to run at a particular time.</inlineHelpText>
+        <label>Is Scheduled</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>nFORCE__Perform_Async__c</fullName>
+        <defaultValue>false</defaultValue>
+        <deprecated>false</deprecated>
+        <description>The user populates this optional checkbox field to indicate if the business activity should run asynchronously. By default, it is false.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>This optional checkbox field indicates if the business activity should run asynchronously.</inlineHelpText>
+        <label>Perform Async</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>nFORCE__Scheduled_CRON_Expr__c</fullName>
+        <deprecated>false</deprecated>
+        <description>The user populates this optional text field with the cron expression that represents the date and time that the scheduled business activity should run. By default, it is blank.</description>
+        <encryptionScheme>None</encryptionScheme>
+        <externalId>false</externalId>
+        <inlineHelpText>This text field that indicates the date/time cron expression when the scheduled business activity should run.</inlineHelpText>
+        <label>Scheduled CRON Expression</label>
+        <length>255</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>nFORCE__Scheduled_Seconds_From_Now__c</fullName>
+        <deprecated>false</deprecated>
+        <description>The user populates this optional number field to indicate the amount of seconds from now when the scheduled business activity should run. By default, this field is blank.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>This number field indicates how many seconds from now the business activity should run.</inlineHelpText>
+        <label>Scheduled Seconds From Now</label>
+        <precision>4</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>nFORCE__Sort_Order__c</fullName>
+        <deprecated>false</deprecated>
+        <description>The user populates this optional number field to indicate what order within the business process this business activity should run. By default, it is blank.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>This number field indicates the order in which the business activity should run.</inlineHelpText>
+        <label>Sort Order</label>
+        <precision>4</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>nFORCE__Status__c</fullName>
+        <deprecated>false</deprecated>
+        <description>The user populates this required picklist field to indicate the status of the business activity. By default, it is Queued.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>This picklist field indicates the status of the business activity.</inlineHelpText>
+        <label>Status</label>
+        <required>true</required>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Queued</fullName>
+                    <default>true</default>
+                    <label>Queued</label>
+                </value>
+                <value>
+                    <fullName>Scheduled</fullName>
+                    <default>false</default>
+                    <label>Scheduled</label>
+                </value>
+                <value>
+                    <fullName>In Progress</fullName>
+                    <default>false</default>
+                    <label>In Progress</label>
+                </value>
+                <value>
+                    <fullName>Completed Successfully</fullName>
+                    <default>false</default>
+                    <label>Completed Successfully</label>
+                </value>
+                <value>
+                    <fullName>Completed With Errors</fullName>
+                    <default>false</default>
+                    <label>Completed With Errors</label>
+                </value>
+                <value>
+                    <fullName>Cancelled</fullName>
+                    <default>false</default>
+                    <label>Cancelled</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>nFORCE__Wait_For_External_Update__c</fullName>
+        <defaultValue>false</defaultValue>
+        <deprecated>false</deprecated>
+        <description>The user populates this checkbox to indicate that the business activity should remain in progress until an external process updates the status to continue. By default, it is false.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>This checkbox indicates that the business activity should remain in progress until an external process updates the status to continue.</inlineHelpText>
+        <label>Wait For External Update</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>nFORCE__lookupKey__c</fullName>
+        <caseSensitive>false</caseSensitive>
+        <deprecated>false</deprecated>
+        <description>This field contains an external identifier that is used to associate the record with the correlating record in an external system. The Lookup Key can also be used to identify related records when importing data into nCino without the need to know the internal ID.</description>
+        <encryptionScheme>None</encryptionScheme>
+        <externalId>true</externalId>
+        <inlineHelpText>This field contains the External ID for the Business Activity.</inlineHelpText>
+        <label>Lookup Key</label>
+        <length>255</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>true</unique>
+    </fields>
+    <label>Business Activity</label>
+    <listViews>
+        <fullName>nFORCE__All_Business_Activities</fullName>
+        <columns>NAME</columns>
+        <columns>nFORCE__Business_Process__c</columns>
+        <columns>nFORCE__Sort_Order__c</columns>
+        <columns>nFORCE__FQCN__c</columns>
+        <columns>nFORCE__Is_Scheduled__c</columns>
+        <columns>nFORCE__Perform_Async__c</columns>
+        <columns>nFORCE__Wait_For_External_Update__c</columns>
+        <filterScope>Everything</filterScope>
+        <label>All Business Activities</label>
+    </listViews>
+    <nameField>
+        <encryptionScheme>None</encryptionScheme>
+        <label>Business Activity Name</label>
+        <type>Text</type>
+    </nameField>
+    <pluralLabel>Business Activities</pluralLabel>
+    <searchLayouts/>
+    <sharingModel>ControlledByParent</sharingModel>
+    <validationRules>
+        <fullName>nFORCE__Enforce_Unique_Name</fullName>
+        <active>true</active>
+        <description>This validation rule enforces that the business activities field name is unique.</description>
+        <errorConditionFormula>AND (
+			IF($Setup.nFORCE__Business_Process_Settings__c.nFORCE__Disable_Validation_Rules__c,
+				FALSE,
+				((ISNEW() || ISCHANGED(Name))
+				&amp;&amp; VLOOKUP( $ObjectType.nFORCE__Business_Activity__c.Fields.Name, $ObjectType.nFORCE__Business_Activity__c.Fields.Name , Name) = Name)
+			)
+		)</errorConditionFormula>
+        <errorMessage>The business activity name must be unique. Check the name and try again.</errorMessage>
+    </validationRules>
+    <visibility>Public</visibility>
+</CustomObject>

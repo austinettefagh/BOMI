@@ -1,0 +1,3 @@
+<apex:page standardStylesheets="false" docType="html-5.0" showHeader="false" html-lang="{!SUBSTITUTE(TEXT($User.LanguageLocaleKey), '_', '-')}">
+	<c:StatementLauncherUI />
+</apex:page>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomPermission xmlns="http://soap.sforce.com/2006/04/metadata">
+    <description>Introduced Spring 2023. Enabled in the &quot;Exclude Trigger&quot; permission set. If assigned to a user, Apex code built with &quot;Exclude Trigger = False&quot; concepts will not execute. This allows users to bypass Apex automation when needed.</description>
+    <isLicensed>false</isLicensed>
+    <label>Exclude Trigger</label>
+</CustomPermission>

@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Treasury Application Product User</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Treasury Application Product Users</value>
+    </caseValues>
+    <fields>
+        <label><!-- Account Access --></label>
+        <name>TM_Account_Access__c</name>
+    </fields>
+    <fields>
+        <label><!-- Authorized to --></label>
+        <name>TM_Authorized_to__c</name>
+        <picklistValues>
+            <masterLabel>Edit repetitive wires</masterLabel>
+            <translation><!-- Edit repetitive wires --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Edit single wires</masterLabel>
+            <translation><!-- Edit single wires --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Enter/request repetitive wires</masterLabel>
+            <translation><!-- Enter/request repetitive wires --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Enter/request single wires</masterLabel>
+            <translation><!-- Enter/request single wires --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Transmit Netteller wires</masterLabel>
+            <translation><!-- Transmit Netteller wires --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Cell Phone Number --></label>
+        <name>TM_Cell_Phone_Number__c</name>
+    </fields>
+    <fields>
+        <label><!-- Email Address --></label>
+        <name>TM_Email_Address__c</name>
+    </fields>
+    <fields>
+        <label><!-- Online Banking Access --></label>
+        <name>TM_Online_Banking_Access__c</name>
+        <picklistValues>
+            <masterLabel>No</masterLabel>
+            <translation><!-- No --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes</masterLabel>
+            <translation><!-- Yes --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Per Wire Limit --></label>
+        <name>TM_Per_Wire_Limit__c</name>
+    </fields>
+    <fields>
+        <label><!-- Per Day limit --></label>
+        <name>TM_Per_day_limit__c</name>
+    </fields>
+    <fields>
+        <label><!-- Treasury Application Product --></label>
+        <name>TM_Treasury_Application_Product__c</name>
+        <relationshipLabel><!-- Treasury Application Product Users --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Work Phone Number --></label>
+        <name>TM_Work_Phone_Number__c</name>
+    </fields>
+    <startsWith>Consonant</startsWith>
+    <validationRules>
+        <errorMessage><!-- This Treasury Application Product User can’t be edited anymore as it’s at/after Signature Required stage. --></errorMessage>
+        <name>TM_This_Product_User_cant_be_edited</name>
+    </validationRules>
+</CustomObjectTranslation>

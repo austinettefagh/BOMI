@@ -1,0 +1,305 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Flow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <apiVersion>57.0</apiVersion>
+    <assignments>
+        <name>Set_Historic_Financial_Indicator_Value</name>
+        <label>Set Historic Financial Indicator Value</label>
+        <locationX>50</locationX>
+        <locationY>1103</locationY>
+        <assignmentItems>
+            <assignToReference>$Record.LLC_BI__Historic_Financial_Indicator__c</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>$Record.LLC_BI__Covenant__r.LLC_BI__Financial_Indicator_Value__c</elementReference>
+            </value>
+        </assignmentItems>
+        <connector>
+            <targetReference>Determine_Path</targetReference>
+        </connector>
+    </assignments>
+    <assignments>
+        <name>Set_Status_to_Compliant</name>
+        <label>Set Status to Compliant</label>
+        <locationX>50</locationX>
+        <locationY>431</locationY>
+        <assignmentItems>
+            <assignToReference>$Record.LLC_BI__Status__c</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <stringValue>Compliant</stringValue>
+            </value>
+        </assignmentItems>
+        <connector>
+            <targetReference>Financial_CC_Exception</targetReference>
+        </connector>
+    </assignments>
+    <assignments>
+        <name>Set_Status_to_Exception_Exception_Date_to_Today</name>
+        <label>Set Status to Exception &amp; Exception Date to Today</label>
+        <locationX>50</locationX>
+        <locationY>767</locationY>
+        <assignmentItems>
+            <assignToReference>$Record.LLC_BI__Status__c</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <stringValue>Exception</stringValue>
+            </value>
+        </assignmentItems>
+        <assignmentItems>
+            <assignToReference>$Record.LLC_BI__Exception_Date__c</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>$Flow.CurrentDate</elementReference>
+            </value>
+        </assignmentItems>
+        <connector>
+            <targetReference>Status_Compliant</targetReference>
+        </connector>
+    </assignments>
+    <decisions>
+        <description>nCino&apos;s general purpose Record-Trigger flows are designed to bucket interactions into distinct pillars.
+
+1. On Create. These actions occur at the time the record is created.
+2. Progression (if applicable). These actions occur when a core process on the record progresses forward or backward. These should be picklists (Example: Loan Stage).
+3. Adhoc. All other actions which occur when distinct criteria are met.
+
+A &quot;skip&quot; function is build into start conditions. This flow will not execute when the &quot;Exclude Flow&quot; permission set is assigned to the running user.</description>
+        <name>Determine_Path</name>
+        <label>Determine Path</label>
+        <locationX>182</locationX>
+        <locationY>1319</locationY>
+        <defaultConnector>
+            <targetReference>Update_Covenant_Compliance_On_Edit</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>Adhoc</defaultConnectorLabel>
+        <rules>
+            <name>On_Create</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>forB_ISNEW</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <booleanValue>true</booleanValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Update_Covenant_Compliance_On_Create</targetReference>
+            </connector>
+            <label>On Create</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <description>When Spreads automated testing evaluates a Covenant_Compliance2 record to have complete data or pass a Covenant rule, this sets the Status to Compliant.</description>
+        <name>Financial_CC_Compliant</name>
+        <label>Financial CC Compliant?</label>
+        <locationX>182</locationX>
+        <locationY>311</locationY>
+        <defaultConnector>
+            <targetReference>Financial_CC_Exception</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
+        <rules>
+            <name>Compliant</name>
+            <conditionLogic>1 AND (2 OR 3)</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record.LLC_BI__Evaluation_Date__c</leftValueReference>
+                <operator>IsNull</operator>
+                <rightValue>
+                    <booleanValue>false</booleanValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.LLC_BI__Associated_Statement_Period_Status__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Associated</stringValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.LLC_BI__Automated_Testing_Status__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Pass</stringValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Set_Status_to_Compliant</targetReference>
+            </connector>
+            <label>Compliant</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <description>When Spreads automated testing evaluates a Covenant_Compliance2 record to have incomplete data or fail a Covenant rule, this sets the Status to Exception and the Exception Date to today.</description>
+        <name>Financial_CC_Exception</name>
+        <label>Financial CC Exception?</label>
+        <locationX>182</locationX>
+        <locationY>647</locationY>
+        <defaultConnector>
+            <targetReference>Status_Compliant</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
+        <rules>
+            <name>Exception</name>
+            <conditionLogic>1 AND (2 OR 3 OR 4)</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record.LLC_BI__Evaluation_Date__c</leftValueReference>
+                <operator>IsNull</operator>
+                <rightValue>
+                    <booleanValue>false</booleanValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.LLC_BI__Associated_Statement_Period_Status__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Unassociated</stringValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.LLC_BI__Automated_Testing_Status__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Fail</stringValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.LLC_BI__Automated_Testing_Status__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Incomplete</stringValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Set_Status_to_Exception_Exception_Date_to_Today</targetReference>
+            </connector>
+            <label>Exception</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <name>Status_Compliant</name>
+        <label>Status = Compliant?</label>
+        <locationX>182</locationX>
+        <locationY>983</locationY>
+        <defaultConnector>
+            <targetReference>Determine_Path</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
+        <rules>
+            <name>Is_Compliant</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record.LLC_BI__Status__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Compliant</stringValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Set_Historic_Financial_Indicator_Value</targetReference>
+            </connector>
+            <label>Is Compliant</label>
+        </rules>
+    </decisions>
+    <description>Managed flow handling various Covenant Compliance actions in Before Save context. When a Covenant Compliance record is created or edited, the resulting actions update the record which triggered the flow.</description>
+    <environments>Default</environments>
+    <formulas>
+        <description>Reusable variable. Drives &quot;On Create&quot; pillar.</description>
+        <name>forB_ISNEW</name>
+        <dataType>Boolean</dataType>
+        <expression>ISNEW()</expression>
+    </formulas>
+    <formulas>
+        <name>forD_ExceptionDate</name>
+        <dataType>Date</dataType>
+        <expression>IF(
+NOT(ISBLANK({!$Record__Prior.LLC_BI__Exception_Date__c})),
+{!$Record__Prior.LLC_BI__Exception_Date__c},
+TODAY())</expression>
+    </formulas>
+    <formulas>
+        <description>This formula is used to ensure changes to the LLC_BI__Comments__c field are saved appropriately.</description>
+        <name>forT_CommentLogic</name>
+        <dataType>String</dataType>
+        <expression>IF(
+{!$Record.LLC_BI__Comments__c} &lt;&gt; {!$Record__Prior.LLC_BI__Comments__c},
+{!$Record.LLC_BI__Comments__c}, {!$Record__Prior.LLC_BI__Comments__c})</expression>
+    </formulas>
+    <interviewLabel>nCino PDE - Record Trigger: Covenant Compliance Before Save - V.1.0.0 {!$Flow.CurrentDateTime}</interviewLabel>
+    <isTemplate>true</isTemplate>
+    <label>nCino PDE - Record Trigger: Covenant Compliance Before Save - V.1.0.0</label>
+    <processMetadataValues>
+        <name>BuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>CanvasMode</name>
+        <value>
+            <stringValue>AUTO_LAYOUT_CANVAS</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>OriginBuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processType>AutoLaunchedFlow</processType>
+    <recordUpdates>
+        <description>A DML element to update the triggering Covenant Compliance.</description>
+        <name>Update_Covenant_Compliance_On_Create</name>
+        <label>Update Covenant Compliance On Create</label>
+        <locationX>50</locationX>
+        <locationY>1439</locationY>
+        <inputAssignments>
+            <field>LLC_BI__Comments__c</field>
+            <value>
+                <elementReference>forT_CommentLogic</elementReference>
+            </value>
+        </inputAssignments>
+        <inputReference>$Record</inputReference>
+    </recordUpdates>
+    <recordUpdates>
+        <description>A DML element to update the triggering Covenant Compliance.</description>
+        <name>Update_Covenant_Compliance_On_Edit</name>
+        <label>Update Covenant Compliance On Edit</label>
+        <locationX>314</locationX>
+        <locationY>1439</locationY>
+        <inputAssignments>
+            <field>LLC_BI__Comments__c</field>
+            <value>
+                <elementReference>forT_CommentLogic</elementReference>
+            </value>
+        </inputAssignments>
+        <inputReference>$Record</inputReference>
+    </recordUpdates>
+    <start>
+        <locationX>56</locationX>
+        <locationY>0</locationY>
+        <connector>
+            <targetReference>Financial_CC_Compliant</targetReference>
+        </connector>
+        <filterFormula>{!$Permission.LLC_BI__Exclude_Flow} = False</filterFormula>
+        <object>LLC_BI__Covenant_Compliance2__c</object>
+        <recordTriggerType>CreateAndUpdate</recordTriggerType>
+        <triggerType>RecordBeforeSave</triggerType>
+    </start>
+    <status>Draft</status>
+    <variables>
+        <description>This variable holds the Exception Date value which will be used to update the Covenant Compliance record.</description>
+        <name>varD_Covenant_Compliance_Exception_Date</name>
+        <dataType>Date</dataType>
+        <isCollection>false</isCollection>
+        <isInput>false</isInput>
+        <isOutput>false</isOutput>
+    </variables>
+    <variables>
+        <description>This variable holds the Status value which will be used to update the Covenant Compliance record.</description>
+        <name>varT_Covenant_Compliance_Status</name>
+        <dataType>String</dataType>
+        <isCollection>false</isCollection>
+        <isInput>false</isInput>
+        <isOutput>false</isOutput>
+    </variables>
+</Flow>

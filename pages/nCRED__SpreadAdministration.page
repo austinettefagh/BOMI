@@ -1,0 +1,17 @@
+<apex:page showHeader="false"
+	sidebar="false"
+	standardStylesheets="false"
+	docType="html-5.0"
+	>
+  <apex:slds />
+	<html>
+		<head>
+			<meta name="viewport" content="width=device-width, initial-scale=1"></meta>
+		</head>
+		<body  class="slds-scope">
+			<c:SpreadAdministration />
+			<br/>
+			<c:SpreadAdministrationQuickLinks />
+		</body>
+	</html>
+</apex:page>

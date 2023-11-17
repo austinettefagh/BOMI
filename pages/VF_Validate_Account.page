@@ -1,0 +1,31 @@
+<apex:page lightningStylesheets="true" controller="AC_Account_Controller">
+ <apex:sectionHeader title="Convert to LifeCycle"/>
+    <html>
+        
+        <head>
+            This opportunity is not ready to be converted.
+              <style type="text/css">
+                body {
+                
+                font-size:16px;
+                padding: 18px;
+                font: Arial;
+                
+                border: 2px solid gray;
+                margin: 1; 
+                }
+                
+                
+            </style>      
+        </head>
+        <br/>
+        <br/>
+        <body>
+  Please complete the following required fields on the Account before converting to a Product Package: Entity Type, Class Code, NAICS Code, Address (physical for business and mailing for individuals, including the country), TIN or SSN, Branch, Phone, Birthdate and Email (for the primary contact in case of a Business Account).            <br/>
+    <br/>
+                <apex:outputLink target="_parent" value="/{!OpptyId}">Click to go Back</apex:outputLink>
+        </body>
+        
+    </html>   
+
+</apex:page>

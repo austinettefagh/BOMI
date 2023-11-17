@@ -1,0 +1,93 @@
+<apex:page sidebar="false" showHeader="false">
+	<apex:slds />
+	<script type="text/javascript">
+		function handleClose() {
+			window.close();
+		}
+
+		const beforeUnloadListener = (event) => {
+			window.opener.postMessage('CEREMONY_COMPLETE', '*');
+			event.preventDefault();
+			return (event.returnValue = '');
+		}; 
+		window.addEventListener('beforeunload', beforeUnloadListener, { capture : true });
+	</script>
+	<head>
+		<title></title>
+		
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" ></meta>
+		
+		<style>
+			html, body {
+			margin: 0;
+			height: 100%;
+			}
+		
+			body {
+			position: relative;
+			background: #EEE;
+			}
+		
+			.frame_holder {
+			position: absolute;
+			top: 100px;
+			bottom: 50px;
+			left: 50px;
+			right: 50px;
+			background: #ffffff;
+			overflow: hidden;
+			}
+		
+			.eSignFrame {
+			width: 100%;
+			height: 100%;
+			border: 1px solid #e0e0e0;
+			}
+		</style>
+	</head>
+		
+	<body>
+		<div class="slds-page-header">
+			<div class="slds-page-header__row">
+			  <div class="slds-page-header__col-title">
+				<div class="slds-media">
+				  <div class="slds-media__body">
+					<div class="slds-page-header__name">
+					  <div class="slds-page-header__name-title">
+						<h1>
+						  <span class="slds-page-header__title slds-truncate" title="E-Signature">{!$Label.E_Signature}</span>
+						</h1>
+					  </div>
+					</div>
+					<p class="slds-page-header__name-meta">{!$Label.Signer}: {!$CurrentPage.parameters.recipientName}</p>
+				  </div>
+				</div>
+			  </div>
+			  <div class="slds-page-header__col-actions">
+				<div class="slds-page-header__controls">
+				  <div class="slds-page-header__control">
+					<ul class="slds-button-group-list">
+					  <li>
+						<button onClick="handleClose()" value="Close" class="slds-button slds-button_neutral">{!$Label.Close}</button>
+					  </li>
+					</ul>
+				  </div>
+				</div>
+			  </div>
+			</div>
+		</div>
+
+		<div class="frame_holder">
+			<iframe
+			class="eSignFrame"
+			title="E-Signature document signing frame"
+			width="100%"
+			height="100%"
+			frameborder="0"
+			scrolling="yes"
+			allowTransparency="true"
+			src="{!$CurrentPage.parameters.ceremonyURL}"
+			id="eSignFrame"></iframe>
+		</div>
+	</body>
+</apex:page>

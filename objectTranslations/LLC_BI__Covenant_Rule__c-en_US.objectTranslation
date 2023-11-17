@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <label><!-- Covenant Mgmt --></label>
+        <name>LLC_BI__Covenant__c</name>
+        <relationshipLabel><!-- Covenant Rules --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- End Date --></label>
+        <name>LLC_BI__End_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Financial Indicator Value --></label>
+        <name>LLC_BI__Financial_Indicator_Value__c</name>
+    </fields>
+    <fields>
+        <label><!-- Operator --></label>
+        <name>LLC_BI__Operator__c</name>
+        <picklistValues>
+            <masterLabel>&lt;=</masterLabel>
+            <translation><!-- &lt;= --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>&gt;=</masterLabel>
+            <translation><!-- &gt;= --></translation>
+        </picklistValues>
+    </fields>
+</CustomObjectTranslation>

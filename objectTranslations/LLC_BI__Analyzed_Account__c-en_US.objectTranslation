@@ -1,0 +1,447 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Account Access</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Account Access</value>
+    </caseValues>
+    <fieldSets>
+        <label><!-- Account Access - MS --></label>
+        <name>Account_Access_MS</name>
+    </fieldSets>
+    <fieldSets>
+        <label><!-- Account Access --></label>
+        <name>FS_Account_Access_DS</name>
+    </fieldSets>
+    <fieldSets>
+        <label><!-- Analyzed Accounts --></label>
+        <name>FS_Analyzed_Accounts</name>
+    </fieldSets>
+    <fieldSets>
+        <label><!-- Treasury Maintenance Account Access --></label>
+        <name>FS_Treasury_Maintenance_Account_Access</name>
+    </fieldSets>
+    <fieldSets>
+        <label><!-- Jack Henry jXchange Automated Booking --></label>
+        <name>JHJX__ABJX</name>
+    </fieldSets>
+    <fieldSets>
+        <label><!-- Treasury Maintenance Add Analyzed Account --></label>
+        <name>LLC_BI__Treasury_Maint_Add_Analyzed_Account</name>
+    </fieldSets>
+    <fieldSets>
+        <label><!-- Treasury Mass Actions Analyzed Accounts --></label>
+        <name>LLC_BI__Treasury_Mass_Actions_Analyzed_Accounts</name>
+    </fieldSets>
+    <fieldSets>
+        <label><!-- UI Accounts for ACH --></label>
+        <name>LLC_BI__UI_Accounts_for_ACH</name>
+    </fieldSets>
+    <fieldSets>
+        <label><!-- UI Accounts for Cash --></label>
+        <name>LLC_BI__UI_Accounts_for_Cash</name>
+    </fieldSets>
+    <fieldSets>
+        <label><!-- UI Accounts for Depository --></label>
+        <name>LLC_BI__UI_Accounts_for_Depository</name>
+    </fieldSets>
+    <fieldSets>
+        <label><!-- UI Accounts for Direct File Transfer --></label>
+        <name>LLC_BI__UI_Accounts_for_Direct_File_Transfer</name>
+    </fieldSets>
+    <fieldSets>
+        <label><!-- UI Accounts for Disbursement --></label>
+        <name>LLC_BI__UI_Accounts_for_Disbursement</name>
+    </fieldSets>
+    <fieldSets>
+        <label><!-- UI Accounts for Loan Module --></label>
+        <name>LLC_BI__UI_Accounts_for_Loan_Module</name>
+    </fieldSets>
+    <fieldSets>
+        <label><!-- UI Accounts for Lockbox --></label>
+        <name>LLC_BI__UI_Accounts_for_Lockbox</name>
+    </fieldSets>
+    <fieldSets>
+        <label><!-- UI Accounts for Miscellaneous --></label>
+        <name>LLC_BI__UI_Accounts_for_Miscellaneous</name>
+    </fieldSets>
+    <fieldSets>
+        <label><!-- UI Accounts for Online ACH --></label>
+        <name>LLC_BI__UI_Accounts_for_Online_ACH</name>
+    </fieldSets>
+    <fieldSets>
+        <label><!-- UI Accounts for Online Banking --></label>
+        <name>LLC_BI__UI_Accounts_for_Online_Banking</name>
+    </fieldSets>
+    <fieldSets>
+        <label><!-- UI Accounts for Online Bill Pay --></label>
+        <name>LLC_BI__UI_Accounts_for_Online_Bill_Pay</name>
+    </fieldSets>
+    <fieldSets>
+        <label><!-- UI Accounts for Positive Pay --></label>
+        <name>LLC_BI__UI_Accounts_for_Positive_Pay</name>
+    </fieldSets>
+    <fieldSets>
+        <label><!-- UI Accounts for RDC --></label>
+        <name>LLC_BI__UI_Accounts_for_RDC</name>
+    </fieldSets>
+    <fieldSets>
+        <label><!-- UI Accounts for Reconciliation --></label>
+        <name>LLC_BI__UI_Accounts_for_Reconciliation</name>
+    </fieldSets>
+    <fieldSets>
+        <label><!-- UI Accounts for Reporting --></label>
+        <name>LLC_BI__UI_Accounts_for_Reporting</name>
+    </fieldSets>
+    <fieldSets>
+        <label><!-- UI Accounts for Sweep --></label>
+        <name>LLC_BI__UI_Accounts_for_Sweep</name>
+    </fieldSets>
+    <fieldSets>
+        <label><!-- UI Accounts for Wires --></label>
+        <name>LLC_BI__UI_Accounts_for_Wires</name>
+    </fieldSets>
+    <fieldSets>
+        <label><!-- UI Accounts for Zero Balance Account --></label>
+        <name>LLC_BI__UI_Accounts_for_Zero_Balance_Account</name>
+    </fieldSets>
+    <fieldSets>
+        <label><!-- UI_TSM_Analyzed_Account_Search --></label>
+        <name>LLC_BI__UI_TSM_Analyzed_Account_Search</name>
+    </fieldSets>
+    <fields>
+        <label><!-- Active --></label>
+        <name>CF_Active__c</name>
+    </fields>
+    <fields>
+        <help><!-- This field is required for Account Analysis. --></help>
+        <label><!-- Apply ECR? --></label>
+        <name>CF_Apply_ECR__c</name>
+        <picklistValues>
+            <masterLabel>N/A</masterLabel>
+            <translation><!-- N/A --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>No</masterLabel>
+            <translation><!-- No --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes</masterLabel>
+            <translation><!-- Yes --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Deposit Account Number --></label>
+        <name>CF_Deposit_Account_Number__c</name>
+    </fields>
+    <fields>
+        <label><!-- ACH Pre-Funding Requirement --></label>
+        <name>LLC_BI__ACH_Pre_Funding_Requirement__c</name>
+    </fields>
+    <fields>
+        <label><!-- Account Action --></label>
+        <name>LLC_BI__Account_Action__c</name>
+        <picklistValues>
+            <masterLabel>Add</masterLabel>
+            <translation><!-- Add --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Cancel</masterLabel>
+            <translation><!-- Cancel --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Revise</masterLabel>
+            <translation><!-- Revise --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Account Filter Amount --></label>
+        <name>LLC_BI__Account_Filter_Amount__c</name>
+    </fields>
+    <fields>
+        <label><!-- Account Notice Type --></label>
+        <name>LLC_BI__Account_Notice_Type__c</name>
+        <picklistValues>
+            <masterLabel>Both</masterLabel>
+            <translation><!-- Both --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Incoming</masterLabel>
+            <translation><!-- Incoming --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Outgoing</masterLabel>
+            <translation><!-- Outgoing --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Account Reconciliation Plan --></label>
+        <name>LLC_BI__Account_Reconciliation_Plan__c</name>
+    </fields>
+    <fields>
+        <label><!-- Account Serial Number Range - End --></label>
+        <name>LLC_BI__Account_Serial_Number_Range_End__c</name>
+    </fields>
+    <fields>
+        <label><!-- Account Serial Number Range - Start --></label>
+        <name>LLC_BI__Account_Serial_Number_Range_Start__c</name>
+    </fields>
+    <fields>
+        <label><!-- Account Stale Dating (Calendar Days) --></label>
+        <name>LLC_BI__Account_Stale_Dating_Calendar_Days__c</name>
+    </fields>
+    <fields>
+        <label><!-- Analyzed Account Type --></label>
+        <name>LLC_BI__Analyzed_Account_Type__c</name>
+        <picklistValues>
+            <masterLabel>DDA</masterLabel>
+            <translation><!-- DDA --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Balance Reporting --></label>
+        <name>LLC_BI__Balance_Reporting__c</name>
+        <picklistValues>
+            <masterLabel>BAI Files Transfer</masterLabel>
+            <translation><!-- BAI Files Transfer --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Balance Info</masterLabel>
+            <translation><!-- Balance Info --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Controlled Disbursement</masterLabel>
+            <translation><!-- Controlled Disbursement --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>No Information</masterLabel>
+            <translation><!-- No Information --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Prior Day</masterLabel>
+            <translation><!-- Prior Day --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Same Day</masterLabel>
+            <translation><!-- Same Day --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Batch Import to this Name/ID Required --></label>
+        <name>LLC_BI__Batch_Import_to_this_Name_ID_Required__c</name>
+    </fields>
+    <fields>
+        <label><!-- Book Transfer Daily Limit --></label>
+        <name>LLC_BI__Book_Transfer_Daily_Limit__c</name>
+    </fields>
+    <fields>
+        <label><!-- Book Transfers --></label>
+        <name>LLC_BI__Book_Transfers__c</name>
+        <picklistValues>
+            <masterLabel>Both</masterLabel>
+            <translation><!-- Both --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>From</masterLabel>
+            <translation><!-- From --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>N/A</masterLabel>
+            <translation><!-- N/A --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>To</masterLabel>
+            <translation><!-- To --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- -D Deposit Account --></label>
+        <name>LLC_BI__Deposit_Account__c</name>
+        <relationshipLabel><!-- Analyzed Accounts --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Deposit Reference --></label>
+        <name>LLC_BI__Deposit_Reference__c</name>
+        <relationshipLabel><!-- Analyzed Accounts (Deposit Reference) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Deposit Ticket Limit --></label>
+        <name>LLC_BI__Deposit_Ticket_Limit__c</name>
+    </fields>
+    <fields>
+        <label><!-- ERD --></label>
+        <name>LLC_BI__ERD__c</name>
+        <picklistValues>
+            <masterLabel>DDA</masterLabel>
+            <translation><!-- DDA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>N/A</masterLabel>
+            <translation><!-- N/A --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SVA</masterLabel>
+            <translation><!-- SVA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Time</masterLabel>
+            <translation><!-- Time --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Electronic Reporting --></label>
+        <name>LLC_BI__Electronic_Reporting__c</name>
+    </fields>
+    <fields>
+        <label><!-- Exception Account for Returns --></label>
+        <name>LLC_BI__Exception_Account_for_Returns__c</name>
+    </fields>
+    <fields>
+        <label><!-- Frequency of Issue Files --></label>
+        <name>LLC_BI__Frequency_of_Issue_Files__c</name>
+    </fields>
+    <fields>
+        <label><!-- Funding Account --></label>
+        <name>LLC_BI__Funding_Account__c</name>
+    </fields>
+    <fields>
+        <label><!-- Location Name --></label>
+        <name>LLC_BI__Location_Name__c</name>
+    </fields>
+    <fields>
+        <help><!-- Check if Master Account for Zero Balance Account --></help>
+        <label><!-- Master Account --></label>
+        <name>LLC_BI__Master_Account__c</name>
+    </fields>
+    <fields>
+        <label><!-- Maximum Daily Deposit Amount --></label>
+        <name>LLC_BI__Maximum_Daily_Deposit_Amount__c</name>
+    </fields>
+    <fields>
+        <label><!-- Maximum Deposit Amount Per Check --></label>
+        <name>LLC_BI__Maximum_Deposit_Amount_Per_Check__c</name>
+    </fields>
+    <fields>
+        <label><!-- Maximum Dollar Range --></label>
+        <name>LLC_BI__Maximum_Dollar_Range__c</name>
+    </fields>
+    <fields>
+        <label><!-- Minimum Dollar Range --></label>
+        <name>LLC_BI__Minimum_Dollar_Range__c</name>
+    </fields>
+    <fields>
+        <label><!-- Peg Balance --></label>
+        <name>LLC_BI__Peg_Balance__c</name>
+    </fields>
+    <fields>
+        <label><!-- Percentage of Returned Transactions --></label>
+        <name>LLC_BI__Percentage_of_Returned_Transactions__c</name>
+    </fields>
+    <fields>
+        <label><!-- Positive Pay --></label>
+        <name>LLC_BI__Positive_Pay__c</name>
+        <picklistValues>
+            <masterLabel>Full</masterLabel>
+            <translation><!-- Full --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Partial</masterLabel>
+            <translation><!-- Partial --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Reverse</masterLabel>
+            <translation><!-- Reverse --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Relationship --></label>
+        <name>LLC_BI__Relationship__c</name>
+        <relationshipLabel><!-- Analyzed Accounts --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Settlement or Offset account --></label>
+        <name>LLC_BI__Settlement_or_Offset_account__c</name>
+    </fields>
+    <fields>
+        <label><!-- Status --></label>
+        <name>LLC_BI__Status__c</name>
+        <picklistValues>
+            <masterLabel>Active</masterLabel>
+            <translation><!-- Active --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Cancel</masterLabel>
+            <translation><!-- Cancel --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>In-Active</masterLabel>
+            <translation><!-- In-Active --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>In-Progress</masterLabel>
+            <translation><!-- In-Progress --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>N/A</masterLabel>
+            <translation><!-- N/A --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Revise</masterLabel>
+            <translation><!-- Revise --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Stop Payment --></label>
+        <name>LLC_BI__Stop_Payment__c</name>
+        <picklistValues>
+            <masterLabel>Add</masterLabel>
+            <translation><!-- Add --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Change</masterLabel>
+            <translation><!-- Change --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Delete</masterLabel>
+            <translation><!-- Delete --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>N/A</masterLabel>
+            <translation><!-- N/A --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Treasury Service Reference --></label>
+        <name>LLC_BI__Treasury_Service_Reference__c</name>
+        <relationshipLabel><!-- Account Access (Treasury Service Reference) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Treasury Service --></label>
+        <name>LLC_BI__Treasury_Service__c</name>
+        <relationshipLabel><!-- Analyzed Accounts --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Wire Daily Limit --></label>
+        <name>LLC_BI__Wire_Daily_Limit__c</name>
+    </fields>
+    <fields>
+        <label><!-- Wire Detail --></label>
+        <name>LLC_BI__Wire_Detail__c</name>
+        <picklistValues>
+            <masterLabel>N/A</masterLabel>
+            <translation><!-- N/A --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>No</masterLabel>
+            <translation><!-- No --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes</masterLabel>
+            <translation><!-- Yes --></translation>
+        </picklistValues>
+    </fields>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

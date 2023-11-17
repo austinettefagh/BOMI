@@ -1,0 +1,11 @@
+<apex:page standardController="Opportunity">
+    <script>
+    if(('{!Opportunity.CF_AccountFieldsNotFilled__c}')=='True'){
+        window.open("/apex/VF_Validate_Account?id={!Opportunity.Id}","_self");
+        adderror("Add error");
+    }else{
+        window.open("/apex/LLC_BI__ComplexLifeCycleConverter?id={!Opportunity.Id}&relationshipAPIName=Name&productApiName=Product__c&productTypeApiName=Product_Type__c&productLineApiName=Product_Line__c&mergeAccountIdApiName=AccountId&convertedDateAPIName=Converted_Date__c&convertedTargetIdAPI=Loan__c&packageReferenceAPI=Product_Package__c&targetPackageRefAPI=Product_Package__c&productPackageName={!URLENCODE(Opportunity.CF_Default_Product_Package_Name__c)}&convertedProductName={!URLENCODE(Opportunity.CF_Default_Loan_Name__c)}","_self");       
+    }
+    </script>
+    <apex:pageMessages ></apex:pageMessages>
+</apex:page>

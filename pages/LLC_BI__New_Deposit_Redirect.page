@@ -1,0 +1,3 @@
+<apex:page standardController="Account" extensions="LLC_BI.NewDepositRedirectController" action="{!redirect}">
+
+</apex:page>

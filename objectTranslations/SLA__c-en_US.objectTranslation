@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>SLA</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>SLAs</value>
+    </caseValues>
+    <fields>
+        <label><!-- Application Processing cumulative Days --></label>
+        <name>CF_ApplicationProcessingCumulative_Days__c</name>
+    </fields>
+    <fields>
+        <label><!-- Booked Cumulative Days --></label>
+        <name>CF_BookedCumulativeDays__c</name>
+    </fields>
+    <fields>
+        <label><!-- Booking / Funding Cumulative Days --></label>
+        <name>CF_BookingFundingCumulativeDays__c</name>
+    </fields>
+    <fields>
+        <label><!-- Closing Cumulative Days --></label>
+        <name>CF_ClosingCumulativeDays__c</name>
+    </fields>
+    <fields>
+        <label><!-- Complete Cumulative Days --></label>
+        <name>CF_CompleteCumulativeDays__c</name>
+    </fields>
+    <fields>
+        <label><!-- CreditDecisioning Cumulative Days --></label>
+        <name>CF_CreditDecisioningCumulativeDays__c</name>
+    </fields>
+    <fields>
+        <label><!-- Credit Underwriting Cumulative Days --></label>
+        <name>CF_CreditUnderwritingCumulativeDays__c</name>
+    </fields>
+    <fields>
+        <label><!-- CumulativeHold_Application Processing --></label>
+        <name>CF_CumulativeHold_Application_Processing__c</name>
+    </fields>
+    <fields>
+        <label><!-- CumulativeHold Credit Underwriting --></label>
+        <name>CF_CumulativeHold_Credit_Underwriting__c</name>
+    </fields>
+    <fields>
+        <label><!-- CumulativeHold_Qualification/Proposal --></label>
+        <name>CF_CumulativeHold_Qualification_Proposal__c</name>
+    </fields>
+    <fields>
+        <label><!-- Days in Application Processing --></label>
+        <name>CF_Days_in_Application_Processing__c</name>
+    </fields>
+    <fields>
+        <label><!-- Days in Booked --></label>
+        <name>CF_Days_in_Booked__c</name>
+    </fields>
+    <fields>
+        <label><!-- Days in Closing --></label>
+        <name>CF_Days_in_Closing__c</name>
+    </fields>
+    <fields>
+        <label><!-- Days in Complete --></label>
+        <name>CF_Days_in_Complete__c</name>
+    </fields>
+    <fields>
+        <label><!-- Days in Credit Decisioning --></label>
+        <name>CF_Days_in_Credit_Decisioning__c</name>
+    </fields>
+    <fields>
+        <label><!-- Days in Credit Underwriting --></label>
+        <name>CF_Days_in_Credit_Underwriting__c</name>
+    </fields>
+    <fields>
+        <label><!-- Days in Pre-Closing Due Diligence --></label>
+        <name>CF_Days_in_Pre_Closing_Due_Diligence__c</name>
+    </fields>
+    <fields>
+        <label><!-- Days in Qualification / Proposal --></label>
+        <name>CF_Days_in_Qualification_Proposal__c</name>
+    </fields>
+    <fields>
+        <label><!-- DocPrep &amp; Review Cumulative Days --></label>
+        <name>CF_DocPrepReviewCumulativeDays__c</name>
+    </fields>
+    <fields>
+        <label><!-- Hold Days in Qualification/Proposal --></label>
+        <name>CF_HoldDays_in_Qualification_Proposal__c</name>
+    </fields>
+    <fields>
+        <label><!-- Hold Days in Application Processing --></label>
+        <name>CF_Hold_Days_in_Application_Processing__c</name>
+    </fields>
+    <fields>
+        <label><!-- Hold Days in Credit Underwriting --></label>
+        <name>CF_Hold_Days_in_Credit_Underwriting__c</name>
+    </fields>
+    <fields>
+        <label><!-- Loan ApplicationProcessin Stage Duration --></label>
+        <name>CF_LoanApplicationProcessinStageDuration__c</name>
+    </fields>
+    <fields>
+        <label><!-- Loan ApplicationProcessing Stage Date --></label>
+        <name>CF_LoanApplicationProcessingStageDate__c</name>
+    </fields>
+    <fields>
+        <label><!-- Loan Booked Stage Date --></label>
+        <name>CF_LoanBookedStageDate__c</name>
+    </fields>
+    <fields>
+        <label><!-- Loan Booking / Funding Stage Date --></label>
+        <name>CF_LoanBookingFundingStageDate__c</name>
+    </fields>
+    <fields>
+        <label><!-- Loan Closing Stage Date --></label>
+        <name>CF_LoanClosingStageDate__c</name>
+    </fields>
+    <fields>
+        <label><!-- Loan Complete Stage Date --></label>
+        <name>CF_LoanCompleteStageDate__c</name>
+    </fields>
+    <fields>
+        <label><!-- Loan CreditDecisioning Stage Date --></label>
+        <name>CF_LoanCreditDecisioningStageDate__c</name>
+    </fields>
+    <fields>
+        <label><!-- Loan Credit Underwriting Stage Date --></label>
+        <name>CF_LoanCreditUnderwritingStageDate__c</name>
+    </fields>
+    <fields>
+        <label><!-- Loan DocPrep &amp; Review Stage Date --></label>
+        <name>CF_LoanDocPrepReviewStageDate__c</name>
+    </fields>
+    <fields>
+        <help><!-- This will store the entire Loan Hold Cumulative Days --></help>
+        <label><!-- Loan Hold Cumulative Days --></label>
+        <name>CF_LoanHoldCumulativeDays__c</name>
+    </fields>
+    <fields>
+        <label><!-- Loan Hold Cumulative Duration --></label>
+        <name>CF_LoanHoldCumulativeDuration__c</name>
+    </fields>
+    <fields>
+        <label><!-- Loan Hold End Time --></label>
+        <name>CF_LoanHoldEndTime__c</name>
+    </fields>
+    <fields>
+        <help><!-- This will store the Loan Hold days on each stage and resets when the stage changes --></help>
+        <label><!-- Loan Hold Stage Days --></label>
+        <name>CF_LoanHoldStageDays__c</name>
+    </fields>
+    <fields>
+        <label><!-- LoanHoldStage --></label>
+        <name>CF_LoanHoldStage__c</name>
+    </fields>
+    <fields>
+        <label><!-- Loan Hold Start Time --></label>
+        <name>CF_LoanHoldStartTime__c</name>
+    </fields>
+    <fields>
+        <label><!-- Current Loan Stage --></label>
+        <name>CF_LoanStage__c</name>
+    </fields>
+    <fields>
+        <label><!-- Loan Pre-Closing DD Stage Date --></label>
+        <name>CF_Loan_PreClosingDD_Stage_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Loan Qualification / Proposal Stage Date --></label>
+        <name>CF_Loan_QualificationProposal_Stage_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Loan --></label>
+        <name>CF_Loan__c</name>
+        <relationshipLabel><!-- SLAs --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Pre-Closing DD Cumulative Days --></label>
+        <name>CF_PreClosingDDCumulativeDays__c</name>
+    </fields>
+    <fields>
+        <label><!-- Prior Stage Value --></label>
+        <name>CF_PriorStageValue__c</name>
+    </fields>
+    <fields>
+        <label><!-- Product Package --></label>
+        <name>CF_Product_Package__c</name>
+        <relationshipLabel><!-- SLAs --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Qualification / Proposal Cumulative Days --></label>
+        <name>CF_QualificationProposalCumulativeDays__c</name>
+    </fields>
+    <fields>
+        <label><!-- Days in Booking / Funding --></label>
+        <name>SF_Days_in_Booking_Funding__c</name>
+    </fields>
+    <fields>
+        <label><!-- Days in Doc Prep &amp; Review --></label>
+        <name>SF_Days_in_Doc_Prep_Review__c</name>
+    </fields>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

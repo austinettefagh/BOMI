@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <help><!-- Displays the action for this transaction. --></help>
+        <label><!-- Action --></label>
+        <name>nFORCE__Action__c</name>
+    </fields>
+    <fields>
+        <help><!-- Displays the identifier of the object related to this transaction. --></help>
+        <label><!-- Context Id --></label>
+        <name>nFORCE__Context_Id__c</name>
+    </fields>
+    <fields>
+        <help><!-- Displays an ID that refers to all business activities in the scope of this transaction. --></help>
+        <label><!-- Correlation Id --></label>
+        <name>nFORCE__Correlation_Id__c</name>
+    </fields>
+    <fields>
+        <help><!-- Displays the end-to-end processing time of the Business Process Interaction. --></help>
+        <label><!-- Duration --></label>
+        <name>nFORCE__Duration__c</name>
+    </fields>
+    <fields>
+        <help><!-- Displays an ID that refers to this Business Process Interaction. --></help>
+        <label><!-- External Id --></label>
+        <name>nFORCE__External_Id__c</name>
+    </fields>
+    <fields>
+        <help><!-- Displays the timestamp of completion of the business activity interaction. --></help>
+        <label><!-- Final Timestamp --></label>
+        <name>nFORCE__FinalTimestamp__c</name>
+    </fields>
+    <fields>
+        <help><!-- Displays the most recent integration message, such as errors or the last recorded success state. --></help>
+        <label><!-- Message --></label>
+        <name>nFORCE__Message__c</name>
+    </fields>
+    <fields>
+        <help><!-- Displays the parent record to which this transaction is associated. --></help>
+        <label><!-- Parent Business Process Interaction --></label>
+        <name>nFORCE__Parent_Business_Process_Interaction__c</name>
+        <relationshipLabel><!-- Parent Business Process Interactions --></relationshipLabel>
+    </fields>
+    <fields>
+        <help><!-- Displays the status to which this transaction was set when created. --></help>
+        <label><!-- Status --></label>
+        <name>nFORCE__Status__c</name>
+        <picklistValues>
+            <masterLabel>Cancelled</masterLabel>
+            <translation><!-- Cancelled --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Completed Successfully</masterLabel>
+            <translation><!-- Completed Successfully --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Completed With Errors</masterLabel>
+            <translation><!-- Completed With Errors --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>In Progress</masterLabel>
+            <translation><!-- In Progress --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Queued</masterLabel>
+            <translation><!-- Queued --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Scheduled</masterLabel>
+            <translation><!-- Scheduled --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- Displays the timestamp the business activity interaction was created. --></help>
+        <label><!-- Timestamp --></label>
+        <name>nFORCE__Timestamp__c</name>
+    </fields>
+</CustomObjectTranslation>

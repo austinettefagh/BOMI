@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PermissionSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customPermissions>
+        <enabled>true</enabled>
+        <name>SESOC__SESOC_Custom_Send_Action_Access</name>
+    </customPermissions>
+    <description>Grants a user the ability to Send, Cancel, and Initiate an Embedded Session with SESOC custom actions.</description>
+    <hasActivationRequired>false</hasActivationRequired>
+    <label>SESOC - Send, Cancel, Initiate Embedded Session</label>
+</PermissionSet>

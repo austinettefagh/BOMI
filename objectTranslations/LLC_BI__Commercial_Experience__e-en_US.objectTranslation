@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <label><!-- Category --></label>
+        <name>LLC_BI__Category__c</name>
+    </fields>
+    <fields>
+        <label><!-- Context Key --></label>
+        <name>LLC_BI__Context_Key__c</name>
+    </fields>
+    <fields>
+        <label><!-- Data --></label>
+        <name>LLC_BI__Data__c</name>
+    </fields>
+    <fields>
+        <label><!-- Domain --></label>
+        <name>LLC_BI__Domain__c</name>
+    </fields>
+    <fields>
+        <label><!-- Status --></label>
+        <name>LLC_BI__Status__c</name>
+    </fields>
+</CustomObjectTranslation>

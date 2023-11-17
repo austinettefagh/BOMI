@@ -1,0 +1,365 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>SLA Solution</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>SLA Solutions</value>
+    </caseValues>
+    <fields>
+        <label><!-- Adverse Action Date --></label>
+        <name>CF_Adverse_Action_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Loan --></label>
+        <name>CF_Loan__c</name>
+        <relationshipLabel><!-- SLA Solutions --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- NOW --></label>
+        <name>CF_NOW__c</name>
+    </fields>
+    <fields>
+        <label><!-- Notice of Incomplete Clock --></label>
+        <name>CF_Notice_of_Incomplete_Clock__c</name>
+    </fields>
+    <fields>
+        <label><!-- Notice of Incomplete End Date --></label>
+        <name>CF_Notice_of_Incomplete_End_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- On Hold? --></label>
+        <name>CF_On_Hold__c</name>
+    </fields>
+    <fields>
+        <label><!-- Reg B Clock(Days) --></label>
+        <name>CF_Reg_B_Clock__c</name>
+    </fields>
+    <fields>
+        <label><!-- Reg B End Date --></label>
+        <name>CF_Reg_B_End_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Reg B Start Date --></label>
+        <name>CF_Reg_B_Start_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Stage10 Count --></label>
+        <name>CF_Stage10_Count__c</name>
+    </fields>
+    <fields>
+        <label><!-- Stage10 End Time --></label>
+        <name>CF_Stage10_End_Time__c</name>
+    </fields>
+    <fields>
+        <label><!-- Stage10 On Hold Duration --></label>
+        <name>CF_Stage10_On_Hold_Duration__c</name>
+    </fields>
+    <fields>
+        <label><!-- Stage10 Running Clock --></label>
+        <name>CF_Stage10_Running_Clock__c</name>
+    </fields>
+    <fields>
+        <label><!-- Stage10 Start Time --></label>
+        <name>CF_Stage10_Start_Time__c</name>
+    </fields>
+    <fields>
+        <label><!-- Stage1 On Hold Duration --></label>
+        <name>CF_Stage1_On_Hold_Duration__c</name>
+    </fields>
+    <fields>
+        <label><!-- Stage1 Running Clock --></label>
+        <name>CF_Stage1_Running_Clock__c</name>
+    </fields>
+    <fields>
+        <label><!-- Stage1 SLA Clock --></label>
+        <name>CF_Stage1_SLA_Clock__c</name>
+    </fields>
+    <fields>
+        <label><!-- Stage2 On Hold Duration --></label>
+        <name>CF_Stage2_On_Hold_Duration__c</name>
+    </fields>
+    <fields>
+        <label><!-- Stage2 Running Clock --></label>
+        <name>CF_Stage2_Running_Clock__c</name>
+    </fields>
+    <fields>
+        <label><!-- Stage2 SLA Clock --></label>
+        <name>CF_Stage2_SLA_Clock__c</name>
+    </fields>
+    <fields>
+        <label><!-- Stage3 On Hold Duration --></label>
+        <name>CF_Stage3_On_Hold_Duration__c</name>
+    </fields>
+    <fields>
+        <label><!-- Stage3 Running Clock --></label>
+        <name>CF_Stage3_Running_Clock__c</name>
+    </fields>
+    <fields>
+        <label><!-- Stage3 SLA Clock --></label>
+        <name>CF_Stage3_SLA_Clock__c</name>
+    </fields>
+    <fields>
+        <label><!-- Stage4 Count --></label>
+        <name>CF_Stage4_Count__c</name>
+    </fields>
+    <fields>
+        <label><!-- Stage4 End Time --></label>
+        <name>CF_Stage4_End_Time__c</name>
+    </fields>
+    <fields>
+        <label><!-- Stage4 On Hold Duration --></label>
+        <name>CF_Stage4_On_Hold_Duration__c</name>
+    </fields>
+    <fields>
+        <label><!-- Stage4 Running Clock --></label>
+        <name>CF_Stage4_Running_Clock__c</name>
+    </fields>
+    <fields>
+        <label><!-- Stage4 SLA Clock --></label>
+        <name>CF_Stage4_SLA_Clock__c</name>
+    </fields>
+    <fields>
+        <label><!-- Stage4 Start Date --></label>
+        <name>CF_Stage4_Start_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Stage4 Start Time --></label>
+        <name>CF_Stage4_Start_Time__c</name>
+    </fields>
+    <fields>
+        <label><!-- Stage5 Count --></label>
+        <name>CF_Stage5_Count__c</name>
+    </fields>
+    <fields>
+        <label><!-- Stage5 End Time --></label>
+        <name>CF_Stage5_End_Time__c</name>
+    </fields>
+    <fields>
+        <label><!-- Stage5 On Hold Duration --></label>
+        <name>CF_Stage5_On_Hold_Duration__c</name>
+    </fields>
+    <fields>
+        <label><!-- Stage5 Running clock --></label>
+        <name>CF_Stage5_Running_clock__c</name>
+    </fields>
+    <fields>
+        <label><!-- Stage5 SLA Clock --></label>
+        <name>CF_Stage5_SLA_Clock__c</name>
+    </fields>
+    <fields>
+        <label><!-- Stage5 Start Time --></label>
+        <name>CF_Stage5_Start_Time__c</name>
+    </fields>
+    <fields>
+        <label><!-- Stage6 Count --></label>
+        <name>CF_Stage6_Count__c</name>
+    </fields>
+    <fields>
+        <label><!-- Stage6 End Time --></label>
+        <name>CF_Stage6_End_Time__c</name>
+    </fields>
+    <fields>
+        <label><!-- Stage6 On Hold Duration --></label>
+        <name>CF_Stage6_On_Hold_Duration__c</name>
+    </fields>
+    <fields>
+        <label><!-- Stage6 Running Clock --></label>
+        <name>CF_Stage6_Running_Clock__c</name>
+    </fields>
+    <fields>
+        <label><!-- Stage6 SLA Clock --></label>
+        <name>CF_Stage6_SLA_Clock__c</name>
+    </fields>
+    <fields>
+        <label><!-- Stage6 Start Time --></label>
+        <name>CF_Stage6_Start_Time__c</name>
+    </fields>
+    <fields>
+        <label><!-- Stage7 Count --></label>
+        <name>CF_Stage7_Count__c</name>
+    </fields>
+    <fields>
+        <label><!-- Stage7 End Time --></label>
+        <name>CF_Stage7_End_Time__c</name>
+    </fields>
+    <fields>
+        <label><!-- Stage7 On Hold Duration --></label>
+        <name>CF_Stage7_On_Hold_Duration__c</name>
+    </fields>
+    <fields>
+        <label><!-- Stage7 Running Clock --></label>
+        <name>CF_Stage7_Running_Clock__c</name>
+    </fields>
+    <fields>
+        <label><!-- Stage7 SLA Clock --></label>
+        <name>CF_Stage7_SLA_Clock__c</name>
+    </fields>
+    <fields>
+        <label><!-- Stage7 Start Time --></label>
+        <name>CF_Stage7_Start_Time__c</name>
+    </fields>
+    <fields>
+        <label><!-- Stage8 Count --></label>
+        <name>CF_Stage8_Count__c</name>
+    </fields>
+    <fields>
+        <label><!-- Stage8 End Time --></label>
+        <name>CF_Stage8_End_Time__c</name>
+    </fields>
+    <fields>
+        <label><!-- Stage8 On Hold Duration --></label>
+        <name>CF_Stage8_On_Hold_Duration__c</name>
+    </fields>
+    <fields>
+        <label><!-- Stage8 Running Clock --></label>
+        <name>CF_Stage8_Running_Clock__c</name>
+    </fields>
+    <fields>
+        <label><!-- Stage8 SLA Clock --></label>
+        <name>CF_Stage8_SLA_Clock__c</name>
+    </fields>
+    <fields>
+        <label><!-- Stage8 Start Time --></label>
+        <name>CF_Stage8_Start_Time__c</name>
+    </fields>
+    <fields>
+        <label><!-- Stage9 Count --></label>
+        <name>CF_Stage9_Count__c</name>
+    </fields>
+    <fields>
+        <label><!-- Stage9 End Time --></label>
+        <name>CF_Stage9_End_Time__c</name>
+    </fields>
+    <fields>
+        <label><!-- Stage9 On Hold Duration --></label>
+        <name>CF_Stage9_On_Hold_Duration__c</name>
+    </fields>
+    <fields>
+        <label><!-- Stage9 Running Clock --></label>
+        <name>CF_Stage9_Running_Clock__c</name>
+    </fields>
+    <fields>
+        <label><!-- Stage9 Start Time --></label>
+        <name>CF_Stage9_Start_Time__c</name>
+    </fields>
+    <fields>
+        <label><!-- Stage 2 Previous Duration --></label>
+        <name>CF_Stage_2_Previous_Duration__c</name>
+    </fields>
+    <fields>
+        <label><!-- Stage Name --></label>
+        <name>CF_Stage_Name__c</name>
+    </fields>
+    <fields>
+        <label><!-- Stage/Status change start time --></label>
+        <name>CF_Stage_Status_change_start_time__c</name>
+    </fields>
+    <fields>
+        <label><!-- Total Loan Duration(Days) --></label>
+        <name>CF_Total_Loan_Duration__c</name>
+    </fields>
+    <fields>
+        <label><!-- Total On  Hold Duration(Days) --></label>
+        <name>CF_Total_On_Hold_Duration__c</name>
+    </fields>
+    <fields>
+        <label><!-- Total SLA Clock --></label>
+        <name>CF_Total_SLA_Clock__c</name>
+    </fields>
+    <fields>
+        <label><!-- Total Stage10 Duration Minutes --></label>
+        <name>CF_Total_Stage10_Duration_Minutes__c</name>
+    </fields>
+    <fields>
+        <help><!-- Qualification/Proposal --></help>
+        <label><!-- Total Stage1 Duration Minutes --></label>
+        <name>CF_Total_Stage1_Duration_Minutes__c</name>
+    </fields>
+    <fields>
+        <help><!-- Application Processing --></help>
+        <label><!-- Total Stage2 Duration Minutes --></label>
+        <name>CF_Total_Stage2_Duration_Minutes__c</name>
+    </fields>
+    <fields>
+        <help><!-- Credit Underwriting --></help>
+        <label><!-- Total Stage3 Duration Minutes --></label>
+        <name>CF_Total_Stage3_Duration_Minutes__c</name>
+    </fields>
+    <fields>
+        <help><!-- Credit Decisioning --></help>
+        <label><!-- Total Stage4 Duration Minutes --></label>
+        <name>CF_Total_Stage4_Duration_Minutes__c</name>
+    </fields>
+    <fields>
+        <label><!-- Total Stage5 Duration minutes --></label>
+        <name>CF_Total_Stage5_Duration_minutes__c</name>
+    </fields>
+    <fields>
+        <label><!-- Total Stage6 Duration Minutes --></label>
+        <name>CF_Total_Stage6_Duration_Minutes__c</name>
+    </fields>
+    <fields>
+        <label><!-- Total Stage7 Duration minutes --></label>
+        <name>CF_Total_Stage7_Duration_minutes__c</name>
+    </fields>
+    <fields>
+        <label><!-- Total Stage8 Duration minutes --></label>
+        <name>CF_Total_Stage8_Duration_minutes__c</name>
+    </fields>
+    <fields>
+        <label><!-- Total Stage9 Duration Minutes --></label>
+        <name>CF_Total_Stage9_Duration_Minutes__c</name>
+    </fields>
+    <fields>
+        <label><!-- Checkbox --></label>
+        <name>Checkbox__c</name>
+    </fields>
+    <fields>
+        <label><!-- Cumulative Stage2 Duration --></label>
+        <name>Cumulative_Stage2_Duration__c</name>
+    </fields>
+    <fields>
+        <label><!-- On Hold Duration Minutes --></label>
+        <name>On_Hold_Duration_Minutes__c</name>
+    </fields>
+    <fields>
+        <label><!-- Stage1 Count --></label>
+        <name>Stage1_Count__c</name>
+    </fields>
+    <fields>
+        <label><!-- Stage1 End Time --></label>
+        <name>Stage1_End_Time__c</name>
+    </fields>
+    <fields>
+        <label><!-- Stage1 Start Time --></label>
+        <name>Stage1_Start_Time__c</name>
+    </fields>
+    <fields>
+        <label><!-- Stage2 Count --></label>
+        <name>Stage2_Count__c</name>
+    </fields>
+    <fields>
+        <label><!-- Stage2 End Time --></label>
+        <name>Stage2_End_Time__c</name>
+    </fields>
+    <fields>
+        <label><!-- Stage2 Start Time --></label>
+        <name>Stage2_Start_Time__c</name>
+    </fields>
+    <fields>
+        <label><!-- Stage3 Count --></label>
+        <name>Stage3_COunt__c</name>
+    </fields>
+    <fields>
+        <label><!-- Stage3 End Time --></label>
+        <name>Stage3_End_Time__c</name>
+    </fields>
+    <fields>
+        <label><!-- Stage3 Start Time --></label>
+        <name>Stage3_Start_Time__c</name>
+    </fields>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

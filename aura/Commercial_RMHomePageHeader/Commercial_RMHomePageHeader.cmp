@@ -1,0 +1,221 @@
+<!--Declaring the component controller in the component definition Commercial_RMHomeHeaderController-->
+<!-- Component starts-->
+<aura:component implements="force:appHostable,flexipage:availableForAllPageTypes" access="global" controller="Commercial_RMHomeHeaderController">
+    
+    <!--Declaring attributes for use througout-->
+    <aura:attribute name="Pipeline" type="String"/>
+    <aura:attribute name="DepositBalance" type="String"/>
+    <aura:attribute name="CreditBalance" type="String"/>
+    <aura:attribute name="ClosedWonAmt" type="String"/>
+    <aura:attribute name="LoanAmt" type="String"/>
+    <aura:attribute name="TreasuryAmt" type="String"/>
+    <aura:attribute name="Percentage" type="String"/>
+    <aura:attribute name="coreCount" type="Integer"/>
+    <aura:attribute name="corePercentage" type="String"/>
+    <aura:attribute name="AnnualGoal" type="String"/>
+    <aura:attribute name="sorttype" type="String" default="Name"/>
+    <aura:attribute name="sortorder" type="String" default="DESC"/>
+    <aura:attribute name="coreTreasuryProdGoal" type="Integer"/>
+    <aura:attribute name="commercialCount" type="Integer"/>
+    <aura:attribute name="commercialGoal" type="Integer"/>
+    <aura:attribute name="commercialPercentage" type="String"/>
+    <!--Declaring attributes for use througout ends-->
+    <!--Declaring the handler for page init-->
+    <aura:handler name="init" value="{!this}" action="{!c.doInit}" />
+    <!--Declaring the handler for page init ends-->
+    <!--Formatting the values as per requirements-->
+    <div class="slds-container_fluid">
+        <div class="slds-grid slds-wrap home-wrapper slds-m-around_medium border-around" id="desktop_view">
+            <div class="slds-large-size_3-of-12 slds-medium-size_6-of-12 slds-size_6-of-12 metric-line">
+                <div class=" slds-text-align_center slds-m-around_x-small head_Tab head_tab_item_size slds-align_absolute-center">
+                    <div class="slds-grid slds-warp slds-align_absolute-center" style="width:100%;">
+                       <div class="slds-col">
+                            <p class="slds-text-heading_small metric-title">
+                        		Commercial
+                    		</p>
+                            <p class="slds-text-heading_small metric-title">
+                                Pipeline
+                    		</p>
+                            <p class="slds-text-heading_small metric-title">
+                        		{!v.LoanAmt}
+                    		</p>
+                        </div>
+                       <!-- <div class="slds-col">
+                            <p class="slds-text-heading_small metric-title">
+                        		Treasury
+                    		</p>
+                            <p class="slds-text-heading_small metric-title">
+                        		Pipeline
+                    		</p>
+                            <p class="slds-text-heading_small metric-title">
+                        		{!v.TreasuryAmt}
+                    		</p>
+                        </div>-->
+                    </div>
+                </div>
+            </div>
+         
+      <!--      <div class="slds-large-size_2-of-12 slds-medium-size_6-of-12 slds-size_6-of-12 metric-line">
+                <div class=" slds-text-align_center slds-m-around_x-small head_Tab head_tab_item_size slds-align_absolute-center">
+                    <div>
+                        <h3 class="slds-text-heading_small metric-title"> -->
+           
+                        	<!--  {!$Label.c.Deposit_balance} -->
+           
+                      <!--  	Deposit Balance
+            
+                   		</h3>
+                    	<h3 class="slds-text-heading_medium metric-title"> -->
+          
+                        	<!--Accessing the Deposit Balance value-->
+           
+                     <!--   	{!v.DepositBalance}
+                        	
+                    	</h3>
+                    </div>
+                </div>
+            </div> -->
+          
+           
+           <div class="slds-large-size_3-of-12 slds-medium-size_6-of-12 slds-size_6-of-12 metric-line">
+                <div class=" slds-text-align_center slds-m-around_x-small head_Tab head_tab_item_size slds-align_absolute-center">
+                    <div>
+                        <h3 class="slds-text-heading_small metric-title">
+                        	Credit Outstanding
+                   		</h3>
+                        <h3 class="slds-text-heading_medium metric-title">
+           
+
+                        	<!--Accessing the Credit Balance value-->
+           
+                        	{!v.CreditBalance} 
+                    	</h3>
+                    </div>
+                </div>
+           </div>
+           
+            
+            <div class="slds-large-size_3-of-12 slds-medium-size_6-of-12 slds-size_6-of-12 metric-line">
+                <div class="slds-grid slds-wrap slds-m-around_x-small head_Tab head_tab_item_size">
+                    <p class="slds-col slds-align-top slds-text-align_center slds-text-heading_small metric-title ">
+                        <!--  Sales Achievement banner -->
+                        Money Commercial
+                    </p> 
+                    	<!--<div class="slds-text-heading_medium metric-title"> -->
+                    	<div class="slds-col slds-align-bottom slds-m-horizontal_small" style="width:85%;">
+                        	<div class="slds-grid slds-grid_align-spread slds-p-bottom_x-small" id="progress-bar-label-id-6">
+                                <!--<div class="slds-col slds-size_8-of-12 slds-text-align_left">
+                                	<span style="font-size: 90%">{!v.ClosedWonAmt}, {!v.Percentage} %</span>
+                                </div>-->
+                                <!-- @Mehdi 6/20/2022-->
+                                <div class="slds-col slds-size_4-of-12 slds-text-align_left">
+                                	<span style="font-size: 90%">{!v.ClosedWonAmt}</span>
+                                      
+                                </div>
+                                <div class="slds-col slds-size_4-of-12 slds-text-align_center">
+                                	<span style="font-size: 90%">{!v.Percentage} %</span>
+                                      
+                                </div> 
+                                <!-- Mehdi End -->
+                                
+                           	<div class="slds-col slds-size_4-of-12 slds-text-align_right">
+                                	<span style="font-size: 90%">{!v.AnnualGoal}</span>  
+                                	<span aria-hidden="true"></span>
+                            	</div>
+                        	</div>
+                        	<div class="slds-progress-bar" style="border-radius:10px;" aria-valuemin="0" aria-valuemax="100" aria-valuenow="84" aria-labelledby="progress-bar-label-id-6" aria-label="{{Placeholder for description of progress bar}}" role="progressbar">
+                            	<span class="slds-progress-bar__value" style="{!'width: '+v.Percentage + '%;border-radius:10px;max-width:100%;'}">
+                                	<span class="slds-assistive-text">Progress: {!v.Percentage}%</span>
+                            	</span>
+                        	</div>
+                    	</div>
+                </div>
+            </div>
+            <div class="slds-large-size_3-of-12 slds-medium-size_6-of-12 slds-size_6-of-12 metric-line">
+                <div class="slds-grid slds-wrap slds-m-around_x-small head_Tab head_tab_item_size">
+                    <p class="slds-col slds-align-top slds-text-align_center slds-text-heading_small metric-title ">
+                        Commercial Relationships
+                    </p>
+                    <!--<div class="slds-text-heading_medium metric-title"> -->
+                    <div class="slds-col slds-align-bottom slds-m-horizontal_small" style="width:85%;">
+                        <div class="slds-grid slds-grid_align-spread slds-p-bottom_x-small" id="progress-bar-label-id-6">
+                           <!-- <div class="slds-col slds-size_4-of-12 slds-text-align_left">
+                                <span style="font-size: 90%">{!v.commercialCount}, {!v.commercialPercentage} %</span>
+                            </div>-->
+                            <!-- @Mehdi 6/20/2022-->
+                            <div class="slds-col slds-size_4-of-12 slds-text-align_left">
+                                <span style="font-size: 90%">{!v.commercialCount}</span>
+                            </div>
+                            <div class="slds-col slds-size_4-of-12 slds-text-align_center">
+                                <span style="font-size: 90%">{!v.commercialPercentage} %</span>
+                            </div>
+                            
+                            <!--@Mehdi End-->
+
+                            <div class="slds-col slds-size_4-of-12 slds-text-align_right">
+                                <span style="font-size: 90%">{!v.commercialGoal}</span>  
+                                <span aria-hidden="true"></span>
+                            </div>
+                        </div>
+                        <div class="slds-progress-bar" style="border-radius:10px;" aria-valuemin="0" aria-valuemax="100" aria-valuenow="84" aria-labelledby="progress-bar-label-id-6" aria-label="{{Placeholder for description of progress bar}}" role="progressbar">
+                            <span class="slds-progress-bar__value" style="{!'width: '+v.commercialPercentage + '%;border-radius:10px;max-width:100%;'}">
+                                <span class="slds-assistive-text">Progress: {!v.commercialPercentage}%</span>
+                            </span>
+                        </div> 
+                    </div>
+                    <!-- </div> -->
+                </div>
+            </div>
+          
+            
+        </div>
+        <!-- Mobile View -->
+        <div class="slds-hide" id="Metric-data-mobile">
+            <div class="slds-grid slds-wrap home-wrapper slds-is-relative" dir="">
+                
+                <div class="slds-size_12-of-12 carousel" id="swipe-content">
+                    
+                    <div class="slds-text-align_center slds-m-around_x-small head_Tab carousel_page">
+                        <h3 class="slds-text-heading_small metric-title ">
+                            
+                            <!--  {!$Label.c.Total_Pipeline} -->
+                        </h3>
+                        <h3 class="slds-text-heading_medium metric-title">
+                            <!--Accessing the pipeline value-->
+                            {!v.Pipeline} 
+                        </h3>
+                    </div>
+                    
+                    <div class="slds-hide slds-text-align_center slds-m-around_x-small head_Tab carousel_page">
+                        <h3 class="slds-text-heading_small metric-title">
+                            
+                            <!--  {!$Label.c.Deposit_balance} -->
+                        </h3>
+                        <h3 class="slds-text-heading_medium metric-title">
+                            <!--Accessing the Deposit Balance value-->
+                            {!v.DepositBalance} 
+                        </h3>
+                    </div>
+                    
+                    <div class="slds-hide slds-text-align_center slds-m-around_x-small head_Tab carousel_page">
+                        <h3 class="slds-text-heading_small metric-title">
+                            
+                            <!--  {!$Label.c.Credit_outstanding} -->
+                        </h3>
+                        <h3 class="slds-text-heading_medium metric-title">
+                            <!--Accessing the Credit Balance value-->
+                            {!v.CreditBalance} 
+                        </h3>
+                    </div>
+                    
+                    <div class="co-carousel_page-indicators slds-m-top_medium slds-hide"></div>
+                </div>
+            </div>
+            
+        </div>
+        <!-- Mobile View -->
+    </div>  
+    
+    <!--ltng:require scripts="{!join(',', $Resource.libtree + '/lib/jquery.min.js' , $Resource.JqueryMobileSwipe)}" afterScriptsLoaded="{!c.ScriptsLoaded}" /-->
+    <!-- Component ends-->
+</aura:component>

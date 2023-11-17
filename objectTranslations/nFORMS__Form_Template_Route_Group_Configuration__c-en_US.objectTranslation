@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <help><!-- The Form Template is associated to a route group. --></help>
+        <label><!-- Form Template --></label>
+        <name>nFORMS__Form_Template__c</name>
+        <relationshipLabel><!-- Template Configurations --></relationshipLabel>
+    </fields>
+    <fields>
+        <help><!-- The route group is associated to a form template. --></help>
+        <label><!-- Route Group --></label>
+        <name>nFORMS__Route_Group__c</name>
+        <relationshipLabel><!-- Template Configurations --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- lookupKey --></label>
+        <name>nFORMS__lookupKey__c</name>
+    </fields>
+</CustomObjectTranslation>

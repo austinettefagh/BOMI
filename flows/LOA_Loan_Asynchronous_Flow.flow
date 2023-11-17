@@ -1,0 +1,787 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Flow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <apiVersion>56.0</apiVersion>
+    <assignments>
+        <description>Adding loan and account covenant to collection</description>
+        <name>Adding_loan_and_account_covenant_to_collection</name>
+        <label>Adding loan and account covenant to collection</label>
+        <locationX>737</locationX>
+        <locationY>2352</locationY>
+        <assignmentItems>
+            <assignToReference>LoanCovenantCollection</assignToReference>
+            <operator>Add</operator>
+            <value>
+                <elementReference>LoanCovenant</elementReference>
+            </value>
+        </assignmentItems>
+        <assignmentItems>
+            <assignToReference>AccountCovenantCollection</assignToReference>
+            <operator>Add</operator>
+            <value>
+                <elementReference>AccountCovenant</elementReference>
+            </value>
+        </assignmentItems>
+        <connector>
+            <targetReference>Loop_through_covenant_mgmt_records</targetReference>
+        </connector>
+    </assignments>
+    <assignments>
+        <description>Adding records to main covenant collection</description>
+        <name>Adding_records_to_main_covenant_collection</name>
+        <label>Adding records to main covenant collection</label>
+        <locationX>1133</locationX>
+        <locationY>1656</locationY>
+        <assignmentItems>
+            <assignToReference>CovenantRecords</assignToReference>
+            <operator>Add</operator>
+            <value>
+                <elementReference>FinancialStatement</elementReference>
+            </value>
+        </assignmentItems>
+        <assignmentItems>
+            <assignToReference>CovenantRecords</assignToReference>
+            <operator>Add</operator>
+            <value>
+                <elementReference>TaxReturn</elementReference>
+            </value>
+        </assignmentItems>
+        <connector>
+            <targetReference>Loop_through_each_relationship</targetReference>
+        </connector>
+    </assignments>
+    <assignments>
+        <description>Assigning loan and relationship covenants</description>
+        <name>Assigning_loan_and_relationship_covenants</name>
+        <label>Assigning loan and relationship covenants</label>
+        <locationX>737</locationX>
+        <locationY>2232</locationY>
+        <assignmentItems>
+            <assignToReference>LoanCovenant.LLC_BI__Loan__c</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>$Record.Id</elementReference>
+            </value>
+        </assignmentItems>
+        <assignmentItems>
+            <assignToReference>LoanCovenant.LLC_BI__Covenant2__c</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>Loop_through_covenant_mgmt_records.Id</elementReference>
+            </value>
+        </assignmentItems>
+        <assignmentItems>
+            <assignToReference>AccountCovenant.LLC_BI__Account__c</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>Loop_through_covenant_mgmt_records.LLC_BI__Account__c</elementReference>
+            </value>
+        </assignmentItems>
+        <assignmentItems>
+            <assignToReference>AccountCovenant.LLC_BI__Covenant2__c</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>Loop_through_covenant_mgmt_records.Id</elementReference>
+            </value>
+        </assignmentItems>
+        <connector>
+            <targetReference>Adding_loan_and_account_covenant_to_collection</targetReference>
+        </connector>
+    </assignments>
+    <assignments>
+        <description>Assigning the Business record variables</description>
+        <name>Assigning_the_Business_record_variables</name>
+        <label>Assigning the Business record variables</label>
+        <locationX>869</locationX>
+        <locationY>1440</locationY>
+        <assignmentItems>
+            <assignToReference>FinancialStatement.LLC_BI__Account__c</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>Loop_through_each_relationship.LLC_BI__Account__c</elementReference>
+            </value>
+        </assignmentItems>
+        <assignmentItems>
+            <assignToReference>FinancialStatement.LLC_BI__Covenant_Type__c</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>BusinessFinancialStatementId</elementReference>
+            </value>
+        </assignmentItems>
+        <assignmentItems>
+            <assignToReference>FinancialStatement.LLC_BI__Frequency__c</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <stringValue>Annually</stringValue>
+            </value>
+        </assignmentItems>
+        <assignmentItems>
+            <assignToReference>TaxReturn.LLC_BI__Account__c</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>Loop_through_each_relationship.LLC_BI__Account__c</elementReference>
+            </value>
+        </assignmentItems>
+        <assignmentItems>
+            <assignToReference>TaxReturn.LLC_BI__Covenant_Type__c</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>BusinessTaxReturnId</elementReference>
+            </value>
+        </assignmentItems>
+        <assignmentItems>
+            <assignToReference>TaxReturn.LLC_BI__Frequency__c</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <stringValue>Annually</stringValue>
+            </value>
+        </assignmentItems>
+        <assignmentItems>
+            <assignToReference>FinancialStatement.LLC_BI__Effective_Date__c</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>Effectivedate</elementReference>
+            </value>
+        </assignmentItems>
+        <assignmentItems>
+            <assignToReference>TaxReturn.LLC_BI__Effective_Date__c</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>Effectivedate</elementReference>
+            </value>
+        </assignmentItems>
+        <assignmentItems>
+            <assignToReference>TaxReturn.LLC_BI__Next_Evaluation_Date__c</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>Nextevaluationdate</elementReference>
+            </value>
+        </assignmentItems>
+        <assignmentItems>
+            <assignToReference>FinancialStatement.LLC_BI__Next_Evaluation_Date__c</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>Nextevaluationdate</elementReference>
+            </value>
+        </assignmentItems>
+        <connector>
+            <targetReference>Adding_records_to_main_covenant_collection</targetReference>
+        </connector>
+    </assignments>
+    <assignments>
+        <description>Assigning the id based on covenant name</description>
+        <name>Assigning_the_id_based_on_covenant_name</name>
+        <label>Assigning the id based on covenant name</label>
+        <locationX>869</locationX>
+        <locationY>888</locationY>
+        <assignmentItems>
+            <assignToReference>BusinessFinancialStatementId</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>Loop_through_covenant_types.Id</elementReference>
+            </value>
+        </assignmentItems>
+        <connector>
+            <targetReference>Loop_through_covenant_types</targetReference>
+        </connector>
+    </assignments>
+    <assignments>
+        <description>Assigning the id based on covenant name</description>
+        <name>Assigning_the_id_based_on_covenant_names</name>
+        <label>Assigning the id based on covenant name</label>
+        <locationX>1661</locationX>
+        <locationY>888</locationY>
+        <assignmentItems>
+            <assignToReference>PersonalFinancialStatementId</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>Loop_through_covenant_types.Id</elementReference>
+            </value>
+        </assignmentItems>
+        <connector>
+            <targetReference>Loop_through_covenant_types</targetReference>
+        </connector>
+    </assignments>
+    <assignments>
+        <description>Assigning the Business record variables</description>
+        <name>Assigning_the_Person_record_variables</name>
+        <label>Assigning the Person record variables</label>
+        <locationX>1133</locationX>
+        <locationY>1440</locationY>
+        <assignmentItems>
+            <assignToReference>FinancialStatement.LLC_BI__Account__c</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>Loop_through_each_relationship.LLC_BI__Account__c</elementReference>
+            </value>
+        </assignmentItems>
+        <assignmentItems>
+            <assignToReference>FinancialStatement.LLC_BI__Covenant_Type__c</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>PersonalFinancialStatementId</elementReference>
+            </value>
+        </assignmentItems>
+        <assignmentItems>
+            <assignToReference>FinancialStatement.LLC_BI__Frequency__c</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <stringValue>Annually</stringValue>
+            </value>
+        </assignmentItems>
+        <assignmentItems>
+            <assignToReference>TaxReturn.LLC_BI__Account__c</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>Loop_through_each_relationship.LLC_BI__Account__c</elementReference>
+            </value>
+        </assignmentItems>
+        <assignmentItems>
+            <assignToReference>TaxReturn.LLC_BI__Covenant_Type__c</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>PersonalTaxReturnId</elementReference>
+            </value>
+        </assignmentItems>
+        <assignmentItems>
+            <assignToReference>TaxReturn.LLC_BI__Frequency__c</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <stringValue>Annually</stringValue>
+            </value>
+        </assignmentItems>
+        <assignmentItems>
+            <assignToReference>TaxReturn.LLC_BI__Effective_Date__c</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>Effectivedate</elementReference>
+            </value>
+        </assignmentItems>
+        <assignmentItems>
+            <assignToReference>TaxReturn.LLC_BI__Next_Evaluation_Date__c</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>Nextevaluationdate</elementReference>
+            </value>
+        </assignmentItems>
+        <assignmentItems>
+            <assignToReference>FinancialStatement.LLC_BI__Effective_Date__c</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>Effectivedate</elementReference>
+            </value>
+        </assignmentItems>
+        <assignmentItems>
+            <assignToReference>FinancialStatement.LLC_BI__Next_Evaluation_Date__c</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>Nextevaluationdate</elementReference>
+            </value>
+        </assignmentItems>
+        <connector>
+            <targetReference>Adding_records_to_main_covenant_collection</targetReference>
+        </connector>
+    </assignments>
+    <assignments>
+        <description>Assigning the id based on covenant name</description>
+        <name>Copy_1_of_Assigning_the_id_based_on_covenant_name</name>
+        <label>Assigning the id based on covenant name</label>
+        <locationX>1133</locationX>
+        <locationY>888</locationY>
+        <assignmentItems>
+            <assignToReference>BusinessTaxReturnId</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>Loop_through_covenant_types.Id</elementReference>
+            </value>
+        </assignmentItems>
+        <connector>
+            <targetReference>Loop_through_covenant_types</targetReference>
+        </connector>
+    </assignments>
+    <assignments>
+        <description>Assigning the id based on covenant name</description>
+        <name>Copy_2_of_Assigning_the_id_based_on_covenant_name</name>
+        <label>Assigning the id based on covenant name</label>
+        <locationX>1397</locationX>
+        <locationY>888</locationY>
+        <assignmentItems>
+            <assignToReference>PersonalTaxReturnId</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>Loop_through_covenant_types.Id</elementReference>
+            </value>
+        </assignmentItems>
+        <connector>
+            <targetReference>Loop_through_covenant_types</targetReference>
+        </connector>
+    </assignments>
+    <decisions>
+        <description>Checking covenant mgmt collection variable is null or not</description>
+        <name>Checking_covenant_mgmt_collection_variable_is_null_or_not</name>
+        <label>Checking covenant mgmt collection variable is null or not</label>
+        <locationX>781</locationX>
+        <locationY>1872</locationY>
+        <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
+        <rules>
+            <name>Checking_covenant_mgmt</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>CovenantRecords</leftValueReference>
+                <operator>IsNull</operator>
+                <rightValue>
+                    <booleanValue>false</booleanValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Creating_covenant_mgmt</targetReference>
+            </connector>
+            <label>Checking covenant mgmt</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <description>Checking the account record type</description>
+        <name>Checking_the_account_record_type</name>
+        <label>Checking the account record type</label>
+        <locationX>1133</locationX>
+        <locationY>1320</locationY>
+        <defaultConnector>
+            <isGoTo>true</isGoTo>
+            <targetReference>Loop_through_each_relationship</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
+        <rules>
+            <name>Checking_record_type</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>Loop_through_each_relationship.LLC_BI__Account__r.RecordType.DeveloperName</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>IndustriesBusiness</stringValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Assigning_the_Business_record_variables</targetReference>
+            </connector>
+            <label>Checking Business record type</label>
+        </rules>
+        <rules>
+            <name>Checking_the_person_record_type</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>Loop_through_each_relationship.LLC_BI__Account__r.RecordType.DeveloperName</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>PersonAccount</stringValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Assigning_the_Person_record_variables</targetReference>
+            </connector>
+            <label>Checking the person record type</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <description>Checking the covenant type name</description>
+        <name>Checking_the_covenant_type_name</name>
+        <label>Checking the covenant type name</label>
+        <locationX>1397</locationX>
+        <locationY>768</locationY>
+        <defaultConnector>
+            <targetReference>Loop_through_covenant_types</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
+        <rules>
+            <name>Checking_Business_Financial_Statement_covenant_name</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>Loop_through_covenant_types.Name</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Business Financial Statement</stringValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Assigning_the_id_based_on_covenant_name</targetReference>
+            </connector>
+            <label>Checking Business Financial Statement covenant name</label>
+        </rules>
+        <rules>
+            <name>Checking_the_Business_Tax_Return_covenant_type_name</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>Loop_through_covenant_types.Name</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Business Tax Return</stringValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Copy_1_of_Assigning_the_id_based_on_covenant_name</targetReference>
+            </connector>
+            <label>Checking the Business Tax Return covenant type name</label>
+        </rules>
+        <rules>
+            <name>Checking_the_Personal_Tax_Return_covenant_type_name</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>Loop_through_covenant_types.Name</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Personal Tax Return</stringValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Copy_2_of_Assigning_the_id_based_on_covenant_name</targetReference>
+            </connector>
+            <label>Checking the Personal Tax Return covenant type name</label>
+        </rules>
+        <rules>
+            <name>Checking_the_Personal_Financial_Statement_covenent_name</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>Loop_through_covenant_types.Name</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Personal Financial Statement</stringValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Assigning_the_id_based_on_covenant_names</targetReference>
+            </connector>
+            <label>Checking the Personal Financial Statement covenent name</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <description>Chekcing the loan stage</description>
+        <name>Checking_the_loan_stage</name>
+        <label>Checking the loan stage</label>
+        <locationX>979</locationX>
+        <locationY>288</locationY>
+        <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
+        <rules>
+            <name>Chekcing_the_stage</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record.LLC_BI__Stage__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Credit Underwriting</stringValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.CF_PriorStageValue__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Application Processing</stringValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Getting_related_entity_involvement_records</targetReference>
+            </connector>
+            <label>Checking the stage</label>
+        </rules>
+    </decisions>
+    <description>Loan Asynchronous Flow</description>
+    <formulas>
+        <description>Effectivedate</description>
+        <name>Effectivedate</name>
+        <dataType>Date</dataType>
+        <expression>DATE(YEAR({!$Record.LLC_BI__CloseDate__c}),12,31)</expression>
+    </formulas>
+    <formulas>
+        <description>Loan Prior Stage</description>
+        <name>LoanPriorStage</name>
+        <dataType>String</dataType>
+        <expression>TEXT(PRIORVALUE({!$Record.LLC_BI__Stage__c}))</expression>
+    </formulas>
+    <formulas>
+        <description>Next evaluation date</description>
+        <name>Nextevaluationdate</name>
+        <dataType>Date</dataType>
+        <expression>DATE(YEAR({!Effectivedate})+1,12,31)</expression>
+    </formulas>
+    <interviewLabel>Loan Asynchronous Flow {!$Flow.CurrentDateTime}</interviewLabel>
+    <label>LOA_Loan_Asynchronous_Flow</label>
+    <loops>
+        <description>Loop through covenant mgmt records</description>
+        <name>Loop_through_covenant_mgmt_records</name>
+        <label>Loop through covenant mgmt records</label>
+        <locationX>649</locationX>
+        <locationY>2112</locationY>
+        <collectionReference>CovenantRecords</collectionReference>
+        <iterationOrder>Asc</iterationOrder>
+        <nextValueConnector>
+            <targetReference>Assigning_loan_and_relationship_covenants</targetReference>
+        </nextValueConnector>
+        <noMoreValuesConnector>
+            <targetReference>Creating_loan_covenant_records</targetReference>
+        </noMoreValuesConnector>
+    </loops>
+    <loops>
+        <description>Loop through covenant types</description>
+        <name>Loop_through_covenant_types</name>
+        <label>Loop through covenant types</label>
+        <locationX>781</locationX>
+        <locationY>648</locationY>
+        <collectionReference>Getting_covenant_type_records</collectionReference>
+        <iterationOrder>Asc</iterationOrder>
+        <nextValueConnector>
+            <targetReference>Checking_the_covenant_type_name</targetReference>
+        </nextValueConnector>
+        <noMoreValuesConnector>
+            <targetReference>Loop_through_each_relationship</targetReference>
+        </noMoreValuesConnector>
+    </loops>
+    <loops>
+        <description>Loop through each relationship</description>
+        <name>Loop_through_each_relationship</name>
+        <label>Loop through each relationship</label>
+        <locationX>781</locationX>
+        <locationY>1200</locationY>
+        <collectionReference>Getting_related_entity_involvement_records</collectionReference>
+        <iterationOrder>Asc</iterationOrder>
+        <nextValueConnector>
+            <targetReference>Checking_the_account_record_type</targetReference>
+        </nextValueConnector>
+        <noMoreValuesConnector>
+            <targetReference>Checking_covenant_mgmt_collection_variable_is_null_or_not</targetReference>
+        </noMoreValuesConnector>
+    </loops>
+    <processMetadataValues>
+        <name>BuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>CanvasMode</name>
+        <value>
+            <stringValue>AUTO_LAYOUT_CANVAS</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>OriginBuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processType>AutoLaunchedFlow</processType>
+    <recordCreates>
+        <description>Creating account covenant records</description>
+        <name>Creating_account_covenant_records</name>
+        <label>Creating account covenant records</label>
+        <locationX>649</locationX>
+        <locationY>2688</locationY>
+        <inputReference>AccountCovenantCollection</inputReference>
+    </recordCreates>
+    <recordCreates>
+        <name>Creating_covenant_mgmt</name>
+        <label>Creating covenant mgmt</label>
+        <locationX>649</locationX>
+        <locationY>1992</locationY>
+        <connector>
+            <targetReference>Loop_through_covenant_mgmt_records</targetReference>
+        </connector>
+        <inputReference>CovenantRecords</inputReference>
+    </recordCreates>
+    <recordCreates>
+        <description>Creating loan covenant records</description>
+        <name>Creating_loan_covenant_records</name>
+        <label>Creating loan covenant records</label>
+        <locationX>649</locationX>
+        <locationY>2568</locationY>
+        <connector>
+            <targetReference>Creating_account_covenant_records</targetReference>
+        </connector>
+        <inputReference>LoanCovenantCollection</inputReference>
+    </recordCreates>
+    <recordLookups>
+        <description>Getting covenant type records</description>
+        <name>Getting_covenant_type_records</name>
+        <label>Getting covenant type records</label>
+        <locationX>781</locationX>
+        <locationY>528</locationY>
+        <assignNullValuesIfNoRecordsFound>false</assignNullValuesIfNoRecordsFound>
+        <connector>
+            <targetReference>Loop_through_covenant_types</targetReference>
+        </connector>
+        <filterLogic>(1 AND 5) OR (2 AND 5) OR (3 AND 5) OR (4 AND 5)</filterLogic>
+        <filters>
+            <field>Name</field>
+            <operator>EqualTo</operator>
+            <value>
+                <stringValue>Personal Tax Return</stringValue>
+            </value>
+        </filters>
+        <filters>
+            <field>Name</field>
+            <operator>EqualTo</operator>
+            <value>
+                <stringValue>Personal Financial Statement</stringValue>
+            </value>
+        </filters>
+        <filters>
+            <field>Name</field>
+            <operator>EqualTo</operator>
+            <value>
+                <stringValue>Business Tax Return</stringValue>
+            </value>
+        </filters>
+        <filters>
+            <field>Name</field>
+            <operator>EqualTo</operator>
+            <value>
+                <stringValue>Business Financial Statement</stringValue>
+            </value>
+        </filters>
+        <filters>
+            <field>LLC_BI__Category__c</field>
+            <operator>EqualTo</operator>
+            <value>
+                <stringValue>Financial Statement Requirements</stringValue>
+            </value>
+        </filters>
+        <getFirstRecordOnly>false</getFirstRecordOnly>
+        <object>LLC_BI__Covenant_Type__c</object>
+        <storeOutputAutomatically>true</storeOutputAutomatically>
+    </recordLookups>
+    <recordLookups>
+        <description>Getting related entity involvement records</description>
+        <name>Getting_related_entity_involvement_records</name>
+        <label>Getting related entity involvement records</label>
+        <locationX>781</locationX>
+        <locationY>408</locationY>
+        <assignNullValuesIfNoRecordsFound>false</assignNullValuesIfNoRecordsFound>
+        <connector>
+            <targetReference>Getting_covenant_type_records</targetReference>
+        </connector>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <field>LLC_BI__Loan__c</field>
+            <operator>EqualTo</operator>
+            <value>
+                <elementReference>$Record.Id</elementReference>
+            </value>
+        </filters>
+        <getFirstRecordOnly>false</getFirstRecordOnly>
+        <object>LLC_BI__Legal_Entities__c</object>
+        <storeOutputAutomatically>true</storeOutputAutomatically>
+    </recordLookups>
+    <start>
+        <locationX>50</locationX>
+        <locationY>0</locationY>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <field>LLC_BI__Stage__c</field>
+            <operator>IsChanged</operator>
+            <value>
+                <booleanValue>true</booleanValue>
+            </value>
+        </filters>
+        <object>LLC_BI__Loan__c</object>
+        <recordTriggerType>CreateAndUpdate</recordTriggerType>
+        <scheduledPaths>
+            <connector>
+                <targetReference>Checking_the_loan_stage</targetReference>
+            </connector>
+            <pathType>AsyncAfterCommit</pathType>
+        </scheduledPaths>
+        <triggerType>RecordAfterSave</triggerType>
+    </start>
+    <status>Obsolete</status>
+    <variables>
+        <description>Account Covenant</description>
+        <name>AccountCovenant</name>
+        <dataType>SObject</dataType>
+        <isCollection>false</isCollection>
+        <isInput>true</isInput>
+        <isOutput>true</isOutput>
+        <objectType>LLC_BI__Account_Covenant__c</objectType>
+    </variables>
+    <variables>
+        <description>AccountCovenant Collection</description>
+        <name>AccountCovenantCollection</name>
+        <dataType>SObject</dataType>
+        <isCollection>true</isCollection>
+        <isInput>true</isInput>
+        <isOutput>true</isOutput>
+        <objectType>LLC_BI__Account_Covenant__c</objectType>
+    </variables>
+    <variables>
+        <description>Business Financial StatementId</description>
+        <name>BusinessFinancialStatementId</name>
+        <dataType>String</dataType>
+        <isCollection>false</isCollection>
+        <isInput>true</isInput>
+        <isOutput>true</isOutput>
+    </variables>
+    <variables>
+        <description>Business Tax Return Id</description>
+        <name>BusinessTaxReturnId</name>
+        <dataType>String</dataType>
+        <isCollection>false</isCollection>
+        <isInput>true</isInput>
+        <isOutput>true</isOutput>
+    </variables>
+    <variables>
+        <description>Covenant Records</description>
+        <name>CovenantRecords</name>
+        <dataType>SObject</dataType>
+        <isCollection>true</isCollection>
+        <isInput>true</isInput>
+        <isOutput>true</isOutput>
+        <objectType>LLC_BI__Covenant2__c</objectType>
+    </variables>
+    <variables>
+        <description>FinancialStatement</description>
+        <name>FinancialStatement</name>
+        <dataType>SObject</dataType>
+        <isCollection>false</isCollection>
+        <isInput>true</isInput>
+        <isOutput>true</isOutput>
+        <objectType>LLC_BI__Covenant2__c</objectType>
+    </variables>
+    <variables>
+        <description>LoanCovenant</description>
+        <name>LoanCovenant</name>
+        <dataType>SObject</dataType>
+        <isCollection>false</isCollection>
+        <isInput>true</isInput>
+        <isOutput>true</isOutput>
+        <objectType>LLC_BI__Loan_Covenant__c</objectType>
+    </variables>
+    <variables>
+        <description>LoanCovenant Collection</description>
+        <name>LoanCovenantCollection</name>
+        <dataType>SObject</dataType>
+        <isCollection>true</isCollection>
+        <isInput>true</isInput>
+        <isOutput>true</isOutput>
+        <objectType>LLC_BI__Loan_Covenant__c</objectType>
+    </variables>
+    <variables>
+        <description>Personal Financial Statement Id</description>
+        <name>PersonalFinancialStatementId</name>
+        <dataType>String</dataType>
+        <isCollection>false</isCollection>
+        <isInput>true</isInput>
+        <isOutput>true</isOutput>
+    </variables>
+    <variables>
+        <description>Personal Tax ReturnId</description>
+        <name>PersonalTaxReturnId</name>
+        <dataType>String</dataType>
+        <isCollection>false</isCollection>
+        <isInput>true</isInput>
+        <isOutput>true</isOutput>
+    </variables>
+    <variables>
+        <description>Tax Return</description>
+        <name>TaxReturn</name>
+        <dataType>SObject</dataType>
+        <isCollection>false</isCollection>
+        <isInput>true</isInput>
+        <isOutput>true</isOutput>
+        <objectType>LLC_BI__Covenant2__c</objectType>
+    </variables>
+</Flow>

@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Industry Code</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Industry Codes</value>
+    </caseValues>
+    <fields>
+        <label><!-- Industry Code Description --></label>
+        <name>cm_Industry_Code_Description__c</name>
+    </fields>
+    <fields>
+        <label><!-- Industry Code --></label>
+        <name>cm_Industry_Code__c</name>
+    </fields>
+    <fields>
+        <label><!-- Is ACH Prohibited Industry? --></label>
+        <name>cm_Is_ACH_Prohibited_Industry__c</name>
+    </fields>
+    <fields>
+        <label><!-- Is ACH Restricted Industry? --></label>
+        <name>cm_Is_ACH_Restricted_Industry__c</name>
+    </fields>
+    <fields>
+        <label><!-- Is RDC Prohibited Industry? --></label>
+        <name>cm_Is_RDC_Prohibited_Industry__c</name>
+    </fields>
+    <fields>
+        <label><!-- Is RDC Restricted Industry? --></label>
+        <name>cm_Is_RDC_Restricted_Industry__c</name>
+    </fields>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

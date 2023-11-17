@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <help><!-- Enter the context object. --></help>
+        <label><!-- Context Object --></label>
+        <name>LLC_BI__Context_Object__c</name>
+    </fields>
+    <fields>
+        <help><!-- Enter information to help the matrix analyst populate values into this dimension; for example, the desired unit type. --></help>
+        <label><!-- Excluded Dimension Help Text --></label>
+        <name>LLC_BI__Excluded_Dimension_Help_Text__c</name>
+    </fields>
+    <fields>
+        <help><!-- For queried dimensions, enter the source field path for value extraction. --></help>
+        <label><!-- Source Field Path --></label>
+        <name>LLC_BI__Field_Path__c</name>
+    </fields>
+    <fields>
+        <help><!-- Select a policy type. --></help>
+        <label><!-- Policy Type --></label>
+        <name>LLC_BI__Policy_Type__c</name>
+        <relationshipLabel><!-- Dimension Definitions --></relationshipLabel>
+    </fields>
+    <fields>
+        <help><!-- For non-queried dimensions, enter the target field path for value mapping. --></help>
+        <label><!-- Target Field Path --></label>
+        <name>LLC_BI__Target_Field_Path__c</name>
+    </fields>
+    <fields>
+        <help><!-- Select a dimension type. --></help>
+        <label><!-- Type --></label>
+        <name>LLC_BI__Type__c</name>
+        <picklistValues>
+            <masterLabel>Continuous: Numeric</masterLabel>
+            <translation><!-- Continuous: Numeric --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Discrete: Values/Groupable</masterLabel>
+            <translation><!-- Discrete: Values/Groupable --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Excluded</masterLabel>
+            <translation><!-- Excluded --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Result Column</masterLabel>
+            <translation><!-- Result Column --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Routing</masterLabel>
+            <translation><!-- Routing --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- lookupKey --></label>
+        <name>LLC_BI__lookupKey__c</name>
+    </fields>
+</CustomObjectTranslation>

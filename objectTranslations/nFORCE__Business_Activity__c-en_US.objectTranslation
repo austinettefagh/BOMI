@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <help><!-- Enter the name of the business process you want to associate with the business activity. --></help>
+        <label><!-- Business Process --></label>
+        <name>nFORCE__Business_Process__c</name>
+        <relationshipLabel><!-- Business Process Activities --></relationshipLabel>
+    </fields>
+    <fields>
+        <help><!-- When set to true, this checkbox indicates that state data from this business activity should be passed to the next business activity. --></help>
+        <label><!-- Chain State Data --></label>
+        <name>nFORCE__Chain_State_Data__c</name>
+    </fields>
+    <fields>
+        <help><!-- This text field indicates the purpose of the business activity. --></help>
+        <label><!-- Description --></label>
+        <name>nFORCE__Description__c</name>
+    </fields>
+    <fields>
+        <help><!-- This number field indicates how many expected child business activities this business activity has. --></help>
+        <label><!-- Expected Child Count --></label>
+        <name>nFORCE__Expected_Child_Count__c</name>
+    </fields>
+    <fields>
+        <help><!-- This text field indicates the fully qualified class name of the business activity&apos;s handler. --></help>
+        <label><!-- Fully Qualified Class Name --></label>
+        <name>nFORCE__FQCN__c</name>
+    </fields>
+    <fields>
+        <help><!-- This checkbox field indicates if the system should schedule the business activity to run once. --></help>
+        <label><!-- Is Scheduled Single Run --></label>
+        <name>nFORCE__Is_Scheduled_Single_Run__c</name>
+    </fields>
+    <fields>
+        <help><!-- This checkbox field indicates if the system should schedule the business activity to run at a particular time. --></help>
+        <label><!-- Is Scheduled --></label>
+        <name>nFORCE__Is_Scheduled__c</name>
+    </fields>
+    <fields>
+        <help><!-- This optional checkbox field indicates if the business activity should run asynchronously. --></help>
+        <label><!-- Perform Async --></label>
+        <name>nFORCE__Perform_Async__c</name>
+    </fields>
+    <fields>
+        <help><!-- This text field that indicates the date/time cron expression when the scheduled business activity should run. --></help>
+        <label><!-- Scheduled CRON Expression --></label>
+        <name>nFORCE__Scheduled_CRON_Expr__c</name>
+    </fields>
+    <fields>
+        <help><!-- This number field indicates how many seconds from now the business activity should run. --></help>
+        <label><!-- Scheduled Seconds From Now --></label>
+        <name>nFORCE__Scheduled_Seconds_From_Now__c</name>
+    </fields>
+    <fields>
+        <help><!-- This number field indicates the order in which the business activity should run. --></help>
+        <label><!-- Sort Order --></label>
+        <name>nFORCE__Sort_Order__c</name>
+    </fields>
+    <fields>
+        <help><!-- This picklist field indicates the status of the business activity. --></help>
+        <label><!-- Status --></label>
+        <name>nFORCE__Status__c</name>
+        <picklistValues>
+            <masterLabel>Cancelled</masterLabel>
+            <translation><!-- Cancelled --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Completed Successfully</masterLabel>
+            <translation><!-- Completed Successfully --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Completed With Errors</masterLabel>
+            <translation><!-- Completed With Errors --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>In Progress</masterLabel>
+            <translation><!-- In Progress --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Queued</masterLabel>
+            <translation><!-- Queued --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Scheduled</masterLabel>
+            <translation><!-- Scheduled --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- This checkbox indicates that the business activity should remain in progress until an external process updates the status to continue. --></help>
+        <label><!-- Wait For External Update --></label>
+        <name>nFORCE__Wait_For_External_Update__c</name>
+    </fields>
+    <fields>
+        <help><!-- This field contains the External ID for the Business Activity. --></help>
+        <label><!-- Lookup Key --></label>
+        <name>nFORCE__lookupKey__c</name>
+    </fields>
+    <validationRules>
+        <errorMessage><!-- The business activity name must be unique. Check the name and try again. --></errorMessage>
+        <name>nFORCE__Enforce_Unique_Name</name>
+    </validationRules>
+</CustomObjectTranslation>

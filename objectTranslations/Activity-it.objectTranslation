@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <label><!-- DB Activity Type --></label>
+        <name>DB_Activity_Type__c</name>
+    </fields>
+    <fields>
+        <label><!-- Expectations --></label>
+        <name>FinServ__Expectations__c</name>
+    </fields>
+    <fields>
+        <label><!-- Household --></label>
+        <name>FinServ__Household__c</name>
+        <relationshipLabel><!-- Activities --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Next Steps --></label>
+        <name>FinServ__NextSteps__c</name>
+    </fields>
+    <fields>
+        <label><!-- Objectives --></label>
+        <name>FinServ__Objectives__c</name>
+    </fields>
+    <fields>
+        <label><!-- Regarding --></label>
+        <name>FinServ__Regarding__c</name>
+        <picklistValues>
+            <masterLabel>Client Retention</masterLabel>
+            <translation>Fidelizzazione del cliente</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Onboarding</masterLabel>
+            <translation>Nuovi</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Prospecting</masterLabel>
+            <translation>Potenziali</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Service</masterLabel>
+            <translation>Servizio</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Follow-Up Date --></label>
+        <name>Follow_Up_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Follow-Up Subject --></label>
+        <name>Follow_Up_Subject__c</name>
+    </fields>
+    <fields>
+        <label><!-- Assignment Group --></label>
+        <name>LLC_BI__Assignment_Group__c</name>
+    </fields>
+    <fields>
+        <help><!-- Enter estimated time to complete a task --></help>
+        <label><!-- Estimated Time --></label>
+        <name>LLC_BI__Estimated_Time__c</name>
+    </fields>
+    <fields>
+        <label><!-- Assignment Group --></label>
+        <name>LLC_BI__Group__c</name>
+        <relationshipLabel><!-- Activities --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Maintenance Category --></label>
+        <name>LLC_BI__Maintenance_Type__c</name>
+        <picklistValues>
+            <masterLabel>Add</masterLabel>
+            <translation><!-- Add --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Change</masterLabel>
+            <translation><!-- Change --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Remove</masterLabel>
+            <translation><!-- Remove --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Parent Task --></label>
+        <name>LLC_BI__Parent_Task__c</name>
+    </fields>
+    <fields>
+        <label><!-- Maintenance Type --></label>
+        <name>LLC_BI__SubType__c</name>
+        <picklistValues>
+            <masterLabel>Add Authorized User</masterLabel>
+            <translation><!-- Add Authorized User --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Address Change</masterLabel>
+            <translation><!-- Address Change --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Credit Limit Change</masterLabel>
+            <translation><!-- Credit Limit Change --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Other</masterLabel>
+            <translation><!-- Other --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Is Template --></label>
+        <name>LLC_BI__isTemplate__c</name>
+    </fields>
+</CustomObjectTranslation>

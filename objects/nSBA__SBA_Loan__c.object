@@ -1,0 +1,887 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <allowInChatterGroups>false</allowInChatterGroups>
+    <compactLayoutAssignment>SYSTEM</compactLayoutAssignment>
+    <deploymentStatus>Deployed</deploymentStatus>
+    <deprecated>false</deprecated>
+    <description>This object will hold the SBA Loan data for summarizing fields for Use of Proceeds and other forms.</description>
+    <enableActivities>false</enableActivities>
+    <enableBulkApi>true</enableBulkApi>
+    <enableFeeds>false</enableFeeds>
+    <enableHistory>false</enableHistory>
+    <enableLicensing>false</enableLicensing>
+    <enableReports>true</enableReports>
+    <enableSearch>false</enableSearch>
+    <enableSharing>true</enableSharing>
+    <enableStreamingApi>true</enableStreamingApi>
+    <externalSharingModel>Private</externalSharingModel>
+    <fields>
+        <fullName>nSBA__Account_Receivable_Payable_and_Inventory__c</fullName>
+        <defaultValue>false</defaultValue>
+        <deprecated>false</deprecated>
+        <description>Users manually populate this optional checkbox field to indicate the aging of accounts receivable and accounts payable, and inventory reports (dated within 180 days of application). By default, it is false.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Users manually populate this optional checkbox field to indicate the aging of accounts receivable and accounts payable, and inventory reports (dated within 180 days of application). By default, it is false.</inlineHelpText>
+        <label>Account Receivable Payable and Inventory</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>nSBA__Application__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <deprecated>false</deprecated>
+        <description>The system automatically populates this optional field to reference to the Application object. By default, it is empty.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>The field is used to reference the Application object.</inlineHelpText>
+        <label>Application</label>
+        <referenceTo>LLC_BI__Application__c</referenceTo>
+        <relationshipLabel>SBA Loan with Application</relationshipLabel>
+        <relationshipName>SBA_Loan_with_Application</relationshipName>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>nSBA__Assets_Source__c</fullName>
+        <deprecated>false</deprecated>
+        <description>The system automatically populates this optional field to summarize the Assets Source for the Borrower&apos;s Injection. By default, it is empty.</description>
+        <encryptionScheme>None</encryptionScheme>
+        <externalId>false</externalId>
+        <inlineHelpText>This field is used to summarize the Assets Source for the Borrower&apos;s Injection.</inlineHelpText>
+        <label>Assets Source</label>
+        <length>255</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>nSBA__Business_Acquisition_SOP_Followed__c</fullName>
+        <defaultValue>false</defaultValue>
+        <deprecated>false</deprecated>
+        <description>Users manually populate this optional checkbox field to indicate if the Lender has followed International Trade or Export Express Business Acquisition SOP. By default, it is false.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Users manually populate this optional checkbox field to indicate if the Lender has followed International Trade or Export Express Business Acquisition SOP. By default, it is false.</inlineHelpText>
+        <label>Business Acquisition SOP Followed</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>nSBA__Cash_Source__c</fullName>
+        <deprecated>false</deprecated>
+        <description>The system automatically populates this optional field to summarize the Cash Source for the Borrower&apos;s Injection. By default, it is empty.</description>
+        <encryptionScheme>None</encryptionScheme>
+        <externalId>false</externalId>
+        <inlineHelpText>This field is used to summarize the Cash Source for the Borrower&apos;s Injection.</inlineHelpText>
+        <label>Cash Source</label>
+        <length>255</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>nSBA__Complex_Interest_Base_Rate_1__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Users manually populate this optional percent field to provide a Base Interest Rate of the first part of the complex interest rate. By default, it is empty.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Users manually populate this optional percent field to provide a Base Interest Rate of the first part of the complex interest rate. By default, it is empty.</inlineHelpText>
+        <label>Complex Interest Base Rate 1</label>
+        <precision>6</precision>
+        <required>false</required>
+        <scale>3</scale>
+        <trackTrending>false</trackTrending>
+        <type>Percent</type>
+    </fields>
+    <fields>
+        <fullName>nSBA__Complex_Interest_Base_Rate_2__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Users manually populate this optional percent field to provide a Base Interest Rate of the second part of the complex interest rate. By default, it is empty.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Users manually populate this optional percent field to provide a Base Interest Rate of the second part of the complex interest rate. By default, it is empty.</inlineHelpText>
+        <label>Complex Interest Base Rate 2</label>
+        <precision>6</precision>
+        <required>false</required>
+        <scale>3</scale>
+        <trackTrending>false</trackTrending>
+        <type>Percent</type>
+    </fields>
+    <fields>
+        <fullName>nSBA__Credit_Elsewhere_Analysis_Documentation__c</fullName>
+        <defaultValue>false</defaultValue>
+        <deprecated>false</deprecated>
+        <description>Users manually populate this optional checkbox field to indicate the credit elsewhere analysis documentation is provided. By default, it is false.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Users manually populate this optional checkbox field to indicate the credit elsewhere analysis documentation is provided. By default, it is false.</inlineHelpText>
+        <label>Credit Elsewhere Analysis Documentation</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>nSBA__Disbursement_Type__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Users populate this optional picklist field to specify the loan’s disbursement type on SBA Form 1050. By default, it is empty.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>This field is used to specify the disbursement type of the loan on SBA Form 1050.</inlineHelpText>
+        <label>Disbursement Type</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>First Disbursement</fullName>
+                    <default>false</default>
+                    <label>First Disbursement</label>
+                </value>
+                <value>
+                    <fullName>Subsequent Disbursement</fullName>
+                    <default>false</default>
+                    <label>Subsequent Disbursement</label>
+                </value>
+                <value>
+                    <fullName>Full Disbursement</fullName>
+                    <default>false</default>
+                    <label>Full Disbursement</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>nSBA__EPC_Complies_With_All_Requirements__c</fullName>
+        <defaultValue>false</defaultValue>
+        <deprecated>false</deprecated>
+        <description>Users manually populate this optional checkbox field to indicate EPC compliance with all program requirements related to EPC/OC loans. By default, it is false.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Users manually populate this optional checkbox field to indicate EPC compliance with all program requirements related to EPC/OC loans. By default, it is false.</inlineHelpText>
+        <label>EPC Complies With All Requirements</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>nSBA__EWCP_Authorized_to_Conduct_Business__c</fullName>
+        <defaultValue>false</defaultValue>
+        <deprecated>false</deprecated>
+        <description>Users manually populate this optional checkbox field to indicate EWCP is authorized to conduct business. By default, it is false.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Users manually populate this optional checkbox field to indicate EWCP is authorized to conduct business. By default, it is false.</inlineHelpText>
+        <label>EWCP Authorized to Conduct Business</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>nSBA__EWCP_Collateral_Requirements_Followed__c</fullName>
+        <defaultValue>false</defaultValue>
+        <deprecated>false</deprecated>
+        <description>Users manually populate this optional checkbox field to indicate the loan follows EWCP collateral requirements. By default, it is false.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Users manually populate this optional checkbox field to indicate the loan follows EWCP collateral requirements. By default, it is false.</inlineHelpText>
+        <label>EWCP Collateral Requirements Followed</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>nSBA__EWCP_Eligible_Use_Of_Proceeds__c</fullName>
+        <defaultValue>false</defaultValue>
+        <deprecated>false</deprecated>
+        <description>Users manually populate this optional checkbox field to indicate the Use of Proceeds is EWCP eligible. By default, it is false.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Users manually populate this optional checkbox field to indicate the Use of Proceeds is EWCP eligible. By default, it is false.</inlineHelpText>
+        <label>EWCP Eligible Use Of Proceeds</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>nSBA__EWCP_Indirect_Export_Documentation__c</fullName>
+        <defaultValue>false</defaultValue>
+        <deprecated>false</deprecated>
+        <description>Users manually populate this optional checkbox field to indicate EWCP Indirect Export Documentation is provided. By default, it is false.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Users manually populate this optional checkbox field to indicate EWCP Indirect Export Documentation is provided. By default, it is false.</inlineHelpText>
+        <label>EWCP Indirect Export Documentation</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>nSBA__EWCP_Refinance_Requirements_Followed__c</fullName>
+        <defaultValue>false</defaultValue>
+        <deprecated>false</deprecated>
+        <description>Users manually populate this optional checkbox field to indicate Lender has followed EWCP refinance requirements. By default, it is false.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Users manually populate this optional checkbox field to indicate Lender has followed EWCP refinance requirements. By default, it is false.</inlineHelpText>
+        <label>EWCP Refinance Requirements Followed</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>nSBA__Export_Cash_Flow_Provided__c</fullName>
+        <defaultValue>false</defaultValue>
+        <deprecated>false</deprecated>
+        <description>Users manually populate this optional checkbox field to indicate an export cash flow is provided. By default, it is false.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Users manually populate this optional checkbox field to indicate an export cash flow is provided. By default, it is false.</inlineHelpText>
+        <label>Export Cash Flow Provided</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>nSBA__Export_Credit_Insurance_Material__c</fullName>
+        <defaultValue>false</defaultValue>
+        <deprecated>false</deprecated>
+        <description>Users manually populate this optional checkbox field to indicate if an export credit insurance-related material (policy, application, buyer credit limit) is provided. By default, it is false.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Users manually populate this optional checkbox field to indicate if an export credit insurance-related material (policy, application, buyer credit limit) is provided. By default, it is false.</inlineHelpText>
+        <label>Export Credit Insurance Material</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>nSBA__Export_LOC_or_Buyer_Contract_Provided__c</fullName>
+        <defaultValue>false</defaultValue>
+        <deprecated>false</deprecated>
+        <description>Users manually populate this optional checkbox field to indicate copy of letter(s) of credit and/or copy of buyer&apos;s order/contract is provided. By default, it is false.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Users manually populate this optional checkbox field to indicate copy of letter(s) of credit and/or copy of buyer&apos;s order/contract is provided. By default, it is false.</inlineHelpText>
+        <label>Export LOC or Buyer Contract Provided</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>nSBA__Export_License_Copy_Provided__c</fullName>
+        <defaultValue>false</defaultValue>
+        <deprecated>false</deprecated>
+        <description>Users manually populate this optional checkbox field to indicate a copy of export license(s) is provided. By default, it is false.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Users manually populate this optional checkbox field to indicate a copy of export license(s) is provided. By default, it is false.</inlineHelpText>
+        <label>Export License Copy Provided</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>nSBA__ITL_Improve_Market_Position__c</fullName>
+        <defaultValue>false</defaultValue>
+        <deprecated>false</deprecated>
+        <description>Users manually populate this optional checkbox field to indicate the small business concern has demonstrated that the loan will allow it to improve its competitive position. By default, it is false.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Users manually populate this optional checkbox field to indicate the small business concern has demonstrated that the loan will allow it to improve its competitive position. By default, it is false.</inlineHelpText>
+        <label>ITL Improve Market Position</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>nSBA__Is_EWCP_Asset_Based_Loan__c</fullName>
+        <defaultValue>false</defaultValue>
+        <deprecated>false</deprecated>
+        <description>Users manually populate this optional checkbox field to indicate if the loan is EWCP asset based. By default, it is false.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Users manually populate this optional checkbox field to indicate if the loan is EWCP asset based. By default, it is false.</inlineHelpText>
+        <label>Is EWCP Asset Based Loan</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>nSBA__Is_EWCP_Transaction_Based_Loan__c</fullName>
+        <defaultValue>false</defaultValue>
+        <deprecated>false</deprecated>
+        <description>Users manually populate this optional checkbox field to indicate if the loan is EWCP transaction based. By default, it is false.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Users manually populate this optional checkbox field to indicate if the loan is EWCP transaction based. By default, it is false.</inlineHelpText>
+        <label>Is EWCP Transaction Based Loan</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>nSBA__Management_for_Day_to_Day_Operations__c</fullName>
+        <defaultValue>false</defaultValue>
+        <deprecated>false</deprecated>
+        <description>Users manually populate this optional checkbox field to indicate if the applicant is to hire a management company for day-to-day operations. By default, it is false.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Users manually populate this optional checkbox field to indicate if the applicant is to hire a management company for day-to-day operations. By default, it is false.</inlineHelpText>
+        <label>Management for Day to Day Operations</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>nSBA__Other_for_Borrowers_Injection__c</fullName>
+        <deprecated>false</deprecated>
+        <description>The system automatically populates this optional field to summarize the Other for the Borrower&apos;s Injection. By default, it is empty.</description>
+        <encryptionScheme>None</encryptionScheme>
+        <externalId>false</externalId>
+        <inlineHelpText>This field is used to summarize the Other for the Borrower&apos;s Injection.</inlineHelpText>
+        <label>Other for Borrower&apos;s Injection</label>
+        <length>255</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>nSBA__Plan_to_Use_ROBS_for_Equity_Injection__c</fullName>
+        <defaultValue>false</defaultValue>
+        <deprecated>false</deprecated>
+        <description>Users manually populate this optional checkbox field to indicate the plan to use ROBS for equity injection. By default, it is false.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Users manually populate this optional checkbox field to indicate the plan to use ROBS for equity injection. By default, it is false.</inlineHelpText>
+        <label>Plan to Use ROBS for Equity Injection</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>nSBA__Settlement_Charges_Amount_Disbursed__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Users manually populate this optional field to provide the Settlement Charges Amount Disbursed for Use of Proceeds. By default, it is empty.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>This field is used to summarize the Settlement Charges Amount Disbursed on SBA Form 1050.</inlineHelpText>
+        <label>Settlement Charges Amount Disbursed</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>nSBA__Settlement_Charges_Amount_Remaining__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Users manually populate this optional field to provide the Settlement Charges Amount Remaining for Use of Proceeds. By default, it is empty.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>This field is used to summarize the Settlement Charges Amount Remaining on SBA Form 1050.</inlineHelpText>
+        <label>Settlement Charges Amount Remaining</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>nSBA__Settlement_Charges_Name_of_Payee__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Users manually populate this optional field to provide the name of payee of Settlement Charges for Use of Proceeds. By default, it is empty.</description>
+        <encryptionScheme>None</encryptionScheme>
+        <externalId>false</externalId>
+        <inlineHelpText>This field is used to provide the name of payee of Settlement Charges on SBA Form 1050.</inlineHelpText>
+        <label>Settlement Charges Name of Payee</label>
+        <length>255</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>nSBA__Total_Construction_Amount_Disbursed__c</fullName>
+        <deprecated>false</deprecated>
+        <description>The system automatically populates this optional field to summarize the Total Construction Amount Disbursed for Use of Proceeds. By default, it is empty.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>This field is used to summarize the Total Construction Amount Disbursed on SBA Form 1050.</inlineHelpText>
+        <label>Total Construction Amount Disbursed</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>nSBA__Total_Construction_Amount_Remaining__c</fullName>
+        <deprecated>false</deprecated>
+        <description>The system automatically populates this optional field to summarize the Total Construction Authorized Amount Remaining for Use of Proceeds. By default, it is empty.</description>
+        <externalId>false</externalId>
+        <formula>nSBA__Total_Construction_Proceed_Amount__c - nSBA__Total_Construction_Amount_Disbursed__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <inlineHelpText>This field is used to summarize the Total Construction Authorized Amount Remaining on SBA Form 1050.</inlineHelpText>
+        <label>Total Construction Amount Remaining</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>nSBA__Total_Construction_Equity_Injection__c</fullName>
+        <deprecated>false</deprecated>
+        <description>The system automatically populates this optional field to summarize the Applicant Equity Injection on Total Construction for Use of Proceeds. By default, it is empty.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>This field is used to summarize the Applicant Equity Injection on Total Construction for Use of Proceeds.</inlineHelpText>
+        <label>Total Construction Equity Injection</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>nSBA__Total_Construction_Name_of_Payees__c</fullName>
+        <deprecated>false</deprecated>
+        <description>The system automatically populates this optional field to summarize the Total Construction Name of Payees for Use of Proceeds. By default, it is empty.</description>
+        <encryptionScheme>None</encryptionScheme>
+        <externalId>false</externalId>
+        <inlineHelpText>This field is used to summarize the Total Construction Name of Payees on SBA Form 1050.</inlineHelpText>
+        <label>Total Construction Name of Payees</label>
+        <length>255</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>nSBA__Total_Construction_Other_Financing__c</fullName>
+        <deprecated>false</deprecated>
+        <description>The system automatically populates this optional field to summarize the Other Financing on Total Construction for Use of Proceeds. By default, it is empty.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>This field is used to summarize the Other Financing on Total Construction for Use of Proceeds.</inlineHelpText>
+        <label>Total Construction Other Financing</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>nSBA__Total_Construction_Proceed_Amount__c</fullName>
+        <deprecated>false</deprecated>
+        <description>The system automatically populates this optional field to summarize the Proceed Amount on Total Construction for Use of Proceeds. By default, it is empty.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>This field is used to summarize the Proceed Amount on Total Construction for Use of Proceeds.</inlineHelpText>
+        <label>Total Construction Proceed Amount</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>nSBA__Total_Construction_Total_for_Line__c</fullName>
+        <deprecated>false</deprecated>
+        <description>The system automatically populates this optional field to summarize the Total for Line on Total Construction for Use of Proceeds. By default, it is empty.</description>
+        <externalId>false</externalId>
+        <formula>nSBA__Total_Construction_Proceed_Amount__c + nSBA__Total_Construction_Other_Financing__c + nSBA__Total_Construction_Equity_Injection__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <inlineHelpText>This field is used to summarize the Total for Line on Total Construction for Use of Proceeds.</inlineHelpText>
+        <label>Total Construction Total for Line</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>nSBA__Total_Pay_Notes_Both_Equity_Injection__c</fullName>
+        <deprecated>false</deprecated>
+        <description>The system automatically populates this optional field to summarize the Applicant Equity Injection on Pay Notes Payable by SID and by Other Lender for Use of Proceeds. By default, it is empty.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>This field is used to summarize the Applicant Equity Injection on Pay Notes Payable by SID and by Other Lender for Use of Proceeds.</inlineHelpText>
+        <label>Total Pay Notes Both Equity Injection</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>nSBA__Total_Pay_Notes_Both_Other_Financing__c</fullName>
+        <deprecated>false</deprecated>
+        <description>The system automatically populates this optional field to summarize the Other Financing on Pay Notes Payable by SID and by Other Lender for Use of Proceeds. By default, it is empty.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>This field is used to summarize the Other Financing on Pay Notes Payable by SID and by Other Lender for Use of Proceeds.</inlineHelpText>
+        <label>Total Pay Notes Both Other Financing</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>nSBA__Total_Pay_Notes_Both_Proceed_Amount__c</fullName>
+        <deprecated>false</deprecated>
+        <description>The system automatically populates this optional field to summarize the Proceed Amount on Pay Notes Payable by SID and by Other Lender for Use of Proceeds. By default, it is empty.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>This field is used to summarize the Proceed Amount on Pay Notes Payable by SID and by Other Lender for Use of Proceeds.</inlineHelpText>
+        <label>Total Pay Notes Both Proceed Amount</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>nSBA__Total_Pay_Notes_Both_Total_for_Line__c</fullName>
+        <deprecated>false</deprecated>
+        <description>The system automatically populates this optional field to summarize the Total for Line on Pay Notes Payable by SID and by Other Lender for Use of Proceeds. By default, it is empty.</description>
+        <externalId>false</externalId>
+        <formula>nSBA__Total_Pay_Notes_Both_Proceed_Amount__c+nSBA__Total_Pay_Notes_Both_Other_Financing__c+nSBA__Total_Pay_Notes_Both_Equity_Injection__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <inlineHelpText>This field is used to summarize the Total for Line on Pay Notes Payable by SID and by Other Lender for Use of Proceeds.</inlineHelpText>
+        <label>Total Pay Notes Both Total for Line</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>nSBA__Total_Pay_Off_Both_Equity_Injection__c</fullName>
+        <deprecated>false</deprecated>
+        <description>The system automatically populates this optional field to summarize the Applicant Equity Injection on Pay off SBA Loan by SID and by Other Lender for Use of Proceeds. By default, it is empty.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>This field is used to summarize the Applicant Equity Injection on Pay off SBA Loan by SID and by Other Lender for Use of Proceeds.</inlineHelpText>
+        <label>Total Pay Off Both Equity Injection</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>nSBA__Total_Pay_Off_Both_Other_Financing__c</fullName>
+        <deprecated>false</deprecated>
+        <description>The system automatically populates this optional field to summarize the Other Financing on Pay off SBA Loan by SID and by Other Lender for Use of Proceeds. By default, it is empty.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>This field is used to summarize the Other Financing on Pay off SBA Loan by SID and by Other Lender for Use of Proceeds.</inlineHelpText>
+        <label>Total Pay Off Both Other Financing</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>nSBA__Total_Pay_Off_Both_Proceed_Amount__c</fullName>
+        <deprecated>false</deprecated>
+        <description>The system automatically populates this optional field to summarize the Proceed Amount on Pay off SBA Loan by SID and by Other Lender for Use of Proceeds. By default, it is empty.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>This field is used to summarize the Proceed Amount on Pay off SBA Loan by SID and by Other Lender for Use of Proceeds.</inlineHelpText>
+        <label>Total Pay Off Both Proceed Amount</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>nSBA__Total_Pay_Off_Both_Total_for_Line__c</fullName>
+        <deprecated>false</deprecated>
+        <description>The system automatically populates this optional field to summarize the Total for Line on Pay off SBA Loan by SID and by Other Lender for Use of Proceeds. By default, it is empty.</description>
+        <externalId>false</externalId>
+        <formula>nSBA__Total_Pay_Off_Both_Proceed_Amount__c+nSBA__Total_Pay_Off_Both_Other_Financing__c+nSBA__Total_Pay_Off_Both_Equity_Injection__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <inlineHelpText>This field is used to summarize the Total for Line on Pay off SBA Loan by SID and by Other Lender for Use of Proceeds.</inlineHelpText>
+        <label>Total Pay Off Both Total for Line</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>nSBA__Total_of_Amount_Disbursed__c</fullName>
+        <deprecated>false</deprecated>
+        <description>The system automatically populates this optional field to summarize the Total of Amount Disbursed for the Use of Proceeds. By default, it is empty.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>This field is used to summarize the Total of Amount Disbursed for the Use of Proceeds.</inlineHelpText>
+        <label>Total of Amount Disbursed</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>nSBA__Total_of_Applicant_Equity_Injection__c</fullName>
+        <deprecated>false</deprecated>
+        <description>The system automatically populates this optional field to summarize the Total of Applicant Equity Injection for the Use of Proceeds. By default, it is empty.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>This field is used to summarize the Total of Applicant Equity Injection for the Use of Proceeds.</inlineHelpText>
+        <label>Total of Applicant Equity Injection</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>nSBA__Total_of_Assets_Source__c</fullName>
+        <deprecated>false</deprecated>
+        <description>The system automatically populates this optional field to summarize the Total of Assets Source for the Borrower&apos;s Injection. By default, it is empty.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>This field is used to summarize the Total of Assets Source for the Borrower&apos;s Injection.</inlineHelpText>
+        <label>Total of Assets Source</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>nSBA__Total_of_Authorized_Amount_Remaining__c</fullName>
+        <deprecated>false</deprecated>
+        <description>The system automatically populates this optional field to summarize the Total of Authorized Amount Remaining for the Use of Proceeds. By default, it is empty.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>This field is used to summarize the Total of Authorized Amount Remaining for the Use of Proceeds.</inlineHelpText>
+        <label>Total of Authorized Amount Remaining</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>nSBA__Total_of_Borrower_Injection__c</fullName>
+        <deprecated>false</deprecated>
+        <description>The system automatically populates this optional field to summarize the Total of Borrower Injection. By default, it is empty.</description>
+        <externalId>false</externalId>
+        <formula>nSBA__Total_of_Assets_Source__c+nSBA__Total_of_Cash_Source__c+nSBA__Total_of_Seller_Contribution_to_Equity__c+nSBA__Total_of_Other_for_Borrowers_Injection__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <inlineHelpText>This field is used to summarize the Total of Borrower Injection.</inlineHelpText>
+        <label>Total of Borrower Injection</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>nSBA__Total_of_Cash_Source__c</fullName>
+        <deprecated>false</deprecated>
+        <description>The system automatically populates this optional field to summarize the Total of Cash Source for the Borrower&apos;s Injection. By default, it is empty.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>This field is used to summarize the Total of Cash Source for the Borrower&apos;s Injection.</inlineHelpText>
+        <label>Total of Cash Source</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>nSBA__Total_of_Other_Financing__c</fullName>
+        <deprecated>false</deprecated>
+        <description>The system automatically populates this optional field to summarize the Total of Other Financing for the Use of Proceeds. By default, it is empty.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>This field is used to summarize the Total of Other Financing for the Use of Proceeds.</inlineHelpText>
+        <label>Total of Other Financing</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>nSBA__Total_of_Other_for_Borrowers_Injection__c</fullName>
+        <deprecated>false</deprecated>
+        <description>The system automatically populates this optional field to summarize the Total of Other for the Borrower&apos;s Injection. By default, it is empty.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>This field is used to summarize the Total of Other for the Borrower&apos;s Injection.</inlineHelpText>
+        <label>Total of Other for Borrower&apos;s Injection</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>nSBA__Total_of_Proceed_Amount__c</fullName>
+        <deprecated>false</deprecated>
+        <description>The system automatically populates this optional field to summarize the Total of Proceed Amount for the Use of Proceeds. By default, it is empty.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>This field is used to summarize the Total of Proceed Amount for the Use of Proceeds.</inlineHelpText>
+        <label>Total of Proceed Amount</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>nSBA__Total_of_Seller_Contribution_to_Equity__c</fullName>
+        <deprecated>false</deprecated>
+        <description>The system automatically populates this optional field to summarize the Total of Seller Contribution to Equity for the Borrower&apos;s Injection. By default, it is empty.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>This field is used to summarize the Total of Seller Contribution to Equity for the Borrower&apos;s Injection.</inlineHelpText>
+        <label>Total of Seller Contribution to Equity</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>nSBA__Total_of_Use_of_Proceeds__c</fullName>
+        <deprecated>false</deprecated>
+        <description>The system automatically populates this optional field to summarize the Total of Use of Proceeds. By default, it is empty.</description>
+        <externalId>false</externalId>
+        <formula>nSBA__Total_of_Proceed_Amount__c+nSBA__Total_of_Other_Financing__c+nSBA__Total_of_Applicant_Equity_Injection__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <inlineHelpText>This field is used to summarize the Total of Use of Proceeds.</inlineHelpText>
+        <label>Total of Use of Proceeds</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>nSBA__Use_401K_for_Equity__c</fullName>
+        <defaultValue>false</defaultValue>
+        <deprecated>false</deprecated>
+        <description>Users manually populate this optional checkbox field to indicate plans to use 401K including ROBS for equity. By default, it is false.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Users manually populate this optional checkbox field to indicate plans to use 401K including ROBS for equity. By default, it is false.</inlineHelpText>
+        <label>Use 401K for Equity</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <label>SBA Loan</label>
+    <listViews>
+        <fullName>nSBA__All</fullName>
+        <filterScope>Everything</filterScope>
+        <label>All</label>
+    </listViews>
+    <nameField>
+        <encryptionScheme>None</encryptionScheme>
+        <label>SBA Loan</label>
+        <type>Text</type>
+    </nameField>
+    <pluralLabel>SBA Loans</pluralLabel>
+    <searchLayouts/>
+    <sharingModel>ReadWrite</sharingModel>
+    <visibility>Public</visibility>
+</CustomObject>

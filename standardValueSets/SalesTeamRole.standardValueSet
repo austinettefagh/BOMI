@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<StandardValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <sorted>false</sorted>
+    <standardValue>
+        <fullName>Relationship Manager</fullName>
+        <default>false</default>
+        <label>Relationship Manager</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Loan Assistant</fullName>
+        <default>false</default>
+        <label>Loan Assistant</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Processor</fullName>
+        <default>false</default>
+        <label>Processor</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Credit Analyst</fullName>
+        <default>false</default>
+        <label>Credit Analyst</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Credit Officer</fullName>
+        <default>false</default>
+        <label>Credit Officer</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Treasury</fullName>
+        <default>false</default>
+        <label>Treasury</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Compliance</fullName>
+        <default>false</default>
+        <label>Compliance</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Secondary Relationship Manager</fullName>
+        <default>false</default>
+        <label>Secondary Relationship Manager</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Treasury Sales Officer</fullName>
+        <default>false</default>
+        <label>Treasury Sales Officer</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Treasury Sales Specialist</fullName>
+        <default>false</default>
+        <label>Treasury Sales Specialist</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Treasury Support Specialist</fullName>
+        <default>false</default>
+        <label>Treasury Support Specialist</label>
+    </standardValue>
+</StandardValueSet>

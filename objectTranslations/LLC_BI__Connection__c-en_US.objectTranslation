@@ -1,0 +1,430 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fieldSets>
+        <label><!-- Connections Beneficial Ownership --></label>
+        <name>FS_Connections_Beneficial_Ownership</name>
+    </fieldSets>
+    <fieldSets>
+        <label><!-- Additional Fields --></label>
+        <name>LLC_BI__Additional_Fields</name>
+    </fieldSets>
+    <fieldSets>
+        <label><!-- Beneficial Owners Connection Information OA --></label>
+        <name>nPortal__Beneficial_Owners_Connection_Info_OA</name>
+    </fieldSets>
+    <fieldSets>
+        <label><!-- Owners Connection Information MRF --></label>
+        <name>nPortal__DEP_Co_Owners_Ownership_Percent</name>
+    </fieldSets>
+    <fieldSets>
+        <label><!-- DEP Personal Business Role --></label>
+        <name>nPortal__DEP_Personal_Business_Role</name>
+    </fieldSets>
+    <fieldSets>
+        <label><!-- Others Involved Connection MRF --></label>
+        <name>nPortal__SBL_Others_Involved_Connection_Role</name>
+    </fieldSets>
+    <fieldSets>
+        <label><!-- SBL Personal Business Role --></label>
+        <name>nPortal__SBL_Personal_Business_Role</name>
+    </fieldSets>
+    <fieldSets>
+        <label><!-- Secured SBL Personal Business Role --></label>
+        <name>nPortal__Secured_SBL_Personal_Business_Role</name>
+    </fieldSets>
+    <fieldSets>
+        <label><!-- SBA Boarding Sheet Connection --></label>
+        <name>nSBA__SBA_Boarding_Sheet_Connection</name>
+    </fieldSets>
+    <fieldSets>
+        <label><!-- SBA Summary --></label>
+        <name>nSBA__SBA_Summary</name>
+    </fieldSets>
+    <fieldSets>
+        <label><!-- SBEOC Connection --></label>
+        <name>nSBA__SBEOC_Connection</name>
+    </fieldSets>
+    <fields>
+        <label><!-- Control Prong --></label>
+        <name>CF_Control_Prong__c</name>
+        <picklistValues>
+            <masterLabel>No</masterLabel>
+            <translation><!-- No --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes</masterLabel>
+            <translation><!-- Yes --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Entity Prong --></label>
+        <name>CF_Entity_Prong__c</name>
+        <picklistValues>
+            <masterLabel>No</masterLabel>
+            <translation><!-- No --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes</masterLabel>
+            <translation><!-- Yes --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Role --></label>
+        <name>E2E_Role__c</name>
+    </fields>
+    <fields>
+        <label><!-- Beneficial Owner TINCode Type --></label>
+        <name>JHJX__BenflOwnInfo_TINCode__c</name>
+        <picklistValues>
+            <masterLabel>Other</masterLabel>
+            <translation><!-- Other --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Passport</masterLabel>
+            <translation><!-- Passport --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Tax ID</masterLabel>
+            <translation><!-- Tax ID --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Beneficial Owner Type --></label>
+        <name>JHJX__BenflOwnType__c</name>
+        <picklistValues>
+            <masterLabel>Beneficial owners</masterLabel>
+            <translation><!-- Beneficial owners --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Both controlling individual and beneficial owner</masterLabel>
+            <translation><!-- Both controlling individual and beneficial owner --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Controlling individual/significant responsibility</masterLabel>
+            <translation><!-- Controlling individual/significant responsibility --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Verification Reason Code --></label>
+        <name>JHJX__IdVerifyRsnCode__c</name>
+        <picklistValues>
+            <masterLabel>Account Revision</masterLabel>
+            <translation><!-- Account Revision --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Change in Occupation/Nature of Business</masterLabel>
+            <translation><!-- Change in Occupation/Nature of Business --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>General Maintenance to CIF</masterLabel>
+            <translation><!-- General Maintenance to CIF --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>New Account</masterLabel>
+            <translation><!-- New Account --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Non-Triggering Event</masterLabel>
+            <translation><!-- Non-Triggering Event --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Ownership Changes</masterLabel>
+            <translation><!-- Ownership Changes --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Product Change</masterLabel>
+            <translation><!-- Product Change --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Significant Transaction Activity Changes</masterLabel>
+            <translation><!-- Significant Transaction Activity Changes --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- Selecting the Certifying Individual is only needed on ONE Relationship. This is needed on the individual where the Control Prong is YES and who will be signing the Beneficial Ownership Certification Document. --></help>
+        <label><!-- Certifying Individual --></label>
+        <name>LLC_BI__Certifying_Individual__c</name>
+    </fields>
+    <fields>
+        <label><!-- Relationship --></label>
+        <name>LLC_BI__Connected_From__c</name>
+        <relationshipLabel><!-- Connections --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Relationship --></label>
+        <name>LLC_BI__Connected_To__c</name>
+        <relationshipLabel><!-- Connected From --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Role --></label>
+        <name>LLC_BI__Connection_Role__c</name>
+        <relationshipLabel><!-- Connections --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Controlling Individual --></label>
+        <name>LLC_BI__Controlling_Individual__c</name>
+        <picklistValues>
+            <masterLabel>Executive Officer or Senior Manager</masterLabel>
+            <translation><!-- Executive Officer or Senior Manager --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Other Person Performing Similar Function</masterLabel>
+            <translation><!-- Other Person Performing Similar Function --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Description --></label>
+        <name>LLC_BI__Description__c</name>
+    </fields>
+    <fields>
+        <label><!-- Indirect Ownership Percent --></label>
+        <name>LLC_BI__Indirect_Ownership_Percent__c</name>
+    </fields>
+    <fields>
+        <help><!-- This system-populated field indicates if the connection is active or inactive. --></help>
+        <label><!-- Is Active --></label>
+        <name>LLC_BI__Is_Active__c</name>
+    </fields>
+    <fields>
+        <label><!-- Official Title --></label>
+        <name>LLC_BI__Official_Title__c</name>
+    </fields>
+    <fields>
+        <label><!-- Ownership Percent --></label>
+        <name>LLC_BI__Ownership_Percent__c</name>
+    </fields>
+    <fields>
+        <label><!-- -D Reciprocal Role --></label>
+        <name>LLC_BI__Reciprocal_Role__c</name>
+        <picklistValues>
+            <masterLabel>Affiliated Company</masterLabel>
+            <translation><!-- Affiliated Company --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Business Partner</masterLabel>
+            <translation><!-- Business Partner --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Child</masterLabel>
+            <translation><!-- Child --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Client</masterLabel>
+            <translation><!-- Client --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Colleague</masterLabel>
+            <translation><!-- Colleague --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Company</masterLabel>
+            <translation><!-- Company --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Competitor</masterLabel>
+            <translation><!-- Competitor --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Connection</masterLabel>
+            <translation><!-- Connection --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Employee</masterLabel>
+            <translation><!-- Employee --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Employer</masterLabel>
+            <translation><!-- Employer --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Other</masterLabel>
+            <translation><!-- Other --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Parent</masterLabel>
+            <translation><!-- Parent --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Partner</masterLabel>
+            <translation><!-- Partner --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Related</masterLabel>
+            <translation><!-- Related --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Service Provider</masterLabel>
+            <translation><!-- Service Provider --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Sibling</masterLabel>
+            <translation><!-- Sibling --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Spouse/Life Partner</masterLabel>
+            <translation><!-- Spouse/Life Partner --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Subsidiary</masterLabel>
+            <translation><!-- Subsidiary --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- -D Role --></label>
+        <name>LLC_BI__Role__c</name>
+        <picklistValues>
+            <masterLabel>Affiliated Company</masterLabel>
+            <translation><!-- Affiliated Company --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Business Partner</masterLabel>
+            <translation><!-- Business Partner --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Child</masterLabel>
+            <translation><!-- Child --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Client</masterLabel>
+            <translation><!-- Client --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Co-Owner</masterLabel>
+            <translation><!-- Co-Owner --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Colleague</masterLabel>
+            <translation><!-- Colleague --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Competitor</masterLabel>
+            <translation><!-- Competitor --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Connection</masterLabel>
+            <translation><!-- Connection --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Employee</masterLabel>
+            <translation><!-- Employee --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Employer</masterLabel>
+            <translation><!-- Employer --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Officer</masterLabel>
+            <translation><!-- Officer --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Other</masterLabel>
+            <translation><!-- Other --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Parent</masterLabel>
+            <translation><!-- Parent --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Partner</masterLabel>
+            <translation><!-- Partner --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Related</masterLabel>
+            <translation><!-- Related --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Service Provider</masterLabel>
+            <translation><!-- Service Provider --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Sibling</masterLabel>
+            <translation><!-- Sibling --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Spouse/Life Partner</masterLabel>
+            <translation><!-- Spouse/Life Partner --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Subsidiary</masterLabel>
+            <translation><!-- Subsidiary --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Status --></label>
+        <name>LLC_BI__Status__c</name>
+    </fields>
+    <fields>
+        <label><!-- Total Direct/Indirect Ownership Percent --></label>
+        <name>LLC_BI__Total_Direct_Indirect_Ownership_Percent__c</name>
+    </fields>
+    <fields>
+        <label><!-- Type --></label>
+        <name>LLC_BI__Type__c</name>
+    </fields>
+    <fields>
+        <help><!-- Auto-generated unique identifier for this connection. --></help>
+        <label><!-- UID --></label>
+        <name>LLC_BI__UID__c</name>
+    </fields>
+    <fields>
+        <help><!-- Select a role. --></help>
+        <label><!-- Connection to Account --></label>
+        <name>nPortal__Connection_To_Account__c</name>
+        <picklistValues>
+            <masterLabel>Beneficial Owner</masterLabel>
+            <translation><!-- Beneficial Owner --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Beneficial Owner and Authorized Signer</masterLabel>
+            <translation><!-- Beneficial Owner and Authorized Signer --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- -D Control Type --></label>
+        <name>nSBA__Control_Interest_Type__c</name>
+        <picklistValues>
+            <masterLabel>Chairman of the Board</masterLabel>
+            <translation><!-- Chairman of the Board --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Chief Executive Officer (CEO)</masterLabel>
+            <translation><!-- Chief Executive Officer (CEO) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Directors of the Concern</masterLabel>
+            <translation><!-- Directors of the Concern --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Not Applicable</masterLabel>
+            <translation><!-- Not Applicable --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Other Officers of the Concern</masterLabel>
+            <translation><!-- Other Officers of the Concern --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Other Partners of the Concern</masterLabel>
+            <translation><!-- Other Partners of the Concern --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Owner of the Concern</masterLabel>
+            <translation><!-- Owner of the Concern --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>President</masterLabel>
+            <translation><!-- President --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Primary Borrower</masterLabel>
+            <translation><!-- Primary Borrower --></translation>
+        </picklistValues>
+    </fields>
+    <validationRules>
+        <errorMessage><!-- Ownership Percentage cannot exceed 100%. Please update the Ownership Percentage. --></errorMessage>
+        <name>CON_VR_Ownership_Percent_within_100</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Connections are not editable. --></errorMessage>
+        <name>LLC_BI__Prevent_Edit_on_Connections</name>
+    </validationRules>
+</CustomObjectTranslation>

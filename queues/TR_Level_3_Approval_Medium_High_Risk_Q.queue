@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Queue xmlns="http://soap.sforce.com/2006/04/metadata">
+    <doesSendEmailToMembers>false</doesSendEmailToMembers>
+    <email>invalidemail@gmail.com.invalid</email>
+    <name>TR Level 3 Approval / Medium-High Risk Q</name>
+    <queueMembers>
+        <roles>
+            <role>Regional_Bank_President_RBP</role>
+            <role>Regional_Credit_Officer</role>
+        </roles>
+    </queueMembers>
+    <queueSobject>
+        <sobjectType>cm_Treasury_Review__c</sobjectType>
+    </queueSobject>
+</Queue>

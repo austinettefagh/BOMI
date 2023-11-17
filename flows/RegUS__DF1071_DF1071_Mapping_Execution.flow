@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Flow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionCalls>
+        <description>Call invocable method DF1071LoanComplianceInvoker.cls.</description>
+        <name>Call_Data_Mapping</name>
+        <label>Call Data Mapping</label>
+        <locationX>242</locationX>
+        <locationY>647</locationY>
+        <actionName>RegUS__DF1071LoanComplianceInvoker</actionName>
+        <actionType>apex</actionType>
+        <flowTransactionModel>CurrentTransaction</flowTransactionModel>
+        <inputParameters>
+            <name>loanId</name>
+            <value>
+                <elementReference>$Record.Id</elementReference>
+            </value>
+        </inputParameters>
+        <nameSegment>RegUS__DF1071LoanComplianceInvoker</nameSegment>
+        <versionSegment>1</versionSegment>
+    </actionCalls>
+    <apiVersion>57.0</apiVersion>
+    <decisions>
+        <description>Determine whether any Loan Detail Record is associated with the current Loan.</description>
+        <name>Does_Loan_Detail_Exist</name>
+        <label>Does Loan Detail Exist?</label>
+        <locationX>176</locationX>
+        <locationY>431</locationY>
+        <defaultConnector>
+            <targetReference>Is_Loan_DF1071_Reportable</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>Loan Detail Does Exist</defaultConnectorLabel>
+        <rules>
+            <name>Loan_Detail_Does_Not_Exist</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>loanDetail.Id</leftValueReference>
+                <operator>EqualTo</operator>
+            </conditions>
+            <label>Loan Detail Does Not Exist</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <description>Check whether the DF1071 Reportable Field on Loan Detail is True.</description>
+        <name>Is_Loan_DF1071_Reportable</name>
+        <label>Is Loan DF1071 Reportable?</label>
+        <locationX>374</locationX>
+        <locationY>539</locationY>
+        <defaultConnectorLabel>Is Not Reportable</defaultConnectorLabel>
+        <rules>
+            <name>Is_Reportable</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>loanDetail.LLC_BI__DF1071_Reportable__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <booleanValue>true</booleanValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Call_Data_Mapping</targetReference>
+            </connector>
+            <label>Is Reportable</label>
+        </rules>
+    </decisions>
+    <description>This flow is triggered by a change to Loan Stage or Status and executes DF1071 data retrieval and mapping.</description>
+    <environments>Default</environments>
+    <interviewLabel>DF1071 - DF1071 Mapping Execution {!$Flow.CurrentDateTime}</interviewLabel>
+    <isTemplate>true</isTemplate>
+    <label>nCino PDE - Record-Trigger: Loan DF1071 Mapping Execution</label>
+    <processMetadataValues>
+        <name>BuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>CanvasMode</name>
+        <value>
+            <stringValue>AUTO_LAYOUT_CANVAS</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>OriginBuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processType>AutoLaunchedFlow</processType>
+    <recordLookups>
+        <description>Query to see if the loan detail is associated with the loan.</description>
+        <name>Get_Loan_Details</name>
+        <label>Get Loan Details</label>
+        <locationX>176</locationX>
+        <locationY>323</locationY>
+        <assignNullValuesIfNoRecordsFound>true</assignNullValuesIfNoRecordsFound>
+        <connector>
+            <targetReference>Does_Loan_Detail_Exist</targetReference>
+        </connector>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <field>LLC_BI__Loan__c</field>
+            <operator>EqualTo</operator>
+            <value>
+                <elementReference>loanId</elementReference>
+            </value>
+        </filters>
+        <object>LLC_BI__Loan_Detail__c</object>
+        <outputReference>loanDetail</outputReference>
+        <queriedFields>Id</queriedFields>
+        <queriedFields>LLC_BI__DF1071_Reportable__c</queriedFields>
+    </recordLookups>
+    <start>
+        <locationX>50</locationX>
+        <locationY>0</locationY>
+        <connector>
+            <targetReference>Get_Loan_Details</targetReference>
+        </connector>
+        <filterFormula>{!$Permission.LLC_BI__Exclude_Flow}=False &amp;&amp;(ISCHANGED({!$Record.LLC_BI__Stage__c}) || ISCHANGED({!$Record.LLC_BI__Status__c}))</filterFormula>
+        <object>LLC_BI__Loan__c</object>
+        <recordTriggerType>Update</recordTriggerType>
+        <triggerType>RecordAfterSave</triggerType>
+    </start>
+    <status>Draft</status>
+    <variables>
+        <name>loanDetail</name>
+        <dataType>SObject</dataType>
+        <isCollection>false</isCollection>
+        <isInput>false</isInput>
+        <isOutput>false</isOutput>
+        <objectType>LLC_BI__Loan_Detail__c</objectType>
+    </variables>
+    <variables>
+        <name>loanId</name>
+        <dataType>String</dataType>
+        <isCollection>false</isCollection>
+        <isInput>false</isInput>
+        <isOutput>false</isOutput>
+        <value>
+            <elementReference>$Record.Id</elementReference>
+        </value>
+    </variables>
+</Flow>

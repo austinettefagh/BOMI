@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <help><!-- Enter a unique name in this field. Use this field to easily identify the step as you continue the workflow configuration process. --></help>
+        <label><!-- Key --></label>
+        <name>nFORCE__Key__c</name>
+    </fields>
+    <fields>
+        <help><!-- Enter the unique name of the flow or class that defines this step&apos;s behavior. --></help>
+        <label><!-- Definition --></label>
+        <name>nFORCE__Step_Definition__c</name>
+    </fields>
+    <fields>
+        <help><!-- Select the desired type for your step. --></help>
+        <label><!-- Type --></label>
+        <name>nFORCE__Type__c</name>
+        <picklistValues>
+            <masterLabel>Apex</masterLabel>
+            <translation><!-- Apex --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Flow</masterLabel>
+            <translation><!-- Flow --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- This field contains the step&apos;s External ID. --></help>
+        <label><!-- Lookup Key --></label>
+        <name>nFORCE__lookupKey__c</name>
+    </fields>
+</CustomObjectTranslation>

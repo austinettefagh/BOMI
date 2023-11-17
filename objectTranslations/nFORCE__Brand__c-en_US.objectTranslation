@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <help><!-- Use this text field to store the custom CSS associated with the brand. --></help>
+        <label><!-- Brand Custom CSS --></label>
+        <name>nFORCE__Brand_Custom_CSS__c</name>
+    </fields>
+    <fields>
+        <help><!-- Use this text field to store the JSON data that determines the branding style. --></help>
+        <label><!-- Brand JSON --></label>
+        <name>nFORCE__Brand_JSON__c</name>
+    </fields>
+    <fields>
+        <help><!-- Enter a description of the brand so you can keep track of what the brand is used for. --></help>
+        <label><!-- Description --></label>
+        <name>nFORCE__Description__c</name>
+    </fields>
+    <fields>
+        <help><!-- When selected, applies this brand to the entire Customer Engagement Solution when the custom setting &quot;Multiple Institutions Enabled&quot; is disabled. If “Multiple Institutions Enabled” is enabled, the brand specified for each institution overrides this flag. --></help>
+        <label><!-- Is Applied --></label>
+        <name>nFORCE__Is_Applied__c</name>
+    </fields>
+    <fields>
+        <label><!-- Lookup Key --></label>
+        <name>nFORCE__Look_Up_Key__c</name>
+    </fields>
+    <fields>
+        <label><!-- -D Lookup Key --></label>
+        <name>nFORCE__LookupKey__c</name>
+    </fields>
+</CustomObjectTranslation>

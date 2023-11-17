@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <label><!-- Active --></label>
+        <name>LLC_BI__Active__c</name>
+    </fields>
+    <fields>
+        <label><!-- Covenant Mgmt --></label>
+        <name>LLC_BI__Covenant2__c</name>
+        <relationshipLabel><!-- Pricing Covenants --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Pricing Rate Component --></label>
+        <name>LLC_BI__Pricing_Rate_Component__c</name>
+        <relationshipLabel><!-- Pricing Covenants --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Rules --></label>
+        <name>LLC_BI__Rules__c</name>
+    </fields>
+    <fields>
+        <label><!-- lookupKey --></label>
+        <name>LLC_BI__lookupKey__c</name>
+    </fields>
+</CustomObjectTranslation>

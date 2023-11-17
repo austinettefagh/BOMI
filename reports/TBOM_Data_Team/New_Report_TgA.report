@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <aggregateTypes>Sum</aggregateTypes>
+        <field>LLC_BI__Loan__c.LLC_BI__Loan_Collateral__r$LLC_BI__Amount_Pledged__c</field>
+    </columns>
+    <columns>
+        <field>LLC_BI__Loan__c.LLC_BI__Loan_Collateral__r$LLC_BI__Collateral__c</field>
+    </columns>
+    <columns>
+        <field>LLC_BI__Loan__c$LLC_BI__lookupKey__c</field>
+    </columns>
+    <columns>
+        <aggregateTypes>Sum</aggregateTypes>
+        <field>LLC_BI__Loan__c.LLC_BI__Loan_Collateral__r$LLC_BI__Current_Lendable_Value__c</field>
+    </columns>
+    <columns>
+        <field>LLC_BI__Loan__c.LLC_BI__Loan_Collateral__r$LLC_BI__Start_Date__c</field>
+    </columns>
+    <columns>
+        <field>LLC_BI__Loan__c.LLC_BI__Loan_Collateral__r$LLC_BI__End_Date__c</field>
+    </columns>
+    <columns>
+        <aggregateTypes>Sum</aggregateTypes>
+        <field>LLC_BI__Loan__c.LLC_BI__Loan_Collateral__r$LLC_BI__Authorize__c</field>
+    </columns>
+    <columns>
+        <aggregateTypes>Sum</aggregateTypes>
+        <field>LLC_BI__Loan__c.LLC_BI__Loan_Collateral__r$LLC_BI__Original_Lendable_Value__c</field>
+    </columns>
+    <description>Intent is to use for data validation purposes on the nCino implementation project.
+Note - some fields from loan object (e.g. Loan Number).</description>
+    <format>Tabular</format>
+    <name>Validation-Collateral Pledged</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>LLC_BI__Loans_with_Pledged_and_Collateral__c</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <showGrandTotal>true</showGrandTotal>
+    <showSubTotals>true</showSubTotals>
+    <timeFrameFilter>
+        <dateColumn>LLC_BI__Loan__c$LLC_BI__Authorization_Date__c</dateColumn>
+        <interval>INTERVAL_CUSTOM</interval>
+    </timeFrameFilter>
+</Report>

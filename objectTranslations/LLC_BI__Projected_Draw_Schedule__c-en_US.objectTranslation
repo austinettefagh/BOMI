@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <help><!-- This system-populated field displays the sum of all percents from the associated projected draw event records. --></help>
+        <label><!-- Cumulative Utilized Percentage --></label>
+        <name>LLC_BI__Cumulative_Utilized_Percentage__c</name>
+    </fields>
+    <fields>
+        <help><!-- The system selects this checkbox to hide invalid projected draw schedules. If the system deselects this checkbox, the system displays the valid projected draw schedule. --></help>
+        <label><!-- Is Inactive --></label>
+        <name>LLC_BI__Is_Inactive__c</name>
+    </fields>
+    <fields>
+        <help><!-- This system-populated field displays the unique identifier for the Loan record. --></help>
+        <label><!-- Loan --></label>
+        <name>LLC_BI__Loan__c</name>
+        <relationshipLabel><!-- Projected Draw Schedules --></relationshipLabel>
+    </fields>
+    <fields>
+        <help><!-- This system-populated field displays the unique identifier for the Pricing Option record. --></help>
+        <label><!-- Pricing Option --></label>
+        <name>LLC_BI__Pricing_Option__c</name>
+        <relationshipLabel><!-- Projected Draw Schedules --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Total Cumulative Draw Amount --></label>
+        <name>LLC_BI__Total_Cumulative_Draw_Amount__c</name>
+    </fields>
+    <fields>
+        <label><!-- Weighted Average Utilization --></label>
+        <name>LLC_BI__Weighted_Average_Utilization__c</name>
+    </fields>
+    <fields>
+        <label><!-- lookupKey --></label>
+        <name>LLC_BI__lookupKey__c</name>
+    </fields>
+</CustomObjectTranslation>

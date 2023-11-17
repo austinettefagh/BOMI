@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fieldSets>
+        <label><!-- Document Generation Display Table --></label>
+        <name>nFORMS__Document_Generation_Display_Table</name>
+    </fieldSets>
+    <fields>
+        <help><!-- Links a form template to a Closing Checklist in order to create placeholders with predefined values. --></help>
+        <label><!-- Closing Checklist --></label>
+        <name>nFORMS__Closing_Checklist__c</name>
+        <relationshipLabel><!-- Form Templates --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Description --></label>
+        <name>nFORMS__Description__c</name>
+    </fields>
+    <fields>
+        <help><!-- Select Word, PDF, or HTML format as a document output. --></help>
+        <label><!-- Document Output Type --></label>
+        <name>nFORMS__Document_Output_Type__c</name>
+        <picklistValues>
+            <masterLabel>HTML</masterLabel>
+            <translation><!-- HTML --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>PDF</masterLabel>
+            <translation><!-- PDF --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Word</masterLabel>
+            <translation><!-- Word --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Enable FLS --></label>
+        <name>nFORMS__Enable_FLS__c</name>
+    </fields>
+    <fields>
+        <label><!-- Enforce Masking --></label>
+        <name>nFORMS__Enforce_Masking__c</name>
+    </fields>
+    <fields>
+        <help><!-- The form template will only be available to objects that meet this filter criteria. --></help>
+        <label><!-- Filter --></label>
+        <name>nFORMS__Filter__c</name>
+    </fields>
+    <fields>
+        <label><!-- Form Purpose --></label>
+        <name>nFORMS__Form_Purpose__c</name>
+        <picklistValues>
+            <masterLabel>Credit Memo</masterLabel>
+            <translation><!-- Credit Memo --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>General</masterLabel>
+            <translation><!-- General --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Is Active --></label>
+        <name>nFORMS__Is_Active__c</name>
+    </fields>
+    <fields>
+        <label><!-- Output Type --></label>
+        <name>nFORMS__Output_Type__c</name>
+    </fields>
+    <fields>
+        <label><!-- Page Dimension Unit --></label>
+        <name>nFORMS__Page_Dimension_Unit__c</name>
+        <picklistValues>
+            <masterLabel>Centimeters</masterLabel>
+            <translation><!-- Centimeters --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Inches</masterLabel>
+            <translation><!-- Inches --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Millimeters</masterLabel>
+            <translation><!-- Millimeters --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Pixels</masterLabel>
+            <translation><!-- Pixels --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Page Width --></label>
+        <name>nFORMS__Page_Width__c</name>
+    </fields>
+    <fields>
+        <label><!-- Primary Object --></label>
+        <name>nFORMS__Primary_Object__c</name>
+    </fields>
+    <fields>
+        <label><!-- Save To Docman --></label>
+        <name>nFORMS__Save_To_Docman__c</name>
+    </fields>
+    <fields>
+        <help><!-- Select Word or HTML format as a document template input. --></help>
+        <label><!-- Template Input Type --></label>
+        <name>nFORMS__Template_Input_Type__c</name>
+        <picklistValues>
+            <masterLabel>HTML</masterLabel>
+            <translation><!-- HTML --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Word</masterLabel>
+            <translation><!-- Word --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- Enter a unique external identifier. --></help>
+        <label><!-- lookupKey --></label>
+        <name>nFORMS__lookupKey__c</name>
+    </fields>
+</CustomObjectTranslation>

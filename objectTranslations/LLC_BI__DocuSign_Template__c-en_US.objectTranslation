@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <label><!-- Data Mapping --></label>
+        <name>LLC_BI__Data_Mapping__c</name>
+    </fields>
+    <fields>
+        <label><!-- Document Manager Class --></label>
+        <name>LLC_BI__Doc_Man_Class__c</name>
+        <relationshipLabel><!-- DocuSign Templates --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Document Manager Tab --></label>
+        <name>LLC_BI__Doc_Man_Tab__c</name>
+        <relationshipLabel><!-- DocuSign Templates --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Document Manager Type --></label>
+        <name>LLC_BI__Doc_Man_Type__c</name>
+        <relationshipLabel><!-- DocuSign Templates --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Document Manager --></label>
+        <name>LLC_BI__Doc_Man__c</name>
+        <relationshipLabel><!-- DocuSign Templates --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Enforce Masking --></label>
+        <name>LLC_BI__Enforce_Masking__c</name>
+    </fields>
+    <fields>
+        <label><!-- -D Filter --></label>
+        <name>LLC_BI__Filter__c</name>
+    </fields>
+    <fields>
+        <label><!-- Filter --></label>
+        <name>LLC_BI__Object_Filter__c</name>
+    </fields>
+    <fields>
+        <label><!-- Object Type --></label>
+        <name>LLC_BI__Object_Type__c</name>
+    </fields>
+    <fields>
+        <label><!-- Relationship --></label>
+        <name>LLC_BI__Relationship__c</name>
+    </fields>
+    <fields>
+        <label><!-- Template Id --></label>
+        <name>LLC_BI__Template_Id__c</name>
+    </fields>
+</CustomObjectTranslation>

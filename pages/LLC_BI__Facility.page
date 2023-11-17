@@ -1,0 +1,4 @@
+<!-- @Deprecated -->
+<apex:page standardController="LLC_BI__Product_Package__c" sidebar="false" tabStyle="LLC_BI__Product_Package__c">
+	{!$Label.LLC_BI__Deprecated_Page_Message}
+</apex:page>

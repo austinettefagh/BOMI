@@ -1,0 +1,542 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Flow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <apiVersion>54.0</apiVersion>
+    <assignments>
+        <name>Assign_Opp_record_type_to_Loan</name>
+        <label>Assign Opp record type to Loan</label>
+        <locationX>314</locationX>
+        <locationY>1427</locationY>
+        <assignmentItems>
+            <assignToReference>$Record.RecordTypeId</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>Opp_Loan_RecType_Id</elementReference>
+            </value>
+        </assignmentItems>
+        <connector>
+            <targetReference>Check_TM_Opportunity</targetReference>
+        </connector>
+    </assignments>
+    <assignments>
+        <name>New_Existing_Field_Value</name>
+        <label>New/Existing Field Value</label>
+        <locationX>182</locationX>
+        <locationY>1019</locationY>
+        <assignmentItems>
+            <assignToReference>$Record.CF_New_Existing__c</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>$Record.Account.CF_New_Existing__c</elementReference>
+            </value>
+        </assignmentItems>
+        <connector>
+            <targetReference>Chec</targetReference>
+        </connector>
+    </assignments>
+    <assignments>
+        <name>Set_Opportunity_Branch</name>
+        <label>Set Opportunity Branch</label>
+        <locationX>116</locationX>
+        <locationY>719</locationY>
+        <assignmentItems>
+            <assignToReference>$Record.LLC_BI__Branch__c</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>Get_Branch.Id</elementReference>
+            </value>
+        </assignmentItems>
+        <connector>
+            <targetReference>If_New_Opportunity_Related_to_Business_Account</targetReference>
+        </connector>
+    </assignments>
+    <assignments>
+        <name>Update_Opp_record_type_to_Deposit</name>
+        <label>Update Opp record type to Deposit</label>
+        <locationX>182</locationX>
+        <locationY>2135</locationY>
+        <assignmentItems>
+            <assignToReference>$Record.RecordTypeId</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>Opp_Deposit_RecordType</elementReference>
+            </value>
+        </assignmentItems>
+    </assignments>
+    <assignments>
+        <name>Update_Opp_record_type_to_TM</name>
+        <label>Update Opp record type to TM</label>
+        <locationX>50</locationX>
+        <locationY>1427</locationY>
+        <assignmentItems>
+            <assignToReference>$Record.RecordTypeId</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>OppTM_RecordTypeID</elementReference>
+            </value>
+        </assignmentItems>
+        <connector>
+            <targetReference>Check_TM_Opportunity</targetReference>
+        </connector>
+    </assignments>
+    <assignments>
+        <name>Update_TM_Opportunity_Name</name>
+        <label>Update TM Opportunity Name</label>
+        <locationX>182</locationX>
+        <locationY>1727</locationY>
+        <assignmentItems>
+            <assignToReference>$Record.Name</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>Default_TM_Opp_Name</elementReference>
+            </value>
+        </assignmentItems>
+        <assignmentItems>
+            <assignToReference>$Record.TM_Expected_Install_Date__c</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>$Record.CloseDate</elementReference>
+            </value>
+        </assignmentItems>
+        <connector>
+            <targetReference>Check_For_Deposit_Record_Type_On_Opportunity</targetReference>
+        </connector>
+    </assignments>
+    <decisions>
+        <description>Check if Treasury Management record type field is true and update Opportunity record type to Treasury Management 
+Story-1384</description>
+        <name>Chec</name>
+        <label>Check TM record type</label>
+        <locationX>314</locationX>
+        <locationY>1211</locationY>
+        <defaultConnector>
+            <targetReference>Check_TM_Opportunity</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
+        <rules>
+            <name>Is_TM_record_type_true</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record.CF_Treasury_Management_Record_type__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <booleanValue>true</booleanValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>getRecordId</targetReference>
+            </connector>
+            <label>Is TM record type = true</label>
+        </rules>
+        <rules>
+            <name>Is_Loan_Business_Individual_Rec_Type_Checkbox_true</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record.CF_Loan_Business_Individual_Record_Type__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <booleanValue>true</booleanValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Get_Loan_RecordType_Id</targetReference>
+            </connector>
+            <label>Is Loan Business/Individual Rec Type Checkbox true?</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <description>This node is used to check for the deposit record type on Opportunity based on deposit record type on Lead. Story -1387</description>
+        <name>Check_For_Deposit_Record_Type_On_Opportunity</name>
+        <label>Check For Deposit Record Type On Opportunity</label>
+        <locationX>314</locationX>
+        <locationY>1919</locationY>
+        <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
+        <rules>
+            <name>Is_Deposit_Record_Type_true</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record.CF_Deposit_Record_Type__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <booleanValue>true</booleanValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Get_Deposit_Record_Type_Of_Opportunity</targetReference>
+            </connector>
+            <label>Is Deposit Record Type = true</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <description>Check Opportunity is of Treasury Management record type and update the opportunity name
+[Story-1384]</description>
+        <name>Check_TM_Opportunity</name>
+        <label>Check TM Opportunity</label>
+        <locationX>314</locationX>
+        <locationY>1619</locationY>
+        <defaultConnector>
+            <targetReference>Check_For_Deposit_Record_Type_On_Opportunity</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
+        <rules>
+            <name>Is_treasury_management</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record.RecordType.DeveloperName</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>OPP_nCino_Treasury_Management</stringValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Update_TM_Opportunity_Name</targetReference>
+            </connector>
+            <label>Is treasury management</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <name>If_New_Opportunity_Related_to_Business_Account</name>
+        <label>If New Opportunity Related to Business Account</label>
+        <locationX>314</locationX>
+        <locationY>911</locationY>
+        <defaultConnector>
+            <targetReference>Chec</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
+        <rules>
+            <name>Assign_New_Existing_field</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>IsNewRecord</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <booleanValue>true</booleanValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.Account.RecordType.DeveloperName</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>IndustriesBusiness</stringValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>New_Existing_Field_Value</targetReference>
+            </connector>
+            <label>Assign New/Existing field</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <name>Opportunity_Owner_Change</name>
+        <label>Opportunity Owner Change</label>
+        <locationX>512</locationX>
+        <locationY>395</locationY>
+        <defaultConnector>
+            <targetReference>If_New_Opportunity_Related_to_Business_Account</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
+        <rules>
+            <name>Owner_Changed</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record.OwnerId</leftValueReference>
+                <operator>IsChanged</operator>
+                <rightValue>
+                    <booleanValue>true</booleanValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <isGoTo>true</isGoTo>
+                <targetReference>Get_Branch</targetReference>
+            </connector>
+            <label>Owner Changed</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <name>Validate_a_new_opportunity_record</name>
+        <label>Validate a new opportunity record</label>
+        <locationX>314</locationX>
+        <locationY>287</locationY>
+        <defaultConnector>
+            <targetReference>Opportunity_Owner_Change</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
+        <rules>
+            <name>Check_new_opportunity_record</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>IsNewRecord</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <booleanValue>true</booleanValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.RecordType.DeveloperName</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>OPP_nCino_Opportunity</stringValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>getAccount</targetReference>
+            </connector>
+            <label>Check new opportunity record</label>
+        </rules>
+    </decisions>
+    <description>For naming convention when an opportunity is created.
+2023.10.24 - Set branch to Opportunity Owner&apos;s Branch</description>
+    <environments>Default</environments>
+    <formulas>
+        <name>Default_Opportunity_Name</name>
+        <dataType>String</dataType>
+        <expression>{!getAccount.Name}+&apos;-&apos;+TEXT({!$Record.LLC_BI__Product_Type__c})+&apos;-&apos;+{!LabelofLoanPurpose}</expression>
+    </formulas>
+    <formulas>
+        <name>Default_TM_Opp_Name</name>
+        <dataType>String</dataType>
+        <expression>{!$Record.Account.Name}+&apos;-&apos;+Text(MONTH(TODAY()))+&apos;.&apos;+Text(YEAR(TODAY()))</expression>
+    </formulas>
+    <formulas>
+        <name>IsNewRecord</name>
+        <dataType>Boolean</dataType>
+        <expression>IsNew()</expression>
+    </formulas>
+    <formulas>
+        <name>LabelofLoanPurpose</name>
+        <dataType>String</dataType>
+        <expression>CASE(TEXT({!$Record.CF_Loan_Purpose__c}),
+&quot;10&quot;,&quot;Purchase Existing Business&quot;,
+&quot;11&quot;,&quot;Purchase Business Real Estate&quot;,
+&quot;12&quot;,&quot;Purchase Income Producing Real Estate&quot;,
+&quot;13&quot;,&quot;Purchase Non Real Estate Business Assets&quot;,
+&quot;14&quot;,&quot;Purchase Real Estate for Future Development&quot;,
+&quot;15&quot;,&quot;Building Improvements&quot;,
+&quot;16&quot;,&quot;New Commercial Building Construction&quot;,
+&quot;17&quot;,&quot;Construction of Dwelling for Resale/Rental&quot;,
+&quot;18&quot;,&quot;Working Capital&quot;,
+&quot;19&quot;,&quot;Negotiable Instruments&quot;,
+&quot;20&quot;,&quot;Refinance&quot;,
+&quot;21&quot;,&quot;Contract Services&quot;,
+&quot;30&quot;,&quot;Purchase Real Estate&quot;,
+&quot;31&quot;,&quot;Improve Real Estate&quot;,
+&quot;32&quot;,&quot;Purchase Machinery&quot;,
+&quot;33&quot;,&quot;Purchase Equipment&quot;,
+&quot;34&quot;,&quot;Purchase Cattle&quot;,
+&quot;35&quot;,&quot;Purchase Hogs&quot;,
+&quot;38&quot;,&quot;Crop Production&quot;,
+&quot;39&quot;,&quot;General Operating&quot;,
+&quot;40&quot;,&quot;Refinance Real Estate&quot;,
+&quot;42&quot;,&quot;Refinance Machinery&quot;,
+&quot;43&quot;,&quot;Refinance Equipment&quot;,
+&quot;44&quot;,&quot;Refinance Cattle&quot;,
+&quot;45&quot;,&quot;Refinance Hogs&quot;,
+&quot;46&quot;,&quot;Refinance Debt Elsewhere&quot;,
+&quot;47&quot;,&quot;Purchase Horses&quot;,
+&quot;48&quot;,&quot;Mo-Bucks&apos;86&quot;,
+&quot;49&quot;,&quot;Refinance Operating&quot;,
+&quot;50&quot;,&quot;Purchase New Vehicle&quot;,
+&quot;51&quot;,&quot;Purchase Used Vehicle&quot;,
+&quot;52&quot;,&quot;Purchase Recreational Vehicle or Boat&quot;,
+&quot;53&quot;,&quot;Purchase Lawn Equipment&quot;,
+&quot;54&quot;,&quot;Purchase Residence&quot;,
+&quot;55&quot;,&quot;Purchase Recreational Real Estate&quot;,
+&quot;56&quot;,&quot;Purchase Mobile Home&quot;,
+&quot;57&quot;,&quot;Home Improvement&quot;,
+&quot;58&quot;,&quot;Education&quot;,
+&quot;59&quot;,&quot;Personal&quot;,
+&quot;60&quot;,&quot;Refinance Consumer&quot;,
+&quot;61&quot;,&quot;Purchase Unimproved Real Estate&quot;,
+&quot;62&quot;,&quot;Refinance Real Estate1&quot;,
+&quot;63&quot;,&quot;Real Estate Cash Out/No Dwelling Refinance&quot;,
+&quot;69&quot;,&quot;Consumer Loan-All Others&quot;,
+&quot;70&quot;,&quot;New Construction Residence&quot;,
+&quot;71&quot;,&quot;Home Equity Line of Credit&quot;,
+&quot;72&quot;,&quot;Refinance Construction of Residence&quot;,
+&quot;99&quot;,&quot;Unused for Conversion&quot;,&quot;&quot;)</expression>
+    </formulas>
+    <interviewLabel>OPP_Opportunity_CREATE_UPDATE_RR_Flow {!$Flow.CurrentDateTime}</interviewLabel>
+    <label>OPP_Opportunity_CREATE_UPDATE_FF_Flow</label>
+    <processMetadataValues>
+        <name>BuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>CanvasMode</name>
+        <value>
+            <stringValue>AUTO_LAYOUT_CANVAS</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>OriginBuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processType>AutoLaunchedFlow</processType>
+    <recordLookups>
+        <description>Get User Branch</description>
+        <name>Get_Branch</name>
+        <label>Get Branch</label>
+        <locationX>116</locationX>
+        <locationY>611</locationY>
+        <assignNullValuesIfNoRecordsFound>false</assignNullValuesIfNoRecordsFound>
+        <connector>
+            <targetReference>Set_Opportunity_Branch</targetReference>
+        </connector>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <field>LLC_BI__Branch_Id__c</field>
+            <operator>EqualTo</operator>
+            <value>
+                <elementReference>$User.CF_Branch_Number__c</elementReference>
+            </value>
+        </filters>
+        <getFirstRecordOnly>true</getFirstRecordOnly>
+        <object>LLC_BI__Branch__c</object>
+        <queriedFields>Id</queriedFields>
+        <storeOutputAutomatically>true</storeOutputAutomatically>
+    </recordLookups>
+    <recordLookups>
+        <name>Get_Deposit_Record_Type_Of_Opportunity</name>
+        <label>Get Deposit Record Type Of Opportunity</label>
+        <locationX>182</locationX>
+        <locationY>2027</locationY>
+        <assignNullValuesIfNoRecordsFound>false</assignNullValuesIfNoRecordsFound>
+        <connector>
+            <targetReference>Update_Opp_record_type_to_Deposit</targetReference>
+        </connector>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <field>DeveloperName</field>
+            <operator>EqualTo</operator>
+            <value>
+                <stringValue>OPP_nCino_Deposit</stringValue>
+            </value>
+        </filters>
+        <object>RecordType</object>
+        <outputAssignments>
+            <assignToReference>Opp_Deposit_RecordType</assignToReference>
+            <field>Id</field>
+        </outputAssignments>
+    </recordLookups>
+    <recordLookups>
+        <name>Get_Loan_RecordType_Id</name>
+        <label>Get Loan RecordType Id</label>
+        <locationX>314</locationX>
+        <locationY>1319</locationY>
+        <assignNullValuesIfNoRecordsFound>false</assignNullValuesIfNoRecordsFound>
+        <connector>
+            <targetReference>Assign_Opp_record_type_to_Loan</targetReference>
+        </connector>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <field>DeveloperName</field>
+            <operator>EqualTo</operator>
+            <value>
+                <stringValue>OPP_nCino_Opportunity</stringValue>
+            </value>
+        </filters>
+        <object>RecordType</object>
+        <outputAssignments>
+            <assignToReference>Opp_Loan_RecType_Id</assignToReference>
+            <field>Id</field>
+        </outputAssignments>
+    </recordLookups>
+    <recordLookups>
+        <name>getAccount</name>
+        <label>getAccount</label>
+        <locationX>116</locationX>
+        <locationY>395</locationY>
+        <assignNullValuesIfNoRecordsFound>false</assignNullValuesIfNoRecordsFound>
+        <connector>
+            <targetReference>Update_Opportunity_Name</targetReference>
+        </connector>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <field>Id</field>
+            <operator>EqualTo</operator>
+            <value>
+                <elementReference>$Record.AccountId</elementReference>
+            </value>
+        </filters>
+        <getFirstRecordOnly>true</getFirstRecordOnly>
+        <object>Account</object>
+        <queriedFields>Id</queriedFields>
+        <queriedFields>Name</queriedFields>
+        <storeOutputAutomatically>true</storeOutputAutomatically>
+    </recordLookups>
+    <recordLookups>
+        <name>getRecordId</name>
+        <label>getRecordId</label>
+        <locationX>50</locationX>
+        <locationY>1319</locationY>
+        <assignNullValuesIfNoRecordsFound>false</assignNullValuesIfNoRecordsFound>
+        <connector>
+            <targetReference>Update_Opp_record_type_to_TM</targetReference>
+        </connector>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <field>DeveloperName</field>
+            <operator>EqualTo</operator>
+            <value>
+                <stringValue>OPP_nCino_Treasury_Management</stringValue>
+            </value>
+        </filters>
+        <object>RecordType</object>
+        <outputAssignments>
+            <assignToReference>OppTM_RecordTypeID</assignToReference>
+            <field>Id</field>
+        </outputAssignments>
+    </recordLookups>
+    <recordUpdates>
+        <name>Update_Opportunity_Name</name>
+        <label>Update Opportunity Name</label>
+        <locationX>116</locationX>
+        <locationY>503</locationY>
+        <connector>
+            <targetReference>Get_Branch</targetReference>
+        </connector>
+        <inputAssignments>
+            <field>Name</field>
+            <value>
+                <elementReference>Default_Opportunity_Name</elementReference>
+            </value>
+        </inputAssignments>
+        <inputReference>$Record</inputReference>
+    </recordUpdates>
+    <start>
+        <locationX>188</locationX>
+        <locationY>0</locationY>
+        <connector>
+            <targetReference>Validate_a_new_opportunity_record</targetReference>
+        </connector>
+        <object>Opportunity</object>
+        <recordTriggerType>CreateAndUpdate</recordTriggerType>
+        <triggerType>RecordBeforeSave</triggerType>
+    </start>
+    <status>Active</status>
+    <variables>
+        <description>Variable used to store the Deposit Record Type ID</description>
+        <name>Opp_Deposit_RecordType</name>
+        <dataType>String</dataType>
+        <isCollection>false</isCollection>
+        <isInput>true</isInput>
+        <isOutput>true</isOutput>
+    </variables>
+    <variables>
+        <name>Opp_Loan_RecType_Id</name>
+        <dataType>String</dataType>
+        <isCollection>false</isCollection>
+        <isInput>true</isInput>
+        <isOutput>false</isOutput>
+    </variables>
+    <variables>
+        <name>OppTM_RecordTypeID</name>
+        <dataType>String</dataType>
+        <isCollection>false</isCollection>
+        <isInput>true</isInput>
+        <isOutput>true</isOutput>
+    </variables>
+</Flow>

@@ -1,0 +1,8 @@
+<!-- TM_SendReferralHome -->
+<aura:component implements="force:appHostable,flexipage:availableForAllPageTypes,flexipage:availableForRecordHome,force:hasRecordId,forceCommunity:availableForAllPageTypes,force:lightningQuickAction,force:hasSObjectName" access="global">
+    <aura:attribute name="recordId" type="Id" />
+    <aura:handler name="init" value="{!this}" action="{!c.doInit}" />
+    <!-- lightning:button variant="brand" label="Send Referral" onclick="{!c.handleSendReferralClick}" / --> 
+                    
+	<c:tm_SendReferralHomeLwc accountRecordId ="{!v.recordId}" aura:id="tm_SendReferralPopup"></c:tm_SendReferralHomeLwc>
+</aura:component>

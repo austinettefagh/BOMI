@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fieldSets>
+        <label><!-- Jack Henry jXchange Automated Booking --></label>
+        <name>JHJX__ABJX</name>
+    </fieldSets>
+    <fields>
+        <label><!-- Business Operation --></label>
+        <name>JHJX__Business_Operation__c</name>
+    </fields>
+    <fields>
+        <label><!-- Element Name --></label>
+        <name>JHJX__ElemName__c</name>
+    </fields>
+    <fields>
+        <label><!-- Element Description --></label>
+        <name>JHJX__ElemValDesc__c</name>
+    </fields>
+    <fields>
+        <label><!-- Element Value Details --></label>
+        <name>JHJX__ElemValDetail__c</name>
+    </fields>
+    <fields>
+        <label><!-- Value Text --></label>
+        <name>JHJX__ElemValTxt__c</name>
+    </fields>
+    <fields>
+        <label><!-- Value --></label>
+        <name>JHJX__ElemValue__c</name>
+    </fields>
+    <fields>
+        <label><!-- Include record in AccountBooking Flow --></label>
+        <name>JHJX__IncludeAccountFlow__c</name>
+    </fields>
+    <fields>
+        <label><!-- Include record in Customer Booking Flow --></label>
+        <name>JHJX__IncludeCustomerFlow__c</name>
+    </fields>
+    <fields>
+        <label><!-- Include record in Deposit Booking Flow --></label>
+        <name>JHJX__IncludeDepositFlow__c</name>
+    </fields>
+    <fields>
+        <label><!-- Include record in Loan Booking Flow --></label>
+        <name>JHJX__IncludeLoanFlow__c</name>
+    </fields>
+    <fields>
+        <label><!-- Title --></label>
+        <name>JHJX__Title__c</name>
+    </fields>
+    <fields>
+        <label><!-- User Defined Field Usage --></label>
+        <name>JHJX__UserDefField__c</name>
+    </fields>
+    <fields>
+        <label><!-- Default value --></label>
+        <name>JHJX__default__c</name>
+    </fields>
+    <fields>
+        <label><!-- Hide Element from displaying in UI --></label>
+        <name>JHJX__hide__c</name>
+    </fields>
+    <fields>
+        <label><!-- UID --></label>
+        <name>JHJX__uid__c</name>
+    </fields>
+</CustomObjectTranslation>

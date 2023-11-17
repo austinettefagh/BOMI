@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fieldSets>
+        <label><!-- Credit Memo Standard Product Package --></label>
+        <name>LLC_BI__Credit_Memo_Standard_Product_Package</name>
+    </fieldSets>
+    <fields>
+        <label><!-- Created From Loan Flow --></label>
+        <name>CF_Created_From_Loan_Flow__c</name>
+    </fields>
+    <fields>
+        <label><!-- Role --></label>
+        <name>LLC_BI__Assigned_Role__c</name>
+        <relationshipLabel><!-- Product Package Team Members --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Product Package --></label>
+        <name>LLC_BI__Product_Package__c</name>
+        <relationshipLabel><!-- Product Package Team Members --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- User --></label>
+        <name>LLC_BI__User__c</name>
+        <relationshipLabel><!-- Product Package Team Members --></relationshipLabel>
+    </fields>
+    <webLinks>
+        <label><!-- Assign_Team --></label>
+        <name>LLC_BI__Assign_Team</name>
+    </webLinks>
+</CustomObjectTranslation>

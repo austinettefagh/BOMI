@@ -1,0 +1,5 @@
+<apex:page standardController="LLC_BI__Scenario__c">
+    <script>
+    window.open("/apex/nFORMS__FormGenerator?Type=LLC_BI__Scenario__c&Id={!LLC_BI__Scenario__c.Id}","_self");
+    </script>
+</apex:page>

@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<StandardValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <sorted>false</sorted>
+    <standardValue>
+        <fullName>New Approval Preparation</fullName>
+        <default>false</default>
+        <label>New Approval Preparation</label>
+        <closed>false</closed>
+    </standardValue>
+    <standardValue>
+        <fullName>New</fullName>
+        <default>true</default>
+        <label>New</label>
+        <closed>false</closed>
+    </standardValue>
+    <standardValue>
+        <fullName>Unknown Relationship</fullName>
+        <default>false</default>
+        <label>Unknown Relationship</label>
+        <closed>false</closed>
+    </standardValue>
+    <standardValue>
+        <fullName>Active</fullName>
+        <default>false</default>
+        <label>Active</label>
+        <closed>false</closed>
+    </standardValue>
+    <standardValue>
+        <fullName>Pending</fullName>
+        <default>false</default>
+        <label>Pending</label>
+        <closed>false</closed>
+    </standardValue>
+    <standardValue>
+        <fullName>In Progress</fullName>
+        <default>false</default>
+        <label>In Progress</label>
+        <closed>false</closed>
+    </standardValue>
+    <standardValue>
+        <fullName>In Process</fullName>
+        <default>false</default>
+        <label>In Process</label>
+        <closed>false</closed>
+    </standardValue>
+    <standardValue>
+        <fullName>With Relationship</fullName>
+        <default>false</default>
+        <label>With Relationship</label>
+        <closed>false</closed>
+    </standardValue>
+    <standardValue>
+        <fullName>Feedback in Review</fullName>
+        <default>false</default>
+        <label>Feedback in Review</label>
+        <closed>false</closed>
+    </standardValue>
+    <standardValue>
+        <fullName>Re-Opened</fullName>
+        <default>false</default>
+        <label>Re-Opened</label>
+        <closed>false</closed>
+    </standardValue>
+    <standardValue>
+        <fullName>In_Review_with_TBOM</fullName>
+        <default>false</default>
+        <label>In Review with TBOM</label>
+        <closed>false</closed>
+    </standardValue>
+    <standardValue>
+        <fullName>On Hold</fullName>
+        <default>false</default>
+        <label>On Hold</label>
+        <closed>false</closed>
+    </standardValue>
+    <standardValue>
+        <fullName>Escalated</fullName>
+        <default>false</default>
+        <label>Escalated</label>
+        <closed>false</closed>
+    </standardValue>
+    <standardValue>
+        <fullName>Approved</fullName>
+        <default>false</default>
+        <label>Approved</label>
+        <closed>false</closed>
+    </standardValue>
+    <standardValue>
+        <fullName>Proceeding Scheduled</fullName>
+        <default>false</default>
+        <label>Proceeding Scheduled</label>
+        <closed>false</closed>
+    </standardValue>
+    <standardValue>
+        <fullName>Closed</fullName>
+        <default>false</default>
+        <label>Closed</label>
+        <closed>true</closed>
+    </standardValue>
+    <standardValue>
+        <fullName>Complete</fullName>
+        <default>false</default>
+        <label>Complete</label>
+        <closed>false</closed>
+    </standardValue>
+</StandardValueSet>

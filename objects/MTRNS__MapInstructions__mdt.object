@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <description>This object contains compiled mapping instructions for the MTRNS Mapping and Transformation package.</description>
+    <fields>
+        <fullName>MTRNS__Category__c</fullName>
+        <deprecated>false</deprecated>
+        <description>The mapping instruction category.</description>
+        <externalId>false</externalId>
+        <fieldManageability>DeveloperControlled</fieldManageability>
+        <label>Instruction Category</label>
+        <length>50</length>
+        <required>false</required>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>MTRNS__CompiledInstructions__c</fullName>
+        <deprecated>false</deprecated>
+        <description>JSON Serialized representation of the Compiled array of MTRNS MapInstruction_v1</description>
+        <externalId>false</externalId>
+        <fieldManageability>DeveloperControlled</fieldManageability>
+        <label>Compiled Instructions</label>
+        <length>131072</length>
+        <type>LongTextArea</type>
+        <visibleLines>50</visibleLines>
+    </fields>
+    <fields>
+        <fullName>MTRNS__Context__c</fullName>
+        <deprecated>false</deprecated>
+        <description>The mapping instruction context (Request, Response, etc)</description>
+        <externalId>false</externalId>
+        <fieldManageability>DeveloperControlled</fieldManageability>
+        <label>Instruction Context</label>
+        <length>50</length>
+        <required>false</required>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>MTRNS__Differentiator__c</fullName>
+        <deprecated>false</deprecated>
+        <description>The mapping instruction differentiator.</description>
+        <externalId>false</externalId>
+        <fieldManageability>DeveloperControlled</fieldManageability>
+        <label>Instruction Differentiator</label>
+        <length>50</length>
+        <required>false</required>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>MTRNS__InstructionType__c</fullName>
+        <deprecated>false</deprecated>
+        <description>The mapping instruction type (X2X-FAST, O2X-MAP, NCR, NCR-NFUSE, etc)</description>
+        <externalId>false</externalId>
+        <fieldManageability>DeveloperControlled</fieldManageability>
+        <label>Instruction Type</label>
+        <length>10</length>
+        <required>true</required>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>MTRNS__Is_Active__c</fullName>
+        <defaultValue>false</defaultValue>
+        <deprecated>false</deprecated>
+        <description>When true, the mapping instruction item will be used. When false, the instruction will be ignored.</description>
+        <externalId>false</externalId>
+        <fieldManageability>SubscriberControlled</fieldManageability>
+        <label>Is Active</label>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>MTRNS__PackageName__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Package name associated to this mapping instruction.</description>
+        <externalId>false</externalId>
+        <fieldManageability>DeveloperControlled</fieldManageability>
+        <label>Instruction Package Name</label>
+        <length>255</length>
+        <required>true</required>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>MTRNS__ProcessingOrder__c</fullName>
+        <defaultValue>0</defaultValue>
+        <deprecated>false</deprecated>
+        <description>The processing order for this mapping instruction.</description>
+        <externalId>false</externalId>
+        <fieldManageability>DeveloperControlled</fieldManageability>
+        <label>Instruction Processing Order</label>
+        <precision>5</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>MTRNS__SelectorKey__c</fullName>
+        <deprecated>false</deprecated>
+        <description>The mapping instruction selector key. This key is used to aggregate the mapping instructions.</description>
+        <externalId>false</externalId>
+        <fieldManageability>DeveloperControlled</fieldManageability>
+        <label>Instruction Selector Key</label>
+        <length>40</length>
+        <required>true</required>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>MTRNS__SubContext__c</fullName>
+        <deprecated>false</deprecated>
+        <description>The mapping instruction sub-context (Consumer, Business, etc)</description>
+        <externalId>false</externalId>
+        <fieldManageability>DeveloperControlled</fieldManageability>
+        <label>Instruction Sub-Context</label>
+        <length>50</length>
+        <required>false</required>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <label>Mapping Instructions</label>
+    <pluralLabel>Mapping Instructions</pluralLabel>
+    <visibility>Public</visibility>
+</CustomObject>

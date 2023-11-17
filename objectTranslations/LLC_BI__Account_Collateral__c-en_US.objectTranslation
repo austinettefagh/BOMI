@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fieldSets>
+        <label><!-- Jack Henry jXchange Automated Booking --></label>
+        <name>JHJX__ABJX</name>
+    </fieldSets>
+    <fieldSets>
+        <label><!-- AC Collateral Description --></label>
+        <name>LLC_BI__AC_Collateral_Description_SS</name>
+    </fieldSets>
+    <fieldSets>
+        <label><!-- Bulk Ownership Assignment --></label>
+        <name>LLC_BI__Bulk_Ownership_Assignment</name>
+    </fieldSets>
+    <fieldSets>
+        <label><!-- Credit Memo Standard Product Package --></label>
+        <name>LLC_BI__Credit_Memo_Standard_Product_Package</name>
+    </fieldSets>
+    <fieldSets>
+        <label><!-- Group Collateral Management Relationships --></label>
+        <name>LLC_BI__Group_Collateral_Mgmt_Relationships</name>
+    </fieldSets>
+    <fieldSets>
+        <label><!-- Group Collateral Ownership Creation --></label>
+        <name>LLC_BI__Group_Collateral_Ownership_Creation</name>
+    </fieldSets>
+    <fieldSets>
+        <label><!-- Individual Collateral Ownership Creation --></label>
+        <name>LLC_BI__Individual_Collateral_Ownership_Creation</name>
+    </fieldSets>
+    <fieldSets>
+        <label><!-- SBEOC Collateral Ownership --></label>
+        <name>nSBA__SBEOC_Collateral_Ownership</name>
+    </fieldSets>
+    <fields>
+        <label><!-- Relationship --></label>
+        <name>LLC_BI__Account__c</name>
+        <relationshipLabel><!-- Collateral Owned --></relationshipLabel>
+    </fields>
+    <fields>
+        <help><!-- How the entity is associated to the collateral --></help>
+        <label><!-- Collateral Association --></label>
+        <name>LLC_BI__Collateral_Association__c</name>
+        <picklistValues>
+            <masterLabel>Assignee</masterLabel>
+            <translation><!-- Assignee --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Buyer</masterLabel>
+            <translation><!-- Buyer --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Construction</masterLabel>
+            <translation><!-- Construction --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Landlord</masterLabel>
+            <translation><!-- Landlord --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Lessee</masterLabel>
+            <translation><!-- Lessee --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Lessor</masterLabel>
+            <translation><!-- Lessor --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Lienholder</masterLabel>
+            <translation><!-- Lienholder --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Owner</masterLabel>
+            <translation><!-- Owner --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Seller</masterLabel>
+            <translation><!-- Seller --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Tenant</masterLabel>
+            <translation><!-- Tenant --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Trustee</masterLabel>
+            <translation><!-- Trustee --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Collateral --></label>
+        <name>LLC_BI__Collateral__c</name>
+        <relationshipLabel><!-- Relationships --></relationshipLabel>
+    </fields>
+    <fields>
+        <help><!-- The end date of the collateral involvement --></help>
+        <label><!-- End Date --></label>
+        <name>LLC_BI__End_Date__c</name>
+    </fields>
+    <fields>
+        <help><!-- Select how the relationship is associated to the collateral group. --></help>
+        <label><!-- Group Association --></label>
+        <name>LLC_BI__Group_Association__c</name>
+        <picklistValues>
+            <masterLabel>Member</masterLabel>
+            <translation><!-- Member --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- The percentage of the collateral that the relationship owns --></help>
+        <label><!-- Ownership Percentage --></label>
+        <name>LLC_BI__Ownership_Percentage__c</name>
+    </fields>
+    <fields>
+        <help><!-- Does the Relationship have authority to pledge this collateral --></help>
+        <label><!-- Pledging Authority --></label>
+        <name>LLC_BI__Pledging_Authority__c</name>
+    </fields>
+    <fields>
+        <help><!-- This field designates whether this is the primary owner of a piece of collateral. --></help>
+        <label><!-- Primary Owner --></label>
+        <name>LLC_BI__Primary_Owner__c</name>
+    </fields>
+    <fields>
+        <label><!-- Relationship Type --></label>
+        <name>LLC_BI__Relationship_Type__c</name>
+    </fields>
+    <fields>
+        <help><!-- The start date of the collateral ownership. --></help>
+        <label><!-- Start Date --></label>
+        <name>LLC_BI__Start_Date__c</name>
+    </fields>
+    <fields>
+        <help><!-- Use this field if using Loan_Collateral__c to generate SBA 7a Loan Authorization Form. This field is used in SBA Loan Authorization only. --></help>
+        <label><!-- Loan Collateral --></label>
+        <name>nSBA__Loan_Collateral__c</name>
+        <relationshipLabel><!-- Collateral Ownership --></relationshipLabel>
+    </fields>
+</CustomObjectTranslation>

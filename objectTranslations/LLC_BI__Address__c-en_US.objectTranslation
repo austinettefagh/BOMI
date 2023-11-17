@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <help><!-- Enter the account record to which this address refers. --></help>
+        <label><!-- Account --></label>
+        <name>LLC_BI__Account__c</name>
+        <relationshipLabel><!-- Addresses --></relationshipLabel>
+    </fields>
+    <fields>
+        <help><!-- Enter the city in this field. --></help>
+        <label><!-- City --></label>
+        <name>LLC_BI__City__c</name>
+    </fields>
+    <fields>
+        <help><!-- Enter the contact record to which this address refers. --></help>
+        <label><!-- Contact --></label>
+        <name>LLC_BI__Contact__c</name>
+        <relationshipLabel><!-- Addresses --></relationshipLabel>
+    </fields>
+    <fields>
+        <help><!-- Enter the country in this field. --></help>
+        <label><!-- Country --></label>
+        <name>LLC_BI__Country__c</name>
+    </fields>
+    <fields>
+        <help><!-- Select this checkbox to indicate the applicant’s address is current. --></help>
+        <label><!-- Is Current Address --></label>
+        <name>LLC_BI__Is_Current__c</name>
+    </fields>
+    <fields>
+        <help><!-- This field contains the applicant’s current housing payment. --></help>
+        <label><!-- Monthly Housing Expense --></label>
+        <name>LLC_BI__Monthly_Housing_Expense__c</name>
+    </fields>
+    <fields>
+        <help><!-- This field displays the applicant’s total number of months at their current residence. --></help>
+        <label><!-- Months at Residence --></label>
+        <name>LLC_BI__Months_At_Residence__c</name>
+    </fields>
+    <fields>
+        <help><!-- Enter the postal code in this field. --></help>
+        <label><!-- Postal Code --></label>
+        <name>LLC_BI__Postal_Code__c</name>
+    </fields>
+    <fields>
+        <help><!-- This field indicates the applicant&apos;s ownership status of their current residence. --></help>
+        <label><!-- Residence Type --></label>
+        <name>LLC_BI__Residence_Type__c</name>
+        <picklistValues>
+            <masterLabel>Home Buyer</masterLabel>
+            <translation><!-- Home Buyer --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Home Buyer (Mobile Home)</masterLabel>
+            <translation><!-- Home Buyer (Mobile Home) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Home Owner</masterLabel>
+            <translation><!-- Home Owner --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Home Owner (Mobile Home)</masterLabel>
+            <translation><!-- Home Owner (Mobile Home) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Lives with relatives or others</masterLabel>
+            <translation><!-- Lives with relatives or others --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Renter</masterLabel>
+            <translation><!-- Renter --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Unknown</masterLabel>
+            <translation><!-- Unknown --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- Enter the state in this field. --></help>
+        <label><!-- State --></label>
+        <name>LLC_BI__State__c</name>
+    </fields>
+    <fields>
+        <help><!-- Enter the street address in this field. --></help>
+        <label><!-- Street --></label>
+        <name>LLC_BI__Street__c</name>
+    </fields>
+    <fields>
+        <help><!-- Select the type of address from the picklist. --></help>
+        <label><!-- Type --></label>
+        <name>LLC_BI__Type__c</name>
+        <picklistValues>
+            <masterLabel>Mailing</masterLabel>
+            <translation><!-- Mailing --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>PO Box</masterLabel>
+            <translation><!-- PO Box --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Physical</masterLabel>
+            <translation><!-- Physical --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- lookupKey --></label>
+        <name>LLC_BI__lookupKey__c</name>
+    </fields>
+</CustomObjectTranslation>

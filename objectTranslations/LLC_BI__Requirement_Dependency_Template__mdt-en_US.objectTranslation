@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <help><!-- This required field contains a reference to the Requirement Template which controls this dependency. --></help>
+        <label><!-- Controlling Requirement --></label>
+        <name>LLC_BI__Controlling_Requirement__c</name>
+        <relationshipLabel><!-- Dependent Requirements --></relationshipLabel>
+    </fields>
+    <fields>
+        <help><!-- This required field defines the behavior of the dependency between the associated Requirements.  It should be copied to the Dependency Type field on Requirement Dependency records created from this template. --></help>
+        <label><!-- Dependency Type --></label>
+        <name>LLC_BI__Dependency_Type__c</name>
+        <picklistValues>
+            <masterLabel>Finish to Finish</masterLabel>
+            <translation><!-- Finish to Finish --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Finish to Start</masterLabel>
+            <translation><!-- Finish to Start --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Start to Finish</masterLabel>
+            <translation><!-- Start to Finish --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Start to Start</masterLabel>
+            <translation><!-- Start to Start --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- This required field contains a reference to the Requirement Template which is controlled by this dependency. --></help>
+        <label><!-- Dependent Requirement --></label>
+        <name>LLC_BI__Dependent_Requirement__c</name>
+        <relationshipLabel><!-- Controlling Requirements --></relationshipLabel>
+    </fields>
+</CustomObjectTranslation>

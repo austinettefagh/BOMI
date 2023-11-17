@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <label><!-- Amortization (months) --></label>
+        <name>LLC_BI__Amortization_months__c</name>
+    </fields>
+    <fields>
+        <label><!-- Bundle --></label>
+        <name>LLC_BI__Bundle__c</name>
+        <relationshipLabel><!-- Loan Assumptions --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Interest Rate (%) --></label>
+        <name>LLC_BI__Interest_Rate__c</name>
+    </fields>
+    <fields>
+        <label><!-- Policy DSCR --></label>
+        <name>LLC_BI__Policy_DSCR__c</name>
+    </fields>
+    <fields>
+        <label><!-- Policy LTV (%) --></label>
+        <name>LLC_BI__Policy_LTV__c</name>
+    </fields>
+    <fields>
+        <label><!-- Requested Loan Amount --></label>
+        <name>LLC_BI__Requested_Loan_Amount__c</name>
+    </fields>
+    <fields>
+        <label><!-- Selected Period --></label>
+        <name>LLC_BI__Selected_Period__c</name>
+        <relationshipLabel><!-- Loan Assumptions --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Lookup Key --></label>
+        <name>LLC_BI__lookupKey__c</name>
+    </fields>
+</CustomObjectTranslation>

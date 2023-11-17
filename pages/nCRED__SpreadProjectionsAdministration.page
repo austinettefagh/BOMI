@@ -1,0 +1,58 @@
+<apex:page showHeader="false" sidebar="false" standardStylesheets="false" docType="html-5.0" controller="nFORCE.RemoteActionController">
+  <html xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+  <apex:slds />
+
+  <head>
+    <script>
+      window.LifeCycle = window.LifeCycle || {};
+      LifeCycle.msgs = LifeCycle.msgs || {};
+      LifeCycle.msgs.msg_vf_includes_url = '{!URLFOR($Resource.vf_includes)}';
+    </script>
+    <apex:stylesheet value="{!URLFOR($Resource.nCRED__spreads_projections_admin, 'styles.css')}" />
+    <nFORCE:LiteForce_Functions />
+    <nFORCE:LifeCycle_Functions />
+    <meta name="viewport" content="width=device-width, initial-scale=1"></meta>
+    <style>
+      .slds-scope ::placeholder {
+        color: #767676 !important;
+      }
+    </style>
+  </head>
+
+  <body class="slds slds-scope">
+    <div>
+      <spreads-admin-projections contextId="{!$CurrentPage.parameters.id}">Loading Spread Projections Admin...</spreads-admin-projections>
+    </div>
+    <script src="{!URLFOR($Resource.spreads_projections_admin, 'runtime.js')}"></script>
+    <script src="{!URLFOR($Resource.spreads_projections_admin, 'polyfills.js')}"></script>
+    <script src="{!URLFOR($Resource.spreads_projections_admin, 'vendor.js')}"></script>
+    <script src="{!URLFOR($Resource.spreads_projections_admin, 'main.js')}"></script>
+    <script src="{!URLFOR($Resource.nds, 'nds.js')}" data-resources-url="{!URLFOR($Resource.nds, 'nds/')}" />
+    <link rel="stylesheet" href="{!URLFOR($Resource.nds, 'nds.bundle.css')}" />
+    <nFORCE:Internationalize defer="true" />
+
+    <script>
+      (function () {
+        if (window.location.href.indexOf('core=es5') === -1) {
+          var es5Parameter = ~window.location.search.indexOf('?') ? '&core=es5' :'?core=es5';
+          var path = window.location.pathname;
+          var search = window.location.search + es5Parameter;
+          var hash = window.location.hash;
+          var newState = path + search + hash;
+          window.history.replaceState({}, 'es5', newState);
+        }
+      })();
+      document.addEventListener('DOMContentLoaded', function() {
+        if (!window.ndsIncluded) {
+          var script = window.document.createElement('script');
+          script.setAttribute('src', '{!URLFOR($Resource.nCRED__nds, "/nds.js")}');
+          script.setAttribute('data-resources-url', '{!URLFOR($Resource.nCRED__nds, "/nds/")}');
+          window.document.body.appendChild(script);
+          window.ndsIncluded = true;
+        }
+      });
+    </script>
+  </body>
+
+  </html>
+</apex:page>

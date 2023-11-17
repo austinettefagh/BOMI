@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fieldSets>
+        <label><!-- Clone External Fields --></label>
+        <name>LLC_BI__Clone_External_Fields</name>
+    </fieldSets>
+    <fields>
+        <label><!-- External Identifier --></label>
+        <name>LLC_BI__External_Identifier__c</name>
+    </fields>
+    <fields>
+        <label><!-- Is External --></label>
+        <name>LLC_BI__Is_External__c</name>
+    </fields>
+    <fields>
+        <label><!-- Is Internal --></label>
+        <name>LLC_BI__Is_Internal__c</name>
+    </fields>
+    <fields>
+        <label><!-- Non Unique External Identifier --></label>
+        <name>LLC_BI__Non_Unique_External_Identifier__c</name>
+    </fields>
+    <fields>
+        <label><!-- Offline Location --></label>
+        <name>LLC_BI__Offline_Location__c</name>
+    </fields>
+    <fields>
+        <label><!-- E-Signature Ready --></label>
+        <name>LLC_BI__Ready_For_Esignature__c</name>
+    </fields>
+    <fields>
+        <label><!-- Type --></label>
+        <name>LLC_BI__Type__c</name>
+        <picklistValues>
+            <masterLabel>Offline</masterLabel>
+            <translation><!-- Offline --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>S3</masterLabel>
+            <translation><!-- S3 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Salesforce Attachment</masterLabel>
+            <translation><!-- Salesforce Attachment --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- lookupKey --></label>
+        <name>LLC_BI__lookupKey__c</name>
+    </fields>
+    <fields>
+        <label><!-- -D Filenet Document Id --></label>
+        <name>NDOC__Filenet_Document_Id__c</name>
+    </fields>
+    <fields>
+        <label><!-- Is Deleted --></label>
+        <name>NDOC__Is_Deleted__c</name>
+    </fields>
+    <sharingReasons>
+        <label><!-- Enhanced DocMan Sharing --></label>
+        <name>LLC_BI__Enhanced_DocMan_Sharing</name>
+    </sharingReasons>
+    <sharingReasons>
+        <label><!-- Enhanced DocMan Sharing --></label>
+        <name>NDOC__Enhanced_DocMan_Sharing</name>
+    </sharingReasons>
+</CustomObjectTranslation>

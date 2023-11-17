@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomPermission xmlns="http://soap.sforce.com/2006/04/metadata">
+    <description>--DEPRECATED-- Grants a user access to finalize the Treasury Services maintenance process in the context of Unified Treasury Maintenance</description>
+    <isLicensed>false</isLicensed>
+    <label>-D Treasury Maintenance Finalization</label>
+</CustomPermission>

@@ -1,0 +1,14 @@
+<apex:page sidebar="false" showHeader="false">
+	<script type="text/javascript">
+		// Message post recommended by DocuSign - SESOC may consume if necessary
+		const msg = {source: 'oauthResponse', hash: window.location.search || ''};
+		if (window.opener) {
+			window.opener.postMessage(msg, '*');
+			window.opener.postMessage('CEREMONY_COMPLETE', '*');
+		} else {
+			window.parent.postMessage(msg, '*');
+			window.parent.postMessage('CEREMONY_COMPLETE', '*');
+		}
+		window.close();
+	</script>
+</apex:page>

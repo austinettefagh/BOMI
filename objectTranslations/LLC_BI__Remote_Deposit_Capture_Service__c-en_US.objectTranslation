@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <label><!-- Customize Dollar Amount --></label>
+        <name>LLC_BI__Customize_Dollar_Amount__c</name>
+        <picklistValues>
+            <masterLabel>Auto-Populate</masterLabel>
+            <translation><!-- Auto-Populate --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CAR/LAR</masterLabel>
+            <translation><!-- CAR/LAR --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Neither</masterLabel>
+            <translation><!-- Neither --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Number of Locations --></label>
+        <name>LLC_BI__Number_of_Locations__c</name>
+    </fields>
+    <fields>
+        <label><!-- Remote Deposit Capture --></label>
+        <name>LLC_BI__Remote_Deposit_Capture__c</name>
+    </fields>
+    <fields>
+        <label><!-- Remote Deposit Limits Change --></label>
+        <name>LLC_BI__Remote_Deposit_Limits_Change__c</name>
+    </fields>
+    <fields>
+        <label><!-- Treasury Service Reference --></label>
+        <name>LLC_BI__Treasury_Service_Reference__c</name>
+        <relationshipLabel><!-- Remote Deposit Capture Service --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Virtual Endorsement --></label>
+        <name>LLC_BI__Virtual_Endorsement__c</name>
+    </fields>
+</CustomObjectTranslation>

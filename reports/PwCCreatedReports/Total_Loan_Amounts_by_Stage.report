@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <buckets>
+        <bucketType>picklist</bucketType>
+        <developerName>BucketField_4611945</developerName>
+        <masterLabel>Loans by Stage Bucket</masterLabel>
+        <nullTreatment>n</nullTreatment>
+        <otherBucketLabel>Other</otherBucketLabel>
+        <sourceColumnName>LLC_BI__Loan__c.LLC_BI__Stage__c</sourceColumnName>
+        <useOther>true</useOther>
+        <values>
+            <sourceValues>
+                <sourceValue>Qualification / Proposal</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Application Processing</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Credit Underwriting</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Credit Decisioning</sourceValue>
+            </sourceValues>
+            <value>In Process</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>Pre-Closing Due Diligence</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Doc Prep &amp; Review</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Closing</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Booking / Funding</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Booked</sourceValue>
+            </sourceValues>
+            <value>Approved</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>Complete</sourceValue>
+            </sourceValues>
+            <value>Closed</value>
+        </values>
+    </buckets>
+    <chart>
+        <backgroundColor1>#FFFFFF</backgroundColor1>
+        <backgroundColor2>#FFFFFF</backgroundColor2>
+        <backgroundFadeDir>Diagonal</backgroundFadeDir>
+        <chartSummaries>
+            <aggregate>Sum</aggregate>
+            <axisBinding>y</axisBinding>
+            <column>LLC_BI__Loan__c.LLC_BI__Amount__c</column>
+        </chartSummaries>
+        <chartType>HorizontalBar</chartType>
+        <enableHoverLabels>false</enableHoverLabels>
+        <expandOthers>true</expandOthers>
+        <groupingColumn>BucketField_4611945</groupingColumn>
+        <location>CHART_BOTTOM</location>
+        <showAxisLabels>false</showAxisLabels>
+        <showPercentage>false</showPercentage>
+        <showTotal>false</showTotal>
+        <showValues>false</showValues>
+        <size>Medium</size>
+        <summaryAxisRange>Auto</summaryAxisRange>
+        <textColor>#000000</textColor>
+        <textSize>12</textSize>
+        <titleColor>#000000</titleColor>
+        <titleSize>18</titleSize>
+    </chart>
+    <columns>
+        <aggregateTypes>Sum</aggregateTypes>
+        <field>LLC_BI__Loan__c.LLC_BI__Amount__c</field>
+    </columns>
+    <description>Total Loan Amounts by Stage</description>
+    <format>Summary</format>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>BucketField_4611945</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>LLC_BI__Loan__c.LLC_BI__Stage__c</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <name>Total Loan Amounts by Stage</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>CustomEntity$LLC_BI__Loan__c</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <showGrandTotal>true</showGrandTotal>
+    <showSubTotals>true</showSubTotals>
+    <timeFrameFilter>
+        <dateColumn>LLC_BI__Loan__c.CF_Application_Completed_Date__c</dateColumn>
+        <interval>INTERVAL_CUSTOM</interval>
+    </timeFrameFilter>
+</Report>

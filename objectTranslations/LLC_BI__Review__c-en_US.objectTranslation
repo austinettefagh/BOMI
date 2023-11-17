@@ -1,0 +1,264 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fieldSets>
+        <label><!-- Account Risk Rating --></label>
+        <name>FS_Account_Risk_Rating</name>
+    </fieldSets>
+    <fieldSets>
+        <label><!-- Product_Package_Related_List --></label>
+        <name>LLC_BI__Product_Package_Related_List</name>
+    </fieldSets>
+    <fields>
+        <label><!-- Additional Comments --></label>
+        <name>CF_Additional_Comments__c</name>
+    </fields>
+    <fields>
+        <label><!-- Approved Date --></label>
+        <name>CF_Approved_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Auto-Approval Eligible? --></label>
+        <name>CF_Auto_Approval_Eligible__c</name>
+    </fields>
+    <fields>
+        <label><!-- Auto-Approval --></label>
+        <name>CF_Auto_Approval__c</name>
+    </fields>
+    <fields>
+        <help><!-- Location, Date of Last Physical Inspection, Liquidation Value &amp; Bank&apos;s Cushion or Shortfall --></help>
+        <label><!-- Collateral Discussion --></label>
+        <name>CF_Collateral_Discussion__c</name>
+    </fields>
+    <fields>
+        <label><!-- Credit Analyst --></label>
+        <name>CF_Credit_Analyst__c</name>
+        <relationshipLabel><!-- Reviews (Credit Analyst) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Credit Officer --></label>
+        <name>CF_Credit_Officer__c</name>
+        <relationshipLabel><!-- Reviews (Credit Officer) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Current User Assigned As --></label>
+        <name>CF_Current_User_Assigned_As__c</name>
+    </fields>
+    <fields>
+        <label><!-- Defenses &amp; Bankruptcy Challenges --></label>
+        <name>CF_Defenses_Bankruptcy_Challenges__c</name>
+    </fields>
+    <fields>
+        <label><!-- Financial Analysis --></label>
+        <name>CF_Financial_Analysis__c</name>
+    </fields>
+    <fields>
+        <help><!-- Trends around Leverage, Liquidity, Sales, Profitability, Margin, Etc. --></help>
+        <label><!-- Financial Position --></label>
+        <name>CF_Financial_Position__c</name>
+    </fields>
+    <fields>
+        <label><!-- Guarantor(s) Financial Analysis --></label>
+        <name>CF_Guarantor_s_Financial_Analysis__c</name>
+    </fields>
+    <fields>
+        <label><!-- Impaired Loans - Est Worst Case Loss --></label>
+        <name>CF_Impaired_Loans_Est_Worst_Case_Loss__c</name>
+    </fields>
+    <fields>
+        <label><!-- Loan Assistant --></label>
+        <name>CF_Loan_Assistant__c</name>
+        <relationshipLabel><!-- Reviews (Loan Assistant) --></relationshipLabel>
+    </fields>
+    <fields>
+        <help><!-- Changes in Debt Level, Income, Expenses, Collateral, Repayment Ability &amp; Mgmt --></help>
+        <label><!-- Material Changes Since Last Report --></label>
+        <name>CF_Material_Changes_Since_Last_Report__c</name>
+    </fields>
+    <fields>
+        <label><!-- Send to Credit for Approval? --></label>
+        <name>CF_Override_Auto_Approval__c</name>
+    </fields>
+    <fields>
+        <help><!-- Include Anticipated Completion Dates --></help>
+        <label><!-- Primary Action Plan for Liquidation --></label>
+        <name>CF_Primary_Action_Plan_for_Liquidation__c</name>
+    </fields>
+    <fields>
+        <label><!-- Reasons for Financial Difficulties --></label>
+        <name>CF_Reasons_for_Financial_Difficulties__c</name>
+    </fields>
+    <fields>
+        <label><!-- Relationship Manager --></label>
+        <name>CF_Relationship_Manager__c</name>
+        <relationshipLabel><!-- Reviews (Relationship Manager) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Repayment Ability --></label>
+        <name>CF_Repayment_Ability__c</name>
+    </fields>
+    <fields>
+        <label><!-- Review Completion Date --></label>
+        <name>CF_Review_Completion_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Risk Grade --></label>
+        <name>CF_Risk_Grade__c</name>
+    </fields>
+    <fields>
+        <label><!-- Risk Rating Review Available --></label>
+        <name>CF_Risk_Rating_Review_Available__c</name>
+    </fields>
+    <fields>
+        <help><!-- Include Anticipated Completion Dates --></help>
+        <label><!-- Secondary Action Plan for Liquidation --></label>
+        <name>CF_Secondary_Action_Plan_for_Liquidation__c</name>
+    </fields>
+    <fields>
+        <help><!-- Summary of Watch Review discussion --></help>
+        <label><!-- Watch List Action Plan Summary --></label>
+        <name>CF_Watch_List_Action_Plan_Summary__c</name>
+    </fields>
+    <fields>
+        <label><!-- Watch List Status --></label>
+        <name>CF_Watch_List_Status__c</name>
+        <picklistValues>
+            <masterLabel>Analysis In Progress</masterLabel>
+            <translation><!-- Analysis In Progress --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Approved</masterLabel>
+            <translation><!-- Approved --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Ready for Watch List Review</masterLabel>
+            <translation><!-- Ready for Watch List Review --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Rejected</masterLabel>
+            <translation><!-- Rejected --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Submitted for Approval</masterLabel>
+            <translation><!-- Submitted for Approval --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- Lookup to the Account that is involved in the review. --></help>
+        <label><!-- Account --></label>
+        <name>LLC_BI__Account__c</name>
+        <relationshipLabel><!-- Reviews --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Context Key --></label>
+        <name>LLC_BI__Context_Key__c</name>
+    </fields>
+    <fields>
+        <label><!-- Credit Memo --></label>
+        <name>LLC_BI__Credit_Memo__c</name>
+        <relationshipLabel><!-- Reviews --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Lookup Key --></label>
+        <name>LLC_BI__Lookup_Key__c</name>
+    </fields>
+    <fields>
+        <label><!-- Narrative --></label>
+        <name>LLC_BI__Narrative__c</name>
+    </fields>
+    <fields>
+        <label><!-- Product Package Data --></label>
+        <name>LLC_BI__Product_Package_Data__c</name>
+    </fields>
+    <fields>
+        <label><!-- Product Package --></label>
+        <name>LLC_BI__Product_Package__c</name>
+        <relationshipLabel><!-- Reviews --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Review Type --></label>
+        <name>LLC_BI__Review_Type__c</name>
+        <picklistValues>
+            <masterLabel>AdHoc</masterLabel>
+            <translation><!-- AdHoc --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Annual</masterLabel>
+            <translation><!-- Annual --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Watch List</masterLabel>
+            <translation><!-- Watch List --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Status --></label>
+        <name>LLC_BI__Status__c</name>
+        <picklistValues>
+            <masterLabel>Approved</masterLabel>
+            <translation><!-- Approved --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>In Progress</masterLabel>
+            <translation><!-- In Progress --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Pending Approval</masterLabel>
+            <translation><!-- Pending Approval --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Recalled</masterLabel>
+            <translation><!-- Recalled --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Rejected</masterLabel>
+            <translation><!-- Rejected --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Submitted for Approval</masterLabel>
+            <translation><!-- Submitted for Approval --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Loan Officer --></label>
+        <name>cm_Loan_Officer__c</name>
+        <relationshipLabel><!-- Reviews (Loan Officer) --></relationshipLabel>
+    </fields>
+    <recordTypes>
+        <description><!-- Account Review Complete --></description>
+        <label><!-- Account Review Complete --></label>
+        <name>LLC_BI__Account_Review_Complete</name>
+    </recordTypes>
+    <recordTypes>
+        <description><!-- Account Review In Progress --></description>
+        <label><!-- Account Review In Progress --></label>
+        <name>LLC_BI__Account_Review_In_Progress</name>
+    </recordTypes>
+    <recordTypes>
+        <description><!-- Package Review Complete --></description>
+        <label><!-- Package Review Complete --></label>
+        <name>LLC_BI__Package_Review_Complete</name>
+    </recordTypes>
+    <recordTypes>
+        <description><!-- Package Review In Progress --></description>
+        <label><!-- Package Review In Progress --></label>
+        <name>LLC_BI__Package_Review_In_Progress</name>
+    </recordTypes>
+    <recordTypes>
+        <description><!-- When Review Type is WatchList and Status is not approved --></description>
+        <label><!-- Watch List In Progress --></label>
+        <name>REV_Watch_List_In_Progress</name>
+    </recordTypes>
+    <recordTypes>
+        <description><!-- When Review Type is Watch List and Status is Approved --></description>
+        <label><!-- Watch List Review Complete --></label>
+        <name>REV_Watch_List_Review_Complete</name>
+    </recordTypes>
+    <webLinks>
+        <label><!-- Credit_Memo --></label>
+        <name>LLC_BI__Credit_Memo</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- RE_Generate_Credit_Memo --></label>
+        <name>RE_Generate_Credit_Memo</name>
+    </webLinks>
+</CustomObjectTranslation>

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <help><!-- Enter a unique name in this field. Use this field to easily identify your workflow as you continue the workflow configuration process. --></help>
+        <label><!-- Key --></label>
+        <name>nFORCE__Key__c</name>
+    </fields>
+    <fields>
+        <help><!-- Select the desired orchestration type for your workflow. --></help>
+        <label><!-- Orchestration Type --></label>
+        <name>nFORCE__Orchestration_Type__c</name>
+        <picklistValues>
+            <masterLabel>Multiple Transactions (Queued)</masterLabel>
+            <translation><!-- Multiple Transactions (Queued) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Multiple Transactions (UI Orchestrated)</masterLabel>
+            <translation><!-- Multiple Transactions (UI Orchestrated) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Single Transaction</masterLabel>
+            <translation><!-- Single Transaction --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- This field contains the External ID for the associated workflow. --></help>
+        <label><!-- Lookup Key --></label>
+        <name>nFORCE__lookupKey__c</name>
+    </fields>
+</CustomObjectTranslation>

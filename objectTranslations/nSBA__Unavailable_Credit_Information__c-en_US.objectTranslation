@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Credit Elsewhere Reason</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Credit Elsewhere Reasons</value>
+    </caseValues>
+    <fieldSets>
+        <label><!-- Credit_Elsewhere --></label>
+        <name>nSBA__Credit_Elsewhere</name>
+    </fieldSets>
+    <fieldSets>
+        <label><!-- SBA Boarding Sheet Unavail. Credit Info --></label>
+        <name>nSBA__SBA_Boarding_Sheet_Unavail_Credit_Info</name>
+    </fieldSets>
+    <fieldSets>
+        <label><!-- SBEOC Unavailable Credit Information --></label>
+        <name>nSBA__SBEOC_Unavailable_Credit_Information</name>
+    </fieldSets>
+    <fields>
+        <help><!-- The Loan Application for which credit was unavailable. --></help>
+        <label><!-- Associated Loan Application --></label>
+        <name>nSBA__Associated_Loan_Application__c</name>
+        <relationshipLabel>Credit Elsewhere Reason</relationshipLabel>
+    </fields>
+    <fields>
+        <help><!-- Identifies the reason why credit was unavailable. --></help>
+        <label><!-- Reason Code --></label>
+        <name>nSBA__Reason_Code__c</name>
+        <picklistValues>
+            <masterLabel>1</masterLabel>
+            <translation>Inadequate Collateral</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>2</masterLabel>
+            <translation>Low Credit Score</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>3</masterLabel>
+            <translation>StartUp Business</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>4</masterLabel>
+            <translation>Insufficient Expertise</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>5</masterLabel>
+            <translation>Other</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- Comment explaining why credit is unavailable. --></help>
+        <label><!-- Reason Comment --></label>
+        <name>nSBA__Reason_Comment__c</name>
+    </fields>
+    <nameFieldLabel>Credit Elsewhere Reason</nameFieldLabel>
+    <startsWith>Consonant</startsWith>
+    <validationRules>
+        <errorMessage><!-- Reason Comment must be populated if Reason Code is 5 --></errorMessage>
+        <name>nSBA__Require_Reason_If_Reason_Code_is_Five</name>
+    </validationRules>
+</CustomObjectTranslation>

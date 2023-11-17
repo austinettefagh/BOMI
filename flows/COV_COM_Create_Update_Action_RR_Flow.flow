@@ -1,0 +1,311 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Flow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <apiVersion>55.0</apiVersion>
+    <decisions>
+        <name>Check_Status</name>
+        <label>Check Status</label>
+        <locationX>380</locationX>
+        <locationY>455</locationY>
+        <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
+        <rules>
+            <name>If_Status_is_changed_from_Pending_to_Exception</name>
+            <conditionLogic>((1 AND 2) OR ((3 OR 4)AND 2))</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record.LLC_BI__Status__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Exception</stringValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record__Prior.LLC_BI__Status__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Pending</stringValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.LLC_BI__Status__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Waived</stringValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.LLC_BI__Status__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Compliant</stringValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Update_Evaluation_Date</targetReference>
+            </connector>
+            <label>If Status is changed from Pending to Exception</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <name>If_EvalDate_is_Updated</name>
+        <label>If EvalDate is Updated</label>
+        <locationX>182</locationX>
+        <locationY>935</locationY>
+        <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
+        <rules>
+            <name>Check_for_EvalDate_Change</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record.LLC_BI__Evaluation_Date__c</leftValueReference>
+                <operator>IsNull</operator>
+                <rightValue>
+                    <booleanValue>false</booleanValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Update_Next_Date_Evaluation_Based_on_Freq</targetReference>
+            </connector>
+            <label>Check for EvalDate Change</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <name>No_Workflow</name>
+        <label>No Workflow</label>
+        <locationX>611</locationX>
+        <locationY>335</locationY>
+        <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
+        <rules>
+            <name>No_Flow</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>$User.No_Workflow__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <booleanValue>false</booleanValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Check_Status</targetReference>
+            </connector>
+            <label>No Flow</label>
+        </rules>
+    </decisions>
+    <formulas>
+        <name>IsNew</name>
+        <dataType>Boolean</dataType>
+        <expression>IsNew()</expression>
+    </formulas>
+    <formulas>
+        <name>NextEvalDate</name>
+        <dataType>Date</dataType>
+        <expression>DATE(
+	YEAR({!$Record.LLC_BI__Covenant__r.LLC_BI__Next_Evaluation_Date__c}) +
+FLOOR((MONTH({!$Record.LLC_BI__Covenant__r.LLC_BI__Next_Evaluation_Date__c}) + {!$Record.LLC_BI__Covenant__r.LLC_BI__Frequency_Months__c}) / 12) +
+IF(
+MOD(MONTH({!$Record.LLC_BI__Covenant__r.LLC_BI__Next_Evaluation_Date__c}) + {!$Record.LLC_BI__Covenant__r.LLC_BI__Frequency_Months__c}, 12) = 0,
+-1,
+0
+),
+IF(
+MOD(MONTH({!$Record.LLC_BI__Covenant__r.LLC_BI__Next_Evaluation_Date__c}) + {!$Record.LLC_BI__Covenant__r.LLC_BI__Frequency_Months__c}, 12) = 0,
+12,
+MOD(MONTH({!$Record.LLC_BI__Covenant__r.LLC_BI__Next_Evaluation_Date__c}) + {!$Record.LLC_BI__Covenant__r.LLC_BI__Frequency_Months__c} , 12)
+),
+IF(
+IF(
+MONTH({!$Record.LLC_BI__Covenant__r.LLC_BI__Next_Evaluation_Date__c}) = 12,
+DATE(YEAR({!$Record.LLC_BI__Covenant__r.LLC_BI__Next_Evaluation_Date__c}), 12, 31),
+DATE(YEAR({!$Record.LLC_BI__Covenant__r.LLC_BI__Next_Evaluation_Date__c}), MONTH({!$Record.LLC_BI__Covenant__r.LLC_BI__Next_Evaluation_Date__c}) + 1, 1) - 1
+) = {!$Record.LLC_BI__Covenant__r.LLC_BI__Next_Evaluation_Date__c},
+CASE(
+IF(
+MOD(MONTH({!$Record.LLC_BI__Covenant__r.LLC_BI__Next_Evaluation_Date__c}) + {!$Record.LLC_BI__Covenant__r.LLC_BI__Frequency_Months__c}, 12) = 0,
+12,
+MOD(MONTH({!$Record.LLC_BI__Covenant__r.LLC_BI__Next_Evaluation_Date__c}) +  {!$Record.LLC_BI__Covenant__r.LLC_BI__Frequency_Months__c} , 12)
+),
+2, IF(
+MOD(
+YEAR({!$Record.LLC_BI__Covenant__r.LLC_BI__Next_Evaluation_Date__c}) +
+FLOOR((MONTH({!$Record.LLC_BI__Covenant__r.LLC_BI__Next_Evaluation_Date__c}) + {!$Record.LLC_BI__Covenant__r.LLC_BI__Frequency_Months__c}) / 12) +
+IF(
+MOD(MONTH({!$Record.LLC_BI__Covenant__r.LLC_BI__Next_Evaluation_Date__c}) + {!$Record.LLC_BI__Covenant__r.LLC_BI__Frequency_Months__c}, 12) = 0,
+-1,
+0
+),
+4
+) = 0,
+29,
+28
+),
+4,30,
+6,30,
+9,30,
+11,30,
+31
+),
+MIN(
+DAY({!$Record.LLC_BI__Covenant__r.LLC_BI__Next_Evaluation_Date__c}),
+CASE(
+IF(
+MOD(MONTH({!$Record.LLC_BI__Covenant__r.LLC_BI__Next_Evaluation_Date__c}) + {!$Record.LLC_BI__Covenant__r.LLC_BI__Frequency_Months__c}, 12) = 0,
+12,
+MOD(MONTH({!$Record.LLC_BI__Covenant__r.LLC_BI__Next_Evaluation_Date__c}) + {!$Record.LLC_BI__Covenant__r.LLC_BI__Frequency_Months__c} , 12)
+),
+2, IF(
+MOD(
+YEAR({!$Record.LLC_BI__Covenant__r.LLC_BI__Next_Evaluation_Date__c}) +
+FLOOR((MONTH({!$Record.LLC_BI__Covenant__r.LLC_BI__Next_Evaluation_Date__c}) + {!$Record.LLC_BI__Covenant__r.LLC_BI__Frequency_Months__c}) / 12) +
+IF(
+MOD(MONTH({!$Record.LLC_BI__Covenant__r.LLC_BI__Next_Evaluation_Date__c}) + {!$Record.LLC_BI__Covenant__r.LLC_BI__Frequency_Months__c}, 12) = 0,
+-1,
+0
+),
+4
+) = 0,
+29,
+28
+),
+4,30,
+6,30,
+9,30,
+11,30,
+31
+)
+)
+)
+)</expression>
+    </formulas>
+    <formulas>
+        <name>Now</name>
+        <dataType>Date</dataType>
+        <expression>Now()</expression>
+    </formulas>
+    <interviewLabel>Covenant Compliance {!$Flow.CurrentDateTime}</interviewLabel>
+    <label>COV COM Create Update Action RR Flow</label>
+    <processMetadataValues>
+        <name>BuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>CanvasMode</name>
+        <value>
+            <stringValue>AUTO_LAYOUT_CANVAS</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>OriginBuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processType>AutoLaunchedFlow</processType>
+    <recordUpdates>
+        <name>Update_Cov_Mgmt_Records</name>
+        <label>Update Cov Mgmt Records</label>
+        <locationX>182</locationX>
+        <locationY>695</locationY>
+        <connector>
+            <targetReference>Update_Exception_Date</targetReference>
+        </connector>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <field>Id</field>
+            <operator>EqualTo</operator>
+            <value>
+                <elementReference>$Record.LLC_BI__Covenant__c</elementReference>
+            </value>
+        </filters>
+        <inputAssignments>
+            <field>LLC_BI__Last_Evaluation_Date__c</field>
+            <value>
+                <elementReference>$Record.LLC_BI__Evaluation_Date__c</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>LLC_BI__Last_Evaluation_Status__c</field>
+            <value>
+                <elementReference>$Record.LLC_BI__Status__c</elementReference>
+            </value>
+        </inputAssignments>
+        <object>LLC_BI__Covenant2__c</object>
+    </recordUpdates>
+    <recordUpdates>
+        <name>Update_Evaluation_Date</name>
+        <label>Update Evaluation Date</label>
+        <locationX>182</locationX>
+        <locationY>575</locationY>
+        <connector>
+            <targetReference>Update_Cov_Mgmt_Records</targetReference>
+        </connector>
+        <inputAssignments>
+            <field>LLC_BI__Evaluation_Date__c</field>
+            <value>
+                <elementReference>Now</elementReference>
+            </value>
+        </inputAssignments>
+        <inputReference>$Record</inputReference>
+    </recordUpdates>
+    <recordUpdates>
+        <name>Update_Exception_Date</name>
+        <label>Update Exception Date</label>
+        <locationX>182</locationX>
+        <locationY>815</locationY>
+        <connector>
+            <targetReference>If_EvalDate_is_Updated</targetReference>
+        </connector>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <field>Id</field>
+            <operator>EqualTo</operator>
+            <value>
+                <elementReference>$Record.Id</elementReference>
+            </value>
+        </filters>
+        <filters>
+            <field>LLC_BI__Status__c</field>
+            <operator>EqualTo</operator>
+            <value>
+                <stringValue>Exception</stringValue>
+            </value>
+        </filters>
+        <inputAssignments>
+            <field>LLC_BI__Exception_Date__c</field>
+            <value>
+                <elementReference>Now</elementReference>
+            </value>
+        </inputAssignments>
+        <object>LLC_BI__Covenant_Compliance2__c</object>
+    </recordUpdates>
+    <recordUpdates>
+        <name>Update_Next_Date_Evaluation_Based_on_Freq</name>
+        <label>Update Next Date Evaluation Based on Freq</label>
+        <locationX>50</locationX>
+        <locationY>1055</locationY>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <field>Id</field>
+            <operator>EqualTo</operator>
+            <value>
+                <elementReference>$Record.LLC_BI__Covenant__c</elementReference>
+            </value>
+        </filters>
+        <inputAssignments>
+            <field>LLC_BI__Next_Evaluation_Date__c</field>
+            <value>
+                <elementReference>NextEvalDate</elementReference>
+            </value>
+        </inputAssignments>
+        <object>LLC_BI__Covenant2__c</object>
+    </recordUpdates>
+    <start>
+        <locationX>485</locationX>
+        <locationY>0</locationY>
+        <connector>
+            <targetReference>No_Workflow</targetReference>
+        </connector>
+        <object>LLC_BI__Covenant_Compliance2__c</object>
+        <recordTriggerType>CreateAndUpdate</recordTriggerType>
+        <triggerType>RecordAfterSave</triggerType>
+    </start>
+    <status>Active</status>
+</Flow>

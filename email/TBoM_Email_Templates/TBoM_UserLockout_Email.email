@@ -1,0 +1,91 @@
+<messaging:emailTemplate subject="You've been locked out of The Bank of Missouri's loan portal" recipientType="User" relatedToType="User">
+    <messaging:htmlEmailBody >
+        <html>
+            <body>
+                <table style="width: 100%; table-layout: auto;">
+                    <tr>
+                        <td align="left">
+                            <table>
+                                <tr align="left">
+                                    <td align="left">
+                                        <apex:image url="{!$Label.TBOM_non_member_logo_URL}"
+                                            style="height: 90px; max-height: 90px;"
+                                            />
+                                    </td>
+                                </tr>
+                            </table>
+                            <div style="width: 100%; font-family: 'Salesforce Sans', Arial, sans-serif; text-align: left;">
+                                <div style="background-color: #FFFFFF; color: #000000; padding: 20px 30px 20px 30px;">
+                                    
+                                        <p style="color: #000000; font-size: 12pt;">
+                                            Hi {!$User.FirstName}, 
+                                            <br/>
+                                        </p>
+                                    
+                                    <p style="color: #000000; font-size: 12pt;">
+                                        We received your request to reset your Bank of Missouri's loan portal password. For security, your account has been locked after too many login attempts. 
+                                    
+                                 
+                                    
+                                    {!CASE(1,
+                                    IF(30 > 0, 1, 0), "Please try again in " + "30" + " minutes.",
+                                    IF(30 < 0, 1, 0), "Contact your " + "The Bank of Missouri\'s loan portal" + " administrator to unlock your account.","")}
+                                    </p>
+                                    
+                                    <p style="color: #000000; font-size: 12pt;">
+                                        If you didn't request a password reset or haven't tried to log in to your account recently, contact your Bank of Missouri Relationship Manager.                               
+                                    </p>                                                       
+                                    <p style="color: #000000; font-size: 12pt;">
+                                    Thanks,<br/>                                   
+                                    The Bank of Missouri<br/> 
+                                    </p>
+                                </div>
+                            </div>
+                            <div style="width: 100%;">
+                            <hr style="color:#808080"></hr>
+                            </div>
+                            <table style="width: 100%;font-family: 'Salesforce Sans', Arial, sans-serif background-color: #FFFFFF; color: #000000; padding: 20px; font-size: 8pt;">
+                                <tr>
+                                    <td>
+                                          The Bank of Missouri | Member FDIC | 906 N. Kingshighway, Perryville, MO | 888-547-6541
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        Please do not reply to this message, as this email inbox is not monitored.
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        This email was sent to <a href="{!$User.Email}" style="color:#008148">{!$User.Email}</a> and contains information directly related to your account with us and/or any application you may have submitted. If you feel you have received this message in error, please contact us at 888-547-6541.
+                                    </td>    
+                                </tr>
+                            </table>
+                        </td>
+                    </tr>
+                </table>
+            </body>
+        </html>
+    </messaging:htmlEmailBody>
+ 
+     
+    <messaging:plainTextEmailBody >
+        Hi {!$User.FirstName}, 
+        
+        We received your request to reset your Bank of Missouri's loan portal password. We can't reset your password right now. Your account is locked after too many login attempts.
+              
+        {!CASE(1,IF(30 > 0, 1, 0), "Try again in " + "30" + " minutes.",
+        IF(30 < 0, 1, 0), "Contact your " + "The Bank of Missouri's loan portal" + " administrator to unlock your account.","")} 
+        
+        If you didn't request a password reset or haven't tried to log in to your account recently, contact your Bank of Missouri Relationship Manager.                               
+
+        
+        Thanks,
+        The Bank of Missouri
+        
+                 
+        The Bank of Missouri | Member FDIC | 906 N. Kingshighway, Perryville, MO | 888-547-6541
+        Please do not reply to this message, as this email inbox is not monitored.
+        This email was sent to {!$User.Email} and contains information directly related to your account with us and/or any application you may have submitted. If you feel you have received this message in error, please contact us at 888-547-6541.
+    </messaging:plainTextEmailBody>
+</messaging:emailTemplate>

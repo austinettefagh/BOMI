@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <label><!-- Business Credit Report --></label>
+        <name>nXBI__Business_Credit_Report__c</name>
+        <relationshipLabel><!-- Business Credit Bankruptcy Information --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Date Filed --></label>
+        <name>nXBI__Date_Filed__c</name>
+    </fields>
+    <fields>
+        <label><!-- Document Number --></label>
+        <name>nXBI__Document_Number__c</name>
+    </fields>
+    <fields>
+        <label><!-- Exempt Amount --></label>
+        <name>nXBI__Exempt_Amount__c</name>
+    </fields>
+    <fields>
+        <label><!-- Total Assets --></label>
+        <name>nXBI__Total_Assets__c</name>
+    </fields>
+    <fields>
+        <label><!-- Total Liabilities --></label>
+        <name>nXBI__Total_Liabilities__c</name>
+    </fields>
+</CustomObjectTranslation>

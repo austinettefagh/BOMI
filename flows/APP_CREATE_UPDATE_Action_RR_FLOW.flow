@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Flow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <apiVersion>56.0</apiVersion>
+    <decisions>
+        <description>Checking if record is new</description>
+        <name>Is_New</name>
+        <label>Is New</label>
+        <locationX>336</locationX>
+        <locationY>455</locationY>
+        <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
+        <rules>
+            <name>New</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>IsNew</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <booleanValue>false</booleanValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Project_Information_SBA</targetReference>
+            </connector>
+            <label>IsNew</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <name>No_Workflow</name>
+        <label>No Workflow</label>
+        <locationX>545</locationX>
+        <locationY>335</locationY>
+        <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
+        <rules>
+            <name>No_Flow_Permission</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>$User.No_Workflow__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <booleanValue>false</booleanValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Is_New</targetReference>
+            </connector>
+            <label>No Flow Permission</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <name>Project_Information_SBA</name>
+        <label>Project Information SBA</label>
+        <locationX>182</locationX>
+        <locationY>575</locationY>
+        <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
+        <rules>
+            <name>Project_Information_Check</name>
+            <conditionLogic>or</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record.CF_Loan_Proceeds__c</leftValueReference>
+                <operator>NotEqualTo</operator>
+                <rightValue>
+                    <numberValue>0.0</numberValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.CF_Total_Borrower_Injections__c</leftValueReference>
+                <operator>NotEqualTo</operator>
+                <rightValue>
+                    <numberValue>0.0</numberValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.CF_Total_Project_Costs__c</leftValueReference>
+                <operator>NotEqualTo</operator>
+                <rightValue>
+                    <numberValue>0.0</numberValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Project_Information_Update</targetReference>
+            </connector>
+            <label>Project Information Check</label>
+        </rules>
+    </decisions>
+    <description>Used to update project information values with proceeds values</description>
+    <formulas>
+        <name>IsNew</name>
+        <dataType>Boolean</dataType>
+        <expression>IsNew()</expression>
+    </formulas>
+    <interviewLabel>APP_CREATE_UPDATE_Action_RR_FLOW {!$Flow.CurrentDateTime}</interviewLabel>
+    <label>APP_CREATE_UPDATE_Action_RR_FLOW</label>
+    <processMetadataValues>
+        <name>BuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>CanvasMode</name>
+        <value>
+            <stringValue>AUTO_LAYOUT_CANVAS</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>OriginBuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processType>AutoLaunchedFlow</processType>
+    <recordUpdates>
+        <name>Project_Information_Update</name>
+        <label>Project Information Update</label>
+        <locationX>50</locationX>
+        <locationY>695</locationY>
+        <inputAssignments>
+            <field>nSBA__Borrower_Injection_Total__c</field>
+            <value>
+                <elementReference>$Record.CF_Total_Borrower_Injections__c</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>nSBA__SBA_Total__c</field>
+            <value>
+                <elementReference>$Record.CF_Loan_Proceeds__c</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>nSBA__Total_Use_of_Proceeds__c</field>
+            <value>
+                <elementReference>$Record.CF_Total_Project_Costs__c</elementReference>
+            </value>
+        </inputAssignments>
+        <inputReference>$Record</inputReference>
+    </recordUpdates>
+    <start>
+        <locationX>419</locationX>
+        <locationY>0</locationY>
+        <connector>
+            <targetReference>No_Workflow</targetReference>
+        </connector>
+        <object>LLC_BI__Application__c</object>
+        <recordTriggerType>CreateAndUpdate</recordTriggerType>
+        <triggerType>RecordAfterSave</triggerType>
+    </start>
+    <status>Active</status>
+</Flow>

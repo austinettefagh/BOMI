@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <label><!-- Closing Document --></label>
+        <name>LLC_BI__ClosingDocument__c</name>
+        <relationshipLabel><!-- DocComments --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- comment --></label>
+        <name>LLC_BI__comment__c</name>
+    </fields>
+</CustomObjectTranslation>

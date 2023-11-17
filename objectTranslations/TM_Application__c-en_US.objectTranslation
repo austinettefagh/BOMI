@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Treasury Application</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Treasury Applications</value>
+    </caseValues>
+    <fields>
+        <label><!-- Account CIF# --></label>
+        <name>TM_Account_CIF__c</name>
+    </fields>
+    <fields>
+        <label><!-- Account Entity Type --></label>
+        <name>TM_Account_Entity_Type__c</name>
+    </fields>
+    <fields>
+        <label><!-- Account NAICS Code --></label>
+        <name>TM_Account_NAICS_Code__c</name>
+    </fields>
+    <fields>
+        <label><!-- Account Name --></label>
+        <name>TM_Account_Name__c</name>
+    </fields>
+    <fields>
+        <label><!-- Account Number --></label>
+        <name>TM_Account_Number__c</name>
+    </fields>
+    <fields>
+        <label><!-- Account Owner --></label>
+        <name>TM_Account_Owner__c</name>
+    </fields>
+    <fields>
+        <label><!-- Account Relationship Manager --></label>
+        <name>TM_Account_Relationship_Manager__c</name>
+    </fields>
+    <fields>
+        <label><!-- Account --></label>
+        <name>TM_Account__c</name>
+        <relationshipLabel><!-- Treasury Applications --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Application Stage --></label>
+        <name>TM_Application_Stage__c</name>
+        <picklistValues>
+            <masterLabel>Completed</masterLabel>
+            <translation><!-- Completed --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Data Input</masterLabel>
+            <translation><!-- Data Input --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Finish Customer Setup</masterLabel>
+            <translation><!-- Finish Customer Setup --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Perform Initial Setup</masterLabel>
+            <translation><!-- Perform Initial Setup --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Review</masterLabel>
+            <translation><!-- Review --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Schedule/Confirm Install Date</masterLabel>
+            <translation><!-- Schedule/Confirm Install Date --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Signature Required</masterLabel>
+            <translation><!-- Signature Required --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Underwriting</masterLabel>
+            <translation><!-- Underwriting --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Billing Address --></label>
+        <name>TM_Billing_Address__c</name>
+    </fields>
+    <fields>
+        <label><!-- Business Cell Phone --></label>
+        <name>TM_Business_Cell_Phone__c</name>
+    </fields>
+    <fields>
+        <label><!-- Business Type --></label>
+        <name>TM_Business_Type__c</name>
+    </fields>
+    <fields>
+        <label><!-- Deposit Account Type --></label>
+        <name>TM_Deposit_Account_Type__c</name>
+    </fields>
+    <fields>
+        <label><!-- Expected Install Date --></label>
+        <name>TM_Expected_Install_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Is Report Owner --></label>
+        <name>TM_Is_Report_Owner__c</name>
+    </fields>
+    <fields>
+        <label><!-- Opportunity Name --></label>
+        <name>TM_Opportunity_Name__c</name>
+    </fields>
+    <fields>
+        <label><!-- Opportunity --></label>
+        <name>TM_Opportunity__c</name>
+        <relationshipLabel><!-- Treasury Applications --></relationshipLabel>
+    </fields>
+    <fields>
+        <help><!-- It is required by the Support Specialist. --></help>
+        <label><!-- Support Specialist --></label>
+        <name>TM_Support_Specialist__c</name>
+        <relationshipLabel><!-- Treasury Applications --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Tax Identification Number --></label>
+        <name>TM_TaxIdentificationNumber__c</name>
+    </fields>
+    <startsWith>Consonant</startsWith>
+    <validationRules>
+        <errorMessage><!-- Support Specialist can&apos;t be null. --></errorMessage>
+        <name>Support_Specialist_can_not_be_null</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- This Application can’t be edited anymore as it’s at/after Signature Required stage. --></errorMessage>
+        <name>TM_This_Application_cant_be_edited</name>
+    </validationRules>
+</CustomObjectTranslation>

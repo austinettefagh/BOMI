@@ -1,0 +1,20 @@
+<apex:page sidebar="false"
+	controller="nFORCE.TemplateController"
+	title="{!$Label.LLC_BI__Deposit_Account_Opening}">
+
+	<style>
+		.body-content{
+			margin-top: 10px;
+		}
+	</style>
+
+	<c:Include_AngularJS />
+
+	<apex:composition template="nFORCE__Template_Landing">
+
+		<apex:define name="body">
+			<apex:include rendered="{!!isNull(route.nFORCE__Body__c)}" pageName="{!route.nFORCE__Body__c}" />
+		</apex:define>
+
+	</apex:composition>
+</apex:page>

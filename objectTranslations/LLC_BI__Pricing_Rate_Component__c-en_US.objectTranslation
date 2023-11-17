@@ -1,0 +1,415 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fieldSets>
+        <label><!-- Jack Henry jXchange Automated Booking --></label>
+        <name>JHJX__ABJX</name>
+    </fieldSets>
+    <fieldSets>
+        <label><!-- ABJXDataReview --></label>
+        <name>JHJX__ABJXDataReview</name>
+    </fieldSets>
+    <fieldSets>
+        <label><!-- Add Rate Available Fields --></label>
+        <name>LLC_BI__Add_Rate_Available_Fields</name>
+    </fieldSets>
+    <fieldSets>
+        <label><!-- Expanded Offer Card Rate Table --></label>
+        <name>LLC_BI__Expanded_Offer_Card_Rate_Table</name>
+    </fieldSets>
+    <fieldSets>
+        <label><!-- Fixed Rate Additional Fields --></label>
+        <name>LLC_BI__Fixed_Rate_Additional_Fields</name>
+    </fieldSets>
+    <fieldSets>
+        <label><!-- Fixed With Index Additional Fields --></label>
+        <name>LLC_BI__Fixed_With_Index_Additional_Fields</name>
+    </fieldSets>
+    <fieldSets>
+        <label><!-- Rate Data for Pricing Option --></label>
+        <name>LLC_BI__Rate_Data_for_Pricing_Option</name>
+    </fieldSets>
+    <fieldSets>
+        <label><!-- Rate Data for Loan Scenarios in Rate Sheet Pricing --></label>
+        <name>LLC_BI__Rate_Data_for_Scenario_Rate_Sheet</name>
+    </fieldSets>
+    <fieldSets>
+        <label><!-- Rate Structure Table --></label>
+        <name>LLC_BI__Rate_Structure_Table</name>
+    </fieldSets>
+    <fieldSets>
+        <label><!-- Variable Rate Additional Fields --></label>
+        <name>LLC_BI__Variable_Rate_Additional_Fields</name>
+    </fieldSets>
+    <fields>
+        <help><!-- The system populates this field with the sum of the Rate and Spread fields. --></help>
+        <label><!-- All-in Rate --></label>
+        <name>LLC_BI__All_In_Rate__c</name>
+    </fields>
+    <fields>
+        <label><!-- Applied Loan Percentage --></label>
+        <name>LLC_BI__Applied_Loan_Percentage__c</name>
+    </fields>
+    <fields>
+        <help><!-- This system populated field displays the rate used for amortization calculations for a singular rate stream. --></help>
+        <label><!-- Applied Rate --></label>
+        <name>LLC_BI__Applied_Rate__c</name>
+    </fields>
+    <fields>
+        <help><!-- Displays the formula to calculate the conversion from annual interest rate to monthly interest rate. --></help>
+        <label><!-- Calculated Monthly Interest Rate --></label>
+        <name>LLC_BI__Calculated_Monthly_Interest_Rate__c</name>
+    </fields>
+    <fields>
+        <help><!-- Comments --></help>
+        <label><!-- Comments --></label>
+        <name>LLC_BI__Comments__c</name>
+    </fields>
+    <fields>
+        <label><!-- Frequency --></label>
+        <name>LLC_BI__Frequency__c</name>
+        <picklistValues>
+            <masterLabel>Frequency_Annually</masterLabel>
+            <translation><!-- Frequency_Annually --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Frequency_Bimonthly</masterLabel>
+            <translation><!-- Frequency_Bimonthly --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Frequency_Monthly</masterLabel>
+            <translation><!-- Frequency_Monthly --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Frequency_Quarterly</masterLabel>
+            <translation><!-- Frequency_Quarterly --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Frequency_Semiannually</masterLabel>
+            <translation><!-- Frequency_Semiannually --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Frequency_Semimonthly</masterLabel>
+            <translation><!-- Frequency_Semimonthly --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- The system auto-populates this field with Add Spread to Index when the Spread value is positive, and Subtract Spread from Index when the Spread value is negative. --></help>
+        <label><!-- Index Spread Type --></label>
+        <name>LLC_BI__Index_Spread_Type__c</name>
+        <picklistValues>
+            <masterLabel>Add Spread to Index</masterLabel>
+            <translation><!-- Add Spread to Index --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Subtract Spread from Index</masterLabel>
+            <translation><!-- Subtract Spread from Index --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Index --></label>
+        <name>LLC_BI__Index__c</name>
+        <picklistValues>
+            <masterLabel>COF_Overnight</masterLabel>
+            <translation><!-- COF_Overnight --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>COF_mo_1</masterLabel>
+            <translation><!-- COF_mo_1 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>COF_mo_2</masterLabel>
+            <translation><!-- COF_mo_2 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>COF_mo_3</masterLabel>
+            <translation><!-- COF_mo_3 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>COF_mo_4</masterLabel>
+            <translation><!-- COF_mo_4 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>COF_mo_5</masterLabel>
+            <translation><!-- COF_mo_5 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>COF_mo_6</masterLabel>
+            <translation><!-- COF_mo_6 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>FBR</masterLabel>
+            <translation><!-- FBR --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Fed_Funds_Current</masterLabel>
+            <translation><!-- Fed_Funds_Current --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Fed_Funds_Prior_Day</masterLabel>
+            <translation><!-- Fed_Funds_Prior_Day --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>LIB</masterLabel>
+            <translation><!-- LIB --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>LIBOR_Overnight</masterLabel>
+            <translation><!-- LIBOR_Overnight --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>LIBOR_mo_1</masterLabel>
+            <translation><!-- LIBOR_mo_1 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>LIBOR_mo_12</masterLabel>
+            <translation><!-- LIBOR_mo_12 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>LIBOR_mo_2</masterLabel>
+            <translation><!-- LIBOR_mo_2 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>LIBOR_mo_3</masterLabel>
+            <translation><!-- LIBOR_mo_3 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>LIBOR_mo_6</masterLabel>
+            <translation><!-- LIBOR_mo_6 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Prime</masterLabel>
+            <translation><!-- Prime --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Prime_FRED</masterLabel>
+            <translation><!-- Prime_FRED --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SBA</masterLabel>
+            <translation><!-- SBA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Swap_yr_1</masterLabel>
+            <translation><!-- Swap_yr_1 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Swap_yr_10</masterLabel>
+            <translation><!-- Swap_yr_10 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Swap_yr_2</masterLabel>
+            <translation><!-- Swap_yr_2 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Swap_yr_3</masterLabel>
+            <translation><!-- Swap_yr_3 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Swap_yr_30</masterLabel>
+            <translation><!-- Swap_yr_30 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Swap_yr_4</masterLabel>
+            <translation><!-- Swap_yr_4 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Swap_yr_5</masterLabel>
+            <translation><!-- Swap_yr_5 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Swap_yr_7</masterLabel>
+            <translation><!-- Swap_yr_7 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>TCMI_yr_1</masterLabel>
+            <translation><!-- TCMI_yr_1 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>TCMI_yr_10</masterLabel>
+            <translation><!-- TCMI_yr_10 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>TCMI_yr_2</masterLabel>
+            <translation><!-- TCMI_yr_2 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>TCMI_yr_20</masterLabel>
+            <translation><!-- TCMI_yr_20 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>TCMI_yr_3</masterLabel>
+            <translation><!-- TCMI_yr_3 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>TCMI_yr_30</masterLabel>
+            <translation><!-- TCMI_yr_30 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>TCMI_yr_5</masterLabel>
+            <translation><!-- TCMI_yr_5 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>TCMI_yr_7</masterLabel>
+            <translation><!-- TCMI_yr_7 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Treasury_we_13</masterLabel>
+            <translation><!-- Treasury_we_13 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Treasury_we_4</masterLabel>
+            <translation><!-- Treasury_we_4 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Treasury_we_52</masterLabel>
+            <translation><!-- Treasury_we_52 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Treasury_yr_10</masterLabel>
+            <translation><!-- Treasury_yr_10 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Treasury_yr_2</masterLabel>
+            <translation><!-- Treasury_yr_2 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Treasury_yr_20</masterLabel>
+            <translation><!-- Treasury_yr_20 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Treasury_yr_30</masterLabel>
+            <translation><!-- Treasury_yr_30 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Treasury_yr_5</masterLabel>
+            <translation><!-- Treasury_yr_5 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>WSJ</masterLabel>
+            <translation><!-- WSJ --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- The system-populated field displays how much the interest rate may increase or decrease during the initial adjustment period of the loan. --></help>
+        <label><!-- Initial Adjustment Rate Cap --></label>
+        <name>LLC_BI__Initial_Adjustment_Rate_Cap__c</name>
+    </fields>
+    <fields>
+        <help><!-- The system automatically populates this field. It is used to specify how often an interest rate will be updated. --></help>
+        <label><!-- Interest Rate Adjustment Frequency --></label>
+        <name>LLC_BI__Interest_Rate_Adjustment_Frequency__c</name>
+        <picklistValues>
+            <masterLabel>Daily</masterLabel>
+            <translation><!-- Daily --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Every Other Week</masterLabel>
+            <translation><!-- Every Other Week --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Monthly</masterLabel>
+            <translation><!-- Monthly --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Payment</masterLabel>
+            <translation><!-- Payment --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Quarterly</masterLabel>
+            <translation><!-- Quarterly --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Semiannually</masterLabel>
+            <translation><!-- Semiannually --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Semimonthly</masterLabel>
+            <translation><!-- Semimonthly --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Weekly</masterLabel>
+            <translation><!-- Weekly --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Years</masterLabel>
+            <translation><!-- Years --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- Select an interest rate type to apply to the rate stream. --></help>
+        <label><!-- Interest Rate Type --></label>
+        <name>LLC_BI__Interest_Rate_Type__c</name>
+        <picklistValues>
+            <masterLabel>Fixed</masterLabel>
+            <translation><!-- Fixed --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Fixed with Index</masterLabel>
+            <translation><!-- Fixed with Index --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Floating with Index</masterLabel>
+            <translation><!-- Floating with Index --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Is Fixed --></label>
+        <name>LLC_BI__Is_Fixed__c</name>
+    </fields>
+    <fields>
+        <label><!-- Is Swap --></label>
+        <name>LLC_BI__Is_Swap__c</name>
+    </fields>
+    <fields>
+        <help><!-- The system-populated field displays how much the interest rate may increase or decrease over the term of the loan. --></help>
+        <label><!-- Lifetime Rate Cap --></label>
+        <name>LLC_BI__Lifetime_Rate_Cap__c</name>
+    </fields>
+    <fields>
+        <help><!-- This system-populated field displays the lookback period, expressed as the number of days that precede the interest rate change date. --></help>
+        <label><!-- Lookback Period --></label>
+        <name>LLC_BI__Lookback_Period__c</name>
+    </fields>
+    <fields>
+        <help><!-- The system auto-populates this field with the date of the first interest rate adjustment on the loan. --></help>
+        <label><!-- Next Interest Rate Change Date --></label>
+        <name>LLC_BI__Next_Interest_Rate_Change_Date__c</name>
+    </fields>
+    <fields>
+        <help><!-- The system-populated field displays how much the interest rate may increase or decrease during the periodic adjustment period of the loan. --></help>
+        <label><!-- Periodic Rate Cap --></label>
+        <name>LLC_BI__Periodic_Rate_Cap__c</name>
+    </fields>
+    <fields>
+        <label><!-- Pricing Stream --></label>
+        <name>LLC_BI__Pricing_Stream__c</name>
+        <relationshipLabel><!-- Pricing Rate Components --></relationshipLabel>
+    </fields>
+    <fields>
+        <help><!-- Enter a number within the threshold to adjust the rate. --></help>
+        <label><!-- Rate Adjustment --></label>
+        <name>LLC_BI__Rate_Adjustment__c</name>
+    </fields>
+    <fields>
+        <help><!-- The system-populated field displays the maximum possible percentage of a loan&apos;s interest rate for a set period of time. --></help>
+        <label><!-- Rate Ceiling --></label>
+        <name>LLC_BI__Rate_Ceiling__c</name>
+    </fields>
+    <fields>
+        <help><!-- The system-populated field displays the minimum possible percentage of a loan&apos;s interest rate for a set period of time. --></help>
+        <label><!-- Rate Floor --></label>
+        <name>LLC_BI__Rate_Floor__c</name>
+    </fields>
+    <fields>
+        <label><!-- Rate --></label>
+        <name>LLC_BI__Rate__c</name>
+    </fields>
+    <fields>
+        <label><!-- Spread --></label>
+        <name>LLC_BI__Spread__c</name>
+    </fields>
+    <fields>
+        <label><!-- lookupKey --></label>
+        <name>LLC_BI__lookupKey__c</name>
+    </fields>
+</CustomObjectTranslation>

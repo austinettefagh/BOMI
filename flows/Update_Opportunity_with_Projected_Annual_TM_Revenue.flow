@@ -1,0 +1,264 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Flow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <apiVersion>57.0</apiVersion>
+    <assignments>
+        <description>Keeping the running total of the revenue by adding each line item revenue cost of the monthly fees</description>
+        <name>Add_to_Total_Revenue_Generated</name>
+        <label>Add to Total Revenue Generated</label>
+        <locationX>572</locationX>
+        <locationY>815</locationY>
+        <assignmentItems>
+            <assignToReference>Revenue_Generated</assignToReference>
+            <operator>Add</operator>
+            <value>
+                <elementReference>CalculatedLineItemCost</elementReference>
+            </value>
+        </assignmentItems>
+        <assignmentItems>
+            <assignToReference>Revenue_Generated_Without_ExceptionPricing</assignToReference>
+            <operator>Add</operator>
+            <value>
+                <elementReference>CalculatedStandardLineItemCost</elementReference>
+            </value>
+        </assignmentItems>
+        <connector>
+            <targetReference>Scenario_List_Items_Loop</targetReference>
+        </connector>
+    </assignments>
+    <decisions>
+        <description>If the isMonthly flag in associated billpoint of the Scenario Item is true, then fees are monthly , otherwise it is a one time setup fees</description>
+        <name>Check_Billpoint_is_Monthly</name>
+        <label>Check Billpoint is Monthly</label>
+        <locationX>704</locationX>
+        <locationY>695</locationY>
+        <defaultConnector>
+            <targetReference>Scenario_List_Items_Loop</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>Billpoint is OneTime Setup</defaultConnectorLabel>
+        <rules>
+            <name>Billpoint_is_Monthly</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>Scenario_List_Items_Loop.LLC_BI__Is_Monthly__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <booleanValue>true</booleanValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Add_to_Total_Revenue_Generated</targetReference>
+            </connector>
+            <label>Billpoint is Monthly</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <description>If the Scenario items are not found, then end the flow. If not, loop through them to calculate the line item price</description>
+        <name>Scenario_List_Item_Found</name>
+        <label>Scenario List Item Found?</label>
+        <locationX>176</locationX>
+        <locationY>455</locationY>
+        <defaultConnector>
+            <targetReference>Scenario_List_Items_Loop</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>Scenario List Items Found</defaultConnectorLabel>
+        <rules>
+            <name>Scenario_List_Items_Not_Found</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>Get_Scenario_Line_Items</leftValueReference>
+                <operator>IsNull</operator>
+                <rightValue>
+                    <booleanValue>true</booleanValue>
+                </rightValue>
+            </conditions>
+            <label>Scenario List Items Not Found</label>
+        </rules>
+    </decisions>
+    <description>Update Opportunity with Projected Annual TM Revenue - Story 1436
+(Added fix to make sure the Free Days are taken into account for calculating Standard Pricing Days in the first year)</description>
+    <environments>Default</environments>
+    <formulas>
+        <description>This will calculate the Line item cost by adding the Exception Pricing cost + Standard Pricing Cost.
+Formula includes, If the Exception pricing is NULL, Full 12 months are charged at Standard Pricing * Volume.
+If the Exception pricing is NOT NULL, Number of Exception Pricing Period Months are charged at Exception Pricing * Volume  + Number of Standard Pricing Period Months are charged at Standard Pricing * Volume</description>
+        <name>CalculatedLineItemCost</name>
+        <dataType>Currency</dataType>
+        <expression>IF (ISNULL({!Scenario_List_Items_Loop.LLC_BI__Exception_Price__c}) || ISBLANK({!Scenario_List_Items_Loop.LLC_BI__Exception_Price__c}), 
+   {!Scenario_List_Items_Loop.LLC_BI__Volumes__c}*{!Scenario_List_Items_Loop.LLC_BI__Standard_Price__c}*{!Num_Of_Standard_Pricing_Days_With_No_Exception_Price}/30, 
+({!Scenario_List_Items_Loop.LLC_BI__Volumes__c}*{!Scenario_List_Items_Loop.LLC_BI__Exception_Price__c}*{!Num_Of_Exception_Pricing_Days}/30) + ({!Scenario_List_Items_Loop.LLC_BI__Volumes__c}*{!Scenario_List_Items_Loop.LLC_BI__Standard_Price__c}*{!Num_Of_Standard_Pricing_Days}/30) )</expression>
+        <scale>2</scale>
+    </formulas>
+    <formulas>
+        <description>Calculate the line item cost for the year with standard pricing</description>
+        <name>CalculatedStandardLineItemCost</name>
+        <dataType>Currency</dataType>
+        <expression>{!Scenario_List_Items_Loop.LLC_BI__Volumes__c}*{!Scenario_List_Items_Loop.LLC_BI__Standard_Price__c}*360/30</expression>
+        <scale>2</scale>
+    </formulas>
+    <formulas>
+        <description>Number of Exception Pricing days is the difference between Exception Pricing Expiration Date and Free Period End Date</description>
+        <name>Num_Of_Exception_Pricing_Days</name>
+        <dataType>Number</dataType>
+        <expression>IF (ISNULL({!$Record.CF_Exception_Pricing_Expiration_Date__c}), 0, {!$Record.CF_Exception_Pricing_Expiration_Date__c} - {!$Record.CF_Free_Rent_Expiration_Date__c})</expression>
+        <scale>2</scale>
+    </formulas>
+    <formulas>
+        <description>Number of Free Rent days is calculated from the Number of Free Days picklist value</description>
+        <name>Num_Of_Free_Rent_Days</name>
+        <dataType>Number</dataType>
+        <expression>IF (ISPICKVAL({!$Record.CF_Free_Rent_Period_In_Days__c}, &quot;30 Days&quot;), 30, 
+  IF (ISPICKVAL({!$Record.CF_Free_Rent_Period_In_Days__c}, &quot;60 Days&quot;), 60, 
+     IF (ISPICKVAL({!$Record.CF_Free_Rent_Period_In_Days__c}, &quot;90 Days&quot;), 90, 0)))</expression>
+        <scale>2</scale>
+    </formulas>
+    <formulas>
+        <description>Calculate the Standard Pricing Days by subtracting ExceptionPricingExpDate from date which is 360 days from Install date from Opportunity. If ExceptionPricingExpDate  is NULL, then  Standard Pricing Days will be 360 days - Number of Free Rent Days</description>
+        <name>Num_Of_Standard_Pricing_Days</name>
+        <dataType>Number</dataType>
+        <expression>IF (ISNULL({!$Record.CF_Exception_Pricing_Expiration_Date__c}), (360 - Num_Of_Free_Rent_Days), ({!$Record.LLC_BI__Opportunity__r.TM_Expected_Install_Date__c} + 360) -{!$Record.CF_Exception_Pricing_Expiration_Date__c} )</expression>
+        <scale>2</scale>
+    </formulas>
+    <formulas>
+        <description>Number of Standard Pricing Days when there is No Exception price available, even when exception pricing flag is on</description>
+        <name>Num_Of_Standard_Pricing_Days_With_No_Exception_Price</name>
+        <dataType>Number</dataType>
+        <expression>ADDMONTHS({!$Record.LLC_BI__Opportunity__r.TM_Expected_Install_Date__c}, 12) - {!$Record.CF_Free_Rent_Expiration_Date__c}</expression>
+        <scale>2</scale>
+    </formulas>
+    <interviewLabel>Update Opportunity with Projected Annual TM Revenue {!$Flow.CurrentDateTime}</interviewLabel>
+    <label>Update Opportunity with Projected Annual TM Revenue</label>
+    <loops>
+        <description>Loop through the list of scenario items</description>
+        <name>Scenario_List_Items_Loop</name>
+        <label>Scenario List Items Loop</label>
+        <locationX>484</locationX>
+        <locationY>575</locationY>
+        <collectionReference>Get_Scenario_Line_Items</collectionReference>
+        <iterationOrder>Asc</iterationOrder>
+        <nextValueConnector>
+            <targetReference>Check_Billpoint_is_Monthly</targetReference>
+        </nextValueConnector>
+        <noMoreValuesConnector>
+            <targetReference>Update_Opportunity_Expected_Revenue</targetReference>
+        </noMoreValuesConnector>
+    </loops>
+    <processMetadataValues>
+        <name>BuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>CanvasMode</name>
+        <value>
+            <stringValue>AUTO_LAYOUT_CANVAS</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>OriginBuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processType>AutoLaunchedFlow</processType>
+    <recordLookups>
+        <description>Get the list of the Scenario line items for the Scenario, if the status is Final</description>
+        <name>Get_Scenario_Line_Items</name>
+        <label>Get Scenario Line Items</label>
+        <locationX>176</locationX>
+        <locationY>335</locationY>
+        <assignNullValuesIfNoRecordsFound>false</assignNullValuesIfNoRecordsFound>
+        <connector>
+            <targetReference>Scenario_List_Item_Found</targetReference>
+        </connector>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <field>LLC_BI__Scenario__c</field>
+            <operator>EqualTo</operator>
+            <value>
+                <elementReference>$Record.Id</elementReference>
+            </value>
+        </filters>
+        <getFirstRecordOnly>false</getFirstRecordOnly>
+        <object>LLC_BI__Scenario_Item__c</object>
+        <storeOutputAutomatically>true</storeOutputAutomatically>
+    </recordLookups>
+    <recordUpdates>
+        <description>Update the expected revenue for the opportunity based on the scenario record and Scenario Line Items price estimates</description>
+        <name>Update_Opportunity_Expected_Revenue</name>
+        <label>Update Opportunity Expected Revenue</label>
+        <locationX>484</locationX>
+        <locationY>1127</locationY>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <field>Id</field>
+            <operator>EqualTo</operator>
+            <value>
+                <elementReference>$Record.LLC_BI__Opportunity__c</elementReference>
+            </value>
+        </filters>
+        <inputAssignments>
+            <field>CF_Projected_Recurring_Annual_Fee_Income__c</field>
+            <value>
+                <elementReference>Revenue_Generated_Without_ExceptionPricing</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>TM_Projected_Annual_Treasury_Fee_Income__c</field>
+            <value>
+                <elementReference>Revenue_Generated</elementReference>
+            </value>
+        </inputAssignments>
+        <object>Opportunity</object>
+    </recordUpdates>
+    <start>
+        <locationX>50</locationX>
+        <locationY>0</locationY>
+        <connector>
+            <targetReference>Get_Scenario_Line_Items</targetReference>
+        </connector>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <field>LLC_BI__Status__c</field>
+            <operator>IsNull</operator>
+            <value>
+                <booleanValue>false</booleanValue>
+            </value>
+        </filters>
+        <filters>
+            <field>LLC_BI__Status__c</field>
+            <operator>EqualTo</operator>
+            <value>
+                <stringValue>Final</stringValue>
+            </value>
+        </filters>
+        <object>LLC_BI__Scenario__c</object>
+        <recordTriggerType>Update</recordTriggerType>
+        <triggerType>RecordAfterSave</triggerType>
+    </start>
+    <status>Active</status>
+    <variables>
+        <description>Total Revenue generated</description>
+        <name>Revenue_Generated</name>
+        <dataType>Currency</dataType>
+        <isCollection>false</isCollection>
+        <isInput>false</isInput>
+        <isOutput>true</isOutput>
+        <scale>2</scale>
+        <value>
+            <numberValue>0.0</numberValue>
+        </value>
+    </variables>
+    <variables>
+        <description>Revenue Generated without Exception Pricing</description>
+        <name>Revenue_Generated_Without_ExceptionPricing</name>
+        <dataType>Currency</dataType>
+        <isCollection>false</isCollection>
+        <isInput>false</isInput>
+        <isOutput>false</isOutput>
+        <scale>2</scale>
+        <value>
+            <numberValue>0.0</numberValue>
+        </value>
+    </variables>
+</Flow>

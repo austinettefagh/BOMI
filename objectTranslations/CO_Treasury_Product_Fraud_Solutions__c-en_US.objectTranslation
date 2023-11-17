@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Setup Information FS</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Setup Informations FS</value>
+    </caseValues>
+    <fieldSets>
+        <label><!-- Fraud Solutions --></label>
+        <name>FS_Fraud_Solutions</name>
+    </fieldSets>
+    <fields>
+        <label><!-- ACH Disallow? --></label>
+        <name>CF_ACH_Disallow__c</name>
+        <picklistValues>
+            <masterLabel>Credit Only</masterLabel>
+            <translation><!-- Credit Only --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Debit Only</masterLabel>
+            <translation><!-- Debit Only --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Debit and Credit</masterLabel>
+            <translation><!-- Debit and Credit --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>N/A</masterLabel>
+            <translation><!-- N/A --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- Needed for ACH Pos Pay --></help>
+        <label><!-- ACH Filter? --></label>
+        <name>CF_ACH_Filter__c</name>
+        <picklistValues>
+            <masterLabel>N/A</masterLabel>
+            <translation><!-- N/A --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>No</masterLabel>
+            <translation><!-- No --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes</masterLabel>
+            <translation><!-- Yes --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Account Name --></label>
+        <name>CF_Account_Name__c</name>
+        <relationshipLabel><!-- Setup Informations FS --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Active --></label>
+        <name>CF_Active__c</name>
+    </fields>
+    <fields>
+        <label><!-- Branch --></label>
+        <name>CF_Branch__c</name>
+    </fields>
+    <fields>
+        <label><!-- CIF# --></label>
+        <name>CF_CIF__c</name>
+    </fields>
+    <fields>
+        <label><!-- Deposit Account Name --></label>
+        <name>CF_Deposit_Account_Name__c</name>
+        <relationshipLabel><!-- Setup Informations FS --></relationshipLabel>
+    </fields>
+    <fields>
+        <help><!-- Needed for Check Pos Pay --></help>
+        <label><!-- Payee Name Verification? --></label>
+        <name>CF_Payee_Name_Verification__c</name>
+        <picklistValues>
+            <masterLabel>N/A</masterLabel>
+            <translation><!-- N/A --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>No</masterLabel>
+            <translation><!-- No --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes</masterLabel>
+            <translation><!-- Yes --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Treasury Service --></label>
+        <name>CF_Treasury_Service__c</name>
+        <relationshipLabel><!-- Setup Informations FS --></relationshipLabel>
+    </fields>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

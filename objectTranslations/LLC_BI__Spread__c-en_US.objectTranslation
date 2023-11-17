@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <label><!-- Collateral --></label>
+        <name>LLC_BI__Collateral__c</name>
+        <relationshipLabel><!-- Spreads --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Entity Involvement --></label>
+        <name>LLC_BI__Entity_Involvement__c</name>
+        <relationshipLabel><!-- Spreads --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Include in ratios --></label>
+        <name>LLC_BI__Include_in_ratios__c</name>
+    </fields>
+    <fields>
+        <label><!-- Loan --></label>
+        <name>LLC_BI__Loan__c</name>
+        <relationshipLabel><!-- Spreads --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- -D Section Identifier --></label>
+        <name>LLC_BI__Section_Identifier__c</name>
+    </fields>
+    <fields>
+        <label><!-- Section Identifier --></label>
+        <name>LLC_BI__Spread_Identifier__c</name>
+    </fields>
+    <fields>
+        <label><!-- Statement --></label>
+        <name>LLC_BI__Spread_Statement_Template__c</name>
+        <relationshipLabel><!-- Spreads --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Underwriting Summary --></label>
+        <name>LLC_BI__Underwriting_Summary__c</name>
+        <relationshipLabel><!-- Spreads --></relationshipLabel>
+    </fields>
+    <webLinks>
+        <label><!-- Print --></label>
+        <name>LLC_BI__Print</name>
+    </webLinks>
+</CustomObjectTranslation>

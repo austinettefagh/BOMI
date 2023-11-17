@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Conditions of Approval</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Conditions of Approvals</value>
+    </caseValues>
+    <fieldSets>
+        <label><!-- CM Conditions Of Approval --></label>
+        <name>FS_CM_Conditions_Of_Approval</name>
+    </fieldSets>
+    <fieldSets>
+        <label><!-- Condition of approval --></label>
+        <name>FS_Condition_of_approval</name>
+    </fieldSets>
+    <fields>
+        <label><!-- Condition Type --></label>
+        <name>CF_Condition_Type__c</name>
+        <picklistValues>
+            <masterLabel>Free Form</masterLabel>
+            <translation><!-- Free Form --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Standard</masterLabel>
+            <translation><!-- Standard --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Conditions of Approval Narrative --></label>
+        <name>CF_Conditions_of_Approval_Narrative__c</name>
+    </fields>
+    <fields>
+        <label><!-- Customer --></label>
+        <name>CF_Customer__c</name>
+        <relationshipLabel><!-- Conditions of Approvals --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Due Date --></label>
+        <name>CF_Due_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Due Days --></label>
+        <name>CF_Due_Days__c</name>
+    </fields>
+    <fields>
+        <label><!-- Free Form Condition --></label>
+        <name>CF_Free_Form_Condition__c</name>
+    </fields>
+    <fields>
+        <label><!-- Loan --></label>
+        <name>CF_Loan__c</name>
+        <relationshipLabel><!-- Conditions of Approvals --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Requested by --></label>
+        <name>CF_Requested_by__c</name>
+        <relationshipLabel><!-- Conditions of Approvals --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Required By --></label>
+        <name>CF_Required_By__c</name>
+        <picklistValues>
+            <masterLabel>At Closing</masterLabel>
+            <translation><!-- At Closing --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>At Funding</masterLabel>
+            <translation><!-- At Funding --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Post Closing</masterLabel>
+            <translation><!-- Post Closing --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Pre Closing</masterLabel>
+            <translation><!-- Pre Closing --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Pre Funding</masterLabel>
+            <translation><!-- Pre Funding --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Standard Condition --></label>
+        <name>CF_Standard_Condition__c</name>
+        <picklistValues>
+            <masterLabel>Add Additional Collateral</masterLabel>
+            <translation><!-- Add Additional Collateral --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Add Additional Guarantor</masterLabel>
+            <translation><!-- Add Additional Guarantor --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Certified Rent Roll/Lease Submitted</masterLabel>
+            <translation><!-- Certified Rent Roll/Lease Submitted --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Collection(s) Paid and Explanation Provided</masterLabel>
+            <translation><!-- Collection(s) Paid and Explanation Provided --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Completion of Asset Sale</masterLabel>
+            <translation><!-- Completion of Asset Sale --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Deposit or Treasury Management Products</masterLabel>
+            <translation><!-- Deposit or Treasury Management Products --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Find Financial Institution to Participate in the Transaction</masterLabel>
+            <translation><!-- Find Financial Institution to Participate in the Transaction --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Inspection</masterLabel>
+            <translation><!-- Inspection --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Judgment or Lien Paid and Explanation Provided</masterLabel>
+            <translation><!-- Judgment or Lien Paid and Explanation Provided --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Proof of Sufficient Cash Down</masterLabel>
+            <translation><!-- Proof of Sufficient Cash Down --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Receipt of Additional Financial Information - Reviewed and Approved by Credit</masterLabel>
+            <translation><!-- Receipt of Additional Financial Information - Reviewed and Approved by Credit --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Satisfactory Appraisal and Review</masterLabel>
+            <translation><!-- Satisfactory Appraisal and Review --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Satisfactory Environmental Report</masterLabel>
+            <translation><!-- Satisfactory Environmental Report --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Subordination or Priority Lien Holder</masterLabel>
+            <translation><!-- Subordination or Priority Lien Holder --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Status --></label>
+        <name>CF_Status__c</name>
+        <picklistValues>
+            <masterLabel>New</masterLabel>
+            <translation><!-- New --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>No Longer Required</masterLabel>
+            <translation><!-- No Longer Required --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Not Satisfied</masterLabel>
+            <translation><!-- Not Satisfied --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Satisfied</masterLabel>
+            <translation><!-- Satisfied --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Under Review</masterLabel>
+            <translation><!-- Under Review --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Waived</masterLabel>
+            <translation><!-- Waived --></translation>
+        </picklistValues>
+    </fields>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

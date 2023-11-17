@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <help><!-- Enter a value for the engine capacity or displacement volume of the titled collateral. --></help>
+        <label><!-- Engine Size --></label>
+        <name>LLC_BI__Engine_Size__c</name>
+    </fields>
+    <fields>
+        <help><!-- Enter the price of the vehicle billed by the manufacturer. --></help>
+        <label><!-- Factory Price --></label>
+        <name>LLC_BI__Factory_Price__c</name>
+    </fields>
+    <fields>
+        <help><!-- Select the type of financing used to purchase the vehicle. --></help>
+        <label><!-- Financing Type --></label>
+        <name>LLC_BI__Financing_Type__c</name>
+        <picklistValues>
+            <masterLabel>Cash</masterLabel>
+            <translation><!-- Cash --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Lease</masterLabel>
+            <translation><!-- Lease --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Loan</masterLabel>
+            <translation><!-- Loan --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- Select the type of fuel used for the vehicle. --></help>
+        <label><!-- Fuel Type --></label>
+        <name>LLC_BI__Fuel_Type__c</name>
+        <picklistValues>
+            <masterLabel>Diesel</masterLabel>
+            <translation><!-- Diesel --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Ethanol</masterLabel>
+            <translation><!-- Ethanol --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Gasoline</masterLabel>
+            <translation><!-- Gasoline --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Other</masterLabel>
+            <translation><!-- Other --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- Enter the gross weight of the vehicle. --></help>
+        <label><!-- Gross Vehicle Weight --></label>
+        <name>LLC_BI__Gross_Vehicle_Weight__c</name>
+    </fields>
+    <fields>
+        <help><!-- Select this checkbox if the piece of collateral has passed the applicable state or province inspection. --></help>
+        <label><!-- Has Passed State Inspection --></label>
+        <name>LLC_BI__Has_Passed_State_Inspection__c</name>
+    </fields>
+    <fields>
+        <help><!-- Select this checkbox if the piece of collateral is used for recreational purposes. --></help>
+        <label><!-- Is Recreational --></label>
+        <name>LLC_BI__Is_Recreational__c</name>
+    </fields>
+    <fields>
+        <help><!-- Enter the odometer reading of the titled vehicle on the origination date. --></help>
+        <label><!-- Odometer Reading --></label>
+        <name>LLC_BI__Odometer_Reading__c</name>
+    </fields>
+    <fields>
+        <help><!-- Enter the license plate or registration number of the vehicle. --></help>
+        <label><!-- Registration Number --></label>
+        <name>LLC_BI__Registration_Number__c</name>
+    </fields>
+    <fields>
+        <help><!-- Select the type of registration that applies to the vehicle. --></help>
+        <label><!-- Registration Type --></label>
+        <name>LLC_BI__Registration_Type__c</name>
+        <picklistValues>
+            <masterLabel>Commercial</masterLabel>
+            <translation><!-- Commercial --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Livery</masterLabel>
+            <translation><!-- Livery --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Other</masterLabel>
+            <translation><!-- Other --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Passenger</masterLabel>
+            <translation><!-- Passenger --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- Enter the legal seating capacity of the vehicle. --></help>
+        <label><!-- Seating Capacity --></label>
+        <name>LLC_BI__Seating_Capacity__c</name>
+    </fields>
+    <fields>
+        <help><!-- Enter the total runtime of the engine for the titled collateral. --></help>
+        <label><!-- Total Runtime --></label>
+        <name>LLC_BI__Total_Runtime__c</name>
+    </fields>
+    <fields>
+        <help><!-- Select the type of transmission that applies to the vehicle. --></help>
+        <label><!-- Transmission Type --></label>
+        <name>LLC_BI__Transmission_Type__c</name>
+        <picklistValues>
+            <masterLabel>Automatic</masterLabel>
+            <translation><!-- Automatic --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Manual</masterLabel>
+            <translation><!-- Manual --></translation>
+        </picklistValues>
+    </fields>
+</CustomObjectTranslation>

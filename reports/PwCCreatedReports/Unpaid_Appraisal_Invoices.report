@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>CUST_NAME</field>
+    </columns>
+    <columns>
+        <field>LLC_BI__Service_Mgmt__c.CF_Invoice_Status__c</field>
+    </columns>
+    <columns>
+        <field>LLC_BI__Service_Mgmt__c.LLC_BI__Service_Provider__c</field>
+    </columns>
+    <columns>
+        <field>LLC_BI__Service_Mgmt__c.LLC_BI__Service_Provider_Contact__c</field>
+    </columns>
+    <columns>
+        <field>LLC_BI__Service_Mgmt__c.LLC_BI__Loan__c</field>
+    </columns>
+    <columns>
+        <field>LLC_BI__Service_Mgmt__c.LLC_BI__Collateral__c</field>
+    </columns>
+    <description>A report which shows all unpaid appraisal invoices.</description>
+    <filter>
+        <criteriaItems>
+            <column>LLC_BI__Service_Mgmt__c.LLC_BI__Service_Type__c</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>Appraiser</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>LLC_BI__Service_Mgmt__c.CF_Invoice_Status__c</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>notEqual</operator>
+            <value>Invoice Paid</value>
+        </criteriaItems>
+        <language>en_US</language>
+    </filter>
+    <format>Tabular</format>
+    <name>Unpaid Appraisal Invoices</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>CustomEntity$LLC_BI__Service_Mgmt__c</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <showGrandTotal>true</showGrandTotal>
+    <showSubTotals>true</showSubTotals>
+    <timeFrameFilter>
+        <dateColumn>LLC_BI__Service_Mgmt__c.CF_Date_Documents_Ordered__c</dateColumn>
+        <interval>INTERVAL_CUSTOM</interval>
+    </timeFrameFilter>
+</Report>

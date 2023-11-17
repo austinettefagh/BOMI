@@ -1,0 +1,246 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fieldSets>
+        <label><!-- Enhanced Fee Loan Aggregate Summary --></label>
+        <name>LLC_BI__Enhanced_Fee_Loan_Aggregate_Summary</name>
+    </fieldSets>
+    <fieldSets>
+        <label><!-- Pricing Option Fee Aggregate Summary --></label>
+        <name>LLC_BI__Pricing_Option_Fee_Aggregate_Summary</name>
+    </fieldSets>
+    <fields>
+        <help><!-- This system-populated field indicates the aggregate total of all fees not associated with the 12 listed line items. --></help>
+        <label><!-- Additional Charges --></label>
+        <name>LLC_BI__Additional_Charges__c</name>
+    </fields>
+    <fields>
+        <help><!-- This system-populated field displays the sum of Adjustments and Other Credits. --></help>
+        <label><!-- Adjustments and Other Credits --></label>
+        <name>LLC_BI__Adjustments_Other_Credits__c</name>
+    </fields>
+    <fields>
+        <help><!-- This system-populated field indicates the aggregate adjustment or the change in the total escrow payment due at closing. --></help>
+        <label><!-- Aggregate Adjustment --></label>
+        <name>LLC_BI__Aggregate_Adjustment__c</name>
+    </fields>
+    <fields>
+        <help><!-- The system enters total closing costs associated to the loan paid before closing. --></help>
+        <label><!-- Closing Costs Paid Before Closing --></label>
+        <name>LLC_BI__Closing_Costs_Paid_Before_Closing__c</name>
+    </fields>
+    <fields>
+        <help><!-- This field indicates the refund of fees paid in excess of the actual amount. --></help>
+        <label><!-- Cost to Cure --></label>
+        <name>LLC_BI__Cost_To_Cure__c</name>
+    </fields>
+    <fields>
+        <help><!-- This system-populated field indicates the total cushion amount the borrower pays at closing. --></help>
+        <label><!-- Cushion Amount --></label>
+        <name>LLC_BI__Cushion_Amount__c</name>
+    </fields>
+    <fields>
+        <help><!-- This system-populated field displays the earnest money or total deposit amount made for the transaction. --></help>
+        <label><!-- Earnest Money/Deposit --></label>
+        <name>LLC_BI__Earnest_Money_Deposit__c</name>
+    </fields>
+    <fields>
+        <help><!-- This system-populated field indicates the estimated monthly taxes, insurances, and assessments. --></help>
+        <label><!-- Estimated Taxes Insurance &amp; Assessments --></label>
+        <name>LLC_BI__Estimated_Taxes_Insurance_Assessments__c</name>
+    </fields>
+    <fields>
+        <help><!-- This system-populated field displays the Funds for Borrower amount. --></help>
+        <label><!-- Funds For Borrower --></label>
+        <name>LLC_BI__Funds_For_Borrower__c</name>
+    </fields>
+    <fields>
+        <help><!-- This field indicates the loan amount disbursed to the borrower for the collateral purchase or loan purpose, not including fees that have been financed. --></help>
+        <label><!-- Loan Proceeds --></label>
+        <name>LLC_BI__Loan_Proceeds__c</name>
+    </fields>
+    <fields>
+        <help><!-- This system-populated field indicates the total monthly escrow payment. --></help>
+        <label><!-- Monthly Escrow Payment --></label>
+        <name>LLC_BI__Monthly_Escrow_Payment__c</name>
+    </fields>
+    <fields>
+        <help><!-- This field displays the total amount applied towards the transaction. --></help>
+        <label><!-- Net Trade --></label>
+        <name>LLC_BI__Net_Trade__c</name>
+    </fields>
+    <fields>
+        <help><!-- The total number of borrower fees associated to this object. --></help>
+        <label><!-- Number of Borrower Fees --></label>
+        <name>LLC_BI__Number_of_Borrower_Fees__c</name>
+    </fields>
+    <fields>
+        <help><!-- The total number of cash fees associated to this object. --></help>
+        <label><!-- Number of Cash Fees --></label>
+        <name>LLC_BI__Number_of_Cash_Fees__c</name>
+    </fields>
+    <fields>
+        <help><!-- The total number of fees associated to this object. --></help>
+        <label><!-- Number of Fees --></label>
+        <name>LLC_BI__Number_of_Fees__c</name>
+    </fields>
+    <fields>
+        <help><!-- The total number of financed fees associated to this object. --></help>
+        <label><!-- Number of Financed Fees --></label>
+        <name>LLC_BI__Number_of_Financed_Fees__c</name>
+    </fields>
+    <fields>
+        <help><!-- The total number of lender fees associated to this object. --></help>
+        <label><!-- Number of Lender Fees --></label>
+        <name>LLC_BI__Number_of_Lender_Fees__c</name>
+    </fields>
+    <fields>
+        <help><!-- The total number of nonstandard fees associated to this object. --></help>
+        <label><!-- Number of Nonstandard Fees --></label>
+        <name>LLC_BI__Number_of_Nonstandard_Fees__c</name>
+    </fields>
+    <fields>
+        <help><!-- The total number of seller fees associated to this object. --></help>
+        <label><!-- Number of Seller Fees --></label>
+        <name>LLC_BI__Number_of_Seller_Fees__c</name>
+    </fields>
+    <fields>
+        <help><!-- The total number of standard fees associated to this object. --></help>
+        <label><!-- Number of Standard Fees --></label>
+        <name>LLC_BI__Number_of_Standard_Fees__c</name>
+    </fields>
+    <fields>
+        <help><!-- This field displays the total of all fees in the 10% tolerance category. --></help>
+        <label><!-- Total 10% Cumulative Tolerance --></label>
+        <name>LLC_BI__Total_10_Percent_Cumulative_Tolerance__c</name>
+    </fields>
+    <fields>
+        <help><!-- The total amount of borrower fees associated to the object. --></help>
+        <label><!-- Total Borrower Fee Amount --></label>
+        <name>LLC_BI__Total_Borrower_Fee_Amount__c</name>
+    </fields>
+    <fields>
+        <help><!-- The total amount of cash fees associated to the object. --></help>
+        <label><!-- Total Cash Fee Amount --></label>
+        <name>LLC_BI__Total_Cash_Fee_Amount__c</name>
+    </fields>
+    <fields>
+        <help><!-- This field displays the total closing costs for the loan. --></help>
+        <label><!-- Total Closing Costs --></label>
+        <name>LLC_BI__Total_Closing_Costs__c</name>
+    </fields>
+    <fields>
+        <help><!-- Populate this field with the total amount of down payments associated to a loan. --></help>
+        <label><!-- Total Down Payment --></label>
+        <name>LLC_BI__Total_Down_Payment__c</name>
+    </fields>
+    <fields>
+        <help><!-- This system-populated field indicates the estimated total of disbursements from the escrow account. --></help>
+        <label><!-- Total Estimated Disbursements --></label>
+        <name>LLC_BI__Total_Estimated_Disbursements__c</name>
+    </fields>
+    <fields>
+        <help><!-- The total fee amount minus the total fee amount paid. --></help>
+        <label><!-- Total Fee Amount Outstanding --></label>
+        <name>LLC_BI__Total_Fee_Amount_Outstanding__c</name>
+    </fields>
+    <fields>
+        <help><!-- The total amount paid for fees related to this object. --></help>
+        <label><!-- Total Fee Amount Paid --></label>
+        <name>LLC_BI__Total_Fee_Amount_Paid__c</name>
+    </fields>
+    <fields>
+        <help><!-- Total Amount of all fees associated to this object. --></help>
+        <label><!-- Total Fee Amount --></label>
+        <name>LLC_BI__Total_Fee_Amount__c</name>
+    </fields>
+    <fields>
+        <help><!-- Total fees paid to the financial institution that nIQ factors into profitability. --></help>
+        <label><!-- Total Fee Income --></label>
+        <name>LLC_BI__Total_Fee_Income__c</name>
+    </fields>
+    <fields>
+        <help><!-- The total amount of financed fees associated to the object. --></help>
+        <label><!-- Total Financed Fee Amount --></label>
+        <name>LLC_BI__Total_Financed_Fee_Amount__c</name>
+    </fields>
+    <fields>
+        <help><!-- This system-populated field displays the aggregate total of fees for the initial escrow payment at closing. --></help>
+        <label><!-- Total Initial Escrow Payment at Closing --></label>
+        <name>LLC_BI__Total_Initial_Escrow_Payment_at_Closing__c</name>
+    </fields>
+    <fields>
+        <help><!-- This system-populated field displays the aggregate total of fees for lender credits. --></help>
+        <label><!-- Total Lender Credits --></label>
+        <name>LLC_BI__Total_Lender_Credits__c</name>
+    </fields>
+    <fields>
+        <help><!-- The total amount of lender fees associated to the object. --></help>
+        <label><!-- Total Lender Fee Amount --></label>
+        <name>LLC_BI__Total_Lender_Fee_Amount__c</name>
+    </fields>
+    <fields>
+        <help><!-- This system-populated field displays the aggregate total of fees for loan costs. --></help>
+        <label><!-- Total Loan Costs --></label>
+        <name>LLC_BI__Total_Loan_Costs__c</name>
+    </fields>
+    <fields>
+        <help><!-- This system-populated field displays the aggregate total of all loan costs and other costs associated with the loan. --></help>
+        <label><!-- Total Loan and Other Costs --></label>
+        <name>LLC_BI__Total_Loan_and_Other_Costs__c</name>
+    </fields>
+    <fields>
+        <help><!-- The total amount of nonstandard fees associated to the object. --></help>
+        <label><!-- Total Nonstandard Fee Amount --></label>
+        <name>LLC_BI__Total_Nonstandard_Fee_Amount__c</name>
+    </fields>
+    <fields>
+        <help><!-- This system-populated field displays the aggregate total of fees for origination charges. --></help>
+        <label><!-- Total Origination Charges --></label>
+        <name>LLC_BI__Total_Origination_Charges__c</name>
+    </fields>
+    <fields>
+        <help><!-- This system-populated field displays the aggregate total of other costs associated with the loan. --></help>
+        <label><!-- Total Other Costs --></label>
+        <name>LLC_BI__Total_Other_Costs__c</name>
+    </fields>
+    <fields>
+        <help><!-- This system-populated field displays the aggregate total of other fees. --></help>
+        <label><!-- Total Other --></label>
+        <name>LLC_BI__Total_Other__c</name>
+    </fields>
+    <fields>
+        <help><!-- This system-populated field displays the aggregate total of prepaid fees. --></help>
+        <label><!-- Total Prepaids --></label>
+        <name>LLC_BI__Total_Prepaids__c</name>
+    </fields>
+    <fields>
+        <help><!-- The total amount of seller fees associated to the object. --></help>
+        <label><!-- Total Seller Credits --></label>
+        <name>LLC_BI__Total_Seller_Fee_Amount__c</name>
+    </fields>
+    <fields>
+        <help><!-- This system-populated field displays the aggregate total of fees for services a borrower can shop for. --></help>
+        <label><!-- Total Services You Can Shop For --></label>
+        <name>LLC_BI__Total_Services_You_Can_Shop_For__c</name>
+    </fields>
+    <fields>
+        <help><!-- This system-populated field displays the aggregate total of fees for services a borrower cannot shop for. --></help>
+        <label><!-- Total Services You Cannot Shop For --></label>
+        <name>LLC_BI__Total_Services_You_Cannot_Shop_For__c</name>
+    </fields>
+    <fields>
+        <help><!-- The total amount of standard fees associated to the object. --></help>
+        <label><!-- Total Standard Fee Amount --></label>
+        <name>LLC_BI__Total_Standard_Fee_Amount__c</name>
+    </fields>
+    <fields>
+        <help><!-- This system-populated field displays the aggregate total of fees for taxes and other government fees. --></help>
+        <label><!-- Total Taxes and Other Government Fees --></label>
+        <name>LLC_BI__Total_Taxes_and_Other_Government_Fees__c</name>
+    </fields>
+    <fields>
+        <help><!-- External Id --></help>
+        <label><!-- lookupKey --></label>
+        <name>LLC_BI__lookupKey__c</name>
+    </fields>
+</CustomObjectTranslation>

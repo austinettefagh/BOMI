@@ -1,0 +1,903 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <allowInChatterGroups>true</allowInChatterGroups>
+    <compactLayoutAssignment>SYSTEM</compactLayoutAssignment>
+    <deploymentStatus>Deployed</deploymentStatus>
+    <description>This object is used to track Temporary Limit changes for Payable ACH &amp; Wire Transmission Products.</description>
+    <enableActivities>true</enableActivities>
+    <enableBulkApi>true</enableBulkApi>
+    <enableFeeds>true</enableFeeds>
+    <enableHistory>true</enableHistory>
+    <enableLicensing>false</enableLicensing>
+    <enableReports>true</enableReports>
+    <enableSearch>false</enableSearch>
+    <enableSharing>true</enableSharing>
+    <enableStreamingApi>true</enableStreamingApi>
+    <externalSharingModel>Private</externalSharingModel>
+    <fieldSets>
+        <fullName>FS_Temporary_Limit_Changes</fullName>
+        <description>Used in Add New screen of Temporary Limit Changes route in Payable ACH &amp; WIRE products.</description>
+        <displayedFields>
+            <field>Name</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </displayedFields>
+        <displayedFields>
+            <field>CF_Status__c</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </displayedFields>
+        <displayedFields>
+            <field>CF_Reason_for_Request__c</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>true</isRequired>
+        </displayedFields>
+        <displayedFields>
+            <field>CF_Requested_Temporary_Limit__c</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>true</isRequired>
+        </displayedFields>
+        <displayedFields>
+            <field>CF_Requested_Daily_Limit__c</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </displayedFields>
+        <displayedFields>
+            <field>CF_Requested_Monthly_Limit__c</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </displayedFields>
+        <displayedFields>
+            <field>CF_Date_of_Request__c</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>true</isRequired>
+        </displayedFields>
+        <displayedFields>
+            <field>CF_Limit_Change_Expiration__c</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </displayedFields>
+        <displayedFields>
+            <field>CF_Wire_Client_Authorization_Received__c</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </displayedFields>
+        <displayedFields>
+            <field>CF_ACH_Client_Authorization_Received__c</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </displayedFields>
+        <displayedFields>
+            <field>CF_Temporary_Permanent__c</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>true</isRequired>
+        </displayedFields>
+        <label>Temporary Limit Changes - Add New Screen</label>
+    </fieldSets>
+    <fields>
+        <fullName>CF_ACH_Client_Authorization_Received__c</fullName>
+        <defaultValue>false</defaultValue>
+        <description>Used on Temporary Limit Changes layout.</description>
+        <externalId>false</externalId>
+        <label>ACH Client Authorization Received</label>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>CF_ACH_Limit_Change__c</fullName>
+        <description>Used in Temporary Limit Changes Layout.</description>
+        <externalId>false</externalId>
+        <formula>(CF_Requested_Temporary_Limit__c -   CF_Current_ACH_Limit__c ) / CF_Current_ACH_Limit__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>ACH Limit Change (%)</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Percent</type>
+    </fields>
+    <fields>
+        <fullName>CF_Active__c</fullName>
+        <defaultValue>true</defaultValue>
+        <externalId>false</externalId>
+        <label>Active</label>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>CF_Approval_Status__c</fullName>
+        <externalId>false</externalId>
+        <label>Approval Status</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Approver 1 Approved</fullName>
+                    <default>false</default>
+                    <label>Approver 1 Approved</label>
+                </value>
+                <value>
+                    <fullName>Approver 2 Approved</fullName>
+                    <default>false</default>
+                    <label>Approver 2 Approved</label>
+                </value>
+                <value>
+                    <fullName>Approver 3 Approved</fullName>
+                    <default>false</default>
+                    <label>Approver 3 Approved</label>
+                </value>
+                <value>
+                    <fullName>Approver 4 Approved</fullName>
+                    <default>false</default>
+                    <label>Approver 4 Approved</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>CF_Approver__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <description>Used on Temporary Limit Changes layout.</description>
+        <externalId>false</externalId>
+        <label>Approver</label>
+        <referenceTo>User</referenceTo>
+        <relationshipName>Temporary_Limit_Changes</relationshipName>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>CF_Billing_Account_Number__c</fullName>
+        <description>Used on Temporary Limit Changes layout.</description>
+        <externalId>false</externalId>
+        <formula>CF_Treasury_Service_Name__r.CF_Billing_Account_Number__r.Name</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Billing Account Number</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>CF_Corporate_Wire_Limit__c</fullName>
+        <description>Used on Temporary Limit changes layout.</description>
+        <externalId>false</externalId>
+        <formula>CF_Treasury_Service_Name__r.CF_Corporate_Daily_Wire_Limit__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Corporate Wire Limit</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>CF_Current_ACH_Limit__c</fullName>
+        <description>Used in Temporary Limit Change layout.</description>
+        <externalId>false</externalId>
+        <formula>IF(
+   OR(
+       CF_Treasury_Service_Name__r.LLC_BI__Product_Reference__r.Name = &apos;ACH Credit Origination&apos;,
+       CF_Treasury_Service_Name__r.LLC_BI__Product_Reference__r.Name = &apos;ACH Debit Origination&apos;,
+       CF_Treasury_Service_Name__r.LLC_BI__Product_Reference__r.Name = &apos;Third Party Sender&apos;
+     ),
+       CF_Treasury_Service_Name__r.CF_Corporate_ACH_Origination_Limit__c ,
+  IF(
+      OR(
+       CF_Treasury_Service_Name__r.LLC_BI__Product_Reference__r.Name = &apos;U-Pay Portal&apos;,
+       CF_Treasury_Service_Name__r.LLC_BI__Product_Reference__r.Name = &apos;I-Collect Portal&apos;
+     ),
+       CF_Treasury_Service_Name__r.CF_Requested_ACH_Limit__c,
+    0
+)
+)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Current ACH Limit</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>CF_Date_of_Request__c</fullName>
+        <description>This is used to store Date of request information.</description>
+        <encryptionScheme>None</encryptionScheme>
+        <externalId>false</externalId>
+        <label>Date of Request</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>CF_Initial_Submitter__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <description>This field gets populated from the approval process with the user who submitted TLC for approval.</description>
+        <externalId>false</externalId>
+        <label>Initial Submitter</label>
+        <referenceTo>User</referenceTo>
+        <relationshipName>Temporary_Limit_Changes2</relationshipName>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>CF_Last_Treasury_Review_Date__c</fullName>
+        <description>This field is used to capture Last Treasury Review Date from associated relationship &amp; is used as one of the condition in Approval Process.</description>
+        <externalId>false</externalId>
+        <formula>CF_Relationship_Name__r.CF_Last_Treasury_Review_Date__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Last Treasury Review Date</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>CF_Limit_Change_Expiration__c</fullName>
+        <description>This field is used to store Limit Change Expiration.</description>
+        <encryptionScheme>None</encryptionScheme>
+        <externalId>false</externalId>
+        <label>Limit Change Expiration</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>CF_Next_Treasury_Review_Date__c</fullName>
+        <description>Used on Temporary Limit Changes Layout.</description>
+        <externalId>false</externalId>
+        <formula>CF_Treasury_Service_Name__r.CF_Next_Treasury_Review_Date__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Next Treasury Review Date</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>CF_Product__c</fullName>
+        <description>Used on Temporary Limit Changes layout.</description>
+        <externalId>false</externalId>
+        <formula>CF_Treasury_Service_Name__r.LLC_BI__Product_Reference__r.Name</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Product</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>CF_Reason_for_Request__c</fullName>
+        <description>This field is used to track reason for request.</description>
+        <encryptionScheme>None</encryptionScheme>
+        <externalId>false</externalId>
+        <label>Reason for Request</label>
+        <length>244</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>CF_Relationship_Manager__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <externalId>false</externalId>
+        <label>Relationship Manager</label>
+        <referenceTo>User</referenceTo>
+        <relationshipName>Temporary_Limit_Changes1</relationshipName>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>CF_Relationship_Name__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <description>This field is used to store the account information.</description>
+        <externalId>false</externalId>
+        <label>Relationship Name</label>
+        <referenceTo>Account</referenceTo>
+        <relationshipName>Temporary_Limit_Changes</relationshipName>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>CF_Requested_Daily_Limit__c</fullName>
+        <description>This is used to store Requested Daily Limit.</description>
+        <externalId>false</externalId>
+        <label>Requested Daily Limit</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>CF_Requested_Monthly_Limit__c</fullName>
+        <description>This is used to store Requested Monthly Limit.</description>
+        <externalId>false</externalId>
+        <label>Requested Monthly Limit</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>CF_Requested_Temporary_Limit__c</fullName>
+        <description>This is used to track requested temporary limit.</description>
+        <externalId>false</externalId>
+        <label>Requested Temporary Limit</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>CF_Requires_Full_Approval__c</fullName>
+        <defaultValue>false</defaultValue>
+        <description>Used on Temporary Limit Changes layout.</description>
+        <externalId>false</externalId>
+        <label>Requires Full Approval?</label>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>CF_Revert__c</fullName>
+        <description>This field is used to track if Limit Change is reverted or not.</description>
+        <externalId>false</externalId>
+        <label>Revert</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Yes</fullName>
+                    <default>false</default>
+                    <label>Yes</label>
+                </value>
+                <value>
+                    <fullName>No</fullName>
+                    <default>false</default>
+                    <label>No</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>CF_Status__c</fullName>
+        <description>This field is used to track the status of Temporary Limit Change request.</description>
+        <externalId>false</externalId>
+        <label>Status</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Open</fullName>
+                    <default>true</default>
+                    <label>Open</label>
+                </value>
+                <value>
+                    <fullName>Submitted for Approval</fullName>
+                    <default>false</default>
+                    <label>Submitted for Approval</label>
+                </value>
+                <value>
+                    <fullName>Rejected</fullName>
+                    <default>false</default>
+                    <label>Rejected</label>
+                </value>
+                <value>
+                    <fullName>Approved Ready for Setup</fullName>
+                    <default>false</default>
+                    <label>Approved, Ready for Setup</label>
+                </value>
+                <value>
+                    <fullName>Setup Complete Change Active</fullName>
+                    <default>false</default>
+                    <label>Setup Complete, Change Active</label>
+                </value>
+                <value>
+                    <fullName>Change Expired</fullName>
+                    <default>false</default>
+                    <label>Change Expired</label>
+                </value>
+                <value>
+                    <fullName>Closed</fullName>
+                    <default>false</default>
+                    <label>Closed</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>CF_TM_Deposit_Only__c</fullName>
+        <description>Used on Temporary Limit Changes Layout.</description>
+        <externalId>false</externalId>
+        <formula>CF_Relationship_Name__r.CF_TM_Deposit_Only__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>TM Deposit Only</label>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>CF_Temporary_Permanent__c</fullName>
+        <description>This field has used in Temporary Limit Changes record.</description>
+        <externalId>false</externalId>
+        <label>Temporary/Permanent?</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Temporary</fullName>
+                    <default>false</default>
+                    <label>Temporary</label>
+                </value>
+                <value>
+                    <fullName>Permanent</fullName>
+                    <default>false</default>
+                    <label>Permanent</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>CF_Treasury_Risk_Rating__c</fullName>
+        <description>Used on Temporary Limit changes layout.</description>
+        <externalId>false</externalId>
+        <formula>CF_Treasury_Service_Name__r.CF_Treasury_Risk_Rating__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Treasury Risk Rating</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>CF_Treasury_Service_Name__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <description>This field is used to store Treasury Service info.</description>
+        <externalId>false</externalId>
+        <label>Treasury Service Name</label>
+        <referenceTo>LLC_BI__Treasury_Service__c</referenceTo>
+        <relationshipName>Temporary_Limit_Changes</relationshipName>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>CF_Wire_Client_Authorization_Received__c</fullName>
+        <defaultValue>false</defaultValue>
+        <description>Used on Temporary Limit Changes layout.</description>
+        <externalId>false</externalId>
+        <label>Wire Client Authorization Received</label>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <label>Limit Changes</label>
+    <listViews>
+        <fullName>QU_LVL2_Medium_Risk_Queue_CO_Temporary_Limit_Changes</fullName>
+        <filterScope>Queue</filterScope>
+        <label>LVL2 / Medium Risk Queue</label>
+        <queue>QU_LVL2_Medium_Risk_Queue</queue>
+        <sharedTo>
+            <allInternalUsers></allInternalUsers>
+        </sharedTo>
+    </listViews>
+    <listViews>
+        <fullName>QU_LVL3_Medium_High_Risk_Queue_CO_Temporary_Limit_Changes</fullName>
+        <filterScope>Queue</filterScope>
+        <label>LVL3  / Medium-High Risk Queue</label>
+        <queue>QU_LVL3_Medium_High_Risk_Queue</queue>
+        <sharedTo>
+            <allInternalUsers></allInternalUsers>
+        </sharedTo>
+    </listViews>
+    <listViews>
+        <fullName>QU_Limit_Change_Level_1_Low_Risk_Queue_CO_Temporary_Limit_Changes</fullName>
+        <filterScope>Queue</filterScope>
+        <label>Limit Change - Level 1 / Low Risk Queue</label>
+        <queue>QU_Limit_Change_Level_1_Low_Risk_Queue</queue>
+        <sharedTo>
+            <allInternalUsers></allInternalUsers>
+        </sharedTo>
+    </listViews>
+    <listViews>
+        <fullName>QU_Limit_Change_Level_4_High_Risk_Queue_CO_Temporary_Limit_Changes</fullName>
+        <filterScope>Queue</filterScope>
+        <label>Limit Change - Level 4 / High Risk Queue</label>
+        <queue>QU_Limit_Change_Level_4_High_Risk_Queue</queue>
+        <sharedTo>
+            <allInternalUsers></allInternalUsers>
+        </sharedTo>
+    </listViews>
+    <nameField>
+        <displayFormat>LCN-{0000000}</displayFormat>
+        <label>Limit Change Name</label>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>AutoNumber</type>
+    </nameField>
+    <pluralLabel>Limit Changes</pluralLabel>
+    <recordTypeTrackFeedHistory>false</recordTypeTrackFeedHistory>
+    <recordTypeTrackHistory>false</recordTypeTrackHistory>
+    <recordTypes>
+        <fullName>TLC_nCino_Read_Only_Temporary_Limit_Change</fullName>
+        <active>true</active>
+        <label>TLC nCino Read Only Temporary Limit Change</label>
+        <picklistValues>
+            <picklist>CF_Approval_Status__c</picklist>
+            <values>
+                <fullName>Approver 1 Approved</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Approver 2 Approved</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Approver 3 Approved</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Approver 4 Approved</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>CF_Revert__c</picklist>
+            <values>
+                <fullName>No</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Yes</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>CF_Status__c</picklist>
+            <values>
+                <fullName>Approved Ready for Setup</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Change Expired</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Closed</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Open</fullName>
+                <default>true</default>
+            </values>
+            <values>
+                <fullName>Rejected</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Setup Complete Change Active</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Submitted for Approval</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>CF_Temporary_Permanent__c</picklist>
+            <values>
+                <fullName>Permanent</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Temporary</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+    </recordTypes>
+    <recordTypes>
+        <fullName>TLC_nCino_Temporary_Limit_Change</fullName>
+        <active>true</active>
+        <label>TLC nCino Temporary Limit Change</label>
+        <picklistValues>
+            <picklist>CF_Approval_Status__c</picklist>
+            <values>
+                <fullName>Approver 1 Approved</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Approver 2 Approved</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Approver 3 Approved</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Approver 4 Approved</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>CF_Revert__c</picklist>
+            <values>
+                <fullName>No</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Yes</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>CF_Status__c</picklist>
+            <values>
+                <fullName>Approved Ready for Setup</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Change Expired</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Closed</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Open</fullName>
+                <default>true</default>
+            </values>
+            <values>
+                <fullName>Rejected</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Setup Complete Change Active</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Submitted for Approval</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>CF_Temporary_Permanent__c</picklist>
+            <values>
+                <fullName>Permanent</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Temporary</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+    </recordTypes>
+    <searchLayouts/>
+    <sharingModel>ReadWrite</sharingModel>
+    <visibility>Public</visibility>
+    <webLinks>
+        <fullName>TLC_Generate_Forms</fullName>
+        <availability>online</availability>
+        <displayType>button</displayType>
+        <encodingKey>UTF-8</encodingKey>
+        <hasMenubar>false</hasMenubar>
+        <hasScrollbars>true</hasScrollbars>
+        <hasToolbar>false</hasToolbar>
+        <height>600</height>
+        <isResizable>true</isResizable>
+        <linkType>url</linkType>
+        <masterLabel>Generate Forms</masterLabel>
+        <openType>newWindow</openType>
+        <position>none</position>
+        <protected>false</protected>
+        <showsLocation>false</showsLocation>
+        <showsStatus>false</showsStatus>
+        <url>/apex/nFORMS__FormGenerator?Type=CO_Temporary_Limit_Changes__c&amp;Id={!CO_Temporary_Limit_Changes__c.Id}</url>
+    </webLinks>
+</CustomObject>

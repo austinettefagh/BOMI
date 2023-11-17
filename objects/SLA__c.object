@@ -1,0 +1,818 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <allowInChatterGroups>false</allowInChatterGroups>
+    <compactLayoutAssignment>SYSTEM</compactLayoutAssignment>
+    <deploymentStatus>Deployed</deploymentStatus>
+    <description>Used to track SLA fields of Loan</description>
+    <enableActivities>true</enableActivities>
+    <enableBulkApi>true</enableBulkApi>
+    <enableFeeds>false</enableFeeds>
+    <enableHistory>true</enableHistory>
+    <enableLicensing>false</enableLicensing>
+    <enableReports>true</enableReports>
+    <enableSearch>true</enableSearch>
+    <enableSharing>true</enableSharing>
+    <enableStreamingApi>true</enableStreamingApi>
+    <externalSharingModel>Private</externalSharingModel>
+    <fields>
+        <fullName>CF_ApplicationProcessingCumulative_Days__c</fullName>
+        <description>This stores the cumulative days the record was in Application Processing stage</description>
+        <externalId>false</externalId>
+        <label>Application Processing cumulative Days</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>CF_BookedCumulativeDays__c</fullName>
+        <description>This stores the cumulative days the record was in Booked stage</description>
+        <externalId>false</externalId>
+        <label>Booked Cumulative Days</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>CF_BookingFundingCumulativeDays__c</fullName>
+        <description>Used to store the Cumulative days of Booking / Funding stage</description>
+        <externalId>false</externalId>
+        <label>Booking / Funding Cumulative Days</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>CF_ClosingCumulativeDays__c</fullName>
+        <description>This stores the cumulative days the record was in Closing stage</description>
+        <externalId>false</externalId>
+        <label>Closing Cumulative Days</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>CF_CompleteCumulativeDays__c</fullName>
+        <description>This stores the cumulative days the record was in Complete stage</description>
+        <externalId>false</externalId>
+        <label>Complete Cumulative Days</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>CF_CreditDecisioningCumulativeDays__c</fullName>
+        <description>This stores the cumulative days the record was in Approval/CreditDecisioning stage</description>
+        <externalId>false</externalId>
+        <label>CreditDecisioning Cumulative Days</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>CF_CreditUnderwritingCumulativeDays__c</fullName>
+        <description>This stores the cumulative days the record was in Credit Underwriting stage</description>
+        <externalId>false</externalId>
+        <label>Credit Underwriting Cumulative Days</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>CF_CumulativeHold_Application_Processing__c</fullName>
+        <externalId>false</externalId>
+        <label>CumulativeHold_Application Processing</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>CF_CumulativeHold_Credit_Underwriting__c</fullName>
+        <externalId>false</externalId>
+        <label>CumulativeHold Credit Underwriting</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>CF_CumulativeHold_Qualification_Proposal__c</fullName>
+        <externalId>false</externalId>
+        <label>CumulativeHold_Qualification/Proposal</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>CF_Days_in_Application_Processing__c</fullName>
+        <externalId>false</externalId>
+        <formula>IF( CF_LoanStage__c = &apos;Application Processing&apos;,
+IF( ISNULL(  CF_ApplicationProcessingCumulative_Days__c ), (NOW() -  CF_LoanApplicationProcessingStageDate__c ) ,
+((NOW() - CF_LoanApplicationProcessingStageDate__c ) + CF_ApplicationProcessingCumulative_Days__c )),CF_ApplicationProcessingCumulative_Days__c )</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Days in Application Processing</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>CF_Days_in_Booked__c</fullName>
+        <externalId>false</externalId>
+        <formula>IF( CF_LoanStage__c = &apos;Booked&apos;,
+IF( ISNULL(   CF_BookedCumulativeDays__c ), (NOW() -   CF_LoanBookedStageDate__c ) ,
+((NOW() - CF_LoanBookedStageDate__c ) + CF_BookedCumulativeDays__c)),CF_BookedCumulativeDays__c)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Days in Booked</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>CF_Days_in_Closing__c</fullName>
+        <externalId>false</externalId>
+        <formula>IF( CF_LoanStage__c = &apos;Closing&apos;,
+IF( ISNULL(   CF_ClosingCumulativeDays__c ), (NOW() -   CF_LoanClosingStageDate__c ) ,
+((NOW() - CF_LoanClosingStageDate__c ) + CF_ClosingCumulativeDays__c	)),CF_ClosingCumulativeDays__c	)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Days in Closing</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>CF_Days_in_Complete__c</fullName>
+        <externalId>false</externalId>
+        <formula>IF( CF_LoanStage__c = &apos;Complete&apos;,
+IF( ISNULL(   CF_CompleteCumulativeDays__c ), (NOW() -   CF_LoanCompleteStageDate__c ) ,
+((NOW() - CF_LoanCompleteStageDate__c ) + CF_CompleteCumulativeDays__c)),CF_CompleteCumulativeDays__c)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Days in Complete</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>CF_Days_in_Credit_Decisioning__c</fullName>
+        <externalId>false</externalId>
+        <formula>IF( CF_LoanStage__c = &apos;Credit Decisioning&apos;,
+IF( ISNULL(   CF_CreditDecisioningCumulativeDays__c ), (NOW() -   CF_LoanCreditDecisioningStageDate__c ) ,
+((NOW() - CF_LoanCreditDecisioningStageDate__c ) + CF_CreditDecisioningCumulativeDays__c)),CF_CreditDecisioningCumulativeDays__c)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Days in Credit Decisioning</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>CF_Days_in_Credit_Underwriting__c</fullName>
+        <externalId>false</externalId>
+        <formula>IF( CF_LoanStage__c = &apos;Credit Underwriting&apos;,
+IF( ISNULL(   CF_CreditUnderwritingCumulativeDays__c ), (NOW() -   CF_LoanCreditUnderwritingStageDate__c ) ,
+((NOW() - CF_LoanCreditUnderwritingStageDate__c ) + CF_CreditUnderwritingCumulativeDays__c)),CF_CreditUnderwritingCumulativeDays__c)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Days in Credit Underwriting</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>CF_Days_in_Pre_Closing_Due_Diligence__c</fullName>
+        <externalId>false</externalId>
+        <formula>IF( CF_LoanStage__c = &apos;Pre-Closing Due Diligence&apos;,
+IF( ISNULL(   CF_PreClosingDDCumulativeDays__c ), (NOW() - CF_Loan_PreClosingDD_Stage_Date__c ) ,
+((NOW() - CF_Loan_PreClosingDD_Stage_Date__c ) + CF_PreClosingDDCumulativeDays__c)),CF_PreClosingDDCumulativeDays__c)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Days in Pre-Closing Due Diligence</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>CF_Days_in_Qualification_Proposal__c</fullName>
+        <externalId>false</externalId>
+        <formula>IF( CF_LoanStage__c = &apos;Qualification / Proposal&apos;,
+IF( ISNULL( CF_QualificationProposalCumulativeDays__c ), (NOW() -  CF_Loan_QualificationProposal_Stage_Date__c) ,
+((NOW() -  CF_Loan_QualificationProposal_Stage_Date__c) + CF_QualificationProposalCumulativeDays__c )),CF_QualificationProposalCumulativeDays__c )</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Days in Qualification / Proposal</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>CF_DocPrepReviewCumulativeDays__c</fullName>
+        <description>This stores the cumulative days the record was in DocPrep &amp; Review stage</description>
+        <externalId>false</externalId>
+        <label>DocPrep &amp; Review Cumulative Days</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>CF_HoldDays_in_Qualification_Proposal__c</fullName>
+        <externalId>false</externalId>
+        <formula>IF(  CF_LoanHoldStage__c  = &apos;Qualification / Proposal&apos;,
+IF(ISNULL( CF_LoanHoldEndTime__c ),
+IF( ISNULL(  CF_CumulativeHold_Qualification_Proposal__c  ), (NOW() -  CF_LoanHoldStartTime__c ) ,
+((NOW() - CF_LoanHoldStartTime__c ) + CF_CumulativeHold_Qualification_Proposal__c  )), CF_CumulativeHold_Qualification_Proposal__c  ),
+CF_CumulativeHold_Qualification_Proposal__c  )</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Hold Days in Qualification/Proposal</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>CF_Hold_Days_in_Application_Processing__c</fullName>
+        <externalId>false</externalId>
+        <formula>IF(  CF_LoanHoldStage__c  = &apos;Application Processing&apos;,
+IF(ISNULL( CF_LoanHoldEndTime__c ),
+IF( ISNULL(   CF_CumulativeHold_Application_Processing__c ), (NOW() -  CF_LoanHoldStartTime__c ) ,
+((NOW() - CF_LoanHoldStartTime__c ) + CF_CumulativeHold_Application_Processing__c )), CF_CumulativeHold_Application_Processing__c   ),
+CF_CumulativeHold_Application_Processing__c   )</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Hold Days in Application Processing</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>CF_Hold_Days_in_Credit_Underwriting__c</fullName>
+        <externalId>false</externalId>
+        <formula>IF(  CF_LoanHoldStage__c  = &apos;Credit Underwriting&apos;,
+IF(ISNULL( CF_LoanHoldEndTime__c ),
+IF( ISNULL(   CF_CumulativeHold_Credit_Underwriting__c ), (NOW() -  CF_LoanHoldStartTime__c ) ,
+((NOW() - CF_LoanHoldStartTime__c ) + CF_CumulativeHold_Credit_Underwriting__c )), CF_CumulativeHold_Credit_Underwriting__c ),
+CF_CumulativeHold_Credit_Underwriting__c )</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Hold Days in Credit Underwriting</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>CF_LoanApplicationProcessinStageDuration__c</fullName>
+        <description>Used to store Application Processing stage duration of Loan</description>
+        <externalId>false</externalId>
+        <formula>CF_LoanCreditUnderwritingStageDate__c -  CF_LoanApplicationProcessingStageDate__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Loan ApplicationProcessin Stage Duration</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>CF_LoanApplicationProcessingStageDate__c</fullName>
+        <description>Used to store Loan ApplicationProcessing Stage Date</description>
+        <encryptionScheme>None</encryptionScheme>
+        <externalId>false</externalId>
+        <label>Loan ApplicationProcessing Stage Date</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>DateTime</type>
+    </fields>
+    <fields>
+        <fullName>CF_LoanBookedStageDate__c</fullName>
+        <description>Used to store Loan Booked Stage Date</description>
+        <encryptionScheme>None</encryptionScheme>
+        <externalId>false</externalId>
+        <label>Loan Booked Stage Date</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>DateTime</type>
+    </fields>
+    <fields>
+        <fullName>CF_LoanBookingFundingStageDate__c</fullName>
+        <encryptionScheme>None</encryptionScheme>
+        <externalId>false</externalId>
+        <label>Loan Booking / Funding Stage Date</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>DateTime</type>
+    </fields>
+    <fields>
+        <fullName>CF_LoanClosingStageDate__c</fullName>
+        <description>Used to store Loan Closing Stage Date</description>
+        <encryptionScheme>None</encryptionScheme>
+        <externalId>false</externalId>
+        <label>Loan Closing Stage Date</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>DateTime</type>
+    </fields>
+    <fields>
+        <fullName>CF_LoanCompleteStageDate__c</fullName>
+        <description>Used to store Loan Complete Stage Date</description>
+        <encryptionScheme>None</encryptionScheme>
+        <externalId>false</externalId>
+        <label>Loan Complete Stage Date</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>DateTime</type>
+    </fields>
+    <fields>
+        <fullName>CF_LoanCreditDecisioningStageDate__c</fullName>
+        <description>Used to store Loan Approval/CreditDecisioning Stage Date</description>
+        <encryptionScheme>None</encryptionScheme>
+        <externalId>false</externalId>
+        <label>Loan CreditDecisioning Stage Date</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>DateTime</type>
+    </fields>
+    <fields>
+        <fullName>CF_LoanCreditUnderwritingStageDate__c</fullName>
+        <description>Used to store Loan Credit Underwriting Stage Date</description>
+        <encryptionScheme>None</encryptionScheme>
+        <externalId>false</externalId>
+        <label>Loan Credit Underwriting Stage Date</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>DateTime</type>
+    </fields>
+    <fields>
+        <fullName>CF_LoanDocPrepReviewStageDate__c</fullName>
+        <description>Used to store Loan DocPrep &amp; Review Stage Date</description>
+        <encryptionScheme>None</encryptionScheme>
+        <externalId>false</externalId>
+        <label>Loan DocPrep &amp; Review Stage Date</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>DateTime</type>
+    </fields>
+    <fields>
+        <fullName>CF_LoanHoldCumulativeDays__c</fullName>
+        <description>Used to store entire Loan Hold Cumulative Days</description>
+        <externalId>false</externalId>
+        <inlineHelpText>This will store the entire Loan Hold Cumulative Days</inlineHelpText>
+        <label>Loan Hold Cumulative Days</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>CF_LoanHoldCumulativeDuration__c</fullName>
+        <description>Used to store Loan hold cumulative duration</description>
+        <externalId>false</externalId>
+        <formula>IF(AND(NOT(ISBLANK( CF_LoanHoldStartTime__c)),NOT(ISBLANK( CF_LoanHoldEndTime__c ))),
+CF_LoanHoldEndTime__c - CF_LoanHoldStartTime__c,0)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Loan Hold Cumulative Duration</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>CF_LoanHoldEndTime__c</fullName>
+        <description>Used to store Loan Hold End Time</description>
+        <encryptionScheme>None</encryptionScheme>
+        <externalId>false</externalId>
+        <label>Loan Hold End Time</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>DateTime</type>
+    </fields>
+    <fields>
+        <fullName>CF_LoanHoldStageDays__c</fullName>
+        <description>Used to store Loan Hold days on each stage and resets when the stage changes</description>
+        <externalId>false</externalId>
+        <inlineHelpText>This will store the Loan Hold days on each stage and resets when the stage changes</inlineHelpText>
+        <label>Loan Hold Stage Days</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>CF_LoanHoldStage__c</fullName>
+        <description>This is to store the LoanHoldStage</description>
+        <encryptionScheme>None</encryptionScheme>
+        <externalId>false</externalId>
+        <label>LoanHoldStage</label>
+        <length>255</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>CF_LoanHoldStartTime__c</fullName>
+        <description>CLOS Pahse 2 - Used to store Loan Hold Start Time</description>
+        <encryptionScheme>None</encryptionScheme>
+        <externalId>false</externalId>
+        <label>Loan Hold Start Time</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>DateTime</type>
+    </fields>
+    <fields>
+        <fullName>CF_LoanStage__c</fullName>
+        <description>This field gets the value of Loan Stage</description>
+        <externalId>false</externalId>
+        <formula>TEXT(CF_Loan__r.LLC_BI__Stage__c)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Current Loan Stage</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>CF_Loan_PreClosingDD_Stage_Date__c</fullName>
+        <description>Used to store Loan Pre-Closing DD Stage Date</description>
+        <encryptionScheme>None</encryptionScheme>
+        <externalId>false</externalId>
+        <label>Loan Pre-Closing DD Stage Date</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>DateTime</type>
+    </fields>
+    <fields>
+        <fullName>CF_Loan_QualificationProposal_Stage_Date__c</fullName>
+        <description>Used to store loan Qualification / Proposal stage date</description>
+        <encryptionScheme>None</encryptionScheme>
+        <externalId>false</externalId>
+        <label>Loan Qualification / Proposal Stage Date</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>DateTime</type>
+    </fields>
+    <fields>
+        <fullName>CF_Loan__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <description>Used to store Loan Id</description>
+        <externalId>false</externalId>
+        <label>Loan</label>
+        <referenceTo>LLC_BI__Loan__c</referenceTo>
+        <relationshipLabel>SLAs</relationshipLabel>
+        <relationshipName>CO_SLAs</relationshipName>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>CF_PreClosingDDCumulativeDays__c</fullName>
+        <description>This stores the cumulative days the record was in Pre-Closing DD stage</description>
+        <externalId>false</externalId>
+        <label>Pre-Closing DD Cumulative Days</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>CF_PriorStageValue__c</fullName>
+        <encryptionScheme>None</encryptionScheme>
+        <externalId>false</externalId>
+        <label>Prior Stage Value</label>
+        <length>100</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>CF_Product_Package__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <description>Used to populate Product Package Id</description>
+        <externalId>false</externalId>
+        <label>Product Package</label>
+        <referenceTo>LLC_BI__Product_Package__c</referenceTo>
+        <relationshipLabel>SLAs</relationshipLabel>
+        <relationshipName>SLAs</relationshipName>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>CF_QualificationProposalCumulativeDays__c</fullName>
+        <description>This stores the cumulative days the record was in Qualification / Proposal stage</description>
+        <externalId>false</externalId>
+        <label>Qualification / Proposal Cumulative Days</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>SF_Days_in_Booking_Funding__c</fullName>
+        <externalId>false</externalId>
+        <formula>IF( CF_LoanStage__c = &apos;Booking / Funding&apos;,
+IF( ISNULL(   CF_BookingFundingCumulativeDays__c ), (NOW() -   CF_LoanBookingFundingStageDate__c ) ,
+((NOW() - CF_LoanBookingFundingStageDate__c ) + CF_BookingFundingCumulativeDays__c)),CF_BookingFundingCumulativeDays__c)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Days in Booking / Funding</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>SF_Days_in_Doc_Prep_Review__c</fullName>
+        <externalId>false</externalId>
+        <formula>IF( CF_LoanStage__c = &apos;Doc Prep &amp; Review&apos;,
+IF( ISNULL(   CF_DocPrepReviewCumulativeDays__c ), (NOW() -   CF_LoanDocPrepReviewStageDate__c ) ,
+((NOW() - CF_LoanDocPrepReviewStageDate__c ) + CF_DocPrepReviewCumulativeDays__c)),CF_DocPrepReviewCumulativeDays__c)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Days in Doc Prep &amp; Review</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <label>SLA</label>
+    <listViews>
+        <fullName>All</fullName>
+        <filterScope>Everything</filterScope>
+        <label>All</label>
+    </listViews>
+    <listViews>
+        <fullName>CF_All</fullName>
+        <columns>NAME</columns>
+        <columns>CF_Loan__c</columns>
+        <columns>CREATED_DATE</columns>
+        <columns>CREATEDBY_USER</columns>
+        <filterScope>Everything</filterScope>
+        <label>All</label>
+    </listViews>
+    <nameField>
+        <encryptionScheme>None</encryptionScheme>
+        <label>SLA Name</label>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+    </nameField>
+    <pluralLabel>SLAs</pluralLabel>
+    <searchLayouts/>
+    <sharingModel>ReadWrite</sharingModel>
+    <visibility>Public</visibility>
+</CustomObject>

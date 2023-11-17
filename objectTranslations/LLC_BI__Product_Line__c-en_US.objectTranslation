@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fieldSets>
+        <label><!-- Jack Henry jXchange Automated Booking --></label>
+        <name>JHJX__ABJX</name>
+    </fieldSets>
+    <fields>
+        <label><!-- Category --></label>
+        <name>LLC_BI__Category__c</name>
+        <picklistValues>
+            <masterLabel>Business</masterLabel>
+            <translation><!-- Business --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Consumer</masterLabel>
+            <translation><!-- Consumer --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Residential Mortgage</masterLabel>
+            <translation><!-- Residential Mortgage --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Interest Accrual Method --></label>
+        <name>LLC_BI__Interest_Accrual_Method__c</name>
+        <picklistValues>
+            <masterLabel>30_360</masterLabel>
+            <translation><!-- 30_360 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Actual_360</masterLabel>
+            <translation><!-- Actual_360 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Actual_365</masterLabel>
+            <translation><!-- Actual_365 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Actual_Actual</masterLabel>
+            <translation><!-- Actual_Actual --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- The number of non-Global Product Types with at least 1 Product that relate to the Product Line. --></help>
+        <label><!-- Non-Global Product Type Count --></label>
+        <name>LLC_BI__Non_Global_Product_Type_Count__c</name>
+    </fields>
+    <fields>
+        <help><!-- Select the Object that this product relates to. --></help>
+        <label><!-- Product Object --></label>
+        <name>LLC_BI__Product_Object__c</name>
+        <picklistValues>
+            <masterLabel>Deposit__c</masterLabel>
+            <translation><!-- Deposit__c --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Loan__c</masterLabel>
+            <translation><!-- Loan__c --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Treasury_Service__c</masterLabel>
+            <translation><!-- Treasury_Service__c --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- lookupKey --></label>
+        <name>LLC_BI__lookupKey__c</name>
+    </fields>
+</CustomObjectTranslation>

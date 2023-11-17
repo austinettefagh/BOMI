@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PermissionSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customPermissions>
+        <enabled>true</enabled>
+        <name>nCino__Conditions_AddConditionsPostApproval</name>
+    </customPermissions>
+    <description>Grants the Conditions - Add Conditions Post-Approval custom permission to a user.</description>
+    <hasActivationRequired>false</hasActivationRequired>
+    <label>Conditions - Add Conditions Post-Approval</label>
+</PermissionSet>

@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ApprovalProcess xmlns="http://soap.sforce.com/2006/04/metadata">
+    <active>true</active>
+    <allowRecall>false</allowRecall>
+    <allowedSubmitters>
+        <type>owner</type>
+    </allowedSubmitters>
+    <approvalPageFields>
+        <field>CaseNumber</field>
+        <field>Owner</field>
+        <field>Category__c</field>
+    </approvalPageFields>
+    <approvalStep>
+        <allowDelegate>false</allowDelegate>
+        <assignedApprover>
+            <approver>
+                <name>Underwriters</name>
+                <type>queue</type>
+            </approver>
+            <whenMultipleApprovers>FirstResponse</whenMultipleApprovers>
+        </assignedApprover>
+        <description>must be approved by underwriters</description>
+        <label>Underwriters</label>
+        <name>Underwriters</name>
+    </approvalStep>
+    <description>Must be approved by underwriters before proceeding to back office.</description>
+    <emailTemplate>unfiled$public/New_Dex_Back_Office_Case</emailTemplate>
+    <enableMobileDeviceAccess>false</enableMobileDeviceAccess>
+    <entryCriteria>
+        <criteriaItems>
+            <field>Case.Category__c</field>
+            <operation>equals</operation>
+            <value>Increase Credit Limit</value>
+        </criteriaItems>
+    </entryCriteria>
+    <finalApprovalActions>
+        <action>
+            <name>Back_office</name>
+            <type>FieldUpdate</type>
+        </action>
+        <action>
+            <name>Coserv_Email_notification_Backoffice</name>
+            <type>Alert</type>
+        </action>
+    </finalApprovalActions>
+    <finalApprovalRecordLock>false</finalApprovalRecordLock>
+    <finalRejectionActions>
+        <action>
+            <name>Rejection</name>
+            <type>FieldUpdate</type>
+        </action>
+    </finalRejectionActions>
+    <finalRejectionRecordLock>false</finalRejectionRecordLock>
+    <initialSubmissionActions>
+        <action>
+            <name>Underwriters</name>
+            <type>FieldUpdate</type>
+        </action>
+        <action>
+            <name>Underwriters_Alert</name>
+            <type>Alert</type>
+        </action>
+    </initialSubmissionActions>
+    <label>Credit Increase Approval</label>
+    <processOrder>1</processOrder>
+    <recordEditability>AdminOrCurrentApprover</recordEditability>
+    <showApprovalHistory>true</showApprovalHistory>
+</ApprovalProcess>

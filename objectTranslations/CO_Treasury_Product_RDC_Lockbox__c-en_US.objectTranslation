@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Scanner Information</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Scanner Informations</value>
+    </caseValues>
+    <fieldSets>
+        <label><!-- Scanner Information - RDC &amp; Lockbox --></label>
+        <name>FS_Scanner_Information_RDC_Lockbox</name>
+    </fieldSets>
+    <fields>
+        <label><!-- Active --></label>
+        <name>CF_Active__c</name>
+    </fields>
+    <fields>
+        <label><!-- Client Computer Type? --></label>
+        <name>CF_Client_Computer_Type__c</name>
+        <picklistValues>
+            <masterLabel>Apple</masterLabel>
+            <translation><!-- Apple --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Mobile - Android</masterLabel>
+            <translation><!-- Mobile - Android --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Mobile - Apple</masterLabel>
+            <translation><!-- Mobile - Apple --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Other</masterLabel>
+            <translation><!-- Other --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Windows</masterLabel>
+            <translation><!-- Windows --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Is Scanner in Stock? --></label>
+        <name>CF_Is_Scanner_in_Stock__c</name>
+        <picklistValues>
+            <masterLabel>No</masterLabel>
+            <translation><!-- No --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes</masterLabel>
+            <translation><!-- Yes --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Make/Model --></label>
+        <name>CF_Make_Model__c</name>
+        <picklistValues>
+            <masterLabel>Canon CR-190i lockbox check scanner</masterLabel>
+            <translation><!-- Canon CR-190i lockbox check scanner --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Canon DR-6010c lockbox form scanner</masterLabel>
+            <translation><!-- Canon DR-6010c lockbox form scanner --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Digital Check/CheXpress CX30 single-feed</masterLabel>
+            <translation><!-- Digital Check/CheXpress CX30 single-feed --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Digital Check/TellerScan TS240 multi-feed</masterLabel>
+            <translation><!-- Digital Check/TellerScan TS240 multi-feed --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Epson/CaptureOne multi-feed</masterLabel>
+            <translation><!-- Epson/CaptureOne multi-feed --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Epson/CaptureOne single-feed</masterLabel>
+            <translation><!-- Epson/CaptureOne single-feed --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Mobile</masterLabel>
+            <translation><!-- Mobile --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Other</masterLabel>
+            <translation><!-- Other --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Other Description --></label>
+        <name>CF_Other_Description__c</name>
+    </fields>
+    <fields>
+        <label><!-- Serial Number --></label>
+        <name>CF_Serial_Number__c</name>
+    </fields>
+    <fields>
+        <label><!-- Shipping Address --></label>
+        <name>CF_Shipping_Address__c</name>
+    </fields>
+    <fields>
+        <label><!-- Shipping City --></label>
+        <name>CF_Shipping_City__c</name>
+    </fields>
+    <fields>
+        <label><!-- Shipping Country --></label>
+        <name>CF_Shipping_Country__c</name>
+    </fields>
+    <fields>
+        <label><!-- Shipping Postal Code --></label>
+        <name>CF_Shipping_Postal_Code__c</name>
+    </fields>
+    <fields>
+        <label><!-- Shipping State --></label>
+        <name>CF_Shipping_State__c</name>
+    </fields>
+    <fields>
+        <label><!-- Shipping Street --></label>
+        <name>CF_Shipping_Street__c</name>
+    </fields>
+    <fields>
+        <label><!-- Treasury Service --></label>
+        <name>CF_Treasury_Service__c</name>
+        <relationshipLabel><!-- Scanner Informations --></relationshipLabel>
+    </fields>
+    <startsWith>Consonant</startsWith>
+    <validationRules>
+        <errorMessage><!-- Other Description must be populated if Client Computer Type is Other. --></errorMessage>
+        <name>CVR_Other_Description_is_Required</name>
+    </validationRules>
+</CustomObjectTranslation>

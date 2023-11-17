@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <label><!-- Audit Access --></label>
+        <name>nFORCE__Audit_Access__c</name>
+    </fields>
+    <fields>
+        <label><!-- Prevent Invalid Access --></label>
+        <name>nFORCE__Prevent_Invalid_Access__c</name>
+    </fields>
+</CustomObjectTranslation>

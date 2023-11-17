@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fieldSets>
+        <label><!-- Third Party Report Loan UI --></label>
+        <name>FS_Third_Party_Report_Loan_UI</name>
+    </fieldSets>
+    <fieldSets>
+        <label><!-- Credit Memo Standard Product Package --></label>
+        <name>LLC_BI__Standard_Product_Package_Credit_Memo</name>
+    </fieldSets>
+    <fields>
+        <label><!-- Building Size (Sq Ft) --></label>
+        <name>LLC_BI__Building_Size_Sq_Ft__c</name>
+    </fields>
+    <fields>
+        <label><!-- Current Property Use / Occupants --></label>
+        <name>LLC_BI__Current_Property_Use__c</name>
+    </fields>
+    <fields>
+        <help><!-- Dependent on &quot;Order Type&quot; being set as EPA. Values are RSRA, Phase 1, and Phase 2 --></help>
+        <label><!-- EPA Assessment Type --></label>
+        <name>LLC_BI__EPA_Assessment__c</name>
+        <picklistValues>
+            <masterLabel>Phase 1</masterLabel>
+            <translation><!-- Phase 1 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Phase 2</masterLabel>
+            <translation><!-- Phase 2 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>RSRA</masterLabel>
+            <translation><!-- RSRA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Transaction Screen</masterLabel>
+            <translation><!-- Transaction Screen --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- EPA Vendor --></label>
+        <name>LLC_BI__EPA_Vendor__c</name>
+        <picklistValues>
+            <masterLabel>AEI</masterLabel>
+            <translation><!-- AEI --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>PES</masterLabel>
+            <translation><!-- PES --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Loan --></label>
+        <name>LLC_BI__Loan__c</name>
+        <relationshipLabel><!-- Third Party Reports --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Order Type --></label>
+        <name>LLC_BI__Order_Type__c</name>
+        <picklistValues>
+            <masterLabel>As Built</masterLabel>
+            <translation><!-- As Built --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>As Constructed</masterLabel>
+            <translation><!-- As Constructed --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>As Is</masterLabel>
+            <translation><!-- As Is --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>EPA Assessment</masterLabel>
+            <translation><!-- EPA Assessment --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Previous Property Use(s) --></label>
+        <name>LLC_BI__Previous_Property_Use_s__c</name>
+    </fields>
+    <fields>
+        <label><!-- Property Address --></label>
+        <name>LLC_BI__Property_Address__c</name>
+    </fields>
+    <fields>
+        <label><!-- Property County --></label>
+        <name>LLC_BI__Property_County__c</name>
+    </fields>
+    <fields>
+        <label><!-- Property Description --></label>
+        <name>LLC_BI__Property_Description__c</name>
+    </fields>
+    <fields>
+        <label><!-- Property Status --></label>
+        <name>LLC_BI__Property_Status__c</name>
+        <picklistValues>
+            <masterLabel>Improved</masterLabel>
+            <translation><!-- Improved --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Land Only</masterLabel>
+            <translation><!-- Land Only --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Under Construction</masterLabel>
+            <translation><!-- Under Construction --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Property Type --></label>
+        <name>LLC_BI__Property_Type__c</name>
+        <picklistValues>
+            <masterLabel>Land and Building</masterLabel>
+            <translation><!-- Land and Building --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Raw Land</masterLabel>
+            <translation><!-- Raw Land --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Report Request Comments --></label>
+        <name>LLC_BI__Report_Detail__c</name>
+    </fields>
+    <fields>
+        <label><!-- Report Due Date --></label>
+        <name>LLC_BI__Report_Due_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Report Ordered --></label>
+        <name>LLC_BI__Report_Ordered__c</name>
+    </fields>
+    <fields>
+        <label><!-- Report Rcvd --></label>
+        <name>LLC_BI__Report_Rcvd__c</name>
+    </fields>
+    <fields>
+        <label><!-- Report Type --></label>
+        <name>LLC_BI__Report_Type__c</name>
+        <picklistValues>
+            <masterLabel>Business Valuation</masterLabel>
+            <translation><!-- Business Valuation --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CRE Appraisal</masterLabel>
+            <translation><!-- CRE Appraisal --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>EPA Assessment</masterLabel>
+            <translation><!-- EPA Assessment --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Equipment Appraisal</masterLabel>
+            <translation><!-- Equipment Appraisal --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Investment Property Appraisal</masterLabel>
+            <translation><!-- Investment Property Appraisal --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Residential Property Appraisal</masterLabel>
+            <translation><!-- Residential Property Appraisal --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Tax Verification</masterLabel>
+            <translation><!-- Tax Verification --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Site Contact Name --></label>
+        <name>LLC_BI__Site_Contact_Name__c</name>
+    </fields>
+    <fields>
+        <label><!-- Site Contact Phone --></label>
+        <name>LLC_BI__Site_Contact_Phone__c</name>
+    </fields>
+    <fields>
+        <label><!-- Site Size --></label>
+        <name>LLC_BI__Site_Size__c</name>
+    </fields>
+    <fields>
+        <label><!-- Year Built --></label>
+        <name>LLC_BI__Year_Built__c</name>
+    </fields>
+    <fields>
+        <label><!-- Zoning --></label>
+        <name>LLC_BI__Zoning__c</name>
+        <picklistValues>
+            <masterLabel>Agriculture</masterLabel>
+            <translation><!-- Agriculture --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Commerical</masterLabel>
+            <translation><!-- Commerical --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Industrial</masterLabel>
+            <translation><!-- Industrial --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Residential</masterLabel>
+            <translation><!-- Residential --></translation>
+        </picklistValues>
+    </fields>
+</CustomObjectTranslation>

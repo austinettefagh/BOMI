@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <help><!-- The date  this modification was sent to Colson for approval --></help>
+        <label><!-- Date to Colson --></label>
+        <name>LLC_BI__Date_to_Colson__c</name>
+    </fields>
+    <fields>
+        <label><!-- Effective Date --></label>
+        <name>LLC_BI__Effective_Date__c</name>
+    </fields>
+    <fields>
+        <help><!-- Please identify why this loan modification is being proposed --></help>
+        <label><!-- Explanation --></label>
+        <name>LLC_BI__Explanation__c</name>
+    </fields>
+    <fields>
+        <label><!-- Loan Number --></label>
+        <name>LLC_BI__Loan_Lookup_Key__c</name>
+    </fields>
+    <fields>
+        <help><!-- Please enter the specific details of the Loan Modification. --></help>
+        <label><!-- Loan Mod Detail --></label>
+        <name>LLC_BI__Loan_Mod_Detail__c</name>
+    </fields>
+    <fields>
+        <help><!-- Check this box when the loan modification has been sent --></help>
+        <label><!-- Loan Modification Sent --></label>
+        <name>LLC_BI__Loan_Modification_Sent__c</name>
+    </fields>
+    <fields>
+        <help><!-- Field Deprecated.  Replaced by Loan_Lookup_Key__c. --></help>
+        <label><!-- -D Loan Number --></label>
+        <name>LLC_BI__Loan_Number__c</name>
+    </fields>
+    <fields>
+        <label><!-- Loan --></label>
+        <name>LLC_BI__Loan__c</name>
+        <relationshipLabel><!-- Loan Modifications --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Mod Type --></label>
+        <name>LLC_BI__Mod_Type__c</name>
+        <picklistValues>
+            <masterLabel>Approval</masterLabel>
+            <translation><!-- Approval --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Notification</masterLabel>
+            <translation><!-- Notification --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Modification Type --></label>
+        <name>LLC_BI__Modification_Type__c</name>
+        <picklistValues>
+            <masterLabel>Correct Existing Note</masterLabel>
+            <translation><!-- Correct Existing Note --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Extend Amortization</masterLabel>
+            <translation><!-- Extend Amortization --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Increase Loan Amount</masterLabel>
+            <translation><!-- Increase Loan Amount --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Interest Only</masterLabel>
+            <translation><!-- Interest Only --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Interest Rate Reduction</masterLabel>
+            <translation><!-- Interest Rate Reduction --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Payment Deferral</masterLabel>
+            <translation><!-- Payment Deferral --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Reduce Loan Amount</masterLabel>
+            <translation><!-- Reduce Loan Amount --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- If applicable, please enter newly proposed amount --></help>
+        <label><!-- New Amount --></label>
+        <name>LLC_BI__New_Amount__c</name>
+    </fields>
+    <fields>
+        <help><!-- If applicable, please enter new proposed rate --></help>
+        <label><!-- New Rate --></label>
+        <name>LLC_BI__New_Rate__c</name>
+    </fields>
+    <fields>
+        <help><!-- Please identify what this modification hopes to accomplish --></help>
+        <label><!-- Objective --></label>
+        <name>LLC_BI__Objective__c</name>
+    </fields>
+    <fields>
+        <label><!-- Owner --></label>
+        <name>LLC_BI__Owner__c</name>
+        <picklistValues>
+            <masterLabel>Compliance</masterLabel>
+            <translation><!-- Compliance --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Credit</masterLabel>
+            <translation><!-- Credit --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Finance</masterLabel>
+            <translation><!-- Finance --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Loan Ops</masterLabel>
+            <translation><!-- Loan Ops --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Servicing</masterLabel>
+            <translation><!-- Servicing --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Status --></label>
+        <name>LLC_BI__Status__c</name>
+        <picklistValues>
+            <masterLabel>Approved</masterLabel>
+            <translation><!-- Approved --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>In Review</masterLabel>
+            <translation><!-- In Review --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Rejected</masterLabel>
+            <translation><!-- Rejected --></translation>
+        </picklistValues>
+    </fields>
+</CustomObjectTranslation>

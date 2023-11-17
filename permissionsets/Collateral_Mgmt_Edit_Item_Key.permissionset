@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PermissionSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <description>Permission to specific individuals to edit the Item Key field.   This field information will be generated in Silverlake upon the loan booking.</description>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>LLC_BI__Collateral__c.LLC_BI__lookupKey__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <hasActivationRequired>false</hasActivationRequired>
+    <label>Collateral Mgmt - Edit Item Key</label>
+    <objectPermissions>
+        <allowCreate>true</allowCreate>
+        <allowDelete>true</allowDelete>
+        <allowEdit>true</allowEdit>
+        <allowRead>true</allowRead>
+        <modifyAllRecords>true</modifyAllRecords>
+        <object>LLC_BI__Collateral__c</object>
+        <viewAllRecords>true</viewAllRecords>
+    </objectPermissions>
+    <recordTypeVisibilities>
+        <recordType>LLC_BI__Collateral__c.Collateral_Mgmt_Aircraft_NonTitled</recordType>
+        <visible>true</visible>
+    </recordTypeVisibilities>
+    <recordTypeVisibilities>
+        <recordType>LLC_BI__Collateral__c.Collateral_Mgmt_Financial_Instruments_Possessory</recordType>
+        <visible>true</visible>
+    </recordTypeVisibilities>
+    <recordTypeVisibilities>
+        <recordType>LLC_BI__Collateral__c.Collateral_Mgmt_Real_Estate</recordType>
+        <visible>true</visible>
+    </recordTypeVisibilities>
+    <recordTypeVisibilities>
+        <recordType>LLC_BI__Collateral__c.Collateral_Mgmt_Titled</recordType>
+        <visible>true</visible>
+    </recordTypeVisibilities>
+    <recordTypeVisibilities>
+        <recordType>LLC_BI__Collateral__c.Collateral_Mgmt_UCC</recordType>
+        <visible>true</visible>
+    </recordTypeVisibilities>
+</PermissionSet>

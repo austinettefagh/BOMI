@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <label><!-- Deposit Rate Structure --></label>
+        <name>LLC_BI__Deposit_Rate_Structure__c</name>
+        <relationshipLabel><!-- Tiers --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- End Days --></label>
+        <name>LLC_BI__End_Days__c</name>
+    </fields>
+    <fields>
+        <label><!-- High Balance --></label>
+        <name>LLC_BI__High_Balance__c</name>
+    </fields>
+    <fields>
+        <label><!-- Interest Rate --></label>
+        <name>LLC_BI__Interest_Rate__c</name>
+    </fields>
+    <fields>
+        <label><!-- Low Balance --></label>
+        <name>LLC_BI__Low_Balance__c</name>
+    </fields>
+    <fields>
+        <label><!-- Relationship Grade --></label>
+        <name>LLC_BI__Relationship_Grade__c</name>
+        <picklistValues>
+            <masterLabel>Gold</masterLabel>
+            <translation><!-- Gold --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>N/A</masterLabel>
+            <translation><!-- N/A --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Platinum</masterLabel>
+            <translation><!-- Platinum --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Silver</masterLabel>
+            <translation><!-- Silver --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Start Days --></label>
+        <name>LLC_BI__Start_Days__c</name>
+    </fields>
+    <fields>
+        <help><!-- Allows a list of tiers to display on a deposit record. --></help>
+        <label><!-- Tier Deposit --></label>
+        <name>LLC_BI__Tier_Deposit__c</name>
+        <relationshipLabel><!-- Deposit Tiers --></relationshipLabel>
+    </fields>
+    <fields>
+        <help><!-- The system enters a tier template in which the tier in context was cloned --></help>
+        <label><!-- Tier Template --></label>
+        <name>LLC_BI__Tier_Template__c</name>
+        <relationshipLabel><!-- Related Tiers --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- lookupKey --></label>
+        <name>LLC_BI__lookupKey__c</name>
+    </fields>
+</CustomObjectTranslation>

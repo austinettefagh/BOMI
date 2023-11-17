@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Group-UI</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Groups-UI</value>
+    </caseValues>
+    <fieldSets>
+        <label><!-- UI Config Builder Group List Config --></label>
+        <name>nFORCE__UI_Config_Builder_Group_List_Config</name>
+    </fieldSets>
+    <fieldSets>
+        <label><!-- UI Config Builder Group Topbar Config --></label>
+        <name>nFORCE__UI_Config_Builder_Group_Topbar_Config</name>
+    </fieldSets>
+    <fieldSets>
+        <label><!-- nCino User Interface Test --></label>
+        <name>nFORCE__nCino_User_Interface_Test</name>
+    </fieldSets>
+    <fields>
+        <help><!-- This is a custom field to describe when and where the Group-UI will be used. --></help>
+        <label><!-- Description --></label>
+        <name>Description_Custom__c</name>
+    </fields>
+    <fields>
+        <help><!-- Select a record to associate with this questionnaire. --></help>
+        <label><!-- Answer Context --></label>
+        <name>nFORCE__Answer_Context__c</name>
+        <picklistValues>
+            <masterLabel>Business Account</masterLabel>
+            <translation><!-- Business Account --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Deposit</masterLabel>
+            <translation><!-- Deposit --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Individual Account</masterLabel>
+            <translation><!-- Individual Account --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Loan</masterLabel>
+            <translation><!-- Loan --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- Enter the group portion of the requested app.
+
+E.g. If the requested app is &apos;loan.change-product&apos;, then the group portion is &apos;loan&apos;. --></help>
+        <label><!-- App --></label>
+        <name>nFORCE__App__c</name>
+    </fields>
+    <fields>
+        <help><!-- Indicate the category to which this group belongs. --></help>
+        <label><!-- Category --></label>
+        <name>nFORCE__Category__c</name>
+        <picklistValues>
+            <masterLabel>Customer Dashboard</masterLabel>
+            <translation><!-- Customer Dashboard --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Online Application</masterLabel>
+            <translation><!-- Online Application --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Default Collapse Parent Navigation --></label>
+        <name>nFORCE__Default_Collapse_Parent_Navigation__c</name>
+    </fields>
+    <fields>
+        <help><!-- Enter a description of what this group does and how the system uses this group. --></help>
+        <label><!-- Description --></label>
+        <name>nFORCE__Description__c</name>
+    </fields>
+    <fields>
+        <label><!-- Is Archived --></label>
+        <name>nFORCE__Is_Archived__c</name>
+    </fields>
+    <fields>
+        <label><!-- Is Questionnaire --></label>
+        <name>nFORCE__Is_Questionnaire__c</name>
+    </fields>
+    <fields>
+        <help><!-- Select a layout for this group. --></help>
+        <label><!-- Layout --></label>
+        <name>nFORCE__Layout__c</name>
+        <relationshipLabel><!-- Groups --></relationshipLabel>
+    </fields>
+    <fields>
+        <help><!-- The name of the Group that this group is a Sub-Group of. --></help>
+        <label><!-- Parent Group --></label>
+        <name>nFORCE__Parent_Group__c</name>
+        <relationshipLabel><!-- Parent Group --></relationshipLabel>
+    </fields>
+    <fields>
+        <help><!-- The Screen used to render the content of this group. In the nCino UI this Screen will render in the Topbar. --></help>
+        <label><!-- Screen --></label>
+        <name>nFORCE__Screen__c</name>
+        <relationshipLabel><!-- Groups --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Taxonomy ID --></label>
+        <name>nFORCE__Taxonomy_Id__c</name>
+    </fields>
+    <fields>
+        <label><!-- lookupKey --></label>
+        <name>nFORCE__lookupKey__c</name>
+    </fields>
+    <fields>
+        <help><!-- Enter a defined Context Type which this Group will be associated to. For primary applicants, enter Applicant. For co-owners added to a deposit, enter Owner. For co-borrowers or guarantors added to a small business loan, enter Other Involved (Individual). --></help>
+        <label><!-- Context Type --></label>
+        <name>nPortal__Context_Type__c</name>
+    </fields>
+    <fields>
+        <help><!-- Check this field to allow access to this Group and related records for UI in Customer Portal. --></help>
+        <label><!-- Is Portal Enabled --></label>
+        <name>nPortal__Is_Portal_Enabled__c</name>
+    </fields>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

@@ -1,0 +1,22 @@
+.border-bottom {
+    border-bottom: 1px solid #d9dbdd;
+}
+.slds-box {
+    border-radius: 0px;
+}
+
+.slds-form-element_stacked:not(.slds-is-editing) {
+    padding: 0px;
+}
+
+.hide-scrollbar {
+    overflow-y: hidden;
+}
+
+.min-size {
+    min-height: 100px;
+}
+
+.scanner-min-size {
+    min-height: 135px;
+}

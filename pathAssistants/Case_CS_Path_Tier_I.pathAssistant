@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PathAssistant xmlns="http://soap.sforce.com/2006/04/metadata">
+    <active>true</active>
+    <entityName>Case</entityName>
+    <fieldName>Status</fieldName>
+    <masterLabel>Case CS Path Tier I</masterLabel>
+    <pathAssistantSteps>
+        <info>&lt;p&gt;&lt;span style=&quot;font-size: 13px;&quot;&gt;An &amp;quot;Active&amp;quot; status is a case where the relationship has been provided with the customer&amp;#39;s information and the bank is awaiting feedback on the customer&amp;#39;s request.&lt;/span&gt;&lt;/p&gt;</info>
+        <picklistValueName>Active</picklistValueName>
+    </pathAssistantSteps>
+    <pathAssistantSteps>
+        <info>&lt;p&gt;&lt;span style=&quot;font-size: 13px;&quot;&gt;A &amp;quot;Closed&amp;quot; status indicates that the case request has been fully worked and does not require further action.&lt;/span&gt;&lt;/p&gt;</info>
+        <picklistValueName>Closed</picklistValueName>
+    </pathAssistantSteps>
+    <pathAssistantSteps>
+        <info>&lt;p&gt;&lt;span style=&quot;font-size: 13px;&quot;&gt;An &amp;quot;Escalated&amp;quot; status indicates a case that has been sent to a supervisor/manager or other department for review before final action can be taken.&lt;/span&gt;&lt;/p&gt;</info>
+        <picklistValueName>Escalated</picklistValueName>
+    </pathAssistantSteps>
+    <pathAssistantSteps>
+        <info>&lt;p&gt;&lt;span style=&quot;font-size: 13px;&quot;&gt;An &amp;quot;In-Review&amp;quot; status indicates that the requested information from the relationship has been received and the complaint management team is reviewing that information and working on a complaint response.&lt;/span&gt;&lt;/p&gt;</info>
+        <picklistValueName>In_Review_with_TBOM</picklistValueName>
+    </pathAssistantSteps>
+    <pathAssistantSteps>
+        <info>&lt;p&gt;&lt;span style=&quot;font-size: 13px;&quot;&gt;A &amp;quot;New&amp;quot; case is one that has yet to be assigned and/or worked by a complaint management team member.&lt;/span&gt;&lt;/p&gt;</info>
+        <picklistValueName>New</picklistValueName>
+    </pathAssistantSteps>
+    <pathAssistantSteps>
+        <info>&lt;p&gt;&lt;span style=&quot;font-size: 13px;&quot;&gt;A &amp;quot;Pending&amp;quot; case is where we need additional information from the customer or relationship before the case can be fully worked. In this instance, it is possible that a request has been sent to the customer or relationship requesting additional information. Please check case notes or Chatter comments.&lt;/span&gt;&lt;/p&gt;</info>
+        <picklistValueName>Pending</picklistValueName>
+    </pathAssistantSteps>
+    <pathAssistantSteps>
+        <info>&lt;p&gt;&lt;span style=&quot;font-size: 13px;&quot;&gt;A &amp;quot;Re-Opened&amp;quot; status indicates a response was previously provided and the requesting party followed up with additional questions on the complaint response.&lt;/span&gt;&lt;/p&gt;</info>
+        <picklistValueName>Re-Opened</picklistValueName>
+    </pathAssistantSteps>
+    <pathAssistantSteps>
+        <info>&lt;p&gt;&lt;span style=&quot;font-size: 13px;&quot;&gt;An &amp;quot;Unknown Relationship&amp;quot; status means there is no readily identifiable servicer in the documentation or details provided and a relationship search to locate the customer&amp;#39;s account is underway.&lt;/span&gt;&lt;/p&gt;</info>
+        <picklistValueName>Unknown Relationship</picklistValueName>
+    </pathAssistantSteps>
+    <recordTypeName>Contract_Services_Tier_I</recordTypeName>
+</PathAssistant>

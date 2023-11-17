@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <help><!-- Enter the borrower’s additional personal expenses. Must be a numerical value. --></help>
+        <label><!-- Additional Personal Expenses --></label>
+        <name>LLC_BI__Additional_Personal_Expenses__c</name>
+    </fields>
+    <fields>
+        <label><!-- CoBorrower Current Debt Service --></label>
+        <name>LLC_BI__CoBorrower_Current_Debt_Service__c</name>
+    </fields>
+    <fields>
+        <label><!-- CoBorrower Current Exposure --></label>
+        <name>LLC_BI__CoBorrower_Current_Exposure__c</name>
+    </fields>
+    <fields>
+        <label><!-- CoBorrower Current Unfunded Commitments --></label>
+        <name>LLC_BI__CoBorrower_Current_Unfunded_Commitments__c</name>
+    </fields>
+    <fields>
+        <label><!-- CoBorrower Proposed Debt Service --></label>
+        <name>LLC_BI__CoBorrower_Proposed_Debt_Service__c</name>
+    </fields>
+    <fields>
+        <label><!-- CoBorrower Proposed Exposure --></label>
+        <name>LLC_BI__CoBorrower_Proposed_Exposure__c</name>
+    </fields>
+    <fields>
+        <label><!-- Total Current Debt Service --></label>
+        <name>LLC_BI__Current_Debt_Service__c</name>
+    </fields>
+    <fields>
+        <label><!-- Total Current Exposure --></label>
+        <name>LLC_BI__Current_Exposure__c</name>
+    </fields>
+    <fields>
+        <label><!-- Total Current Unfunded Commitments --></label>
+        <name>LLC_BI__Current_Unfunded_Commitments__c</name>
+    </fields>
+    <fields>
+        <label><!-- -D End Date --></label>
+        <name>LLC_BI__End_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Guarantor Current Debt Service --></label>
+        <name>LLC_BI__Guarantor_Current_Debt_Service__c</name>
+    </fields>
+    <fields>
+        <label><!-- Guarantor Current Exposure --></label>
+        <name>LLC_BI__Guarantor_Current_Exposure__c</name>
+    </fields>
+    <fields>
+        <label><!-- Guarantor Current Unfunded Commitments --></label>
+        <name>LLC_BI__Guarantor_Current_Unfunded_Commitments__c</name>
+    </fields>
+    <fields>
+        <label><!-- Guarantor Proposed Debt Service --></label>
+        <name>LLC_BI__Guarantor_Proposed_Debt_Service__c</name>
+    </fields>
+    <fields>
+        <label><!-- Guarantor Proposed Exposure --></label>
+        <name>LLC_BI__Guarantor_Proposed_Exposure__c</name>
+    </fields>
+    <fields>
+        <help><!-- Enter the price of the average monthly heating cost. Must be a numerical value. --></help>
+        <label><!-- Heating Expenses --></label>
+        <name>LLC_BI__Heating_Expenses__c</name>
+    </fields>
+    <fields>
+        <help><!-- Enter the amount of the borrower’s average monthly living expenses. Must be a numerical value. --></help>
+        <label><!-- Living Expenses --></label>
+        <name>LLC_BI__Living_Expenses__c</name>
+    </fields>
+    <fields>
+        <label><!-- Borrower Current Debt Service --></label>
+        <name>LLC_BI__Primary_Current_Debt_Service__c</name>
+    </fields>
+    <fields>
+        <label><!-- Borrower Current Exposure --></label>
+        <name>LLC_BI__Primary_Current_Exposure__c</name>
+    </fields>
+    <fields>
+        <label><!-- Borrower Current Unfunded Commitments --></label>
+        <name>LLC_BI__Primary_Current_Unfunded_Commitments__c</name>
+    </fields>
+    <fields>
+        <label><!-- Borrower Proposed Debt Service --></label>
+        <name>LLC_BI__Primary_Proposed_Debt_Service__c</name>
+    </fields>
+    <fields>
+        <label><!-- Borrower Proposed Exposure --></label>
+        <name>LLC_BI__Primary_Proposed_Exposure__c</name>
+    </fields>
+    <fields>
+        <label><!-- Total Proposed Debt Service --></label>
+        <name>LLC_BI__Proposed_Debt_Service__c</name>
+    </fields>
+    <fields>
+        <label><!-- Total Proposed Exposure --></label>
+        <name>LLC_BI__Proposed_Exposure__c</name>
+    </fields>
+    <fields>
+        <label><!-- Related Entity Current Debt Service --></label>
+        <name>LLC_BI__Rel_Entity_Current_Debt_Service__c</name>
+    </fields>
+    <fields>
+        <label><!-- Related Entity Current Exposure --></label>
+        <name>LLC_BI__Rel_Entity_Current_Exposure__c</name>
+    </fields>
+    <fields>
+        <label><!-- Related Entity Unfunded Commitments --></label>
+        <name>LLC_BI__Rel_Entity_Current_Unfunded_Commitments__c</name>
+    </fields>
+    <fields>
+        <label><!-- Related Entity Proposed Debt Service --></label>
+        <name>LLC_BI__Rel_Entity_Proposed_Debt_Service__c</name>
+    </fields>
+    <fields>
+        <label><!-- Related Entity Proposed Exposure --></label>
+        <name>LLC_BI__Rel_Entity_Proposed_Exposure__c</name>
+    </fields>
+    <fields>
+        <label><!-- -D Beginning Date --></label>
+        <name>LLC_BI__Start_Date__c</name>
+    </fields>
+    <validationRules>
+        <errorMessage><!-- - - DEPRECATED- -  The beginning date cannot be after the end date. --></errorMessage>
+        <name>LLC_BI__start_date_cannot_be_after_end_date</name>
+    </validationRules>
+</CustomObjectTranslation>

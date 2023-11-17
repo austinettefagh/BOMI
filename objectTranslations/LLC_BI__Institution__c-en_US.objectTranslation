@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <label><!-- Brand --></label>
+        <name>LLC_BI__Brand__c</name>
+        <relationshipLabel><!-- Institutions --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Community Extension --></label>
+        <name>LLC_BI__Community_Extension__c</name>
+    </fields>
+    <fields>
+        <label><!-- Community Name --></label>
+        <name>LLC_BI__Community_Name__c</name>
+    </fields>
+    <fields>
+        <label><!-- Community Network ID --></label>
+        <name>LLC_BI__Community_Network_ID__c</name>
+    </fields>
+    <fields>
+        <label><!-- Lookup Key --></label>
+        <name>LLC_BI__Look_Up_Key__c</name>
+    </fields>
+    <fields>
+        <label><!-- -D Lookup Key --></label>
+        <name>LLC_BI__LookupKey__c</name>
+    </fields>
+    <fields>
+        <help><!-- Enter the API name of the permission set used to assign nCino Community Users access to a specific institution. --></help>
+        <label><!-- Permission Set --></label>
+        <name>LLC_BI__Permission_Set__c</name>
+    </fields>
+</CustomObjectTranslation>

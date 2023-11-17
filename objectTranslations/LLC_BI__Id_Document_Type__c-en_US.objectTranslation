@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fieldSets>
+        <label><!-- Jack Henry jXchange Automated Booking --></label>
+        <name>JHJX__ABJX</name>
+    </fieldSets>
+    <fields>
+        <label><!-- Agency --></label>
+        <name>LLC_BI__Agency__c</name>
+        <picklistValues>
+            <masterLabel>DMV</masterLabel>
+            <translation><!-- DMV --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Government</masterLabel>
+            <translation><!-- Government --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- Enter a number to determine the display order of the ID Document. --></help>
+        <label><!-- Display Order --></label>
+        <name>LLC_BI__Display_Order__c</name>
+    </fields>
+    <fields>
+        <help><!-- Enter the ID Document name to display in place of the ID Document Type name. --></help>
+        <label><!-- External ID Document Name --></label>
+        <name>LLC_BI__External_Id_Document_Name__c</name>
+    </fields>
+    <fields>
+        <help><!-- Select the document category. --></help>
+        <label><!-- ID Document Category --></label>
+        <name>LLC_BI__ID_Document_Category__c</name>
+        <picklistValues>
+            <masterLabel>Driver License</masterLabel>
+            <translation><!-- Driver License --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ID Card</masterLabel>
+            <translation><!-- ID Card --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Passport</masterLabel>
+            <translation><!-- Passport --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- Select the ID Document type to help the system determine how many sides need to be captured. --></help>
+        <label><!-- ID Document Sides --></label>
+        <name>LLC_BI__ID_Document_Sides__c</name>
+    </fields>
+    <fields>
+        <help><!-- Enter the image URL for an image hosted online. If that does not work, upload an image to Documents, set image visibility to public, and then enter the image URL. --></help>
+        <label><!-- ID Document Image (Back) --></label>
+        <name>LLC_BI__Id_Document_Image_Back__c</name>
+    </fields>
+    <fields>
+        <help><!-- Enter the image URL for an image hosted online. If that does not work, upload an image to Documents, set image visibility to public, and then enter the image URL. --></help>
+        <label><!-- ID Document Image (Front) --></label>
+        <name>LLC_BI__Id_Document_Image_Front__c</name>
+    </fields>
+    <fields>
+        <label><!-- Id Document Requirement --></label>
+        <name>LLC_BI__Id_Document_Requirement__c</name>
+        <relationshipLabel><!-- Id Document Types --></relationshipLabel>
+    </fields>
+    <fields>
+        <help><!-- Select the checkbox to enable the ID Document. --></help>
+        <label><!-- Is Portal Enabled --></label>
+        <name>LLC_BI__Is_Portal_Enabled__c</name>
+    </fields>
+    <fields>
+        <help><!-- Enter the name of the placeholder. --></help>
+        <label><!-- Placeholder Name --></label>
+        <name>LLC_BI__Placeholder_Name__c</name>
+    </fields>
+    <fields>
+        <help><!-- Select this functionality to guide you through the upload process for ID Documents. --></help>
+        <label><!-- Quick Tips --></label>
+        <name>LLC_BI__Quick_Tips__c</name>
+    </fields>
+    <fields>
+        <label><!-- Screen Section --></label>
+        <name>LLC_BI__Screen_Section__c</name>
+        <relationshipLabel><!-- Id Document Types --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- lookupKey --></label>
+        <name>LLC_BI__lookupKey__c</name>
+    </fields>
+</CustomObjectTranslation>

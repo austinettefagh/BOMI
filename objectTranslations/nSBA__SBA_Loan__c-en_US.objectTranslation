@@ -1,0 +1,291 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <help><!-- Users manually populate this optional checkbox field to indicate the aging of accounts receivable and accounts payable, and inventory reports (dated within 180 days of application). By default, it is false. --></help>
+        <label><!-- Account Receivable Payable and Inventory --></label>
+        <name>nSBA__Account_Receivable_Payable_and_Inventory__c</name>
+    </fields>
+    <fields>
+        <help><!-- The field is used to reference the Application object. --></help>
+        <label><!-- Application --></label>
+        <name>nSBA__Application__c</name>
+        <relationshipLabel><!-- SBA Loan with Application --></relationshipLabel>
+    </fields>
+    <fields>
+        <help><!-- This field is used to summarize the Assets Source for the Borrower&apos;s Injection. --></help>
+        <label><!-- Assets Source --></label>
+        <name>nSBA__Assets_Source__c</name>
+    </fields>
+    <fields>
+        <help><!-- Users manually populate this optional checkbox field to indicate if the Lender has followed International Trade or Export Express Business Acquisition SOP. By default, it is false. --></help>
+        <label><!-- Business Acquisition SOP Followed --></label>
+        <name>nSBA__Business_Acquisition_SOP_Followed__c</name>
+    </fields>
+    <fields>
+        <help><!-- This field is used to summarize the Cash Source for the Borrower&apos;s Injection. --></help>
+        <label><!-- Cash Source --></label>
+        <name>nSBA__Cash_Source__c</name>
+    </fields>
+    <fields>
+        <help><!-- Users manually populate this optional percent field to provide a Base Interest Rate of the first part of the complex interest rate. By default, it is empty. --></help>
+        <label><!-- Complex Interest Base Rate 1 --></label>
+        <name>nSBA__Complex_Interest_Base_Rate_1__c</name>
+    </fields>
+    <fields>
+        <help><!-- Users manually populate this optional percent field to provide a Base Interest Rate of the second part of the complex interest rate. By default, it is empty. --></help>
+        <label><!-- Complex Interest Base Rate 2 --></label>
+        <name>nSBA__Complex_Interest_Base_Rate_2__c</name>
+    </fields>
+    <fields>
+        <help><!-- Users manually populate this optional checkbox field to indicate the credit elsewhere analysis documentation is provided. By default, it is false. --></help>
+        <label><!-- Credit Elsewhere Analysis Documentation --></label>
+        <name>nSBA__Credit_Elsewhere_Analysis_Documentation__c</name>
+    </fields>
+    <fields>
+        <help><!-- This field is used to specify the disbursement type of the loan on SBA Form 1050. --></help>
+        <label><!-- Disbursement Type --></label>
+        <name>nSBA__Disbursement_Type__c</name>
+        <picklistValues>
+            <masterLabel>First Disbursement</masterLabel>
+            <translation><!-- First Disbursement --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Full Disbursement</masterLabel>
+            <translation><!-- Full Disbursement --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Subsequent Disbursement</masterLabel>
+            <translation><!-- Subsequent Disbursement --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- Users manually populate this optional checkbox field to indicate EPC compliance with all program requirements related to EPC/OC loans. By default, it is false. --></help>
+        <label><!-- EPC Complies With All Requirements --></label>
+        <name>nSBA__EPC_Complies_With_All_Requirements__c</name>
+    </fields>
+    <fields>
+        <help><!-- Users manually populate this optional checkbox field to indicate EWCP is authorized to conduct business. By default, it is false. --></help>
+        <label><!-- EWCP Authorized to Conduct Business --></label>
+        <name>nSBA__EWCP_Authorized_to_Conduct_Business__c</name>
+    </fields>
+    <fields>
+        <help><!-- Users manually populate this optional checkbox field to indicate the loan follows EWCP collateral requirements. By default, it is false. --></help>
+        <label><!-- EWCP Collateral Requirements Followed --></label>
+        <name>nSBA__EWCP_Collateral_Requirements_Followed__c</name>
+    </fields>
+    <fields>
+        <help><!-- Users manually populate this optional checkbox field to indicate the Use of Proceeds is EWCP eligible. By default, it is false. --></help>
+        <label><!-- EWCP Eligible Use Of Proceeds --></label>
+        <name>nSBA__EWCP_Eligible_Use_Of_Proceeds__c</name>
+    </fields>
+    <fields>
+        <help><!-- Users manually populate this optional checkbox field to indicate EWCP Indirect Export Documentation is provided. By default, it is false. --></help>
+        <label><!-- EWCP Indirect Export Documentation --></label>
+        <name>nSBA__EWCP_Indirect_Export_Documentation__c</name>
+    </fields>
+    <fields>
+        <help><!-- Users manually populate this optional checkbox field to indicate Lender has followed EWCP refinance requirements. By default, it is false. --></help>
+        <label><!-- EWCP Refinance Requirements Followed --></label>
+        <name>nSBA__EWCP_Refinance_Requirements_Followed__c</name>
+    </fields>
+    <fields>
+        <help><!-- Users manually populate this optional checkbox field to indicate an export cash flow is provided. By default, it is false. --></help>
+        <label><!-- Export Cash Flow Provided --></label>
+        <name>nSBA__Export_Cash_Flow_Provided__c</name>
+    </fields>
+    <fields>
+        <help><!-- Users manually populate this optional checkbox field to indicate if an export credit insurance-related material (policy, application, buyer credit limit) is provided. By default, it is false. --></help>
+        <label><!-- Export Credit Insurance Material --></label>
+        <name>nSBA__Export_Credit_Insurance_Material__c</name>
+    </fields>
+    <fields>
+        <help><!-- Users manually populate this optional checkbox field to indicate copy of letter(s) of credit and/or copy of buyer&apos;s order/contract is provided. By default, it is false. --></help>
+        <label><!-- Export LOC or Buyer Contract Provided --></label>
+        <name>nSBA__Export_LOC_or_Buyer_Contract_Provided__c</name>
+    </fields>
+    <fields>
+        <help><!-- Users manually populate this optional checkbox field to indicate a copy of export license(s) is provided. By default, it is false. --></help>
+        <label><!-- Export License Copy Provided --></label>
+        <name>nSBA__Export_License_Copy_Provided__c</name>
+    </fields>
+    <fields>
+        <help><!-- Users manually populate this optional checkbox field to indicate the small business concern has demonstrated that the loan will allow it to improve its competitive position. By default, it is false. --></help>
+        <label><!-- ITL Improve Market Position --></label>
+        <name>nSBA__ITL_Improve_Market_Position__c</name>
+    </fields>
+    <fields>
+        <help><!-- Users manually populate this optional checkbox field to indicate if the loan is EWCP asset based. By default, it is false. --></help>
+        <label><!-- Is EWCP Asset Based Loan --></label>
+        <name>nSBA__Is_EWCP_Asset_Based_Loan__c</name>
+    </fields>
+    <fields>
+        <help><!-- Users manually populate this optional checkbox field to indicate if the loan is EWCP transaction based. By default, it is false. --></help>
+        <label><!-- Is EWCP Transaction Based Loan --></label>
+        <name>nSBA__Is_EWCP_Transaction_Based_Loan__c</name>
+    </fields>
+    <fields>
+        <help><!-- Users manually populate this optional checkbox field to indicate if the applicant is to hire a management company for day-to-day operations. By default, it is false. --></help>
+        <label><!-- Management for Day to Day Operations --></label>
+        <name>nSBA__Management_for_Day_to_Day_Operations__c</name>
+    </fields>
+    <fields>
+        <help><!-- This field is used to summarize the Other for the Borrower&apos;s Injection. --></help>
+        <label><!-- Other for Borrower&apos;s Injection --></label>
+        <name>nSBA__Other_for_Borrowers_Injection__c</name>
+    </fields>
+    <fields>
+        <help><!-- Users manually populate this optional checkbox field to indicate the plan to use ROBS for equity injection. By default, it is false. --></help>
+        <label><!-- Plan to Use ROBS for Equity Injection --></label>
+        <name>nSBA__Plan_to_Use_ROBS_for_Equity_Injection__c</name>
+    </fields>
+    <fields>
+        <help><!-- This field is used to summarize the Settlement Charges Amount Disbursed on SBA Form 1050. --></help>
+        <label><!-- Settlement Charges Amount Disbursed --></label>
+        <name>nSBA__Settlement_Charges_Amount_Disbursed__c</name>
+    </fields>
+    <fields>
+        <help><!-- This field is used to summarize the Settlement Charges Amount Remaining on SBA Form 1050. --></help>
+        <label><!-- Settlement Charges Amount Remaining --></label>
+        <name>nSBA__Settlement_Charges_Amount_Remaining__c</name>
+    </fields>
+    <fields>
+        <help><!-- This field is used to provide the name of payee of Settlement Charges on SBA Form 1050. --></help>
+        <label><!-- Settlement Charges Name of Payee --></label>
+        <name>nSBA__Settlement_Charges_Name_of_Payee__c</name>
+    </fields>
+    <fields>
+        <help><!-- This field is used to summarize the Total Construction Amount Disbursed on SBA Form 1050. --></help>
+        <label><!-- Total Construction Amount Disbursed --></label>
+        <name>nSBA__Total_Construction_Amount_Disbursed__c</name>
+    </fields>
+    <fields>
+        <help><!-- This field is used to summarize the Total Construction Authorized Amount Remaining on SBA Form 1050. --></help>
+        <label><!-- Total Construction Amount Remaining --></label>
+        <name>nSBA__Total_Construction_Amount_Remaining__c</name>
+    </fields>
+    <fields>
+        <help><!-- This field is used to summarize the Applicant Equity Injection on Total Construction for Use of Proceeds. --></help>
+        <label><!-- Total Construction Equity Injection --></label>
+        <name>nSBA__Total_Construction_Equity_Injection__c</name>
+    </fields>
+    <fields>
+        <help><!-- This field is used to summarize the Total Construction Name of Payees on SBA Form 1050. --></help>
+        <label><!-- Total Construction Name of Payees --></label>
+        <name>nSBA__Total_Construction_Name_of_Payees__c</name>
+    </fields>
+    <fields>
+        <help><!-- This field is used to summarize the Other Financing on Total Construction for Use of Proceeds. --></help>
+        <label><!-- Total Construction Other Financing --></label>
+        <name>nSBA__Total_Construction_Other_Financing__c</name>
+    </fields>
+    <fields>
+        <help><!-- This field is used to summarize the Proceed Amount on Total Construction for Use of Proceeds. --></help>
+        <label><!-- Total Construction Proceed Amount --></label>
+        <name>nSBA__Total_Construction_Proceed_Amount__c</name>
+    </fields>
+    <fields>
+        <help><!-- This field is used to summarize the Total for Line on Total Construction for Use of Proceeds. --></help>
+        <label><!-- Total Construction Total for Line --></label>
+        <name>nSBA__Total_Construction_Total_for_Line__c</name>
+    </fields>
+    <fields>
+        <help><!-- This field is used to summarize the Applicant Equity Injection on Pay Notes Payable by SID and by Other Lender for Use of Proceeds. --></help>
+        <label><!-- Total Pay Notes Both Equity Injection --></label>
+        <name>nSBA__Total_Pay_Notes_Both_Equity_Injection__c</name>
+    </fields>
+    <fields>
+        <help><!-- This field is used to summarize the Other Financing on Pay Notes Payable by SID and by Other Lender for Use of Proceeds. --></help>
+        <label><!-- Total Pay Notes Both Other Financing --></label>
+        <name>nSBA__Total_Pay_Notes_Both_Other_Financing__c</name>
+    </fields>
+    <fields>
+        <help><!-- This field is used to summarize the Proceed Amount on Pay Notes Payable by SID and by Other Lender for Use of Proceeds. --></help>
+        <label><!-- Total Pay Notes Both Proceed Amount --></label>
+        <name>nSBA__Total_Pay_Notes_Both_Proceed_Amount__c</name>
+    </fields>
+    <fields>
+        <help><!-- This field is used to summarize the Total for Line on Pay Notes Payable by SID and by Other Lender for Use of Proceeds. --></help>
+        <label><!-- Total Pay Notes Both Total for Line --></label>
+        <name>nSBA__Total_Pay_Notes_Both_Total_for_Line__c</name>
+    </fields>
+    <fields>
+        <help><!-- This field is used to summarize the Applicant Equity Injection on Pay off SBA Loan by SID and by Other Lender for Use of Proceeds. --></help>
+        <label><!-- Total Pay Off Both Equity Injection --></label>
+        <name>nSBA__Total_Pay_Off_Both_Equity_Injection__c</name>
+    </fields>
+    <fields>
+        <help><!-- This field is used to summarize the Other Financing on Pay off SBA Loan by SID and by Other Lender for Use of Proceeds. --></help>
+        <label><!-- Total Pay Off Both Other Financing --></label>
+        <name>nSBA__Total_Pay_Off_Both_Other_Financing__c</name>
+    </fields>
+    <fields>
+        <help><!-- This field is used to summarize the Proceed Amount on Pay off SBA Loan by SID and by Other Lender for Use of Proceeds. --></help>
+        <label><!-- Total Pay Off Both Proceed Amount --></label>
+        <name>nSBA__Total_Pay_Off_Both_Proceed_Amount__c</name>
+    </fields>
+    <fields>
+        <help><!-- This field is used to summarize the Total for Line on Pay off SBA Loan by SID and by Other Lender for Use of Proceeds. --></help>
+        <label><!-- Total Pay Off Both Total for Line --></label>
+        <name>nSBA__Total_Pay_Off_Both_Total_for_Line__c</name>
+    </fields>
+    <fields>
+        <help><!-- This field is used to summarize the Total of Amount Disbursed for the Use of Proceeds. --></help>
+        <label><!-- Total of Amount Disbursed --></label>
+        <name>nSBA__Total_of_Amount_Disbursed__c</name>
+    </fields>
+    <fields>
+        <help><!-- This field is used to summarize the Total of Applicant Equity Injection for the Use of Proceeds. --></help>
+        <label><!-- Total of Applicant Equity Injection --></label>
+        <name>nSBA__Total_of_Applicant_Equity_Injection__c</name>
+    </fields>
+    <fields>
+        <help><!-- This field is used to summarize the Total of Assets Source for the Borrower&apos;s Injection. --></help>
+        <label><!-- Total of Assets Source --></label>
+        <name>nSBA__Total_of_Assets_Source__c</name>
+    </fields>
+    <fields>
+        <help><!-- This field is used to summarize the Total of Authorized Amount Remaining for the Use of Proceeds. --></help>
+        <label><!-- Total of Authorized Amount Remaining --></label>
+        <name>nSBA__Total_of_Authorized_Amount_Remaining__c</name>
+    </fields>
+    <fields>
+        <help><!-- This field is used to summarize the Total of Borrower Injection. --></help>
+        <label><!-- Total of Borrower Injection --></label>
+        <name>nSBA__Total_of_Borrower_Injection__c</name>
+    </fields>
+    <fields>
+        <help><!-- This field is used to summarize the Total of Cash Source for the Borrower&apos;s Injection. --></help>
+        <label><!-- Total of Cash Source --></label>
+        <name>nSBA__Total_of_Cash_Source__c</name>
+    </fields>
+    <fields>
+        <help><!-- This field is used to summarize the Total of Other Financing for the Use of Proceeds. --></help>
+        <label><!-- Total of Other Financing --></label>
+        <name>nSBA__Total_of_Other_Financing__c</name>
+    </fields>
+    <fields>
+        <help><!-- This field is used to summarize the Total of Other for the Borrower&apos;s Injection. --></help>
+        <label><!-- Total of Other for Borrower&apos;s Injection --></label>
+        <name>nSBA__Total_of_Other_for_Borrowers_Injection__c</name>
+    </fields>
+    <fields>
+        <help><!-- This field is used to summarize the Total of Proceed Amount for the Use of Proceeds. --></help>
+        <label><!-- Total of Proceed Amount --></label>
+        <name>nSBA__Total_of_Proceed_Amount__c</name>
+    </fields>
+    <fields>
+        <help><!-- This field is used to summarize the Total of Seller Contribution to Equity for the Borrower&apos;s Injection. --></help>
+        <label><!-- Total of Seller Contribution to Equity --></label>
+        <name>nSBA__Total_of_Seller_Contribution_to_Equity__c</name>
+    </fields>
+    <fields>
+        <help><!-- This field is used to summarize the Total of Use of Proceeds. --></help>
+        <label><!-- Total of Use of Proceeds --></label>
+        <name>nSBA__Total_of_Use_of_Proceeds__c</name>
+    </fields>
+    <fields>
+        <help><!-- Users manually populate this optional checkbox field to indicate plans to use 401K including ROBS for equity. By default, it is false. --></help>
+        <label><!-- Use 401K for Equity --></label>
+        <name>nSBA__Use_401K_for_Equity__c</name>
+    </fields>
+</CustomObjectTranslation>

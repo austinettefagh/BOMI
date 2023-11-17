@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>BaaS Rejection template</description>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <letterhead>TBOM</letterhead>
+    <name>BaaS Material Rejected</name>
+    <style>freeForm</style>
+    <subject>BaaS Case Rejected</subject>
+    <textOnly>BaaS Case Rejected
+
+The following material has been rejected. Please review the case and take appropriate follow up action:
+
+Company: {!Account.Name}
+Contact Name: {!Contact.Name}
+Case #: {!Case.CaseNumber}
+Subject: {!Case.Subject}
+Description: {!Case.Description}
+
+
+Click on the link to access the case: {!Case.Link}</textOnly>
+    <type>html</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

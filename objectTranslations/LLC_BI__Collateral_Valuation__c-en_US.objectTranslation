@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fieldSets>
+        <label><!-- Jack Henry jXchange Automated Booking --></label>
+        <name>JHJX__ABJX</name>
+    </fieldSets>
+    <fieldSets>
+        <label><!-- Collateral Valuation Default --></label>
+        <name>LLC_BI__Collateral_Valuation_Default</name>
+    </fieldSets>
+    <fields>
+        <help><!-- Indicates if a valuation is active or inactive --></help>
+        <label><!-- Active --></label>
+        <name>LLC_BI__Active__c</name>
+    </fields>
+    <fields>
+        <label><!-- Collateral Type-SubType --></label>
+        <name>LLC_BI__Collateral_Type_SubType__c</name>
+    </fields>
+    <fields>
+        <label><!-- Collateral --></label>
+        <name>LLC_BI__Collateral__c</name>
+        <relationshipLabel><!-- Collateral Valuations --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Comments --></label>
+        <name>LLC_BI__Comments__c</name>
+    </fields>
+    <fields>
+        <help><!-- This field indicates that the valuation record is the original valuation of the collateral. The system automatically selects this checkbox when the system creates a valuation record from collateral creation workflow. --></help>
+        <label><!-- Original Valuation Record --></label>
+        <name>LLC_BI__Original_Value__c</name>
+    </fields>
+    <fields>
+        <help><!-- Indicates the primary valuation for the collateral --></help>
+        <label><!-- Primary --></label>
+        <name>LLC_BI__Primary__c</name>
+    </fields>
+    <fields>
+        <help><!-- The system auto-populates this field with vehicle detail IDs received from the corresponding vehicle valuations integration. --></help>
+        <label><!-- Raw Valuation Details --></label>
+        <name>LLC_BI__Raw_Valuation_Details__c</name>
+    </fields>
+    <fields>
+        <help><!-- The source of the collateral valuation --></help>
+        <label><!-- Valuation Source --></label>
+        <name>LLC_BI__Source__c</name>
+        <picklistValues>
+            <masterLabel>Account Balance / Statement</masterLabel>
+            <translation><!-- Account Balance / Statement --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Appraisal</masterLabel>
+            <translation><!-- Appraisal --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Credit Officer</masterLabel>
+            <translation><!-- Credit Officer --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Financial Statement</masterLabel>
+            <translation><!-- Financial Statement --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Insurance Agent</masterLabel>
+            <translation><!-- Insurance Agent --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Internal Valuation</masterLabel>
+            <translation><!-- Internal Valuation --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Inventory Report</masterLabel>
+            <translation><!-- Inventory Report --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Invoice / Bill of Sale</masterLabel>
+            <translation><!-- Invoice / Bill of Sale --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Real Estate Abundance of Caution</masterLabel>
+            <translation><!-- Real Estate Abundance of Caution --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Real Estate Evaluation</masterLabel>
+            <translation><!-- Real Estate Evaluation --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Real Estate Restricted Appraisal</masterLabel>
+            <translation><!-- Real Estate Restricted Appraisal --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Receivables Aging</masterLabel>
+            <translation><!-- Receivables Aging --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Third Party Source</masterLabel>
+            <translation><!-- Third Party Source --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Valuation Service Vendor</masterLabel>
+            <translation><!-- Valuation Service Vendor --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- The type of the collateral valuation --></help>
+        <label><!-- Valuation Type --></label>
+        <name>LLC_BI__Type__c</name>
+        <picklistValues>
+            <masterLabel>Actual Cash Value</masterLabel>
+            <translation><!-- Actual Cash Value --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>As Complete Value</masterLabel>
+            <translation><!-- As Complete Value --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>As Is Value</masterLabel>
+            <translation><!-- As Is Value --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>As Stabilized Value</masterLabel>
+            <translation><!-- As Stabilized Value --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Balance Sheet</masterLabel>
+            <translation><!-- Balance Sheet --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Book Value</masterLabel>
+            <translation><!-- Book Value --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Cash Balance</masterLabel>
+            <translation><!-- Cash Balance --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Contents Value</masterLabel>
+            <translation><!-- Contents Value --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Fair Market Value - Equipment / Transportation</masterLabel>
+            <translation><!-- Fair Market Value - Equipment / Transportation --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Fair Market Value - Real Estate</masterLabel>
+            <translation><!-- Fair Market Value - Real Estate --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Net Orderly Liquidation Value</masterLabel>
+            <translation><!-- Net Orderly Liquidation Value --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Orderly Liquidation Value</masterLabel>
+            <translation><!-- Orderly Liquidation Value --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Preliminary Value</masterLabel>
+            <translation><!-- Preliminary Value --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Purchase Price</masterLabel>
+            <translation><!-- Purchase Price --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Replacement Cost Value</masterLabel>
+            <translation><!-- Replacement Cost Value --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Waived Value</masterLabel>
+            <translation><!-- Waived Value --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- The date of the collateral valuation --></help>
+        <label><!-- Valuation Date --></label>
+        <name>LLC_BI__Valuation_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Valuation Description --></label>
+        <name>LLC_BI__Valuation_Description__c</name>
+    </fields>
+    <fields>
+        <help><!-- This system-populated field automatically populates with vehicle detail IDs received from the relevant vehicle valuations integration. --></help>
+        <label><!-- Valuation Details --></label>
+        <name>LLC_BI__Valuation_Details__c</name>
+    </fields>
+    <fields>
+        <help><!-- Used to capture the value of the collateral --></help>
+        <label><!-- Collateral Value --></label>
+        <name>LLC_BI__Value__c</name>
+    </fields>
+    <webLinks>
+        <label><!-- Add_Valuation_Record --></label>
+        <name>LLC_BI__Add_Valuation_Record</name>
+    </webLinks>
+</CustomObjectTranslation>

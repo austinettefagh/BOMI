@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fieldSets>
+        <label><!-- Jack Henry jXchange Automated Booking --></label>
+        <name>JHJX__ABJX</name>
+    </fieldSets>
+    <fieldSets>
+        <label><!-- PersonalInfo_EPIM --></label>
+        <name>PersonalInfo_EPIM</name>
+    </fieldSets>
+    <fieldSets>
+        <label><!-- UI Lookup Fields --></label>
+        <name>nFORCE__UI_Lookup_Fields</name>
+    </fieldSets>
+    <fieldSets>
+        <label><!-- -D Portal Registration Fields --></label>
+        <name>nPortal__Portal_Registration_Fields</name>
+    </fieldSets>
+    <fieldSets>
+        <label><!-- Loan Officer Information --></label>
+        <name>nSBA__LA_Loan_Officer_Info</name>
+    </fieldSets>
+    <fieldSets>
+        <label><!-- SBEOC User --></label>
+        <name>nSBA__SBEOC_User</name>
+    </fieldSets>
+    <fields>
+        <help><!-- Approver in an approval process. Users with this checkbox = true see the Items to Approve component on their home page. --></help>
+        <label><!-- Approver --></label>
+        <name>Approver__c</name>
+    </fields>
+    <fields>
+        <label><!-- Branch Number --></label>
+        <name>CF_Branch_Number__c</name>
+    </fields>
+    <fields>
+        <label><!-- User Name --></label>
+        <name>CF_User_Name__c</name>
+    </fields>
+    <fields>
+        <label><!-- DB Region --></label>
+        <name>DB_Region__c</name>
+        <picklistValues>
+            <masterLabel>APAC</masterLabel>
+            <translation><!-- APAC --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>EMEA</masterLabel>
+            <translation><!-- EMEA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>LA</masterLabel>
+            <translation><!-- LA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>NA</masterLabel>
+            <translation><!-- NA --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Referrer Score --></label>
+        <name>FinServ__ReferrerScore__c</name>
+    </fields>
+    <fields>
+        <label><!-- Max Rate Adjustment --></label>
+        <name>LLC_BI__Max_Rate_Adjustment__c</name>
+    </fields>
+    <fields>
+        <label><!-- Min Rate Adjustment --></label>
+        <name>LLC_BI__Min_Rate_Adjustment__c</name>
+    </fields>
+    <fields>
+        <help><!-- Select the state that issued the Mortgage License. --></help>
+        <label><!-- Mortgage License State --></label>
+        <name>LLC_BI__Mortgage_License_State__c</name>
+    </fields>
+    <fields>
+        <help><!-- Enter the user&apos;s unique Mortgage License number. --></help>
+        <label><!-- Mortgage License --></label>
+        <name>LLC_BI__Mortgage_License__c</name>
+    </fields>
+    <fields>
+        <help><!-- Enter the user&apos;s unique National Mortgage Licensing System (NMLS) number. --></help>
+        <label><!-- NMLS --></label>
+        <name>LLC_BI__NMLS__c</name>
+    </fields>
+    <fields>
+        <label><!-- Officer Number --></label>
+        <name>LLC_BI__Officer_Number__c</name>
+    </fields>
+    <fields>
+        <label><!-- Secured Individual Lending Authority --></label>
+        <name>LLC_BI__Secured_Individual_Lending_Authority__c</name>
+    </fields>
+    <fields>
+        <label><!-- Unsecured Individual Lending Authority --></label>
+        <name>LLC_BI__Unsecured_Individual_Lending_Authority__c</name>
+    </fields>
+    <fields>
+        <label><!-- nCino User --></label>
+        <name>LLC_BI__nCino_User__c</name>
+    </fields>
+    <fields>
+        <help><!-- This field should be checked when choosing to turn off ALL Triggers for an individual user. This will typically apply to nCino &amp; Salesforce Administrators. --></help>
+        <label><!-- No Triggers --></label>
+        <name>No_Triggers__c</name>
+    </fields>
+    <fields>
+        <help><!-- This field should be checked when choosing to turn off ALL validation rules for an individual user.  This will typically apply to nCino &amp; Salesforce Administrators. --></help>
+        <label><!-- No Validation --></label>
+        <name>No_Validation__c</name>
+    </fields>
+    <fields>
+        <help><!-- This field should be checked when choosing to turn off ALL workflow rules for an individual user.  This will typically apply to nCino &amp; Salesforce Administrators. --></help>
+        <label><!-- No Workflow --></label>
+        <name>No_Workflow__c</name>
+    </fields>
+    <fields>
+        <label><!-- Officer Codes --></label>
+        <name>Officer_Codes__c</name>
+    </fields>
+    <fields>
+        <help><!-- This individual has CS Relationship Tier 1 Approval authority --></help>
+        <label><!-- T1 Approver --></label>
+        <name>T1_Approver__c</name>
+    </fields>
+    <fields>
+        <help><!-- This individual has CS Relationship Tier 2 &amp; 3 Approval authority --></help>
+        <label><!-- T2-T3 Approver --></label>
+        <name>T2_T3_Approver__c</name>
+    </fields>
+    <fields>
+        <help><!-- used for pForce uploads --></help>
+        <label><!-- User ID --></label>
+        <name>User_ID__c</name>
+    </fields>
+    <fields>
+        <help><!-- This is a system-managed field that indicates whether an email verification is required for a user. --></help>
+        <label><!-- Email Verification Required --></label>
+        <name>nPortal__Email_Verification_Required__c</name>
+    </fields>
+    <fields>
+        <label><!-- Has Reached Ownership Limit --></label>
+        <name>nPortal__Has_Reached_Ownership_Limit__c</name>
+    </fields>
+    <fields>
+        <label><!-- Is Customer Portal Account Owner User --></label>
+        <name>nPortal__Is_Customer_Portal_Account_Owner_User__c</name>
+    </fields>
+    <fields>
+        <help><!-- This long text field is automatically populated upon the deactivation of a Customer Portal User. It is used to capture all of the records to which the Portal User had sharing access. --></help>
+        <label><!-- Customer Portal Sharing History --></label>
+        <name>nPortal__Sharing_History__c</name>
+    </fields>
+    <fields>
+        <label><!-- User-Created Customer Engagement PW --></label>
+        <name>nPortal__User_Created_Customer_Engagement_PW__c</name>
+    </fields>
+    <fields>
+        <label><!-- Gender --></label>
+        <name>nSBA__Gender__c</name>
+        <picklistValues>
+            <masterLabel>“F”, “M”, “U”</masterLabel>
+            <translation><!-- “F”, “M”, “U” --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- Indicates whether the lender is allowed to make loans outside of the their area of operations. --></help>
+        <label><!-- Lendable Region --></label>
+        <name>nSBA__Lendable_Region__c</name>
+    </fields>
+    <fields>
+        <label><!-- Lender Tax ID --></label>
+        <name>nSBA__Lender_Tax_ID__c</name>
+    </fields>
+    <fields>
+        <label><!-- SBA Lender FIRS --></label>
+        <name>nSBA__SBA_Lender_FIRS__c</name>
+    </fields>
+</CustomObjectTranslation>

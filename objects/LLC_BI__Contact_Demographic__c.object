@@ -1,0 +1,461 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <allowInChatterGroups>false</allowInChatterGroups>
+    <compactLayoutAssignment>SYSTEM</compactLayoutAssignment>
+    <deploymentStatus>Deployed</deploymentStatus>
+    <deprecated>false</deprecated>
+    <description>This object stores additional contact information for demographic.</description>
+    <enableActivities>false</enableActivities>
+    <enableBulkApi>true</enableBulkApi>
+    <enableFeeds>false</enableFeeds>
+    <enableHistory>false</enableHistory>
+    <enableLicensing>false</enableLicensing>
+    <enableReports>true</enableReports>
+    <enableSearch>false</enableSearch>
+    <enableSharing>true</enableSharing>
+    <enableStreamingApi>true</enableStreamingApi>
+    <externalSharingModel>Private</externalSharingModel>
+    <fields>
+        <fullName>LLC_BI__American_Indian_Alaska_Native__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Users populate this optional text field to specify the applicant’s American Indian or Alaska Native race. By default, it is empty.</description>
+        <encryptionScheme>None</encryptionScheme>
+        <externalId>false</externalId>
+        <inlineHelpText>Use this field to specify the applicant’s American Indian or Alaska Native race.</inlineHelpText>
+        <label>American Indian or Alaska Native</label>
+        <length>300</length>
+        <trackTrending>false</trackTrending>
+        <type>LongTextArea</type>
+        <visibleLines>3</visibleLines>
+    </fields>
+    <fields>
+        <fullName>LLC_BI__Asian_Race__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Users populate this optional text field to specify the applicant’s Asian race. By default, it is empty.</description>
+        <encryptionScheme>None</encryptionScheme>
+        <externalId>false</externalId>
+        <inlineHelpText>Use this field to specify the applicant’s Asian race.</inlineHelpText>
+        <label>Asian Race</label>
+        <length>300</length>
+        <trackTrending>false</trackTrending>
+        <type>LongTextArea</type>
+        <visibleLines>3</visibleLines>
+    </fields>
+    <fields>
+        <fullName>LLC_BI__Black_African_American_Race__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Users populate this optional text field to specify the applicant’s Black or African American race. By default, it is empty.</description>
+        <encryptionScheme>None</encryptionScheme>
+        <externalId>false</externalId>
+        <inlineHelpText>Use this field to specify the applicant’s Black or African American race.</inlineHelpText>
+        <label>Black or African American Race</label>
+        <length>300</length>
+        <trackTrending>false</trackTrending>
+        <type>LongTextArea</type>
+        <visibleLines>3</visibleLines>
+    </fields>
+    <fields>
+        <fullName>LLC_BI__Contact__c</fullName>
+        <deleteConstraint>Cascade</deleteConstraint>
+        <deprecated>false</deprecated>
+        <description>Users populate this optional lookup field to reference the Contact record to which an Contact Demographic record refers. By default, this field is blank.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Enter the Contact record to which this Contact Demographic refers.</inlineHelpText>
+        <label>Contact</label>
+        <referenceTo>Contact</referenceTo>
+        <relationshipLabel>Contact Demographics</relationshipLabel>
+        <relationshipName>Contact_Demographics</relationshipName>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>LLC_BI__Declined_To_Provide_Gender__c</fullName>
+        <defaultValue>false</defaultValue>
+        <deprecated>false</deprecated>
+        <description>Users select this optional checkbox field to indicate that the individual declined to provide their gender information. By default, it is false.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Use this field to indicate the individual declined to provide their gender information.</inlineHelpText>
+        <label>Declined to Provide Gender</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>LLC_BI__Ethnicity_FF__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Users populate this optional text field to specify the applicant’s ethnicity if they select Other Hispanic or Latino Ethnicity. By default, it is empty.</description>
+        <encryptionScheme>None</encryptionScheme>
+        <externalId>false</externalId>
+        <inlineHelpText>Use this field to specify the applicant’s ethnicity if they select Other Hispanic or Latino Ethnicity.</inlineHelpText>
+        <label>Ethnicity Free Form</label>
+        <length>300</length>
+        <trackTrending>false</trackTrending>
+        <type>LongTextArea</type>
+        <visibleLines>3</visibleLines>
+    </fields>
+    <fields>
+        <fullName>LLC_BI__Ethnicity__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Users populate this optional multi-select picklist field to indicate the applicant’s ethnicity. By default, it is empty.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Select value(s) to indicate the applicant’s ethnicity.</inlineHelpText>
+        <label>Ethnicity</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>MultiselectPicklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Hispanic or Latino</fullName>
+                    <default>false</default>
+                    <label>Hispanic or Latino</label>
+                </value>
+                <value>
+                    <fullName>Cuban</fullName>
+                    <default>false</default>
+                    <label>Cuban</label>
+                </value>
+                <value>
+                    <fullName>Mexican</fullName>
+                    <default>false</default>
+                    <label>Mexican</label>
+                </value>
+                <value>
+                    <fullName>Puerto Rican</fullName>
+                    <default>false</default>
+                    <label>Puerto Rican</label>
+                </value>
+                <value>
+                    <fullName>Other Hispanic or Latino Ethnicity</fullName>
+                    <default>false</default>
+                    <label>Other Hispanic or Latino Ethnicity</label>
+                </value>
+                <value>
+                    <fullName>Not Hispanic or Latino</fullName>
+                    <default>false</default>
+                    <label>Not Hispanic or Latino</label>
+                </value>
+                <value>
+                    <fullName>Prefer not to answer</fullName>
+                    <default>false</default>
+                    <label>Prefer not to answer</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+        <visibleLines>7</visibleLines>
+    </fields>
+    <fields>
+        <fullName>LLC_BI__Gender_FF__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Users populate this optional text field to specify the applicant’s gender. By default, it is empty.</description>
+        <encryptionScheme>None</encryptionScheme>
+        <externalId>false</externalId>
+        <inlineHelpText>Use this field to specify the applicant’s gender.</inlineHelpText>
+        <label>Gender Free Form</label>
+        <length>300</length>
+        <trackTrending>false</trackTrending>
+        <type>LongTextArea</type>
+        <visibleLines>3</visibleLines>
+    </fields>
+    <fields>
+        <fullName>LLC_BI__Pacific_Islander_Race__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Users populate this optional text field to specify the applicant’s Pacific Islander race. By default, it is empty.</description>
+        <encryptionScheme>None</encryptionScheme>
+        <externalId>false</externalId>
+        <inlineHelpText>Use this field to specify the applicant’s Pacific Islander race.</inlineHelpText>
+        <label>Pacific Islander Race</label>
+        <length>300</length>
+        <trackTrending>false</trackTrending>
+        <type>LongTextArea</type>
+        <visibleLines>3</visibleLines>
+    </fields>
+    <fields>
+        <fullName>LLC_BI__Race__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Users populate this optional multi-select picklist field to indicate the applicant’s race. By default, it is empty.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Select value(s) to indicate the applicant’s race.</inlineHelpText>
+        <label>Race</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>MultiselectPicklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>American Indian or Alaska Native</fullName>
+                    <default>false</default>
+                    <label>American Indian or Alaska Native</label>
+                </value>
+                <value>
+                    <fullName>Asian</fullName>
+                    <default>false</default>
+                    <label>Asian</label>
+                </value>
+                <value>
+                    <fullName>Asian Indian</fullName>
+                    <default>false</default>
+                    <label>Asian Indian</label>
+                </value>
+                <value>
+                    <fullName>Chinese</fullName>
+                    <default>false</default>
+                    <label>Chinese</label>
+                </value>
+                <value>
+                    <fullName>Filipino</fullName>
+                    <default>false</default>
+                    <label>Filipino</label>
+                </value>
+                <value>
+                    <fullName>Japanese</fullName>
+                    <default>false</default>
+                    <label>Japanese</label>
+                </value>
+                <value>
+                    <fullName>Korean</fullName>
+                    <default>false</default>
+                    <label>Korean</label>
+                </value>
+                <value>
+                    <fullName>Vietnamese</fullName>
+                    <default>false</default>
+                    <label>Vietnamese</label>
+                </value>
+                <value>
+                    <fullName>Other Asian Race</fullName>
+                    <default>false</default>
+                    <label>Other Asian Race</label>
+                </value>
+                <value>
+                    <fullName>Black or African American</fullName>
+                    <default>false</default>
+                    <label>Black or African American</label>
+                </value>
+                <value>
+                    <fullName>African American</fullName>
+                    <default>false</default>
+                    <label>African American</label>
+                </value>
+                <value>
+                    <fullName>Ethiopian</fullName>
+                    <default>false</default>
+                    <label>Ethiopian</label>
+                </value>
+                <value>
+                    <fullName>Haitian</fullName>
+                    <default>false</default>
+                    <label>Haitian</label>
+                </value>
+                <value>
+                    <fullName>Jamaican</fullName>
+                    <default>false</default>
+                    <label>Jamaican</label>
+                </value>
+                <value>
+                    <fullName>Nigerian</fullName>
+                    <default>false</default>
+                    <label>Nigerian</label>
+                </value>
+                <value>
+                    <fullName>Somali</fullName>
+                    <default>false</default>
+                    <label>Somali</label>
+                </value>
+                <value>
+                    <fullName>Other Black or African American Race</fullName>
+                    <default>false</default>
+                    <label>Other Black or African American Race</label>
+                </value>
+                <value>
+                    <fullName>Native Hawaiian or Other Pacific Islander</fullName>
+                    <default>false</default>
+                    <label>Native Hawaiian or Other Pacific Islander</label>
+                </value>
+                <value>
+                    <fullName>Guamanian or Chamorro</fullName>
+                    <default>false</default>
+                    <label>Guamanian or Chamorro</label>
+                </value>
+                <value>
+                    <fullName>Native Hawaiian</fullName>
+                    <default>false</default>
+                    <label>Native Hawaiian</label>
+                </value>
+                <value>
+                    <fullName>Samoan</fullName>
+                    <default>false</default>
+                    <label>Samoan</label>
+                </value>
+                <value>
+                    <fullName>Other Pacific Islander Race</fullName>
+                    <default>false</default>
+                    <label>Other Pacific Islander Race</label>
+                </value>
+                <value>
+                    <fullName>White</fullName>
+                    <default>false</default>
+                    <label>White</label>
+                </value>
+                <value>
+                    <fullName>Prefer not to answer</fullName>
+                    <default>false</default>
+                    <label>Prefer not to answer</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+        <visibleLines>4</visibleLines>
+    </fields>
+    <label>Contact Demographic</label>
+    <nameField>
+        <encryptionScheme>None</encryptionScheme>
+        <label>Contact Demographic Name</label>
+        <type>Text</type>
+    </nameField>
+    <pluralLabel>Contact Demographics</pluralLabel>
+    <searchLayouts/>
+    <sharingModel>ReadWrite</sharingModel>
+    <visibility>Public</visibility>
+</CustomObject>
