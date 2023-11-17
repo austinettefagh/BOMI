@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <label><!-- Account --></label>
+        <name>LLC_BI__Account__c</name>
+        <relationshipLabel><!-- Site Visit Memos --></relationshipLabel>
+    </fields>
+    <fields>
+        <help><!-- What are the action items for follow-up? --></help>
+        <label><!-- Action Items --></label>
+        <name>LLC_BI__Action_Items__c</name>
+    </fields>
+    <fields>
+        <help><!-- Did you see customers in the office?  What is the feel for customer flow? --></help>
+        <label><!-- Customer Activity --></label>
+        <name>LLC_BI__Customer_Flow__c</name>
+    </fields>
+    <fields>
+        <help><!-- Check this box when you&apos;re ready to have the Site Visit Memo be e-mailed out to everyone once you save. --></help>
+        <label><!-- Send When Saved --></label>
+        <name>LLC_BI__Send_When_Saved__c</name>
+    </fields>
+    <fields>
+        <help><!-- The name of the person who made the visit --></help>
+        <label><!-- Servicing Officer --></label>
+        <name>LLC_BI__Servicing_Officer__c</name>
+    </fields>
+    <fields>
+        <help><!-- Was the office in good condition? --></help>
+        <label><!-- Office Condition --></label>
+        <name>LLC_BI__Site_Status__c</name>
+    </fields>
+    <fields>
+        <help><!-- The date in which you actually visited the site. --></help>
+        <label><!-- Visit Date --></label>
+        <name>LLC_BI__Visit_Date__c</name>
+    </fields>
+    <fields>
+        <help><!-- What happened during the site visit? --></help>
+        <label><!-- Visit Description --></label>
+        <name>LLC_BI__Visit_Description__c</name>
+    </fields>
+    <fields>
+        <label><!-- Visit Objective --></label>
+        <name>LLC_BI__Visit_Objective__c</name>
+    </fields>
+    <fields>
+        <help><!-- How did we get here?  What is the history of this loan? --></help>
+        <label><!-- Watchlist History --></label>
+        <name>LLC_BI__Watchlist_History__c</name>
+    </fields>
+</CustomObjectTranslation>

@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <label><!-- Accumulate --></label>
+        <name>LLC_BI__Accumulate__c</name>
+    </fields>
+    <fields>
+        <label><!-- Is Linked --></label>
+        <name>LLC_BI__Is_Linked__c</name>
+    </fields>
+    <fields>
+        <label><!-- Name Override --></label>
+        <name>LLC_BI__Name_Override__c</name>
+    </fields>
+    <fields>
+        <label><!-- Period Out Of Range --></label>
+        <name>LLC_BI__Period_Out_Of_Range__c</name>
+    </fields>
+    <fields>
+        <label><!-- Quarter --></label>
+        <name>LLC_BI__Quarter__c</name>
+    </fields>
+    <fields>
+        <label><!-- Spread Statement Record --></label>
+        <name>LLC_BI__Spread_Statement_Record__c</name>
+        <relationshipLabel><!-- -D Spread Statement Record Groups --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Value --></label>
+        <name>LLC_BI__Value__c</name>
+    </fields>
+    <fields>
+        <label><!-- Year Out Range --></label>
+        <name>LLC_BI__Year_Out_Range__c</name>
+    </fields>
+    <fields>
+        <label><!-- Year --></label>
+        <name>LLC_BI__Year__c</name>
+    </fields>
+    <fields>
+        <label><!-- lookupKey --></label>
+        <name>LLC_BI__lookupKey__c</name>
+    </fields>
+</CustomObjectTranslation>

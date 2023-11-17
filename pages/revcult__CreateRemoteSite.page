@@ -1,0 +1,7 @@
+<!--
+ - Created by keaganhilliard on 6/13/17.
+ - Refactor and removed CreateRemoteSite in SSPMSF-3432 on 5/24/23.
+ -->
+
+<apex:page id="CreateRemoteSite">
+</apex:page>

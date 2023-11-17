@@ -1,0 +1,81 @@
+.THIS {
+    display: flex;
+    flex-wrap: wrap;
+    background: #FFF;
+}
+.THIS .heading{
+    font-size:x-large;
+}
+
+.THIS .user-info-list {
+    display: flex;
+}
+
+.THIS .user-info-list {
+    flex-direction: column;
+}
+
+.THIS .title-flex {
+    display: flex;
+    align-items: center;
+}
+
+/*.THIS .credit-icon svg {
+    fill: #e5c100; 
+} */
+
+.THIS .credit-safe svg {
+    fill: #e5c100; 
+
+} 
+
+.THIS .credit-warning svg {
+    fill: #c23934;
+} 
+.THIS .loss-color {
+    fill: #c23934;
+}
+
+.THIS .profit-color {
+    fill: #4bca81;
+}
+
+.THIS .sf-blue {
+    fill: #1488ED;
+}
+
+.THIS .sf-gray {
+    fill: #cccccc;
+}
+
+.THIS .message-action--panel{
+    position:absolute;
+    left:32%;
+    top:-9px;
+}
+
+.THIS .header-col_one {
+    width: 31%;
+}
+
+.THIS .header-col_two {
+    border-left: 2px solid #eeeeee;
+    width: 2.3333%
+}
+.THIS .float-right {
+    float: right !important;
+}
+
+.THIS .company_growth_info {
+    display: flex;
+    align-items: center;
+}
+
+.THIS .row-one_summary {
+    display: flex;
+    align-items: center;
+}
+
+.THIS .row-one_summary > div {
+    width: 100%;
+}

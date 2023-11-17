@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <help><!-- This field contains a reference to a context object. --></help>
+        <label><!-- Context Node --></label>
+        <name>LLC_BI__Context_Node__c</name>
+        <relationshipLabel><!-- Linked Contexts (Context Node) --></relationshipLabel>
+    </fields>
+    <fields>
+        <help><!-- Relationship field on joining context object that references next context --></help>
+        <label><!-- Context Relationship --></label>
+        <name>LLC_BI__Context_Relationship__c</name>
+    </fields>
+    <fields>
+        <help><!-- This field contains a context object to be joined to the object in Context_Node --></help>
+        <label><!-- Joining Context --></label>
+        <name>LLC_BI__Joining_Context__c</name>
+        <relationshipLabel><!-- Linked Contexts (Joining Context) --></relationshipLabel>
+    </fields>
+    <fields>
+        <help><!-- Relationship field on context object that references joining context --></help>
+        <label><!-- Joining Relationship --></label>
+        <name>LLC_BI__Joining_Relationship__c</name>
+    </fields>
+    <fields>
+        <help><!-- This field contains a Context__mdt object that will come next after the current Context_Node is processed. --></help>
+        <label><!-- Next Context --></label>
+        <name>LLC_BI__Next_Context__c</name>
+        <relationshipLabel><!-- Linked Contexts (Next Context) --></relationshipLabel>
+    </fields>
+</CustomObjectTranslation>

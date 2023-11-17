@@ -1,0 +1,4553 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <allowInChatterGroups>false</allowInChatterGroups>
+    <compactLayoutAssignment>SYSTEM</compactLayoutAssignment>
+    <compactLayouts>
+        <fullName>Product_Package_Layout</fullName>
+        <fields>Name</fields>
+        <fields>LLC_BI__Account__c</fields>
+        <fields>LLC_BI__Loan_Facilities_Count__c</fields>
+        <fields>LLC_BI__Total_Loan_Facilities_Amount__c</fields>
+        <fields>CF_Total_Aggregate_Exposure__c</fields>
+        <label>Product Package Layout</label>
+    </compactLayouts>
+    <compactLayouts>
+        <fullName>TS_Product_Package_Layout</fullName>
+        <fields>Name</fields>
+        <fields>LLC_BI__Account__c</fields>
+        <fields>CF_Total_Treasury_Services__c</fields>
+        <fields>CF_Total_Treasury_Exposure__c</fields>
+        <label>TS Product Package Layout</label>
+    </compactLayouts>
+    <deploymentStatus>Deployed</deploymentStatus>
+    <deprecated>false</deprecated>
+    <description>The Product Package Object allows the user to group relationships and loans in a singular view to work complex credit packages and exposure purposes</description>
+    <enableActivities>true</enableActivities>
+    <enableBulkApi>true</enableBulkApi>
+    <enableFeeds>true</enableFeeds>
+    <enableHistory>true</enableHistory>
+    <enableLicensing>false</enableLicensing>
+    <enableReports>true</enableReports>
+    <enableSearch>true</enableSearch>
+    <enableSharing>true</enableSharing>
+    <enableStreamingApi>true</enableStreamingApi>
+    <externalSharingModel>Private</externalSharingModel>
+    <fieldSets>
+        <fullName>FS_Approvers</fullName>
+        <description>Used in the approvers sub route of product package details</description>
+        <displayedFields>
+            <field>CF_Highest_Policy_Exception__c</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </displayedFields>
+        <displayedFields>
+            <field>CF_Total_Aggregate_Exposure__c</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </displayedFields>
+        <displayedFields>
+            <field>CF_Has_Reg_O_Loan__c</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </displayedFields>
+        <displayedFields>
+            <field>CF_Has_Structure_Loans__c</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </displayedFields>
+        <displayedFields>
+            <field>LLC_BI__Risk_Rating__c</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </displayedFields>
+        <displayedFields>
+            <field>CF_Is_Fully_Cash_Secured__c</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </displayedFields>
+        <displayedFields>
+            <field>CF_Has_New_Money_Loan__c</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </displayedFields>
+        <displayedFields>
+            <field>LLC_BI__Total_Loan_Facilities_Amount__c</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </displayedFields>
+        <displayedFields>
+            <field>CF_Recent_Risk_Grade_Downgrade__c</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </displayedFields>
+        <displayedFields>
+            <field>CF_New_Policy_Exception__c</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </displayedFields>
+        <displayedFields>
+            <field>CF_Loan_Purpose__c</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </displayedFields>
+        <displayedFields>
+            <field>CF_Approval_Path__c</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </displayedFields>
+        <displayedFields>
+            <field>CF_Approver_1__c</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </displayedFields>
+        <displayedFields>
+            <field>CF_Approver_Queue__c</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </displayedFields>
+        <label>Approvers</label>
+    </fieldSets>
+    <fieldSets>
+        <fullName>FS_Deal_Team</fullName>
+        <description>This fieldset is being used on Deal Team on PP</description>
+        <displayedFields>
+            <field>CF_Relationship_Manager__c</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </displayedFields>
+        <displayedFields>
+            <field>CF_Secondary_Relationship_Manager__c</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </displayedFields>
+        <displayedFields>
+            <field>CF_Loan_Assistant__c</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </displayedFields>
+        <displayedFields>
+            <field>CF_Credit_Analyst__c</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </displayedFields>
+        <displayedFields>
+            <field>CF_Credit_Officer__c</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </displayedFields>
+        <displayedFields>
+            <field>CF_Processor__c</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </displayedFields>
+        <displayedFields>
+            <field>CF_Treasury__c</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </displayedFields>
+        <label>Deal Team</label>
+    </fieldSets>
+    <fieldSets>
+        <fullName>FS_Deal_Team_Treasury</fullName>
+        <description>This fieldset is being used on Treasury PP&gt;Deal Team sub route &gt; Team Members screen section</description>
+        <displayedFields>
+            <field>CF_Relationship_Manager__c</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </displayedFields>
+        <displayedFields>
+            <field>CF_Secondary_Relationship_Manager__c</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </displayedFields>
+        <displayedFields>
+            <field>CF_Treasury__c</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </displayedFields>
+        <label>Deal Team - Treasury</label>
+    </fieldSets>
+    <fieldSets>
+        <fullName>FS_Product_Package_Deal_Summary</fullName>
+        <description>Used to display a new section in Product Package Details route, under information section.</description>
+        <displayedFields>
+            <field>CF_Memorandum__c</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </displayedFields>
+        <displayedFields>
+            <field>CF_Financial_Repayment_Analysis__c</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </displayedFields>
+        <displayedFields>
+            <field>CF_Repayment_Analysis__c</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </displayedFields>
+        <displayedFields>
+            <field>CF_Guarantor_Analysis__c</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </displayedFields>
+        <displayedFields>
+            <field>CF_Strengths__c</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </displayedFields>
+        <displayedFields>
+            <field>CF_Weaknesses__c</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </displayedFields>
+        <displayedFields>
+            <field>CF_Recommendation_Summary__c</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </displayedFields>
+        <displayedFields>
+            <field>LLC_BI__Risk_Rating__c</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </displayedFields>
+        <displayedFields>
+            <field>CF_Collateral_Narrative__c</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </displayedFields>
+        <label>Product Package Deal Summary</label>
+    </fieldSets>
+    <fieldSets>
+        <fullName>FS_Product_Package_Deal_Summary_Treasury</fullName>
+        <description>This fieldset is being used on Treasury PP&gt;PP details sub route &gt; Deal Summary screen section</description>
+        <displayedFields>
+            <field>CF_Memorandum__c</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </displayedFields>
+        <displayedFields>
+            <field>CF_Financial_Repayment_Analysis__c</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </displayedFields>
+        <displayedFields>
+            <field>CF_Repayment_Analysis__c</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </displayedFields>
+        <displayedFields>
+            <field>CF_Guarantor_Analysis__c</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </displayedFields>
+        <displayedFields>
+            <field>CF_Strengths__c</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </displayedFields>
+        <displayedFields>
+            <field>CF_Weaknesses__c</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </displayedFields>
+        <displayedFields>
+            <field>CF_Recommendation_Summary__c</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </displayedFields>
+        <displayedFields>
+            <field>LLC_BI__Risk_Rating__c</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </displayedFields>
+        <displayedFields>
+            <field>CF_Collateral_Narrative__c</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </displayedFields>
+        <label>Product Package Deal Summary - Treasury</label>
+    </fieldSets>
+    <fieldSets>
+        <fullName>FS_Product_Package_Exposure_Treasury</fullName>
+        <description>This fieldset is being used on Treasury PP&gt;PP details sub route &gt; Exposure screen section</description>
+        <displayedFields>
+            <field>LLC_BI__TBE__c</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </displayedFields>
+        <displayedFields>
+            <field>LLC_BI__Unused__c</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </displayedFields>
+        <displayedFields>
+            <field>LLC_BI__TOE__c</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </displayedFields>
+        <displayedFields>
+            <field>LLC_BI__Outstanding__c</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </displayedFields>
+        <displayedFields>
+            <field>LLC_BI__TCE__c</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </displayedFields>
+        <displayedFields>
+            <field>LLC_BI__New_Money__c</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </displayedFields>
+        <label>Product Package Exposure - Treasury</label>
+    </fieldSets>
+    <fieldSets>
+        <fullName>FS_Product_Package_Info</fullName>
+        <description>This fieldset is being used on PP&gt;PP details sub route</description>
+        <displayedFields>
+            <field>Name</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </displayedFields>
+        <displayedFields>
+            <field>LLC_BI__Account__c</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </displayedFields>
+        <displayedFields>
+            <field>LLC_BI__Stage__c</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </displayedFields>
+        <displayedFields>
+            <field>LLC_BI__Status__c</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </displayedFields>
+        <displayedFields>
+            <field>CF_Line_Of_Business__c</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </displayedFields>
+        <displayedFields>
+            <field>CF_Pre_Screen_Comments__c</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </displayedFields>
+        <displayedFields>
+            <field>CF_Region__c</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </displayedFields>
+        <label>Product Package Info</label>
+    </fieldSets>
+    <fieldSets>
+        <fullName>FS_Product_Package_Info_Treasury</fullName>
+        <description>This fieldset is being used on Treasury PP&gt;PP details sub route</description>
+        <displayedFields>
+            <field>Name</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </displayedFields>
+        <displayedFields>
+            <field>LLC_BI__Account__c</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </displayedFields>
+        <displayedFields>
+            <field>LLC_BI__Stage__c</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </displayedFields>
+        <displayedFields>
+            <field>LLC_BI__Status__c</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </displayedFields>
+        <displayedFields>
+            <field>CF_Line_Of_Business__c</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </displayedFields>
+        <displayedFields>
+            <field>CF_Pre_Screen_Comments__c</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </displayedFields>
+        <displayedFields>
+            <field>CF_Region__c</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </displayedFields>
+        <label>Product Package Info - Treasury</label>
+    </fieldSets>
+    <fieldSets>
+        <fullName>JHJX__ABJX</fullName>
+        <description>Jack Henry jXchange Automated Booking Fields</description>
+        <displayedFields>
+            <field>Name</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </displayedFields>
+        <label>Jack Henry jXchange Automated Booking</label>
+    </fieldSets>
+    <fieldSets>
+        <fullName>LLC_BI__ConvertTo_Display_Fields</fullName>
+        <description>Convert to Product Package from Lead or Opportunity, Product Package selector display fields</description>
+        <displayedFields>
+            <field>Name</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </displayedFields>
+        <displayedFields>
+            <field>LLC_BI__Total_Loan_Facilities_Amount__c</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </displayedFields>
+        <displayedFields>
+            <field>LLC_BI__Loan_Facilities_Count__c</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </displayedFields>
+        <displayedFields>
+            <field>LLC_BI__Account__r.Name</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </displayedFields>
+        <displayedFields>
+            <field>LLC_BI__Account__r.Type</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </displayedFields>
+        <displayedFields>
+            <field>LLC_BI__Next_Review_Date__c</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </displayedFields>
+        <label>ConvertTo Display Fields</label>
+    </fieldSets>
+    <fieldSets>
+        <fullName>LLC_BI__Credit_Actions_New_Package_Details</fullName>
+        <availableFields>
+            <field>LLC_BI__Account__c</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </availableFields>
+        <availableFields>
+            <field>LLC_BI__Description__c</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </availableFields>
+        <availableFields>
+            <field>Name</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </availableFields>
+        <description>Credit Actions New Package Details</description>
+        <label>Credit_Actions_New_Package_Details</label>
+    </fieldSets>
+    <fieldSets>
+        <fullName>LLC_BI__New_Proposal</fullName>
+        <availableFields>
+            <field>LLC_BI__Annual_Deposit_Operating_Cost__c</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </availableFields>
+        <availableFields>
+            <field>LLC_BI__Description__c</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </availableFields>
+        <availableFields>
+            <field>LLC_BI__Primary_Officer__c</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </availableFields>
+        <availableFields>
+            <field>LLC_BI__Secondary_Officer__c</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </availableFields>
+        <availableFields>
+            <field>LLC_BI__Status__c</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </availableFields>
+        <availableFields>
+            <field>LLC_BI__Treasury_Annual_Operating_Cost__c</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </availableFields>
+        <description>This field set controls the product package fields in the New Proposal modal.</description>
+        <displayedFields>
+            <field>Name</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </displayedFields>
+        <displayedFields>
+            <field>LLC_BI__Stage__c</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </displayedFields>
+        <label>New Proposal</label>
+    </fieldSets>
+    <fieldSets>
+        <fullName>LLC_BI__Product_Package_Compliance_Information</fullName>
+        <description>Product Package Compliance Information Screen Section</description>
+        <displayedFields>
+            <field>Name</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </displayedFields>
+        <displayedFields>
+            <field>OwnerId</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </displayedFields>
+        <displayedFields>
+            <field>LLC_BI__Account__c</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </displayedFields>
+        <displayedFields>
+            <field>LLC_BI__Description__c</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </displayedFields>
+        <displayedFields>
+            <field>LLC_BI__Primary_Officer__c</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </displayedFields>
+        <displayedFields>
+            <field>LLC_BI__Risk_Rating__c</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </displayedFields>
+        <displayedFields>
+            <field>LLC_BI__Secondary_Officer__c</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </displayedFields>
+        <displayedFields>
+            <field>LLC_BI__Credit_Memo__c</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </displayedFields>
+        <displayedFields>
+            <field>LLC_BI__Status__c</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </displayedFields>
+        <label>Product_Package_Compliance_Information</label>
+    </fieldSets>
+    <fieldSets>
+        <fullName>LLC_BI__Product_Package_Exposure_Information</fullName>
+        <description>Product Package Exposure Section</description>
+        <displayedFields>
+            <field>LLC_BI__TBE__c</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </displayedFields>
+        <displayedFields>
+            <field>LLC_BI__Unused__c</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </displayedFields>
+        <displayedFields>
+            <field>LLC_BI__TOE__c</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </displayedFields>
+        <displayedFields>
+            <field>LLC_BI__Outstanding__c</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </displayedFields>
+        <displayedFields>
+            <field>LLC_BI__TCE__c</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </displayedFields>
+        <displayedFields>
+            <field>LLC_BI__New_Money__c</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </displayedFields>
+        <label>Product_Package_Exposure_Information</label>
+    </fieldSets>
+    <fieldSets>
+        <fullName>LLC_BI__Relationship_Product_Package_Header</fullName>
+        <description>Table Header field for the Relationship view of product package</description>
+        <displayedFields>
+            <field>Name</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </displayedFields>
+        <displayedFields>
+            <field>LLC_BI__Stage__c</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </displayedFields>
+        <displayedFields>
+            <field>LLC_BI__Status__c</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </displayedFields>
+        <displayedFields>
+            <field>LLC_BI__Loan_Facilities_Count__c</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </displayedFields>
+        <displayedFields>
+            <field>LLC_BI__Total_Loan_Facilities_Amount__c</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </displayedFields>
+        <displayedFields>
+            <field>LLC_BI__Next_Review_Date__c</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </displayedFields>
+        <label>Relationship Product Package Header</label>
+    </fieldSets>
+    <fieldSets>
+        <fullName>LLC_BI__ReviewDisplay</fullName>
+        <availableFields>
+            <field>LLC_BI__Account__c</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </availableFields>
+        <availableFields>
+            <field>CreatedById</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </availableFields>
+        <availableFields>
+            <field>CreatedDate</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </availableFields>
+        <availableFields>
+            <field>LLC_BI__Credit_Memo__c</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </availableFields>
+        <availableFields>
+            <field>LLC_BI__Description__c</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </availableFields>
+        <availableFields>
+            <field>Id</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </availableFields>
+        <availableFields>
+            <field>LLC_BI__Loan_Facilities_Count__c</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </availableFields>
+        <availableFields>
+            <field>LLC_BI__New_Money__c</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </availableFields>
+        <availableFields>
+            <field>LLC_BI__Outstanding__c</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </availableFields>
+        <availableFields>
+            <field>OwnerId</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </availableFields>
+        <availableFields>
+            <field>LLC_BI__Primary_Officer__c</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </availableFields>
+        <availableFields>
+            <field>LLC_BI__Reviewable_Loan_Facilities_Count__c</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </availableFields>
+        <availableFields>
+            <field>LLC_BI__Secondary_Officer__c</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </availableFields>
+        <availableFields>
+            <field>LLC_BI__Status__c</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </availableFields>
+        <availableFields>
+            <field>LLC_BI__TBE__c</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </availableFields>
+        <availableFields>
+            <field>LLC_BI__TCE__c</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </availableFields>
+        <availableFields>
+            <field>LLC_BI__TOE__c</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </availableFields>
+        <availableFields>
+            <field>LLC_BI__lookupKey__c</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </availableFields>
+        <description>The fields that are displayed on the Review details section.</description>
+        <displayedFields>
+            <field>Name</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </displayedFields>
+        <displayedFields>
+            <field>LLC_BI__Risk_Rating__c</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </displayedFields>
+        <displayedFields>
+            <field>LLC_BI__Review_Frequency__c</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </displayedFields>
+        <displayedFields>
+            <field>LLC_BI__Next_Review_Date__c</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </displayedFields>
+        <displayedFields>
+            <field>LLC_BI__Last_Review_Date__c</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </displayedFields>
+        <label>ReviewDisplay</label>
+    </fieldSets>
+    <fieldSets>
+        <fullName>LLC_BI__Standard_Product_Package_Credit_Memo</fullName>
+        <description>Credit Memo: Standard Product Package Credit Memo Screen Section: Product Package Details Object: Product Package</description>
+        <displayedFields>
+            <field>Name</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </displayedFields>
+        <displayedFields>
+            <field>LLC_BI__Primary_Officer__c</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </displayedFields>
+        <displayedFields>
+            <field>LLC_BI__Risk_Rating__c</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </displayedFields>
+        <displayedFields>
+            <field>LLC_BI__Secondary_Officer__c</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </displayedFields>
+        <displayedFields>
+            <field>LLC_BI__Total_Loan_Facilities_Amount__c</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </displayedFields>
+        <displayedFields>
+            <field>LLC_BI__Total_Loan_Facilities_Exposure__c</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </displayedFields>
+        <displayedFields>
+            <field>LLC_BI__Loan_Facilities_Count__c</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </displayedFields>
+        <displayedFields>
+            <field>LLC_BI__New_Money__c</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </displayedFields>
+        <label>Credit Memo Standard Product Package</label>
+    </fieldSets>
+    <fieldSets>
+        <fullName>LLC_BI__Total_Exposure_Summary</fullName>
+        <availableFields>
+            <field>LLC_BI__Booked_Affiliated_Exposure__c</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </availableFields>
+        <availableFields>
+            <field>LLC_BI__Booked_Direct_Exposure__c</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </availableFields>
+        <availableFields>
+            <field>LLC_BI__Booked_Indirect_Exposure__c</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </availableFields>
+        <availableFields>
+            <field>LLC_BI__Committed_Affiliated_Exposure__c</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </availableFields>
+        <availableFields>
+            <field>LLC_BI__Committed_Direct_Exposure__c</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </availableFields>
+        <availableFields>
+            <field>LLC_BI__Committed_Indirect_Exposure__c</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </availableFields>
+        <availableFields>
+            <field>LLC_BI__Proposed_Affiliated_Exposure__c</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </availableFields>
+        <availableFields>
+            <field>LLC_BI__Proposed_Direct_Exposure__c</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </availableFields>
+        <availableFields>
+            <field>LLC_BI__Proposed_Indirect_Exposure__c</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </availableFields>
+        <availableFields>
+            <field>LLC_BI__Total_Loan_Facilities_Exposure__c</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </availableFields>
+        <description>The Total Exposure summary for product package.</description>
+        <displayedFields>
+            <field>CF_Total_Aggregate_Exposure__c</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </displayedFields>
+        <displayedFields>
+            <field>LLC_BI__Total_Direct_Exposure__c</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </displayedFields>
+        <displayedFields>
+            <field>LLC_BI__Total_Indirect_Exposure__c</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </displayedFields>
+        <displayedFields>
+            <field>LLC_BI__Total_Affiliated_Exposure__c</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </displayedFields>
+        <displayedFields>
+            <field>LLC_BI__Total_Net_New_Funds__c</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </displayedFields>
+        <label>Total Exposure Summary</label>
+    </fieldSets>
+    <fields>
+        <fullName>CF_Approval_Path__c</fullName>
+        <description>This field has used in PP Approval process.</description>
+        <encryptionScheme>None</encryptionScheme>
+        <externalId>false</externalId>
+        <label>Approval Path</label>
+        <length>30</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>CF_Approval_Process__c</fullName>
+        <encryptionScheme>None</encryptionScheme>
+        <externalId>false</externalId>
+        <label>Approval Process</label>
+        <length>255</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>CF_Approver_1__c</fullName>
+        <businessStatus>Active</businessStatus>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <description>Used in flex approval process to reference the first approver. Added for Commercial Accelerate project.</description>
+        <externalId>false</externalId>
+        <label>Approver 1</label>
+        <referenceTo>User</referenceTo>
+        <relationshipName>Commercial_Product_Package_1st_Approver</relationshipName>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>CF_Approver_2__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <description>Used in flex approval process to reference the second approver. Added for Commercial Accelerate project.</description>
+        <externalId>false</externalId>
+        <label>Approver 2</label>
+        <referenceTo>User</referenceTo>
+        <relationshipName>Commercial_Product_Packages_2nd_Approver</relationshipName>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>CF_Approver_3__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <externalId>false</externalId>
+        <label>Approver 3</label>
+        <referenceTo>User</referenceTo>
+        <relationshipName>Product_Packages6</relationshipName>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>CF_Approver_4__c</fullName>
+        <externalId>false</externalId>
+        <label>Approver 4</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Internal Loan Committee</fullName>
+                    <default>false</default>
+                    <label>Internal Loan Committee</label>
+                </value>
+                <value>
+                    <fullName>Director Loan Committee</fullName>
+                    <default>false</default>
+                    <label>Director Loan Committee</label>
+                </value>
+                <value>
+                    <fullName>Board Of Directors</fullName>
+                    <default>false</default>
+                    <label>Board Of Directors</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>CF_Approver_Queue__c</fullName>
+        <description>This field has been used in pp approval process during R2 build.</description>
+        <externalId>false</externalId>
+        <label>Approver Group</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Internal Loan Committee</fullName>
+                    <default>false</default>
+                    <label>Internal Loan Committee</label>
+                </value>
+                <value>
+                    <fullName>Internal and Director Loan Committee</fullName>
+                    <default>false</default>
+                    <label>Internal and Director Loan Committee</label>
+                </value>
+                <value>
+                    <fullName>Board Of Directors</fullName>
+                    <default>false</default>
+                    <label>Board Of Directors</label>
+                </value>
+                <value>
+                    <fullName>CBP RBP RCO Role Queue</fullName>
+                    <default>false</default>
+                    <label>CBP RBP RCO Role Queue</label>
+                </value>
+                <value>
+                    <fullName>RBP RCO Role Queue</fullName>
+                    <default>false</default>
+                    <label>RBP RCO Role Queue</label>
+                </value>
+                <value>
+                    <fullName>RCO Executive Team Role Queue</fullName>
+                    <default>false</default>
+                    <label>RCO Executive Team Role Queue</label>
+                </value>
+                <value>
+                    <fullName>CEO CCO CBO Role Queue</fullName>
+                    <default>false</default>
+                    <label>CEO CCO CBO Role Queue</label>
+                </value>
+                <value>
+                    <fullName>Director Loan Committee</fullName>
+                    <default>false</default>
+                    <isActive>false</isActive>
+                    <label>Director Loan Committee</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>CF_Auto_Approval__c</fullName>
+        <defaultValue>false</defaultValue>
+        <description>This checkbox has used in PP Approval process flow.</description>
+        <externalId>false</externalId>
+        <label>Auto Approval?</label>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>CF_Branch__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <description>It will be updated by a flow and saves the branch id from the RM branch number.</description>
+        <externalId>false</externalId>
+        <label>Branch</label>
+        <referenceTo>LLC_BI__Branch__c</referenceTo>
+        <relationshipLabel>Product Packages (Branch)</relationshipLabel>
+        <relationshipName>Product_Package</relationshipName>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>CF_Collateral_Narrative__c</fullName>
+        <encryptionScheme>None</encryptionScheme>
+        <externalId>false</externalId>
+        <label>Collateral Narrative</label>
+        <length>32768</length>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Html</type>
+        <visibleLines>25</visibleLines>
+    </fields>
+    <fields>
+        <fullName>CF_Converted_Loan__c</fullName>
+        <defaultValue>false</defaultValue>
+        <description>This field has been used to check converted loan and it&apos;s been update from after loan flow.</description>
+        <externalId>false</externalId>
+        <label>Converted Loan</label>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>CF_Credit_Analyst__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <description>This field is being used on PP&gt;Deal team</description>
+        <externalId>false</externalId>
+        <label>Credit Analyst</label>
+        <referenceTo>User</referenceTo>
+        <relationshipName>Product_Packages2</relationshipName>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>CF_Credit_Officer__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <externalId>false</externalId>
+        <label>Credit Officer</label>
+        <referenceTo>User</referenceTo>
+        <relationshipName>Product_Packages5</relationshipName>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>CF_Current_User__c</fullName>
+        <externalId>false</externalId>
+        <formula>IF( $User.Id =   CF_Loan_Assistant__c ,&apos;Loan Assistant&apos;,
+IF( $User.Id  =  CF_Relationship_Manager__c ,&apos;Relationship Manager&apos;,
+IF( $User.Id =  CF_Credit_Analyst__c ,&apos;Credit Analyst&apos;,
+IF( $User.Id =  CF_Credit_Officer__c ,&apos;Credit Officer&apos;,
+IF( $User.Id =  CF_Treasury__c ,&apos;Treasury&apos;,
+IF( $User.Id  =  CF_Secondary_Relationship_Manager__c ,&apos;Secondary Relationship Manager&apos;,
+&apos;NA&apos;))))))</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Current User</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>CF_Fast_Track_Approval__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <inlineHelpText>Please check this box if you wish to submit to Credit</inlineHelpText>
+        <label>Fast-Track Approval?</label>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>CF_Financial_Repayment_Analysis__c</fullName>
+        <description>This field has been used on long form credit memo.</description>
+        <encryptionScheme>None</encryptionScheme>
+        <externalId>false</externalId>
+        <label>Financial Analysis</label>
+        <length>32768</length>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Html</type>
+        <visibleLines>25</visibleLines>
+    </fields>
+    <fields>
+        <fullName>CF_Financial_Summary_Narrative__c</fullName>
+        <description>This field has been used in long and short form credit memo.</description>
+        <encryptionScheme>None</encryptionScheme>
+        <externalId>false</externalId>
+        <label>Financial Summary Narrative</label>
+        <length>32768</length>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Html</type>
+        <visibleLines>25</visibleLines>
+    </fields>
+    <fields>
+        <fullName>CF_Guarantor_Analysis__c</fullName>
+        <description>This field has been used on long form credit memo</description>
+        <encryptionScheme>None</encryptionScheme>
+        <externalId>false</externalId>
+        <label>Guarantor Analysis</label>
+        <length>32768</length>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Html</type>
+        <visibleLines>25</visibleLines>
+    </fields>
+    <fields>
+        <fullName>CF_Has_Employee_Loan__c</fullName>
+        <defaultValue>false</defaultValue>
+        <description>This flag will be checked when any one of the loans associated to the product package has Employee Loan = True</description>
+        <externalId>false</externalId>
+        <label>Has Employee Loan?</label>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>CF_Has_New_Money_Loan__c</fullName>
+        <defaultValue>false</defaultValue>
+        <description>This field is marked TRUE if there is a loan that has new money in the product package</description>
+        <externalId>false</externalId>
+        <label>Has New Money Loan?</label>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>CF_Has_Reg_O_Loan__c</fullName>
+        <defaultValue>false</defaultValue>
+        <description>This flag will be checked when any one of the loans associated to the product package is Reg O enabled</description>
+        <externalId>false</externalId>
+        <label>Has Reg O Loan?</label>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>CF_Has_Structure_Loans__c</fullName>
+        <defaultValue>false</defaultValue>
+        <description>This field is used as an indicator if the product package includes a loan that has limits or sublimits.</description>
+        <externalId>false</externalId>
+        <label>Has Structure Loans?</label>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>CF_Highest_Policy_Exception__c</fullName>
+        <defaultValue>&apos;none&apos;</defaultValue>
+        <encryptionScheme>None</encryptionScheme>
+        <externalId>false</externalId>
+        <label>Highest Policy Exception</label>
+        <length>255</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>CF_Is_Approval_Ready__c</fullName>
+        <defaultValue>false</defaultValue>
+        <description>This field will be checked manually before submitting the PP for approval.</description>
+        <externalId>false</externalId>
+        <label>Is Approval Ready?</label>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>CF_Is_Fully_Cash_Secured__c</fullName>
+        <defaultValue>false</defaultValue>
+        <description>This field is marked TRUE if ALL loans in product package are marked TRUE for Loan Fully Cash Secured field.</description>
+        <externalId>false</externalId>
+        <label>Is Fully Cash Secured?</label>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>CF_Line_Of_Business__c</fullName>
+        <description>This field is being used on PP Details</description>
+        <externalId>false</externalId>
+        <label>Line Of Business</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Commercial</fullName>
+                    <default>false</default>
+                    <label>Commercial</label>
+                </value>
+                <value>
+                    <fullName>Agriculture</fullName>
+                    <default>false</default>
+                    <label>Agriculture</label>
+                </value>
+                <value>
+                    <fullName>SBA</fullName>
+                    <default>false</default>
+                    <label>SBA</label>
+                </value>
+                <value>
+                    <fullName>Contract Services</fullName>
+                    <default>false</default>
+                    <label>Contract Services</label>
+                </value>
+                <value>
+                    <fullName>Consumer</fullName>
+                    <default>false</default>
+                    <label>Consumer</label>
+                </value>
+                <value>
+                    <fullName>Treasury Management</fullName>
+                    <default>false</default>
+                    <label>Treasury Management</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>CF_Loan_Assistant__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <description>This field is being used on PP&gt;Deal Team</description>
+        <externalId>false</externalId>
+        <label>Loan Assistant</label>
+        <referenceTo>User</referenceTo>
+        <relationshipName>Product_Packages1</relationshipName>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>CF_Loan_Purpose__c</fullName>
+        <defaultValue>false</defaultValue>
+        <description>This field has been used in PP Approval Process.</description>
+        <externalId>false</externalId>
+        <label>Loan Purpose</label>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>CF_Memorandum__c</fullName>
+        <description>This field is being used on narrative section of Memorandum in Long Form Credit Memo.</description>
+        <encryptionScheme>None</encryptionScheme>
+        <externalId>false</externalId>
+        <label>Deal Summary</label>
+        <length>32768</length>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Html</type>
+        <visibleLines>25</visibleLines>
+    </fields>
+    <fields>
+        <fullName>CF_New_Policy_Exception__c</fullName>
+        <defaultValue>false</defaultValue>
+        <description>This field is Is marked true if there is a net new policy exception on any of the loans in the product package (e.g. if a pp has a loan that is renewed/modified and there is a new PE from when it was originally approved)</description>
+        <externalId>false</externalId>
+        <label>New Policy Exception?</label>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>CF_Now__c</fullName>
+        <description>This field is used to populate current date</description>
+        <externalId>false</externalId>
+        <formula>Now()</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Now</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>CF_Pre_Screen_Comments__c</fullName>
+        <description>This field is being used on PP Details</description>
+        <encryptionScheme>None</encryptionScheme>
+        <externalId>false</externalId>
+        <label>Comments</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>TextArea</type>
+    </fields>
+    <fields>
+        <fullName>CF_Processor__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <description>This field is being used on PP&gt;Deal Team</description>
+        <externalId>false</externalId>
+        <label>Processor</label>
+        <referenceTo>User</referenceTo>
+        <relationshipName>Product_Packages3</relationshipName>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>CF_Product_Package_Narrative__c</fullName>
+        <description>This field is used for PP narrative section on PP</description>
+        <encryptionScheme>None</encryptionScheme>
+        <externalId>false</externalId>
+        <label>Product Package Narrative</label>
+        <length>32768</length>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Html</type>
+        <visibleLines>25</visibleLines>
+    </fields>
+    <fields>
+        <fullName>CF_Recent_Risk_Grade_Downgrade__c</fullName>
+        <defaultValue>false</defaultValue>
+        <description>This field is used to Indicates if the product package includes a loan that has a recent risk rating downgrade.</description>
+        <externalId>false</externalId>
+        <label>Recent Risk Grade Downgrade?</label>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>CF_Recommendation_Summary__c</fullName>
+        <encryptionScheme>None</encryptionScheme>
+        <externalId>false</externalId>
+        <label>Recommendation Summary</label>
+        <length>32768</length>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Html</type>
+        <visibleLines>25</visibleLines>
+    </fields>
+    <fields>
+        <fullName>CF_Region__c</fullName>
+        <description>It will store the region value from the branch lookup fields.</description>
+        <externalId>false</externalId>
+        <formula>TEXT(LLC_BI__Account__r.LLC_BI__Region__c)</formula>
+        <label>Region</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>CF_Relationship_Manager__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <description>This field is used on RM on Deal Team</description>
+        <externalId>false</externalId>
+        <label>Relationship Manager</label>
+        <referenceTo>User</referenceTo>
+        <relationshipName>Product_Packages</relationshipName>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>CF_Repayment_Analysis__c</fullName>
+        <description>This field has been used on long form credit memo</description>
+        <encryptionScheme>None</encryptionScheme>
+        <externalId>false</externalId>
+        <label>Repayment Analysis</label>
+        <length>32768</length>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Html</type>
+        <visibleLines>25</visibleLines>
+    </fields>
+    <fields>
+        <fullName>CF_Request_Description__c</fullName>
+        <description>This field will be used to capture the Request description for TM request on PP</description>
+        <encryptionScheme>None</encryptionScheme>
+        <externalId>false</externalId>
+        <label>Request Description</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>TextArea</type>
+    </fields>
+    <fields>
+        <fullName>CF_Risk_Rating_Narrative_PP__c</fullName>
+        <encryptionScheme>None</encryptionScheme>
+        <externalId>false</externalId>
+        <label>Risk Rating Narrative</label>
+        <length>32768</length>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Html</type>
+        <visibleLines>25</visibleLines>
+    </fields>
+    <fields>
+        <fullName>CF_Secondary_Relationship_Manager__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <externalId>false</externalId>
+        <label>Secondary Relationship Manager</label>
+        <referenceTo>User</referenceTo>
+        <relationshipName>Product_Packages7</relationshipName>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>CF_Strengths__c</fullName>
+        <encryptionScheme>None</encryptionScheme>
+        <externalId>false</externalId>
+        <label>Strengths</label>
+        <length>285</length>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>LongTextArea</type>
+        <visibleLines>3</visibleLines>
+    </fields>
+    <fields>
+        <fullName>CF_Today_s_Date__c</fullName>
+        <externalId>false</externalId>
+        <formula>TODAY()</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Today&apos;s Date</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>CF_Total_Aggregate_Exposure_Account__c</fullName>
+        <description>This field has been used on PP compact layout.</description>
+        <externalId>false</externalId>
+        <formula>LLC_BI__Account__r.CF_Total_Aggregate_Exposure__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Total Aggregate Account Exposure</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>CF_Total_Aggregate_Exposure__c</fullName>
+        <description>This formula field is giving us summation of exposures.</description>
+        <externalId>false</externalId>
+        <formula>LLC_BI__Total_Direct_Exposure__c  +  LLC_BI__Total_Indirect_Exposure__c  +  LLC_BI__Total_Affiliated_Exposure__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Total Product Package Exposure</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>CF_Total_Treasury_Exposure__c</fullName>
+        <description>This field is used to store the Total Treasury Exposure value from Account record</description>
+        <externalId>false</externalId>
+        <formula>LLC_BI__Account__r.CF_Total_Treasury_Exposure__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Total Treasury Exposure</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>CF_Total_Treasury_Services__c</fullName>
+        <defaultValue>0</defaultValue>
+        <description>This field will store the count of Treasury Service records attached to the Product Package</description>
+        <externalId>false</externalId>
+        <label>Total Treasury Services</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>CF_Treasury__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <description>This field is being used on Deal team on PP</description>
+        <externalId>false</externalId>
+        <label>Treasury</label>
+        <referenceTo>User</referenceTo>
+        <relationshipName>Product_Packages4</relationshipName>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>CF_Weaknesses__c</fullName>
+        <encryptionScheme>None</encryptionScheme>
+        <externalId>false</externalId>
+        <label>Weaknesses</label>
+        <length>285</length>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>LongTextArea</type>
+        <visibleLines>3</visibleLines>
+    </fields>
+    <fields>
+        <fullName>LLC_BI__Account__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <deprecated>false</deprecated>
+        <description>The Account field is a lookup to the Account/ Relationship object in nCino and used to specify the main account the product package is associated with. The relationship is required to create a new loan facility from the product package page.</description>
+        <externalId>false</externalId>
+        <label>Relationship</label>
+        <referenceTo>Account</referenceTo>
+        <relationshipLabel>Product Packages</relationshipLabel>
+        <relationshipName>Product_Packages</relationshipName>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>LLC_BI__Additional_Income_Category__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Users populate this picklist field with any additional income in the deal an FI originates outside of nCino. By default, it is blank.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Populate this field with any additional income.</inlineHelpText>
+        <label>Additional Income Category</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Wealth</fullName>
+                    <default>false</default>
+                    <label>Wealth</label>
+                </value>
+                <value>
+                    <fullName>Insurance</fullName>
+                    <default>false</default>
+                    <label>Insurance</label>
+                </value>
+                <value>
+                    <fullName>Swap</fullName>
+                    <default>false</default>
+                    <label>Swap</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>LLC_BI__Additional_One_Time_Income__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Users populate this input with any additional one-time wealth, insurance, or other relevant income in the deal not captured in other loan, deposit, or treasury inputs. By default, it is blank.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Use this field to capture any additional one-time wealth, insurance, or other relevant income in the deal an FI originates outside of nCino and not captured in existing loan, deposit, or treasury inputs.</inlineHelpText>
+        <label>Additional One Time Income</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>LLC_BI__Ancillary_Product_Tax_Rate__c</fullName>
+        <deprecated>false</deprecated>
+        <description>The approximate tax rate to apply to the revenue of new deposits in the deal an FI originates outside of nCino. By default, it is 21.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>The approximate tax rate to apply to the revenue of new deposits in the deal an FI originates outside of nCino.</inlineHelpText>
+        <label>Deposit Tax Rate</label>
+        <precision>11</precision>
+        <required>false</required>
+        <scale>8</scale>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Percent</type>
+    </fields>
+    <fields>
+        <fullName>LLC_BI__Ancillary_Revenue_Comments__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Users populate this text field with any details associated with ancillary revenue summarized in the deal. By default, it is blank.</description>
+        <encryptionScheme>None</encryptionScheme>
+        <externalId>false</externalId>
+        <inlineHelpText>Use this field for any details associated with the ancillary revenue being summarized in the deal but originated outside of nCino.</inlineHelpText>
+        <label>Ancillary Revenue Comments</label>
+        <length>32768</length>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>LongTextArea</type>
+        <visibleLines>3</visibleLines>
+    </fields>
+    <fields>
+        <fullName>LLC_BI__Annual_Deposit_Operating_Cost__c</fullName>
+        <defaultValue>200</defaultValue>
+        <deprecated>false</deprecated>
+        <description>Use this field to determine the approximate Annual Operating Cost for new deposit products an FI originates in the deal outside of nCino. By default, it is 200.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>The approximate Annual Operating Cost for new deposit products an FI originates in the deal outside of nCino.</inlineHelpText>
+        <label>Annual Deposit Operating Cost</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>LLC_BI__Approval_Status__c</fullName>
+        <deprecated>false</deprecated>
+        <description>The approval status field is used to specify where the Product Package is in an approval process. This field is used in conjunction with reverse propagation functionality to alert the user when all loans have met their approvals and the product package is ready to move forward in its approval path. This field should not be used when the propagate down approval process functionality is implemented.</description>
+        <externalId>false</externalId>
+        <label>Approval Status</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Not Submitted</fullName>
+                    <default>true</default>
+                    <label>Not Submitted</label>
+                </value>
+                <value>
+                    <fullName>Pending</fullName>
+                    <default>false</default>
+                    <label>Pending</label>
+                </value>
+                <value>
+                    <fullName>Ready</fullName>
+                    <default>false</default>
+                    <label>Ready</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>LLC_BI__Booked_Affiliated_Exposure__c</fullName>
+        <deprecated>false</deprecated>
+        <description>This optional field automatically populates with a value based on the configuration of Relationship Statistics. This field is used to report Booked Affiliated Exposure to this Product Package.</description>
+        <externalId>false</externalId>
+        <label>Booked Affiliated Exposure</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>LLC_BI__Booked_Direct_Exposure__c</fullName>
+        <deprecated>false</deprecated>
+        <description>This field is optional and automatically populates with a value based on the configuration of Relationship Statistics. This field is used to report Booked Direct Exposure to the Product Package.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>This field is used to report Booked Direct Exposure to the Product Package.</inlineHelpText>
+        <label>Booked Direct Exposure</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>LLC_BI__Booked_Indirect_Exposure__c</fullName>
+        <deprecated>false</deprecated>
+        <description>This field is optional and automatically populates with a value based on the configuration of Relationship Statistics. This field is used to report Booked Indirect Exposure to the Product Package.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>This field is used to report Booked Indirect Exposure to the Product Package.</inlineHelpText>
+        <label>Booked Indirect Exposure</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>LLC_BI__Capital_Allocation_Rate_of_New_Exposures__c</fullName>
+        <defaultValue>0.05</defaultValue>
+        <deprecated>false</deprecated>
+        <description>Users populate this field with the approximate capital allocation rate for all new treasury exposure an FI originates in the deal outside of nCino. nCino recommends using the same capital allocation rate used in loans. By default, it is 5%.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>The approximate capital allocation rate for all new treasury exposure an FI originates in the deal outside of nCino. nCino recommends using the same capital allocation rate used in loans.</inlineHelpText>
+        <label>Capital Allocation Rate of New Exposures</label>
+        <precision>11</precision>
+        <required>false</required>
+        <scale>8</scale>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Percent</type>
+    </fields>
+    <fields>
+        <fullName>LLC_BI__Committed_Affiliated_Exposure__c</fullName>
+        <deprecated>false</deprecated>
+        <description>This optional field automatically populates via the system with a value based on the configuration of Relationship Statistics. This field is used to report Committed Affiliated Exposure to this Product Package.</description>
+        <externalId>false</externalId>
+        <label>Committed Affiliated Exposure</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>LLC_BI__Committed_Direct_Exposure__c</fullName>
+        <deprecated>false</deprecated>
+        <description>This field is optional and automatically populates with a value based on the configuration of Relationship Statistics. This field is used to report Committed Direct Exposure to the Product Package.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>This field is used to report Committed Direct Exposure to the Product Package.</inlineHelpText>
+        <label>Committed Direct Exposure</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>LLC_BI__Committed_Indirect_Exposure__c</fullName>
+        <deprecated>false</deprecated>
+        <description>This field is optional and automatically populates with a value based on the configuration of Relationship Statistics. This field is used to report Committed Indirect Exposure to the Product Package.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>This field is used to report Committed Indirect Exposure to the Product Package.</inlineHelpText>
+        <label>Committed Indirect Exposure</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>LLC_BI__Cost_Of_New_Deposit_Capital_Percent__c</fullName>
+        <defaultValue>0.1</defaultValue>
+        <deprecated>false</deprecated>
+        <description>Use this field to represent the cost of deposit capital for new deposits in the deal an FI originates outside of nCino. By default, it is 10.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>The cost of deposit capital for new deposits in the deal an FI originates outside of nCino.</inlineHelpText>
+        <label>Cost of New Deposit Capital</label>
+        <precision>11</precision>
+        <required>false</required>
+        <scale>8</scale>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Percent</type>
+    </fields>
+    <fields>
+        <fullName>LLC_BI__Cost_of_Capital_of_New_Exposures__c</fullName>
+        <defaultValue>0.10</defaultValue>
+        <deprecated>false</deprecated>
+        <description>Users populate this field with the approximate cost of capital for all new treasury exposure an FI originates in the deal outside of nCino. nCino recommends using the same cost of capital rate used in for loans. By default, it is 10%.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>The approximate cost of capital percentage for all new treasury exposure being originated in the deal outside of nCino. nCino recommends using the same cost of capital rate used in for loans.</inlineHelpText>
+        <label>Cost of Capital of New Exposures</label>
+        <precision>11</precision>
+        <required>false</required>
+        <scale>8</scale>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Percent</type>
+    </fields>
+    <fields>
+        <fullName>LLC_BI__Credit_Memo__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <deprecated>false</deprecated>
+        <description>The Credit Memo field is a look up to the credit memo record associated to the Product Package. This will automatically populate when a credit memo is generated for the Product Package. This will link the user from the Product Package directly to the credit memo associated with it.</description>
+        <externalId>false</externalId>
+        <label>Credit Memo</label>
+        <referenceTo>LLC_BI__Credit_Memo__c</referenceTo>
+        <relationshipLabel>Product Packages</relationshipLabel>
+        <relationshipName>Product_Packages</relationshipName>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>LLC_BI__Deal_Type__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Users select a deal type from this optional picklist. This determines behaviours and layouts for the record. By default it is blank.</description>
+        <externalId>false</externalId>
+        <label>Deal Type</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Loan Onboarding</fullName>
+                    <default>false</default>
+                    <label>Loan Onboarding</label>
+                </value>
+                <value>
+                    <fullName>Handover Loans</fullName>
+                    <default>false</default>
+                    <label>Handover Loans</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>LLC_BI__Default_App__c</fullName>
+        <defaultValue>&apos;pp-details.dashboard-pp-sn-details&apos;</defaultValue>
+        <deprecated>false</deprecated>
+        <description>This field is used to determine the default landing page for this product package within the nCino User Interface.</description>
+        <encryptionScheme>None</encryptionScheme>
+        <externalId>false</externalId>
+        <inlineHelpText>This field is used to determine the default landing page for this product package within the nCino User Interface.</inlineHelpText>
+        <label>Default App</label>
+        <length>255</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>LLC_BI__Deposit_Reserve_Rate__c</fullName>
+        <defaultValue>0.05</defaultValue>
+        <deprecated>false</deprecated>
+        <description>Use this field to determine the approximate reserve rate for new deposit balances in the deal an FI holds on the balance sheet. By default, it is 5.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>The approximate reserve rate for deposit balances to be held on the balance sheet.</inlineHelpText>
+        <label>Deposit Reserve Rate</label>
+        <precision>11</precision>
+        <required>false</required>
+        <scale>8</scale>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Percent</type>
+    </fields>
+    <fields>
+        <fullName>LLC_BI__Description__c</fullName>
+        <deprecated>false</deprecated>
+        <description>The Description field is an optional, free form, long text area that can be used to input details or additional information about the Product Package.</description>
+        <encryptionScheme>None</encryptionScheme>
+        <externalId>false</externalId>
+        <label>Description</label>
+        <length>32768</length>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>LongTextArea</type>
+        <visibleLines>5</visibleLines>
+    </fields>
+    <fields>
+        <fullName>LLC_BI__Expected_Loss_Rate_of_New_Exposures__c</fullName>
+        <defaultValue>0.02</defaultValue>
+        <deprecated>false</deprecated>
+        <description>Users populate this field with the approximate expected loss rate for any new treasury exposures an FI originates in the deal outside of nCino. Represents an average blended rate of PD &amp; LGD. By default, it is 2%.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>The approximate expected loss rate for any new treasury exposures an FI originates in the deal outside of nCino. This value should represent an average blended rate of PD &amp; LGD.</inlineHelpText>
+        <label>Expected Loss Rate of New Exposures</label>
+        <precision>11</precision>
+        <required>false</required>
+        <scale>8</scale>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Percent</type>
+    </fields>
+    <fields>
+        <fullName>LLC_BI__Expected_Term_of_New_Deposit_Products__c</fullName>
+        <defaultValue>12</defaultValue>
+        <deprecated>false</deprecated>
+        <description>Use this field for the expected term in months for new deposit products an FI originates in the deal outside of nCino. By default, it is 12.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>The expected term in months for new deposit products an FI originates in the deal outside of nCino.</inlineHelpText>
+        <label>Expected Term of New Deposit Products</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>LLC_BI__Expected_Term_of_New_Treasury_Services__c</fullName>
+        <defaultValue>60</defaultValue>
+        <deprecated>false</deprecated>
+        <description>Users populate this field with the expected term in months for new treasury products an FI originates in the deal outside of nCino. By default, it is 60.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>The expected or average term in months for new treasury service products an FI originates in the deal outside of nCino.</inlineHelpText>
+        <label>Expected Term of New Treasury Services</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>LLC_BI__Expected_Utilization_of_New_Exposure__c</fullName>
+        <defaultValue>0.30</defaultValue>
+        <deprecated>false</deprecated>
+        <description>Users populate this optional field with the expected utilization percentage of new credit exposure for applicable treasury service products an FI originates outside of nCino. By default, it is  30%.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Users populate this field with the expected utilization % of new credit exposure for applicable treasury service products an FI originates outside of nCino.</inlineHelpText>
+        <label>Expected Utilization of New Exposure</label>
+        <precision>11</precision>
+        <required>false</required>
+        <scale>8</scale>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Percent</type>
+    </fields>
+    <fields>
+        <fullName>LLC_BI__Handover_Information__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Users populate this optional rich text field with context and other supporting information about the client and their financial situation. By default it is blank.</description>
+        <encryptionScheme>None</encryptionScheme>
+        <externalId>false</externalId>
+        <inlineHelpText>Provide context and other supporting information about the client and their financial situation.</inlineHelpText>
+        <label>Handover Information</label>
+        <length>32000</length>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Html</type>
+        <visibleLines>25</visibleLines>
+    </fields>
+    <fields>
+        <fullName>LLC_BI__Handover_Type__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Users select the type of a Handover Loan from this optional picklist. By default it is blank.</description>
+        <externalId>false</externalId>
+        <label>Handover Type</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Distressed Loans</fullName>
+                    <default>false</default>
+                    <label>Distressed Loans</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>LLC_BI__Has_Leases__c</fullName>
+        <defaultValue>false</defaultValue>
+        <deprecated>false</deprecated>
+        <description>This optional checkbox field is an automatic flag to denote whether any of the underlying facilities are lease products.</description>
+        <externalId>false</externalId>
+        <label>Has Leases</label>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>LLC_BI__Has_Syndicated_Loans__c</fullName>
+        <defaultValue>false</defaultValue>
+        <deprecated>false</deprecated>
+        <description>This optional field is an automatic flag to denote whether any of the underlying facilities have been marked as &quot;Is Syndication&quot; loans.</description>
+        <externalId>false</externalId>
+        <label>Has Syndicated Loans</label>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>LLC_BI__Last_Exposure_Calc_Date__c</fullName>
+        <deprecated>false</deprecated>
+        <description>This date/time field automatically populates via the system. This field specifies the most recent date and time for a given exposure calculation. Default is null.</description>
+        <encryptionScheme>None</encryptionScheme>
+        <externalId>false</externalId>
+        <label>Last Exposure Calculation Date</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>DateTime</type>
+    </fields>
+    <fields>
+        <fullName>LLC_BI__Last_Review_Date__c</fullName>
+        <deprecated>false</deprecated>
+        <description>This field is an optional date field. Only used if the customer will be initiating Reviews from the Product Package level. This field is used to show the date of the last review completed on the Product Package and its loans and relationships associated to those loans.</description>
+        <encryptionScheme>None</encryptionScheme>
+        <externalId>false</externalId>
+        <label>Last Review Date</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>LLC_BI__Loan_Facilities_Count__c</fullName>
+        <defaultValue>0</defaultValue>
+        <deprecated>false</deprecated>
+        <description>This field is automatically populated and used to store the number of top level loan facilities in the product package. The count of loan facilities will NOT include those loans that have been superseded, declined or withdrawn.</description>
+        <externalId>false</externalId>
+        <label>Number of Loan Facilities</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>LLC_BI__New_Deposit_Blended_Rate__c</fullName>
+        <deprecated>false</deprecated>
+        <description>The system populates this field to determine the approximate blended rate of new interest-bearing products an FI originates in the deal outside of nCino. By default, it is blank.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Use this field to determine the approximate blended rate of new interest-bearing products an FI originates in the deal outside of nCino.</inlineHelpText>
+        <label>New Deposit Product Rate</label>
+        <precision>11</precision>
+        <required>false</required>
+        <scale>8</scale>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Percent</type>
+    </fields>
+    <fields>
+        <fullName>LLC_BI__New_Deposit_Revenue_Rate__c</fullName>
+        <defaultValue>0.02</defaultValue>
+        <deprecated>false</deprecated>
+        <description>Use this field to determine the approximate deposit revenue rate for new deposit balances in the deal an FI originates outside of nCino. This value reflects a FTP or cost of funds that is confirmed with the FI. By default, it is 2.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>The approximate reserve rate for deposit balances to be held on the balance sheet. This value reflects a FTP or cost of funds that is confirmed with the FI.</inlineHelpText>
+        <label>New Deposit Revenue Rate</label>
+        <precision>11</precision>
+        <required>false</required>
+        <scale>8</scale>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Percent</type>
+    </fields>
+    <fields>
+        <fullName>LLC_BI__New_Interest_Bearing_Deposit_Balance__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Users populate this field with the sum of any additional interest-bearing deposit account balances for all new deposit products an FI originates in the deal outside of nCino. By default, it is blank.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Use this field to indicate any additional interest-bearing deposit account balance for all new deposit products an FI originates in the deal outside of nCino.</inlineHelpText>
+        <label>New Interest Bearing Deposit Balance</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>LLC_BI__New_Money__c</fullName>
+        <deprecated>false</deprecated>
+        <description>This field is an optional currency field.  This is a manually entered field that is used to track the amount of new money being introduced to the Product Package.</description>
+        <externalId>false</externalId>
+        <label>New Money</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>LLC_BI__New_Monthly_Treasury_Income__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Users populate this optional field to indicate the new monthly income of all treasury products an FI originates outside of nCino net of any ECR allowance. By default, it is blank.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>The additional monthly income of all treasury products (net of ECR) in the deal that an FI originates outside of nCino.</inlineHelpText>
+        <label>New Monthly Treasury Income</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>LLC_BI__New_Non_Interest_Bearing_Deposit_Balance__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Users populate this field to indicate any additional interest-bearing deposit account balance for all new deposit products an FI originates in the deal outside of nCino.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Use this field to indicate any additional non-interest-bearing deposit account balance for all new deposit products an FI originates in the deal outside of nCino.</inlineHelpText>
+        <label>New Non-Interest Bearing Deposit Balance</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>LLC_BI__New_Treasury_Credit_Exposure__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Users populate this optional field with the sum of any new credit exposure for applicable treasury service products an FI originates outside of nCino. By default, it is blank.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>This field indicates the sum of total credit exposure for any new treasury service products in the deal an FI originates outside of nCino.</inlineHelpText>
+        <label>New Treasury Credit Exposure</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>LLC_BI__New_Treasury_One_Time_Fee_Amount__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Users populate this optional field with the sum of any one-time fee amounts for treasury products being originated outside of nCino. By default, it is blank.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Populate this field with the sum of any one-time fees associated with treasury products an FI originates in the deal outside of nCino. Exclusive of recurring fees captured in New Monthly Treasury Income.</inlineHelpText>
+        <label>New Treasury One Time Fee Amount</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>LLC_BI__Next_Annual_Review__c</fullName>
+        <deprecated>false</deprecated>
+        <description>--DEPRECATED-- This field will be deprecated, as its functionality is now handled by the more generic &quot;next review date&quot; field.</description>
+        <encryptionScheme>None</encryptionScheme>
+        <externalId>false</externalId>
+        <label>-D Next Annual Review</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>LLC_BI__Next_Review_Date__c</fullName>
+        <deprecated>false</deprecated>
+        <description>This field is an optional date field. Only used if the customer will be initiating Reviews from the product package level. This date field is used to specify the date of the next review for the Product Package. This date will automatically populate, based off of review frequency, once the initial review date is set manually, and a review has been completed (to populate the last review date field) .</description>
+        <encryptionScheme>None</encryptionScheme>
+        <externalId>false</externalId>
+        <label>Next Review Date</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>LLC_BI__Outstanding__c</fullName>
+        <deprecated>false</deprecated>
+        <description>This currency field is an option and manually entered field. It is used to show the amount of money&quot; in use&quot;  for the Product Package. This field can also be configured to be populated with field mapping from the customers core.</description>
+        <externalId>false</externalId>
+        <label>Outstanding</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>LLC_BI__Primary_Entity__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <deprecated>false</deprecated>
+        <description>Users populate this optional lookup field to indicate the primary borrower of loans. When populated, the system uses this field to create a specific entity involvement record when users create a loan in Deal Proposal.</description>
+        <externalId>false</externalId>
+        <label>Primary Entity</label>
+        <referenceTo>Account</referenceTo>
+        <relationshipLabel>Primary Product Packages</relationshipLabel>
+        <relationshipName>Primary_Product_Packages</relationshipName>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>LLC_BI__Primary_Officer__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <deprecated>false</deprecated>
+        <description>This field is an optional and manually set field. This field is a lookup to nCino users, and specifies which user is the primary officer for the Product Package</description>
+        <externalId>false</externalId>
+        <label>Primary Officer</label>
+        <referenceTo>User</referenceTo>
+        <relationshipName>Product_Packages</relationshipName>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>LLC_BI__Propagate_Action__c</fullName>
+        <defaultValue>false</defaultValue>
+        <deprecated>false</deprecated>
+        <description>This field is used to execute the ActionPropagation trigger. This trigger is used to propagate approval actions to loans that are associated to the product package.</description>
+        <externalId>false</externalId>
+        <label>Propagate Action</label>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>LLC_BI__Proposed_Affiliated_Exposure__c</fullName>
+        <deprecated>false</deprecated>
+        <description>This optional field automatically populates via the system with a value based on the configuration of Relationship Statistics. This field is used to report Proposed Affiliated Exposure to this Product Package.</description>
+        <externalId>false</externalId>
+        <label>Proposed Affiliated Exposure</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>LLC_BI__Proposed_Direct_Exposure__c</fullName>
+        <deprecated>false</deprecated>
+        <description>This field is optional and automatically populates with a value based on the configuration of Relationship Statistics. This field is used to report Proposed Direct Exposure to the Product Package.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>This field is used to report Proposed Direct Exposure to the Product Package.</inlineHelpText>
+        <label>Proposed Direct Exposure</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>LLC_BI__Proposed_Indirect_Exposure__c</fullName>
+        <deprecated>false</deprecated>
+        <description>This field is optional and automatically populates with a value based on the configuration of Relationship Statistics. This field is used to report Proposed Indirect Exposure to the Product Package.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>This field is used to report Proposed Indirect Exposure to the Product Package.</inlineHelpText>
+        <label>Proposed Indirect Exposure</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>LLC_BI__RWA_Percentage_for_New_Treasury_Exposure__c</fullName>
+        <defaultValue>1</defaultValue>
+        <deprecated>false</deprecated>
+        <description>Users populate this field with the approximate Risk Weighted Assets percentage for any new treasury exposures an FI originates in the deal outside of nCino. Percentage varies based on the mix of treasury products. By default, it is 100%.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Risk Weighted Assets percentage for any new treasury exposures an FI originates in the deal outside of nCino. The percentage could vary based on the mix of treasury products.</inlineHelpText>
+        <label>RWA Percentage for New Treasury Exposure</label>
+        <precision>11</precision>
+        <required>false</required>
+        <scale>8</scale>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Percent</type>
+    </fields>
+    <fields>
+        <fullName>LLC_BI__Reason_For_Handover__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Users select the reason for loan hand over from this optional picklist. By default it is blank.</description>
+        <externalId>false</externalId>
+        <label>Reason for Handover</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Covenant Breach</fullName>
+                    <default>false</default>
+                    <label>Covenant Breach</label>
+                </value>
+                <value>
+                    <fullName>Declining Industry Sector</fullName>
+                    <default>false</default>
+                    <label>Declining Industry Sector</label>
+                </value>
+                <value>
+                    <fullName>Financial Distress</fullName>
+                    <default>false</default>
+                    <label>Financial Distress</label>
+                </value>
+                <value>
+                    <fullName>Management Issue</fullName>
+                    <default>false</default>
+                    <label>Management Issue</label>
+                </value>
+                <value>
+                    <fullName>Other</fullName>
+                    <default>false</default>
+                    <label>Other</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>LLC_BI__Review_Frequency__c</fullName>
+        <deprecated>false</deprecated>
+        <description>This field is an optional and manually set field. It is only used if the customer will be initiating Reviews from the product package level. This field is used to indicate how often the product package review is required.</description>
+        <externalId>false</externalId>
+        <label>Review Frequency</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Annually</fullName>
+                    <default>false</default>
+                    <label>Annually</label>
+                </value>
+                <value>
+                    <fullName>Semi-Annually</fullName>
+                    <default>false</default>
+                    <label>Semi-Annually</label>
+                </value>
+                <value>
+                    <fullName>Quarterly</fullName>
+                    <default>false</default>
+                    <label>Quarterly</label>
+                </value>
+                <value>
+                    <fullName>Every 2 Months</fullName>
+                    <default>false</default>
+                    <label>Every 2 Months</label>
+                </value>
+                <value>
+                    <fullName>Monthly</fullName>
+                    <default>false</default>
+                    <label>Monthly</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>LLC_BI__Reviewable_Loan_Facilities_Count__c</fullName>
+        <deprecated>false</deprecated>
+        <description>This field is automatically populated based on the loans that have the &quot;is Review Ready&quot; checkbox, checked on the loan wall.  This field is used to show the number of main loan facilities ready to review. And can be utilized for entry criteria for the approval processes to ensure only loans ready to be submitted for approval are.</description>
+        <externalId>false</externalId>
+        <label>Number of Reviewable Loan Facilities</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>LLC_BI__Risk_Rating__c</fullName>
+        <deprecated>false</deprecated>
+        <description>This field is an optional and manually entered field. This picklist is used to specify the risk rating for the Product Package.</description>
+        <externalId>false</externalId>
+        <label>Risk Rating</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>1</fullName>
+                    <default>false</default>
+                    <label>1</label>
+                </value>
+                <value>
+                    <fullName>2</fullName>
+                    <default>false</default>
+                    <label>2</label>
+                </value>
+                <value>
+                    <fullName>3</fullName>
+                    <default>false</default>
+                    <label>3</label>
+                </value>
+                <value>
+                    <fullName>4</fullName>
+                    <default>false</default>
+                    <label>4</label>
+                </value>
+                <value>
+                    <fullName>5</fullName>
+                    <default>false</default>
+                    <label>5</label>
+                </value>
+                <value>
+                    <fullName>6</fullName>
+                    <default>false</default>
+                    <label>6</label>
+                </value>
+                <value>
+                    <fullName>7</fullName>
+                    <default>false</default>
+                    <label>7</label>
+                </value>
+                <value>
+                    <fullName>8</fullName>
+                    <default>false</default>
+                    <label>8</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>LLC_BI__Secondary_Officer__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <deprecated>false</deprecated>
+        <description>This field is an optional and manually set field. This field is a lookup to nCino users, and specifies which user is the secondary officer for the Product Package</description>
+        <externalId>false</externalId>
+        <label>Secondary Officer</label>
+        <referenceTo>User</referenceTo>
+        <relationshipName>Product_Packages_Secondary</relationshipName>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>LLC_BI__Stage__c</fullName>
+        <deprecated>false</deprecated>
+        <description>This field specifies the current product package approval stage. If provided, this value should match one of the Stage pick list values configured for this financial institution. Optional and manually populated.</description>
+        <externalId>false</externalId>
+        <label>Stage</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Qualification / Proposal</fullName>
+                    <default>false</default>
+                    <label>Qualification / Proposal</label>
+                </value>
+                <value>
+                    <fullName>Application Processing</fullName>
+                    <default>false</default>
+                    <label>Application Processing</label>
+                </value>
+                <value>
+                    <fullName>Credit Underwriting</fullName>
+                    <default>false</default>
+                    <label>Credit Underwriting</label>
+                </value>
+                <value>
+                    <fullName>Credit Decisioning</fullName>
+                    <default>false</default>
+                    <label>Credit Decisioning</label>
+                </value>
+                <value>
+                    <fullName>Sales</fullName>
+                    <default>false</default>
+                    <label>Sales</label>
+                </value>
+                <value>
+                    <fullName>Complete</fullName>
+                    <default>false</default>
+                    <label>Complete</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>LLC_BI__Status__c</fullName>
+        <deprecated>false</deprecated>
+        <description>This field is optional and manually set (or set through workflow configuration). This field is used to specify the Status of the product package. Generally used in the approval process configuration.</description>
+        <externalId>false</externalId>
+        <label>Status</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <controllingField>LLC_BI__Stage__c</controllingField>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Hold</fullName>
+                    <default>false</default>
+                    <label>Hold</label>
+                </value>
+                <value>
+                    <fullName>Open</fullName>
+                    <default>false</default>
+                    <label>Open</label>
+                </value>
+                <value>
+                    <fullName>Withdrawn</fullName>
+                    <default>false</default>
+                    <label>Withdrawn</label>
+                </value>
+                <value>
+                    <fullName>Declined</fullName>
+                    <default>false</default>
+                    <label>Declined</label>
+                </value>
+                <value>
+                    <fullName>Approved</fullName>
+                    <default>false</default>
+                    <label>Approved</label>
+                </value>
+                <value>
+                    <fullName>Rework</fullName>
+                    <default>false</default>
+                    <label>Rework</label>
+                </value>
+                <value>
+                    <fullName>Charge-Off</fullName>
+                    <default>false</default>
+                    <label>Charge-Off</label>
+                </value>
+                <value>
+                    <fullName>Paid-Off</fullName>
+                    <default>false</default>
+                    <label>Paid-Off</label>
+                </value>
+                <value>
+                    <fullName>In Review</fullName>
+                    <default>false</default>
+                    <label>In Review</label>
+                </value>
+                <value>
+                    <fullName>CBP RBP RCO Role Approved</fullName>
+                    <default>false</default>
+                    <label>CBP RBP RCO Role Approved</label>
+                </value>
+                <value>
+                    <fullName>RBP RCO Role Approved</fullName>
+                    <default>false</default>
+                    <label>RBP RCO Role Approved</label>
+                </value>
+                <value>
+                    <fullName>RCO Executive Team Role Approved</fullName>
+                    <default>false</default>
+                    <label>RCO Executive Team Role Approved</label>
+                </value>
+                <value>
+                    <fullName>CEO CCO CBO Role Approved</fullName>
+                    <default>false</default>
+                    <label>CEO CCO CBO Role Approved</label>
+                </value>
+                <value>
+                    <fullName>Director Loan Committee Approved</fullName>
+                    <default>false</default>
+                    <label>Director Loan Committee Approved</label>
+                </value>
+                <value>
+                    <fullName>Board of Directors Approved</fullName>
+                    <default>false</default>
+                    <label>Board of Directors Approved</label>
+                </value>
+                <value>
+                    <fullName>Complete</fullName>
+                    <default>false</default>
+                    <label>Complete</label>
+                </value>
+            </valueSetDefinition>
+            <valueSettings>
+                <controllingFieldValue>Sales</controllingFieldValue>
+                <controllingFieldValue>Qualification / Proposal</controllingFieldValue>
+                <controllingFieldValue>Application Processing</controllingFieldValue>
+                <controllingFieldValue>Credit Underwriting</controllingFieldValue>
+                <controllingFieldValue>Credit Decisioning</controllingFieldValue>
+                <controllingFieldValue>Complete</controllingFieldValue>
+                <valueName>Open</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Qualification / Proposal</controllingFieldValue>
+                <controllingFieldValue>Application Processing</controllingFieldValue>
+                <controllingFieldValue>Credit Underwriting</controllingFieldValue>
+                <valueName>Hold</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Qualification / Proposal</controllingFieldValue>
+                <controllingFieldValue>Application Processing</controllingFieldValue>
+                <controllingFieldValue>Complete</controllingFieldValue>
+                <valueName>Complete</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Credit Underwriting</controllingFieldValue>
+                <valueName>Rework</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Credit Decisioning</controllingFieldValue>
+                <controllingFieldValue>Complete</controllingFieldValue>
+                <valueName>Approved</valueName>
+            </valueSettings>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>LLC_BI__TBE__c</fullName>
+        <deprecated>false</deprecated>
+        <description>This field is optional and manually set. This currency field is used to capture the Total Exposure (Borrowers) for the product package. This can be used alone or in conjunction with any other exposure fields. This field can also be configured to be populated with field mapping from the customers core.</description>
+        <externalId>false</externalId>
+        <label>TBE</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>LLC_BI__TCE__c</fullName>
+        <deprecated>false</deprecated>
+        <description>This field is optional and manually set. This currency field is used to capture total exposure (Credit) for the product package. This can be used alone or in conjunction with any other exposure fields. This field can also be configured to be populated with field mapping from the customers core.</description>
+        <externalId>false</externalId>
+        <label>TCE</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>LLC_BI__TOE__c</fullName>
+        <deprecated>false</deprecated>
+        <description>This field is optional and manually set. This currency field is used to capture total exposure (Obligor) for the product package. This can be used alone or in conjunction with any other exposure fields. This field can also be configured to be populated with field mapping from the customers core.</description>
+        <externalId>false</externalId>
+        <label>TOE</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>LLC_BI__Total_Affiliated_Exposure__c</fullName>
+        <deprecated>false</deprecated>
+        <description>This optional field automatically populates via the system with a value based on the configuration of Relationship Statistics. This field is used to report Total Affiliated Exposure to this Product Package.</description>
+        <externalId>false</externalId>
+        <label>Total Affiliated Exposure</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>LLC_BI__Total_Allocated_Syndication_Amount__c</fullName>
+        <deprecated>false</deprecated>
+        <description>This optional field is an automatic roll-up of the total allocation amounts of any loans flagged as syndications that are associated with the product package.</description>
+        <externalId>false</externalId>
+        <label>Total Allocated Syndication Amount</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>LLC_BI__Total_Direct_Exposure__c</fullName>
+        <deprecated>false</deprecated>
+        <description>This field is optional and automatically populates with a value based on the configuration of Relationship Statistics. This field is used to report Total Direct Exposure to the Product Package.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>This field is used to report Total Direct Exposure to the Product Package.</inlineHelpText>
+        <label>Total Direct Exposure</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>LLC_BI__Total_Indirect_Exposure__c</fullName>
+        <deprecated>false</deprecated>
+        <description>This field is optional and automatically populates with a value based on the configuration of Relationship Statistics. This field is used to report Total Indirect Exposure to the Product Package.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>This field is used to report Total Indirect Exposure to the Product Package.</inlineHelpText>
+        <label>Total Indirect Exposure</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>LLC_BI__Total_Loan_Facilities_Amount__c</fullName>
+        <defaultValue>0.00</defaultValue>
+        <deprecated>false</deprecated>
+        <description>This field is automatically calculated. This field calculates and shows the total amount of all the main level facility &quot;original amount&quot; in the product package. This field will NOT include those loans that have been superseded, declined or withdrawn.</description>
+        <externalId>false</externalId>
+        <label>Total Loan Facilities Amount</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>LLC_BI__Total_Loan_Facilities_Exposure__c</fullName>
+        <defaultValue>0.00</defaultValue>
+        <deprecated>false</deprecated>
+        <description>This field is optional and manually set. This field is used to specify the amount on exposure for all the main facility loans in the product package. This can be used alone or in conjunction with any other exposure fields. This field can also be configured to be populated with field mapping from the customers core.</description>
+        <externalId>false</externalId>
+        <label>Total Loan Facilities Exposure</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>LLC_BI__Total_Net_New_Funds__c</fullName>
+        <deprecated>false</deprecated>
+        <description>This optional field automatically populates via the system with a value based on the configuration of Relationship Statistics. This field is used to report Total Net New Funds to this Product Package.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>This field is used for Total Net New Funds for any renewals or modifications in this Product Package.</inlineHelpText>
+        <label>Total Net New Funds</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>LLC_BI__Total_Syndicated_Facility_Amount__c</fullName>
+        <deprecated>false</deprecated>
+        <description>This optional field is an automatic roll-up of the total facility amounts of any loans flagged as syndications that are associated with the product package.</description>
+        <externalId>false</externalId>
+        <label>Total Syndicated Facility Amount</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>LLC_BI__Treasury_Annual_Operating_Cost__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Users populate this field with the approximate annual operating cost of originating and servicing any new treasury services an FI originates in the deal. By default, it is blank.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>The approximate annual operating cost in dollars for new treasury service products an FI originates in the deal outside of nCino.</inlineHelpText>
+        <label>Treasury Annual Operating Cost</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>LLC_BI__Unused__c</fullName>
+        <deprecated>false</deprecated>
+        <description>This currency field is optional and manually entered field. This field is used to specify the available amount or (unused) amount in all the main facility loans in the product package. This field can also be configured to be populated with field mapping from the customers core</description>
+        <externalId>false</externalId>
+        <label>Unused</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>LLC_BI__lookupKey__c</fullName>
+        <caseSensitive>false</caseSensitive>
+        <deprecated>false</deprecated>
+        <description>This field is used as an external, unique key for the Product Package ID record. This value is not generally made visible to the user as it is usually used behind the scenes in data mapping exercises.</description>
+        <encryptionScheme>None</encryptionScheme>
+        <externalId>true</externalId>
+        <label>lookupKey</label>
+        <length>255</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>true</unique>
+    </fields>
+    <label>Product Package</label>
+    <listViews>
+        <fullName>CA_Reg_1_2_4_prior_to_Credit_Und</fullName>
+        <columns>NAME</columns>
+        <columns>LLC_BI__Account__c</columns>
+        <columns>LLC_BI__Total_Loan_Facilities_Amount__c</columns>
+        <columns>LLC_BI__Stage__c</columns>
+        <columns>LLC_BI__Status__c</columns>
+        <columns>CF_Line_Of_Business__c</columns>
+        <columns>CREATEDBY_USER</columns>
+        <columns>CREATED_DATE</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>CF_Region__c</field>
+            <operation>equals</operation>
+            <value>Southeast-Region 1,Southeast-Region 2,Central-Region 4</value>
+        </filters>
+        <filters>
+            <field>LLC_BI__Stage__c</field>
+            <operation>equals</operation>
+            <value>Qualification / Proposal,Application Processing</value>
+        </filters>
+        <filters>
+            <field>CF_Credit_Analyst__c</field>
+            <operation>equals</operation>
+        </filters>
+        <label>CA -Reg 1, 2 &amp; 4 - Prior to Credit Under</label>
+    </listViews>
+    <listViews>
+        <fullName>CA_Reg_3_Prior_to_Credit_Underwr</fullName>
+        <columns>NAME</columns>
+        <columns>LLC_BI__Account__c</columns>
+        <columns>LLC_BI__Total_Loan_Facilities_Amount__c</columns>
+        <columns>LLC_BI__Stage__c</columns>
+        <columns>LLC_BI__Status__c</columns>
+        <columns>CF_Line_Of_Business__c</columns>
+        <columns>CREATEDBY_USER</columns>
+        <columns>CREATED_DATE</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>CF_Region__c</field>
+            <operation>equals</operation>
+            <value>Southwest-Region 3</value>
+        </filters>
+        <filters>
+            <field>LLC_BI__Stage__c</field>
+            <operation>equals</operation>
+            <value>Qualification / Proposal,Application Processing</value>
+        </filters>
+        <filters>
+            <field>CF_Credit_Analyst__c</field>
+            <operation>equals</operation>
+        </filters>
+        <label>CA - Reg 3 - Prior to Credit Under</label>
+    </listViews>
+    <listViews>
+        <fullName>Entity_Involvement_Records_Product_Pkg</fullName>
+        <columns>NAME</columns>
+        <columns>LLC_BI__Booked_Affiliated_Exposure__c</columns>
+        <columns>LLC_BI__Booked_Direct_Exposure__c</columns>
+        <columns>LLC_BI__Booked_Indirect_Exposure__c</columns>
+        <columns>LLC_BI__Committed_Affiliated_Exposure__c</columns>
+        <columns>LLC_BI__Committed_Direct_Exposure__c</columns>
+        <columns>LLC_BI__Committed_Indirect_Exposure__c</columns>
+        <columns>LLC_BI__Primary_Entity__c</columns>
+        <columns>LLC_BI__Account__c</columns>
+        <columns>LLC_BI__Total_Affiliated_Exposure__c</columns>
+        <columns>CF_Total_Aggregate_Exposure_Account__c</columns>
+        <columns>CF_Total_Aggregate_Exposure__c</columns>
+        <columns>LLC_BI__TBE__c</columns>
+        <columns>LLC_BI__Total_Direct_Exposure__c</columns>
+        <columns>LLC_BI__Total_Indirect_Exposure__c</columns>
+        <filterScope>Mine</filterScope>
+        <label>Entity Involvement Records - Product Pkg</label>
+    </listViews>
+    <listViews>
+        <fullName>LLC_BI__All</fullName>
+        <columns>NAME</columns>
+        <columns>LLC_BI__Account__c</columns>
+        <columns>LLC_BI__Primary_Officer__c</columns>
+        <columns>LLC_BI__Secondary_Officer__c</columns>
+        <columns>CREATED_DATE</columns>
+        <filterScope>Everything</filterScope>
+        <label>All</label>
+    </listViews>
+    <listViews>
+        <fullName>LLC_BI__All1</fullName>
+        <columns>NAME</columns>
+        <columns>LLC_BI__Stage__c</columns>
+        <columns>LLC_BI__Status__c</columns>
+        <columns>CREATED_DATE</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>LLC_BI__Stage__c</field>
+            <operation>equals</operation>
+            <value>Credit Decisioning</value>
+        </filters>
+        <label>All</label>
+    </listViews>
+    <listViews>
+        <fullName>LV_Board_of_Directors</fullName>
+        <columns>NAME</columns>
+        <columns>CF_Total_Aggregate_Exposure__c</columns>
+        <columns>LLC_BI__Stage__c</columns>
+        <columns>LLC_BI__Status__c</columns>
+        <columns>CF_Approval_Path__c</columns>
+        <columns>CF_Approver_1__c</columns>
+        <columns>CF_Approver_Queue__c</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>CF_Approver_Queue__c</field>
+            <operation>equals</operation>
+            <value>Board Of Directors</value>
+        </filters>
+        <filters>
+            <field>LLC_BI__Stage__c</field>
+            <operation>equals</operation>
+            <value>Credit Decisioning</value>
+        </filters>
+        <filters>
+            <field>LLC_BI__Status__c</field>
+            <operation>equals</operation>
+            <value>In Review</value>
+        </filters>
+        <filters>
+            <field>RECORDTYPE</field>
+            <operation>equals</operation>
+            <value>LLC_BI__Product_Package__c.PP_nCino_Product_Package</value>
+        </filters>
+        <label>Board of Directors</label>
+        <sharedTo>
+            <role>Chief_Banking_Officer</role>
+            <role>Chief_Credit_Officer</role>
+            <role>Chief_Executive_Officer</role>
+            <role>Community_Bank_President_CBP</role>
+            <role>Regional_Bank_President_RBP</role>
+            <role>Regional_Credit_Officer</role>
+        </sharedTo>
+    </listViews>
+    <listViews>
+        <fullName>LV_Community_Bank_President</fullName>
+        <columns>NAME</columns>
+        <columns>CF_Total_Aggregate_Exposure__c</columns>
+        <columns>LLC_BI__Stage__c</columns>
+        <columns>LLC_BI__Status__c</columns>
+        <columns>CF_Approval_Path__c</columns>
+        <columns>CF_Approver_1__c</columns>
+        <columns>CF_Approver_Queue__c</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>LLC_BI__Stage__c</field>
+            <operation>equals</operation>
+            <value>Credit Decisioning</value>
+        </filters>
+        <filters>
+            <field>LLC_BI__Status__c</field>
+            <operation>equals</operation>
+            <value>In Review</value>
+        </filters>
+        <filters>
+            <field>CF_Approver_Queue__c</field>
+            <operation>equals</operation>
+            <value>CBP RBP RCO Role Queue</value>
+        </filters>
+        <filters>
+            <field>RECORDTYPE</field>
+            <operation>equals</operation>
+            <value>LLC_BI__Product_Package__c.PP_nCino_Product_Package</value>
+        </filters>
+        <label>Community Bank President</label>
+        <sharedTo>
+            <role>Community_Bank_President_CBP</role>
+        </sharedTo>
+    </listViews>
+    <listViews>
+        <fullName>LV_Credit_Analyst_Regions_1_2_4</fullName>
+        <columns>NAME</columns>
+        <columns>LLC_BI__Account__c</columns>
+        <columns>LLC_BI__Total_Loan_Facilities_Amount__c</columns>
+        <columns>LLC_BI__Stage__c</columns>
+        <columns>LLC_BI__Status__c</columns>
+        <columns>CF_Line_Of_Business__c</columns>
+        <columns>CREATEDBY_USER</columns>
+        <columns>CREATED_DATE</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>CF_Region__c</field>
+            <operation>equals</operation>
+            <value>Southeast-Region 1,Southeast-Region 2,Central-Region 4</value>
+        </filters>
+        <filters>
+            <field>LLC_BI__Stage__c</field>
+            <operation>equals</operation>
+            <value>Credit Underwriting</value>
+        </filters>
+        <filters>
+            <field>CF_Credit_Analyst__c</field>
+            <operation>equals</operation>
+        </filters>
+        <label>CA - Reg 1, 2, &amp; 4 - Credit Underwriting</label>
+    </listViews>
+    <listViews>
+        <fullName>LV_Credit_Analyst_Regions_3</fullName>
+        <columns>NAME</columns>
+        <columns>LLC_BI__Account__c</columns>
+        <columns>LLC_BI__Total_Loan_Facilities_Amount__c</columns>
+        <columns>LLC_BI__Stage__c</columns>
+        <columns>LLC_BI__Status__c</columns>
+        <columns>CF_Line_Of_Business__c</columns>
+        <columns>CREATEDBY_USER</columns>
+        <columns>CREATED_DATE</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>CF_Region__c</field>
+            <operation>equals</operation>
+            <value>Southwest-Region 3</value>
+        </filters>
+        <filters>
+            <field>LLC_BI__Stage__c</field>
+            <operation>equals</operation>
+            <value>Credit Underwriting</value>
+        </filters>
+        <filters>
+            <field>CF_Credit_Analyst__c</field>
+            <operation>equals</operation>
+        </filters>
+        <label>CA - Reg 3 - Credit Underwriting</label>
+    </listViews>
+    <listViews>
+        <fullName>LV_Executive_Team</fullName>
+        <columns>NAME</columns>
+        <columns>CF_Total_Aggregate_Exposure__c</columns>
+        <columns>LLC_BI__Stage__c</columns>
+        <columns>LLC_BI__Status__c</columns>
+        <columns>CF_Approval_Path__c</columns>
+        <columns>CF_Approver_1__c</columns>
+        <columns>CF_Approver_Queue__c</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>LLC_BI__Stage__c</field>
+            <operation>equals</operation>
+            <value>Credit Decisioning</value>
+        </filters>
+        <filters>
+            <field>LLC_BI__Status__c</field>
+            <operation>equals</operation>
+            <value>In Review</value>
+        </filters>
+        <filters>
+            <field>RECORDTYPE</field>
+            <operation>equals</operation>
+            <value>LLC_BI__Product_Package__c.PP_nCino_Product_Package</value>
+        </filters>
+        <filters>
+            <field>CF_Approver_Queue__c</field>
+            <operation>equals</operation>
+            <value>RCO Executive Team Role Queue,CEO CCO CBO Role Queue</value>
+        </filters>
+        <label>Executive Team</label>
+        <sharedTo>
+            <role>Chief_Banking_Officer</role>
+            <role>Chief_Credit_Officer</role>
+            <role>Chief_Executive_Officer</role>
+            <role>Community_Bank_President_CBP</role>
+            <role>Regional_Bank_President_RBP</role>
+            <role>Regional_Credit_Officer</role>
+        </sharedTo>
+    </listViews>
+    <listViews>
+        <fullName>LV_Internal_Loan_Committe_and_Director_Loan_Committe</fullName>
+        <columns>NAME</columns>
+        <columns>CF_Total_Aggregate_Exposure__c</columns>
+        <columns>LLC_BI__Stage__c</columns>
+        <columns>LLC_BI__Status__c</columns>
+        <columns>CF_Approval_Path__c</columns>
+        <columns>CF_Approver_1__c</columns>
+        <columns>CF_Approver_Queue__c</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>CF_Approver_Queue__c</field>
+            <operation>equals</operation>
+            <value>Internal and Director Loan Committee</value>
+        </filters>
+        <filters>
+            <field>LLC_BI__Stage__c</field>
+            <operation>equals</operation>
+            <value>Credit Decisioning</value>
+        </filters>
+        <filters>
+            <field>LLC_BI__Status__c</field>
+            <operation>equals</operation>
+            <value>In Review</value>
+        </filters>
+        <filters>
+            <field>RECORDTYPE</field>
+            <operation>equals</operation>
+            <value>LLC_BI__Product_Package__c.PP_nCino_Product_Package</value>
+        </filters>
+        <label>Internal and Director Loan Committee</label>
+        <sharedTo>
+            <role>Chief_Banking_Officer</role>
+            <role>Chief_Credit_Officer</role>
+            <role>Chief_Executive_Officer</role>
+            <role>Community_Bank_President_CBP</role>
+            <role>Regional_Bank_President_RBP</role>
+            <role>Regional_Credit_Officer</role>
+        </sharedTo>
+    </listViews>
+    <listViews>
+        <fullName>LV_My_Queue_Credit_Analyst</fullName>
+        <booleanFilter>1 AND 2</booleanFilter>
+        <columns>NAME</columns>
+        <columns>LLC_BI__Account__c</columns>
+        <columns>LLC_BI__Total_Loan_Facilities_Amount__c</columns>
+        <columns>LLC_BI__Stage__c</columns>
+        <columns>LLC_BI__Status__c</columns>
+        <columns>CF_Line_Of_Business__c</columns>
+        <columns>CREATEDBY_USER</columns>
+        <columns>CREATED_DATE</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>LLC_BI__Stage__c</field>
+            <operation>notEqual</operation>
+            <value>Complete</value>
+        </filters>
+        <filters>
+            <field>CF_Current_User__c</field>
+            <operation>equals</operation>
+            <value>Credit Analyst</value>
+        </filters>
+        <label>My Queue - Credit Analyst</label>
+    </listViews>
+    <listViews>
+        <fullName>LV_My_Queue_Credit_Officer</fullName>
+        <booleanFilter>1 AND 2</booleanFilter>
+        <columns>NAME</columns>
+        <columns>LLC_BI__Account__c</columns>
+        <columns>LLC_BI__Total_Loan_Facilities_Amount__c</columns>
+        <columns>LLC_BI__Stage__c</columns>
+        <columns>LLC_BI__Status__c</columns>
+        <columns>CF_Line_Of_Business__c</columns>
+        <columns>CREATEDBY_USER</columns>
+        <columns>CREATED_DATE</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>LLC_BI__Stage__c</field>
+            <operation>notEqual</operation>
+            <value>Complete</value>
+        </filters>
+        <filters>
+            <field>CF_Current_User__c</field>
+            <operation>equals</operation>
+            <value>Credit Officer</value>
+        </filters>
+        <label>My Queue - Credit Officer</label>
+    </listViews>
+    <listViews>
+        <fullName>LV_My_Queue_Loan_Assistant</fullName>
+        <booleanFilter>1 AND 2</booleanFilter>
+        <columns>NAME</columns>
+        <columns>LLC_BI__Account__c</columns>
+        <columns>LLC_BI__Total_Loan_Facilities_Amount__c</columns>
+        <columns>LLC_BI__Stage__c</columns>
+        <columns>LLC_BI__Status__c</columns>
+        <columns>CF_Line_Of_Business__c</columns>
+        <columns>CREATEDBY_USER</columns>
+        <columns>CREATED_DATE</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>LLC_BI__Stage__c</field>
+            <operation>notEqual</operation>
+            <value>Complete</value>
+        </filters>
+        <filters>
+            <field>CF_Current_User__c</field>
+            <operation>equals</operation>
+            <value>Loan Assistant</value>
+        </filters>
+        <label>My Queue - Loan Assistant</label>
+    </listViews>
+    <listViews>
+        <fullName>LV_My_Queue_Relationship_Manager</fullName>
+        <booleanFilter>1 AND 2</booleanFilter>
+        <columns>NAME</columns>
+        <columns>LLC_BI__Account__c</columns>
+        <columns>LLC_BI__Total_Loan_Facilities_Amount__c</columns>
+        <columns>LLC_BI__Stage__c</columns>
+        <columns>LLC_BI__Status__c</columns>
+        <columns>CF_Line_Of_Business__c</columns>
+        <columns>CREATEDBY_USER</columns>
+        <columns>CREATED_DATE</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>LLC_BI__Stage__c</field>
+            <operation>notEqual</operation>
+            <value>Complete</value>
+        </filters>
+        <filters>
+            <field>CF_Current_User__c</field>
+            <operation>equals</operation>
+            <value>Relationship Manager</value>
+        </filters>
+        <label>My Queue - Relationship Manager</label>
+    </listViews>
+    <listViews>
+        <fullName>LV_My_Queue_Treasury</fullName>
+        <booleanFilter>1 AND 2</booleanFilter>
+        <columns>NAME</columns>
+        <columns>LLC_BI__Account__c</columns>
+        <columns>LLC_BI__Total_Loan_Facilities_Amount__c</columns>
+        <columns>LLC_BI__Stage__c</columns>
+        <columns>LLC_BI__Status__c</columns>
+        <columns>CF_Line_Of_Business__c</columns>
+        <columns>CREATEDBY_USER</columns>
+        <columns>CREATED_DATE</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>LLC_BI__Stage__c</field>
+            <operation>notEqual</operation>
+            <value>Complete</value>
+        </filters>
+        <filters>
+            <field>CF_Current_User__c</field>
+            <operation>equals</operation>
+            <value>Treasury</value>
+        </filters>
+        <label>My Queue - Treasury</label>
+    </listViews>
+    <listViews>
+        <fullName>LV_Region_1_Perryville_Queue</fullName>
+        <columns>NAME</columns>
+        <columns>LLC_BI__Account__c</columns>
+        <columns>LLC_BI__Total_Loan_Facilities_Amount__c</columns>
+        <columns>LLC_BI__Stage__c</columns>
+        <columns>LLC_BI__Status__c</columns>
+        <columns>CF_Line_Of_Business__c</columns>
+        <columns>CREATEDBY_USER</columns>
+        <columns>CREATED_DATE</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>LLC_BI__Stage__c</field>
+            <operation>notEqual</operation>
+            <value>Complete</value>
+        </filters>
+        <filters>
+            <field>CF_Region__c</field>
+            <operation>equals</operation>
+            <value>Southeast-Region 1</value>
+        </filters>
+        <label>Region 1 - Southeast Queue</label>
+    </listViews>
+    <listViews>
+        <fullName>LV_Region_2_Cape_Girardeau_Queue</fullName>
+        <columns>NAME</columns>
+        <columns>LLC_BI__Account__c</columns>
+        <columns>LLC_BI__Total_Loan_Facilities_Amount__c</columns>
+        <columns>LLC_BI__Stage__c</columns>
+        <columns>LLC_BI__Status__c</columns>
+        <columns>CF_Line_Of_Business__c</columns>
+        <columns>CREATEDBY_USER</columns>
+        <columns>CREATED_DATE</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>LLC_BI__Stage__c</field>
+            <operation>notEqual</operation>
+            <value>Complete</value>
+        </filters>
+        <filters>
+            <field>CF_Region__c</field>
+            <operation>equals</operation>
+            <value>Southeast-Region 2</value>
+        </filters>
+        <label>Region 2 - Southeast Queue</label>
+    </listViews>
+    <listViews>
+        <fullName>LV_Region_3_Springfield_Queue</fullName>
+        <columns>NAME</columns>
+        <columns>LLC_BI__Account__c</columns>
+        <columns>LLC_BI__Total_Loan_Facilities_Amount__c</columns>
+        <columns>LLC_BI__Stage__c</columns>
+        <columns>LLC_BI__Status__c</columns>
+        <columns>CF_Line_Of_Business__c</columns>
+        <columns>CREATEDBY_USER</columns>
+        <columns>CREATED_DATE</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>LLC_BI__Stage__c</field>
+            <operation>notEqual</operation>
+            <value>Complete</value>
+        </filters>
+        <filters>
+            <field>CF_Region__c</field>
+            <operation>equals</operation>
+            <value>Southwest-Region 3</value>
+        </filters>
+        <label>Region 3 - Southwest Queue</label>
+    </listViews>
+    <listViews>
+        <fullName>LV_Region_4_Columbia_Queue</fullName>
+        <columns>NAME</columns>
+        <columns>LLC_BI__Account__c</columns>
+        <columns>LLC_BI__Total_Loan_Facilities_Amount__c</columns>
+        <columns>LLC_BI__Stage__c</columns>
+        <columns>LLC_BI__Status__c</columns>
+        <columns>CF_Line_Of_Business__c</columns>
+        <columns>CREATEDBY_USER</columns>
+        <columns>CREATED_DATE</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>LLC_BI__Stage__c</field>
+            <operation>notEqual</operation>
+            <value>Complete</value>
+        </filters>
+        <filters>
+            <field>CF_Region__c</field>
+            <operation>equals</operation>
+            <value>Central-Region 4</value>
+        </filters>
+        <label>Region 4 - Central Queue</label>
+    </listViews>
+    <listViews>
+        <fullName>LV_Region_5_Operations_Center_Queue</fullName>
+        <columns>NAME</columns>
+        <columns>LLC_BI__Account__c</columns>
+        <columns>LLC_BI__Total_Loan_Facilities_Amount__c</columns>
+        <columns>LLC_BI__Stage__c</columns>
+        <columns>LLC_BI__Status__c</columns>
+        <columns>CF_Line_Of_Business__c</columns>
+        <columns>CREATEDBY_USER</columns>
+        <columns>CREATED_DATE</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>LLC_BI__Stage__c</field>
+            <operation>notEqual</operation>
+            <value>Complete</value>
+        </filters>
+        <filters>
+            <field>CF_Region__c</field>
+            <operation>equals</operation>
+            <value>Operations</value>
+        </filters>
+        <label>Region 5 - Operations Center Queue</label>
+    </listViews>
+    <listViews>
+        <fullName>LV_Regional_Bank_President</fullName>
+        <columns>NAME</columns>
+        <columns>CF_Total_Aggregate_Exposure__c</columns>
+        <columns>LLC_BI__Stage__c</columns>
+        <columns>LLC_BI__Status__c</columns>
+        <columns>CF_Approval_Path__c</columns>
+        <columns>CF_Approver_1__c</columns>
+        <columns>CF_Approver_Queue__c</columns>
+        <columns>CF_Region__c</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>LLC_BI__Stage__c</field>
+            <operation>equals</operation>
+            <value>Credit Decisioning</value>
+        </filters>
+        <filters>
+            <field>LLC_BI__Status__c</field>
+            <operation>equals</operation>
+            <value>In Review</value>
+        </filters>
+        <filters>
+            <field>CF_Approver_Queue__c</field>
+            <operation>equals</operation>
+            <value>CBP RBP RCO Role Queue,RBP RCO Role Queue</value>
+        </filters>
+        <filters>
+            <field>RECORDTYPE</field>
+            <operation>equals</operation>
+            <value>LLC_BI__Product_Package__c.PP_nCino_Product_Package</value>
+        </filters>
+        <label>Regional Bank President</label>
+        <sharedTo>
+            <role>Chief_Banking_Officer</role>
+            <role>Chief_Credit_Officer</role>
+            <role>Chief_Executive_Officer</role>
+            <role>Community_Bank_President_CBP</role>
+            <role>Regional_Bank_President_RBP</role>
+            <role>Regional_Credit_Officer</role>
+        </sharedTo>
+    </listViews>
+    <listViews>
+        <fullName>LV_Regional_Credit_Officer</fullName>
+        <booleanFilter>1 AND 2 AND 3 AND 4</booleanFilter>
+        <columns>NAME</columns>
+        <columns>CF_Total_Aggregate_Exposure__c</columns>
+        <columns>LLC_BI__Stage__c</columns>
+        <columns>LLC_BI__Status__c</columns>
+        <columns>CF_Approval_Path__c</columns>
+        <columns>CF_Approver_1__c</columns>
+        <columns>CF_Approver_Queue__c</columns>
+        <columns>CF_Region__c</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>LLC_BI__Stage__c</field>
+            <operation>equals</operation>
+            <value>Credit Decisioning</value>
+        </filters>
+        <filters>
+            <field>LLC_BI__Status__c</field>
+            <operation>equals</operation>
+            <value>In Review</value>
+        </filters>
+        <filters>
+            <field>CF_Approver_Queue__c</field>
+            <operation>equals</operation>
+            <value>Board Of Directors,CBP RBP RCO Role Queue,RBP RCO Role Queue,RCO Executive Team Role Queue</value>
+        </filters>
+        <filters>
+            <field>RECORDTYPE</field>
+            <operation>equals</operation>
+            <value>LLC_BI__Product_Package__c.PP_nCino_Product_Package</value>
+        </filters>
+        <label>Regional Credit Officer</label>
+        <sharedTo>
+            <role>Chief_Banking_Officer</role>
+            <role>Chief_Credit_Officer</role>
+            <role>Chief_Executive_Officer</role>
+            <role>Community_Bank_President_CBP</role>
+            <role>Regional_Bank_President_RBP</role>
+            <role>Regional_Credit_Officer</role>
+        </sharedTo>
+    </listViews>
+    <listViews>
+        <fullName>QU_Pricing_Committee_Product_Package</fullName>
+        <filterScope>Queue</filterScope>
+        <label>Pricing Committee</label>
+        <queue>QU_Pricing_Committee</queue>
+        <sharedTo>
+            <allInternalUsers></allInternalUsers>
+        </sharedTo>
+    </listViews>
+    <nameField>
+        <encryptionScheme>None</encryptionScheme>
+        <label>Product Package Name</label>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+    </nameField>
+    <pluralLabel>Product Packages</pluralLabel>
+    <recordTypeTrackFeedHistory>false</recordTypeTrackFeedHistory>
+    <recordTypeTrackHistory>false</recordTypeTrackHistory>
+    <recordTypes>
+        <fullName>LLC_BI__Treasury_Maintenance</fullName>
+        <active>true</active>
+        <description>Record Type for Treasury Maintenance Change Summary</description>
+        <label>Treasury Maintenance</label>
+        <picklistValues>
+            <picklist>CF_Approver_4__c</picklist>
+            <values>
+                <fullName>Board Of Directors</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Director Loan Committee</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Internal Loan Committee</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>CF_Approver_Queue__c</picklist>
+            <values>
+                <fullName>Board Of Directors</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>CBP RBP RCO Role Queue</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>CEO CCO CBO Role Queue</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Internal Loan Committee</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>RBP RCO Role Queue</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>RCO Executive Team Role Queue</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>CF_Line_Of_Business__c</picklist>
+            <values>
+                <fullName>Agriculture</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Commercial</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Consumer</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Contract Services</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>SBA</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Treasury Management</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>LLC_BI__Additional_Income_Category__c</picklist>
+            <values>
+                <fullName>Insurance</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Swap</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Wealth</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>LLC_BI__Approval_Status__c</picklist>
+            <values>
+                <fullName>Not Submitted</fullName>
+                <default>true</default>
+            </values>
+            <values>
+                <fullName>Pending</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Ready</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>LLC_BI__Deal_Type__c</picklist>
+            <values>
+                <fullName>Handover Loans</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Loan Onboarding</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>LLC_BI__Handover_Type__c</picklist>
+            <values>
+                <fullName>Distressed Loans</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>LLC_BI__Reason_For_Handover__c</picklist>
+            <values>
+                <fullName>Covenant Breach</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Declining Industry Sector</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Financial Distress</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Management Issue</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Other</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>LLC_BI__Review_Frequency__c</picklist>
+            <values>
+                <fullName>Annually</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Every 2 Months</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Monthly</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Quarterly</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Semi-Annually</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>LLC_BI__Risk_Rating__c</picklist>
+            <values>
+                <fullName>1</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>2</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>3</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>4</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>5</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>6</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>7</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>8</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>LLC_BI__Status__c</picklist>
+            <values>
+                <fullName>Approved</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Complete</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Declined</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Hold</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>In Review</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Open</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Withdrawn</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+    </recordTypes>
+    <recordTypes>
+        <fullName>PP_nCino_Product_Package</fullName>
+        <active>true</active>
+        <compactLayoutAssignment>Product_Package_Layout</compactLayoutAssignment>
+        <description>This has been created as nCino PP UI</description>
+        <label>nCino Product Package</label>
+        <picklistValues>
+            <picklist>CF_Approver_4__c</picklist>
+            <values>
+                <fullName>Board Of Directors</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Director Loan Committee</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Internal Loan Committee</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>CF_Approver_Queue__c</picklist>
+            <values>
+                <fullName>Board Of Directors</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>CBP RBP RCO Role Queue</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>CEO CCO CBO Role Queue</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Internal Loan Committee</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Internal and Director Loan Committee</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>RBP RCO Role Queue</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>RCO Executive Team Role Queue</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>CF_Line_Of_Business__c</picklist>
+            <values>
+                <fullName>Agriculture</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Commercial</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Consumer</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Contract Services</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>SBA</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Treasury Management</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>LLC_BI__Additional_Income_Category__c</picklist>
+            <values>
+                <fullName>Insurance</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Swap</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Wealth</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>LLC_BI__Approval_Status__c</picklist>
+            <values>
+                <fullName>Not Submitted</fullName>
+                <default>true</default>
+            </values>
+            <values>
+                <fullName>Pending</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Ready</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>LLC_BI__Deal_Type__c</picklist>
+            <values>
+                <fullName>Handover Loans</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Loan Onboarding</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>LLC_BI__Handover_Type__c</picklist>
+            <values>
+                <fullName>Distressed Loans</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>LLC_BI__Reason_For_Handover__c</picklist>
+            <values>
+                <fullName>Covenant Breach</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Declining Industry Sector</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Financial Distress</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Management Issue</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Other</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>LLC_BI__Review_Frequency__c</picklist>
+            <values>
+                <fullName>Annually</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Every 2 Months</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Monthly</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Quarterly</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Semi-Annually</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>LLC_BI__Risk_Rating__c</picklist>
+            <values>
+                <fullName>1</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>2</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>3</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>4</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>5</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>6</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>7</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>8</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>LLC_BI__Stage__c</picklist>
+            <values>
+                <fullName>Application Processing</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Complete</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Credit Decisioning</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Credit Underwriting</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Qualification %2F Proposal</fullName>
+                <default>true</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>LLC_BI__Status__c</picklist>
+            <values>
+                <fullName>Board of Directors Approved</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Complete</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Director Loan Committee Approved</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Hold</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>In Review</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Open</fullName>
+                <default>true</default>
+            </values>
+            <values>
+                <fullName>Rework</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Withdrawn</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+    </recordTypes>
+    <recordTypes>
+        <fullName>PP_nCino_TS_Product_Package</fullName>
+        <active>true</active>
+        <compactLayoutAssignment>TS_Product_Package_Layout</compactLayoutAssignment>
+        <description>Used for Product packages having Treasury services record</description>
+        <label>nCino TS Product Package</label>
+        <picklistValues>
+            <picklist>CF_Approver_4__c</picklist>
+            <values>
+                <fullName>Board Of Directors</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Director Loan Committee</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Internal Loan Committee</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>CF_Approver_Queue__c</picklist>
+            <values>
+                <fullName>Board Of Directors</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>CBP RBP RCO Role Queue</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>CEO CCO CBO Role Queue</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Internal Loan Committee</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>RBP RCO Role Queue</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>RCO Executive Team Role Queue</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>CF_Line_Of_Business__c</picklist>
+            <values>
+                <fullName>Agriculture</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Commercial</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Consumer</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Contract Services</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>SBA</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Treasury Management</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>LLC_BI__Additional_Income_Category__c</picklist>
+            <values>
+                <fullName>Insurance</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Swap</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Wealth</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>LLC_BI__Approval_Status__c</picklist>
+            <values>
+                <fullName>Not Submitted</fullName>
+                <default>true</default>
+            </values>
+            <values>
+                <fullName>Pending</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Ready</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>LLC_BI__Deal_Type__c</picklist>
+            <values>
+                <fullName>Handover Loans</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Loan Onboarding</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>LLC_BI__Handover_Type__c</picklist>
+            <values>
+                <fullName>Distressed Loans</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>LLC_BI__Reason_For_Handover__c</picklist>
+            <values>
+                <fullName>Covenant Breach</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Declining Industry Sector</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Financial Distress</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Management Issue</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Other</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>LLC_BI__Review_Frequency__c</picklist>
+            <values>
+                <fullName>Annually</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Every 2 Months</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Monthly</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Quarterly</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Semi-Annually</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>LLC_BI__Risk_Rating__c</picklist>
+            <values>
+                <fullName>1</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>2</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>3</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>4</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>5</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>6</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>7</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>8</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>LLC_BI__Stage__c</picklist>
+            <values>
+                <fullName>Complete</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Sales</fullName>
+                <default>true</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>LLC_BI__Status__c</picklist>
+            <values>
+                <fullName>Complete</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Open</fullName>
+                <default>true</default>
+            </values>
+        </picklistValues>
+    </recordTypes>
+    <searchLayouts/>
+    <sharingModel>ReadWrite</sharingModel>
+    <validationRules>
+        <fullName>VR_Borrower_CreditReport_90Days</fullName>
+        <active>true</active>
+        <errorConditionFormula>AND(
+OR(
+   ISPICKVAL(LLC_BI__Account__r.Type, &apos;Individual&apos;),
+   LLC_BI__Account__r.RecordType.DeveloperName = &apos;PersonAccount&apos; 
+  ), 
+OR(
+   (TODAY() - LLC_BI__Account__r.LLC_BI__FICO_Date__c &gt; 90),
+    ISBLANK(LLC_BI__Account__r.LLC_BI__FICO_Date__c)
+  ),
+ISPICKVAL(LLC_BI__Stage__c,&apos;Application Processing&apos;),
+ISPICKVAL(LLC_BI__Status__c,&apos;Complete&apos;),
+ISCHANGED(LLC_BI__Status__c),
+($User.No_Validation__c  &lt;&gt; true)
+)</errorConditionFormula>
+        <errorMessage>Borrower&apos;s credit report has not been pulled in the last 90 days. Please pull credit from the Account record.</errorMessage>
+    </validationRules>
+    <visibility>Public</visibility>
+    <webLinks>
+        <fullName>Credit_Memo</fullName>
+        <availability>online</availability>
+        <description>Create/Edit a credit memo associated with the product package</description>
+        <displayType>button</displayType>
+        <encodingKey>UTF-8</encodingKey>
+        <height>600</height>
+        <linkType>url</linkType>
+        <masterLabel>Generate Credit Memo</masterLabel>
+        <openType>noSidebar</openType>
+        <protected>false</protected>
+        <url>/apex/LLC_BI__Credit_Memo_Container?id={!LLC_BI__Product_Package__c.Id}</url>
+    </webLinks>
+    <webLinks>
+        <fullName>LLC_BI__Credit_Memo</fullName>
+        <availability>online</availability>
+        <displayType>button</displayType>
+        <encodingKey>UTF-8</encodingKey>
+        <linkType>url</linkType>
+        <masterLabel>Credit Memo</masterLabel>
+        <openType>replace</openType>
+        <protected>false</protected>
+        <url>{!URLFOR(&quot;/apex/LLC_BI__credit_memo_container?&quot;,LLC_BI__Product_Package__c.Id,[id=LLC_BI__Product_Package__c.Id])}</url>
+    </webLinks>
+    <webLinks>
+        <fullName>LLC_BI__Mass_Actions</fullName>
+        <availability>online</availability>
+        <description>This button allows the user to navigate to the Mass Actions home page.</description>
+        <displayType>button</displayType>
+        <encodingKey>UTF-8</encodingKey>
+        <linkType>url</linkType>
+        <masterLabel>Mass Actions</masterLabel>
+        <openType>replace</openType>
+        <protected>false</protected>
+        <url>{!URLFOR(&apos;/apex/LLC_BI__MassAdd?&apos;, LLC_BI__Product_Package__c.Id, [id=LLC_BI__Product_Package__c.Id])}</url>
+    </webLinks>
+    <webLinks>
+        <fullName>LLC_BI__New_Facility</fullName>
+        <availability>online</availability>
+        <displayType>button</displayType>
+        <encodingKey>UTF-8</encodingKey>
+        <linkType>url</linkType>
+        <masterLabel>New Facility</masterLabel>
+        <openType>replace</openType>
+        <protected>false</protected>
+        <url>{!URLFOR(&quot;/apex/LLC_BI__LoanProducts&quot;,LLC_BI__Product_Package__c.Id,[a=LLC_BI__Product_Package__c.LLC_BI__AccountId__c,cp=LLC_BI__Product_Package__c.Id,complex=1])}</url>
+    </webLinks>
+    <webLinks>
+        <fullName>LLC_BI__renew_loan</fullName>
+        <availability>online</availability>
+        <description>Loan renewal button</description>
+        <displayType>button</displayType>
+        <height>600</height>
+        <linkType>page</linkType>
+        <masterLabel>Credit Action</masterLabel>
+        <openType>sidebar</openType>
+        <page>LLC_BI__PackageLoanRenewal</page>
+        <protected>false</protected>
+    </webLinks>
+    <webLinks>
+        <fullName>PP_Generate_Credit_Memo</fullName>
+        <availability>online</availability>
+        <description>Create/Edit a credit memo associated with the product package</description>
+        <displayType>button</displayType>
+        <height>600</height>
+        <linkType>page</linkType>
+        <masterLabel>Generate Credit Memo</masterLabel>
+        <openType>noSidebar</openType>
+        <page>PP_Generate_Credit_Memo</page>
+        <protected>false</protected>
+    </webLinks>
+</CustomObject>

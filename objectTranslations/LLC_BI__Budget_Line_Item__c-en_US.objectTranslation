@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <label><!-- Amount Budgeted --></label>
+        <name>LLC_BI__Amount_Budgeted__c</name>
+    </fields>
+    <fields>
+        <label><!-- Budget --></label>
+        <name>LLC_BI__Budget__c</name>
+        <relationshipLabel><!-- Budget Line Item --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Category --></label>
+        <name>LLC_BI__Category__c</name>
+        <picklistValues>
+            <masterLabel>Financing cost</masterLabel>
+            <translation><!-- Financing cost --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Hard cost</masterLabel>
+            <translation><!-- Hard cost --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Interest reserve</masterLabel>
+            <translation><!-- Interest reserve --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Land cost</masterLabel>
+            <translation><!-- Land cost --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Soft cost</masterLabel>
+            <translation><!-- Soft cost --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Description --></label>
+        <name>LLC_BI__Description__c</name>
+    </fields>
+    <fields>
+        <label><!-- Notes --></label>
+        <name>LLC_BI__Notes__c</name>
+    </fields>
+    <fields>
+        <label><!-- Order --></label>
+        <name>LLC_BI__Order__c</name>
+    </fields>
+    <fields>
+        <label><!-- Pending Amount --></label>
+        <name>LLC_BI__Pending_Amount__c</name>
+    </fields>
+    <fields>
+        <label><!-- -D Percent Budgeted --></label>
+        <name>LLC_BI__Percent_Budgeted__c</name>
+    </fields>
+    <fields>
+        <label><!-- Percent Disbursed --></label>
+        <name>LLC_BI__Percent_Disbursed__c</name>
+    </fields>
+    <fields>
+        <label><!-- Percent Remaining Disbursement --></label>
+        <name>LLC_BI__Percent_Remaining_Disbursement__c</name>
+    </fields>
+    <fields>
+        <label><!-- Percent of Budget --></label>
+        <name>LLC_BI__Percent_of_Budget__c</name>
+    </fields>
+    <fields>
+        <label><!-- Remaining Disbursement --></label>
+        <name>LLC_BI__Remaining_Disbursement__c</name>
+    </fields>
+    <fields>
+        <label><!-- Template Percent of Budget --></label>
+        <name>LLC_BI__Template_Percent_of_Budget__c</name>
+    </fields>
+    <fields>
+        <label><!-- Total Disbursed Amount --></label>
+        <name>LLC_BI__Total_Disbursed_Amount__c</name>
+    </fields>
+    <fields>
+        <label><!-- lookupKey --></label>
+        <name>LLC_BI__lookupKey__c</name>
+    </fields>
+    <validationRules>
+        <errorMessage><!-- Please enter an Amount Budgeted or a Template Percent of Budget. Both cannot be entered at once, you must choose to enter one or the other. --></errorMessage>
+        <name>LLC_BI__Tpl_LineItem_Config_Defaults_Clash</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- The &quot;Template Percent of Budget&quot; field value cannot exceed 100%. --></errorMessage>
+        <name>LLC_BI__Tpl_Percent_of_Budget_Cannot_Exceed_100</name>
+    </validationRules>
+</CustomObjectTranslation>

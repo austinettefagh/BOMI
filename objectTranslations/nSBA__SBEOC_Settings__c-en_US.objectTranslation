@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <help><!-- Select this checkbox to enable encryption of the Event Cache. --></help>
+        <label><!-- Encrypt Cache --></label>
+        <name>nSBA__Encrypt_Cache__c</name>
+    </fields>
+    <fields>
+        <help><!-- Select this checkbox to enable encryption of Event data. --></help>
+        <label><!-- Encrypt Events --></label>
+        <name>nSBA__Encrypt_Events__c</name>
+    </fields>
+    <fields>
+        <help><!-- Select this checkbox to include method telemetry in your captured log, which is written by the configured logging provider. --></help>
+        <label><!-- Include Method Telemetry --></label>
+        <name>nSBA__Include_Method_Telemetry__c</name>
+    </fields>
+    <fields>
+        <help><!-- Enter the value to set the logging detail level. --></help>
+        <label><!-- Logging Levels to Capture --></label>
+        <name>nSBA__Logging_Levels__c</name>
+    </fields>
+    <fields>
+        <help><!-- Enter the maximum number of attempts before erroring. --></help>
+        <label><!-- Logging Max Retry Attempts --></label>
+        <name>nSBA__Logging_Max_Retry_Attempts__c</name>
+    </fields>
+    <fields>
+        <help><!-- Enter the qualified class name of the logging provider. --></help>
+        <label><!-- Logging Provider --></label>
+        <name>nSBA__Logging_Provider__c</name>
+    </fields>
+    <fields>
+        <help><!-- Select this checkbox to use local platform events. Deselect when daily platform event limits are reached. --></help>
+        <label><!-- Use Localized Platform Events --></label>
+        <name>nSBA__Use_Localized_Platform_Events__c</name>
+    </fields>
+</CustomObjectTranslation>

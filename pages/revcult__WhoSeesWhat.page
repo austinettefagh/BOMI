@@ -1,0 +1,118 @@
+<apex:page id="WhoSeesWhat" standardStylesheets="false" controller="revcult.WhoSeesWhatController" extensions="revcult.SecurityAccessController" showHeader="true" sidebar="false" docType="html-5.0" title="Who Sees What Explorer">
+    <html xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" lang="en">
+        <head>
+            <apex:includeScript value="{!URLFOR($Resource.revcult__WhoSeesWhat,'/deps/svg4everybody.min.js')}" />
+            <apex:includeScript value="{!URLFOR($Resource.revcult__WhoSeesWhat,'/deps/schwartzianTransformSortBy.js')}" />
+            <apex:includeScript value="{!URLFOR($Resource.revcult__WhoSeesWhat,'/dist/exceljs.min.js')}" />
+
+            <apex:slds />
+            <script>
+                    var dataFromSF = {
+                        sessionId: '{!$Api.Session_ID}',
+                        checkMetadataApi: {!$RemoteAction.WhoSeesWhatController.checkMetadataApi},
+                        badIdea: {!$RemoteAction.SecurityAccessController.badIdea},
+                        sObjectSearch: {!$RemoteAction.SecurityAccessController.sObjectSearch},
+                        getSelectedFromId: {!$RemoteAction.SecurityAccessController.getSelectedFromId},
+                        getObjectSharingModel: {!$RemoteAction.SecurityAccessController.getObjectSharingModel},
+                        getSpecificUserAccess: {!$RemoteAction.SecurityAccessController.getSpecificUserAccess},
+                        getObjectNames: {!$RemoteAction.SecurityAccessController.getObjectNameMap},
+                        getFieldAccess: {!$RemoteAction.SecurityAccessController.getFieldAccess},
+                        checkPMCServiceAuth: {!$RemoteAction.SecurityAccessController.checkPMCServiceAuth},
+                        getPMCUrl: {!$RemoteAction.SecurityAccessController.getPMCUrl},
+                        checkId: {!$RemoteAction.SecurityAccessController.isId},
+                        getWswRecordsAccessBatchSize: {!$RemoteAction.SecurityAccessController.getWswRecordsAccessBatchSize},
+                        stepUp2TheStreets: {!$RemoteAction.SecurityAccessController.stepUp2TheStreets},
+                        sendErrorEmail: {!$RemoteAction.WhoSeesWhatController.sendErrorEmail},
+                        userSearch: {!$RemoteAction.WhoSeesWhatController.userSearch},
+                        searchForObjects: {!$RemoteAction.WhoSeesWhatController.searchForObjects},
+                        getUsersWithAccess: {!$RemoteAction.WhoSeesWhatController.getUsersWithAccess},
+                        getUsersWithSystemPermissions: {!$RemoteAction.WhoSeesWhatController.getUsersWithSystemPermissions},
+                        getDetailsForSystemPermission: {!$RemoteAction.WhoSeesWhatController.getDetailsForSystemPermission},
+                        getSelectedUserSysPermInfo: {!$RemoteAction.WhoSeesWhatController.getSelectedUserSysPermInfo},
+                        getProfilePermSetsDetailsForSystemPermission: {!$RemoteAction.WhoSeesWhatController.getProfilePermSetsDetailsForSystemPermission},
+                        getAllObjects: {!$RemoteAction.WhoSeesWhatController.getAllObjects},
+                        getAllUsers: {!$RemoteAction.WhoSeesWhatController.getAllUsers},
+                        getAllFieldsForObjects: {!$RemoteAction.WhoSeesWhatController.getAllFieldsForObjects},
+                        getTotalActiveUserCount: {!$RemoteAction.WhoSeesWhatController.getTotalActiveUserCount},
+                        getTotalUserCount: {!$RemoteAction.WhoSeesWhatController.getTotalUserCount},
+                        getAllUserIds: {!$RemoteAction.WhoSeesWhatController.getAllUserIds},
+                        getUsersById: {!$RemoteAction.WhoSeesWhatController.getUsersById},
+                        getTimeMachineJobs: {!$RemoteAction.WhoSeesWhatController.getTimeMachineJobs},
+                        loadFileFromJobByName: {!$RemoteAction.WhoSeesWhatController.loadFileFromJobByName},
+                        getFileNameToId: {!$RemoteAction.WhoSeesWhatController.getFileNameToId},
+                        loadFilesFromJobByIds: {!$RemoteAction.WhoSeesWhatController.loadFilesFromJobByIds},
+                        startTimeMachineJob: {!$RemoteAction.WhoSeesWhatController.startTimeMachineJob},
+                        getStandardUserIds: {!$RemoteAction.WhoSeesWhatController.getStandardUserIds},
+                        getExternalProfileIds: {!$RemoteAction.WhoSeesWhatController.getExternalProfileIds},
+                        getRecentlyLoggedInUserIdsByProfile: {!$RemoteAction.WhoSeesWhatController.getRecentlyLoggedInUserIdsByProfile},
+                        getIdsByNames: {!$RemoteAction.WhoSeesWhatController.getIdsByNames},
+                        getAssignedPermSetMetadata: {!$RemoteAction.WhoSeesWhatController.getAssignedPermSetMetadata},
+                        getFieldClassifications: {!$RemoteAction.WhoSeesWhatController.getFieldClassifications},
+                        getSensitivityLevels: {!$RemoteAction.WhoSeesWhatController.getSensitivityLevels},
+                        getUserSectionLoadingFlag: {!$RemoteAction.WhoSeesWhatController.getUserSectionLoadingFlag},
+                        getObjectPermissionsForPermissionSets: {!$RemoteAction.WhoSeesWhatController.getObjectPermissionsForPermissionSets},
+                        getFieldPermsForProfsPermSetsPermSetGroups: {!$RemoteAction.WhoSeesWhatController.getFieldPermsForProfsPermSetsPermSetGroups},
+                        getSysPermsProfilePermSetOrPsg: {!$RemoteAction.WhoSeesWhatController.getSysPermsProfilePermSetOrPsg},
+                        isTimeMachineEnabled: {!$RemoteAction.WhoSeesWhatController.isTimeMachineEnabled},
+                        isViewByUserEnabled: {!$RemoteAction.WhoSeesWhatController.isViewByUserEnabled},
+                        getWSWGetFieldsBatchSize: {!$RemoteAction.WhoSeesWhatController.getWSWGetFieldsBatchSize},
+                        wswGetFieldPermissionsBatchConfig: {!$RemoteAction.WhoSeesWhatController.wswGetFieldPermissionsBatchConfig},
+                        getAllAccessTypes: {!$RemoteAction.WhoSeesWhatController.getAllAccessTypes},
+                        getAllAccessTypesSearch: {!$RemoteAction.WhoSeesWhatController.getAllAccessTypesSearch},
+                        getPermissionSetIdsWithAccessToObjectPermissions: {!$RemoteAction.WhoSeesWhatController.getPermissionSetIdsWithAccessToObjectPermissions},
+                        getPermissionSetIdsWithAccessToFieldPermissions: {!$RemoteAction.WhoSeesWhatController.getPermissionSetIdsWithAccessToFieldPermissions},
+                        getFieldPermissionsForPermissionSetForObject: {!$RemoteAction.WhoSeesWhatController.getFieldPermissionsForPermissionSetForObject},
+                        getObjectPermissionsForPermissionSetForObject: {!$RemoteAction.WhoSeesWhatController.getObjectPermissionsForPermissionSetForObject},
+                        getSystemPermissionsMap: {!$RemoteAction.WhoSeesWhatController.getSystemPermissionsMap},
+                        getSystemPermissionProfilePermEntityDetails: {!$RemoteAction.WhoSeesWhatController.getSystemPermissionProfilePermEntityDetails},
+                        getInternalUserCountForSystemPermissions: {!$RemoteAction.WhoSeesWhatController.getInternalUserCountForSystemPermissions},
+                        getInternalUserCountForPermissionSets: {!$RemoteAction.WhoSeesWhatController.getInternalUserCountForPermissionSets},
+                        getActiveInternalUserCountByProfileId: {!$RemoteAction.WhoSeesWhatController.getActiveInternalUserCountByProfileId},
+                        getExternalUserCountForSystemPermissions: {!$RemoteAction.WhoSeesWhatController.getExternalUserCountForSystemPermissions},
+                        getExternalUserCountForPermissionSets: {!$RemoteAction.WhoSeesWhatController.getExternalUserCountForPermissionSets},
+                        getActiveExternalUserCountByProfileId: {!$RemoteAction.WhoSeesWhatController.getActiveExternalUserCountByProfileId},
+                        getPermSetGroupsAPermSetIsIn: {!$RemoteAction.WhoSeesWhatController.getPermSetGroupsAPermSetIsIn},
+                        getObjectAccessByPermSet: {!$RemoteAction.WhoSeesWhatController.getObjectAccessByPermSet},
+                        getObjectAccessByProfileOrPsg: {!$RemoteAction.WhoSeesWhatController.getObjectAccessByProfileOrPsg},
+                        getPermSetObjectAccessByPsg: {!$RemoteAction.WhoSeesWhatController.getPermSetObjectAccessByPsg},
+                        getProfilePermSetsDetailsForSystemPermissions: {!$RemoteAction.WhoSeesWhatController.getProfilePermSetsDetailsForSystemPermissions},
+                        isGetMostRecentExternalUsersEnabled: {!$RemoteAction.WhoSeesWhatController.isGetMostRecentExternalUsersEnabled},
+                        getUpgradeAlertSettings: {!$RemoteAction.WhoSeesWhatController.getUpgradeAlertSettings},
+                        setUpgradeAlertSettings: {!$RemoteAction.WhoSeesWhatController.setUpgradeAlertSettings},
+                        hasPermissionDownloadAppExchangePackages: {!$RemoteAction.WhoSeesWhatController.hasPermissionDownloadAppExchangePackages},
+                        getCountOfUsersWithAccessToObjects: {!$RemoteAction.WhoSeesWhatController.getCountOfUsersWithAccessToObjects},
+                        getWSWMultiObjectExportObjects: {!$RemoteAction.WhoSeesWhatController.getWSWMultiObjectExportObjects},
+                        getWSWMultiObjectExportUsers: {!$RemoteAction.WhoSeesWhatController.getWSWMultiObjectExportUsers},
+                        objectLensExportWorker: '{!URLFOR($Resource.WhoSeesWhat, "dist/ObjectLensExportWorker.js")}',
+                        usersProfsPermSetsExportWorker: '{!URLFOR($Resource.WhoSeesWhat, "dist/UsersProfsPermSetsExportWorker.js")}',
+                        excelJS: '{!URLFOR($Resource.WhoSeesWhat, "dist/exceljs.min.js")}',
+                        stream: '{!URLFOR($Resource.WhoSeesWhat, "dist/stream.min.js")}',
+                        iconSession: '{!URLFOR($Resource.Icon_Session)}',
+                        iconNoSession: '{!URLFOR($Resource.Icon_No_Session)}',
+                        theme: '{!$User.UITheme}',
+                        whiteCompareIcon: '{!URLFOR($Resource.WhoSeesWhat, "dist/compareWhite.svg#compare")}',
+                        blueCompareIcon: '{!URLFOR($Resource.WhoSeesWhat, "dist/compareBlue.svg#compare")}',
+                        permissionSetGroupIcon: '{!URLFOR($Resource.WhoSeesWhat, "dist/PermSetGroupIcon.svg")}',
+                        muted: '{!URLFOR($Asset.SLDS, "/assets/icons/utility-sprite/svg/symbols.svg#muted")}',
+                        info: '{!URLFOR($Asset.SLDS, "/assets/icons/utility-sprite/svg/symbols.svg#info")}',
+                        edit: '{!URLFOR($Asset.SLDS, "/assets/icons/utility-sprite/svg/symbols.svg#edit")}',
+                        switch: '{!URLFOR($Asset.SLDS, "/assets/icons/utility-sprite/svg/symbols.svg#switch")}',
+                        arrowUp: '{!URLFOR($Asset.SLDS, "/assets/icons/utility-sprite/svg/symbols.svg#arrowup")}',
+                        arrowDown: '{!URLFOR($Asset.SLDS, "/assets/icons/utility-sprite/svg/symbols.svg#arrowdown")}',
+                        chevronRight: '{!URLFOR($Asset.SLDS, "/assets/icons/utility-sprite/svg/symbols.svg#chevronright")}',
+                        chevronLeft: '{!URLFOR($Asset.SLDS, "/assets/icons/utility-sprite/svg/symbols.svg#chevronleft")}',
+                        back: '{!URLFOR($Asset.SLDS, "/assets/icons/utility-sprite/svg/symbols.svg#back")}',
+                        forward: '{!URLFOR($Asset.SLDS, "/assets/icons/utility-sprite/svg/symbols.svg#forward")}',
+                        clear: '{!URLFOR($Asset.SLDS, "/assets/icons/utility-sprite/svg/symbols.svg#clear")}',
+                    }
+                    svg4everybody()
+            </script>
+            <meta charset="utf-8"/>
+            <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+            <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <link href="{!URLFOR($Resource.WhoSeesWhat, 'dist/style.css')}" rel="stylesheet"/></head>
+        <body>
+            <div id="app"></div>
+        <script type="text/javascript" src="{!URLFOR($Resource.WhoSeesWhat, 'dist/build.js')}"></script></body>
+    </html>
+</apex:page>

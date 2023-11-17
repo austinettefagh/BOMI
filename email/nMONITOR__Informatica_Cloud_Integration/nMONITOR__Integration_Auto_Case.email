@@ -1,0 +1,12 @@
+Org Id:{!Organization.Id}
+Name:{!Organization.Name}
+
+Relationship Errors: {!nMONITOR__Informatica_Cloud_Integration__c.nMONITOR__Relationship_Errors__c}
+Loan Errors: {!nMONITOR__Informatica_Cloud_Integration__c.nMONITOR__Loan_Errors__c}
+Connections Errors: {!nMONITOR__Informatica_Cloud_Integration__c.nMONITOR__Connection_Errors__c}
+Entity Involvement Errors: {!nMONITOR__Informatica_Cloud_Integration__c.nMONITOR__Entity_Involvement_Errors__c}
+Collateral Errors: {!nMONITOR__Informatica_Cloud_Integration__c.nMONITOR__Collateral_Errors__c}
+Covenant Errors: {!nMONITOR__Informatica_Cloud_Integration__c.nMONITOR__Covenant_Errors__c}
+Participation Errors: {!nMONITOR__Informatica_Cloud_Integration__c.nMONITOR__Participation_Errors__c}
+Contact Errors: {!nMONITOR__Informatica_Cloud_Integration__c.nMONITOR__Contact_Errors__c}
+Deposit Errors: {!nMONITOR__Informatica_Cloud_Integration__c.nMONITOR__Deposit_Errors__c}

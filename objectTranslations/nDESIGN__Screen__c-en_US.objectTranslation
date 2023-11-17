@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <label><!-- Disable Print --></label>
+        <name>nDESIGN__Disable_Print__c</name>
+    </fields>
+    <fields>
+        <label><!-- Show Context Object Name --></label>
+        <name>nDESIGN__Show_Link_To_Context_Object__c</name>
+    </fields>
+    <fields>
+        <label><!-- lookupKey --></label>
+        <name>nDESIGN__lookupKey__c</name>
+    </fields>
+</CustomObjectTranslation>

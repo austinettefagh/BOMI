@@ -1,0 +1,462 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Treasury Application Product</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Treasury Application Products</value>
+    </caseValues>
+    <fields>
+        <label><!-- Account Number --></label>
+        <name>TM_Account_Number__c</name>
+    </fields>
+    <fields>
+        <label><!-- Account Numbers to be Enrolled --></label>
+        <name>TM_Account_Numbers_Enrolled__c</name>
+    </fields>
+    <fields>
+        <label><!-- Account --></label>
+        <name>TM_Account__c</name>
+        <relationshipLabel><!-- Treasury Application Products --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Additional Accounts CIF --></label>
+        <name>TM_Additional_Accounts_CIF__c</name>
+    </fields>
+    <fields>
+        <label><!-- Billing Account Number --></label>
+        <name>TM_Billing_Account_Number__c</name>
+    </fields>
+    <fields>
+        <label><!-- Billing Instructions --></label>
+        <name>TM_Billing_Instructions__c</name>
+    </fields>
+    <fields>
+        <label><!-- Custom Transaction type --></label>
+        <name>TM_Custom_Transaction_type__c</name>
+    </fields>
+    <fields>
+        <label><!-- Does Customer have scanner --></label>
+        <name>TM_Customer_have_scanner__c</name>
+        <picklistValues>
+            <masterLabel>No</masterLabel>
+            <translation><!-- No --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes</masterLabel>
+            <translation><!-- Yes --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Daily Check Count --></label>
+        <name>TM_Daily_Check_Count__c</name>
+    </fields>
+    <fields>
+        <label><!-- Daily Deposit Amount --></label>
+        <name>TM_Daily_Deposit_Amount__c</name>
+    </fields>
+    <fields>
+        <label><!-- Dual control procedures Notes --></label>
+        <name>TM_Dual_control_procedures_Notes__c</name>
+    </fields>
+    <fields>
+        <label><!-- Dual Control Procedures in Place --></label>
+        <name>TM_Dual_control_procedures__c</name>
+        <picklistValues>
+            <masterLabel>No</masterLabel>
+            <translation><!-- No --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes</masterLabel>
+            <translation><!-- Yes --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Entity Signer Names and Titles --></label>
+        <name>TM_Entity_Signer_Names_and_Titles__c</name>
+    </fields>
+    <fields>
+        <label><!-- Exception Expiration Date --></label>
+        <name>TM_Exception_Expiration_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Exception Pricing --></label>
+        <name>TM_Exception_Pricing__c</name>
+    </fields>
+    <fields>
+        <label><!-- Exceptions List Contact Name --></label>
+        <name>TM_Exceptions_Contact_Name__c</name>
+    </fields>
+    <fields>
+        <label><!-- Exceptions List Contact Phone --></label>
+        <name>TM_Exceptions_Contact_Phone__c</name>
+    </fields>
+    <fields>
+        <label><!-- Fees --></label>
+        <name>TM_Fees__c</name>
+        <picklistValues>
+            <masterLabel>Exception</masterLabel>
+            <translation><!-- Exception --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Standard</masterLabel>
+            <translation><!-- Standard --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Waive</masterLabel>
+            <translation><!-- Waive --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Customer has credit card processing --></label>
+        <name>TM_Have_credit_card_processing__c</name>
+        <picklistValues>
+            <masterLabel>No</masterLabel>
+            <translation><!-- No --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes</masterLabel>
+            <translation><!-- Yes --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Is existing retail BillPay user --></label>
+        <name>TM_Is_existing_retail_BillPay_user__c</name>
+        <picklistValues>
+            <masterLabel>No</masterLabel>
+            <translation><!-- No --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes</masterLabel>
+            <translation><!-- Yes --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Number of Originators --></label>
+        <name>TM_Number_of_Originators__c</name>
+    </fields>
+    <fields>
+        <label><!-- Treasury Product Line --></label>
+        <name>TM_Product_Line__c</name>
+        <picklistValues>
+            <masterLabel>Business Deposits</masterLabel>
+            <translation><!-- Business Deposits --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Treasury Solutions</masterLabel>
+            <translation><!-- Treasury Solutions --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Treasury Product Type --></label>
+        <name>TM_Product_Type__c</name>
+        <picklistValues>
+            <masterLabel>Business Checking</masterLabel>
+            <translation><!-- Business Checking --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Contract Services</masterLabel>
+            <translation><!-- Contract Services --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Fraud Solutions</masterLabel>
+            <translation><!-- Fraud Solutions --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Liquidity Solutions</masterLabel>
+            <translation><!-- Liquidity Solutions --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Management Solutions</masterLabel>
+            <translation><!-- Management Solutions --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Other</masterLabel>
+            <translation><!-- Other --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Payable Solutions</masterLabel>
+            <translation><!-- Payable Solutions --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Public Funds</masterLabel>
+            <translation><!-- Public Funds --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Receivable Solutions</masterLabel>
+            <translation><!-- Receivable Solutions --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Treasury Deposits</masterLabel>
+            <translation><!-- Treasury Deposits --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Treasury Product --></label>
+        <name>TM_Product__c</name>
+        <picklistValues>
+            <masterLabel>ACH Origination</masterLabel>
+            <translation><!-- ACH Origination --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ACH Third Party Sender</masterLabel>
+            <translation><!-- ACH Third Party Sender --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>B1 - Small Business Checking</masterLabel>
+            <translation><!-- B1 - Small Business Checking --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>B2 - Commercial Checking</masterLabel>
+            <translation><!-- B2 - Commercial Checking --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>B3 - Business Managed Money Market</masterLabel>
+            <translation><!-- B3 - Business Managed Money Market --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>BAI File Download</masterLabel>
+            <translation><!-- BAI File Download --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>BAI SFTP</masterLabel>
+            <translation><!-- BAI SFTP --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>BM - Business Money Market</masterLabel>
+            <translation><!-- BM - Business Money Market --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Business BillPay</masterLabel>
+            <translation><!-- Business BillPay --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>C1 - Contract Services Checking</masterLabel>
+            <translation><!-- C1 - Contract Services Checking --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>C2 - Contract Services Interest Checking</masterLabel>
+            <translation><!-- C2 - Contract Services Interest Checking --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CDARS</masterLabel>
+            <translation><!-- CDARS --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CO - Community Checking</masterLabel>
+            <translation><!-- CO - Community Checking --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Credit Card Corporate</masterLabel>
+            <translation><!-- Credit Card Corporate --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Credit Card Purchasing</masterLabel>
+            <translation><!-- Credit Card Purchasing --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Credit Card Small Business</masterLabel>
+            <translation><!-- Credit Card Small Business --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>EDI Addenda Translation</masterLabel>
+            <translation><!-- EDI Addenda Translation --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ICS</masterLabel>
+            <translation><!-- ICS --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Lockbox Healthcare</masterLabel>
+            <translation><!-- Lockbox Healthcare --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Lockbox Remote</masterLabel>
+            <translation><!-- Lockbox Remote --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Lockbox Retail</masterLabel>
+            <translation><!-- Lockbox Retail --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Merchant Services</masterLabel>
+            <translation><!-- Merchant Services --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Multi Sweep</masterLabel>
+            <translation><!-- Multi Sweep --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Multi User</masterLabel>
+            <translation><!-- Multi User --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>P4 - PF Managed Money Market</masterLabel>
+            <translation><!-- P4 - PF Managed Money Market --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>PB - PF Checking</masterLabel>
+            <translation><!-- PB - PF Checking --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>PH - PF High Performance Savings</masterLabel>
+            <translation><!-- PH - PF High Performance Savings --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>PM - PF Money Market</masterLabel>
+            <translation><!-- PM - PF Money Market --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>PX - PF Interest Checking</masterLabel>
+            <translation><!-- PX - PF Interest Checking --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Payment Portal Autobooks</masterLabel>
+            <translation><!-- Payment Portal Autobooks --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Payment Portal I-Collect</masterLabel>
+            <translation><!-- Payment Portal I-Collect --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Payment Portal U-Pay</masterLabel>
+            <translation><!-- Payment Portal U-Pay --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Positive Pay ACH</masterLabel>
+            <translation><!-- Positive Pay ACH --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Positive Pay Check</masterLabel>
+            <translation><!-- Positive Pay Check --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Positive Pay Payee Name Verification</masterLabel>
+            <translation><!-- Positive Pay Payee Name Verification --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>RDC Hi-Speed Scanner</masterLabel>
+            <translation><!-- RDC Hi-Speed Scanner --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>RDC Low-Speed Scanner</masterLabel>
+            <translation><!-- RDC Low-Speed Scanner --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>RDC Mobile</masterLabel>
+            <translation><!-- RDC Mobile --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Repurchase</masterLabel>
+            <translation><!-- Repurchase --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SB - Business High Performance Savings</masterLabel>
+            <translation><!-- SB - Business High Performance Savings --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SFTP File Transfer</masterLabel>
+            <translation><!-- SFTP File Transfer --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Single Sweep</masterLabel>
+            <translation><!-- Single Sweep --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>T1 - Small Business Checking</masterLabel>
+            <translation><!-- T1 - Small Business Checking --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>T2 - Commercial Checking</masterLabel>
+            <translation><!-- T2 - Commercial Checking --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>T3 - Community Checking</masterLabel>
+            <translation><!-- T3 - Community Checking --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>TV - Business Money Market</masterLabel>
+            <translation><!-- TV - Business Money Market --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>TX - Business Managed Money Market</masterLabel>
+            <translation><!-- TX - Business Managed Money Market --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>TY - Business High Performance Savings</masterLabel>
+            <translation><!-- TY - Business High Performance Savings --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Wire Transmission</masterLabel>
+            <translation><!-- Wire Transmission --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Requested limit --></label>
+        <name>TM_Requested_limit__c</name>
+    </fields>
+    <fields>
+        <label><!-- Single Transaction Amount --></label>
+        <name>TM_Single_Transaction_Amount__c</name>
+    </fields>
+    <fields>
+        <label><!-- Transaction type --></label>
+        <name>TM_Transaction_type__c</name>
+        <picklistValues>
+            <masterLabel>Donations</masterLabel>
+            <translation><!-- Donations --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Fees</masterLabel>
+            <translation><!-- Fees --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Lunch payments</masterLabel>
+            <translation><!-- Lunch payments --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Other</masterLabel>
+            <translation><!-- Other --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Treasury Application --></label>
+        <name>TM_Treasury_Application__c</name>
+        <relationshipLabel><!-- Treasury Application Products --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Upload Positive Pay Filter List --></label>
+        <name>TM_Upload_Positive_Pay_Filter_List__c</name>
+        <picklistValues>
+            <masterLabel>No</masterLabel>
+            <translation><!-- No --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes</masterLabel>
+            <translation><!-- Yes --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Upload Sample Issued Check File --></label>
+        <name>TM_Upload_sample_check__c</name>
+        <picklistValues>
+            <masterLabel>No</masterLabel>
+            <translation><!-- No --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes</masterLabel>
+            <translation><!-- Yes --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Waive Expiration Date --></label>
+        <name>TM_Waive_Expiration_Date__c</name>
+    </fields>
+    <startsWith>Consonant</startsWith>
+    <validationRules>
+        <errorMessage><!-- This Application Product can’t be edited anymore as it’s at/after Signature Required stage. --></errorMessage>
+        <name>TM_This_Product_cant_be_edited</name>
+    </validationRules>
+</CustomObjectTranslation>

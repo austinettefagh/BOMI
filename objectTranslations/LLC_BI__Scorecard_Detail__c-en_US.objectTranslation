@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <label><!-- Assigned Points --></label>
+        <name>LLC_BI__Assigned_Points__c</name>
+    </fields>
+    <fields>
+        <label><!-- Maximum Points --></label>
+        <name>LLC_BI__Maximum_Points__c</name>
+    </fields>
+    <fields>
+        <label><!-- Result --></label>
+        <name>LLC_BI__Result__c</name>
+        <picklistValues>
+            <masterLabel>Fail</masterLabel>
+            <translation><!-- Fail --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Pass</masterLabel>
+            <translation><!-- Pass --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Scorecard --></label>
+        <name>LLC_BI__Scorecard__c</name>
+        <relationshipLabel><!-- Scorecard Details --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Value --></label>
+        <name>LLC_BI__Value__c</name>
+    </fields>
+</CustomObjectTranslation>

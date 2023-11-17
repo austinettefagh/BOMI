@@ -1,0 +1,473 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Flow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <apiVersion>58.0</apiVersion>
+    <assignments>
+        <name>Assign_New_Money</name>
+        <label>Assign New Money</label>
+        <locationX>270</locationX>
+        <locationY>1163</locationY>
+        <assignmentItems>
+            <assignToReference>StoreOppNewMoney</assignToReference>
+            <operator>Add</operator>
+            <value>
+                <elementReference>Iterate_through_Opportunity_records.TM_New_Money__c</elementReference>
+            </value>
+        </assignmentItems>
+        <connector>
+            <targetReference>Iterate_through_Opportunity_records</targetReference>
+        </connector>
+    </assignments>
+    <assignments>
+        <name>Assign_Opportunity_Count</name>
+        <label>Assign Opportunity Count</label>
+        <locationX>138</locationX>
+        <locationY>971</locationY>
+        <assignmentItems>
+            <assignToReference>OpportunityCount</assignToReference>
+            <operator>Add</operator>
+            <value>
+                <numberValue>1.0</numberValue>
+            </value>
+        </assignmentItems>
+        <connector>
+            <targetReference>Assign_New_Money</targetReference>
+        </connector>
+    </assignments>
+    <assignments>
+        <name>Assign_TS_Count</name>
+        <label>Assign TS Count</label>
+        <locationX>138</locationX>
+        <locationY>1787</locationY>
+        <assignmentItems>
+            <assignToReference>TreasuryServicesCount</assignToReference>
+            <operator>Add</operator>
+            <value>
+                <numberValue>1.0</numberValue>
+            </value>
+        </assignmentItems>
+        <connector>
+            <targetReference>Iterate_through_Treasury_Service_records</targetReference>
+        </connector>
+    </assignments>
+    <decisions>
+        <description>As part of story 1613
+
+-&gt; &quot;New Money Till Date&quot; should show sum of New Money on Opportunities that match the following criteria:
+My Opportunities (opportunity owner = TSO on treasury goals)
+Closed Date = since beginning of Calendar year
+Opportunity Stage = Closed Won
+Opportunity Record Type = Deposit
+-&gt; &quot;New Commercial Relationships Till Date&quot; should show count of Opportunities that match the following criteria:
+My Opportunities
+New/Existing = New to Bank
+Closed Date = since beginning of Calendar year
+Opportunity Stage = Closed Won
+Opportunity Record Type = Deposit</description>
+        <name>Check_Treasury_Sales_Officer</name>
+        <label>Check Treasury Sales Officer</label>
+        <locationX>182</locationX>
+        <locationY>431</locationY>
+        <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
+        <rules>
+            <name>Treasury_Sales_Officer_populated</name>
+            <conditionLogic>(1 AND 2) OR (3 AND 2)</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record.TM_Treasury_Solutions_Officer__c</leftValueReference>
+                <operator>IsChanged</operator>
+                <rightValue>
+                    <booleanValue>true</booleanValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.TM_Treasury_Solutions_Officer__c</leftValueReference>
+                <operator>IsNull</operator>
+                <rightValue>
+                    <booleanValue>false</booleanValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>IsNewRecord</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <booleanValue>true</booleanValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Get_Deposit_Record_Type</targetReference>
+            </connector>
+            <label>Treasury Sales Officer populated</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <name>Is_DataLoad_user</name>
+        <label>Is DataLoad user?</label>
+        <locationX>380</locationX>
+        <locationY>323</locationY>
+        <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
+        <rules>
+            <name>No</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>$User.No_Workflow__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <booleanValue>false</booleanValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Check_Treasury_Sales_Officer</targetReference>
+            </connector>
+            <label>No</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <name>Opportunity_Check</name>
+        <label>Opportunity Check</label>
+        <locationX>270</locationX>
+        <locationY>863</locationY>
+        <defaultConnector>
+            <targetReference>Assign_New_Money</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
+        <rules>
+            <name>New_to_Bank</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>Iterate_through_Opportunity_records.CF_New_Existing__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>New to Bank</stringValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Assign_Opportunity_Count</targetReference>
+            </connector>
+            <label>New to Bank</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <name>Treasury_Services_Check</name>
+        <label>Treasury Services Check</label>
+        <locationX>270</locationX>
+        <locationY>1679</locationY>
+        <defaultConnector>
+            <targetReference>Iterate_through_Treasury_Service_records</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
+        <rules>
+            <name>Is_Core_Treasury</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>Iterate_through_Treasury_Service_records.LLC_BI__Stage__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Servicing</stringValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>Iterate_through_Treasury_Service_records.LLC_BI__Product_Reference__r.Name</leftValueReference>
+                <operator>NotEqualTo</operator>
+                <rightValue>
+                    <stringValue>A/A-Small Business Ckg</stringValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>Iterate_through_Treasury_Service_records.LLC_BI__Product_Reference__r.Name</leftValueReference>
+                <operator>NotEqualTo</operator>
+                <rightValue>
+                    <stringValue>A/A-Community Ckg</stringValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>Iterate_through_Treasury_Service_records.LLC_BI__Product_Reference__r.Name</leftValueReference>
+                <operator>NotEqualTo</operator>
+                <rightValue>
+                    <stringValue>A/A-Commercial Ckg</stringValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>Current_Iteration_of_Treasury_Service_Rec</leftValueReference>
+                <operator>GreaterThanOrEqualTo</operator>
+                <rightValue>
+                    <elementReference>CurrentCY_firstday</elementReference>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>Current_Iteration_of_Treasury_Service_Rec</leftValueReference>
+                <operator>LessThanOrEqualTo</operator>
+                <rightValue>
+                    <elementReference>CurrentCY_lastday</elementReference>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Assign_TS_Count</targetReference>
+            </connector>
+            <label>Is Core Treasury</label>
+        </rules>
+    </decisions>
+    <description>This flow on Treasury Goals will Run for After update scenarios</description>
+    <environments>Default</environments>
+    <formulas>
+        <name>Current_Iteration_of_Treasury_Service_Rec</name>
+        <dataType>Date</dataType>
+        <expression>DATEVALUE({!Iterate_through_Treasury_Service_records.CF_Install_Date_Time__c})</expression>
+    </formulas>
+    <formulas>
+        <name>CurrentCY_firstday</name>
+        <dataType>Date</dataType>
+        <expression>DATE(YEAR(TODAY()),1,1)</expression>
+    </formulas>
+    <formulas>
+        <name>CurrentCY_lastday</name>
+        <dataType>Date</dataType>
+        <expression>DATE(YEAR(TODAY()),12,31)</expression>
+    </formulas>
+    <formulas>
+        <name>IsNewRecord</name>
+        <dataType>Boolean</dataType>
+        <expression>ISNEW()</expression>
+    </formulas>
+    <interviewLabel>TR_CREATE_UPDATE_Action_RR_FLOW {!$Flow.CurrentDateTime}</interviewLabel>
+    <label>TG_CREATE_UPDATE_Action_RR_FLOW</label>
+    <loops>
+        <name>Iterate_through_Opportunity_records</name>
+        <label>Iterate through Opportunity records</label>
+        <locationX>50</locationX>
+        <locationY>755</locationY>
+        <collectionReference>Get_Specific_Opportunity_records</collectionReference>
+        <iterationOrder>Asc</iterationOrder>
+        <nextValueConnector>
+            <targetReference>Opportunity_Check</targetReference>
+        </nextValueConnector>
+        <noMoreValuesConnector>
+            <targetReference>Update_New_Money_Till_Date_New_Money_Commercial_Relationships</targetReference>
+        </noMoreValuesConnector>
+    </loops>
+    <loops>
+        <name>Iterate_through_Treasury_Service_records</name>
+        <label>Iterate through Treasury Service records</label>
+        <locationX>50</locationX>
+        <locationY>1571</locationY>
+        <collectionReference>Get_Treasury_Service_records</collectionReference>
+        <iterationOrder>Asc</iterationOrder>
+        <nextValueConnector>
+            <targetReference>Treasury_Services_Check</targetReference>
+        </nextValueConnector>
+        <noMoreValuesConnector>
+            <targetReference>Update_Core_Treasury_Products_Sold_Till_Date</targetReference>
+        </noMoreValuesConnector>
+    </loops>
+    <processMetadataValues>
+        <name>BuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>CanvasMode</name>
+        <value>
+            <stringValue>AUTO_LAYOUT_CANVAS</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>OriginBuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processType>AutoLaunchedFlow</processType>
+    <recordLookups>
+        <name>Get_Deposit_Record_Type</name>
+        <label>Get Deposit Record Type</label>
+        <locationX>50</locationX>
+        <locationY>539</locationY>
+        <assignNullValuesIfNoRecordsFound>false</assignNullValuesIfNoRecordsFound>
+        <connector>
+            <targetReference>Get_Specific_Opportunity_records</targetReference>
+        </connector>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <field>DeveloperName</field>
+            <operator>EqualTo</operator>
+            <value>
+                <stringValue>OPP_nCino_Deposit</stringValue>
+            </value>
+        </filters>
+        <object>RecordType</object>
+        <outputAssignments>
+            <assignToReference>OppDepositeRecordTypeId</assignToReference>
+            <field>Id</field>
+        </outputAssignments>
+    </recordLookups>
+    <recordLookups>
+        <name>Get_Specific_Opportunity_records</name>
+        <label>Get Specific Opportunity records</label>
+        <locationX>50</locationX>
+        <locationY>647</locationY>
+        <assignNullValuesIfNoRecordsFound>false</assignNullValuesIfNoRecordsFound>
+        <connector>
+            <targetReference>Iterate_through_Opportunity_records</targetReference>
+        </connector>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <field>OwnerId</field>
+            <operator>EqualTo</operator>
+            <value>
+                <elementReference>$Record.TM_Treasury_Solutions_Officer__r.Id</elementReference>
+            </value>
+        </filters>
+        <filters>
+            <field>RecordTypeId</field>
+            <operator>EqualTo</operator>
+            <value>
+                <elementReference>OppDepositeRecordTypeId</elementReference>
+            </value>
+        </filters>
+        <filters>
+            <field>StageName</field>
+            <operator>EqualTo</operator>
+            <value>
+                <stringValue>Closed Won</stringValue>
+            </value>
+        </filters>
+        <filters>
+            <field>CloseDate</field>
+            <operator>GreaterThanOrEqualTo</operator>
+            <value>
+                <elementReference>CurrentCY_firstday</elementReference>
+            </value>
+        </filters>
+        <filters>
+            <field>CloseDate</field>
+            <operator>LessThanOrEqualTo</operator>
+            <value>
+                <elementReference>CurrentCY_lastday</elementReference>
+            </value>
+        </filters>
+        <getFirstRecordOnly>false</getFirstRecordOnly>
+        <object>Opportunity</object>
+        <queriedFields>Id</queriedFields>
+        <queriedFields>CloseDate</queriedFields>
+        <queriedFields>StageName</queriedFields>
+        <queriedFields>RecordTypeId</queriedFields>
+        <queriedFields>TM_New_Money__c</queriedFields>
+        <queriedFields>CF_New_Existing__c</queriedFields>
+        <storeOutputAutomatically>true</storeOutputAutomatically>
+    </recordLookups>
+    <recordLookups>
+        <description>As part of story 1613
+
+&quot;Core Treasury Products Sold Till Date&quot; should show Count of Treasury Service records that match the following criteria:
+TSO = $USER
+Install Date = since beginning of Calendar year
+Stage = Servicing</description>
+        <name>Get_Treasury_Service_records</name>
+        <label>Get Treasury Service records</label>
+        <locationX>50</locationX>
+        <locationY>1463</locationY>
+        <assignNullValuesIfNoRecordsFound>false</assignNullValuesIfNoRecordsFound>
+        <connector>
+            <targetReference>Iterate_through_Treasury_Service_records</targetReference>
+        </connector>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <field>CF_Treasury_Sales_Officer__c</field>
+            <operator>EqualTo</operator>
+            <value>
+                <elementReference>$Record.TM_Treasury_Solutions_Officer__c</elementReference>
+            </value>
+        </filters>
+        <filters>
+            <field>LLC_BI__Stage__c</field>
+            <operator>EqualTo</operator>
+            <value>
+                <stringValue>Servicing</stringValue>
+            </value>
+        </filters>
+        <getFirstRecordOnly>false</getFirstRecordOnly>
+        <object>LLC_BI__Treasury_Service__c</object>
+        <queriedFields>Id</queriedFields>
+        <queriedFields>CF_Install_Date__c</queriedFields>
+        <queriedFields>LLC_BI__Stage__c</queriedFields>
+        <queriedFields>LLC_BI__Product_Reference__c</queriedFields>
+        <queriedFields>CF_Open_Date__c</queriedFields>
+        <storeOutputAutomatically>true</storeOutputAutomatically>
+    </recordLookups>
+    <recordUpdates>
+        <name>Update_Core_Treasury_Products_Sold_Till_Date</name>
+        <label>Update Core Treasury Products Sold Till Date</label>
+        <locationX>50</locationX>
+        <locationY>2063</locationY>
+        <inputAssignments>
+            <field>TM_New_Core_Treasury_Products_Sold_Till__c</field>
+            <value>
+                <elementReference>TreasuryServicesCount</elementReference>
+            </value>
+        </inputAssignments>
+        <inputReference>$Record</inputReference>
+    </recordUpdates>
+    <recordUpdates>
+        <name>Update_New_Money_Till_Date_New_Money_Commercial_Relationships</name>
+        <label>Update New Money Till Date, New Money Commercial Relationships</label>
+        <locationX>50</locationX>
+        <locationY>1355</locationY>
+        <connector>
+            <targetReference>Get_Treasury_Service_records</targetReference>
+        </connector>
+        <inputAssignments>
+            <field>TM_New_Commercial_Relationships_Till__c</field>
+            <value>
+                <elementReference>OpportunityCount</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>TM_New_Money_Till_Date__c</field>
+            <value>
+                <elementReference>StoreOppNewMoney</elementReference>
+            </value>
+        </inputAssignments>
+        <inputReference>$Record</inputReference>
+    </recordUpdates>
+    <start>
+        <locationX>254</locationX>
+        <locationY>0</locationY>
+        <connector>
+            <targetReference>Is_DataLoad_user</targetReference>
+        </connector>
+        <object>Treasury_Goals__c</object>
+        <recordTriggerType>CreateAndUpdate</recordTriggerType>
+        <triggerType>RecordAfterSave</triggerType>
+    </start>
+    <status>Active</status>
+    <variables>
+        <name>OppDepositeRecordTypeId</name>
+        <dataType>String</dataType>
+        <isCollection>false</isCollection>
+        <isInput>true</isInput>
+        <isOutput>true</isOutput>
+    </variables>
+    <variables>
+        <name>OpportunityCount</name>
+        <dataType>Number</dataType>
+        <isCollection>false</isCollection>
+        <isInput>true</isInput>
+        <isOutput>true</isOutput>
+        <scale>0</scale>
+    </variables>
+    <variables>
+        <name>StoreOppNewMoney</name>
+        <dataType>Currency</dataType>
+        <isCollection>false</isCollection>
+        <isInput>true</isInput>
+        <isOutput>true</isOutput>
+        <scale>2</scale>
+    </variables>
+    <variables>
+        <name>TreasuryServicesCount</name>
+        <dataType>Number</dataType>
+        <isCollection>false</isCollection>
+        <isInput>true</isInput>
+        <isOutput>true</isOutput>
+        <scale>0</scale>
+    </variables>
+</Flow>

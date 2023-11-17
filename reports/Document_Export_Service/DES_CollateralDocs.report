@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>LLC_BI__Collateral__c$LLC_BI__Collateral_Name__c</field>
+    </columns>
+    <columns>
+        <field>LLC_BI__Collateral__c$LLC_BI__lookupKey__c</field>
+    </columns>
+    <columns>
+        <field>LLC_BI__Collateral__c.NDOC__Document_Placeholders__r.nArchive__nArchive__r$Name</field>
+    </columns>
+    <columns>
+        <field>LLC_BI__Collateral__c.NDOC__Document_Placeholders__r.nArchive__nArchive__r$nArchive__File_Extension__c</field>
+    </columns>
+    <columns>
+        <field>LLC_BI__Collateral__c.NDOC__Document_Placeholders__r$NDOC__File_Size__c</field>
+    </columns>
+    <columns>
+        <field>LLC_BI__Collateral__c.NDOC__Document_Placeholders__r.nArchive__nArchive__r$nArchive__processedFlag__c</field>
+    </columns>
+    <description>Baseline DES CollateralDocs Report</description>
+    <format>Summary</format>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>LLC_BI__Collateral__c$Id</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <name>DES CollateralDocs</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>DES_CollateralDocs__c</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <showGrandTotal>true</showGrandTotal>
+    <showSubTotals>false</showSubTotals>
+    <timeFrameFilter>
+        <dateColumn>LLC_BI__Collateral__c$CreatedDate</dateColumn>
+        <interval>INTERVAL_CUSTOM</interval>
+    </timeFrameFilter>
+</Report>

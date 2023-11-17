@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <label><!-- Data Changes --></label>
+        <name>nFORCE__Data_Changes__c</name>
+    </fields>
+    <fields>
+        <label><!-- Executing User --></label>
+        <name>nFORCE__Executing_User__c</name>
+        <relationshipLabel><!-- Executing Users --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- sObject Type --></label>
+        <name>nFORCE__SObject_Type__c</name>
+    </fields>
+</CustomObjectTranslation>

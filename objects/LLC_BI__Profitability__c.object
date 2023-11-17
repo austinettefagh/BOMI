@@ -1,0 +1,1862 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <allowInChatterGroups>false</allowInChatterGroups>
+    <compactLayoutAssignment>SYSTEM</compactLayoutAssignment>
+    <deploymentStatus>Deployed</deploymentStatus>
+    <deprecated>false</deprecated>
+    <description>This object enables a financial institution to store profitability data. This object is one-to-one and the system can only populate one lookup field at a time.</description>
+    <enableActivities>false</enableActivities>
+    <enableBulkApi>true</enableBulkApi>
+    <enableFeeds>false</enableFeeds>
+    <enableHistory>false</enableHistory>
+    <enableLicensing>false</enableLicensing>
+    <enableReports>true</enableReports>
+    <enableSearch>false</enableSearch>
+    <enableSharing>true</enableSharing>
+    <enableStreamingApi>true</enableStreamingApi>
+    <externalSharingModel>Private</externalSharingModel>
+    <fieldSets>
+        <fullName>LLC_BI__Additional_Income_Deal_Impact</fullName>
+        <description>This field set contains additional income fields that may impact deal profitability.</description>
+        <displayedFields>
+            <field>LLC_BI__Product_Package__r.LLC_BI__Additional_Income_Category__c</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </displayedFields>
+        <displayedFields>
+            <field>LLC_BI__Product_Package__r.LLC_BI__Additional_One_Time_Income__c</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </displayedFields>
+        <displayedFields>
+            <field>LLC_BI__Additional_Risk_Adjusted_Income__c</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </displayedFields>
+        <label>Additional Income Deal Impact</label>
+    </fieldSets>
+    <fieldSets>
+        <fullName>LLC_BI__Comments_Deal_Impact</fullName>
+        <description>This field set contains the Comments field.</description>
+        <displayedFields>
+            <field>LLC_BI__Product_Package__r.LLC_BI__Ancillary_Revenue_Comments__c</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </displayedFields>
+        <label>Comments Deal Impact</label>
+    </fieldSets>
+    <fieldSets>
+        <fullName>LLC_BI__DMW_Panel_Profitability_Metrics</fullName>
+        <availableFields>
+            <field>LLC_BI__EVA_Currency__c</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </availableFields>
+        <availableFields>
+            <field>LLC_BI__Last_Refresh_Date__c</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </availableFields>
+        <availableFields>
+            <field>LLC_BI__NOPAT_Currency__c</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </availableFields>
+        <availableFields>
+            <field>LLC_BI__ROA__c</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </availableFields>
+        <availableFields>
+            <field>LLC_BI__RORAC__c</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </availableFields>
+        <availableFields>
+            <field>LLC_BI__SVA_Currency__c</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </availableFields>
+        <description>This field set contains profitability fields on the DMW panel.</description>
+        <displayedFields>
+            <field>LLC_BI__RAROC__c</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </displayedFields>
+        <label>DMW Panel Profitability Metrics</label>
+    </fieldSets>
+    <fieldSets>
+        <fullName>LLC_BI__Deposit_Income_Deal_Impact</fullName>
+        <availableFields>
+            <field>LLC_BI__Product_Package__r.LLC_BI__Ancillary_Product_Tax_Rate__c</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </availableFields>
+        <availableFields>
+            <field>LLC_BI__Product_Package__r.LLC_BI__Cost_Of_New_Deposit_Capital_Percent__c</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </availableFields>
+        <availableFields>
+            <field>LLC_BI__Deposit_Operating_Cost__c</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </availableFields>
+        <availableFields>
+            <field>LLC_BI__Product_Package__r.LLC_BI__Deposit_Reserve_Rate__c</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </availableFields>
+        <availableFields>
+            <field>LLC_BI__Product_Package__r.LLC_BI__Expected_Term_of_New_Deposit_Products__c</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </availableFields>
+        <availableFields>
+            <field>LLC_BI__Product_Package__r.LLC_BI__New_Deposit_Revenue_Rate__c</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </availableFields>
+        <description>This field set contains deposit-related fields that may impact deal profitability.</description>
+        <displayedFields>
+            <field>LLC_BI__Product_Package__r.LLC_BI__New_Interest_Bearing_Deposit_Balance__c</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </displayedFields>
+        <displayedFields>
+            <field>LLC_BI__Product_Package__r.LLC_BI__New_Non_Interest_Bearing_Deposit_Balance__c</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </displayedFields>
+        <displayedFields>
+            <field>LLC_BI__Product_Package__r.LLC_BI__New_Deposit_Blended_Rate__c</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </displayedFields>
+        <label>Deposit Income Deal Impact</label>
+    </fieldSets>
+    <fieldSets>
+        <fullName>LLC_BI__Profitability_Card_Metrics</fullName>
+        <availableFields>
+            <field>LLC_BI__Average_Earning_Assets__c</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </availableFields>
+        <availableFields>
+            <field>LLC_BI__EVA_Currency__c</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </availableFields>
+        <availableFields>
+            <field>LLC_BI__Funds_Transfer_Pricing__c</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </availableFields>
+        <availableFields>
+            <field>LLC_BI__NIM__c</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </availableFields>
+        <availableFields>
+            <field>LLC_BI__NOPAT_Currency__c</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </availableFields>
+        <availableFields>
+            <field>LLC_BI__NPV__c</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </availableFields>
+        <availableFields>
+            <field>LLC_BI__Non_CET1__c</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </availableFields>
+        <availableFields>
+            <field>LLC_BI__Non_Risk_Adjusted_Capital_Allocation__c</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </availableFields>
+        <availableFields>
+            <field>LLC_BI__ROA__c</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </availableFields>
+        <availableFields>
+            <field>LLC_BI__ROE__c</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </availableFields>
+        <availableFields>
+            <field>LLC_BI__RORAC__c</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </availableFields>
+        <availableFields>
+            <field>LLC_BI__SVA_Currency__c</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </availableFields>
+        <description>This field set contains multiple profitability metrics.</description>
+        <displayedFields>
+            <field>LLC_BI__RAROC__c</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </displayedFields>
+        <label>Profitability Card Metrics</label>
+    </fieldSets>
+    <fieldSets>
+        <fullName>LLC_BI__Proforma_Profitability_Top_Component</fullName>
+        <description>This packaged field set determines which fields display on the top component of the Proforma Profitability card.</description>
+        <displayedFields>
+            <field>LLC_BI__Relationship__r.RecordTypeId</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </displayedFields>
+        <displayedFields>
+            <field>LLC_BI__Relationship__r.ShippingCity</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </displayedFields>
+        <label>Proforma Profitability Top Component</label>
+    </fieldSets>
+    <fieldSets>
+        <fullName>LLC_BI__Quick_Price_Profitability_Card</fullName>
+        <description>This field set contains profitability metrics in the Quick Price modal.</description>
+        <displayedFields>
+            <field>LLC_BI__RAROC__c</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </displayedFields>
+        <label>Quick Price Profitability Card</label>
+    </fieldSets>
+    <fieldSets>
+        <fullName>LLC_BI__Relationship_Profitability</fullName>
+        <availableFields>
+            <field>LLC_BI__Additional_Risk_Adjusted_Income__c</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </availableFields>
+        <availableFields>
+            <field>LLC_BI__Average_Earning_Assets__c</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </availableFields>
+        <availableFields>
+            <field>LLC_BI__Capital_Allocated_for_Deposits__c</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </availableFields>
+        <availableFields>
+            <field>LLC_BI__Capital_Allocated_for_Loans__c</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </availableFields>
+        <availableFields>
+            <field>LLC_BI__Capital_Allocated_for_Treasury__c</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </availableFields>
+        <availableFields>
+            <field>LLC_BI__Cost_of_Deposit_Capital__c</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </availableFields>
+        <availableFields>
+            <field>LLC_BI__Cost_of_Loan_Capital__c</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </availableFields>
+        <availableFields>
+            <field>LLC_BI__Cost_of_Treasury_Capital__c</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </availableFields>
+        <availableFields>
+            <field>LLC_BI__Deposit_EVA__c</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </availableFields>
+        <availableFields>
+            <field>LLC_BI__Deposit_Expense__c</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </availableFields>
+        <availableFields>
+            <field>LLC_BI__Deposit_Operating_Cost__c</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </availableFields>
+        <availableFields>
+            <field>LLC_BI__Deposit_Revenue__c</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </availableFields>
+        <availableFields>
+            <field>LLC_BI__Funds_Transfer_Pricing__c</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </availableFields>
+        <availableFields>
+            <field>LLC_BI__Hurdle_Rate__c</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </availableFields>
+        <availableFields>
+            <field>LLC_BI__Interest_Income__c</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </availableFields>
+        <availableFields>
+            <field>LLC_BI__Liquidity_Cost__c</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </availableFields>
+        <availableFields>
+            <field>LLC_BI__NIM__c</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </availableFields>
+        <availableFields>
+            <field>LLC_BI__NPV__c</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </availableFields>
+        <availableFields>
+            <field>LLC_BI__Net_Deposit_Income__c</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </availableFields>
+        <availableFields>
+            <field>LLC_BI__Net_Interest_Income__c</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </availableFields>
+        <availableFields>
+            <field>LLC_BI__Net_Treasury_Income__c</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </availableFields>
+        <availableFields>
+            <field>LLC_BI__Non_CET1__c</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </availableFields>
+        <availableFields>
+            <field>LLC_BI__Non_Risk_Adjusted_Capital_Allocation__c</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </availableFields>
+        <availableFields>
+            <field>LLC_BI__Operating_Cost__c</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </availableFields>
+        <availableFields>
+            <field>LLC_BI__Operating_Deposit_Income__c</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </availableFields>
+        <availableFields>
+            <field>LLC_BI__Operating_Loan_Income__c</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </availableFields>
+        <availableFields>
+            <field>LLC_BI__Operating_Treasury_Income__c</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </availableFields>
+        <availableFields>
+            <field>LLC_BI__RA_Net_Deposit_Income__c</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </availableFields>
+        <availableFields>
+            <field>LLC_BI__RA_Net_Treasury_Income__c</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </availableFields>
+        <availableFields>
+            <field>LLC_BI__ROE__c</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </availableFields>
+        <availableFields>
+            <field>LLC_BI__Taxes__c</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </availableFields>
+        <availableFields>
+            <field>LLC_BI__Total_Assets_for_Deposits__c</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </availableFields>
+        <availableFields>
+            <field>LLC_BI__Total_Assets_for_Loans__c</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </availableFields>
+        <availableFields>
+            <field>LLC_BI__Total_Assets_for_Treasury__c</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </availableFields>
+        <availableFields>
+            <field>LLC_BI__Treasury_EVA__c</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </availableFields>
+        <availableFields>
+            <field>LLC_BI__Treasury_Expected_Losses__c</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </availableFields>
+        <availableFields>
+            <field>LLC_BI__Treasury_Operating_Cost__c</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </availableFields>
+        <availableFields>
+            <field>LLC_BI__Treasury_Revenue__c</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </availableFields>
+        <description>These fields on the Relationship Profitability Lightning Web Component determine profitability on Relationship.</description>
+        <displayedFields>
+            <field>LLC_BI__RAROC__c</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </displayedFields>
+        <displayedFields>
+            <field>LLC_BI__ROA__c</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </displayedFields>
+        <displayedFields>
+            <field>LLC_BI__EVA_Currency__c</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </displayedFields>
+        <displayedFields>
+            <field>LLC_BI__NOPAT_Currency__c</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </displayedFields>
+        <displayedFields>
+            <field>LLC_BI__RORAC__c</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </displayedFields>
+        <displayedFields>
+            <field>LLC_BI__RA_Net_Interest_Income__c</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </displayedFields>
+        <label>Relationship Profitability</label>
+    </fieldSets>
+    <fieldSets>
+        <fullName>LLC_BI__Scenario_Card_Profitability_Component</fullName>
+        <availableFields>
+            <field>LLC_BI__Capital_Allocated_for_Loans__c</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </availableFields>
+        <availableFields>
+            <field>LLC_BI__EVA_Currency__c</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </availableFields>
+        <availableFields>
+            <field>LLC_BI__Impact_EVA__c</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </availableFields>
+        <availableFields>
+            <field>LLC_BI__Impact_NOPAT__c</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </availableFields>
+        <availableFields>
+            <field>LLC_BI__Interest_Income__c</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </availableFields>
+        <availableFields>
+            <field>LLC_BI__Last_Refresh_Date__c</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </availableFields>
+        <availableFields>
+            <field>LLC_BI__NOPAT_Currency__c</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </availableFields>
+        <availableFields>
+            <field>LLC_BI__RAROC_Impact__c</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </availableFields>
+        <availableFields>
+            <field>LLC_BI__RA_Net_Interest_Income__c</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </availableFields>
+        <availableFields>
+            <field>LLC_BI__ROA_Impact__c</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </availableFields>
+        <availableFields>
+            <field>LLC_BI__ROA__c</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </availableFields>
+        <availableFields>
+            <field>LLC_BI__ROE_Impact__c</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </availableFields>
+        <availableFields>
+            <field>LLC_BI__ROE__c</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </availableFields>
+        <availableFields>
+            <field>LLC_BI__RORAC_Impact__c</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </availableFields>
+        <availableFields>
+            <field>LLC_BI__RORAC__c</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </availableFields>
+        <description>This field set displays profitability data in the pricing card.</description>
+        <displayedFields>
+            <field>LLC_BI__RAROC__c</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </displayedFields>
+        <displayedFields>
+            <field>LLC_BI__Net_Interest_Income__c</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </displayedFields>
+        <label>Scenario Card Profitability Component</label>
+    </fieldSets>
+    <fieldSets>
+        <fullName>LLC_BI__Treasury_Income_Deal_Impact</fullName>
+        <availableFields>
+            <field>LLC_BI__Product_Package__r.LLC_BI__Capital_Allocation_Rate_of_New_Exposures__c</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </availableFields>
+        <availableFields>
+            <field>LLC_BI__Product_Package__r.LLC_BI__Cost_of_Capital_of_New_Exposures__c</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </availableFields>
+        <availableFields>
+            <field>LLC_BI__Product_Package__r.LLC_BI__Expected_Loss_Rate_of_New_Exposures__c</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </availableFields>
+        <availableFields>
+            <field>LLC_BI__Product_Package__r.LLC_BI__Expected_Term_of_New_Treasury_Services__c</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </availableFields>
+        <availableFields>
+            <field>LLC_BI__Product_Package__r.LLC_BI__RWA_Percentage_for_New_Treasury_Exposure__c</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </availableFields>
+        <availableFields>
+            <field>LLC_BI__Product_Package__r.LLC_BI__Treasury_Annual_Operating_Cost__c</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </availableFields>
+        <description>This field set contains treasury-related fields that may impact deal profitability.</description>
+        <displayedFields>
+            <field>LLC_BI__Product_Package__r.LLC_BI__New_Monthly_Treasury_Income__c</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </displayedFields>
+        <displayedFields>
+            <field>LLC_BI__Product_Package__r.LLC_BI__New_Treasury_Credit_Exposure__c</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </displayedFields>
+        <displayedFields>
+            <field>LLC_BI__Product_Package__r.LLC_BI__Expected_Utilization_of_New_Exposure__c</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </displayedFields>
+        <displayedFields>
+            <field>LLC_BI__Product_Package__r.LLC_BI__New_Treasury_One_Time_Fee_Amount__c</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </displayedFields>
+        <label>Treasury Income Deal Impact</label>
+    </fieldSets>
+    <fields>
+        <fullName>LLC_BI__Additional_Risk_Adjusted_Income__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Users populate this field with any additional wealth, insurance, or other net income not captured in existing loan, treasury, or deposit inputs. By default, it is blank.</description>
+        <externalId>false</externalId>
+        <label>Additional Risk Adjusted Income</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>LLC_BI__Affected_Profitability__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <deprecated>false</deprecated>
+        <description>This field is a lookup field that connects a Proforma Profitability to the Actual Profitability record of an account or household.</description>
+        <externalId>false</externalId>
+        <label>Affected Profitability</label>
+        <referenceTo>LLC_BI__Profitability__c</referenceTo>
+        <relationshipLabel>Profitabilities (Affected Profitability)</relationshipLabel>
+        <relationshipName>Profitabilities1</relationshipName>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>LLC_BI__Average_Assets_for_Deposits__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Users manually populate this field to represent the Average Liabilities for Deposits for all deposit products.</description>
+        <externalId>false</externalId>
+        <label>Average Liabilities for Deposits</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>LLC_BI__Average_Assets_for_Loans__c</fullName>
+        <deprecated>false</deprecated>
+        <description>The system autopopulates this field using the profitability model in the context of a loan. In the context of a relationship, this field is an aggregated value of all Average Assets for Loans for loan products associated to it.</description>
+        <externalId>false</externalId>
+        <label>Average Assets for Loans</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>LLC_BI__Average_Assets_for_Treasury__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Users manually populate this field to represent the Average Assets for Treasury for all treasury services.</description>
+        <externalId>false</externalId>
+        <label>Average Assets for Treasury</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>LLC_BI__Average_Earning_Assets__c</fullName>
+        <deprecated>false</deprecated>
+        <description>This field is automatically populated and represents the Average Earning Assets that a Scenario, Loan, Deal or Relationship associated to the profitability will generate.</description>
+        <externalId>false</externalId>
+        <label>Average Earning Assets</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>LLC_BI__Capital_Allocated_for_Deposits__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Users manually populate this field to represent the Capital Allocated for Deposits for all deposit products.</description>
+        <externalId>false</externalId>
+        <label>Capital Allocated for Deposits</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>LLC_BI__Capital_Allocated_for_Loans__c</fullName>
+        <deprecated>false</deprecated>
+        <description>The system autopopulates this field using the profitability model in the context of a loan. In the context of a relationship, this field is an aggregated value of all Capital Allocated for Loans based on loan products associated to it.</description>
+        <externalId>false</externalId>
+        <label>Capital Allocated for Loans</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>LLC_BI__Capital_Allocated_for_Treasury__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Users manually populate this field to represent the Capital Allocated for  Treasury for all treasury services.</description>
+        <externalId>false</externalId>
+        <label>Capital Allocated for Treasury</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>LLC_BI__Cost_of_Deposit_Capital__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Users manually populate this field to represent the Cost of Deposit Capital for all deposit products.</description>
+        <externalId>false</externalId>
+        <label>Cost of Deposit Capital</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>LLC_BI__Cost_of_Loan_Capital__c</fullName>
+        <deprecated>false</deprecated>
+        <description>The system autopopulates this field using the profitability model in the context of a loan. In the context of a relationship, this field is an aggregated value of all Cost of Loan Capital fields on loan products associated to it.</description>
+        <externalId>false</externalId>
+        <label>Cost of Loan Capital</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>LLC_BI__Cost_of_Treasury_Capital__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Users manually populate this field to represent the Cost of Treasury Capital for all treasury services.</description>
+        <externalId>false</externalId>
+        <label>Cost of Treasury Capital</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>LLC_BI__Deposit_EVA__c</fullName>
+        <deprecated>false</deprecated>
+        <description>The system populates this field to represent the Economic Value Added for deposit products. By default, it is blank.</description>
+        <externalId>false</externalId>
+        <label>Deposit EVA</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>LLC_BI__Deposit_Expense__c</fullName>
+        <deprecated>false</deprecated>
+        <description>The system populates the total calculated revenue for deposit products. By default, it is blank.</description>
+        <externalId>false</externalId>
+        <label>Deposit Expense</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>LLC_BI__Deposit_Operating_Cost__c</fullName>
+        <deprecated>false</deprecated>
+        <description>The system populates this text field with the total Operating Cost for deposit products. By default, it is blank.</description>
+        <externalId>false</externalId>
+        <label>Deposit Operating Cost</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>LLC_BI__Deposit_Revenue__c</fullName>
+        <deprecated>false</deprecated>
+        <description>The system populates this field with the total calculated revenue for deposit products. By default, it is blank.</description>
+        <externalId>false</externalId>
+        <label>Deposit Revenue</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>LLC_BI__Deposit__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <deprecated>false</deprecated>
+        <description>The system automatically populates this field with the object that the profitability record is viewed from. It is populated with an internal Salesforce ID.</description>
+        <externalId>false</externalId>
+        <label>Deposit</label>
+        <referenceTo>LLC_BI__Deposit__c</referenceTo>
+        <relationshipLabel>Profitabilities</relationshipLabel>
+        <relationshipName>Profitabilities</relationshipName>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>LLC_BI__EVA_Currency__c</fullName>
+        <deprecated>false</deprecated>
+        <description>This field is automatically populated and represents the Economic Value Added that a Scenario, Loan, Deal or Relationship associated to the profitability will generate.</description>
+        <externalId>false</externalId>
+        <label>EVA</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>LLC_BI__EVA_Proforma__c</fullName>
+        <deprecated>false</deprecated>
+        <description>The system autopopulates this field using the profitability model in the context of a loan. This field represents the potential income generated by loan product(s) and is a projection of the EVA of a relationship if this loan closes and is funded.</description>
+        <externalId>false</externalId>
+        <label>Proforma EVA</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>LLC_BI__Error_Message__c</fullName>
+        <deprecated>false</deprecated>
+        <description>The system populates this field with the most recent error message for a context object&apos;s pricing or profitability execution if an execution fails, and clears it upon a subsequent successful calculation. By default, it is blank.</description>
+        <encryptionScheme>None</encryptionScheme>
+        <externalId>false</externalId>
+        <label>Error Message</label>
+        <length>65536</length>
+        <trackTrending>false</trackTrending>
+        <type>LongTextArea</type>
+        <visibleLines>2</visibleLines>
+    </fields>
+    <fields>
+        <fullName>LLC_BI__Expected_Loss__c</fullName>
+        <deprecated>false</deprecated>
+        <description>The total projected life of loan expected loss applied in nIQ Profitability calculations.</description>
+        <externalId>false</externalId>
+        <label>Expected Loss</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>LLC_BI__Fee_Income__c</fullName>
+        <deprecated>false</deprecated>
+        <description>The Fee Income applied in nIQ Profitability Calculations.</description>
+        <externalId>false</externalId>
+        <label>Fee Income</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>LLC_BI__Forecasted_Profitability__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Reserved for future use. The system populates this field to indicate the Proforma Profitability when it was most recently calculated.</description>
+        <externalId>false</externalId>
+        <label>Forecasted Profitability</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>LLC_BI__Forecasted_ROE__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Reserved for future use. The system populates this field to indicate the Proforma ROE when it was most recently calculated.</description>
+        <externalId>false</externalId>
+        <label>Forecasted ROE</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackTrending>false</trackTrending>
+        <type>Percent</type>
+    </fields>
+    <fields>
+        <fullName>LLC_BI__Funds_Transfer_Pricing__c</fullName>
+        <deprecated>false</deprecated>
+        <description>This field is automatically populated and represents the Funds Transfer Pricing value that a Scenario, Loan, Deal or Relationship associated to the profitability will generate.</description>
+        <externalId>false</externalId>
+        <label>Funds Transfer Pricing Cost</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>LLC_BI__Hurdle_Rate__c</fullName>
+        <deprecated>false</deprecated>
+        <description>The system automatically populates this optional field with the matrix-derived hurdle rate result associated to the record it was triggered from.</description>
+        <externalId>false</externalId>
+        <label>Hurdle Rate</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackTrending>false</trackTrending>
+        <type>Percent</type>
+    </fields>
+    <fields>
+        <fullName>LLC_BI__Impact_EVA__c</fullName>
+        <deprecated>false</deprecated>
+        <description>This field is automatically populated and represents the Scenario or Loan EVA impact on the overall Relationship profitability if it moves to a status the financial institution considers closed.</description>
+        <externalId>false</externalId>
+        <label>EVA Impact</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>LLC_BI__Impact_NOPAT__c</fullName>
+        <deprecated>false</deprecated>
+        <description>This field is automatically populated and represents the Scenario or Loan NOPAT impact on the overall Relationship profitability if it moves to a status the financial institution considers closed.</description>
+        <externalId>false</externalId>
+        <label>NOPAT Impact</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>LLC_BI__Impact_SVA__c</fullName>
+        <deprecated>false</deprecated>
+        <description>This field is automatically populated and represents the Scenario or Loan SVA impact on the overall Relationship profitability if it moves to a status the financial institution considers closed.</description>
+        <externalId>false</externalId>
+        <label>SVA Impact</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>LLC_BI__Interest_Income__c</fullName>
+        <deprecated>false</deprecated>
+        <description>The system autopopulates this field using the profitability model in the context of a loan. In the context of a relationship, this field is an aggregated value of the Interest Income of all loan products associated to it.</description>
+        <externalId>false</externalId>
+        <label>Interest Income</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>LLC_BI__Last_Refresh_Date__c</fullName>
+        <deprecated>false</deprecated>
+        <description>This field displays the last refresh date and time values.</description>
+        <encryptionScheme>None</encryptionScheme>
+        <externalId>false</externalId>
+        <label>Last Refresh Date</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>DateTime</type>
+    </fields>
+    <fields>
+        <fullName>LLC_BI__Liquidity_Cost__c</fullName>
+        <deprecated>false</deprecated>
+        <description>The system autopopulates this field using the profitability model in the context of a loan. In the context of a relationship, this field is an aggregated value of the Liquidity Cost of all loan products associated to it.</description>
+        <externalId>false</externalId>
+        <label>Interest Expense</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>LLC_BI__Loan__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <deprecated>false</deprecated>
+        <description>The system automatically populates this field with the object that the profitability record is viewed from. It is populated with an internal Salesforce ID.</description>
+        <externalId>false</externalId>
+        <label>Loan</label>
+        <referenceTo>LLC_BI__Loan__c</referenceTo>
+        <relationshipLabel>Profitabilities</relationshipLabel>
+        <relationshipName>Profitabilities</relationshipName>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>LLC_BI__NIM_Impact__c</fullName>
+        <deprecated>false</deprecated>
+        <description>This field is automatically populated and represents the Scenario or Loan NIM percent impact on the overall Relationship profitability if it moves to a status the financial institution considers closed.</description>
+        <externalId>false</externalId>
+        <label>NIM Impact</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackTrending>false</trackTrending>
+        <type>Percent</type>
+    </fields>
+    <fields>
+        <fullName>LLC_BI__NIM__c</fullName>
+        <deprecated>false</deprecated>
+        <description>This field is automatically populated and represents the Net Interest Margin that a Scenario, Loan, Deal or Relationship associated to the profitability will generate.</description>
+        <externalId>false</externalId>
+        <label>NIM</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackTrending>false</trackTrending>
+        <type>Percent</type>
+    </fields>
+    <fields>
+        <fullName>LLC_BI__NOPAT_Currency__c</fullName>
+        <deprecated>false</deprecated>
+        <description>This field is automatically populated and represents the Net Operating Profit After Tax that a Scenario, Loan, Deal or Relationship associated to the profitability will generate.</description>
+        <externalId>false</externalId>
+        <label>NOPAT</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>LLC_BI__NOPAT_Proforma__c</fullName>
+        <deprecated>false</deprecated>
+        <description>The system autopopulates this field using the profitability model in the context of a loan. This field represents the potential income generated by loan product(s) and is a projection of the NOPAT of a relationship if this loan closes and is funded.</description>
+        <externalId>false</externalId>
+        <label>Proforma NOPAT</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>LLC_BI__NPV_Impact__c</fullName>
+        <deprecated>false</deprecated>
+        <description>This field is automatically populated and represents the Scenario or Loan NPV impact on the overall Relationship profitability if it moves to a status the financial institution considers closed.</description>
+        <externalId>false</externalId>
+        <label>NPV Impact</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>LLC_BI__NPV__c</fullName>
+        <deprecated>false</deprecated>
+        <description>This field is automatically populated and represents the Net Present Value of Risk Adjusted Cashflows that a Scenario, Loan, Deal or Relationship associated to the profitability will generate.</description>
+        <externalId>false</externalId>
+        <label>NPV</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>LLC_BI__Net_Deposit_Income__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Users manually populate this field to represent the income generated by deposit products.</description>
+        <externalId>false</externalId>
+        <label>Net Deposit Income</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>LLC_BI__Net_Interest_Income__c</fullName>
+        <deprecated>false</deprecated>
+        <description>The system autopopulates this field using the profitability model in the context of a loan. In the context of a relationship, this field is an aggregated value of the Net Income of all loan products associated to it.</description>
+        <externalId>false</externalId>
+        <label>Net Income</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>LLC_BI__Net_Treasury_Income__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Users manually populate this field to represent the income generated by treasury services.</description>
+        <externalId>false</externalId>
+        <label>Net Treasury Income</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>LLC_BI__Non_CET1__c</fullName>
+        <deprecated>false</deprecated>
+        <description>This field is automatically populated and represents the Non-CET1 value that a Scenario, Loan, Deal or Relationship associated to the profitability will generate.</description>
+        <externalId>false</externalId>
+        <label>Non - CET1 Cost</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>LLC_BI__Non_Risk_Adjusted_Capital_Allocation__c</fullName>
+        <deprecated>false</deprecated>
+        <description>This field is automatically populated and represents the Non-Risk Adjusted Capital Allocation that a Scenario, Loan, Deal or Relationship associated to the profitability will generate.</description>
+        <externalId>false</externalId>
+        <label>Non-Risk Adjusted Capital Allocation</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>LLC_BI__Operating_Cost__c</fullName>
+        <deprecated>false</deprecated>
+        <description>The system autopopulates this field using the profitability model in the context of a loan. In the context of a relationship, this field is an aggregated value of the Operating Cost of all loan products associated to it.</description>
+        <externalId>false</externalId>
+        <label>Non Interest Expense</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>LLC_BI__Operating_Deposit_Income__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Users manually populate this field to represent the Operating Income generated by deposit products.</description>
+        <externalId>false</externalId>
+        <label>Operating Deposit Income</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>LLC_BI__Operating_Loan_Income__c</fullName>
+        <deprecated>false</deprecated>
+        <description>The system autopopulates this field using the profitability model in the context of a loan. In the context of a relationship, this field is an aggregated value of all Operating Loan Income of loan products associated to it.</description>
+        <externalId>false</externalId>
+        <label>Operating Loan Income</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>LLC_BI__Operating_Treasury_Income__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Users populate this field to represent the Operating Income from treasury services.</description>
+        <externalId>false</externalId>
+        <label>Operating Treasury Income</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>LLC_BI__Opportunity__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <deprecated>false</deprecated>
+        <description>The system automatically populates this field with the object that the profitability record is viewed from. It is populated with an internal Salesforce ID.</description>
+        <externalId>false</externalId>
+        <label>Opportunity</label>
+        <referenceTo>Opportunity</referenceTo>
+        <relationshipLabel>Profitabilities</relationshipLabel>
+        <relationshipName>Profitabilities</relationshipName>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>LLC_BI__Original_FTP__c</fullName>
+        <deprecated>false</deprecated>
+        <description>The Original FTP percentage use during origination.</description>
+        <externalId>false</externalId>
+        <label>Original FTP</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackTrending>false</trackTrending>
+        <type>Percent</type>
+    </fields>
+    <fields>
+        <fullName>LLC_BI__Pricing_Option__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <deprecated>false</deprecated>
+        <description>The system automatically populates this field with the object that the profitability record is viewed from. It is populated with an internal Salesforce ID.</description>
+        <externalId>false</externalId>
+        <label>Pricing Option</label>
+        <referenceTo>LLC_BI__Pricing_Option__c</referenceTo>
+        <relationshipLabel>Profitabilities</relationshipLabel>
+        <relationshipName>Profitabilities</relationshipName>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>LLC_BI__Product_Package__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <deprecated>false</deprecated>
+        <description>The system automatically populates this field with the object that the profitability record is viewed from. It is populated with an internal Salesforce ID.</description>
+        <externalId>false</externalId>
+        <label>Product Package</label>
+        <referenceTo>LLC_BI__Product_Package__c</referenceTo>
+        <relationshipLabel>Profitabilities</relationshipLabel>
+        <relationshipName>Profitabilities</relationshipName>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>LLC_BI__Profitability_Impact__c</fullName>
+        <deprecated>false</deprecated>
+        <description>This field is automatically populated and represents the Scenario or Loan Profitability on the overall Relationship profitability if it moves to a status the financial institution considers closed.</description>
+        <externalId>false</externalId>
+        <label>Profitability Impact</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>LLC_BI__Profitability__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Reserved for future use. The fiscal amount of profit in denomination that a specific account provides a financial institution.</description>
+        <externalId>false</externalId>
+        <label>Profitability</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>LLC_BI__Proforma_NIM__c</fullName>
+        <deprecated>false</deprecated>
+        <description>This field represents the overall Relationship NIM if the scenario is selected or the loan moves to a status the financial institution considers closed.</description>
+        <externalId>false</externalId>
+        <label>Proforma NIM</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackTrending>false</trackTrending>
+        <type>Percent</type>
+    </fields>
+    <fields>
+        <fullName>LLC_BI__Proforma_NPV__c</fullName>
+        <deprecated>false</deprecated>
+        <description>This field represents the overall Relationship NPV if the scenario is selected or the loan moves to a status the financial institution considers closed.</description>
+        <externalId>false</externalId>
+        <label>Proforma NPV</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>LLC_BI__Proforma_Profitability__c</fullName>
+        <deprecated>false</deprecated>
+        <description>This field represents the overall Relationship Profitability if the scenario is selected or the loan moves to a status the financial institution considers closed.</description>
+        <externalId>false</externalId>
+        <label>Proforma Profitability</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackTrending>false</trackTrending>
+        <type>Percent</type>
+    </fields>
+    <fields>
+        <fullName>LLC_BI__Proforma_RAA__c</fullName>
+        <deprecated>false</deprecated>
+        <description>The system autopopulates this field using the profitability model in the context of a loan. This field represents the potential income generated by a loan product and is a projection of the RAA of a relationship if this loan closes and is funded.</description>
+        <externalId>false</externalId>
+        <label>Proforma RAA</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackTrending>false</trackTrending>
+        <type>Percent</type>
+    </fields>
+    <fields>
+        <fullName>LLC_BI__Proforma_RAROC__c</fullName>
+        <deprecated>false</deprecated>
+        <description>The system autopopulates this field using the profitability model in the context of a loan. This field represents the potential income generated by a loan product and is a projection of the RAROC of a relationship if this loan closes and is funded.</description>
+        <externalId>false</externalId>
+        <label>Proforma RAROC</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackTrending>false</trackTrending>
+        <type>Percent</type>
+    </fields>
+    <fields>
+        <fullName>LLC_BI__Proforma_ROA__c</fullName>
+        <deprecated>false</deprecated>
+        <description>The system autopopulates this field using the profitability model in the context of a loan. This field represents the potential income generated by a loan product and is a projection of the ROA of a relationship if this loan closes and is funded.</description>
+        <externalId>false</externalId>
+        <label>Proforma ROA</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackTrending>false</trackTrending>
+        <type>Percent</type>
+    </fields>
+    <fields>
+        <fullName>LLC_BI__Proforma_ROE__c</fullName>
+        <deprecated>false</deprecated>
+        <description>This field represents the overall Relationship ROE if the scenario is selected or the loan moves to a status the financial institution considers closed.</description>
+        <externalId>false</externalId>
+        <label>Proforma ROE</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackTrending>false</trackTrending>
+        <type>Percent</type>
+    </fields>
+    <fields>
+        <fullName>LLC_BI__Proforma_RORAC__c</fullName>
+        <deprecated>false</deprecated>
+        <description>The system autopopulates this field using the profitability model in the context of a loan. This field represents the potential income generated by a loan product and is a projection of the RORAC of a relationship if this loan closes and is funded.</description>
+        <externalId>false</externalId>
+        <label>Proforma RORAC</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackTrending>false</trackTrending>
+        <type>Percent</type>
+    </fields>
+    <fields>
+        <fullName>LLC_BI__RAA_Impact__c</fullName>
+        <deprecated>false</deprecated>
+        <description>The system autopopulates this field to represent the scenario or loan RAA percent impact on the overall relationship profitability if it moves to a stage considered closed.</description>
+        <externalId>false</externalId>
+        <label>RAA Impact</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackTrending>false</trackTrending>
+        <type>Percent</type>
+    </fields>
+    <fields>
+        <fullName>LLC_BI__RAA__c</fullName>
+        <deprecated>false</deprecated>
+        <description>This field is automatically populated and represents the Return on Average Assets that a Scenario, Loan, Deal or Relationship associated to the profitability will generate.</description>
+        <externalId>false</externalId>
+        <label>RAA</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackTrending>false</trackTrending>
+        <type>Percent</type>
+    </fields>
+    <fields>
+        <fullName>LLC_BI__RAROC_Impact__c</fullName>
+        <deprecated>false</deprecated>
+        <description>The system autopopulates this field to represent the scenario or loan RAROC percent impact on the overall relationship profitability if it moves to a stage considered closed.</description>
+        <externalId>false</externalId>
+        <label>RAROC Impact</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackTrending>false</trackTrending>
+        <type>Percent</type>
+    </fields>
+    <fields>
+        <fullName>LLC_BI__RAROC__c</fullName>
+        <deprecated>false</deprecated>
+        <description>This field is automatically populated and represents the Risk Adjusted Return on Capital that a Scenario, Loan, Deal or Relationship associated to the profitability will generate.</description>
+        <externalId>false</externalId>
+        <label>RAROC</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackTrending>false</trackTrending>
+        <type>Percent</type>
+    </fields>
+    <fields>
+        <fullName>LLC_BI__RA_Net_Deposit_Income__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Users manually populate this field to represent the Risk Adjusted Net Income field generated by deposit products.</description>
+        <externalId>false</externalId>
+        <label>Risk Adjusted Net Deposit Income</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>LLC_BI__RA_Net_Interest_Income__c</fullName>
+        <deprecated>false</deprecated>
+        <description>The system autopopulates this field using the profitability model in the context of a loan. In the context of a relationship, this field is an aggregated value of the Risk Adjusted Net Income of all loan products associated to it.</description>
+        <externalId>false</externalId>
+        <label>Risk Adjusted Income</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>LLC_BI__RA_Net_Treasury_Income__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Users manually populate this field to represent the Risk Adjusted Net Income field generated by treasury services.</description>
+        <externalId>false</externalId>
+        <label>Risk Adjusted Net Treasury Income</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>LLC_BI__ROA_Impact__c</fullName>
+        <deprecated>false</deprecated>
+        <description>The system autopopulates this field to represent the scenario or loan ROA percent impact on the overall relationship profitability if it moves to a stage considered closed.</description>
+        <externalId>false</externalId>
+        <label>ROA Impact</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackTrending>false</trackTrending>
+        <type>Percent</type>
+    </fields>
+    <fields>
+        <fullName>LLC_BI__ROA__c</fullName>
+        <deprecated>false</deprecated>
+        <description>This field is automatically populated and represents the Return on Assets that a Scenario, Loan, Deal or Relationship associated to the profitability will generate.</description>
+        <externalId>false</externalId>
+        <label>ROA</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackTrending>false</trackTrending>
+        <type>Percent</type>
+    </fields>
+    <fields>
+        <fullName>LLC_BI__ROE_Impact__c</fullName>
+        <deprecated>false</deprecated>
+        <description>This field is automatically populated and represents the Scenario or Loan ROE percent impact on the overall Relationship profitability if it moves to a status the financial institution considers closed.</description>
+        <externalId>false</externalId>
+        <label>ROE Impact</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackTrending>false</trackTrending>
+        <type>Percent</type>
+    </fields>
+    <fields>
+        <fullName>LLC_BI__ROE__c</fullName>
+        <deprecated>false</deprecated>
+        <description>This field is automatically populated. The fiscal amount of profit in percentage that a specific account provides a financial institution.</description>
+        <externalId>false</externalId>
+        <label>ROE</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackTrending>false</trackTrending>
+        <type>Percent</type>
+    </fields>
+    <fields>
+        <fullName>LLC_BI__RORAC_Impact__c</fullName>
+        <deprecated>false</deprecated>
+        <description>The system autopopulates this field to represent the scenario or loan RORAC percent impact on the overall relationship profitability if it moves to a stage considered closed.</description>
+        <externalId>false</externalId>
+        <label>RORAC Impact</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackTrending>false</trackTrending>
+        <type>Percent</type>
+    </fields>
+    <fields>
+        <fullName>LLC_BI__RORAC__c</fullName>
+        <deprecated>false</deprecated>
+        <description>The system autopopulates this field to represent the Return on Risk Adjusted Capital that a scenario, loan, deal, or relationship associated to the profitability will generate.</description>
+        <externalId>false</externalId>
+        <label>RORAC</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackTrending>false</trackTrending>
+        <type>Percent</type>
+    </fields>
+    <fields>
+        <fullName>LLC_BI__Reg_Cost_of_Capital__c</fullName>
+        <deprecated>false</deprecated>
+        <description>The system autopopulates this field using the profitability model in the context of a loan. In the context of a relationship, this field is an aggregated value of the Regulatory Cost of Capital of all loan products associated to it.</description>
+        <externalId>false</externalId>
+        <label>Regulatory Cost of Capital</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>LLC_BI__Relationship__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <deprecated>false</deprecated>
+        <description>The system automatically populates this field with the object that the profitability record is viewed from. It is populated with an internal Salesforce ID.</description>
+        <externalId>false</externalId>
+        <label>Relationship</label>
+        <referenceTo>Account</referenceTo>
+        <relationshipLabel>Profitabilities</relationshipLabel>
+        <relationshipName>Profitabilities</relationshipName>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>LLC_BI__SVA_Currency__c</fullName>
+        <deprecated>false</deprecated>
+        <description>This field is automatically populated and represents the Shareholder Value Added that a Scenario, Loan, Deal or Relationship associated to the profitability will generate.</description>
+        <externalId>false</externalId>
+        <label>SVA</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>LLC_BI__SVA_Proforma__c</fullName>
+        <deprecated>false</deprecated>
+        <description>The system autopopulates this field using the profitability model in the context of a loan. This field represents the potential income generated by loan product(s) and is a projection of the SVA of a relationship if this loan closes and is funded.</description>
+        <externalId>false</externalId>
+        <label>Proforma SVA</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>LLC_BI__Source_Profitability__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <deprecated>false</deprecated>
+        <description>This field is a lookup field that connects a Proforma Profitability to the Actual Profitability record of a singular product.</description>
+        <externalId>false</externalId>
+        <label>Source Profitability</label>
+        <referenceTo>LLC_BI__Profitability__c</referenceTo>
+        <relationshipLabel>Profitabilities (Source Profitability)</relationshipLabel>
+        <relationshipName>Profitabilities</relationshipName>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>LLC_BI__Tax_Rate__c</fullName>
+        <deprecated>false</deprecated>
+        <description>The corporate tax rate applied in nIQ Profitability calculations.</description>
+        <externalId>false</externalId>
+        <label>Tax Rate</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackTrending>false</trackTrending>
+        <type>Percent</type>
+    </fields>
+    <fields>
+        <fullName>LLC_BI__Taxes__c</fullName>
+        <deprecated>false</deprecated>
+        <description>The system autopopulates this field using the profitability model in the context of a loan to define that product&apos;s tax rate.</description>
+        <externalId>false</externalId>
+        <label>Taxes</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>LLC_BI__Total_Assets_for_Deposits__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Users manually populate this field to represent the Total Liabilities for Deposits for all deposit products.</description>
+        <externalId>false</externalId>
+        <label>Total Liabilities for Deposits</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>LLC_BI__Total_Assets_for_Loans__c</fullName>
+        <deprecated>false</deprecated>
+        <description>The system autopopulates this field using the profitability model in the context of a loan. In the context of a relationship, this field is an aggregated value of all Total Assets for Loans for loan products associated to it.</description>
+        <externalId>false</externalId>
+        <label>Total Assets for Loans</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>LLC_BI__Total_Assets_for_Treasury__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Users manually populate this field to represent the Total Assets for Treasury for all treasury services.</description>
+        <externalId>false</externalId>
+        <label>Total Assets for Treasury</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>LLC_BI__Total_Prepayment_Loss__c</fullName>
+        <deprecated>false</deprecated>
+        <description>The system automatically populates this optional field that represents the amount of money that a lender could potentially lose based on the potential interest income lost and the potential loss recovered from an incurred prepayment penalty.</description>
+        <externalId>false</externalId>
+        <label>Total Prepayment Loss</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>LLC_BI__Treasury_EVA__c</fullName>
+        <deprecated>false</deprecated>
+        <description>The system populates this field to represent the Economic Value Added for treasury products. By default, it is blank.</description>
+        <externalId>false</externalId>
+        <label>Treasury EVA</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>LLC_BI__Treasury_Expected_Losses__c</fullName>
+        <deprecated>false</deprecated>
+        <description>The system populates this field to represent the approximate Expected Losses of treasury products. By default, it is blank.</description>
+        <externalId>false</externalId>
+        <label>Treasury Expected Losses</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>LLC_BI__Treasury_Operating_Cost__c</fullName>
+        <deprecated>false</deprecated>
+        <description>The system populates this field to represent the approximate Operating Cost of treasury products. By default, it is blank.</description>
+        <externalId>false</externalId>
+        <label>Treasury Operating Cost</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>LLC_BI__Treasury_Revenue__c</fullName>
+        <deprecated>false</deprecated>
+        <description>The system populates this field to represent the calculated revenue of treasury products. By default, it is blank.</description>
+        <externalId>false</externalId>
+        <label>Treasury Revenue</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>LLC_BI__lookupKey__c</fullName>
+        <caseSensitive>false</caseSensitive>
+        <deprecated>false</deprecated>
+        <description>The field is optional. If populated the value must be unique across all the records of this type. The field typically contains an external identifier that is used to associate the record with its matching record in an external system. The field can also be used to efficiently associate related records, when importing data into nCino, without the need to know the internal ID for the record.</description>
+        <encryptionScheme>None</encryptionScheme>
+        <externalId>true</externalId>
+        <label>lookupKey</label>
+        <length>255</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>true</unique>
+    </fields>
+    <label>Profitability</label>
+    <nameField>
+        <displayFormat>PROF-{0000000000}</displayFormat>
+        <label>Profitability Name</label>
+        <type>AutoNumber</type>
+    </nameField>
+    <pluralLabel>Profitabilities</pluralLabel>
+    <searchLayouts/>
+    <sharingModel>ReadWrite</sharingModel>
+    <visibility>Public</visibility>
+</CustomObject>

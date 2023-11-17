@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <label><!-- Covenant Compliance Status Check --></label>
+        <name>CF_Covenant_Compliance_Status_Check__c</name>
+    </fields>
+    <fields>
+        <help><!-- Date the Covenant was approved. --></help>
+        <label><!-- Approval Date --></label>
+        <name>LLC_BI__Approval_Date__c</name>
+    </fields>
+    <fields>
+        <help><!-- User that approved the review of this Covenant --></help>
+        <label><!-- Approved By --></label>
+        <name>LLC_BI__Approved_By__c</name>
+        <relationshipLabel><!-- Covenant Compliance (Approved By) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Comments --></label>
+        <name>LLC_BI__Comments__c</name>
+    </fields>
+    <fields>
+        <label><!-- Covenant --></label>
+        <name>LLC_BI__Covenant__c</name>
+        <relationshipLabel><!-- Covenant Compliance --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Evaluated By --></label>
+        <name>LLC_BI__Evaluated_By__c</name>
+        <relationshipLabel><!-- Covenant Compliance (Evaluated By) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Evaluation Date --></label>
+        <name>LLC_BI__Evaluation_Date__c</name>
+    </fields>
+    <fields>
+        <help><!-- If there was an exception, the date that the exception occurred --></help>
+        <label><!-- Exception Date --></label>
+        <name>LLC_BI__Exception_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Status --></label>
+        <name>LLC_BI__Status__c</name>
+        <picklistValues>
+            <masterLabel>Compliant</masterLabel>
+            <translation><!-- Compliant --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Exception</masterLabel>
+            <translation><!-- Exception --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>In Progress</masterLabel>
+            <translation><!-- In Progress --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Waived</masterLabel>
+            <translation><!-- Waived --></translation>
+        </picklistValues>
+    </fields>
+</CustomObjectTranslation>

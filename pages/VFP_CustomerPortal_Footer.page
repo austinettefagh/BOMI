@@ -1,0 +1,27 @@
+<apex:page >
+ <script type="text/javascript">
+    function updatePageFooterText() {
+        var target = document.querySelector('.portal-footer');
+
+        var div = document.createElement('div');
+        //div.classList.add('slds-grid');
+        //div.classList.add('slds-p-top--small');
+        //div.classList.add('slds-text-align--right');
+    
+        div.innerHTML = '{!$Label.CustomerPortal_Footer_Text}';
+            
+        target.children[0].appendChild(div);
+        
+        var div = document.createElement('div');
+        
+        div.innerHTML = '<a href="http://www.hud.gov/" target="_blank"> <img alt="EHL" width="50" height="50" src="{!$Label.CustomerPortal_EHL_Logo}"> </a>'
+        +'<a href="http://www.fdic.gov/" target="_blank"> <img alt="FDIC" width="50" height="50" src="{!$Label.CustomerPortal_FDIC_Logo}"> </a>';
+  
+        target.children[0].appendChild(div);
+       
+        
+    }
+    
+    document.addEventListener("DOMContentLoaded", updatePageFooterText);
+</script>
+</apex:page>

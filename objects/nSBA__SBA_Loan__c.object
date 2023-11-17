@@ -1,0 +1,377 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <allowInChatterGroups>false</allowInChatterGroups>
+    <compactLayoutAssignment>SYSTEM</compactLayoutAssignment>
+    <deploymentStatus>Deployed</deploymentStatus>
+    <deprecated>false</deprecated>
+    <description>This object will hold the SBA Loan data for summarizing fields for Use of Proceeds and other forms.</description>
+    <enableActivities>false</enableActivities>
+    <enableBulkApi>true</enableBulkApi>
+    <enableFeeds>false</enableFeeds>
+    <enableHistory>false</enableHistory>
+    <enableLicensing>false</enableLicensing>
+    <enableReports>true</enableReports>
+    <enableSearch>false</enableSearch>
+    <enableSharing>true</enableSharing>
+    <enableStreamingApi>true</enableStreamingApi>
+    <externalSharingModel>Private</externalSharingModel>
+    <fields>
+        <fullName>nSBA__Application__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <deprecated>false</deprecated>
+        <description>The system automatically populates this optional field to reference to the Application object. By default, it is empty.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>The field is used to reference the Application object.</inlineHelpText>
+        <label>Application</label>
+        <referenceTo>LLC_BI__Application__c</referenceTo>
+        <relationshipLabel>SBA Loan with Application</relationshipLabel>
+        <relationshipName>SBA_Loan_with_Application</relationshipName>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>nSBA__Assets_Source__c</fullName>
+        <deprecated>false</deprecated>
+        <description>The system automatically populates this optional field to summarize the Assets Source for the Borrower&apos;s Injection. By default, it is empty.</description>
+        <encryptionScheme>None</encryptionScheme>
+        <externalId>false</externalId>
+        <inlineHelpText>This field is used to summarize the Assets Source for the Borrower&apos;s Injection.</inlineHelpText>
+        <label>Assets Source</label>
+        <length>255</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>nSBA__Cash_Source__c</fullName>
+        <deprecated>false</deprecated>
+        <description>The system automatically populates this optional field to summarize the Cash Source for the Borrower&apos;s Injection. By default, it is empty.</description>
+        <encryptionScheme>None</encryptionScheme>
+        <externalId>false</externalId>
+        <inlineHelpText>This field is used to summarize the Cash Source for the Borrower&apos;s Injection.</inlineHelpText>
+        <label>Cash Source</label>
+        <length>255</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>nSBA__Other_for_Borrowers_Injection__c</fullName>
+        <deprecated>false</deprecated>
+        <description>The system automatically populates this optional field to summarize the Other for the Borrower&apos;s Injection. By default, it is empty.</description>
+        <encryptionScheme>None</encryptionScheme>
+        <externalId>false</externalId>
+        <inlineHelpText>This field is used to summarize the Other for the Borrower&apos;s Injection.</inlineHelpText>
+        <label>Other for Borrower&apos;s Injection</label>
+        <length>255</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>nSBA__Total_of_Amount_Disbursed__c</fullName>
+        <deprecated>false</deprecated>
+        <description>The system automatically populates this optional field to summarize the Total of Amount Disbursed for the Use of Proceeds. By default, it is empty.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>This field is used to summarize the Total of Amount Disbursed for the Use of Proceeds.</inlineHelpText>
+        <label>Total of Amount Disbursed</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>nSBA__Total_of_Applicant_Equity_Injection__c</fullName>
+        <deprecated>false</deprecated>
+        <description>The system automatically populates this optional field to summarize the Total of Applicant Equity Injection for the Use of Proceeds. By default, it is empty.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>This field is used to summarize the Total of Applicant Equity Injection for the Use of Proceeds.</inlineHelpText>
+        <label>Total of Applicant Equity Injection</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>nSBA__Total_of_Assets_Source__c</fullName>
+        <deprecated>false</deprecated>
+        <description>The system automatically populates this optional field to summarize the Total of Assets Source for the Borrower&apos;s Injection. By default, it is empty.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>This field is used to summarize the Total of Assets Source for the Borrower&apos;s Injection.</inlineHelpText>
+        <label>Total of Assets Source</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>nSBA__Total_of_Authorized_Amount_Remaining__c</fullName>
+        <deprecated>false</deprecated>
+        <description>The system automatically populates this optional field to summarize the Total of Authorized Amount Remaining for the Use of Proceeds. By default, it is empty.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>This field is used to summarize the Total of Authorized Amount Remaining for the Use of Proceeds.</inlineHelpText>
+        <label>Total of Authorized Amount Remaining</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>nSBA__Total_of_Borrower_Injection__c</fullName>
+        <deprecated>false</deprecated>
+        <description>The system automatically populates this optional field to summarize the Total of Borrower Injection. By default, it is empty.</description>
+        <externalId>false</externalId>
+        <formula>nSBA__Total_of_Assets_Source__c+nSBA__Total_of_Cash_Source__c+nSBA__Total_of_Seller_Contribution_to_Equity__c+nSBA__Total_of_Other_for_Borrowers_Injection__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <inlineHelpText>This field is used to summarize the Total of Borrower Injection.</inlineHelpText>
+        <label>Total of Borrower Injection</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>nSBA__Total_of_Cash_Source__c</fullName>
+        <deprecated>false</deprecated>
+        <description>The system automatically populates this optional field to summarize the Total of Cash Source for the Borrower&apos;s Injection. By default, it is empty.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>This field is used to summarize the Total of Cash Source for the Borrower&apos;s Injection.</inlineHelpText>
+        <label>Total of Cash Source</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>nSBA__Total_of_Other_Financing__c</fullName>
+        <deprecated>false</deprecated>
+        <description>The system automatically populates this optional field to summarize the Total of Other Financing for the Use of Proceeds. By default, it is empty.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>This field is used to summarize the Total of Other Financing for the Use of Proceeds.</inlineHelpText>
+        <label>Total of Other Financing</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>nSBA__Total_of_Other_for_Borrowers_Injection__c</fullName>
+        <deprecated>false</deprecated>
+        <description>The system automatically populates this optional field to summarize the Total of Other for the Borrower&apos;s Injection. By default, it is empty.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>This field is used to summarize the Total of Other for the Borrower&apos;s Injection.</inlineHelpText>
+        <label>Total of Other for Borrower&apos;s Injection</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>nSBA__Total_of_Proceed_Amount__c</fullName>
+        <deprecated>false</deprecated>
+        <description>The system automatically populates this optional field to summarize the Total of Proceed Amount for the Use of Proceeds. By default, it is empty.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>This field is used to summarize the Total of Proceed Amount for the Use of Proceeds.</inlineHelpText>
+        <label>Total of Proceed Amount</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>nSBA__Total_of_Seller_Contribution_to_Equity__c</fullName>
+        <deprecated>false</deprecated>
+        <description>The system automatically populates this optional field to summarize the Total of Seller Contribution to Equity for the Borrower&apos;s Injection. By default, it is empty.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>This field is used to summarize the Total of Seller Contribution to Equity for the Borrower&apos;s Injection.</inlineHelpText>
+        <label>Total of Seller Contribution to Equity</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>nSBA__Total_of_Use_of_Proceeds__c</fullName>
+        <deprecated>false</deprecated>
+        <description>The system automatically populates this optional field to summarize the Total of Use of Proceeds. By default, it is empty.</description>
+        <externalId>false</externalId>
+        <formula>nSBA__Total_of_Proceed_Amount__c+nSBA__Total_of_Other_Financing__c+nSBA__Total_of_Applicant_Equity_Injection__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <inlineHelpText>This field is used to summarize the Total of Use of Proceeds.</inlineHelpText>
+        <label>Total of Use of Proceeds</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <label>SBA Loan</label>
+    <listViews>
+        <fullName>nSBA__All</fullName>
+        <filterScope>Everything</filterScope>
+        <label>All</label>
+    </listViews>
+    <nameField>
+        <encryptionScheme>None</encryptionScheme>
+        <label>SBA Loan</label>
+        <type>Text</type>
+    </nameField>
+    <pluralLabel>SBA Loans</pluralLabel>
+    <searchLayouts/>
+    <sharingModel>ReadWrite</sharingModel>
+    <visibility>Public</visibility>
+</CustomObject>

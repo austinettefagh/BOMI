@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fieldSets>
+        <label><!-- UI Administration Field Configuration --></label>
+        <name>nFORCE__UI_Administration_Field_Configuration</name>
+    </fieldSets>
+    <fields>
+        <help><!-- Select which segment of the input address the component should map from. --></help>
+        <label><!-- Address Part --></label>
+        <name>nFORCE__Address_Part__c</name>
+        <picklistValues>
+            <masterLabel>City</masterLabel>
+            <translation><!-- City --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Country</masterLabel>
+            <translation><!-- Country --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Postal Code</masterLabel>
+            <translation><!-- Postal Code --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Province</masterLabel>
+            <translation><!-- Province --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Street</masterLabel>
+            <translation><!-- Street --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Alternate Label --></label>
+        <name>nFORCE__Alternate_Label__c</name>
+    </fields>
+    <fields>
+        <label><!-- Autocomplete Attribute Value --></label>
+        <name>nFORCE__Autocomplete_Attribute_Value__c</name>
+    </fields>
+    <fields>
+        <help><!-- This field is optional and must be manually populated. It stores the Forms syntax that is used to dictate whether a conditional field set should be displayed. --></help>
+        <label><!-- Conditional Display Criteria --></label>
+        <name>nFORCE__Conditional_Display_Criteria__c</name>
+    </fields>
+    <fields>
+        <help><!-- Allows configuration of a default value that a field is populated with on initial loading of a form. --></help>
+        <label><!-- Default Value --></label>
+        <name>nFORCE__Default_Value__c</name>
+    </fields>
+    <fields>
+        <help><!-- Enter the picklist values in a pipe-delimited list. --></help>
+        <label><!-- Defined Picklist Values --></label>
+        <name>nFORCE__Defined_Picklist_Values__c</name>
+    </fields>
+    <fields>
+        <help><!-- Text that will display as a placeholder in the input area, guiding the user on formatting and validation. --></help>
+        <label><!-- Field Hint --></label>
+        <name>nFORCE__Field_Hint__c</name>
+    </fields>
+    <fields>
+        <label><!-- Field Name --></label>
+        <name>nFORCE__Field_Name__c</name>
+    </fields>
+    <fields>
+        <help><!-- Use this field to define lookup filter criteria that the system uses to generate lookup results. --></help>
+        <label><!-- Filter Criteria --></label>
+        <name>nFORCE__Filter_Criteria__c</name>
+    </fields>
+    <fields>
+        <label><!-- Filter Display Name --></label>
+        <name>nFORCE__Filter_Display_Name__c</name>
+    </fields>
+    <fields>
+        <help><!-- Describe the format expression used to indicate what types of inputs are acceptable. --></help>
+        <label><!-- Format Rule Description --></label>
+        <name>nFORCE__Format_Description__c</name>
+    </fields>
+    <fields>
+        <help><!-- If unchecked, the rule defined for Format Expression will not be applied. --></help>
+        <label><!-- Format Validation Enabled --></label>
+        <name>nFORCE__Format_Enabled__c</name>
+    </fields>
+    <fields>
+        <help><!-- Enter an optional regular expression for enforcing a particular format for the field&apos;s contents. --></help>
+        <label><!-- Format Expression --></label>
+        <name>nFORCE__Format_Expression__c</name>
+    </fields>
+    <fields>
+        <help><!-- Enter a message to display to the user when their input does not match the format specified in Format Expression. --></help>
+        <label><!-- Format Message --></label>
+        <name>nFORCE__Format_Message__c</name>
+    </fields>
+    <fields>
+        <label><!-- -D Is Active --></label>
+        <name>nFORCE__Is_Active__c</name>
+    </fields>
+    <fields>
+        <label><!-- Is Conditional Lookup --></label>
+        <name>nFORCE__Is_Conditional_Lookup__c</name>
+    </fields>
+    <fields>
+        <label><!-- Is Editable --></label>
+        <name>nFORCE__Is_Editable__c</name>
+    </fields>
+    <fields>
+        <help><!-- Select this checkbox to make this Field Configuration available for use with Conditional Lookups. --></help>
+        <label><!-- Is Filter Active --></label>
+        <name>nFORCE__Is_Filter_Active__c</name>
+    </fields>
+    <fields>
+        <label><!-- Is Header --></label>
+        <name>nFORCE__Is_Header__c</name>
+    </fields>
+    <fields>
+        <help><!-- Check this setting to hide this field on supported forms. --></help>
+        <label><!-- Is Hidden --></label>
+        <name>nFORCE__Is_Hidden__c</name>
+    </fields>
+    <fields>
+        <label><!-- Is Important --></label>
+        <name>nFORCE__Is_Important__c</name>
+    </fields>
+    <fields>
+        <label><!-- Is Read Only --></label>
+        <name>nFORCE__Is_Read_Only__c</name>
+    </fields>
+    <fields>
+        <label><!-- Is Required --></label>
+        <name>nFORCE__Is_Required__c</name>
+    </fields>
+    <fields>
+        <help><!-- Enter a formatting expression for displaying the value of this field as text. --></help>
+        <label><!-- Output Expression --></label>
+        <name>nFORCE__Output_Expression__c</name>
+    </fields>
+    <fields>
+        <help><!-- Specify the Route that this Field Configuration will apply to, otherwise it will be applied everywhere. --></help>
+        <label><!-- Route --></label>
+        <name>nFORCE__Route__c</name>
+        <relationshipLabel><!-- Field Configuration Route --></relationshipLabel>
+    </fields>
+    <fields>
+        <help><!-- Specify the size of the SLDS Grid column this field should span. This number will be divided into 1 to give the percentage of the row the field will span. For example, a value of 3 will equate to 33.333% of the row. --></help>
+        <label><!-- SLDS Grid Column Size --></label>
+        <name>nFORCE__SLDS_Column_Size__c</name>
+    </fields>
+    <fields>
+        <label><!-- Screen Section --></label>
+        <name>nFORCE__Screen_Section__c</name>
+        <relationshipLabel><!-- Field Configurations --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Tooltip Contents --></label>
+        <name>nFORCE__Tooltip_Contents__c</name>
+    </fields>
+    <fields>
+        <help><!-- Check this field to enable a tooltip for this field. --></help>
+        <label><!-- Tooltip Enabled --></label>
+        <name>nFORCE__Tooltip_Enabled__c</name>
+    </fields>
+    <fields>
+        <label><!-- Tooltip Text --></label>
+        <name>nFORCE__Tooltip_Text__c</name>
+    </fields>
+    <fields>
+        <label><!-- lookupKey --></label>
+        <name>nFORCE__lookupKey__c</name>
+    </fields>
+    <fields>
+        <label><!-- sObject Name --></label>
+        <name>nFORCE__sObject_Name__c</name>
+    </fields>
+    <fields>
+        <help><!-- If this field being configured is a picklist, select this option to render the picklist as a set of selectable buttons. --></help>
+        <label><!-- Picklist Buttons Enabled --></label>
+        <name>nPortal__Picklist_Buttons_Enabled__c</name>
+    </fields>
+    <validationRules>
+        <errorMessage><!-- A field cannot be both Editable and Read-Only. --></errorMessage>
+        <name>nFORCE__Editable_or_Read_Only</name>
+    </validationRules>
+</CustomObjectTranslation>

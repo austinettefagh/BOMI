@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <label><!-- lookupKey --></label>
+        <name>CF_lookupKey__c</name>
+    </fields>
+    <fields>
+        <help><!-- Select the borrower type(s) whose collateral you want to include in the RLTV calculation. --></help>
+        <label><!-- Borrower Type --></label>
+        <name>LLC_BI__Borrower_Type__c</name>
+        <picklistValues>
+            <masterLabel>Borrower</masterLabel>
+            <translation><!-- Borrower --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Co-Borrower</masterLabel>
+            <translation><!-- Co-Borrower --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Contractor</masterLabel>
+            <translation><!-- Contractor --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Grantor</masterLabel>
+            <translation><!-- Grantor --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Guarantor</masterLabel>
+            <translation><!-- Guarantor --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Limited Guarantor</masterLabel>
+            <translation><!-- Limited Guarantor --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Related Entity</masterLabel>
+            <translation><!-- Related Entity --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- Select the collateral association(s) to filter for the collateral you want to include in the RLTV calculation. --></help>
+        <label><!-- Collateral Association --></label>
+        <name>LLC_BI__Collateral_Association__c</name>
+        <picklistValues>
+            <masterLabel>Assignee</masterLabel>
+            <translation><!-- Assignee --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Buyer</masterLabel>
+            <translation><!-- Buyer --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Construction</masterLabel>
+            <translation><!-- Construction --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Landlord</masterLabel>
+            <translation><!-- Landlord --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Lessee</masterLabel>
+            <translation><!-- Lessee --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Lessor</masterLabel>
+            <translation><!-- Lessor --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Lienholder</masterLabel>
+            <translation><!-- Lienholder --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Owner</masterLabel>
+            <translation><!-- Owner --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Seller</masterLabel>
+            <translation><!-- Seller --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Tenant</masterLabel>
+            <translation><!-- Tenant --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Trustee</masterLabel>
+            <translation><!-- Trustee --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- Enter the API name of the field on the Collateral Mgmt object that contains the collateral value you want to use in the relationship loan to value calculation. --></help>
+        <label><!-- Collateral Value Field --></label>
+        <name>LLC_BI__Collateral_Value_Field__c</name>
+    </fields>
+    <fields>
+        <help><!-- Enter the API name of the field on the Relationship object that contains the exposure value you want to use in the relationship loan to value calculation. --></help>
+        <label><!-- Exposure Value Field --></label>
+        <name>LLC_BI__Exposure_Value_Field__c</name>
+    </fields>
+    <fields>
+        <help><!-- Select this checkbox to activate the relationship loan to value calculation. --></help>
+        <label><!-- Is Active --></label>
+        <name>LLC_BI__Is_Active__c</name>
+    </fields>
+    <fields>
+        <help><!-- Enter the API name of the field on the Relationship Loan to Value Calculation object where you want the relationship LTV calculated value to populate. --></help>
+        <label><!-- RLTV Calculated Value Field --></label>
+        <name>LLC_BI__RLTV_Calculated_Value_Field__c</name>
+    </fields>
+    <fields>
+        <help><!-- Select the loan stage(s) to filter for the loans you want to include in the RLTV calculation. --></help>
+        <label><!-- Stage --></label>
+        <name>LLC_BI__Stage__c</name>
+        <picklistValues>
+            <masterLabel>Application Processing</masterLabel>
+            <translation><!-- Application Processing --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Booked</masterLabel>
+            <translation><!-- Booked --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Booking / Funding</masterLabel>
+            <translation><!-- Booking / Funding --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Closing</masterLabel>
+            <translation><!-- Closing --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Complete</masterLabel>
+            <translation><!-- Complete --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Credit Decisioning</masterLabel>
+            <translation><!-- Credit Decisioning --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Credit Underwriting</masterLabel>
+            <translation><!-- Credit Underwriting --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Doc Prep &amp; Review</masterLabel>
+            <translation><!-- Doc Prep &amp; Review --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Pre-Closing Due Diligence</masterLabel>
+            <translation><!-- Pre-Closing Due Diligence --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Qualification / Proposal</masterLabel>
+            <translation><!-- Qualification / Proposal --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- Select the loan status(es) to filter for the loans you want to include in the RLTV calculation. --></help>
+        <label><!-- Status --></label>
+        <name>LLC_BI__Status__c</name>
+        <picklistValues>
+            <masterLabel>Charge-Off</masterLabel>
+            <translation><!-- Charge-Off --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Declined</masterLabel>
+            <translation><!-- Declined --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Hold</masterLabel>
+            <translation><!-- Hold --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Lost</masterLabel>
+            <translation><!-- Lost --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Open</masterLabel>
+            <translation><!-- Open --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Paid Out</masterLabel>
+            <translation><!-- Paid Out --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Withdrawn</masterLabel>
+            <translation><!-- Withdrawn --></translation>
+        </picklistValues>
+    </fields>
+</CustomObjectTranslation>

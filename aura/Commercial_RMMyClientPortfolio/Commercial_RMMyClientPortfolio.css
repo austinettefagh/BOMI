@@ -1,0 +1,195 @@
+.THIS .slds-accordion__section {
+    padding-top: 0;
+}
+
+.THIS .filter-button_active {
+    background-color: #32AF99;
+    padding: 0 1rem;
+    color: #ffffff;
+}
+
+.THIS .Active {
+    background: #03A1E2;
+}
+
+.THIS .Closed {
+    background: #75DFDA;
+}
+
+.THIS .Deceased {
+    background: #09A7A0;
+}
+.THIS .Deliquent {
+    background: #E2CE7E;
+}
+.THIS .Dormant {
+    background: #E69E09;
+}
+.THIS .Onboarding {
+    background: #C23934;
+}
+.THIS .Prospect {
+    background: #FEB75F;
+}
+
+.THIS .filter-button_inactive {
+    border: 1px solid #32AF99;
+    padding: 0 1rem;
+    color: #32AF99;
+}
+
+/*
+.THIS .slds-table_header-fixed_container,
+.THIS .slds-table--header-fixed_container {
+    background: #152A53 !important;
+}
+*/
+
+.THIS .table-test thead tr span {
+	background-color: #152A53;
+	color: #FFFFFF;    
+}
+
+.THIS .slds-table_header-fixed_container .slds-scrollable_y table tbody tr:nth-child(even) {
+    background: #eeeeee;
+}
+/*
+.THIS .slds-table_header-fixed_container .slds-scrollable_y table tbody tr td:nth-child(2) span {
+    background: #32AF99;
+    color: #FFFFFF;
+    border-radius: 10px;
+    display: flex;
+    margin-right: 2rem;
+    padding: 0 1rem;
+}
+*/
+
+.THIS .slds-table_header-fixed_container {
+    overflow-x: hidden !important;
+}
+
+.THIS lightning-primitive-header-factory .slds-has-button-menu {
+    display: flex;
+}
+
+.THIS .slds-line-height_reset th:nth-child(1) lightning-primitive-header-factory span.slds-has-button-menu .slds-th__action, .THIS .slds-line-height_reset th:nth-child(2) lightning-primitive-header-factory span.slds-has-button-menu .slds-th__action, .THIS .slds-line-height_reset th:nth-child(3) lightning-primitive-header-factory span.slds-has-button-menu .slds-th__action, .THIS .slds-line-height_reset th:nth-child(4) lightning-primitive-header-factory span.slds-has-button-menu .slds-th__action, .THIS .slds-line-height_reset th:nth-child(5) lightning-primitive-header-factory span.slds-has-button-menu .slds-th__action, .THIS .slds-line-height_reset th:nth-child(6) lightning-primitive-header-factory span.slds-has-button-menu .slds-th__action {
+    width: 100% !important;
+}
+
+/*
+.THIS .slds-line-height_reset th:nth-child(1) lightning-primitive-header-factory div.slds-has-button-menu .slds-th__action:hover, .THIS .slds-line-height_reset th:nth-child(2) lightning-primitive-header-factory div.slds-has-button-menu .slds-th__action:hover, .THIS .slds-line-height_reset th:nth-child(3) lightning-primitive-header-factory div.slds-has-button-menu .slds-th__action:hover, .THIS .slds-line-height_reset th:nth-child(4) lightning-primitive-header-factory div.slds-has-button-menu .slds-th__action:hover, .THIS .slds-line-height_reset th:nth-child(5) lightning-primitive-header-factory div.slds-has-button-menu .slds-th__action:hover, .THIS .slds-line-height_reset th:nth-child(6) lightning-primitive-header-factory div.slds-has-button-menu .slds-th__action:hover {
+    background-color: #152A53;
+}
+*/
+
+.THIS .slds-line-height_reset th:nth-child(1), .THIS .slds-line-height_reset th:nth-child(1) lightning-primitive-header-factory, .THIS .slds-line-height_reset th:nth-child(1) lightning-primitive-header-factory div.slds-has-button-menu {
+    width: 22.5% !important;
+    background-color: #152A53;
+}
+
+.THIS .slds-line-height_reset th:nth-child(2), .THIS .slds-line-height_reset th:nth-child(2) lightning-primitive-header-factory, .THIS .slds-line-height_reset th:nth-child(2) lightning-primitive-header-factory div.slds-has-button-menu {
+    width: 27.501% !important;
+    background-color: #152A53;
+}
+
+.THIS .slds-line-height_reset th:nth-child(3), .THIS .slds-line-height_reset th:nth-child(3) lightning-primitive-header-factory, .THIS .slds-line-height_reset th:nth-child(3) lightning-primitive-header-factory div.slds-has-button-menu {
+    width: 15% !important;
+    background-color: #152A53;
+}
+
+.THIS .slds-line-height_reset th:nth-child(4), .THIS .slds-line-height_reset th:nth-child(4) lightning-primitive-header-factory, .THIS .slds-line-height_reset th:nth-child(4) lightning-primitive-header-factory div.slds-has-button-menu {
+    width: 12.5% !important;
+    background-color: #152A53;
+}
+
+.THIS .slds-line-height_reset th:nth-child(5), .THIS .slds-line-height_reset th:nth-child(5) lightning-primitive-header-factory, .THIS .slds-line-height_reset th:nth-child(5) lightning-primitive-header-factory div.slds-has-button-menu {
+    width: 12.5% !important;
+    background-color: #152A53;
+}
+
+.THIS .slds-line-height_reset th:nth-child(6), .THIS .slds-line-height_reset th:nth-child(6) lightning-primitive-header-factory, .THIS .slds-line-height_reset th:nth-child(6) lightning-primitive-header-factory div.slds-cell-fixed {
+    width: 10% !important;
+    background-color: #152A53;
+}
+
+/*
+.THIS .slds-line-height_reset th:nth-child(1) lightning-primitive-header-factory span.slds-cell-fixed, .THIS .slds-line-height_reset th:nth-child(2) lightning-primitive-header-factory span.slds-cell-fixed, .THIS .slds-line-height_reset th:nth-child(3) lightning-primitive-header-factory span.slds-cell-fixed, .THIS .slds-line-height_reset th:nth-child(4) lightning-primitive-header-factory span.slds-cell-fixed {
+	border-right: 1px solid #dddddd;
+}
+
+.THIS .slds-line-height_reset th:nth-child(5) lightning-primitive-header-factory span.slds-cell-fixed {
+    border-right: 2px solid #dddddd;
+}
+*/
+
+.THIS .slds-line-height_reset th:nth-child(6) lightning-primitive-header-factory div.slds-cell-fixed span.slds-th__action {
+	display: flex;
+	justify-content: center;
+}
+
+.THIS .slds-is-resizable .slds-th__action:focus, .THIS .slds-is-resizable .slds-th__action:hover {
+    box-shadow: #152A53 -0.25rem 0 0 inset;
+}
+
+.THIS .slds-is-resizable .slds-th__action:focus svg, .THIS .slds-is-resizable .slds-th__action:hover svg {
+    fill: #32AF99;
+}
+    
+.THIS .slds-has-focus.slds-is-resizable .slds-th__action, .THIS .slds-has-focus.slds-is-resizable .slds-th__action:focus, .THIS .slds-has-focus.slds-is-resizable .slds-th__action:focus:hover, .THIS .slds-has-focus.slds-is-resizable .slds-th__action:hover, .THIS .slds-is-resizable .slds-th__action:focus, .THIS .slds-is-resizable .slds-th__action:focus:hover {
+    background-color: #152A53;
+}
+
+.THIS lightning-primitive-header-actions {
+    display: none;
+}
+
+.THIS lightning-primitive-resize-handler {
+    display: none;
+}
+
+.THIS lightning-primitive-header-actions lightning-button-menu {
+    margin-right: 0.5rem;
+}
+
+.THIS lightning-primitive-header-actions lightning-button-menu svg {
+    fill: #32AF99;
+}
+
+/* table RAG Status column styling starts*/
+.THIS table tbody tr td.Green,
+.THIS table tbody tr td.Amber,
+.THIS table tbody tr td.Red {
+	position: relative;      
+}
+                
+.THIS table tbody tr td.Green > lightning-primitive-cell-factory {
+    width: 22px;
+    height: 22px;
+    border-radius: 22px;
+    background-color: green;
+    display: block;
+    margin: 0px auto;
+}
+.THIS table tbody tr td.Amber > lightning-primitive-cell-factory {
+	width: 22px;
+	height: 22px;
+	border-radius: 22px;
+	background-color: #FFBF00;
+	display: block;
+    margin: 0px auto;                 
+}
+.THIS table tbody tr td.Red > lightning-primitive-cell-factory {
+	width: 22px;
+	height: 22px;
+	border-radius: 22px;
+	background-color: red;     
+	display: block;
+    margin: 0px auto;
+}
+
+.THIS table tbody tr td.Green > lightning-primitive-cell-factory > span,
+.THIS table tbody tr td.Amber > lightning-primitive-cell-factory > span,
+.THIS table tbody tr td.Red > lightning-primitive-cell-factory > span {
+	display: none !important;   
+}
+/* table RAG Status column styling ends*/

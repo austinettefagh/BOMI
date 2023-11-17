@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <help><!-- The system automatically populates this lookup field with the associated SBEOC interaction record --></help>
+        <label><!-- SBEOC Interaction --></label>
+        <name>nSBA__SBEOC_Interaction__c</name>
+        <relationshipLabel><!-- SBEOC API Interactions --></relationshipLabel>
+    </fields>
+</CustomObjectTranslation>

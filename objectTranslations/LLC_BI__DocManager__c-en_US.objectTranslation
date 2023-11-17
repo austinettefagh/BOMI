@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <label><!-- E-Signature Email Message --></label>
+        <name>LLC_BI__ESignature_Email_Message__c</name>
+    </fields>
+    <fields>
+        <help><!-- Enter the name of the custom team object to reference. --></help>
+        <label><!-- Team Sharing Context --></label>
+        <name>LLC_BI__Team_Sharing_Context__c</name>
+    </fields>
+    <fields>
+        <label><!-- Type --></label>
+        <name>LLC_BI__Type__c</name>
+    </fields>
+    <fields>
+        <label><!-- Document Store --></label>
+        <name>LLC_BI__docStore__c</name>
+    </fields>
+    <fields>
+        <label><!-- lookupKey --></label>
+        <name>LLC_BI__lookupKey__c</name>
+    </fields>
+    <fields>
+        <label><!-- Namespace Prefix --></label>
+        <name>LLC_BI__namespacePrefix__c</name>
+    </fields>
+    <fields>
+        <label><!-- templateFileName --></label>
+        <name>LLC_BI__templateFileName__c</name>
+    </fields>
+</CustomObjectTranslation>

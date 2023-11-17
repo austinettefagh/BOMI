@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Knowledge</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Knowledge</value>
+    </caseValues>
+    <fields>
+        <label><!-- Answer --></label>
+        <name>Answer__c</name>
+    </fields>
+    <fields>
+        <label><!-- Brief Description --></label>
+        <name>Brief_Description__c</name>
+    </fields>
+    <fields>
+        <label><!-- Directions --></label>
+        <name>Directions__c</name>
+    </fields>
+    <fields>
+        <label><!-- Error Description --></label>
+        <name>Error_Description__c</name>
+    </fields>
+    <fields>
+        <label><!-- Error Resolution --></label>
+        <name>Error_Resolution__c</name>
+    </fields>
+    <fields>
+        <label><!-- How to --></label>
+        <name>How_to__c</name>
+    </fields>
+    <fields>
+        <label><!-- Question --></label>
+        <name>Question__c</name>
+    </fields>
+    <fields>
+        <label><!-- Resolution --></label>
+        <name>Resolution__c</name>
+    </fields>
+    <fields>
+        <label><!-- Topic --></label>
+        <name>Topic__c</name>
+        <picklistValues>
+            <masterLabel>Account</masterLabel>
+            <translation><!-- Account --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Collateral</masterLabel>
+            <translation><!-- Collateral --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Credit Memo</masterLabel>
+            <translation><!-- Credit Memo --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Customer Portal</masterLabel>
+            <translation><!-- Customer Portal --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>General</masterLabel>
+            <translation><!-- General --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Loans</masterLabel>
+            <translation><!-- Loans --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>OwnBackUp</masterLabel>
+            <translation><!-- OwnBackUp --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Product Package</masterLabel>
+            <translation><!-- Product Package --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Renewal/Modification</masterLabel>
+            <translation><!-- Renewal/Modification --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Spreads</masterLabel>
+            <translation><!-- Spreads --></translation>
+        </picklistValues>
+    </fields>
+    <recordTypes>
+        <description><!-- for admins --></description>
+        <label><!-- Admin Knowledge --></label>
+        <name>Admin_Knowledge</name>
+    </recordTypes>
+    <recordTypes>
+        <description><!-- Error Notices --></description>
+        <label><!-- Error Issue --></label>
+        <name>Error_Issue</name>
+    </recordTypes>
+    <recordTypes>
+        <description><!-- This can be used for simple question and answer articles --></description>
+        <label><!-- FAQ --></label>
+        <name>FAQ</name>
+    </recordTypes>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

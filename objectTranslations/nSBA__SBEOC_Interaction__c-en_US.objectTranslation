@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <help><!-- This automatically populated required field displays the action for this transaction. --></help>
+        <label><!-- Action --></label>
+        <name>nSBA__Action__c</name>
+    </fields>
+    <fields>
+        <help><!-- Optional: The expected child interactions. Default is zero. --></help>
+        <label><!-- Expected Child Interaction Count --></label>
+        <name>nSBA__Child_Interaction_Count__c</name>
+    </fields>
+    <fields>
+        <help><!-- Enter any additional comments about the transaction in this field. --></help>
+        <label><!-- Comment --></label>
+        <name>nSBA__Comment__c</name>
+    </fields>
+    <fields>
+        <help><!-- This automatically populated required field displays the identifier of the object related to this transaction. --></help>
+        <label><!-- Context ID --></label>
+        <name>nSBA__Context_Id__c</name>
+    </fields>
+    <fields>
+        <help><!-- This automatically populated required field displays an ID that refers to all events and activities in the scope of this transaction. --></help>
+        <label><!-- Correlation ID --></label>
+        <name>nSBA__Correlation_Id__c</name>
+    </fields>
+    <fields>
+        <help><!-- This system-populated required field displays the interaction type associated with this interaction record. --></help>
+        <label><!-- Interaction Type --></label>
+        <name>nSBA__Interaction_Type__c</name>
+        <picklistValues>
+            <masterLabel>SBEOC</masterLabel>
+            <translation><!-- SBEOC --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- This automatically populated field displays the success status of the transaction. --></help>
+        <label><!-- Is Successful --></label>
+        <name>nSBA__Is_Successful__c</name>
+    </fields>
+    <fields>
+        <help><!-- This automatically populated field displays the most recent integration message (such as errors or last recorded success state). --></help>
+        <label><!-- Message --></label>
+        <name>nSBA__Message__c</name>
+    </fields>
+    <fields>
+        <help><!-- This automatically populated field displays the parent record to which this transaction is associated. --></help>
+        <label><!-- Parent SBEOC Interaction --></label>
+        <name>nSBA__Parent_Interaction__c</name>
+        <relationshipLabel><!-- SBEOC Interactions --></relationshipLabel>
+    </fields>
+    <fields>
+        <help><!-- This system-populated required field displays the status to which this transaction was set when created. --></help>
+        <label><!-- Status --></label>
+        <name>nSBA__Status__c</name>
+    </fields>
+    <fields>
+        <help><!-- This automatically populated required field displays the fully qualified class name of the vendor provider for this transaction. --></help>
+        <label><!-- Vendor Provider --></label>
+        <name>nSBA__Vendor_Provider__c</name>
+    </fields>
+</CustomObjectTranslation>

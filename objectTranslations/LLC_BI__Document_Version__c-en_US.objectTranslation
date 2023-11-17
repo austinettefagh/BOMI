@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <label><!-- Content Version --></label>
+        <name>LLC_BI__Content_Version_Id__c</name>
+    </fields>
+    <fields>
+        <label><!-- Document Store --></label>
+        <name>LLC_BI__Document_Store__c</name>
+        <relationshipLabel><!-- Document Versions --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Enlarged Preview URL --></label>
+        <name>LLC_BI__Enlarged_Preview_URL__c</name>
+    </fields>
+    <fields>
+        <label><!-- External Download URL --></label>
+        <name>LLC_BI__External_Download_URL__c</name>
+    </fields>
+    <fields>
+        <label><!-- External ID --></label>
+        <name>LLC_BI__External_ID__c</name>
+    </fields>
+    <fields>
+        <label><!-- External Preview URL --></label>
+        <name>LLC_BI__External_Preview_URL__c</name>
+    </fields>
+    <fields>
+        <label><!-- External Thumbnail URL --></label>
+        <name>LLC_BI__External_Thumbnail_URL__c</name>
+    </fields>
+    <fields>
+        <label><!-- File Extension --></label>
+        <name>LLC_BI__File_Extension__c</name>
+    </fields>
+    <fields>
+        <label><!-- File Type --></label>
+        <name>LLC_BI__File_Type__c</name>
+    </fields>
+    <fields>
+        <label><!-- Is External --></label>
+        <name>LLC_BI__Is_External__c</name>
+    </fields>
+    <fields>
+        <label><!-- Is Internal --></label>
+        <name>LLC_BI__Is_Internal__c</name>
+    </fields>
+    <fields>
+        <label><!-- Offloaded Date --></label>
+        <name>LLC_BI__Offloaded_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Offloaded --></label>
+        <name>LLC_BI__Offloaded__c</name>
+    </fields>
+    <fields>
+        <label><!-- Placeholder Id --></label>
+        <name>LLC_BI__Placeholder_Id__c</name>
+    </fields>
+    <fields>
+        <label><!-- Preview URL --></label>
+        <name>LLC_BI__Preview_URL__c</name>
+    </fields>
+    <fields>
+        <label><!-- Published Date --></label>
+        <name>LLC_BI__Published_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Published --></label>
+        <name>LLC_BI__Published__c</name>
+    </fields>
+    <fields>
+        <label><!-- Ready for Offload --></label>
+        <name>LLC_BI__Ready_For_Offload__c</name>
+    </fields>
+    <fields>
+        <help><!-- Select the storage type to indicate where the document is stored. --></help>
+        <label><!-- Storage Type --></label>
+        <name>LLC_BI__Storage_Type__c</name>
+        <picklistValues>
+            <masterLabel>External Document</masterLabel>
+            <translation><!-- External Document --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Internal Document</masterLabel>
+            <translation><!-- Internal Document --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Offline Document</masterLabel>
+            <translation><!-- Offline Document --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Title --></label>
+        <name>LLC_BI__Title__c</name>
+    </fields>
+    <fields>
+        <label><!-- Preview Format --></label>
+        <name>NDOC__Preview_Format__c</name>
+    </fields>
+    <fields>
+        <label><!-- Preview Url Count --></label>
+        <name>NDOC__Preview_Url_Count__c</name>
+    </fields>
+</CustomObjectTranslation>

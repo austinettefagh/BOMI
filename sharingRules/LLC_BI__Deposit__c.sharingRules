@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<SharingRules xmlns="http://soap.sforce.com/2006/04/metadata">
+    <sharingCriteriaRules>
+        <fullName>SR_Employee_Deposit</fullName>
+        <accessLevel>Edit</accessLevel>
+        <label>Employee Deposit</label>
+        <sharedTo>
+            <group>PG_Employee_Loan_Access</group>
+        </sharedTo>
+        <criteriaItems>
+            <field>CF_Employee_Deposit__c</field>
+            <operation>equals</operation>
+            <value>True</value>
+        </criteriaItems>
+        <includeRecordsOwnedByAll>true</includeRecordsOwnedByAll>
+    </sharingCriteriaRules>
+</SharingRules>

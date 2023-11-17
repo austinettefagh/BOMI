@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Flow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <apiVersion>55.0</apiVersion>
+    <assignments>
+        <description>When an Opportunity is created, update the Start Date of Current Stage field to capture the current date.</description>
+        <name>Set_Start_Date_at_Current_Stage</name>
+        <label>Set Start Date at Current Stage</label>
+        <locationX>50</locationX>
+        <locationY>431</locationY>
+        <assignmentItems>
+            <assignToReference>$Record.LLC_BI__Start_Date_at_Current_Stage__c</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>$Flow.CurrentDate</elementReference>
+            </value>
+        </assignmentItems>
+        <connector>
+            <targetReference>Update_Opportunity_On_Create</targetReference>
+        </connector>
+    </assignments>
+    <assignments>
+        <name>Set_Start_Date_at_Current_Stage_0</name>
+        <label>Set Start Date at Current Stage</label>
+        <locationX>314</locationX>
+        <locationY>551</locationY>
+        <assignmentItems>
+            <assignToReference>$Record.LLC_BI__Start_Date_at_Current_Stage__c</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>$Flow.CurrentDate</elementReference>
+            </value>
+        </assignmentItems>
+        <connector>
+            <targetReference>Update_Opportunity_On_Edit</targetReference>
+        </connector>
+    </assignments>
+    <decisions>
+        <description>nCino&apos;s general purpose Record-Trigger flows are designed to bucket interactions into distinct pillars. 
+
+1. On Create. These actions occur at the time the record is created. 
+2. Progression (if applicable). These actions occur when a core process on the record progresses forward or backward. These should be picklists (Example: Loan Stage). 
+3. Adhoc. All other actions which occur when distinct criteria are met.
+
+A &quot;skip&quot; function is build into start conditions. This flow will not execute when the &quot;Exclude Flow&quot; permission set is assigned to the running user.</description>
+        <name>Determine_Path</name>
+        <label>Determine Path</label>
+        <locationX>248</locationX>
+        <locationY>311</locationY>
+        <defaultConnector>
+            <targetReference>Is_Stage_Changed</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>Adhoc</defaultConnectorLabel>
+        <rules>
+            <name>On_Create</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>forB_ISNEW</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <booleanValue>true</booleanValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Set_Start_Date_at_Current_Stage</targetReference>
+            </connector>
+            <label>On Create</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <description>When the Opportunity stage changes, update the Start Date of Current Stage field to capture the current date. 
+Migrated from Workflow(s): Update Start Date of Current Stage</description>
+        <name>Is_Stage_Changed</name>
+        <label>Is Stage Changed?</label>
+        <locationX>446</locationX>
+        <locationY>431</locationY>
+        <defaultConnector>
+            <targetReference>Update_Opportunity_On_Edit</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
+        <rules>
+            <name>Stage_Changed</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record.StageName</leftValueReference>
+                <operator>IsChanged</operator>
+                <rightValue>
+                    <booleanValue>true</booleanValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Set_Start_Date_at_Current_Stage_0</targetReference>
+            </connector>
+            <label>Stage Changed</label>
+        </rules>
+    </decisions>
+    <description>This managed flow handles various Opportunity actions in Before Save context. Resulting actions from creating or updating an Opportunity record trigger the flow.</description>
+    <formulas>
+        <description>Reusable variable. Drives &quot;On Create&quot; pillar.</description>
+        <name>forB_ISNEW</name>
+        <dataType>Boolean</dataType>
+        <expression>ISNEW()</expression>
+    </formulas>
+    <interviewLabel>nCino PDE - Record Trigger: Contact Before Save - V.1.0.0 {!$Flow.CurrentDateTime}</interviewLabel>
+    <isTemplate>true</isTemplate>
+    <label>nCino PDE - Record Trigger: Opportunity Before Save - V.1.0.0</label>
+    <processMetadataValues>
+        <name>BuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>CanvasMode</name>
+        <value>
+            <stringValue>AUTO_LAYOUT_CANVAS</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>OriginBuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processType>AutoLaunchedFlow</processType>
+    <recordUpdates>
+        <description>A DML element to update the triggering Opportunity.</description>
+        <name>Update_Opportunity_On_Create</name>
+        <label>Update Opportunity On Create</label>
+        <locationX>50</locationX>
+        <locationY>551</locationY>
+        <inputAssignments>
+            <field>LLC_BI__Start_Date_at_Current_Stage__c</field>
+            <value>
+                <elementReference>$Record.LLC_BI__Start_Date_at_Current_Stage__c</elementReference>
+            </value>
+        </inputAssignments>
+        <inputReference>$Record</inputReference>
+    </recordUpdates>
+    <recordUpdates>
+        <description>A DML element to update the triggering Opportunity.</description>
+        <name>Update_Opportunity_On_Edit</name>
+        <label>Update Opportunity On Edit</label>
+        <locationX>446</locationX>
+        <locationY>767</locationY>
+        <inputAssignments>
+            <field>LLC_BI__Start_Date_at_Current_Stage__c</field>
+            <value>
+                <elementReference>$Record.LLC_BI__Start_Date_at_Current_Stage__c</elementReference>
+            </value>
+        </inputAssignments>
+        <inputReference>$Record</inputReference>
+    </recordUpdates>
+    <start>
+        <locationX>122</locationX>
+        <locationY>0</locationY>
+        <connector>
+            <targetReference>Determine_Path</targetReference>
+        </connector>
+        <filterFormula>{!$Permission.LLC_BI__Exclude_Flow} = False</filterFormula>
+        <object>Opportunity</object>
+        <recordTriggerType>CreateAndUpdate</recordTriggerType>
+        <triggerType>RecordBeforeSave</triggerType>
+    </start>
+    <status>Draft</status>
+</Flow>

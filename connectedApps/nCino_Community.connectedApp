@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ConnectedApp xmlns="http://soap.sforce.com/2006/04/metadata">
+    <contactEmail>hanif.peters-davis@ncino.com</contactEmail>
+    <description>Community Hub and Knowledgebase for nCino product</description>
+    <label>nCino Community</label>
+    <logoUrl>https://pcgatbankofmo.file.force.com/servlet/servlet.ImageServer?id=0156g000003DTDV&amp;oid=00D2C0000008oAs</logoUrl>
+    <oauthConfig>
+        <callbackUrl>https://login.salesforce.com/services/authcallback/00D30000001H6gbEAC/nCino_Community</callbackUrl>
+        <consumerKey>3MVG9hq7jmfCuKffxV8EIa4PjxTbFswYcQTVDhd.4VoJbyff3YAHr7PdA8kNkXTSz3B9PCZz6EsJRr.RxWi1m</consumerKey>
+        <isAdminApproved>false</isAdminApproved>
+        <isClientCredentialEnabled>false</isClientCredentialEnabled>
+        <isCodeCredentialEnabled>false</isCodeCredentialEnabled>
+        <isCodeCredentialPostOnly>false</isCodeCredentialPostOnly>
+        <isConsumerSecretOptional>false</isConsumerSecretOptional>
+        <isIntrospectAllTokens>false</isIntrospectAllTokens>
+        <isNamedUserJwtEnabled>false</isNamedUserJwtEnabled>
+        <isPkceRequired>false</isPkceRequired>
+        <isSecretRequiredForRefreshToken>false</isSecretRequiredForRefreshToken>
+        <scopes>Basic</scopes>
+    </oauthConfig>
+    <oauthPolicy>
+        <ipRelaxation>BYPASS</ipRelaxation>
+        <refreshTokenPolicy>zero</refreshTokenPolicy>
+    </oauthPolicy>
+</ConnectedApp>

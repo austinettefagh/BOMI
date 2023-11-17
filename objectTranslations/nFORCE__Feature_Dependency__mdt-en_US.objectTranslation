@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <label><!-- Controlling Feature Name --></label>
+        <name>nFORCE__Controlling_Feature_Name__c</name>
+    </fields>
+    <fields>
+        <label><!-- Controlling Feature --></label>
+        <name>nFORCE__Controlling_Feature__c</name>
+        <relationshipLabel><!-- Controlling Feature Dependencies --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Dependency Type --></label>
+        <name>nFORCE__Dependency_Type__c</name>
+        <picklistValues>
+            <masterLabel>Not Allowed</masterLabel>
+            <translation><!-- Not Allowed --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Required</masterLabel>
+            <translation><!-- Required --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Dependent Feature --></label>
+        <name>nFORCE__Dependent_Feature__c</name>
+        <relationshipLabel><!-- Dependent Feature Dependencies --></relationshipLabel>
+    </fields>
+</CustomObjectTranslation>

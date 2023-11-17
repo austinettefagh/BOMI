@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <label><!-- Active --></label>
+        <name>SESOC__Active__c</name>
+    </fields>
+    <fields>
+        <label><!-- Logging Levels --></label>
+        <name>SESOC__Logging_Levels__c</name>
+    </fields>
+    <fields>
+        <label><!-- Logging Provider --></label>
+        <name>SESOC__Logging_Provider__c</name>
+    </fields>
+    <fields>
+        <label><!-- Provider Class Name --></label>
+        <name>SESOC__Provider_Class_Name__c</name>
+    </fields>
+    <fields>
+        <label><!-- Store Request --></label>
+        <name>SESOC__Store_Request__c</name>
+    </fields>
+</CustomObjectTranslation>

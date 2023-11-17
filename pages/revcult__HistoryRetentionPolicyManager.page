@@ -1,0 +1,57 @@
+<apex:page id="FATC" standardStylesheets="false" controller="revcult.HRP_Controller" showHeader="true"
+    title="History Retention Policy Manager" sideBar="false">
+
+    <head>
+        <meta charset="utf-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <apex:slds />
+        <!-- <apex:stylesheet value="{!URLFOR($Resource.drp_deps,'/tippy.css')}" /> -->
+        <apex:stylesheet value="{!URLFOR($Resource.revcult__HistoryRetentionPolicyManager, '/FATC/dist/style.css')}" />
+        <!-- <apex:includeScript value="{!URLFOR($Resource.drp_deps,'/tippy.min.js')}" /> -->
+        <apex:includeScript value="{!URLFOR($Resource.revcult__HistoryRetentionPolicyManager,'/promisePolyfill.js')}" />
+        <apex:includeScript value="{!URLFOR($Resource.revcult__HistoryRetentionPolicyManager,'/endsWithPolyfill.js')}" />
+        <apex:includeScript value="{!URLFOR($Resource.revcult__HistoryRetentionPolicyManager,'/svg4everybody.min.js')}" />
+        <apex:includeScript value="{!URLFOR($Resource.revcult__HistoryRetentionPolicyManager,'/objectAssignPolyfill.js')}" />
+        <apex:includeScript value="{!URLFOR($Resource.revcult__HistoryRetentionPolicyManager,'/schwartzianTransformSortBy.js')}" />
+        <apex:includeScript value="../../soap/ajax/43.0/connection.js" />
+        <script>
+            svg4everybody()
+            var dataFromSF = {
+                RevCultLogo: '{!URLFOR($Resource.HistoryRetentionPolicyManager, "/FATC/dist/RevCultLogo.png")}',
+                sessionId: '{!$Api.Session_ID}',
+                userId: '{!$User.Id}',
+                theme: '{!$User.UITheme}',
+                info: '{!URLFOR($Asset.SLDS, "/assets/icons/utility-sprite/svg/symbols.svg#info")}',
+                edit: '{!URLFOR($Asset.SLDS, "/assets/icons/utility-sprite/svg/symbols.svg#edit")}',
+                switch: '{!URLFOR($Asset.SLDS, "/assets/icons/utility-sprite/svg/symbols.svg#switch")}',
+                arrowUp: '{!URLFOR($Asset.SLDS, "/assets/icons/utility-sprite/svg/symbols.svg#arrowup")}',
+                arrowDown: '{!URLFOR($Asset.SLDS, "/assets/icons/utility-sprite/svg/symbols.svg#arrowdown")}',
+                getFieldsParallel: {!$RemoteAction.HRP_Controller.getFieldsParallel},
+                getHRPSnapshots: '{!$RemoteAction.HRP_Controller.getHRPSnapshots}',
+                getHistoricalHRPData: '{!$RemoteAction.HRP_Controller.getHistoricalHRPData}',
+                getNamespace: {!$RemoteAction.HRP_Controller.getNamespace},
+                getHistoryTableNames: {!$RemoteAction.HRP_Controller.getHistoryTableNames},
+                checkMetadataApi: {!$RemoteAction.HRP_Controller.checkMetadataApi},
+                isFatEnabled: {!$RemoteAction.HRP_Controller.isFatEnabled},
+                getObjectsPerFieldsRequest: {!$RemoteAction.HRP_Controller.getObjectsPerFieldsRequest},
+                getUpgradeAlertSettings: {!$RemoteAction.HRP_Controller.getUpgradeAlertSettings},
+                setUpgradeAlertSettings: {!$RemoteAction.HRP_Controller.setUpgradeAlertSettings},
+                hasPermissionDownloadAppExchangePackages: {!$RemoteAction.HRP_Controller.hasPermissionDownloadAppExchangePackages},
+                getFieldDurableIds: {!$RemoteAction.HRP_Controller.getFieldDurableIds},
+                getObjectToFieldTrackingInfo: {!$RemoteAction.HRP_Controller.getObjectToFieldTrackingInfo},
+                getSObjectWrappers: {!$RemoteAction.HRP_Controller.getSObjectWrappers},
+                getObjectApiNames: {!$RemoteAction.HRP_Controller.getObjectApiNames},
+                getCustomObjectMetadataByObject: {!$RemoteAction.HRP_Controller.getCustomObjectMetadataByObject},
+                images: {
+                    chevronLeft: '{!URLFOR($Asset.SLDS, "assets/icons/utility-sprite/svg/symbols.svg#chevronleft")}',
+                    chevronRight: '{!URLFOR($Asset.SLDS, "assets/icons/utility-sprite/svg/symbols.svg#chevronright")}',
+                }
+            }
+        </script>
+    </head>
+    <body class="slds-scope">
+        <div id="app"></div>
+        <script src="{!URLFOR($Resource.HistoryRetentionPolicyManager, '/FATC/dist/build.js')}"></script>
+    </body>
+</apex:page>

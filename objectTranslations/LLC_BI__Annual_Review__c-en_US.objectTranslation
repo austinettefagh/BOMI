@@ -1,0 +1,274 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fieldSets>
+        <label><!-- Relationship Risk Rating Reviews --></label>
+        <name>FS_Relationship_Risk_Rating_Reviews</name>
+    </fieldSets>
+    <fieldSets>
+        <label><!-- Risk Rating Loan UI --></label>
+        <name>FS_Risk_Rating_Loan_UI</name>
+    </fieldSets>
+    <fieldSets>
+        <label><!-- Commercial Credit Memo --></label>
+        <name>LLC_BI__Commercial_Credit_Memo</name>
+    </fieldSets>
+    <fieldSets>
+        <label><!-- UI Risk Rating --></label>
+        <name>LLC_BI__UI_Risk_Rating</name>
+    </fieldSets>
+    <fieldSets>
+        <label><!-- Risk Rating PP UI --></label>
+        <name>Risk_Rating_PP_UI</name>
+    </fieldSets>
+    <fields>
+        <label><!-- Approved By --></label>
+        <name>CF_Approved_By__c</name>
+        <relationshipLabel><!-- Risk Rating Review --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Review --></label>
+        <name>CF_Review__c</name>
+        <relationshipLabel><!-- Risk Rating Review --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Risk Rating Narrative --></label>
+        <name>CF_Risk_Rating_Narrative__c</name>
+    </fields>
+    <fields>
+        <label><!-- AP Stress Index (G) --></label>
+        <name>LLC_BI__AP_Stress_Index_RG__c</name>
+    </fields>
+    <fields>
+        <label><!-- AP Stress Index - Wght --></label>
+        <name>LLC_BI__AP_Stress_Index__c</name>
+    </fields>
+    <fields>
+        <label><!-- AP Stress Index --></label>
+        <name>LLC_BI__AP_Stress_Index_actual__c</name>
+    </fields>
+    <fields>
+        <label><!-- Management Experience - Wght --></label>
+        <name>LLC_BI__AR_Management_Experience__c</name>
+    </fields>
+    <fields>
+        <label><!-- Account --></label>
+        <name>LLC_BI__Account__c</name>
+        <relationshipLabel><!-- Risk Rating Review --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Cash Bal Year 1 --></label>
+        <name>LLC_BI__Cash_Bal_Year_1__c</name>
+    </fields>
+    <fields>
+        <label><!-- Cash Bal Year 2 --></label>
+        <name>LLC_BI__Cash_Bal_Year_2__c</name>
+    </fields>
+    <fields>
+        <label><!-- Cash Bal Year 3 --></label>
+        <name>LLC_BI__Cash_Bal_Year_3__c</name>
+    </fields>
+    <fields>
+        <label><!-- Cash Flow Coverage (G) --></label>
+        <name>LLC_BI__Cash_Flow_Coverage_RG__c</name>
+    </fields>
+    <fields>
+        <label><!-- Cash Flow Coverage - Wght --></label>
+        <name>LLC_BI__Cash_Flow_Coverage__c</name>
+    </fields>
+    <fields>
+        <label><!-- Cash Flow Coverage --></label>
+        <name>LLC_BI__Cash_Flow_Coverage_actual__c</name>
+    </fields>
+    <fields>
+        <label><!-- Comments --></label>
+        <name>LLC_BI__Comments__c</name>
+    </fields>
+    <fields>
+        <label><!-- Computed Risk Grade Value --></label>
+        <name>LLC_BI__Computed_Risk_Grade_Value__c</name>
+    </fields>
+    <fields>
+        <label><!-- Credit Score (G) --></label>
+        <name>LLC_BI__Credit_Score_RG__c</name>
+    </fields>
+    <fields>
+        <label><!-- Credit Score Year 1 --></label>
+        <name>LLC_BI__Credit_Score_Year_1__c</name>
+    </fields>
+    <fields>
+        <label><!-- Credit Score Year 2 --></label>
+        <name>LLC_BI__Credit_Score_Year_2__c</name>
+    </fields>
+    <fields>
+        <label><!-- Credit Score Year 3 --></label>
+        <name>LLC_BI__Credit_Score_Year_3__c</name>
+    </fields>
+    <fields>
+        <label><!-- Credit Score - Wght --></label>
+        <name>LLC_BI__Credit_Score__c</name>
+    </fields>
+    <fields>
+        <label><!-- Credit Score --></label>
+        <name>LLC_BI__Credit_Score_actual__c</name>
+    </fields>
+    <fields>
+        <label><!-- DSC Post OC Year 1 --></label>
+        <name>LLC_BI__DSC_Post_OC_Year_1__c</name>
+    </fields>
+    <fields>
+        <label><!-- DSC Post OC Year 2 --></label>
+        <name>LLC_BI__DSC_Post_OC_Year_2__c</name>
+    </fields>
+    <fields>
+        <label><!-- DSC Post OC Year 3 --></label>
+        <name>LLC_BI__DSC_Post_OC_Year_3__c</name>
+    </fields>
+    <fields>
+        <label><!-- Date Decisioned --></label>
+        <name>LLC_BI__Date_Decisioned__c</name>
+    </fields>
+    <fields>
+        <label><!-- Display In Credit Memo --></label>
+        <name>LLC_BI__Display_In_Credit_Memo__c</name>
+    </fields>
+    <fields>
+        <label><!-- Final Risk Grade --></label>
+        <name>LLC_BI__Final_Risk_Grade__c</name>
+    </fields>
+    <fields>
+        <label><!-- Global Cash Flow (G) --></label>
+        <name>LLC_BI__Global_Cash_Flow_G2__c</name>
+    </fields>
+    <fields>
+        <label><!-- Global Cash Flow - Wght --></label>
+        <name>LLC_BI__Global_Cash_Flow_Wght__c</name>
+    </fields>
+    <fields>
+        <label><!-- Global Cash Flow --></label>
+        <name>LLC_BI__Global_Cash_Flow__c</name>
+    </fields>
+    <fields>
+        <label><!-- Loan --></label>
+        <name>LLC_BI__Loan__c</name>
+        <relationshipLabel><!-- Risk Rating Review --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Management Experience (G) --></label>
+        <name>LLC_BI__Management_Experience_RG__c</name>
+    </fields>
+    <fields>
+        <label><!-- Management Experience --></label>
+        <name>LLC_BI__Management_Experience_actual__c</name>
+    </fields>
+    <fields>
+        <label><!-- Overridden Risk Grade Value --></label>
+        <name>LLC_BI__Overridden_Risk_Grade_Value__c</name>
+    </fields>
+    <fields>
+        <label><!-- Override --></label>
+        <name>LLC_BI__Override__c</name>
+    </fields>
+    <fields>
+        <label><!-- Pers. &amp; Bus. Liquidity (G) --></label>
+        <name>LLC_BI__Pers_Bus_Liquidity_RG__c</name>
+    </fields>
+    <fields>
+        <label><!-- Pers. &amp; Bus. Liquidity --></label>
+        <name>LLC_BI__Pers_Bus_Liquidity_actual__c</name>
+    </fields>
+    <fields>
+        <label><!-- Pers. &amp; Bus Liquidity - Wght --></label>
+        <name>LLC_BI__Personal_Liquidity__c</name>
+    </fields>
+    <fields>
+        <label><!-- RG Version --></label>
+        <name>LLC_BI__RG_Version__c</name>
+    </fields>
+    <fields>
+        <label><!-- Rev Year 1 --></label>
+        <name>LLC_BI__Rev_Year_1__c</name>
+    </fields>
+    <fields>
+        <label><!-- Rev Year 2 --></label>
+        <name>LLC_BI__Rev_Year_2__c</name>
+    </fields>
+    <fields>
+        <label><!-- Rev Year 3 --></label>
+        <name>LLC_BI__Rev_Year_3__c</name>
+    </fields>
+    <fields>
+        <label><!-- Revenue Growth (G) --></label>
+        <name>LLC_BI__Revenue_Growth_RG__c</name>
+    </fields>
+    <fields>
+        <label><!-- Revenue Growth - Wght --></label>
+        <name>LLC_BI__Revenue_Growth__c</name>
+    </fields>
+    <fields>
+        <label><!-- Revenue Growth (%) --></label>
+        <name>LLC_BI__Revenue_Growth_actual__c</name>
+    </fields>
+    <fields>
+        <label><!-- Risk Grade Template --></label>
+        <name>LLC_BI__Risk_Grade_Template__c</name>
+        <relationshipLabel><!-- Risk Rating Review --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Status --></label>
+        <name>LLC_BI__Status__c</name>
+        <picklistValues>
+            <masterLabel>Approved</masterLabel>
+            <translation><!-- Approved --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Declined</masterLabel>
+            <translation><!-- Declined --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>In Review</masterLabel>
+            <translation><!-- In Review --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Not Approved</masterLabel>
+            <translation><!-- Not Approved --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Year 1 --></label>
+        <name>LLC_BI__Year_1st__c</name>
+    </fields>
+    <fields>
+        <label><!-- Year 2 --></label>
+        <name>LLC_BI__Year_2nd__c</name>
+    </fields>
+    <fields>
+        <label><!-- Year 3 --></label>
+        <name>LLC_BI__Year_3rd__c</name>
+    </fields>
+    <fields>
+        <label><!-- lookupKey --></label>
+        <name>LLC_BI__lookupKey__c</name>
+    </fields>
+    <recordTypes>
+        <description><!-- Layout for Risk Rating Review after approval --></description>
+        <label><!-- Approved Annual Review --></label>
+        <name>AR_Approved_Annual_Review</name>
+    </recordTypes>
+    <recordTypes>
+        <description><!-- Layout for Risk Rating Review before approval --></description>
+        <label><!-- Pre Approval --></label>
+        <name>AR_Pre_Approval</name>
+    </recordTypes>
+    <validationRules>
+        <errorMessage><!-- Loan must be populated when the Related Account is of type Business, Person or Lender. --></errorMessage>
+        <name>CVR_Loan_Not_Mandatory_For_Household</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Please add a comment before overriding the computed risk grade value. --></errorMessage>
+        <name>LLC_BI__Mandatory_comment</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Account cannot be changed after Risk Rating Review is Approved. --></errorMessage>
+        <name>RRR_VR_Account_Readonly</name>
+    </validationRules>
+</CustomObjectTranslation>

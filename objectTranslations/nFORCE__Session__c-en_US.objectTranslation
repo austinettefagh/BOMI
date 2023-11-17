@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <label><!-- Category --></label>
+        <name>LLC_BI__Category__c</name>
+        <picklistValues>
+            <masterLabel>Commercial Loan</masterLabel>
+            <translation><!-- Commercial Loan --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Consumer Loan</masterLabel>
+            <translation><!-- Consumer Loan --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Credit-Action-Operation</masterLabel>
+            <translation><!-- Credit-Action-Operation --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Deposit Maintenance</masterLabel>
+            <translation><!-- Deposit Maintenance --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Deposit Origination</masterLabel>
+            <translation><!-- Deposit Origination --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Online Commercial Loan Application</masterLabel>
+            <translation><!-- Online Commercial Loan Application --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Online Consumer Loan Application</masterLabel>
+            <translation><!-- Online Consumer Loan Application --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Online Deposit Application</masterLabel>
+            <translation><!-- Online Deposit Application --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- App Resolved --></label>
+        <name>nFORCE__App_Resolved__c</name>
+    </fields>
+    <fields>
+        <label><!-- Context ID --></label>
+        <name>nFORCE__Context_Id__c</name>
+    </fields>
+    <fields>
+        <label><!-- Context Page --></label>
+        <name>nFORCE__Context_Page__c</name>
+    </fields>
+    <fields>
+        <label><!-- Session Data --></label>
+        <name>nFORCE__Data__c</name>
+    </fields>
+    <fields>
+        <label><!-- Route Group --></label>
+        <name>nFORCE__Route_Group__c</name>
+        <relationshipLabel><!-- Sessions --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Session URL --></label>
+        <name>nFORCE__Session_URL__c</name>
+    </fields>
+    <fields>
+        <label><!-- -D Type --></label>
+        <name>nFORCE__Type__c</name>
+    </fields>
+    <webLinks>
+        <label><!-- Open_Session --></label>
+        <name>nFORCE__Open_Session</name>
+    </webLinks>
+</CustomObjectTranslation>

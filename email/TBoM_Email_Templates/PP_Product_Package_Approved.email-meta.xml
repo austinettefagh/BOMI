@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>This is a test email alert that goes out to RM/LA of that Product package/loan when Product Package loans have finished their approval processes.</description>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <name>PP-Product Package Approved</name>
+    <style>none</style>
+    <subject>The Following Product Package is Ready for Review</subject>
+    <textOnly>Hi,
+
+The Product Package {!LLC_BI__Product_Package__c.Name} has been approved and is ready for further review.
+
+Click here for the Product Package details: {!LLC_BI__Product_Package__c.Link}
+
+
+Thank You.</textOnly>
+    <type>custom</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

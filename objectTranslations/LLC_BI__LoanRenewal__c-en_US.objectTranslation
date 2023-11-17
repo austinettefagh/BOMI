@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <label><!-- Cloned From Loan Name --></label>
+        <name>LLC_BI__ClonedFromLoanName__c</name>
+    </fields>
+    <fields>
+        <label><!-- DeletedLoanName --></label>
+        <name>LLC_BI__DeletedLoanName__c</name>
+    </fields>
+    <fields>
+        <label><!-- Has Active Renewal Loan --></label>
+        <name>LLC_BI__HasActiveRenewalLoan__c</name>
+    </fields>
+    <fields>
+        <label><!-- Is No Action Placeholder --></label>
+        <name>LLC_BI__Is_No_Action_Placeholder__c</name>
+    </fields>
+    <fields>
+        <label><!-- Next Revision Number --></label>
+        <name>LLC_BI__NextRevisionNumber__c</name>
+    </fields>
+    <fields>
+        <label><!-- Original Parent --></label>
+        <name>LLC_BI__Original_Parent__c</name>
+        <relationshipLabel><!-- Original Parent Loan --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Original Product Package --></label>
+        <name>LLC_BI__Original_Product_Package__c</name>
+        <relationshipLabel><!-- Original Product Package --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Parent Loan Id --></label>
+        <name>LLC_BI__ParentLoanId__c</name>
+        <relationshipLabel><!-- LoanRenewals (Parent Loan Id) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Previous Revision Number --></label>
+        <name>LLC_BI__PreviousRevisionNumber__c</name>
+    </fields>
+    <fields>
+        <label><!-- Previous Version Stage --></label>
+        <name>LLC_BI__PreviousVersionStage__c</name>
+    </fields>
+    <fields>
+        <label><!-- Previous Version Status --></label>
+        <name>LLC_BI__PreviousVersionStatus__c</name>
+    </fields>
+    <fields>
+        <label><!-- Renewal Loan Id --></label>
+        <name>LLC_BI__RenewalLoanId__c</name>
+        <relationshipLabel><!-- LoanRenewals (Renewal Loan Id) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Revision Number --></label>
+        <name>LLC_BI__RevisionNumber__c</name>
+    </fields>
+    <fields>
+        <label><!-- Revision Status --></label>
+        <name>LLC_BI__RevisionStatus__c</name>
+    </fields>
+    <fields>
+        <label><!-- Root Loan ID --></label>
+        <name>LLC_BI__RootLoanId__c</name>
+    </fields>
+    <fields>
+        <label><!-- Total Number of Extended Days --></label>
+        <name>LLC_BI__Total_Number_Of_Extended_Days__c</name>
+    </fields>
+    <fields>
+        <label><!-- Lookup Key --></label>
+        <name>LLC_BI__lookupKey__c</name>
+    </fields>
+</CustomObjectTranslation>

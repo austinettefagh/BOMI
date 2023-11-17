@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <help><!-- This field should contain the name of the Feature Translation custom metadata type that it is related to. --></help>
+        <label><!-- Translatable Field --></label>
+        <name>nFORCE__Feature_Translation__c</name>
+    </fields>
+    <fields>
+        <help><!-- Set this to the language that the translated value is in. The format should be ISO 639-1 for the language followed by a dash followed by the ISO Alpha-2 country code. Example: (en-US). --></help>
+        <label><!-- Language --></label>
+        <name>nFORCE__Language__c</name>
+    </fields>
+    <fields>
+        <help><!-- This optional text field contains the field&apos;s value in the original language. --></help>
+        <label><!-- Original Text --></label>
+        <name>nFORCE__Original_Text__c</name>
+    </fields>
+    <fields>
+        <help><!-- This optional text field contains the field&apos;s value in the translated language. --></help>
+        <label><!-- Translated Text --></label>
+        <name>nFORCE__Translated_Text__c</name>
+    </fields>
+    <fields>
+        <label><!-- Translation Key --></label>
+        <name>nFORCE__Translation_Key__c</name>
+    </fields>
+    <fields>
+        <label><!-- lookupKey --></label>
+        <name>nFORCE__lookupKey__c</name>
+    </fields>
+</CustomObjectTranslation>

@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fieldSets>
+        <label><!-- EMEA Commercial Onboarding Business Entity Structure --></label>
+        <name>nCino__Customer_Onboarding_Business_Entity</name>
+    </fieldSets>
+    <fieldSets>
+        <label><!-- EMEA Commercial Onboarding Individual Entity Structure --></label>
+        <name>nCino__Customer_Onboarding_Individual_Entity</name>
+    </fieldSets>
+    <fields>
+        <label><!-- Relationship --></label>
+        <name>LLC_BI__Account__c</name>
+        <relationshipLabel><!-- Onboarding Cases --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Closure Reason --></label>
+        <name>LLC_BI__Closure_Reason__c</name>
+    </fields>
+    <fields>
+        <label><!-- Complete Date/Time --></label>
+        <name>LLC_BI__Complete_DateTime__c</name>
+    </fields>
+    <fields>
+        <label><!-- Parent Onboarding Case --></label>
+        <name>LLC_BI__Parent_Onboarding_Case__c</name>
+        <relationshipLabel><!-- Onboarding Cases --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Product Line --></label>
+        <name>LLC_BI__Product_Line__c</name>
+        <relationshipLabel><!-- Onboarding Cases --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Product Package --></label>
+        <name>LLC_BI__Product_Package__c</name>
+        <relationshipLabel><!-- Onboarding Cases --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Stage --></label>
+        <name>LLC_BI__Stage__c</name>
+        <picklistValues>
+            <masterLabel>Complete</masterLabel>
+            <translation><!-- Complete --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Customer Engagement</masterLabel>
+            <translation><!-- Customer Engagement --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Due Diligence</masterLabel>
+            <translation><!-- Due Diligence --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Validation</masterLabel>
+            <translation><!-- Validation --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Started Date/Time --></label>
+        <name>LLC_BI__Started_DateTime__c</name>
+    </fields>
+    <fields>
+        <label><!-- Status --></label>
+        <name>LLC_BI__Status__c</name>
+        <picklistValues>
+            <masterLabel>Cancelled</masterLabel>
+            <translation><!-- Cancelled --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Complete</masterLabel>
+            <translation><!-- Complete --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Declined</masterLabel>
+            <translation><!-- Declined --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>In Progress</masterLabel>
+            <translation><!-- In Progress --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Open</masterLabel>
+            <translation><!-- Open --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Type --></label>
+        <name>LLC_BI__Type__c</name>
+        <picklistValues>
+            <masterLabel>Amend Mandate</masterLabel>
+            <translation><!-- Amend Mandate --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>KYB/KYC Only</masterLabel>
+            <translation><!-- KYB/KYC Only --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>New Customer</masterLabel>
+            <translation><!-- New Customer --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>New Product</masterLabel>
+            <translation><!-- New Product --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Risk Assessment Only</masterLabel>
+            <translation><!-- Risk Assessment Only --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Small Business</masterLabel>
+            <translation><!-- Small Business --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Lookup --></label>
+        <name>LLC_BI__lookupKey__c</name>
+    </fields>
+</CustomObjectTranslation>

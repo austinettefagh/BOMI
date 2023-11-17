@@ -1,0 +1,54 @@
+<template>
+    <template if:true={addProduct}>
+        <lightning-card>
+            <div class="slds-p-horizontal_small" style="height: 450px;">
+                <lightning-datatable
+                    key-field="linkName"
+                    data={data}
+                    selected-rows={checkOppItemLst}
+                    default-sort-direction={defaultSortDirection}
+                    sorted-direction={sortDirection}
+                    sorted-by={sortedBy}
+                    onsort={onHandleSort}
+                    columns={columns}>
+                </lightning-datatable>
+            </div>
+        </lightning-card>
+        <div class="slds-grid slds-m-around_xx-small slds-grid_align-end">
+            <lightning-button class="slds-m-around_xx-small" variant="brand-outline" label="Cancel" onclick={handleFinishFlow}></lightning-button>
+            <lightning-button class="slds-m-around_xx-small" variant="brand" label="Next" onclick={handleInputInfo}></lightning-button>
+        </div>
+    </template>
+    <template if:false={addProduct}>
+        <lightning-card>
+            <div class="slds-p-horizontal_small hide-scrollbar" style="height: 450px;">
+                <lightning-datatable
+                    key-field="Product2Id"
+                    data={opptItemLst}
+                    suppress-bottom-bar
+                    hide-checkbox-column="true"
+                    onrowaction={handleRowAction}
+                    errors={errors}
+                    columns={oppItem_columns}>
+                </lightning-datatable>
+            </div>
+        </lightning-card>
+        <div class="slds-grid slds-m-around_xx-small slds-grid_align-spread">
+            <lightning-button class="slds-m-around_xx-small" variant="brand-outline" label="Back" onclick={handleBack} disabled={inSaving}></lightning-button>
+            <div class="slds-grid slds-m-around_xx-small">
+                <!-- <template if:true={checkRequired}>
+                    <lightning-button-icon icon-name="utility:warning" 
+                                           variant="container"
+                                           class="my-warning-button"
+                                           alternative-text="warning"
+                                           title="warning"
+                                           tooltip="Can't save records with errors.
+                                          Item 1 has errors in these fields: Quantity."
+                    ></lightning-button-icon>
+                </template> -->
+                <lightning-button class="slds-m-around_xx-small" variant="brand-outline" label="Cancel" onclick={handleFinishFlow} disabled={inSaving}></lightning-button>
+                <lightning-button class="slds-m-around_xx-small" variant="brand" label="Save" onclick={handleSaveOppItem} disabled={inSaving}></lightning-button>
+            </div>
+        </div>
+    </template>
+</template>

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fieldSets>
+        <label><!-- Disbursements Summary --></label>
+        <name>LLC_BI__Disbursements_Summary</name>
+    </fieldSets>
+    <fields>
+        <help><!-- Enter the desired payment disbursement date for the closed loan. --></help>
+        <label><!-- Closing Disbursement Date --></label>
+        <name>LLC_BI__Closing_Disbursement_Date__c</name>
+    </fields>
+    <fields>
+        <help><!-- This system-populated field indicates the loan associated with the transaction request aggregate. --></help>
+        <label><!-- Loan --></label>
+        <name>LLC_BI__Loan__c</name>
+        <relationshipLabel><!-- Transaction Request Aggregates --></relationshipLabel>
+    </fields>
+    <fields>
+        <help><!-- Enter the latest date the borrower may rescind or cancel the loan. --></help>
+        <label><!-- Right of Rescission Date --></label>
+        <name>LLC_BI__Right_of_Rescission_Date__c</name>
+    </fields>
+    <fields>
+        <help><!-- This system-populated field displays the total disbursement for the loan. --></help>
+        <label><!-- Total Disbursement --></label>
+        <name>LLC_BI__Total_Disbursement__c</name>
+    </fields>
+    <fields>
+        <label><!-- lookupKey --></label>
+        <name>LLC_BI__lookupKey__c</name>
+    </fields>
+</CustomObjectTranslation>

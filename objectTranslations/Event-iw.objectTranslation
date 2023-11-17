@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fieldSets>
+        <label><!-- UI Events --></label>
+        <name>LLC_BI__UI_Events</name>
+    </fieldSets>
+    <fields>
+        <label><!-- DB Activity Type --></label>
+        <name>DB_Activity_Type__c</name>
+    </fields>
+    <fields>
+        <label><!-- Expectations --></label>
+        <name>FinServ__Expectations__c</name>
+    </fields>
+    <fields>
+        <label><!-- Household --></label>
+        <name>FinServ__Household__c</name>
+        <relationshipLabel><!-- Activities --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Next Steps --></label>
+        <name>FinServ__NextSteps__c</name>
+    </fields>
+    <fields>
+        <label><!-- Objectives --></label>
+        <name>FinServ__Objectives__c</name>
+    </fields>
+    <fields>
+        <label><!-- Regarding --></label>
+        <name>FinServ__Regarding__c</name>
+    </fields>
+    <fields>
+        <label><!-- Follow-Up Date --></label>
+        <name>Follow_Up_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Follow-Up Subject --></label>
+        <name>Follow_Up_Subject__c</name>
+    </fields>
+    <fields>
+        <label><!-- Assignment Group --></label>
+        <name>LLC_BI__Assignment_Group__c</name>
+    </fields>
+    <fields>
+        <help><!-- Enter estimated time to complete a task --></help>
+        <label><!-- Estimated Time --></label>
+        <name>LLC_BI__Estimated_Time__c</name>
+    </fields>
+    <fields>
+        <label><!-- Assignment Group --></label>
+        <name>LLC_BI__Group__c</name>
+        <relationshipLabel><!-- Activities --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Maintenance Category --></label>
+        <name>LLC_BI__Maintenance_Type__c</name>
+    </fields>
+    <fields>
+        <label><!-- Parent Task --></label>
+        <name>LLC_BI__Parent_Task__c</name>
+    </fields>
+    <fields>
+        <label><!-- Maintenance Type --></label>
+        <name>LLC_BI__SubType__c</name>
+    </fields>
+    <fields>
+        <label><!-- Is Template --></label>
+        <name>LLC_BI__isTemplate__c</name>
+    </fields>
+    <recordTypes>
+        <description><!-- It will be default to all profiles for making event action visible. --></description>
+        <label><!-- General Event --></label>
+        <name>EVE_General_Event</name>
+    </recordTypes>
+    <recordTypes>
+        <description><!-- Default event record type for Advisor profile --></description>
+        <label><!-- Advisor Event --></label>
+        <name>FinServ__AdvisorEvent</name>
+    </recordTypes>
+    <recordTypes>
+        <description><!-- Default event record type for Client Associate profile --></description>
+        <label><!-- Client Associate Event --></label>
+        <name>FinServ__ClientAssociateEvent</name>
+    </recordTypes>
+</CustomObjectTranslation>

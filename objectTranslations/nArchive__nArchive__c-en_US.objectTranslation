@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <label><!-- ProcessId --></label>
+        <name>ProcessId__c</name>
+    </fields>
+    <fields>
+        <label><!-- Associated Account Document --></label>
+        <name>nArchive__AccountDocument__c</name>
+        <relationshipLabel><!-- Related Account Document --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Associated Account --></label>
+        <name>nArchive__Account__c</name>
+        <relationshipLabel><!-- Related Account --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Attachment_Id-D --></label>
+        <name>nArchive__Attachment_Id__c</name>
+    </fields>
+    <fields>
+        <label><!-- Current Attachment Id --></label>
+        <name>nArchive__Current_Attachment_Id__c</name>
+    </fields>
+    <fields>
+        <label><!-- Date Processed --></label>
+        <name>nArchive__Date_Processed__c</name>
+    </fields>
+    <fields>
+        <label><!-- Document Name --></label>
+        <name>nArchive__DocumentName__c</name>
+    </fields>
+    <fields>
+        <label><!-- Associated Document Placeholder --></label>
+        <name>nArchive__Document_Placeholder__c</name>
+        <relationshipLabel><!-- Related Document Placeholder --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- File Extension --></label>
+        <name>nArchive__File_Extension__c</name>
+    </fields>
+    <fields>
+        <label><!-- File Size --></label>
+        <name>nArchive__File_Size__c</name>
+    </fields>
+    <fields>
+        <label><!-- Associated Loan Document Placeholder --></label>
+        <name>nArchive__LLC_LoanDocument__c</name>
+        <relationshipLabel><!-- Related Loan Document Placeholder --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Associated Loan --></label>
+        <name>nArchive__Loan__c</name>
+        <relationshipLabel><!-- Related Loan --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Unique Id --></label>
+        <name>nArchive__UID__c</name>
+    </fields>
+    <fields>
+        <label><!-- Faulted Details --></label>
+        <name>nArchive__isFaultedDescription__c</name>
+    </fields>
+    <fields>
+        <label><!-- Faulted Flag --></label>
+        <name>nArchive__isFaulted__c</name>
+    </fields>
+    <fields>
+        <label><!-- Missing Attachment --></label>
+        <name>nArchive__missingAttachment__c</name>
+    </fields>
+    <fields>
+        <label><!-- Processed Batch Number --></label>
+        <name>nArchive__processdBatchNumber__c</name>
+    </fields>
+    <fields>
+        <label><!-- Processed Flag --></label>
+        <name>nArchive__processedFlag__c</name>
+    </fields>
+    <fields>
+        <label><!-- Reprocess Flag --></label>
+        <name>nArchive__reprocessFlag__c</name>
+    </fields>
+</CustomObjectTranslation>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <help><!-- Use this lookup field to determine which checklist the system associates to the linked requirement. --></help>
+        <label><!-- Checklist --></label>
+        <name>LLC_BI__Checklist__c</name>
+        <relationshipLabel><!-- Requirement Links --></relationshipLabel>
+    </fields>
+    <fields>
+        <help><!-- Use this field to determine which requirement the system associates to the linked checklist. --></help>
+        <label><!-- Requirement --></label>
+        <name>LLC_BI__Requirement__c</name>
+        <relationshipLabel><!-- Requirement Links --></relationshipLabel>
+    </fields>
+</CustomObjectTranslation>

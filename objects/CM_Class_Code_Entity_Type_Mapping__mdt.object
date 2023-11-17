@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <description>Class Code to Entity Type mapping</description>
+    <fields>
+        <fullName>Class_Code__c</fullName>
+        <externalId>false</externalId>
+        <fieldManageability>DeveloperControlled</fieldManageability>
+        <label>Class Code</label>
+        <length>255</length>
+        <required>false</required>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Entity_Type__c</fullName>
+        <externalId>false</externalId>
+        <fieldManageability>DeveloperControlled</fieldManageability>
+        <label>Entity Type</label>
+        <length>255</length>
+        <required>false</required>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <label>CM_Class_Code_Entity_Type_Mapping</label>
+    <listViews>
+        <fullName>all_1</fullName>
+        <columns>MasterLabel</columns>
+        <columns>DeveloperName</columns>
+        <columns>NamespacePrefix</columns>
+        <columns>Entity_Type__c</columns>
+        <columns>Class_Code__c</columns>
+        <filterScope>Everything</filterScope>
+        <label>all</label>
+        <language>en_US</language>
+    </listViews>
+    <pluralLabel>CM_Class_Code_Entity_Type_Mappings</pluralLabel>
+    <visibility>Public</visibility>
+</CustomObject>

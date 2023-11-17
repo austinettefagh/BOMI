@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <help><!-- Enter the display name that corresponds with your provider plug-in. --></help>
+        <label><!-- Provider Name --></label>
+        <name>nSBA__Display_Name__c</name>
+    </fields>
+    <fields>
+        <help><!-- Enter the name of the desired interaction type in this field. This value must correspond with the picklist value selected for the transaction on the Interaction object. --></help>
+        <label><!-- Interaction Type --></label>
+        <name>nSBA__Interaction_Type__c</name>
+    </fields>
+    <fields>
+        <help><!-- To customize field sorting on this object, enter a number. --></help>
+        <label><!-- Placement Order --></label>
+        <name>nSBA__Placement_Order__c</name>
+    </fields>
+    <fields>
+        <help><!-- Specify the supported processing methods. --></help>
+        <label><!-- Processing Methods --></label>
+        <name>nSBA__Processing_Methods__c</name>
+    </fields>
+    <fields>
+        <help><!-- Enter the fully-qualified class name that corresponds with your provider plug-in. --></help>
+        <label><!-- Vendor Provider --></label>
+        <name>nSBA__Vendor_Provider__c</name>
+    </fields>
+</CustomObjectTranslation>

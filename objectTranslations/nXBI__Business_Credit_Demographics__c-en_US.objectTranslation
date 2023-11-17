@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <label><!-- Annual Sales Range Code --></label>
+        <name>nXBI__Annual_Sales_Range_Code__c</name>
+    </fields>
+    <fields>
+        <label><!-- Annual Sales Range --></label>
+        <name>nXBI__Annual_Sales_Range__c</name>
+    </fields>
+    <fields>
+        <label><!-- Business Credit Report --></label>
+        <name>nXBI__Business_Credit_Report__c</name>
+        <relationshipLabel><!-- Business Credit Demographics --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Business Type Code --></label>
+        <name>nXBI__Business_Type_Code__c</name>
+    </fields>
+    <fields>
+        <label><!-- Business Type --></label>
+        <name>nXBI__Business_Type__c</name>
+    </fields>
+    <fields>
+        <label><!-- Company Ownership Code --></label>
+        <name>nXBI__Company_Ownership_Code__c</name>
+    </fields>
+    <fields>
+        <label><!-- Company Ownership --></label>
+        <name>nXBI__Company_Ownership__c</name>
+    </fields>
+    <fields>
+        <label><!-- Date Founded --></label>
+        <name>nXBI__Date_Founded__c</name>
+    </fields>
+    <fields>
+        <label><!-- Location Description Code --></label>
+        <name>nXBI__Location_Description_Code__c</name>
+    </fields>
+    <fields>
+        <label><!-- Location Description --></label>
+        <name>nXBI__Location_Description__c</name>
+    </fields>
+    <fields>
+        <label><!-- Number Of Employees Code --></label>
+        <name>nXBI__Number_Of_Employees_Code__c</name>
+    </fields>
+    <fields>
+        <label><!-- Number Of Employees --></label>
+        <name>nXBI__Number_Of_Employees__c</name>
+    </fields>
+    <fields>
+        <label><!-- Years In Business --></label>
+        <name>nXBI__Years_In_Business__c</name>
+    </fields>
+</CustomObjectTranslation>

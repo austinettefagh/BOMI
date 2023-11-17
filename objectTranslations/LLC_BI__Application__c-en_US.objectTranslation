@@ -1,0 +1,3297 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fieldSets>
+        <label><!-- Jack Henry jXchange Automated Booking --></label>
+        <name>JHJX__ABJX</name>
+    </fieldSets>
+    <fieldSets>
+        <label><!-- Form 159 Lender --></label>
+        <name>nSBA__Form_159_Lender</name>
+    </fieldSets>
+    <fieldSets>
+        <label><!-- SBA Form 1050 --></label>
+        <name>nSBA__SBA_1050</name>
+    </fieldSets>
+    <fieldSets>
+        <label><!-- SBA 1919 --></label>
+        <name>nSBA__SBA_1919</name>
+    </fieldSets>
+    <fieldSets>
+        <label><!-- SBA 1919 Conflict --></label>
+        <name>nSBA__SBA_1919_Conflict</name>
+    </fieldSets>
+    <fieldSets>
+        <label><!-- SBA 1919 Jobs --></label>
+        <name>nSBA__SBA_1919_Jobs</name>
+    </fieldSets>
+    <fieldSets>
+        <label><!-- SBA 1919 Loan Package --></label>
+        <name>nSBA__SBA_1919_Loan_Package</name>
+    </fieldSets>
+    <fieldSets>
+        <label><!-- SBA 1919 Previous Submissions --></label>
+        <name>nSBA__SBA_1919_Previous_Submissions</name>
+    </fieldSets>
+    <fieldSets>
+        <label><!-- SBA 1919 Primary Applicant --></label>
+        <name>nSBA__SBA_1919_Primary_Applicant</name>
+    </fieldSets>
+    <fieldSets>
+        <label><!-- -D SBA_1919_Prior Government Guaranteed --></label>
+        <name>nSBA__SBA_1919_Prior_Government_Guaranteed_Loa</name>
+    </fieldSets>
+    <fieldSets>
+        <label><!-- -D SBA 1919 Type of Business --></label>
+        <name>nSBA__SBA_1919_Type_of_Business</name>
+    </fieldSets>
+    <fieldSets>
+        <label><!-- SBA 912 Primary Applicant --></label>
+        <name>nSBA__SBA_912_Primary_Applicant</name>
+    </fieldSets>
+    <fieldSets>
+        <label><!-- SBA_Application --></label>
+        <name>nSBA__SBA_Application</name>
+    </fieldSets>
+    <fieldSets>
+        <label><!-- SBA Application Loan Pkg --></label>
+        <name>nSBA__SBA_Application_Loan_Pkg</name>
+    </fieldSets>
+    <fieldSets>
+        <label><!-- SBA Application Serv Prov --></label>
+        <name>nSBA__SBA_Application_Serv_Prov</name>
+    </fieldSets>
+    <fieldSets>
+        <label><!-- SBA Boarding Sheet Application --></label>
+        <name>nSBA__SBA_Boarding_Sheet_Application</name>
+    </fieldSets>
+    <fieldSets>
+        <label><!-- SBA Form 159 --></label>
+        <name>nSBA__SBA_Form_159</name>
+    </fieldSets>
+    <fieldSets>
+        <label><!-- SBA Form 1920 --></label>
+        <name>nSBA__SBA_Form_1920</name>
+    </fieldSets>
+    <fieldSets>
+        <label><!-- SBA Form 1920 --></label>
+        <name>nSBA__SBA_Form_1920_2</name>
+    </fieldSets>
+    <fieldSets>
+        <label><!-- SBA Form 1920 3 --></label>
+        <name>nSBA__SBA_Form_1920_3</name>
+    </fieldSets>
+    <fieldSets>
+        <label><!-- SBA Form 912 --></label>
+        <name>nSBA__SBA_Form_912</name>
+    </fieldSets>
+    <fieldSets>
+        <label><!-- SBA Principal --></label>
+        <name>nSBA__SBA_Principal</name>
+    </fieldSets>
+    <fieldSets>
+        <label><!-- SBEOC Application --></label>
+        <name>nSBA__SBEOC_Application</name>
+    </fieldSets>
+    <fields>
+        <label><!-- Accounts Rec. Pay. and Inv. Provided --></label>
+        <name>CF_Accounts_Rec_Pay_and_Inv_Provided__c</name>
+    </fields>
+    <fields>
+        <label><!-- Amount Paid by Applicant --></label>
+        <name>CF_Amount_Paid_by_Applicant__c</name>
+    </fields>
+    <fields>
+        <label><!-- Amount Paid by SBA Lender --></label>
+        <name>CF_Amount_Paid_by_SBA_Lender__c</name>
+    </fields>
+    <fields>
+        <label><!-- SBA Status --></label>
+        <name>CF_App_SBA_Status__c</name>
+    </fields>
+    <fields>
+        <label><!-- Credit Elsewhere Analysis Documentation --></label>
+        <name>CF_CreditElsewhereAnalysisDocumentation__c</name>
+    </fields>
+    <fields>
+        <label><!-- EPC Complies With All Requirement --></label>
+        <name>CF_EPC_Complies_With_All_Requirement__c</name>
+    </fields>
+    <fields>
+        <label><!-- EWCP Authorized to Conduct Business --></label>
+        <name>CF_EWCP_Authorized_to_Conduct_Business__c</name>
+    </fields>
+    <fields>
+        <label><!-- EWCP Collateral Requirements Followed --></label>
+        <name>CF_EWCP_Collateral_Requirements_Followed__c</name>
+    </fields>
+    <fields>
+        <label><!-- EWCP Eligible Use Of Proceeds --></label>
+        <name>CF_EWCP_Eligible_Use_Of_Proceeds__c</name>
+    </fields>
+    <fields>
+        <label><!-- EWCP Indirect Export Documentation --></label>
+        <name>CF_EWCP_Indirect_Export_Documentation__c</name>
+    </fields>
+    <fields>
+        <label><!-- EWCP Refinance Requirements Followed --></label>
+        <name>CF_EWCP_Refinance_Requirements_Followed__c</name>
+    </fields>
+    <fields>
+        <label><!-- Export Cash Flow Provided --></label>
+        <name>CF_Export_Cash_Flow_Provided__c</name>
+    </fields>
+    <fields>
+        <label><!-- Export Credit Insur. Material Provided --></label>
+        <name>CF_Export_Credit_Insur_Material_Provided__c</name>
+    </fields>
+    <fields>
+        <label><!-- Export LOC or Buyer Contract Provided --></label>
+        <name>CF_Export_LOC_or_Buyer_Contract_Provided__c</name>
+    </fields>
+    <fields>
+        <label><!-- Export License Copy Is Provided --></label>
+        <name>CF_Export_License_Copy_Is_Provided__c</name>
+    </fields>
+    <fields>
+        <label><!-- IT or Exp Express Bus Acq SOP Followed --></label>
+        <name>CF_ITorExp_Express_Bus_Acq_SOP_Followed__c</name>
+    </fields>
+    <fields>
+        <label><!-- Injections Total Amount --></label>
+        <name>CF_Injections_Total_Amount__c</name>
+    </fields>
+    <fields>
+        <label><!-- Intl Trade Loan Improve Market Position --></label>
+        <name>CF_IntlTradeLoanImproveMarketPosition__c</name>
+    </fields>
+    <fields>
+        <label><!-- Is EWCP Asset Based Loan --></label>
+        <name>CF_Is_EWCP_Asset_Based_Loan__c</name>
+    </fields>
+    <fields>
+        <label><!-- Is EWCP Transaction Based Loan --></label>
+        <name>CF_Is_EWCP_Transaction_Based_Loan__c</name>
+    </fields>
+    <fields>
+        <label><!-- Is equity injection funded by a ROBS --></label>
+        <name>CF_Is_equity_injection_funded_by_a_ROBS__c</name>
+    </fields>
+    <fields>
+        <label><!-- Loan Proceeds --></label>
+        <name>CF_Loan_Proceeds__c</name>
+    </fields>
+    <fields>
+        <label><!-- Manag Co To Manage Day To Day Operations --></label>
+        <name>CF_ManagCoToManageDayToDayOperations__c</name>
+    </fields>
+    <fields>
+        <label><!-- Plan To Use 401k Plan --></label>
+        <name>CF_Plan_To_Use_401k_Plan__c</name>
+    </fields>
+    <fields>
+        <label><!-- Referral Agent Contact Person --></label>
+        <name>CF_Referral_Agent_Contact_Person__c</name>
+    </fields>
+    <fields>
+        <label><!-- Total Borrower Injections --></label>
+        <name>CF_Total_Borrower_Injections__c</name>
+    </fields>
+    <fields>
+        <label><!-- Total Project Costs --></label>
+        <name>CF_Total_Project_Costs__c</name>
+    </fields>
+    <fields>
+        <label><!-- Total Refinance Existing EWCP --></label>
+        <name>CF_Total_Refinance_Existing_EWCP__c</name>
+    </fields>
+    <fields>
+        <label><!-- Total Sources --></label>
+        <name>CF_Total_Sources__c</name>
+    </fields>
+    <fields>
+        <label><!-- Total Support Standby LOC --></label>
+        <name>CF_Total_Support_Standby_LOC__c</name>
+    </fields>
+    <fields>
+        <label><!-- Use of Proceeds Total Amount --></label>
+        <name>CF_Use_of_Proceeds_Total_Amount__c</name>
+    </fields>
+    <fields>
+        <label><!-- Application Completion Date --></label>
+        <name>LLC_BI__Application_Completion_Date__c</name>
+    </fields>
+    <fields>
+        <help><!-- Use this field to save the borrower’s offer sorting preference. --></help>
+        <label><!-- Offer Sorting Preference --></label>
+        <name>LLC_BI__Offer_Sorting_Preference__c</name>
+        <picklistValues>
+            <masterLabel>Lowest Payment</masterLabel>
+            <translation><!-- Lowest Payment --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Lowest Rate</masterLabel>
+            <translation><!-- Lowest Rate --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- This field displays the requested amount for the loan when the borrower begins the credit application. --></help>
+        <label><!-- Requested Amount --></label>
+        <name>LLC_BI__Requested_Amount__c</name>
+    </fields>
+    <fields>
+        <label><!-- Validation Errors --></label>
+        <name>Validation_Errors__c</name>
+    </fields>
+    <fields>
+        <label><!-- Account --></label>
+        <name>nPortal__Account__c</name>
+        <relationshipLabel><!-- Applications --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Applicant --></label>
+        <name>nPortal__Applicant__c</name>
+        <relationshipLabel><!-- Applications (Applicant) --></relationshipLabel>
+    </fields>
+    <fields>
+        <help><!-- This ID should match the artifact being created by the application --></help>
+        <label><!-- Artifact Id --></label>
+        <name>nPortal__Artifact_Id__c</name>
+    </fields>
+    <fields>
+        <help><!-- The system automatically populates the transaction log generated by a business credit report. --></help>
+        <label><!-- Business Credit Transaction Log --></label>
+        <name>nPortal__Business_Credit_Transaction_Log__c</name>
+        <relationshipLabel><!-- Applications --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- OA Auto Decision Complete --></label>
+        <name>nPortal__OA_Auto_Decision_Complete__c</name>
+    </fields>
+    <fields>
+        <label><!-- Product Package --></label>
+        <name>nPortal__Product_Package__c</name>
+        <relationshipLabel><!-- Applications --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Product --></label>
+        <name>nPortal__Product__c</name>
+    </fields>
+    <fields>
+        <label><!-- Risk and Fraud Status --></label>
+        <name>nPortal__Risk_And_Fraud_Status__c</name>
+        <picklistValues>
+            <masterLabel>Alloy - Decline</masterLabel>
+            <translation><!-- Alloy - Decline --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Alloy - In Progress</masterLabel>
+            <translation><!-- Alloy - In Progress --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Alloy - Needs Review</masterLabel>
+            <translation><!-- Alloy - Needs Review --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Alloy - Pass</masterLabel>
+            <translation><!-- Alloy - Pass --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Alloy - Waiting on Response</masterLabel>
+            <translation><!-- Alloy - Waiting on Response --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- -D Session --></label>
+        <name>nPortal__Session__c</name>
+        <relationshipLabel><!-- Applications --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Status --></label>
+        <name>nPortal__Status__c</name>
+        <picklistValues>
+            <masterLabel>Complete</masterLabel>
+            <translation><!-- Complete --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>In-Progress</masterLabel>
+            <translation><!-- In-Progress --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>New</masterLabel>
+            <translation><!-- New --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Not Eligible for Offers</masterLabel>
+            <translation><!-- Not Eligible for Offers --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Offers Available</masterLabel>
+            <translation><!-- Offers Available --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Withdrawn</masterLabel>
+            <translation><!-- Withdrawn --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- The ARC Loan being submitted meets all Americas Recovery Capital (ARC) program criteria? Answer only for ARC loans. --></help>
+        <label><!-- ARC Loan Meets All Criteria --></label>
+        <name>nSBA__ARC_Loan_Meets_All_Criteria__c</name>
+    </fields>
+    <fields>
+        <help><!-- Another business owned or controlled by any Associate of the Small Business Applicant or guarantor defaulted on a Federal loan (or guaranteed a loan which was defaulted) and caused the Federal government. --></help>
+        <label><!-- Affiliated Biz Defaulted On Fed Loan --></label>
+        <name>nSBA__Affiliated_Biz_Defaulted_On_Fed_Loan__c</name>
+    </fields>
+    <fields>
+        <help><!-- Aggregate Amount SBA Loans To EPC And OC Under Limit --></help>
+        <label><!-- -D Agg Amt SBA Loans To EPC OC Under Lim --></label>
+        <name>nSBA__Agg_Amt_SBA_Loans_To_EPC_OC_Under_Limit__c</name>
+    </fields>
+    <fields>
+        <help><!-- All Associates are US Citizens or Verified --></help>
+        <label><!-- -D All are US Citizens or Verified --></label>
+        <name>nSBA__All_Associates_USVerified__c</name>
+    </fields>
+    <fields>
+        <help><!-- All Associates of the business are either U.S. citizens or non-U.S. citizens whose status has been verified with USCIS or SBA. --></help>
+        <label><!-- -D All Associates US Citizens Or Verifie --></label>
+        <name>nSBA__All_Associates_US_Citizens_Or_Verified__c</name>
+    </fields>
+    <fields>
+        <help><!-- All owners of 20 percent or more of the Applicant (including a spouse owning 5 percent or more when the combined ownership of both spouses is 20 percent or more) will guaranty the loan (except for ESOPs or eligible 401(k)Trusts). --></help>
+        <label><!-- All_Owners Of 20 Percent Will Guaranty --></label>
+        <name>nSBA__All_Owners_Of_20_Percent_Will_Guaranty__c</name>
+    </fields>
+    <fields>
+        <help><!-- Is any of individuals on parole or probation --></help>
+        <label><!-- Any Individual On Parole Or Probation --></label>
+        <name>nSBA__Any_Individual_On_Parole_Or_Probation__c</name>
+    </fields>
+    <fields>
+        <help><!-- Any YESes on Q2 or Q3 of Form 1919 --></help>
+        <label><!-- -D Any Yes on Q2 or Q3 of Form 1919 --></label>
+        <name>nSBA__Any_Yes_on_Q2_or_Q3_of_Form_1919__c</name>
+    </fields>
+    <fields>
+        <help><!-- Application Eligible Indicator --></help>
+        <label><!-- -D Application Eligible Indicator --></label>
+        <name>nSBA__Application_Eligible_Indicator__c</name>
+    </fields>
+    <fields>
+        <help><!-- Application Number assigned by the lender. --></help>
+        <label>SBA Application Number</label>
+        <name>nSBA__Application_Number__c</name>
+    </fields>
+    <fields>
+        <help><!-- Indicates whether ceiling and floor rates on the loan are variable. This field is used in SBA Loan Authorization only. --></help>
+        <label><!-- Are Ceiling And Floor Rates Variable --></label>
+        <name>nSBA__Are_Ceiling_And_Floor_Rates_Variable__c</name>
+    </fields>
+    <fields>
+        <help><!-- An Associate of the Small Business Applicant or guarantor is currently delinquent on any Federal debt. --></help>
+        <label><!-- Associate Curr Deliquent On Fed Loan --></label>
+        <name>nSBA__Associate_Curr_Deliquent_On_Fed_Loan__c</name>
+    </fields>
+    <fields>
+        <help><!-- Form 1920 - Page 5 - Business Acquisition - Buyer Injection --></help>
+        <label><!-- Biz Acquisition Buyer Injection --></label>
+        <name>nSBA__Biz_Acquisition_Buyer_Injection__c</name>
+    </fields>
+    <fields>
+        <help><!-- Form 1920 - Page 5 - Business Acquisition - Commercial Real Estate --></help>
+        <label><!-- Biz Acquisition Commercial Real Estate --></label>
+        <name>nSBA__Biz_Acquisition_Commercial_Real_Estate__c</name>
+    </fields>
+    <fields>
+        <help><!-- Form 1920 - Page 5 - Business Acquisition - Down Payment To Seller --></help>
+        <label><!-- Biz Acquisition Down Payment To Seller --></label>
+        <name>nSBA__Biz_Acquisition_Down_Payment_To_Seller__c</name>
+    </fields>
+    <fields>
+        <help><!-- Form 1920 - Page 5 - Business Acquisition - Equipment --></help>
+        <label><!-- Biz Acquisition Equipment --></label>
+        <name>nSBA__Biz_Acquisition_Equipment__c</name>
+    </fields>
+    <fields>
+        <help><!-- Business Acquisition Source and Type of Injection. --></help>
+        <label><!-- Biz Acquisition Injection Source &amp; Type --></label>
+        <name>nSBA__Biz_Acquisition_Injection_Source_Type__c</name>
+    </fields>
+    <fields>
+        <help><!-- Form 1920 - Page 5 - Business Acquisition - Intangible Assets --></help>
+        <label><!-- Biz Acquisition Intangible Assets --></label>
+        <name>nSBA__Biz_Acquisition_Intangible_Assets__c</name>
+    </fields>
+    <fields>
+        <help><!-- Form 1920 - Page 5 - Business Acquisition - Total Amount Financed --></help>
+        <label><!-- Biz Acquisition Total Amount Financed --></label>
+        <name>nSBA__Biz_Acquisition_Total_Amount_Financed__c</name>
+    </fields>
+    <fields>
+        <help><!-- List all Borrower And Operating Company Documents Open Options here. This field is used in SBA Loan Authorization only. --></help>
+        <label><!-- Borrower And OC Documents Open Options --></label>
+        <name>nSBA__Borrower_And_OC_Documents_Open_Options__c</name>
+    </fields>
+    <fields>
+        <help><!-- Form 1920 - Page 2 - Use of Proceeds - Leasehold Improvements - Borrower Injection (in thousands) --></help>
+        <label><!-- Borrower Inject. Leasehold Improvements --></label>
+        <name>nSBA__Borrower_Inject_Leasehold_Improvements__c</name>
+    </fields>
+    <fields>
+        <help><!-- Form 1920 - Page 2 - Use of Proceeds - Acquire Business - Borrower Injection (in thousands) --></help>
+        <label><!-- Borrower Injection Acquire Business --></label>
+        <name>nSBA__Borrower_Injection_Acquire_Business__c</name>
+    </fields>
+    <fields>
+        <help><!-- Form 1920 - Page 2 - Use of Proceeds - Construction - Borrower Injection (in thousands) --></help>
+        <label><!-- Borrower Injection Construction --></label>
+        <name>nSBA__Borrower_Injection_Construction__c</name>
+    </fields>
+    <fields>
+        <help><!-- Form 1920 - Page 2 - Use of Proceeds - Furniture and Fixtures - Borrower Injection (in thousands) --></help>
+        <label><!-- Borrower Injection Furniture Fixtures --></label>
+        <name>nSBA__Borrower_Injection_Furniture_Fixtures__c</name>
+    </fields>
+    <fields>
+        <help><!-- Form 1920 - Page 2 - Use of Proceeds - Machinery and Equipment - Borrower Injection (in thousands) --></help>
+        <label><!-- Borrower Injection Machinery Equipment --></label>
+        <name>nSBA__Borrower_Injection_Machinery_Equipment__c</name>
+    </fields>
+    <fields>
+        <help><!-- Form 1920 - Page 2 - Use of Proceeds - Other2 - Borrower Injection (in thousands) --></help>
+        <label><!-- -D Borrower Injection Other2 --></label>
+        <name>nSBA__Borrower_Injection_Other2__c</name>
+    </fields>
+    <fields>
+        <help><!-- Form 1920 - Page 2 - Use of Proceeds - Other - Borrower Injection (in thousands) --></help>
+        <label><!-- Borrower Injection Other --></label>
+        <name>nSBA__Borrower_Injection_Other__c</name>
+    </fields>
+    <fields>
+        <help><!-- Form 1920 - Page 2 - Use of Proceeds - Pay Accounts Payable - Borrower Injection (in thousands) --></help>
+        <label><!-- Borrower Injection Pay Accounts Payable --></label>
+        <name>nSBA__Borrower_Injection_Pay_Accounts_Payable__c</name>
+    </fields>
+    <fields>
+        <help><!-- Form 1920 - Page 2 - Use of Proceeds - Pay Notes Payable - Borrower_Injection (in thousands) --></help>
+        <label><!-- Borrower_Injection Pay Notes Payable --></label>
+        <name>nSBA__Borrower_Injection_Pay_Notes_Payable__c</name>
+    </fields>
+    <fields>
+        <help><!-- Form 1920 - Page 2 - Use of Proceeds - Pay Off SBA Loan - Borrower Injection (in thousands) --></help>
+        <label><!-- Borrower Injection Pay Off SBA Loan --></label>
+        <name>nSBA__Borrower_Injection_Pay_Off_SBA_Loan__c</name>
+    </fields>
+    <fields>
+        <help><!-- Form 1920 - Page 2 - Use of Proceeds - Purchase Inventory - Borrower Injection (in thousands) --></help>
+        <label><!-- Borrower Injection Purchase Inventory --></label>
+        <name>nSBA__Borrower_Injection_Purchase_Inventory__c</name>
+    </fields>
+    <fields>
+        <help><!-- Form 1920 - Page 2 - Use of Proceeds - Purchase Land - Borrower Injection (in thousands) --></help>
+        <label><!-- Borrower Injection Purchase Land --></label>
+        <name>nSBA__Borrower_Injection_Purchase_Land__c</name>
+    </fields>
+    <fields>
+        <help><!-- Form 1920 - Page 2 - Use of Proceeds - SBA Guaranty Fee - Borrower Injection (in thousands) --></help>
+        <label><!-- Borrower Injection SBA Guaranty Fee --></label>
+        <name>nSBA__Borrower_Injection_SBA_Guaranty_Fee__c</name>
+    </fields>
+    <fields>
+        <help><!-- Form 1920 - Page 2 - Use of Proceeds - Total - Borrower Injection (in thousands) --></help>
+        <label><!-- Borrower Injection Total --></label>
+        <name>nSBA__Borrower_Injection_Total__c</name>
+    </fields>
+    <fields>
+        <help><!-- Form 1920 - Page 2 - Use of Proceeds - Working Capital - Borrower Injection (in thousands) --></help>
+        <label><!-- Borrower Injection Working Capital --></label>
+        <name>nSBA__Borrower_Injection_Working_Capital__c</name>
+    </fields>
+    <fields>
+        <label><!-- -D Broker Services Charged To Applicant --></label>
+        <name>nSBA__Broker_Services_Charged_To_Applicant__c</name>
+    </fields>
+    <fields>
+        <help><!-- Builders CAPLines Applicant Qualifies Under Standard 7a --></help>
+        <label><!-- Builders CAPLines App Qualifies 7a --></label>
+        <name>nSBA__Builders_CAPLines_Applicant_Qualifies_7__c</name>
+    </fields>
+    <fields>
+        <help><!-- The building where improvements will be made is owned by any principals of the Operating Company. --></help>
+        <label><!-- -D Building With Improvements Owned --></label>
+        <name>nSBA__Building_With_Improvements_Owned__c</name>
+    </fields>
+    <fields>
+        <help><!-- Business Valuation Requirements For Loans With Intangible Assets More Than 250000 Were Met --></help>
+        <label><!-- Bus Val Req Met For Loan More Than 250k --></label>
+        <name>nSBA__Bus_Value_Req_For_Loans_Mor_250k_Int_Met__c</name>
+    </fields>
+    <fields>
+        <help><!-- Business Valuation Requirements For Loans With Intangible Assets 250000 Or Less Were Met --></help>
+        <label><!-- -D Bus Val Req Met For Loan Less Than 25 --></label>
+        <name>nSBA__Bus_Value_Req_For_Loans_Sub_250k_Int_Met__c</name>
+    </fields>
+    <fields>
+        <help><!-- Form 1920 - Page 2 - Use of Proceeds - Business Acquisition  - Asset Purchase Indicator (in thousands) --></help>
+        <label><!-- Business Acquisition  - Asset Purchase --></label>
+        <name>nSBA__Business_Acquisition_Asset__c</name>
+    </fields>
+    <fields>
+        <help><!-- Form 1920 - Page 2 - Use of Proceeds - Business Acquisition  - Stock Purchase Indicator (in thousands) --></help>
+        <label><!-- Business Acquisition  - Stock Purchase --></label>
+        <name>nSBA__Business_Acquisition_Stock__c</name>
+    </fields>
+    <fields>
+        <help><!-- Community Adjustment and Investment Program (CAIP) loan eligible to be processed under the PLP lender&apos;s delegated authority? Answer only for CAIP loans. --></help>
+        <label><!-- CAIP Loan Is PLP Eligible --></label>
+        <name>nSBA__CAIP_Loan_Is_PLP_Eligible__c</name>
+    </fields>
+    <fields>
+        <help><!-- The loan is being processed under the CA Pilot Program and the lender has provided a transcript showing due dates and 6 months of timely payments for the most recent six-month period. --></help>
+        <label><!-- -D CA Pilot Program Timely Payments --></label>
+        <name>nSBA__CA_Pilot_Program_Timely_Payments__c</name>
+    </fields>
+    <fields>
+        <help><!-- List of all California Counties where pledged collateral is located. This field is used in SBA Loan Authorization only. --></help>
+        <label><!-- CA Residential Collateral County List --></label>
+        <name>nSBA__CA_Residential_Collateral_County_List__c</name>
+    </fields>
+    <fields>
+        <help><!-- Certifications and Agreements Open Options - prior to disbursement section. This field is used in SBA Loan Authorization only. --></help>
+        <label><!-- Certs and Agreements Open Options 1 --></label>
+        <name>nSBA__Certs_And_Agreements_Open_Options_1__c</name>
+    </fields>
+    <fields>
+        <help><!-- Certifications and Agreements Open Options. This field is used in SBA Loan Authorization only. --></help>
+        <label><!-- Certs and Agreements Open Options 2 --></label>
+        <name>nSBA__Certs_And_Agreements_Open_Options_2__c</name>
+    </fields>
+    <fields>
+        <help><!-- The Change Will Promote Development Or Preserve Existence --></help>
+        <label><!-- Change Will Promote Dev Or Preserve Bus --></label>
+        <name>nSBA__Change_Will_Promote_Dev_Or_Preserve_Bus__c</name>
+    </fields>
+    <fields>
+        <label><!-- -D Change Of Ownership --></label>
+        <name>nSBA__ChangeofOwnership__c</name>
+        <relationshipLabel><!-- -D Application --></relationshipLabel>
+    </fields>
+    <fields>
+        <help><!-- Individual that answered “Yes” has completed an SBA Form 912 AND Delegated Lender has cleared the loan for processing based on SOP 50 10 5 guidelines. (Only delegated lenders have authority to clear a loan for processing under these guidelines.) --></help>
+        <label><!-- Charge Was Single Misdemeanor --></label>
+        <name>nSBA__Charge_Was_Single_Misdemeanor__c</name>
+    </fields>
+    <fields>
+        <help><!-- Commercial Property Collateral Will Not Meet SBA Environmental Requirements --></help>
+        <label><!-- -D Comm Prop Collat Not Meet Env Reqs --></label>
+        <name>nSBA__Comm_Prop_Collat_Not_Meet_Env_Reqs__c</name>
+    </fields>
+    <fields>
+        <help><!-- If the loan is being processed through Community Advantage, SBA Form 2449, Community Advantage Addendum, must be completed and attached to SBA Form 1919, Borrower Information Form. --></help>
+        <label><!-- Community Advant Addendum Completed --></label>
+        <name>nSBA__Community_Advant_Addendum_Completed__c</name>
+    </fields>
+    <fields>
+        <help><!-- Community Improvements Do Not Exceed SBA Limit --></help>
+        <label><!-- -D Community Improve Not Exceed SBA Limi --></label>
+        <name>nSBA__Community_Improve_Not_Exceed_SBA_Limit__c</name>
+    </fields>
+    <fields>
+        <help><!-- Compensation Limitation Amount (total annual salaries, withdrawals or any remuneration to officers or owners of Borrower and OC, and their immediate family members) Borrower and OC to certify that they will not, without Lenders written consent be paid. --></help>
+        <label><!-- Compensation Limitation Amount --></label>
+        <name>nSBA__Compensation_Limitation_Amount__c</name>
+    </fields>
+    <fields>
+        <help><!-- Maximum number of months from the approval date of Authorization for completing disbursements. This field is used in SBA Loan Authorization only. --></help>
+        <label><!-- Complete Disbursement No Later Than --></label>
+        <name>nSBA__Complete_Disbursement_No_Later_Than__c</name>
+    </fields>
+    <fields>
+        <help><!-- Maximum number of months from the approval date of Authorization for completing disbursements. This field is used in SBA Loan Authorization only. --></help>
+        <label><!-- -D Complete Disbursement No Later Then --></label>
+        <name>nSBA__Complete_Disbursement_No_Later_Then__c</name>
+    </fields>
+    <fields>
+        <help><!-- This field is a picklist, used to specify the index the lending rate follows for the first rate. This field is used in SBA Loan Authorization only. --></help>
+        <label><!-- Complex Index 1 --></label>
+        <name>nSBA__Complex_Index_1__c</name>
+        <picklistValues>
+            <masterLabel>Fixed Interest</masterLabel>
+            <translation><!-- Fixed Interest --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Libor</masterLabel>
+            <translation><!-- Libor --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SBA Optional Peg Rate</masterLabel>
+            <translation><!-- SBA Optional Peg Rate --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>WSJP</masterLabel>
+            <translation><!-- WSJP --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- This field is a picklist, used to specify the index the lending rate follows for the second rate. This field is used in SBA Loan Authorization only. --></help>
+        <label><!-- Complex Index 2 --></label>
+        <name>nSBA__Complex_Index_2__c</name>
+        <picklistValues>
+            <masterLabel>Fixed Interest</masterLabel>
+            <translation><!-- Fixed Interest --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Libor</masterLabel>
+            <translation><!-- Libor --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SBA Optional Peg Rate</masterLabel>
+            <translation><!-- SBA Optional Peg Rate --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>WSJP</masterLabel>
+            <translation><!-- WSJP --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- This field is a percentage, used to specify the term interest on the first rate for this Loan. This field is used in SBA Loan Authorization only. --></help>
+        <label><!-- Complex Interest Rate 1 --></label>
+        <name>nSBA__Complex_Interest_Rate_1__c</name>
+    </fields>
+    <fields>
+        <help><!-- This field is a percentage, used to specify the term interest on the second rate for this Loan. This field is used in SBA Loan Authorization only. --></help>
+        <label><!-- Complex Interest Rate 2 --></label>
+        <name>nSBA__Complex_Interest_Rate_2__c</name>
+    </fields>
+    <fields>
+        <help><!-- This field is used to specify the percentage of interest rate applied to the loan in a split rate structure for the first rate. This field is used in SBA Loan Authorization only. --></help>
+        <label><!-- Complex Percentage Applied To Loan 1 --></label>
+        <name>nSBA__Complex_Percentage_Applied_To_Loan_1__c</name>
+    </fields>
+    <fields>
+        <help><!-- This field is used to specify the percentage of interest rate applied to the loan in a split rate structure for the second rate. This field is used in SBA Loan Authorization only. --></help>
+        <label><!-- Complex Percentage Applied To Loan 2 --></label>
+        <name>nSBA__Complex_Percentage_Applied_To_Loan_2__c</name>
+    </fields>
+    <fields>
+        <help><!-- Number of units that determines total length of first rate. This field is used in SBA Loan Authorization only. --></help>
+        <label><!-- Complex Period Length 1 --></label>
+        <name>nSBA__Complex_Period_Length_1__c</name>
+    </fields>
+    <fields>
+        <help><!-- Number of units that determines total length of second rate. This field is used in SBA Loan Authorization only. --></help>
+        <label><!-- -D Complex Period Length 2 --></label>
+        <name>nSBA__Complex_Period_Length_2__c</name>
+    </fields>
+    <fields>
+        <help><!-- Holds the units related to the number of Units for the first rate. This field is used in SBA Loan Authorization only. --></help>
+        <label><!-- Complex Period Unit 1 --></label>
+        <name>nSBA__Complex_Period_Unit_1__c</name>
+        <picklistValues>
+            <masterLabel>calendar quarter</masterLabel>
+            <translation><!-- calendar quarter --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>month(s)</masterLabel>
+            <translation><!-- month(s) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>quarter(s)</masterLabel>
+            <translation><!-- quarter(s) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>year(s)</masterLabel>
+            <translation><!-- year(s) --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- Holds the units related to the number of Units for the second rate. This field is used in SBA Loan Authorization only. --></help>
+        <label><!-- -D Complex Period Unit 2 --></label>
+        <name>nSBA__Complex_Period_Unit_2__c</name>
+        <picklistValues>
+            <masterLabel>calendar quarter</masterLabel>
+            <translation><!-- calendar quarter --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>month(s)</masterLabel>
+            <translation><!-- month(s) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>quarter(s)</masterLabel>
+            <translation><!-- quarter(s) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>year(s)</masterLabel>
+            <translation><!-- year(s) --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- This field is used to specify the interest percentage added to Pricing Spread for the first rate. This field is used in SBA Loan Authorization only. --></help>
+        <label><!-- Complex Spread (%) 1 --></label>
+        <name>nSBA__Complex_Spread_1__c</name>
+    </fields>
+    <fields>
+        <help><!-- This field is used to specify the interest percentage added to Pricing Spread for the second rate. This field is used in SBA Loan Authorization only. --></help>
+        <label><!-- Complex Spread (%) 2 --></label>
+        <name>nSBA__Complex_Spread_2__c</name>
+    </fields>
+    <fields>
+        <help><!-- Enter the list of corporation(s) that, prior to closing, Lender must obtain Consideration For Stock Purchase certificate from. This field is used in SBA Loan Authorization only. --></help>
+        <label><!-- Consideration For Stock Purchase List --></label>
+        <name>nSBA__Consideration_For_Stock_Purchase_List__c</name>
+    </fields>
+    <fields>
+        <help><!-- Construction Or The Refinancing Of The Construction For  New Building --></help>
+        <label><!-- For Construction Of New Building --></label>
+        <name>nSBA__Construction_For_New_Building__c</name>
+    </fields>
+    <fields>
+        <label><!-- Construction Total --></label>
+        <name>nSBA__Construction_Total__c</name>
+    </fields>
+    <fields>
+        <help><!-- Name of lender who provided construction interim financing without SBA Guarantee. This field is used in SBA Loan Authorization only. --></help>
+        <label><!-- Construction WO SBA Grnt Financed By --></label>
+        <name>nSBA__Construction_WO_SBA_Grnt_Financed_By__c</name>
+    </fields>
+    <fields>
+        <help><!-- Contract CAPLines Applicant Qualifies Under Standard 7a --></help>
+        <label><!-- Contract CAPLines Applicant Qualifies 7a --></label>
+        <name>nSBA__Contract_CAPLines_Applicant_Qualifies_7a__c</name>
+    </fields>
+    <fields>
+        <help><!-- Lender has assessed the borrower’s access to credit outside of this SBA-guaranteed loan and determined that such credit is not available elsewhere on reasonable terms from non-Federal sources. --></help>
+        <label><!-- Credit Elsewhere Test Passed --></label>
+        <name>nSBA__Credit_Elsewhere_Test_Passed__c</name>
+    </fields>
+    <fields>
+        <help><!-- The debt is an existing SBA loan that is not same institution debt and the lender or borrower has obtained evidence that the lender currently holding the debt is unwilling or unable to modify the current payment terms or provide an increase or a 2nd loan. --></help>
+        <label><!-- -D Debt Meets Requirements SBA Debt --></label>
+        <name>nSBA__Debt_Meets_Requirements_SBA_Debt__c</name>
+    </fields>
+    <fields>
+        <help><!-- The application is a Working Capital CAPLine, the debt is an existing SBA-guaranteed line of credit that is not with the requesting lender and all other requirements of debt refinancing in SOP 50 10 are met. --></help>
+        <label><!-- -D Debt Meets Requirements Working Capit --></label>
+        <name>nSBA__Debt_Meets_Requirements_Working_Capital__c</name>
+    </fields>
+    <fields>
+        <help><!-- Copy of all supporting documentation for each debt to be refinanced is included (note, security agreement, lease). For credit card debt copy of the most recent credit card statement was provided, evidencing the name the debt is in and the current balance. --></help>
+        <label><!-- Debt Ref All Supporting Docs Included --></label>
+        <name>nSBA__Debt_Ref_All_Supporting_Docs_Included__c</name>
+    </fields>
+    <fields>
+        <help><!-- Please confirm that you have included complete business debt schedule that matches the most current interim business financial statement. --></help>
+        <label><!-- Debt Ref Biz Debt Schedule Included --></label>
+        <name>nSBA__Debt_Ref_Biz_Debt_Schedule_Included__c</name>
+    </fields>
+    <fields>
+        <help><!-- Individual that answered “Yes” has completed an SBA Form 912 AND Delegated Lender has cleared the loan for processing based on SOP 50 10 5 guidelines. (Only delegated lenders have authority to clear a loan for processing under these guidelines.) --></help>
+        <label><!-- -D Delegated Lender Cleared Character --></label>
+        <name>nSBA__Delegated_Lender_Cleared_Character__c</name>
+    </fields>
+    <fields>
+        <help><!-- Lender has explained its determination in its credit memorandum. For delegated loans, Lender has retained all supporting documentation in its file. For non-delegated loans, lender has submitted the agreement and any other documentation to LGPC. --></help>
+        <label><!-- -D Determination Explained In Credit Mem --></label>
+        <name>nSBA__Determination_Explained_In_Credit_Memo__c</name>
+    </fields>
+    <fields>
+        <help><!-- List all names that must be covered by Disability Insurance in an amount and insurance company satisfactory to lender. This field is used in SBA Loan Authorization only. --></help>
+        <label><!-- Disability Insurance List Of Names --></label>
+        <name>nSBA__Disability_Insurance_List_Of_Names__c</name>
+    </fields>
+    <fields>
+        <help><!-- One or more applicant brands meet the FTC definition of a franchise. --></help>
+        <label><!-- -D Does Meet FTC Franchise Definition --></label>
+        <name>nSBA__Does_Meet_FTC_Franchise_Definition__c</name>
+    </fields>
+    <fields>
+        <help><!-- One or more applicant brands does not meet the FTC definition of a franchise. --></help>
+        <label><!-- -D Does Not Meet FTC Franchise Definitio --></label>
+        <name>nSBA__Does_Not_Meet_FTC_Franchise_Definition__c</name>
+    </fields>
+    <fields>
+        <help><!-- EPC And OC 20 Percent OR More Owners Guarantee The Loan --></help>
+        <label><!-- -D EPC And OC 20 Percent Guarantee Loan --></label>
+        <name>nSBA__EPC_And_OC_20_Percent_Guarantee_Loan__c</name>
+    </fields>
+    <fields>
+        <label><!-- -D EPC And OC Pass SBA Size Standard --></label>
+        <name>nSBA__EPC_And_OC_Pass_SBA_Size_Standard__c</name>
+    </fields>
+    <fields>
+        <help><!-- EPC Will Lease 100 Of Loan Proceeds Property To OC --></help>
+        <label><!-- -D EPC Will Lease 100 Of Loan Proceed To --></label>
+        <name>nSBA__EPC_Will_Lease_100_Of_Loan_Proceed_To_OC__c</name>
+    </fields>
+    <fields>
+        <help><!-- Lender Official that will be assigned as Lender Alternative Contact during E-Tran Submission. --></help>
+        <label><!-- E-Tran Alternative Lender Contact --></label>
+        <name>nSBA__ETran_Lender_Alternative_Contact__c</name>
+        <relationshipLabel><!-- Applications (E-Tran Alternative Lender Contact) --></relationshipLabel>
+    </fields>
+    <fields>
+        <help><!-- EWCP If Applicant Is EMC Or ETC SBA Requirements Are Met --></help>
+        <label><!-- EWCP If Applicant Is EMC Or ETC --></label>
+        <name>nSBA__EWCP_If_Applicant_Is_EMC_Or_ETC__c</name>
+    </fields>
+    <fields>
+        <help><!-- Indicates where this loan is structured with disbursement occurring after shipment. --></help>
+        <label><!-- EWCP Post Shipment --></label>
+        <name>nSBA__EWCP_Post_Shipment__c</name>
+    </fields>
+    <fields>
+        <help><!-- Indicates whether loan is structured with a single or multiple loan disbursements. --></help>
+        <label><!-- EWCP Single Transaction --></label>
+        <name>nSBA__EWCP_Single_Transaction__c</name>
+    </fields>
+    <fields>
+        <label><!-- -D Eligibility Affiliates --></label>
+        <name>nSBA__Eligibility_Affiliates__c</name>
+    </fields>
+    <fields>
+        <help><!-- Eligibility SBA Size Standard Exceeded Within Limits Agrees To Use Labor Surplus Area --></help>
+        <label><!-- Eligibility Exceeds Size Within Limits --></label>
+        <name>nSBA__Eligibility_Exceeds_Size_Within_Limits__c</name>
+    </fields>
+    <fields>
+        <help><!-- Eligibility Franchise Documentation Submitted To Lpgc --></help>
+        <label><!-- -D Eligibility Franchise Docs Submit Lpg --></label>
+        <name>nSBA__Eligibility_Franchise_Docs_Submit_Lpgc__c</name>
+    </fields>
+    <fields>
+        <label><!-- -D Eligibility Franchise Listed In Regis --></label>
+        <name>nSBA__Eligibility_Franchise_Listed_In_Registry__c</name>
+    </fields>
+    <fields>
+        <label><!-- -D Eligibility Franchisor Not Affiliated --></label>
+        <name>nSBA__Eligibility_Franchisor_Not_Affiliated__c</name>
+    </fields>
+    <fields>
+        <help><!-- Franchisor Has Right To Profit And Risk --></help>
+        <label><!-- -D Franchisor Has Right To Profit And Ri --></label>
+        <name>nSBA__Eligibility_Franchisor_Profit_Risk_Right__c</name>
+    </fields>
+    <fields>
+        <help><!-- Submitted Under Lenders Delegated Authority Indicator --></help>
+        <label><!-- -D Eligibility Lenders Delegated Authori --></label>
+        <name>nSBA__Eligibility_Lenders_Delegated_Authority__c</name>
+    </fields>
+    <fields>
+        <help><!-- Eligibility Meets Alternative SBA Size Standard --></help>
+        <label><!-- Eligibility Meets Alternative SBA Size --></label>
+        <name>nSBA__Eligibility_Meets_Alternative_SBA_Size__c</name>
+    </fields>
+    <fields>
+        <label><!-- Eligibility Meets SBA Size Standard --></label>
+        <name>nSBA__Eligibility_Meets_SBA_Size_Standard__c</name>
+    </fields>
+    <fields>
+        <help><!-- Eligibility Operating US Bus For Profit No Credit Elsewhere --></help>
+        <label><!-- Eligibility Operate US Bus For Profit --></label>
+        <name>nSBA__Eligibility_Operate_US_Bus_For_Profit__c</name>
+    </fields>
+    <fields>
+        <label><!-- Eligibility Products Available To Public --></label>
+        <name>nSBA__Eligibility_Products_Available_To_Public__c</name>
+    </fields>
+    <fields>
+        <help><!-- Check for regular non-PLP loans when Lender did not submit the results of the Environmental Investigation. This field is used in SBA Loan Authorization only. --></help>
+        <label><!-- Env Investigation Results Submitted --></label>
+        <name>nSBA__Env_Investigation_Results_Submitted__c</name>
+    </fields>
+    <fields>
+        <help><!-- List Environmental Requirements Open Options here. This field is used in SBA Loan Authorization only. --></help>
+        <label><!-- Environmental Requirements Open Options --></label>
+        <name>nSBA__Environmental_Requirements_Open_Options__c</name>
+    </fields>
+    <fields>
+        <help><!-- Check if Environmental Requirements Required (for all commercial real property). This field is used in SBA Loan Authorization only. --></help>
+        <label><!-- Environmental Requirements Required --></label>
+        <name>nSBA__Environmental_Requirements_Required__c</name>
+    </fields>
+    <fields>
+        <help><!-- Evidence that seller has complied with Bulk Sales or Transfer provisions of state law, if applicable, or has arranged to protect Borrower’s purchased assets from claims of seller’s creditors. This field is used in SBA Loan Authorization only. --></help>
+        <label><!-- Evidence Of Bulk Sales Or Transfer --></label>
+        <name>nSBA__Evidence_Of_Bulk_Sales_Or_Transfer__c</name>
+    </fields>
+    <fields>
+        <help><!-- Existing Debt No Longer Meets Applicant needs --></help>
+        <label><!-- Existing Debt Doesnt Meet Needs --></label>
+        <name>nSBA__Existing_Debt_Not_Meet_Applicant_Needs__c</name>
+    </fields>
+    <fields>
+        <help><!-- Form 1920 - Page 2 - Use of Proceeds - Expansion Construction Indicator (in thousands) --></help>
+        <label><!-- Expansion Construction --></label>
+        <name>nSBA__Expansion_Construction__c</name>
+    </fields>
+    <fields>
+        <help><!-- Export Express At Least 12 months Old Business or Experienced Employees --></help>
+        <label><!-- Export Exp 12m Old Bus Or Experience --></label>
+        <name>nSBA__Export_Exp_12m_Old_Bus_Or_Experience__c</name>
+    </fields>
+    <fields>
+        <help><!-- Export Express For Export Development Activities --></help>
+        <label><!-- Export Exp For Export Dev Activities --></label>
+        <name>nSBA__Export_Exp_For_Export_Dev_Activities__c</name>
+    </fields>
+    <fields>
+        <help><!-- Export Express If Financing Specific Transactions Lender Determined Applicant Is Authorized To Conduct Business --></help>
+        <label><!-- If Authorized to Conduct Business --></label>
+        <name>nSBA__Export_Exp_If_Authorized_to_Conduct_Bus__c</name>
+    </fields>
+    <fields>
+        <help><!-- Export Express If Financing Indirect Certification Provided --></help>
+        <label><!-- Export Exp If Fin Indirect Cert Provided --></label>
+        <name>nSBA__Export_Exp_If_Fin_Indirect_Cert_Provided__c</name>
+    </fields>
+    <fields>
+        <help><!-- Export Express Loan Will Not Refinance SBA Loan --></help>
+        <label><!-- Export Exp Loan Will Not Refi SBA Loan --></label>
+        <name>nSBA__Export_Exp_Loan_Will_Not_Refi_SBA_Loan__c</name>
+    </fields>
+    <fields>
+        <help><!-- Export Express New Market Or Expanding Existing Market --></help>
+        <label><!-- -D Export Exp New Mkt Or Expand Exist Mk --></label>
+        <name>nSBA__Export_Exp_New_Mkt_Or_Expand_Exist_Mkt__c</name>
+    </fields>
+    <fields>
+        <help><!-- Export Express No Financing Overseas Operations Except Marketing And Distribution --></help>
+        <label><!-- Export Exp No Fin Overseas Ops Except --></label>
+        <name>nSBA__Export_Exp_No_Fin_Overseas_Ops_Except__c</name>
+    </fields>
+    <fields>
+        <help><!-- Users populate this optional field with the estimated amount of the extraordinary servicing fee for the duration of the loan. Lender may charge an extraordinary servicing fee for the outstanding balance on the part requiring special servicing. --></help>
+        <label><!-- Extraordinary Servicing Fee Amount --></label>
+        <name>nSBA__Extraordinary_Servicing_Fee_Amount__c</name>
+    </fields>
+    <fields>
+        <help><!-- Indicator to certify or Do not certify that The Extraordinary Servicing fee is reasonable and prudent. --></help>
+        <label><!-- Extraordinary Servicing Fee Certified --></label>
+        <name>nSBA__Extraordinary_Servicing_Fee_Certified__c</name>
+    </fields>
+    <fields>
+        <help><!-- An extraordinary servicing fee may be charged for the outstanding balance on the part requiring special servicing. Users populate this optional field with the extraordinary servicing fee yearly percentage. --></help>
+        <label><!-- Extraordinary Servicing Fee Percent --></label>
+        <name>nSBA__Extraordinary_Servicing_Fee_Percent__c</name>
+    </fields>
+    <fields>
+        <help><!-- If you have complex interest rate for the loan dna the second interest rate is variable, please enter first rate adjustment date for the second interest rate. --></help>
+        <label><!-- First Rate Adjustment Date - Phase 2 --></label>
+        <name>nSBA__First_Rate_Adjustment_Date_Phase_2__c</name>
+    </fields>
+    <fields>
+        <help><!-- If interest rate is variable, please enter first rate adjustment date. If you have complex interest rate for the loan, please enter first rate adjustment date for the first interest rate. --></help>
+        <label><!-- First Rate Adjustment Date --></label>
+        <name>nSBA__First_Rate_Adjustment_Date__c</name>
+    </fields>
+    <fields>
+        <help><!-- Fixed Asset Limitation Amount per year that Lender requires Borrower and Operating Company to certify that they will not, without Lender’s prior written consent purchase or lease agreement any fixed assets above it. --></help>
+        <label><!-- Fixed Asset Limitation Amount --></label>
+        <name>nSBA__Fixed_Asset_Limitation_Amount__c</name>
+    </fields>
+    <fields>
+        <help><!-- Date when Form 1050 was executed by Borrower --></help>
+        <label><!-- Form 1050 Borrower Execution Date --></label>
+        <name>nSBA__Form_1050_Borrower_Signature_Date__c</name>
+    </fields>
+    <fields>
+        <help><!-- Date when Form 1050 was executed by Lender --></help>
+        <label><!-- Form 1050 Lender Execution Date --></label>
+        <name>nSBA__Form_1050_Lender_Signature_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Agent Business City --></label>
+        <name>nSBA__Form_159_Agent_Business_City__c</name>
+    </fields>
+    <fields>
+        <label><!-- -D Agent Business State --></label>
+        <name>nSBA__Form_159_Agent_Business_State_2__c</name>
+        <picklistValues>
+            <masterLabel>AK</masterLabel>
+            <translation><!-- AK --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>AL</masterLabel>
+            <translation><!-- AL --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>AR</masterLabel>
+            <translation><!-- AR --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>AZ</masterLabel>
+            <translation><!-- AZ --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CA</masterLabel>
+            <translation><!-- CA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CO</masterLabel>
+            <translation><!-- CO --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CT</masterLabel>
+            <translation><!-- CT --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>DC</masterLabel>
+            <translation><!-- DC --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>DE</masterLabel>
+            <translation><!-- DE --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>FL</masterLabel>
+            <translation><!-- FL --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>GA</masterLabel>
+            <translation><!-- GA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>HI</masterLabel>
+            <translation><!-- HI --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>IA</masterLabel>
+            <translation><!-- IA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ID</masterLabel>
+            <translation><!-- ID --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>IL</masterLabel>
+            <translation><!-- IL --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>IN</masterLabel>
+            <translation><!-- IN --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>KS</masterLabel>
+            <translation><!-- KS --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>KY</masterLabel>
+            <translation><!-- KY --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>LA</masterLabel>
+            <translation><!-- LA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MA</masterLabel>
+            <translation><!-- MA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MD</masterLabel>
+            <translation><!-- MD --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ME</masterLabel>
+            <translation><!-- ME --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MI</masterLabel>
+            <translation><!-- MI --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MN</masterLabel>
+            <translation><!-- MN --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MO</masterLabel>
+            <translation><!-- MO --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MS</masterLabel>
+            <translation><!-- MS --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MT</masterLabel>
+            <translation><!-- MT --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>NC</masterLabel>
+            <translation><!-- NC --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ND</masterLabel>
+            <translation><!-- ND --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>NE</masterLabel>
+            <translation><!-- NE --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>NH</masterLabel>
+            <translation><!-- NH --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>NM</masterLabel>
+            <translation><!-- NM --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>NV</masterLabel>
+            <translation><!-- NV --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>NY</masterLabel>
+            <translation><!-- NY --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>OH</masterLabel>
+            <translation><!-- OH --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>OK</masterLabel>
+            <translation><!-- OK --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>OR</masterLabel>
+            <translation><!-- OR --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>PA</masterLabel>
+            <translation><!-- PA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>RI</masterLabel>
+            <translation><!-- RI --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SC</masterLabel>
+            <translation><!-- SC --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SD</masterLabel>
+            <translation><!-- SD --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>TN</masterLabel>
+            <translation><!-- TN --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>TX</masterLabel>
+            <translation><!-- TX --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>UT</masterLabel>
+            <translation><!-- UT --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>VA</masterLabel>
+            <translation><!-- VA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>VT</masterLabel>
+            <translation><!-- VT --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>WA</masterLabel>
+            <translation><!-- WA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>WI</masterLabel>
+            <translation><!-- WI --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>WV</masterLabel>
+            <translation><!-- WV --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>WY</masterLabel>
+            <translation><!-- WY --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- -D Agent Business State --></label>
+        <name>nSBA__Form_159_Agent_Business_State__c</name>
+    </fields>
+    <fields>
+        <label><!-- -D Agent Business Street --></label>
+        <name>nSBA__Form_159_Agent_Business_Street__c</name>
+    </fields>
+    <fields>
+        <label><!-- -D Agent Business Zipcode --></label>
+        <name>nSBA__Form_159_Agent_Business_Zipcode__c</name>
+    </fields>
+    <fields>
+        <help><!-- Contact person for agent performing services. --></help>
+        <label><!-- Agent Contact Person --></label>
+        <name>nSBA__Form_159_Agent_Contact_Person__c</name>
+    </fields>
+    <fields>
+        <help><!-- Lender Service Provider Contact Information - Email --></help>
+        <label><!-- Agent Providing Services Email --></label>
+        <name>nSBA__Form_159_Agent_Providing_Services_Email__c</name>
+    </fields>
+    <fields>
+        <help><!-- Lender Service Provider Contact Information - Fax --></help>
+        <label><!-- Agent Providing Services Fax --></label>
+        <name>nSBA__Form_159_Agent_Providing_Services_Fax__c</name>
+    </fields>
+    <fields>
+        <help><!-- Lender Service Provider Contact Information - Phone --></help>
+        <label><!-- Agent Providing Services Phone --></label>
+        <name>nSBA__Form_159_Agent_Providing_Services_Phone__c</name>
+    </fields>
+    <fields>
+        <help><!-- Title of agent representative who is signing SBA Form 159 for applicant. --></help>
+        <label><!-- Agent Representative Title --></label>
+        <name>nSBA__Form_159_Agent_Representative_Title__c</name>
+    </fields>
+    <fields>
+        <label><!-- Agent Signature Date --></label>
+        <name>nSBA__Form_159_Agent_Signature_Date__c</name>
+    </fields>
+    <fields>
+        <help><!-- Type of Agent performing loan services that were documented on SBA Form 159. --></help>
+        <label><!-- Type of Agent --></label>
+        <name>nSBA__Form_159_Agent_Type__c</name>
+        <picklistValues>
+            <masterLabel>Accountant preparing financial statements</masterLabel>
+            <translation><!-- Accountant preparing financial statements --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Consultant</masterLabel>
+            <translation><!-- Consultant --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Independent Loan Packager</masterLabel>
+            <translation><!-- Independent Loan Packager --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Other</masterLabel>
+            <translation><!-- Other --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Referral Agent or Broker</masterLabel>
+            <translation><!-- Referral Agent or Broker --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SBA Lender</masterLabel>
+            <translation><!-- SBA Lender --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Third Party Lender</masterLabel>
+            <translation><!-- Third Party Lender --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- Title of applicant representative who is signing SBA Form 159 for applicant. --></help>
+        <label><!-- Applicant Representative Title --></label>
+        <name>nSBA__Form_159_Applicant_Representative_Title__c</name>
+    </fields>
+    <fields>
+        <label><!-- Applicant Signature Date --></label>
+        <name>nSBA__Form_159_Applicant_Signature_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Business Name of Agent --></label>
+        <name>nSBA__Form_159_Business_Name_of_Agent__c</name>
+    </fields>
+    <fields>
+        <label><!-- -D Business Name of Referral Agent --></label>
+        <name>nSBA__Form_159_Business_Name_of_Referral_Agent__c</name>
+    </fields>
+    <fields>
+        <help><!-- Indicates if fee itemization report is sent along with SBA Form 159. --></help>
+        <label><!-- Is Fee Itemization Attached --></label>
+        <name>nSBA__Form_159_Is_Fee_Itemization_Attached__c</name>
+    </fields>
+    <fields>
+        <help><!-- Indicates if the fee documented on SBA Form 159 is paid by Applicant. If false, the fee is paid by Lender. --></help>
+        <label><!-- Is Fee Paid by Applicant --></label>
+        <name>nSBA__Form_159_Is_Fee_Paid_By_Applicant__c</name>
+    </fields>
+    <fields>
+        <help><!-- Loan officer who is signing SBA Form 159. --></help>
+        <label><!-- Lender Representative Signing Form 159 --></label>
+        <name>nSBA__Form_159_Lender_Representative_Signing__c</name>
+        <relationshipLabel><!-- Applications (Lender Representative Signing Form 159) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Lender Signature Date --></label>
+        <name>nSBA__Form_159_Lender_Signature_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Name Of Agent Providing Service --></label>
+        <name>nSBA__Form_159_Name_Of_Agent_Providing_Service__c</name>
+    </fields>
+    <fields>
+        <label><!-- -D Name Of Lender Person Signing --></label>
+        <name>nSBA__Form_159_Name_Of_Lender_Person_Signing__c</name>
+    </fields>
+    <fields>
+        <label><!-- Person Signing For Applicant --></label>
+        <name>nSBA__Form_159_Person_Signing_For_Applicant__c</name>
+    </fields>
+    <fields>
+        <label><!-- Person Signing For Referral Agent --></label>
+        <name>nSBA__Form_159_Person_Signing_For_Referral_Agt__c</name>
+    </fields>
+    <fields>
+        <label><!-- -D Referral Agent Business City --></label>
+        <name>nSBA__Form_159_Referral_Agent_Business_City__c</name>
+    </fields>
+    <fields>
+        <label><!-- -D Referral Agent Business State --></label>
+        <name>nSBA__Form_159_Referral_Agent_Business_State__c</name>
+    </fields>
+    <fields>
+        <label><!-- -D Referral Agent Business Street --></label>
+        <name>nSBA__Form_159_Referral_Agent_Business_Street__c</name>
+    </fields>
+    <fields>
+        <label><!-- -D Referral Agent Business Zipcode --></label>
+        <name>nSBA__Form_159_Referral_Agent_Business_Zipcode__c</name>
+    </fields>
+    <fields>
+        <help><!-- Type of Service documented on SBA Form 159. --></help>
+        <label><!-- Type of Service --></label>
+        <name>nSBA__Form_159_Service_Type__c</name>
+        <picklistValues>
+            <masterLabel>Broker or Referral services</masterLabel>
+            <translation><!-- Broker or Referral services --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Consultant services</masterLabel>
+            <translation><!-- Consultant services --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Financial statement preparation</masterLabel>
+            <translation><!-- Financial statement preparation --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Loan packaging</masterLabel>
+            <translation><!-- Loan packaging --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Other</masterLabel>
+            <translation><!-- Other --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Form 1846 Lender Official Signature Date --></label>
+        <name>nSBA__Form_1846_Lender_Official_Signature_Date__c</name>
+    </fields>
+    <fields>
+        <help><!-- (ONLY FOR PLP SUBMISSIONS) Name and title of Approving/Certifying Lender Official signing Form 1846 --></help>
+        <label><!-- Form 1846 Lender Official Signing --></label>
+        <name>nSBA__Form_1846_Lender_Official_Signing__c</name>
+        <relationshipLabel><!-- Applications (Form 1846 Lender Official Signing) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- -D Form 1846 Lender Official --></label>
+        <name>nSBA__Form_1846_Lender_Official__c</name>
+    </fields>
+    <fields>
+        <label><!-- Form 1920 Approve Lender Offic Sign Date --></label>
+        <name>nSBA__Form_1920_Approve_Lender_Offic_Sign_Date__c</name>
+    </fields>
+    <fields>
+        <help><!-- (ONLY FOR PLP SUBMISSIONS) Name and title of Approving/Certifying Lender Official signing Form 1920 --></help>
+        <label><!-- Form 1920 Lender Official Approving --></label>
+        <name>nSBA__Form_1920_Lender_Official_Approving__c</name>
+        <relationshipLabel><!-- Applications (Form 1920 Lender Official Approving) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Form 1920 Lender Official Signature Date --></label>
+        <name>nSBA__Form_1920_Lender_Official_Signature_Date__c</name>
+    </fields>
+    <fields>
+        <help><!-- (ONLY FOR PLP SUBMISSIONS) Name and title of Approving/Certifying Lender Official signing Form 1920 --></help>
+        <label><!-- Form 1920 Lender Official Signing --></label>
+        <name>nSBA__Form_1920_Lender_Official_Signing__c</name>
+        <relationshipLabel><!-- Applications (Form 1920 Lender Official Signing) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Form 601 Execution Date --></label>
+        <name>nSBA__Form_601_Execution_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Form 652 Execution Date --></label>
+        <name>nSBA__Form_652_Execution_Date__c</name>
+    </fields>
+    <fields>
+        <help><!-- Check to give Lender 30 days notice of intent to terminate the Franchise Agreement. This field is used in SBA Loan Authorization only. --></help>
+        <label><!-- Franchise Agreement Termination Notice --></label>
+        <name>nSBA__Franchise_Agreement_Termination_Notice__c</name>
+    </fields>
+    <fields>
+        <help><!-- Lender has determined that all of Applicant brands are eligible for SBA financial assistance. --></help>
+        <label><!-- -D Franchise Eligible For SBA Assistance --></label>
+        <name>nSBA__Franchise_Eligible_For_SBA_Assistance__c</name>
+    </fields>
+    <fields>
+        <help><!-- Enter how many months upon Loan payment default or deferment, to defer payment of franchise fees, royalties, advertising, and other fees until Borrower brings Loan payments current. This field is used in SBA Loan Authorization only. --></help>
+        <label><!-- Franchise Fees Payment Deferred In Mnths --></label>
+        <name>nSBA__Franchise_Fees_Payment_Deferred_In_Mnths__c</name>
+    </fields>
+    <fields>
+        <help><!-- List all vessel(s) that must be covered by Full Marine Insurance in the amount of the full insurable value with lender designated as mortgagee. This field is used in SBA Loan Authorization only. --></help>
+        <label><!-- Full Marine Insurance Vessel List --></label>
+        <name>nSBA__Full_Marine_Insurance_Vessel_List__c</name>
+    </fields>
+    <fields>
+        <help><!-- This value is calculated by taking the CDC Funding Fee(loan amount) --></help>
+        <label><!-- Funding Fee Amount --></label>
+        <name>nSBA__Funding_Fee_Amount__c</name>
+    </fields>
+    <fields>
+        <help><!-- CDC funding fee percentage. --></help>
+        <label><!-- Funding Fee Percentage --></label>
+        <name>nSBA__Funding_Fee_Percentage__c</name>
+    </fields>
+    <fields>
+        <help><!-- If Building Will Contain Rental Space Is Occupied by SBA Regulations --></help>
+        <label><!-- -D If Building Has Rent Space SBA Compli --></label>
+        <name>nSBA__If_Building_Has_Rent_Space_SBA_Compliant__c</name>
+    </fields>
+    <fields>
+        <help><!-- Community Adjustment and Investment Program (CAIP) loan eligible to be processed under the PLP lender&apos;s delegated authority? Answer only for CAIP loans. --></help>
+        <label><!-- Information Is True And Correct --></label>
+        <name>nSBA__Information_Is_True_And_Correct__c</name>
+    </fields>
+    <fields>
+        <help><!-- Maximum number of months from the approval date of Authorization for making initial disbursement. Fill in only for DFP loans. This field is used in SBA Loan Authorization only. --></help>
+        <label><!-- Initial Disbursement No Later Than --></label>
+        <name>nSBA__Initial_Disbursement_No_Later_Than__c</name>
+    </fields>
+    <fields>
+        <help><!-- Maximum number of months from the approval date of Authorization for making initial disbursement. Fill in only for DFP loans. This field is used in SBA Loan Authorization only. --></help>
+        <label><!-- -D Initial Disbursement No Later Then --></label>
+        <name>nSBA__Initial_Disbursement_No_Later_Then__c</name>
+    </fields>
+    <fields>
+        <help><!-- Indicates whether this loan application requires an injection of funds --></help>
+        <label><!-- Injection Indication --></label>
+        <name>nSBA__Injection_Indication__c</name>
+    </fields>
+    <fields>
+        <help><!-- List all Insurance Requirements Open Options here. This field is used in SBA Loan Authorization only. --></help>
+        <label><!-- Insurance Requirements Open Options --></label>
+        <name>nSBA__Insurance_Requirements_Open_Options__c</name>
+    </fields>
+    <fields>
+        <help><!-- Intangible Assets Above 500000 And Borrower And Seller Contributing 25 Percent --></help>
+        <label><!-- -D Intangible Assets Above 500000 And Ot --></label>
+        <name>nSBA__Intangible_Assets_Above_500000_And_Other__c</name>
+    </fields>
+    <fields>
+        <label><!-- -D Intangible Assets Not Above 500000 --></label>
+        <name>nSBA__Intangible_Assets_Not_Above_500000__c</name>
+    </fields>
+    <fields>
+        <help><!-- Holds the number of Units between two interest only payments. This field is used in SBA Loan Authorization only. --></help>
+        <label><!-- Interest Only Months Frequency --></label>
+        <name>nSBA__Interest_Only_Months_Frequency__c</name>
+    </fields>
+    <fields>
+        <help><!-- Holds the number of Units when interest only portion of the loan payment starts. This field is used in SBA Loan Authorization only. --></help>
+        <label><!-- Interest Only Payments Starts Frequency --></label>
+        <name>nSBA__Interest_Only_Payment_Starts_Frequency__c</name>
+    </fields>
+    <fields>
+        <label><!-- -D Interest Only Payment Starts Months --></label>
+        <name>nSBA__Interest_Only_Payment_Starts_Months__c</name>
+    </fields>
+    <fields>
+        <help><!-- Holds the units related to number of Units when interest only portion of the loan payment starts. This field is used in SBA Loan Authorization only. --></help>
+        <label><!-- Interest Only Payment Starts Unit --></label>
+        <name>nSBA__Interest_Only_Payment_Starts_Unit__c</name>
+        <picklistValues>
+            <masterLabel>calendar quarter</masterLabel>
+            <translation><!-- calendar quarter --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>month(s)</masterLabel>
+            <translation><!-- month(s) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>quarter</masterLabel>
+            <translation><!-- quarter --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- Interest Only Payment Unit related to the number of Units between two interest only payments. This field is used in SBA Loan Authorization only. --></help>
+        <label><!-- Interest Only Payment Unit --></label>
+        <name>nSBA__Interest_Only_Payment_Unit__c</name>
+        <picklistValues>
+            <masterLabel>every calendar quarter</masterLabel>
+            <translation><!-- every calendar quarter --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>every quarter</masterLabel>
+            <translation><!-- every quarter --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>every year</masterLabel>
+            <translation><!-- every year --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>month(s)</masterLabel>
+            <translation><!-- month(s) --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- Day of the month when loan interest payments are due. Select ______ calendar day to fill it in after Loan Authorization Draft is generated. This field is used in SBA Loan Authorization only. --></help>
+        <label><!-- Interest Payments Due Day of Month --></label>
+        <name>nSBA__Interest_Payments_Due_Day_Of_Month__c</name>
+        <picklistValues>
+            <masterLabel>______ calendar day</masterLabel>
+            <translation><!-- ______ calendar day --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>first calendar day</masterLabel>
+            <translation><!-- first calendar day --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>same day as the date of initial disbursement on this Note</masterLabel>
+            <translation><!-- same day as the date of initial disbursement on this Note --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>same day as the date of this Note</masterLabel>
+            <translation><!-- same day as the date of this Note --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>second calendar day</masterLabel>
+            <translation><!-- second calendar day --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>third calendar day</masterLabel>
+            <translation><!-- third calendar day --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- Use this field to describe any additional information related to interest rates you wish to provide, such as Interest Only or skip periods. --></help>
+        <label><!-- -D Interest Rate Additional Details --></label>
+        <name>nSBA__Interest_Rate_Additional_Details__c</name>
+    </fields>
+    <fields>
+        <help><!-- International Trade Collateral Is Located In US Its Territories And Possessions --></help>
+        <label><!-- Intl Trade Collateral Located In US --></label>
+        <name>nSBA__Intl_Trade_Collateral_Located_In_US__c</name>
+    </fields>
+    <fields>
+        <help><!-- International Trade Lender Will Take Collateral According To SBA Regulations --></help>
+        <label><!-- Intl Trade Lender Will Take Collateral --></label>
+        <name>nSBA__Intl_Trade_Lender_Will_Take_Collateral__c</name>
+    </fields>
+    <fields>
+        <help><!-- International Trade No Restrictions With Any Country Applicant Does Business With --></help>
+        <label><!-- Intl Trade No Restricts With Any Country --></label>
+        <name>nSBA__Intl_Trade_No_Restricts_With_Any_Country__c</name>
+    </fields>
+    <fields>
+        <help><!-- International Trade Small Business Either Position To Expand Or Confronting Increased Competition --></help>
+        <label><!-- Intl Trade Small Bus Expand Or Compete --></label>
+        <name>nSBA__Intl_Trade_Small_Bus_Expand_Or_Compete__c</name>
+    </fields>
+    <fields>
+        <help><!-- International Trade Use Of Proceeds Eligible --></help>
+        <label><!-- Intl Trade Use Of Proceeds Eligible --></label>
+        <name>nSBA__Intl_Trade_Use_Of_Proceeds_Eligible__c</name>
+    </fields>
+    <fields>
+        <help><!-- The debt is an existing SBA-guaranteed loan that is same institution debt that has been sold on the secondary market and the investor is unwilling to agree to modified terms. --></help>
+        <label><!-- -D Investor Don&apos;t Agree With New Te --></label>
+        <name>nSBA__Investor_Dont_Agree_With_New_Terms__c</name>
+    </fields>
+    <fields>
+        <help><!-- Check if Lender and SBA can have access to Franchisor’s books and records relating to Borrower’s billing, collections and receivables. This field is used in SBA Loan Authorization only. --></help>
+        <label><!-- Is Access To Franchisors Books Provided --></label>
+        <name>nSBA__Is_Access_To_Franchisors_Books_Provided__c</name>
+    </fields>
+    <fields>
+        <help><!-- Acquisition Of Land Or Existing Building Or Renovation Of Existing Building --></help>
+        <label><!-- Is To Acquire Land Or Building Or Reno --></label>
+        <name>nSBA__Is_Acq_Land_Or_Exist_Build_Or_Renovation__c</name>
+    </fields>
+    <fields>
+        <label><!-- -D Is Agent Independent Loan Packager --></label>
+        <name>nSBA__Is_Agent_Independent_Loan_Packager__c</name>
+    </fields>
+    <fields>
+        <label><!-- Is Agent Involved --></label>
+        <name>nSBA__Is_Agent_Involved__c</name>
+    </fields>
+    <fields>
+        <help><!-- Is Any Of Gross Revenue Derived From Gambling --></help>
+        <label><!-- -D Is Any Of Gross Revenue From Gambling --></label>
+        <name>nSBA__Is_Any_Of_Gross_Revenue_From_Gambling__c</name>
+    </fields>
+    <fields>
+        <help><!-- Is Applicant Qualified Employee Trust ESOP Loan Proceeds Eligible --></help>
+        <label><!-- Is App Qualified Emp Trust ESOP Eligible --></label>
+        <name>nSBA__Is_App_Qualified_Emp_Trust_ESOP_Eligible__c</name>
+    </fields>
+    <fields>
+        <help><!-- Is Applicant Qualified Employee Trust ESOP And Loan Will Help Financial Growth --></help>
+        <label><!-- Is App Qualified Emp Trust ESOP Fin Grow --></label>
+        <name>nSBA__Is_App_Qualified_Emp_Trust_ESOP_Fin_Grow__c</name>
+    </fields>
+    <fields>
+        <help><!-- Is Applicant Qualified Employee Trust ESOP And Meets Requirements And Conditions --></help>
+        <label><!-- Qualified Employee Trust Meets Req --></label>
+        <name>nSBA__Is_App_Qualified_Emp_Trust_ESOP_Meet_Req__c</name>
+    </fields>
+    <fields>
+        <help><!-- Is Applicant Qualified Employee Trust ESOP --></help>
+        <label><!-- Is App Qualified Emp Trust ESOP --></label>
+        <name>nSBA__Is_App_Qualified_Emp_Trust_ESOP__c</name>
+    </fields>
+    <fields>
+        <help><!-- Is Applicant Business Type SBA Problematic --></help>
+        <label><!-- -D Is Applicant Bus Type SBA Problematic --></label>
+        <name>nSBA__Is_Applicant_Bus_Type_SBA_Problematic__c</name>
+    </fields>
+    <fields>
+        <help><!-- Is Applicant Business Owned Or Controlled By Native American Tribe --></help>
+        <label><!-- -D Is Business Owned Native American Tri --></label>
+        <name>nSBA__Is_Applicant_Business_Owned_By__c</name>
+    </fields>
+    <fields>
+        <help><!-- Is Applicant Connected With Religious Group --></help>
+        <label><!-- -D Is Applicant Connected With Religious --></label>
+        <name>nSBA__Is_Applicant_Connected_With_Religious_Gr__c</name>
+    </fields>
+    <fields>
+        <help><!-- Is Applicant Eligible For Reimbursement Of The Guarantee Fee Under CAIP --></help>
+        <label><!-- -D Is Applicant Eligible CAIP Reimbursem --></label>
+        <name>nSBA__Is_Applicant_Eligible_CAIP_Reimbursement__c</name>
+    </fields>
+    <fields>
+        <label><!-- -D Is Applicant Government Owned Entity --></label>
+        <name>nSBA__Is_Applicant_Government_Owned_Entity__c</name>
+    </fields>
+    <fields>
+        <label><!-- -D Is Private Club or Business --></label>
+        <name>nSBA__Is_Applicant_Prive_Club_Or_Business__c</name>
+    </fields>
+    <fields>
+        <help><!-- Is Applicants Credit Score Acceptable For Small Loan Processing --></help>
+        <label><!-- Is Applicants Credit Score Acceptable --></label>
+        <name>nSBA__Is_Applicants_Credit_Score_Acceptable__c</name>
+    </fields>
+    <fields>
+        <label><!-- -D Is Broker Employed By Applicant --></label>
+        <name>nSBA__Is_Broker_Employed_By_Applicant__c</name>
+    </fields>
+    <fields>
+        <help><!-- Is Business Aspect Of A Prurient Sexual Nature --></help>
+        <label><!-- -D Is Business Aspect Of Sexual Nature --></label>
+        <name>nSBA__Is_Business_Aspect_Of_Prurient_Sexual_Na__c</name>
+    </fields>
+    <fields>
+        <help><!-- Is Applicant Business Primarily Engaged In Subdividing Real Property --></help>
+        <label><!-- -D Is Business Primary Engagement Subdiv --></label>
+        <name>nSBA__Is_Business_Primary_Engagement_Subdivide__c</name>
+    </fields>
+    <fields>
+        <help><!-- Loan is collateralized --></help>
+        <label><!-- -D Is Collateralized --></label>
+        <name>nSBA__Is_Collateralized__c</name>
+    </fields>
+    <fields>
+        <help><!-- Indicates if the first split rate applied percentage is equal to the SBA guaranteed percentage. This field is used in SBA Loan Authorization only. --></help>
+        <label><!-- Is Applied Percentage SBA Guaranteed 1 --></label>
+        <name>nSBA__Is_Complex_Applied_Percent_SBA_Guar_1__c</name>
+    </fields>
+    <fields>
+        <help><!-- Indicates if the second split rate applied percentage is equal to the SBA guaranteed percentage. This field is used in SBA Loan Authorization only. --></help>
+        <label><!-- Is Applied Percentage SBA Guaranteed 2 --></label>
+        <name>nSBA__Is_Complex_Applied_Percent_SBA_Guar_2__c</name>
+    </fields>
+    <fields>
+        <help><!-- Indicates whether rates tied to the loan are using complex rate structure. This field is used in SBA Loan Authorization only. --></help>
+        <label><!-- Is Complex Rate Structure --></label>
+        <name>nSBA__Is_Complex_Rate_Structure__c</name>
+    </fields>
+    <fields>
+        <label><!-- Is Construction Total Over 10000 --></label>
+        <name>nSBA__Is_Construction_Total_Over_10000__c</name>
+    </fields>
+    <fields>
+        <label><!-- -D Is EPC Type Of Business Eligible --></label>
+        <name>nSBA__Is_EPC_Type_Of_Business_Eligible__c</name>
+    </fields>
+    <fields>
+        <help><!-- Is this an eligible SBA loan and Eligibility Checklist is complete and filed in the loan folder? --></help>
+        <label><!-- Is Eligible SBA Loan --></label>
+        <name>nSBA__Is_Eligible_SBA_Loan__c</name>
+    </fields>
+    <fields>
+        <label><!-- -D Is Financial Statements Charged --></label>
+        <name>nSBA__Is_Financial_Statements_Charged__c</name>
+    </fields>
+    <fields>
+        <label><!-- Is Flood Insurance Required --></label>
+        <name>nSBA__Is_Flood_Insurance_Required__c</name>
+    </fields>
+    <fields>
+        <help><!-- Check if upon Loan payment default or deferment, to defer payment of franchise fees, royalties, advertising, and other fees until Borrower brings Loan payments current. This field is used in SBA Loan Authorization only. --></help>
+        <label><!-- Is Franchise Fees Payment Deferred --></label>
+        <name>nSBA__Is_Franchise_Fees_Payment_Deferred__c</name>
+    </fields>
+    <fields>
+        <help><!-- Is 100 Percent Of Ownership With Remaining Owners Or Is The Purchase Of 100 Percent Of Business --></help>
+        <label><!-- Is Full Ownership With Remain Owners --></label>
+        <name>nSBA__Is_Full_Ownership_With_Remain_Own_Or_Pur__c</name>
+    </fields>
+    <fields>
+        <help><!-- Is Revenue From Gambling Less Than Third Of Gross Annual Revenue --></help>
+        <label><!-- -D Is Gambling Revenue Less Than One Thi --></label>
+        <name>nSBA__Is_Gambling_Revenue_Less_Than_One_Third__c</name>
+    </fields>
+    <fields>
+        <label><!-- -D Is Government Guaranteed Loan Default --></label>
+        <name>nSBA__Is_Government_Guaranteed_Loan_Defaulted__c</name>
+    </fields>
+    <fields>
+        <label><!-- -D Is Government Guaranteed Loan Delinqu --></label>
+        <name>nSBA__Is_Government_Guaranteed_Loan_Delinquent__c</name>
+    </fields>
+    <fields>
+        <help><!-- Lender has determined that brands that meet the FTC definition of a franchise are listed on the SBA Franchise Directory. --></help>
+        <label><!-- Is Included On SBA Franchise Directory --></label>
+        <name>nSBA__Is_Included_On_SBA_Franchise_Directory__c</name>
+    </fields>
+    <fields>
+        <help><!-- Is Lease Between EPC And OC In Writing With Matching Term --></help>
+        <label><!-- Is Lease In Writing With Matching Terms --></label>
+        <name>nSBA__Is_Lease_In_Writing_With_Matching_Terms__c</name>
+    </fields>
+    <fields>
+        <label><!-- Is Lender Compensated By Applicant --></label>
+        <name>nSBA__Is_Lender_Compensated_By_Applicant__c</name>
+    </fields>
+    <fields>
+        <help><!-- Is Lender Completed Religious Eligibility Worksheet --></help>
+        <label><!-- Lender Completed Religious Eligibility --></label>
+        <name>nSBA__Is_Lender_Completed_Religious_Eligibilit__c</name>
+    </fields>
+    <fields>
+        <help><!-- Check if Liability Insurance is required in an amount and with an insurance company satisfactory to Lender. This field is used in SBA Loan Authorization only. --></help>
+        <label><!-- Is Liability Insurance Required --></label>
+        <name>nSBA__Is_Liability_Insurance_Required__c</name>
+    </fields>
+    <fields>
+        <help><!-- Check if Dram Shop/Host Liquor Liability Insurance is required in an amount and with an insurance company satisfactory to lender. This field is used in SBA Loan Authorization only. --></help>
+        <label><!-- Is Liquor Liability Insurance Required --></label>
+        <name>nSBA__Is_Liquor_Liability_Insurance_Required__c</name>
+    </fields>
+    <fields>
+        <label><!-- Is Loan Packaging Service Charged --></label>
+        <name>nSBA__Is_Loan_Packaging_Service_Charged__c</name>
+    </fields>
+    <fields>
+        <help><!-- Check if Lender requires Borrower and Operating Company to certify that they will not, without Lender’s prior written consent acquire by purchase or by lease, any additional locations. This field is used in SBA Loan Authorization only. --></help>
+        <label><!-- Is Location Limitation Required --></label>
+        <name>nSBA__Is_Location_Limitation_Required__c</name>
+    </fields>
+    <fields>
+        <help><!-- Check if Malpractice Insurance is required with an insurance company and in an amount satisfactory to lender. This field is used in SBA Loan Authorization only. --></help>
+        <label><!-- Is Malpractice Insurance Required --></label>
+        <name>nSBA__Is_Malpractice_Insurance_Required__c</name>
+    </fields>
+    <fields>
+        <label><!-- Is Mortgage Servicing Company --></label>
+        <name>nSBA__Is_Mortgage_Servicing_Company__c</name>
+    </fields>
+    <fields>
+        <help><!-- Is Mortgage Servicing And Loans Are Sold Within 14 Days --></help>
+        <label><!-- Is Mortgage Servicing Loans Sold 14 Days --></label>
+        <name>nSBA__Is_Mortgage_Servicing_Loans_Sold_14_Days__c</name>
+    </fields>
+    <fields>
+        <help><!-- Is Applicant Motel RV Park Campground Marina --></help>
+        <label><!-- Is Motel RV Park Campground Marina --></label>
+        <name>nSBA__Is_Motel_RV_Park_Campground_Marina__c</name>
+    </fields>
+    <fields>
+        <label><!-- Is OC Eligible Small Business --></label>
+        <name>nSBA__Is_OC_Eligible_Small_Business__c</name>
+    </fields>
+    <fields>
+        <label><!-- Is OC Guarantor Or Co Borrower --></label>
+        <name>nSBA__Is_OC_Guarantor_Or_Co_Borrower__c</name>
+    </fields>
+    <fields>
+        <help><!-- Is Only Reason To Limit Number Of Membership Capacity --></help>
+        <label><!-- Is Only Reason To Limit Num Of Members --></label>
+        <name>nSBA__Is_Only_Reason_To_Limit_Num_Of_Members__c</name>
+    </fields>
+    <fields>
+        <label><!-- Is Other Service Charged To Applicant --></label>
+        <name>nSBA__Is_Other_Service_Charged_To_Applicant__c</name>
+    </fields>
+    <fields>
+        <label><!-- Is Other Type Of Agent Compensated --></label>
+        <name>nSBA__Is_Other_Type_Of_Agent_Compensated__c</name>
+    </fields>
+    <fields>
+        <help><!-- Primary business is owned by individuals who have Lawful Permanent Resident (LPR) status, whose status the lender has verified with the USCIS through the SBA. --></help>
+        <label><!-- Is Owned By Lawful Permanent Residents --></label>
+        <name>nSBA__Is_Owned_By_Lawful_Permanent_Residents__c</name>
+    </fields>
+    <fields>
+        <help><!-- Primary business is owned by individuals who are U.S. citizens. --></help>
+        <label><!-- Is Owned By US Citizens --></label>
+        <name>nSBA__Is_Owned_By_US_Citizens__c</name>
+    </fields>
+    <fields>
+        <help><!-- Is Pawn Shop With Majority Of Income From Sales --></help>
+        <label><!-- Is Pawn Shop Majority Income Sales --></label>
+        <name>nSBA__Is_Pawn_Shop_Majority_Income_Sales__c</name>
+    </fields>
+    <fields>
+        <label><!-- Is Pawn Shop --></label>
+        <name>nSBA__Is_Pawn_Shop__c</name>
+    </fields>
+    <fields>
+        <help><!-- Check if prior to closing, Lender must obtain Purchase-Sale Agreement from Borrower and Operating Company. This field is used in SBA Loan Authorization only. --></help>
+        <label><!-- Is Purchase Sale Agreement Required --></label>
+        <name>nSBA__Is_Purchase_Sale_Agreement_Required__c</name>
+    </fields>
+    <fields>
+        <help><!-- If Refinancing A Construction Loan The Construction Loan Is Not With The Same Lender --></help>
+        <label><!-- Is Refi Construct Loan With Diff Lender --></label>
+        <name>nSBA__Is_Refi_Construct_Loan_With_Diff_Lender__c</name>
+    </fields>
+    <fields>
+        <label><!-- Is Revenues Derived From Gambling --></label>
+        <name>nSBA__Is_Revenues_Derived_From_Gambling__c</name>
+    </fields>
+    <fields>
+        <help><!-- Please check this field if SBA Form 148L (Limited Guarantee) is required for this loan This field is used in SBA Loan Authorization only. --></help>
+        <label><!-- Is SBA Form 148L Required --></label>
+        <name>nSBA__Is_SBA_Form_148L_Required__c</name>
+    </fields>
+    <fields>
+        <help><!-- Please check this field if SBA Form 148 (Guarantee) is required for this loan. This field is used in SBA Loan Authorization only. --></help>
+        <label><!-- Is SBA Form 148 Required --></label>
+        <name>nSBA__Is_SBA_Form_148_Required__c</name>
+    </fields>
+    <fields>
+        <help><!-- Please check this field if SBA Form 601 (Agreement of Compliance) is required for this loan. This field is used in SBA Loan Authorization only. --></help>
+        <label><!-- Is SBA Form 601 Required --></label>
+        <name>nSBA__Is_SBA_Form_601_Required__c</name>
+    </fields>
+    <fields>
+        <help><!-- Has the size standard been met taking into consideration all affiliation concerns? --></help>
+        <label><!-- Is SBA Size Standard Met --></label>
+        <name>nSBA__Is_SBA_Size_Standard_Met__c</name>
+    </fields>
+    <fields>
+        <help><!-- Is SOP Procedure Followed To Determine Applicant Eligibility --></help>
+        <label><!-- Is SOP Procedure Followed --></label>
+        <name>nSBA__Is_SOP_Procedure_Followed__c</name>
+    </fields>
+    <fields>
+        <help><!-- Projected number of employees whose jobs will be created within two years from the date of the loan. --></help>
+        <label><!-- Jobs Created --></label>
+        <name>nSBA__Jobs_Created__c</name>
+    </fields>
+    <fields>
+        <help><!-- Projected number of employees whose jobs will be lost if this loan is not made. --></help>
+        <label><!-- Jobs Retained --></label>
+        <name>nSBA__Jobs_Retained__c</name>
+    </fields>
+    <fields>
+        <help><!-- Number of days after which late fees may be charged to borrower. This field is used in SBA Loan Authorization only. --></help>
+        <label><!-- Late Fees Charged After Days --></label>
+        <name>nSBA__Late_Fees_Charged_After_Days__c</name>
+    </fields>
+    <fields>
+        <help><!-- Maximum percentage of the unpaid portion of the regularly scheduled payment that lender may charge borrower as late fees. This field is used in SBA Loan Authorization only. --></help>
+        <label><!-- Late Fees Charged After Percentage --></label>
+        <name>nSBA__Late_Fees_Charged_After_Percentage__c</name>
+    </fields>
+    <fields>
+        <help><!-- Check if you are trying to keep the Borrower in the present location regardless of where the collateral is located. This field is used in SBA Loan Authorization only. --></help>
+        <label><!-- Lease Cur Loc Regardless Of Collateral --></label>
+        <name>nSBA__Lease_Cur_Loc_Regardless_Of_Collateral__c</name>
+    </fields>
+    <fields>
+        <help><!-- Check if current lease(s) on all business premises where collateral is located with term, including options, are at least as long as the term of the Loan. This field is used in SBA Loan Authorization only. --></help>
+        <label><!-- Lease General Rule Applied --></label>
+        <name>nSBA__Lease_General_Rule_Applied__c</name>
+    </fields>
+    <fields>
+        <help><!-- Check if you want to protect leasehold improvements after the term of Loan. This field is used in SBA Loan Authorization only. --></help>
+        <label><!-- Lease Protecting Leasehold Improvements --></label>
+        <name>nSBA__Lease_Protecting_Leasehold_Improvements__c</name>
+    </fields>
+    <fields>
+        <help><!-- The business is at least 51 percent owned by aliens with an alien status other than LPR, which lender has verified with the USCIS or SBA; --></help>
+        <label><!-- Legal Aliens Not LPR Own 51 Percent --></label>
+        <name>nSBA__Legal_Aliens_Not_LPR_Own_51_Percent__c</name>
+    </fields>
+    <fields>
+        <label><!-- Lendable Region --></label>
+        <name>nSBA__Lendable_Region__c</name>
+    </fields>
+    <fields>
+        <help><!-- To give Lender the same opportunity to cure any defaults under the franchise or lease agreement that is given to Franchisee under the same agreements. This field is used in SBA Loan Authorization only. --></help>
+        <label><!-- Lender and Franchise Same Opp In Dflt --></label>
+        <name>nSBA__Lender_And_Franchisee_Same_Opp_In_Dflt__c</name>
+    </fields>
+    <fields>
+        <help><!-- Check only if Lender has approval to allow a lease of less than the term of the loan. This field is used in SBA Loan Authorization only. --></help>
+        <label><!-- Lender Approval To Lease Less Than Term --></label>
+        <name>nSBA__Lender_Approval_To_Lease_Less_Than_Term__c</name>
+    </fields>
+    <fields>
+        <help><!-- Lender Has Not Accepted Funding From Sources That Restricts Lending To Small Businesses --></help>
+        <label><!-- Lender Can Lend To Small Businesses --></label>
+        <name>nSBA__Lender_Can_Lend_To_Small_Businesses__c</name>
+    </fields>
+    <fields>
+        <help><!-- Lender comments that are going to submitted to SBA over E-Tran. --></help>
+        <label><!-- Lender Comments --></label>
+        <name>nSBA__Lender_Comments__c</name>
+    </fields>
+    <fields>
+        <help><!-- Lender Does Not Require Applicant To Invest In Lender --></help>
+        <label><!-- Lender Doesnt Require Invest From App --></label>
+        <name>nSBA__Lender_Doesnt_Require_Invest_From_App__c</name>
+    </fields>
+    <fields>
+        <help><!-- Lender Has No Conflict Of Interest With Applicant --></help>
+        <label><!-- Lender Has No Conflict of Int With App --></label>
+        <name>nSBA__Lender_Has_No_Conflict_of_Int_With_Appl__c</name>
+    </fields>
+    <fields>
+        <help><!-- Lender Has No Financial Interest With Applicant --></help>
+        <label><!-- Lender Has No Financial Int With App --></label>
+        <name>nSBA__Lender_Has_No_Financial_Int_With_App__c</name>
+    </fields>
+    <fields>
+        <help><!-- Lender Made Personal Loan For Equity Injection --></help>
+        <label><!-- Lender Made Personal Loan For Equity Inj --></label>
+        <name>nSBA__Lender_Made_Personal_Loan_For_Equity_Inj__c</name>
+    </fields>
+    <fields>
+        <help><!-- Lender Is Not Incarcerated On Parole Or Probation Or Convicted Felon --></help>
+        <label><!-- Lender Not Incarcerated Or Convicted --></label>
+        <name>nSBA__Lender_Not_Incarcerated_Or_Convicted__c</name>
+    </fields>
+    <fields>
+        <help><!-- Lender Service Provider Contact Information - First Name --></help>
+        <label><!-- Lender Service Provider First Name --></label>
+        <name>nSBA__Lender_Service_Provider_First_Name__c</name>
+    </fields>
+    <fields>
+        <help><!-- Lender Service Provider Contact Information - Last Name --></help>
+        <label><!-- Lender Service Provider Last Name --></label>
+        <name>nSBA__Lender_Service_Provider_Last_Name__c</name>
+    </fields>
+    <fields>
+        <help><!-- Lender Service Provider Contact Information - Middle Name Initial --></help>
+        <label><!-- Lender Service Provider Middle Name --></label>
+        <name>nSBA__Lender_Service_Provider_Middle_Name__c</name>
+    </fields>
+    <fields>
+        <help><!-- Lender Service Provider Contact Information - Mobile Phone --></help>
+        <label><!-- Agent Providing Services Mobile Phone --></label>
+        <name>nSBA__Lender_Service_Provider_Mobile_Phone__c</name>
+    </fields>
+    <fields>
+        <help><!-- Lender Service Provider Contact Information - The suffix portion of the Contact&apos;s name --></help>
+        <label><!-- Lender Service Provider Name Suffix --></label>
+        <name>nSBA__Lender_Service_Provider_Name_Suffix__c</name>
+    </fields>
+    <fields>
+        <help><!-- Lender Service Provider Contact Information - Title --></help>
+        <label><!-- Lender Service Provider Contact Title --></label>
+        <name>nSBA__Lender_Service_Provider_Title__c</name>
+    </fields>
+    <fields>
+        <help><!-- Used only for SBA loans under $350k. Stores Liquid Credit Score received during E-Tran submission. --></help>
+        <label><!-- Liquid Credit Score --></label>
+        <name>nSBA__Liquid_Credit_Score__c</name>
+    </fields>
+    <fields>
+        <help><!-- Date of loan authorization approval. Leave empty if it is unknown at the time of data entry. This field is used in SBA Loan Authorization only. --></help>
+        <label><!-- Loan Authorization Approval Date --></label>
+        <name>nSBA__Loan_Authorization_Approval_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Loan Authorization California Collateral --></label>
+        <name>nSBA__Loan_Authorization_California_Collateral__c</name>
+    </fields>
+    <fields>
+        <help><!-- Loan officer who will authorize Loan Authorization from the Lender side. This field is used in SBA Loan Authorization only. --></help>
+        <label><!-- Loan Authorization Lender Official --></label>
+        <name>nSBA__Loan_Authorization_Lender_Official__c</name>
+        <relationshipLabel><!-- Applications (Loan Authorization Lender Official) --></relationshipLabel>
+    </fields>
+    <fields>
+        <help><!-- Loan Will Not Repay Third Party Financing Of Existing 504 Project --></help>
+        <label><!-- Loan Not Repay Fin Of Exist 504 Project --></label>
+        <name>nSBA__Loan_Not_Repay_Fin_Of_Exist_504_Project__c</name>
+    </fields>
+    <fields>
+        <label><!-- Loan Package Charged To Applicant --></label>
+        <name>nSBA__Loan_Package_Charged_To_Applicant__c</name>
+    </fields>
+    <fields>
+        <help><!-- Identifies the type of institution/individual that arranged for and/or is the source of the loan package. --></help>
+        <label><!-- Loan Package Source --></label>
+        <name>nSBA__Loan_Package_Source__c</name>
+        <picklistValues>
+            <masterLabel>1</masterLabel>
+            <translation>Lender</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>2</masterLabel>
+            <translation>Loan Packager</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>3</masterLabel>
+            <translation>Loan Broker</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- The City Name for the Loan Packager. --></help>
+        <label><!-- Loan Packager City --></label>
+        <name>nSBA__Loan_Packager_City__c</name>
+    </fields>
+    <fields>
+        <help><!-- Name of the Loan Packager. --></help>
+        <label><!-- Loan Packager Name --></label>
+        <name>nSBA__Loan_Packager_Name__c</name>
+    </fields>
+    <fields>
+        <help><!-- The State Code for the Loan Packager. --></help>
+        <label><!-- Loan Packager State --></label>
+        <name>nSBA__Loan_Packager_State__c</name>
+        <picklistValues>
+            <masterLabel>AK</masterLabel>
+            <translation><!-- AK --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>AL</masterLabel>
+            <translation><!-- AL --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>AR</masterLabel>
+            <translation><!-- AR --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>AZ</masterLabel>
+            <translation><!-- AZ --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CA</masterLabel>
+            <translation><!-- CA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CO</masterLabel>
+            <translation><!-- CO --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CT</masterLabel>
+            <translation><!-- CT --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>DC</masterLabel>
+            <translation><!-- DC --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>DE</masterLabel>
+            <translation><!-- DE --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>FL</masterLabel>
+            <translation><!-- FL --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>GA</masterLabel>
+            <translation><!-- GA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>HI</masterLabel>
+            <translation><!-- HI --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>IA</masterLabel>
+            <translation><!-- IA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ID</masterLabel>
+            <translation><!-- ID --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>IL</masterLabel>
+            <translation><!-- IL --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>IN</masterLabel>
+            <translation><!-- IN --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>KS</masterLabel>
+            <translation><!-- KS --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>KY</masterLabel>
+            <translation><!-- KY --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>LA</masterLabel>
+            <translation><!-- LA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MA</masterLabel>
+            <translation><!-- MA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MD</masterLabel>
+            <translation><!-- MD --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ME</masterLabel>
+            <translation><!-- ME --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MI</masterLabel>
+            <translation><!-- MI --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MN</masterLabel>
+            <translation><!-- MN --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MO</masterLabel>
+            <translation><!-- MO --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MS</masterLabel>
+            <translation><!-- MS --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MT</masterLabel>
+            <translation><!-- MT --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>NC</masterLabel>
+            <translation><!-- NC --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ND</masterLabel>
+            <translation><!-- ND --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>NE</masterLabel>
+            <translation><!-- NE --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>NH</masterLabel>
+            <translation><!-- NH --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>NM</masterLabel>
+            <translation><!-- NM --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>NV</masterLabel>
+            <translation><!-- NV --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>NY</masterLabel>
+            <translation><!-- NY --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>OH</masterLabel>
+            <translation><!-- OH --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>OK</masterLabel>
+            <translation><!-- OK --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>OR</masterLabel>
+            <translation><!-- OR --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>PA</masterLabel>
+            <translation><!-- PA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>RI</masterLabel>
+            <translation><!-- RI --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SC</masterLabel>
+            <translation><!-- SC --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SD</masterLabel>
+            <translation><!-- SD --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>TN</masterLabel>
+            <translation><!-- TN --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>TX</masterLabel>
+            <translation><!-- TX --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>UT</masterLabel>
+            <translation><!-- UT --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>VA</masterLabel>
+            <translation><!-- VA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>VT</masterLabel>
+            <translation><!-- VT --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>WA</masterLabel>
+            <translation><!-- WA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>WI</masterLabel>
+            <translation><!-- WI --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>WV</masterLabel>
+            <translation><!-- WV --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>WY</masterLabel>
+            <translation><!-- WY --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- The Street Name for the Loan Packager. --></help>
+        <label><!-- Loan Packager Street --></label>
+        <name>nSBA__Loan_Packager_Street__c</name>
+    </fields>
+    <fields>
+        <help><!-- The zipcode for the Loan Packager --></help>
+        <label><!-- Loan Packager Zipcode --></label>
+        <name>nSBA__Loan_Packager_Zipcode__c</name>
+    </fields>
+    <fields>
+        <help><!-- Loan Proceeds Will Be Used To Improve Space Occupied 100 Percent By Applicant --></help>
+        <label><!-- Loan Proceeds Improve Space Occ Only App --></label>
+        <name>nSBA__Loan_Proceeds_Improve_Space_Occ_Only_App__c</name>
+    </fields>
+    <fields>
+        <help><!-- Loan Proceeds Will Not Remodel Or Convert Any Rental Space In The Property --></help>
+        <label><!-- Loan Proceeds Not Remodel Rental Space --></label>
+        <name>nSBA__Loan_Proceeds_Not_Remodel_Rental_Space__c</name>
+    </fields>
+    <fields>
+        <label><!-- Loan Submission Correspond With Packager --></label>
+        <name>nSBA__Loan_Submission_Correspond_With_Packager__c</name>
+    </fields>
+    <fields>
+        <label><!-- Loan Submission Correspond with Lender --></label>
+        <name>nSBA__Loan_Submission_Correspond_with_Lender__c</name>
+    </fields>
+    <fields>
+        <help><!-- Loan Will Not Finance Any Amount In Excess Of The Business Valuation --></help>
+        <label><!-- Loan Not in Excess Of Business Value --></label>
+        <name>nSBA__Loan_Will_Not_Fin_Excess_Of_Bus_Value__c</name>
+    </fields>
+    <fields>
+        <help><!-- Loan Will Not Pay Off An SBA Guaranteed Loan Of The Seller With The Same Lender --></help>
+        <label><!-- Loan Will Not Pay Off Similar SBA Loan --></label>
+        <name>nSBA__Loan_Will_Not_Pay_Off_Similar_SBA_Loan__c</name>
+    </fields>
+    <fields>
+        <help><!-- Loan Will Not Refinance Existing 504 Loan Unless It Meets The Requirements --></help>
+        <label><!-- Loan Will Not Refi Exist 504 Unless Req --></label>
+        <name>nSBA__Loan_Will_Not_Refi_Exist_504_Unless_Req__c</name>
+    </fields>
+    <fields>
+        <help><!-- Loan Will Not Refinance Seller Take Back Financing Less Than 24 Months --></help>
+        <label><!-- Loan Will Not Refi Seller Take Back U 24 --></label>
+        <name>nSBA__Loan_Will_Not_Refi_Seller_Take_Back_U_24__c</name>
+    </fields>
+    <fields>
+        <label><!-- Loan Will Not Refund Debt To An SBIC --></label>
+        <name>nSBA__Loan_Will_Not_Refund_Debt_To_An_SBIC__c</name>
+    </fields>
+    <fields>
+        <help><!-- Loan Will Not Repay Delinquent Witholding Taxes --></help>
+        <label><!-- Loan Won&apos;t Capitalize Delinquent WH Tax --></label>
+        <name>nSBA__Loan_Will_Not_Repay_delinquent_WH_Tax__c</name>
+    </fields>
+    <fields>
+        <help><!-- Loan Will Refinance Seller Take Back Financing Greater Than 24 Months And Debt Is Current --></help>
+        <label><!-- Loan Will Refi Seller Take Back G 24 Cur --></label>
+        <name>nSBA__Loan_Will_Refi_Seller_Take_Back_G_24_Cur__c</name>
+    </fields>
+    <fields>
+        <help><!-- Location Id provided by SBA when a lender can lend to more than one location. --></help>
+        <label><!-- Location Id --></label>
+        <name>nSBA__Location_Id__c</name>
+    </fields>
+    <fields>
+        <help><!-- Majority Of Revenue Derives From Transients Who Stay Less Than 30 Days --></help>
+        <label><!-- Majority Revenue From Stay Under 30 Days --></label>
+        <name>nSBA__Majority_Revenue_From_Stay_Under_30_Days__c</name>
+    </fields>
+    <fields>
+        <help><!-- Identifies weather maturity starts from Date of SBA Note or from Date of Initial Disbursement. This field is used in SBA Loan Authorization only. --></help>
+        <label><!-- Maturity Starts From --></label>
+        <name>nSBA__Maturity_Starts_From__c</name>
+        <picklistValues>
+            <masterLabel>date of Note</masterLabel>
+            <translation><!-- date of Note --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>date of initial disbursement</masterLabel>
+            <translation><!-- date of initial disbursement --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- Percentage of the disbursed principal balance on the first day of each quarter Borrower must pay principal and interest payments. Used only for Mississippi Poultry payment term option. This field is used in SBA Loan Authorization only. --></help>
+        <label><!-- Mississippi Poultry Percentage --></label>
+        <name>nSBA__Mississippi_Poultry_Percentage__c</name>
+    </fields>
+    <fields>
+        <help><!-- Used for Seasonal Payments, holds the payment amount in period when payments are due. In case of two different payments specified it holds the second payment amount. This field is used in SBA Loan Authorization only. --></help>
+        <label><!-- Monthly Payment Seasonal --></label>
+        <name>nSBA__Monthly_Payment_Seasonal__c</name>
+    </fields>
+    <fields>
+        <help><!-- Neither EPC Or OC Are Trust Or SBA Requirements Are Met --></help>
+        <label><!-- Neither EPC OC Are Trust Or SBA Req Met --></label>
+        <name>nSBA__Neither_EPC_OC_Are_Trust_Or_SBA_Req_Met__c</name>
+    </fields>
+    <fields>
+        <help><!-- Use this field if you want to apply Net Earnings Recapture Clause Option based on amount of Borrowers net earnings. This field is used in SBA Loan Authorization only. --></help>
+        <label><!-- Net Earnings Recapture Over Amount --></label>
+        <name>nSBA__Net_Earnings_Recapture_Over_Amount__c</name>
+    </fields>
+    <fields>
+        <help><!-- Use this field if you want to apply Net Earnings Recapture Clause Option based on percentage of Borrowers net earnings. This field is used in SBA Loan Authorization only. --></help>
+        <label><!-- Net Earnings Recapture Percentage --></label>
+        <name>nSBA__Net_Earnings_Recapture_Percentage__c</name>
+    </fields>
+    <fields>
+        <help><!-- Form 1920 - Page 2 - Use of Proceeds - New Construction Indicator (in thousands) --></help>
+        <label><!-- New Construction --></label>
+        <name>nSBA__New_Construction__c</name>
+    </fields>
+    <fields>
+        <label><!-- -D No Former SBA Employee Is Owner/Partn --></label>
+        <name>nSBA__No_Former_SBA_Employee_Is_Owner_Partner__c</name>
+    </fields>
+    <fields>
+        <label><!-- No GS13 Government Employee 10% Owner --></label>
+        <name>nSBA__No_GS13_Government_Employee_10_Pct_Owner__c</name>
+    </fields>
+    <fields>
+        <label><!-- No Member of Congress 10 Percent Owner --></label>
+        <name>nSBA__No_Member_of_Congress_10_Percent_Owner__c</name>
+    </fields>
+    <fields>
+        <help><!-- No Potential Loss Shift To SBA With Refinance --></help>
+        <label><!-- -D No Potential Loss Shift To SBA With R --></label>
+        <name>nSBA__No_Potential_Loss_Shift_To_SBA_With_Refi__c</name>
+    </fields>
+    <fields>
+        <help><!-- Is any of Principals presently subject to an indictment, criminal information, arraignment, or other means by which formal criminal charges are brought in any jurisdiction? --></help>
+        <label><!-- No Principals Are Under Indictment --></label>
+        <name>nSBA__No_Principals_Are_Under_Indictment__c</name>
+    </fields>
+    <fields>
+        <help><!-- No Proceeds Will Be Used To Acquire Space In Lenders Real Estate Forward Commitment --></help>
+        <label><!-- -D No Proceeds Acquire Space In Lenders --></label>
+        <name>nSBA__No_Proceeds_Used_To_Acquire_Space_In_Len__c</name>
+    </fields>
+    <fields>
+        <label><!-- No SBA Employee 10% Owner Indicator --></label>
+        <name>nSBA__No_SBA_Employee_10_Owner_Indicator__c</name>
+    </fields>
+    <fields>
+        <label><!-- -D No SCORE Member Or Employee 10% Owner --></label>
+        <name>nSBA__No_SCORE_Member_Or_Employee_10_Pct_Owner__c</name>
+    </fields>
+    <fields>
+        <help><!-- Ongoing servicing fee that lender agrees to pay SBA. This field is used in SBA Loan Authorization only. --></help>
+        <label><!-- Ongoing Servicing Fee --></label>
+        <name>nSBA__Ongoing_Servicing_Fee__c</name>
+    </fields>
+    <fields>
+        <help><!-- Applicant operates under multiple Franchise agreements. --></help>
+        <label><!-- -D Operates Under Multiple Agreements --></label>
+        <name>nSBA__Operates_Under_Multiple_Agreements__c</name>
+    </fields>
+    <fields>
+        <help><!-- This field reflects the Original Amount as specified on the associated loan. --></help>
+        <label><!-- Original Amount --></label>
+        <name>nSBA__Original_Amount__c</name>
+    </fields>
+    <fields>
+        <help><!-- Form 1920 - Page 2 - Use of Proceeds - Acquire Business - Other Financing (in thousands) --></help>
+        <label><!-- Other Financing Acquire Business --></label>
+        <name>nSBA__Other_Financing_Acquire_Business__c</name>
+    </fields>
+    <fields>
+        <help><!-- Form 1920 - Page 2 - Use of Proceeds - Construction - Other Financing (in thousands) --></help>
+        <label><!-- Other Financing Construction --></label>
+        <name>nSBA__Other_Financing_Construction__c</name>
+    </fields>
+    <fields>
+        <help><!-- Form 1920 - Page 2 - Use of Proceeds - Furniture and Fixtures - Other Financing (in thousands) --></help>
+        <label><!-- Other Financing Furniture and Fixtures --></label>
+        <name>nSBA__Other_Financing_Furniture_Fixtures__c</name>
+    </fields>
+    <fields>
+        <help><!-- Form 1920 - Page 2 - Use of Proceeds - Leasehold Improvements - Other Financing (in thousands) --></help>
+        <label><!-- Other Financing Leasehold Improvements --></label>
+        <name>nSBA__Other_Financing_Leasehold_Improvements__c</name>
+    </fields>
+    <fields>
+        <help><!-- Form 1920 - Page 2 - Use of Proceeds - Machinery and Equipment - Other Financing (in thousands) --></help>
+        <label><!-- Other Financing Machinery and Equipment --></label>
+        <name>nSBA__Other_Financing_Machinery_Equipment__c</name>
+    </fields>
+    <fields>
+        <help><!-- Form 1920 - Page 2 - Use of Proceeds - Other - Other2 Financing (in thousands) --></help>
+        <label><!-- -D Other Financing for Other2 Proceeds T --></label>
+        <name>nSBA__Other_Financing_Other2__c</name>
+    </fields>
+    <fields>
+        <help><!-- Form 1920 - Page 2 - Use of Proceeds - Other - Other Financing (in thousands) --></help>
+        <label><!-- Other Financing for Other Proceeds Type --></label>
+        <name>nSBA__Other_Financing_Other__c</name>
+    </fields>
+    <fields>
+        <help><!-- Form 1920 - Page 2 - Use of Proceeds - Pay Accounts Payable - Other Financing (in thousands) --></help>
+        <label><!-- Other Financing Pay Accounts Payable --></label>
+        <name>nSBA__Other_Financing_Pay_Accounts_Payable__c</name>
+    </fields>
+    <fields>
+        <help><!-- Form 1920 - Page 2 - Use of Proceeds - Pay Notes Payable - Other Financing (in thousands) --></help>
+        <label><!-- Other Financing Pay Notes Payable --></label>
+        <name>nSBA__Other_Financing_Pay_Notes_Payable__c</name>
+    </fields>
+    <fields>
+        <help><!-- Form 1920 - Page 2 - Use of Proceeds - Pay Off SBA Loan - Other Financing (in thousands) --></help>
+        <label><!-- Other Financing Pay Off SBA Loan --></label>
+        <name>nSBA__Other_Financing_Pay_Off_SBA_Loan__c</name>
+    </fields>
+    <fields>
+        <help><!-- Form 1920 - Page 2 - Use of Proceeds - Purchase Inventory - Other Financing (in thousands) --></help>
+        <label><!-- Other Financing Purchase Inventory --></label>
+        <name>nSBA__Other_Financing_Purchase_Inventory__c</name>
+    </fields>
+    <fields>
+        <help><!-- Form 1920 - Page 2 - Use of Proceeds - Purchase Land - Other Financing (in thousands) --></help>
+        <label><!-- Other Financing Purchase Land --></label>
+        <name>nSBA__Other_Financing_Purchase_Land__c</name>
+    </fields>
+    <fields>
+        <help><!-- Form 1920 - Page 2 - Use of Proceeds - SBA Guaranty Fee - Other Financing (in thousands) --></help>
+        <label><!-- Other Financing SBA Guaranty Fee --></label>
+        <name>nSBA__Other_Financing_SBA_Guaranty_Fee__c</name>
+    </fields>
+    <fields>
+        <help><!-- Form 1920 - Page 2 - Use of Proceeds - Total - Other Financing (in thousands) --></help>
+        <label><!-- Other Financing Total --></label>
+        <name>nSBA__Other_Financing_Total__c</name>
+    </fields>
+    <fields>
+        <help><!-- Form 1920 - Page 2 - Use of Proceeds - Working Capital - Other Financing (in thousands) --></help>
+        <label><!-- Other Financing Working Capital --></label>
+        <name>nSBA__Other_Financing_Working_Capital__c</name>
+    </fields>
+    <fields>
+        <help><!-- If there is other funding (loan), enter the Other Funding Amount here. This field is used in SBA Loan Authorization only. --></help>
+        <label><!-- Other Funding Amount --></label>
+        <name>nSBA__Other_Funding_Amount__c</name>
+    </fields>
+    <fields>
+        <help><!-- If there is other funding (loan), enter the Name of entity providing other funding here. This field is used in SBA Loan Authorization only. --></help>
+        <label><!-- Other Funding From --></label>
+        <name>nSBA__Other_Funding_From__c</name>
+    </fields>
+    <fields>
+        <help><!-- If there is Other Funding (grant or gift), enter the Amount of other funding (grant or gift). This field is used in SBA Loan Authorization only. --></help>
+        <label><!-- Other Funding Grant Gift Amount --></label>
+        <name>nSBA__Other_Funding_Grant_Gift_Amount__c</name>
+    </fields>
+    <fields>
+        <help><!-- If there is Other Funding (grant or gift), enter the Name of entity providing other funding (grant or gift). This field is used in SBA Loan Authorization only. --></help>
+        <label><!-- Other Funding Grant Gift From --></label>
+        <name>nSBA__Other_Funding_Grant_Gift_From__c</name>
+    </fields>
+    <fields>
+        <help><!-- If there is Other Funding (Line Of Credit), enter the Amount of other funding (Line Of Credit). This field is used in SBA Loan Authorization only. --></help>
+        <label><!-- Other Funding Line Of Credit Amount --></label>
+        <name>nSBA__Other_Funding_Line_Of_Credit_Amount__c</name>
+    </fields>
+    <fields>
+        <help><!-- If there is Other Funding (Line Of Credit), enter the Name of entity providing other funding (Line Of Credit). This field is used in SBA Loan Authorization only. --></help>
+        <label><!-- Other Funding Line Of Credit From --></label>
+        <name>nSBA__Other_Funding_Line_Of_Credit_From__c</name>
+    </fields>
+    <fields>
+        <help><!-- If there is other funding (loan), enter the Other Funding Term In Years here. This field is used in SBA Loan Authorization only. --></help>
+        <label><!-- Other Funding Term In Years --></label>
+        <name>nSBA__Other_Funding_Term_In_Years__c</name>
+    </fields>
+    <fields>
+        <label><!-- Other Service Charged To Applicant Desc --></label>
+        <name>nSBA__Other_Service_Charged_To_Applicant_Desc__c</name>
+    </fields>
+    <fields>
+        <label><!-- Other Type Of Agent Compensated Desc --></label>
+        <name>nSBA__Other_Type_Of_Agent_Compensated_Desc__c</name>
+    </fields>
+    <fields>
+        <help><!-- Loan Amount that Pari Passu Lender will provide additional financing to the Borrower at or about the same time for the same or a similar purpose financed by this Loan. This field is used in SBA Loan Authorization only. --></help>
+        <label><!-- Pari Passu Amount --></label>
+        <name>nSBA__Pari_Passu_Amount__c</name>
+    </fields>
+    <fields>
+        <help><!-- Name of Pari Passu Lender who will provide additional financing to the Borrower at or about the same time for the same or a similar purpose financed by this Loan. This field is used in SBA Loan Authorization only. --></help>
+        <label><!-- Pari Passu Lender Name --></label>
+        <name>nSBA__Pari_Passu_Lender_Name__c</name>
+    </fields>
+    <fields>
+        <help><!-- Form 1920 - Page 2 - Use of Proceeds - Pay Notes Payable - Other Lender Indicator (in thousands) --></help>
+        <label><!-- Pay Notes Payable From Other Lender --></label>
+        <name>nSBA__Pay_Notes_Payable_Other_Lender__c</name>
+    </fields>
+    <fields>
+        <help><!-- Form 1920 - Page 2 - Use of Proceeds - Pay Notes Payable - Same Institution Debt Indicator (in thousands) --></help>
+        <label><!-- Pay Notes Payable - SID --></label>
+        <name>nSBA__Pay_Notes_Payable_SID__c</name>
+    </fields>
+    <fields>
+        <help><!-- Form 1920 - Page 2 - Use of Proceeds - Pay off SBA Loan - Other Lender Indicator (in thousands) --></help>
+        <label><!-- Pay Off SBA Loan From Other Lender --></label>
+        <name>nSBA__Pay_Off_SBA_Loan_Other_Lender__c</name>
+    </fields>
+    <fields>
+        <help><!-- Form 1920 - Page 2 - Use of Proceeds - Pay off SBA Loan - Same Institution Debt Indicator (in thousands) --></help>
+        <label><!-- Pay Off SBA Loan - SID --></label>
+        <name>nSBA__Pay_Off_SBA_Loan_SID__c</name>
+    </fields>
+    <fields>
+        <help><!-- Holds the number of Units for each portion of the loan payment schedule. This field is used in SBA Loan Authorization only. --></help>
+        <label><!-- Payment Schedule Frequency --></label>
+        <name>nSBA__Payment_Schedule_Frequency__c</name>
+    </fields>
+    <fields>
+        <help><!-- Holds the units related to the number of Units for each portion of the loan payment schedule. This field is used in SBA Loan Authorization only. --></help>
+        <label><!-- Payment Schedule Unit --></label>
+        <name>nSBA__Payment_Schedule_Unit__c</name>
+        <picklistValues>
+            <masterLabel>calendar quarter</masterLabel>
+            <translation><!-- calendar quarter --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>month(s)</masterLabel>
+            <translation><!-- month(s) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>quarter</masterLabel>
+            <translation><!-- quarter --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>year</masterLabel>
+            <translation><!-- year --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- Holds the number of Units for when the loan payment starts. This field is used in SBA Loan Authorization only. --></help>
+        <label><!-- Payment Starts Frequency --></label>
+        <name>nSBA__Payment_Starts_Frequency__c</name>
+    </fields>
+    <fields>
+        <help><!-- Holds the units related to the number of Units for when the loan payment starts. This field is used in SBA Loan Authorization only. --></help>
+        <label><!-- Payment Starts Unit --></label>
+        <name>nSBA__Payment_Starts_Unit__c</name>
+        <picklistValues>
+            <masterLabel>calendar quarter</masterLabel>
+            <translation><!-- calendar quarter --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>month(s)</masterLabel>
+            <translation><!-- month(s) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>quarter</masterLabel>
+            <translation><!-- quarter --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>year</masterLabel>
+            <translation><!-- year --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- Day of the month when loan payments are due. This field is used in SBA Loan Authorization only. --></help>
+        <label><!-- Payments Due Day of Month --></label>
+        <name>nSBA__Payments_Due_Day_Of_Month__c</name>
+        <picklistValues>
+            <masterLabel>______ calendar day</masterLabel>
+            <translation><!-- ______ calendar day --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>first calendar day</masterLabel>
+            <translation><!-- first calendar day --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>same day as the date of initial disbursement on this Note</masterLabel>
+            <translation><!-- same day as the date of initial disbursement on this Note --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>same day as the date of this Note</masterLabel>
+            <translation><!-- same day as the date of this Note --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>second calendar day</masterLabel>
+            <translation><!-- second calendar day --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>third calendar day</masterLabel>
+            <translation><!-- third calendar day --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- Check if Personal Property Hazard Insurance coverage is required on all equipment, fixtures or inventory that is collateral for the Loan, in the amount of full replacement costs. This field is used in SBA Loan Authorization only. --></help>
+        <label><!-- Personal Property Hazard Insurance --></label>
+        <name>nSBA__Personal_Property_Hazard_Insurance__c</name>
+    </fields>
+    <fields>
+        <label><!-- -D Prior SBA Loan --></label>
+        <name>nSBA__Prior_SBA_Loan__c</name>
+    </fields>
+    <fields>
+        <help><!-- Processing Method --></help>
+        <label><!-- Processing Method --></label>
+        <name>nSBA__Processing_Method__c</name>
+    </fields>
+    <fields>
+        <help><!-- Check if Product Liability Insurance is required in an amount and with an insurance company satisfactory to lender. This field is used in SBA Loan Authorization only. --></help>
+        <label><!-- Product Liability Insurance Required --></label>
+        <name>nSBA__Product_Liability_Insurance_Required__c</name>
+    </fields>
+    <fields>
+        <help><!-- Enter how many years after the term of Loan you want to protect leasehold improvements. This field is used in SBA Loan Authorization only. --></help>
+        <label><!-- Protecting Leasehold Improvements Years --></label>
+        <name>nSBA__Protecting_Leasehold_Improvements_Years__c</name>
+    </fields>
+    <fields>
+        <help><!-- Use of Proceeds - Purchase Land With Improvements Indicator --></help>
+        <label><!-- Purchase Land With Improvements --></label>
+        <name>nSBA__Purchase_Land_With_Improvements__c</name>
+    </fields>
+    <fields>
+        <help><!-- Use of Proceeds - Purchase Land Without Improvements Indicator --></help>
+        <label><!-- Purchase Land Without Improvements --></label>
+        <name>nSBA__Purchase_Land_Without_Improvements__c</name>
+    </fields>
+    <fields>
+        <help><!-- Check if Purchase-Sale Agreement needs to include satisfactory non-compete agreement. This field is used in SBA Loan Authorization only. --></help>
+        <label><!-- Purchase Sale Agreement W Non Compete --></label>
+        <name>nSBA__Purchase_Sale_Agreement_W_Non_Compete__c</name>
+    </fields>
+    <fields>
+        <help><!-- Check if Real Estate Hazard Insurance coverage is required only for business real estate. This field is used in SBA Loan Authorization only. --></help>
+        <label><!-- -D RE Hazard Insurance For Business Only --></label>
+        <name>nSBA__RE_Hazard_Insurance_For_Business_Only__c</name>
+    </fields>
+    <fields>
+        <help><!-- Check if Real Estate Hazard Insurance coverage is required. This field is used in SBA Loan Authorization only. --></help>
+        <label><!-- Real Estate Hazard Insurance Required --></label>
+        <name>nSBA__Real_Estate_Hazard_Insurance_Required__c</name>
+    </fields>
+    <fields>
+        <label><!-- -D Referral Fee Paid --></label>
+        <name>nSBA__Referral_Fee_Paid__c</name>
+    </fields>
+    <fields>
+        <label><!-- -D Refinance Of SBA Loan Meets Requireme --></label>
+        <name>nSBA__Refinance_Of_SBA_Loan_Meets_Requirements__c</name>
+    </fields>
+    <fields>
+        <help><!-- Refinance Will Provide Substantial Benefit To Applicant --></help>
+        <label><!-- -D Refinance Provide Substantial Benefit --></label>
+        <name>nSBA__Refinance_Provide_Substantial_Benefit__c</name>
+    </fields>
+    <fields>
+        <help><!-- Check if any of use of proceeds have been used to Refinance Credit Card Debt and all credit card obligations were business-related purchases. This field is used in SBA Loan Authorization only. --></help>
+        <label><!-- Refinancing Credit Card Debt --></label>
+        <name>nSBA__Refinancing_Credit_Card_Debt__c</name>
+    </fields>
+    <fields>
+        <help><!-- Form 1920 - Page 2 - Use of Proceeds - Renovations Construction Indicator (in thousands) --></help>
+        <label><!-- Renovations Construction --></label>
+        <name>nSBA__Renovations_Construction__c</name>
+    </fields>
+    <fields>
+        <help><!-- Rentable Property Occupied By SBA Regulations --></help>
+        <label><!-- Rentable Property Occupied By SBA Regs --></label>
+        <name>nSBA__Rentable_Property_Occupied_By_SBA_Regs__c</name>
+    </fields>
+    <fields>
+        <help><!-- Identifies how payments affect amortization. This field is only used for E-Tran submissions with extended data set. --></help>
+        <label><!-- Repayment Installment Type --></label>
+        <name>nSBA__Repayment_Installment_Type__c</name>
+        <picklistValues>
+            <masterLabel>Fixed</masterLabel>
+            <translation><!-- Fixed --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Other</masterLabel>
+            <translation><!-- Other --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Principal Only</masterLabel>
+            <translation><!-- Principal Only --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- Can be used to insert additional repayment terms as needed. This field is used in SBA Loan Authorization only. --></help>
+        <label><!-- Repayment Terms Open Options --></label>
+        <name>nSBA__Repayment_Terms_Open_Options__c</name>
+    </fields>
+    <fields>
+        <help><!-- Complete repayment terms including (but not limited to) Interest Rate, Loan Prepayment, Late Charge, etc. This field is used in Express Loan Authorization only. --></help>
+        <label><!-- Repayment Terms --></label>
+        <name>nSBA__Repayment_Terms__c</name>
+    </fields>
+    <fields>
+        <help><!-- Indicates whether this loan application has been resubmitted for reconsideration. --></help>
+        <label><!-- Resubmission --></label>
+        <name>nSBA__Resubmission__c</name>
+    </fields>
+    <fields>
+        <help><!-- Form 1920 - Page 2 - Use of Proceeds - Acquire Business - SBA (in thousands) --></help>
+        <label><!-- SBA Acquire Business --></label>
+        <name>nSBA__SBA_Acquire_Business__c</name>
+    </fields>
+    <fields>
+        <help><!-- Lender has submitted the required 912 and any additional documentation required to the district or branch SBA office serving the territory where the business applicant is located and has subsequently received written clearance of the character issue(s) fr --></help>
+        <label><!-- SBA Cleared Character --></label>
+        <name>nSBA__SBA_Cleared_Character__c</name>
+    </fields>
+    <fields>
+        <help><!-- Form 1920 - Page 2 - Use of Proceeds - Construction - SBA Loan (in thousands) --></help>
+        <label><!-- SBA Construction --></label>
+        <name>nSBA__SBA_Construction__c</name>
+    </fields>
+    <fields>
+        <label><!-- SBA Date Application Received --></label>
+        <name>nSBA__SBA_Date_Application_Received__c</name>
+    </fields>
+    <fields>
+        <label><!-- SBA District Disaster Area Office --></label>
+        <name>nSBA__SBA_District_Disaster_Area_Office__c</name>
+    </fields>
+    <fields>
+        <help><!-- SBA Field Office that the loan will be assigned to. This field is used in SBA Loan Authorization only. --></help>
+        <label><!-- SBA Field Office --></label>
+        <name>nSBA__SBA_Field_Office__c</name>
+        <relationshipLabel><!-- Applications --></relationshipLabel>
+    </fields>
+    <fields>
+        <help><!-- Form 1920 - Page 2 - Use of Proceeds - Furniture and Fixtures - SBA (in thousands) --></help>
+        <label><!-- SBA Furniture and Fixtures --></label>
+        <name>nSBA__SBA_Furniture_Fixtures__c</name>
+    </fields>
+    <fields>
+        <help><!-- Form 1920 - Page 2 - Use of Proceeds - Leasehold Improvements - SBA Loan (in thousands) --></help>
+        <label><!-- SBA Leasehold Improvements --></label>
+        <name>nSBA__SBA_Leasehold_Improvements__c</name>
+    </fields>
+    <fields>
+        <help><!-- SBA Loan Number --></help>
+        <label><!-- SBA Loan Number --></label>
+        <name>nSBA__SBA_Loan_Number__c</name>
+    </fields>
+    <fields>
+        <help><!-- Form 1920 - Page 2 - Use of Proceeds - Machinery and Equipment - SBA Loan (in thousands) --></help>
+        <label><!-- SBA Machinery and Equipment --></label>
+        <name>nSBA__SBA_Machinery_Equipment__c</name>
+    </fields>
+    <fields>
+        <help><!-- Form 1920 - Page 2 - Use of Proceeds - Other2 - SBA (in thousands) --></help>
+        <label><!-- -D SBA Other2 --></label>
+        <name>nSBA__SBA_Other2__c</name>
+    </fields>
+    <fields>
+        <help><!-- Form 1920 - Page 2 - Use of Proceeds - Other - SBA (in thousands) --></help>
+        <label><!-- SBA Other --></label>
+        <name>nSBA__SBA_Other__c</name>
+    </fields>
+    <fields>
+        <help><!-- Form 1920 - Page 2 - Use of Proceeds - Pay Accounts Payable - SBA (in thousands) --></help>
+        <label><!-- SBA Pay Accounts Payable --></label>
+        <name>nSBA__SBA_Pay_Accounts_Payable__c</name>
+    </fields>
+    <fields>
+        <help><!-- Form 1920 - Page 2 - Use of Proceeds - Pay Notes Payable - SBA (in thousands) --></help>
+        <label><!-- SBA Pay Notes Payable --></label>
+        <name>nSBA__SBA_Pay_Notes_Payable__c</name>
+    </fields>
+    <fields>
+        <help><!-- Form 1920 - Page 2 - Use of Proceeds - Pay Off SBA Loan - SBA (in thousands) --></help>
+        <label><!-- SBA Pay Off SBA Loan --></label>
+        <name>nSBA__SBA_Pay_Off_SBA_Loan__c</name>
+    </fields>
+    <fields>
+        <help><!-- Use this field if you want to override default SBA Processing Method defined for this Loan Product. For example: you can use this field to change processing method from PLP to GP. --></help>
+        <label><!-- SBA Processing Method --></label>
+        <name>nSBA__SBA_Processing_Method__c</name>
+        <picklistValues>
+            <masterLabel>7AG</masterLabel>
+            <translation>7a General</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>7EW</masterLabel>
+            <translation>7a with EWCP</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CAI</masterLabel>
+            <translation>Community Advantage Initiative</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CAT</masterLabel>
+            <translation>Community Advantage International Trade</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CTR</masterLabel>
+            <translation>Contract Loan Line of Credit (CAPLine)</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>EXP</masterLabel>
+            <translation>Export Express</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ITR</masterLabel>
+            <translation>International Trade Loans</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>PLP</masterLabel>
+            <translation>Preferred Lenders Program</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>PLW</masterLabel>
+            <translation>Preferred Lenders with EWCP</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SBL</masterLabel>
+            <translation>SBA Express Bridge Loan</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SBX</masterLabel>
+            <translation>SBA Express Program</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SGC</masterLabel>
+            <translation>Builders Line of Credit (CAPLine)</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SLC</masterLabel>
+            <translation>Seasonal Line of Credit (CAPLine)</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>STC</masterLabel>
+            <translation>Standard Asset Base Working Capital Line of Credit (CAPLine)</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- Form 1920 - Page 2 - Use of Proceeds - Purchase Inventory - SBA (in thousands) --></help>
+        <label><!-- SBA Purchase Inventory --></label>
+        <name>nSBA__SBA_Purchase_Inventory__c</name>
+    </fields>
+    <fields>
+        <help><!-- Form 1920 - Page 2 - Use of Proceeds - Purchase Land - SBA Loan (in thousands) --></help>
+        <label><!-- SBA Purchase Land --></label>
+        <name>nSBA__SBA_Purchase_Land__c</name>
+    </fields>
+    <fields>
+        <help><!-- Form 1920 - Page 2 - Use of Proceeds - SBA Guaranty Fee - SBA (in thousands) --></help>
+        <label><!-- SBA Loan for SBA Guaranty Fee --></label>
+        <name>nSBA__SBA_SBA_Guaranty_Fee__c</name>
+    </fields>
+    <fields>
+        <help><!-- Form 1920 - Page 2 - Use of Proceeds - Total - SBA (in thousands) --></help>
+        <label><!-- SBA Total --></label>
+        <name>nSBA__SBA_Total__c</name>
+    </fields>
+    <fields>
+        <help><!-- If the lender has direct authority to approve the loan application, checking this box renounces that authority. Renouncing direct authority causes the application to be sent to the Loan Guaranty Processing Center for underwriting. --></help>
+        <label><!-- SBA Underwriting Required --></label>
+        <name>nSBA__SBA_Underwriting_Required__c</name>
+    </fields>
+    <fields>
+        <help><!-- Form 1920 - Page 2 - Use of Proceeds - Working Capital - SBA (in thousands) --></help>
+        <label><!-- SBA Working Capital --></label>
+        <name>nSBA__SBA_Working_Capital__c</name>
+    </fields>
+    <fields>
+        <help><!-- The debt is either an interim loan that has been made for other than real estate construction purposes and was approved by the lender within 90 days prior to the issuance of a PLP loan number, or the debt is a construction loan that has not been disbursed --></help>
+        <label><!-- -D SID Was Approved Within 90 Days --></label>
+        <name>nSBA__SID_Approved_Within_90_Days__c</name>
+    </fields>
+    <fields>
+        <help><!-- This application is being processed under 7(a) Small Loan or Standard 7(a) and the lender has provided a transcript of account for the past 36 months or the life of the loan. --></help>
+        <label><!-- -D SLA Or Non PLP And Transcript Provide --></label>
+        <name>nSBA__SLA_Or_Non_PLP_And_Transcript_Provided__c</name>
+    </fields>
+    <fields>
+        <help><!-- Same Institution Debt refinancing Meets SBA Requirements --></help>
+        <label><!-- -D Same Inst Refinancing Meets SBA Req --></label>
+        <name>nSBA__Same_Inst_Refinancing_Meets_SBA_Req__c</name>
+    </fields>
+    <fields>
+        <help><!-- Seasonal CAPLines Applicant Qualifies Under Standard 7a --></help>
+        <label><!-- Seasonal CAPLines Applicant Qualifies 7a --></label>
+        <name>nSBA__Seasonal_CAPLines_Applicant_Qualifies_7a__c</name>
+    </fields>
+    <fields>
+        <help><!-- Used for Seasonal Payments, holds the list of months when payments are due. Contiguous sequence of 2-digit month numbers (01 = January, 02 = February, etc) on which payments occur in every year of the loan. --></help>
+        <label><!-- Seasonal Payments Months Codes List --></label>
+        <name>nSBA__Seasonal_Payments_Months_Codes_List__c</name>
+    </fields>
+    <fields>
+        <help><!-- Used for Seasonal Payments, holds the exception period when payments are not required. This field is used in SBA Loan Authorization only. --></help>
+        <label><!-- Seasonal Payments Months Exclusion List --></label>
+        <name>nSBA__Seasonal_Payments_Months_Exclusion_List__c</name>
+    </fields>
+    <fields>
+        <help><!-- Used for Seasonal Payments, holds the list of months when payments are due. This field is used in SBA Loan Authorization only. --></help>
+        <label><!-- Seasonal Payments Months List --></label>
+        <name>nSBA__Seasonal_Payments_Months_List__c</name>
+    </fields>
+    <fields>
+        <help><!-- Used for Seasonal Payments, holds the second List of months when payments are due. This field is used in SBA Loan Authorization only. --></help>
+        <label><!-- Seasonal Payments Months Second List --></label>
+        <name>nSBA__Seasonal_Payments_Months_Second_List__c</name>
+    </fields>
+    <fields>
+        <help><!-- If selected, additional information, which is not required for loans with delegated authority, will be sent to SBA over E-Tran. --></help>
+        <label><!-- Send Additional Information Over Etran --></label>
+        <name>nSBA__Send_Additional_Information_Over_Etran__c</name>
+    </fields>
+    <fields>
+        <help><!-- Confirm if the Credit Memorandum includes all sections required for Small Loan submission. --></help>
+        <label><!-- Small Loan Credit Memo Valid --></label>
+        <name>nSBA__Small_Loan_Credit_Memo_Valid__c</name>
+    </fields>
+    <fields>
+        <help><!-- A code that identifies special uses of loan proceeds that have special eligibility requirements. --></help>
+        <label><!-- Special Purpose Loan Code --></label>
+        <name>nSBA__Special_Purpose_Loan_Code__c</name>
+        <picklistValues>
+            <masterLabel>CAIP</masterLabel>
+            <translation>Community Adjustment and Investment Program</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CONS</masterLabel>
+            <translation>Construction</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>DELTA</masterLabel>
+            <translation>Defense Loan and Technical Assistance</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>EXPT</masterLabel>
+            <translation>Export</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ITRD</masterLabel>
+            <translation>International Trade</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>NOSP</masterLabel>
+            <translation>No Special Purpose</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>REVL</masterLabel>
+            <translation>Revolving Line Of Credit</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- Name of State Interest Rate Reduction Program, such as LIFT Focused Small Business Program. This field is used in SBA Loan Authorization only. --></help>
+        <label><!-- State Interest Rate Reduction Program --></label>
+        <name>nSBA__State_Interest_Rate_Reduction_Program__c</name>
+    </fields>
+    <fields>
+        <help><!-- List all State Specific Insurance Requirements here. This field is used in SBA Loan Authorization only. --></help>
+        <label><!-- State Specific Insurance Requirements --></label>
+        <name>nSBA__State_Specific_Insurance_Requirements__c</name>
+    </fields>
+    <fields>
+        <help><!-- If there is a subordinate funding, enter the Amount of subordinate funding here. This field is used in SBA Loan Authorization only. --></help>
+        <label><!-- Subordinate Funding Amount --></label>
+        <name>nSBA__Subordinate_Funding_Amount__c</name>
+    </fields>
+    <fields>
+        <help><!-- If there is a subordinate funding, enter the Name of entity providing subordinate funding here. This field is used in SBA Loan Authorization only. --></help>
+        <label><!-- Subordinate Funding From --></label>
+        <name>nSBA__Subordinate_Funding_From__c</name>
+    </fields>
+    <fields>
+        <help><!-- If there is a subordinate funding, enter the Term In Years here. This field is used in SBA Loan Authorization only. --></help>
+        <label><!-- Subordinate Funding Term In Years --></label>
+        <name>nSBA__Subordinate_Funding_Term_In_Years__c</name>
+    </fields>
+    <fields>
+        <help><!-- To Provide Funds For Or Refinance Leasehold Improvements --></help>
+        <label><!-- -D To Fund Or Refi Leasehold Improvement --></label>
+        <name>nSBA__To_Fund_Or_Refi_Leasehold_Improvements__c</name>
+    </fields>
+    <fields>
+        <help><!-- To Provide Funds To Guarantee Or Fund A Letter Of Credit --></help>
+        <label><!-- To Provide Funds For Letter Of Credit --></label>
+        <name>nSBA__To_Provide_Funds_For_Letter_Of_Credit__c</name>
+    </fields>
+    <fields>
+        <help><!-- Form 1920 - Page 2 - Use of Proceeds - Acquire Business - Total (in thousands) --></help>
+        <label><!-- Total Acquire Business --></label>
+        <name>nSBA__Total_Acquire_Business__c</name>
+    </fields>
+    <fields>
+        <help><!-- Total Addition To Existing Building --></help>
+        <label><!-- -D Total Addition To Existing Build --></label>
+        <name>nSBA__Total_Addition_To_Existing_Building__c</name>
+    </fields>
+    <fields>
+        <help><!-- Total Amount Paid To Seller --></help>
+        <label><!-- -D Total Amount Paid To Sel --></label>
+        <name>nSBA__Total_Amount_Paid_To_Seller__c</name>
+    </fields>
+    <fields>
+        <label><!-- Total Compensation Charged To Applicant --></label>
+        <name>nSBA__Total_Compensation_Charged_To_Applicant__c</name>
+    </fields>
+    <fields>
+        <help><!-- Total Construct Building --></help>
+        <label><!-- -D Total Construct Building --></label>
+        <name>nSBA__Total_Construct_Building__c</name>
+    </fields>
+    <fields>
+        <help><!-- Form 1920 - Page 2 - Use of Proceeds - Construction - Total (in thousands) --></help>
+        <label><!-- Total Construction --></label>
+        <name>nSBA__Total_Construction__c</name>
+    </fields>
+    <fields>
+        <help><!-- Form 1920 - Page 2 - Use of Proceeds - Furniture and Fixtures - Total (in thousands) --></help>
+        <label><!-- Total Furniture and Fixtures --></label>
+        <name>nSBA__Total_Furniture_Fixtures__c</name>
+    </fields>
+    <fields>
+        <help><!-- Total Leasehold Improvements --></help>
+        <label><!-- Total Leasehold Improvements --></label>
+        <name>nSBA__Total_Leasehold_Improvements__c</name>
+    </fields>
+    <fields>
+        <help><!-- Form 1920 - Page 2 - Use of Proceeds - Machinery and Equipment - Total (in thousands) --></help>
+        <label><!-- Total Machinery and Equipment --></label>
+        <name>nSBA__Total_Machinery_Equipment__c</name>
+    </fields>
+    <fields>
+        <help><!-- Total Notes Payable Not Same Inst --></help>
+        <label><!-- -D Total Notes Payable Not Same Inst --></label>
+        <name>nSBA__Total_Notes_Payable_Not_Same_Inst__c</name>
+    </fields>
+    <fields>
+        <help><!-- Total Notes Payable Same Inst --></help>
+        <label><!-- -D Total Notes Payable Same I --></label>
+        <name>nSBA__Total_Notes_Payable_Same_Inst__c</name>
+    </fields>
+    <fields>
+        <help><!-- Total OC Legal Entity --></help>
+        <label><!-- -D Total OC Legal Entity --></label>
+        <name>nSBA__Total_OC_Legal_Entity__c</name>
+    </fields>
+    <fields>
+        <help><!-- Total OC Name --></help>
+        <label><!-- -D Total OC Name --></label>
+        <name>nSBA__Total_OC_Name__c</name>
+    </fields>
+    <fields>
+        <help><!-- Form 1920 - Page 2 - Use of Proceeds - Other Explanation --></help>
+        <label><!-- -D Other Explain Line 2 --></label>
+        <name>nSBA__Total_Other2_Text__c</name>
+    </fields>
+    <fields>
+        <help><!-- Form 1920 - Page 2 - Use of Proceeds - Other2 - Total (in thousands) --></help>
+        <label><!-- -D Total Other2 --></label>
+        <name>nSBA__Total_Other2__c</name>
+    </fields>
+    <fields>
+        <help><!-- Total Other Text --></help>
+        <label><!-- Total Other Text --></label>
+        <name>nSBA__Total_Other_Text__c</name>
+    </fields>
+    <fields>
+        <help><!-- Total Other --></help>
+        <label><!-- Total Other --></label>
+        <name>nSBA__Total_Other__c</name>
+    </fields>
+    <fields>
+        <label><!-- -D Total Outstanding SBA Loans --></label>
+        <name>nSBA__Total_Outstanding_SBA_Loans__c</name>
+    </fields>
+    <fields>
+        <help><!-- Total Pay Interim Construction Loan --></help>
+        <label><!-- -D Total Pay Interim Construction L --></label>
+        <name>nSBA__Total_Pay_Interim_Construction_Loan__c</name>
+    </fields>
+    <fields>
+        <help><!-- Total Pay Lenders Interim Loan --></help>
+        <label><!-- -D Total Pay Lenders Interim Lo --></label>
+        <name>nSBA__Total_Pay_Lenders_Interim_Loan__c</name>
+    </fields>
+    <fields>
+        <help><!-- Form 1920 - Page 2 - Use of Proceeds - Pay Notes Payable - Total (in thousands) --></help>
+        <label><!-- Total Pay Notes Payable --></label>
+        <name>nSBA__Total_Pay_Notes_Payable__c</name>
+    </fields>
+    <fields>
+        <help><!-- Form 1920 - Page 2 - Use of Proceeds - Pay Off SBA Loan - Total (in thousands) --></help>
+        <label><!-- Total Pay Off SBA Loan --></label>
+        <name>nSBA__Total_Pay_Off_SBA_Loan__c</name>
+    </fields>
+    <fields>
+        <help><!-- Total Purchase Business --></help>
+        <label><!-- Total Purchase Business --></label>
+        <name>nSBA__Total_Purchase_Business__c</name>
+    </fields>
+    <fields>
+        <help><!-- Total Purchase Furniture Equipment --></help>
+        <label><!-- -D Total Purchase Furniture Equipm --></label>
+        <name>nSBA__Total_Purchase_Furniture_Equipment__c</name>
+    </fields>
+    <fields>
+        <help><!-- Total Purchase Improvements Only --></help>
+        <label><!-- -D Total Purchase Improvements O --></label>
+        <name>nSBA__Total_Purchase_Improvements_Only__c</name>
+    </fields>
+    <fields>
+        <help><!-- Total Purchase Inventory --></help>
+        <label><!-- Total Purchase Inventory --></label>
+        <name>nSBA__Total_Purchase_Inventory__c</name>
+    </fields>
+    <fields>
+        <help><!-- Total Purchase Land And Improvements --></help>
+        <label><!-- -D Total Purchase Land And Improveme --></label>
+        <name>nSBA__Total_Purchase_Land_And_Improvements__c</name>
+    </fields>
+    <fields>
+        <help><!-- Total Purchase Land Only --></help>
+        <label><!-- -D Total Purchase Land Only --></label>
+        <name>nSBA__Total_Purchase_Land_Only__c</name>
+    </fields>
+    <fields>
+        <help><!-- Form 1920 - Page 2 - Use of Proceeds - Purchase Land - Total (in thousands) --></help>
+        <label><!-- Total Purchase Land --></label>
+        <name>nSBA__Total_Purchase_Land__c</name>
+    </fields>
+    <fields>
+        <help><!-- Total Ref SBA Loan Not Same Inst --></help>
+        <label><!-- -D Total Ref SBA Loan Not Same I --></label>
+        <name>nSBA__Total_Ref_SBA_Loan_Not_Same_Inst__c</name>
+    </fields>
+    <fields>
+        <help><!-- Total Ref SBA Loan Same Inst --></help>
+        <label><!-- -D Total Ref SBA Loan Same I --></label>
+        <name>nSBA__Total_Ref_SBA_Loan_Same_Inst__c</name>
+    </fields>
+    <fields>
+        <help><!-- Total Renovations To Building --></help>
+        <label><!-- -D Total Renovations To Build --></label>
+        <name>nSBA__Total_Renovations_To_Building__c</name>
+    </fields>
+    <fields>
+        <help><!-- Total SBA Guaranty Fee --></help>
+        <label><!-- Total SBA Guaranty Fee --></label>
+        <name>nSBA__Total_SBA_Guaranty_Fee__c</name>
+    </fields>
+    <fields>
+        <help><!-- Total Trade or Accounts Payable --></help>
+        <label><!-- Total Trade or Accounts Payable --></label>
+        <name>nSBA__Total_Trade_or_Accounts_Payable__c</name>
+    </fields>
+    <fields>
+        <help><!-- Total Use of Proceeds --></help>
+        <label><!-- Total Use of Proceeds --></label>
+        <name>nSBA__Total_Use_of_Proceeds__c</name>
+    </fields>
+    <fields>
+        <help><!-- Total Working Capital --></help>
+        <label><!-- Total Working Capital --></label>
+        <name>nSBA__Total_Working_Capital__c</name>
+    </fields>
+    <fields>
+        <help><!-- The business is at least 51 percent owned by individuals who are U.S. citizens and/or who have Lawful Permanent Resident (LPR) status. --></help>
+        <label><!-- -D Us Citizens And LPR Own 51 Perc --></label>
+        <name>nSBA__Us_Citizens_And_LPR_Own_51_Percent__c</name>
+    </fields>
+    <fields>
+        <help><!-- Use Of Proceeds To Provide Funds For Short Term Working Capital --></help>
+        <label><!-- -D To Provide Funds For Short Term Capi --></label>
+        <name>nSBA__Use_Of_Proceeds_Fund_Short_Term_Capital__c</name>
+    </fields>
+    <fields>
+        <help><!-- Use Of Proceeds To Finance Lenders Other Real Estate Owned --></help>
+        <label><!-- -D To Finance Lender&apos;s Other Real Est --></label>
+        <name>nSBA__Use_Of_Proceeds_To_Finance_Lenders_Other__c</name>
+    </fields>
+    <fields>
+        <help><!-- Use Of Proceeds Used To Refinance Loans To Applicant Associates --></help>
+        <label><!-- -D Use Of Proceeds To Refinance Assoc Lo --></label>
+        <name>nSBA__Use_Of_Proceeds_To_Refinance_Assoc_Loans__c</name>
+    </fields>
+    <fields>
+        <help><!-- Use Of Proceeds Will Not Benefit Small Business --></help>
+        <label><!-- -D Use Of Proceeds Will Not Benefit Sm --></label>
+        <name>nSBA__Use_Of_Proceeds_Will_Not_Benefit_Sm_Bus__c</name>
+    </fields>
+    <fields>
+        <help><!-- Check if Workers Compensation Insurance is required in an amount meeting state law requirements and with an insurance company satisfactory to lender. This field is used in SBA Loan Authorization only. --></help>
+        <label><!-- Workers Compensation Insurance Required --></label>
+        <name>nSBA__Workers_Compensation_Insurance_Required__c</name>
+    </fields>
+    <fields>
+        <help><!-- Working Capital CAPLines Applicant Qualifies Under Standard 7a --></help>
+        <label><!-- Working Capital CAPLines App Qual 7a --></label>
+        <name>nSBA__Working_Capita_CAPLines_App_Qualifies_7a__c</name>
+    </fields>
+    <fields>
+        <help><!-- Maximum number of days after fiscal year ends within which Borrower needs to send year-end statements to Lender. This field is used in SBA Loan Authorization only. --></help>
+        <label><!-- Year End Statements Submitted Within --></label>
+        <name>nSBA__Year_End_Statements_Submitted_Within__c</name>
+    </fields>
+    <fields>
+        <help><!-- Select the type of Year End Statements (compiled, reviewed or audited) borrower needs to furnish and send to lender. This field is used in SBA Loan Authorization only. --></help>
+        <label><!-- Year End Statements Type --></label>
+        <name>nSBA__Year_End_Statements_Type__c</name>
+        <picklistValues>
+            <masterLabel>audited</masterLabel>
+            <translation><!-- audited --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>compiled</masterLabel>
+            <translation><!-- compiled --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>reviewed</masterLabel>
+            <translation><!-- reviewed --></translation>
+        </picklistValues>
+    </fields>
+</CustomObjectTranslation>

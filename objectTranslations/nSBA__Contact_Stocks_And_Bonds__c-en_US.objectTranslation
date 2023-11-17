@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fieldSets>
+        <label><!-- SBA Form 413 --></label>
+        <name>nSBA__SBA_Form_413</name>
+    </fieldSets>
+    <fields>
+        <help><!-- Name of contact --></help>
+        <label><!-- Contact Name --></label>
+        <name>nSBA__Contact_Name__c</name>
+        <relationshipLabel><!-- Contact Stocks And Bonds --></relationshipLabel>
+    </fields>
+    <fields>
+        <help><!-- Cost of stocks and bonds --></help>
+        <label><!-- Cost --></label>
+        <name>nSBA__Cost__c</name>
+    </fields>
+    <fields>
+        <help><!-- Date of quotation/exchange --></help>
+        <label><!-- Date of Quotation Exchange --></label>
+        <name>nSBA__Date_of_Quotation_Exchange__c</name>
+    </fields>
+    <fields>
+        <help><!-- Market value quotation/exchange --></help>
+        <label><!-- Market Value Quotation Exchange --></label>
+        <name>nSBA__Market_Value_Quotation_Exchange__c</name>
+    </fields>
+    <fields>
+        <help><!-- Name of Securities --></help>
+        <label><!-- Name Of Securities --></label>
+        <name>nSBA__Name_Of_Securities__c</name>
+    </fields>
+    <fields>
+        <help><!-- Number of shares owned --></help>
+        <label><!-- Number Of Shares --></label>
+        <name>nSBA__Number_Of_Shares__c</name>
+    </fields>
+    <fields>
+        <help><!-- Total value of stocks/bonds --></help>
+        <label><!-- Total Value --></label>
+        <name>nSBA__Total_Value__c</name>
+    </fields>
+</CustomObjectTranslation>

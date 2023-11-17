@@ -1,0 +1,20 @@
+Hello,</br>
+</br>
+The Informatica Cloud Secure Agent for {!Organization.Name} has one or more functions suspended at this time. The Secure Agent Data function is used by Informatica Cloud to transmit core extract files into nCino. The Secure Agent Process function is used by Informatica Cloud Real Time to provide real-time integrations to third party vendors. The below fields reflect the status of each of these functions:
+</br>
+</br>
+The Secure Agent's Data function: {!nMONITOR__Informatica_Cloud_Integration__c.nMONITOR__User_Friendly_Agent_Data_Status__c}
+</br>
+The Secure Agent's Process function:
+{!nMONITOR__Informatica_Cloud_Integration__c.nMONITOR__User_Friendly_Agent_Process_Status__c}
+</br>
+</br>
+
+
+Please reach out to your IT department to have the Informatica Cloud Secure Agent restarted as soon as possible. If a restart does not correct the issue, please submit a case to the nCino Support Team.
+</br>
+</br>
+Thank you,
+</br>
+</br>
+nCino Data Services

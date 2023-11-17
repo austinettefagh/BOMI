@@ -1,0 +1,79 @@
+<apex:page docType="html-5.0" showHeader="false" applyHtmlTag="false" sidebar="false">
+	<html xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" lang="en">
+	<script>
+		(function (window) {
+			const appendChild = HTMLElement.prototype.appendChild;
+			const lightningLoadedEvent = 'lightning_loaded';
+			const visualforceLoadedEvent = 'visualforce_loaded';
+			let lightningFinished = false;
+	
+			HTMLElement.prototype.appendChild = function (aChild) {
+				if (
+					aChild instanceof HTMLScriptElement &&
+					/nds\..*\.js/.test(aChild.getAttribute('src')) &&
+					!lightningFinished
+				) {
+					document.addEventListener(lightningLoadedEvent, appendChild.bind(this, aChild));
+				} else {
+					appendChild.apply(this, arguments);
+				}
+	
+				return aChild;
+			};
+	
+			function handleLightningFinished() {
+				lightningFinished = true;
+				document.dispatchEvent(new CustomEvent(lightningLoadedEvent));
+			}
+	
+			function handleError(error) {
+				handleLightningFinished();
+				console.error(error);
+			}
+	
+			function loadLightning(lightningDependency) {
+				try {
+					window.$Lightning.use(lightningDependency, function () {
+						handleLightningFinished();
+	
+						const auraErrorMessage = document.querySelector('#auraErrorMessage');
+	
+						if (auraErrorMessage) {
+							const logAuraErrorToConsole = () => {
+								if (auraErrorMessage.textContent) {
+									console.error(auraErrorMessage.textContent);
+								}
+							};
+							const observer = new MutationObserver(logAuraErrorToConsole);
+	
+							auraErrorMessage.style.display = 'none';
+							logAuraErrorToConsole();
+	
+							observer.observe(auraErrorMessage, { childList: true });
+						}
+					});
+				} catch (error) {
+					handleError(error);
+				}
+			}
+	
+			document.addEventListener(visualforceLoadedEvent, (event) => {
+				loadLightning(event.detail.lightningDependency);
+			});
+		})(window);
+	
+		</script>
+		<div data-taxonomy-id="UniversalDocMan">
+			<c:UniversalDocManDataService />
+			<c:UniversalDocManIncludes />
+			<c:UniversalDocManRoutes />
+			<c:StaticResourceRegistryLoader />
+			<c:UniversalDocMan />
+
+			<script type="text/javascript">
+				var app = angular.module('app');
+				app.requires.push('docman.decorators');
+			</script>
+		</div>
+	</html>
+</apex:page>

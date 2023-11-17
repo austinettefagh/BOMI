@@ -1,0 +1,589 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <label><!-- Credit Score 2 --></label>
+        <name>Credit_Score2__c</name>
+    </fields>
+    <fields>
+        <label><!-- Inquiries Are Factor --></label>
+        <name>Facta_Inquiries_Factor__c</name>
+    </fields>
+    <fields>
+        <label><!-- MLA Contact --></label>
+        <name>MLA_Contact__c</name>
+    </fields>
+    <fields>
+        <label><!-- MLA Disclaimer --></label>
+        <name>MLA_Disclaimer__c</name>
+    </fields>
+    <fields>
+        <label><!-- MLA Insufficient Data --></label>
+        <name>MLA_Insufficient_Data__c</name>
+    </fields>
+    <fields>
+        <label><!-- MLA Status --></label>
+        <name>MLA_Status__c</name>
+    </fields>
+    <fields>
+        <label><!-- Score 1 Code --></label>
+        <name>Score_1_Code__c</name>
+    </fields>
+    <fields>
+        <label><!-- Score 1 Name --></label>
+        <name>Score_1_Name__c</name>
+    </fields>
+    <fields>
+        <label><!-- Score 2 Code --></label>
+        <name>Score_2_Code__c</name>
+    </fields>
+    <fields>
+        <label><!-- Score 2 Factor Code 1 --></label>
+        <name>Score_2_Factor_Code_1__c</name>
+    </fields>
+    <fields>
+        <label><!-- Score 2 Factor Code 2 --></label>
+        <name>Score_2_Factor_Code_2__c</name>
+    </fields>
+    <fields>
+        <label><!-- Score 2 Factor Code 3 --></label>
+        <name>Score_2_Factor_Code_3__c</name>
+    </fields>
+    <fields>
+        <label><!-- Score 2 Factor Code 4 --></label>
+        <name>Score_2_Factor_Code_4__c</name>
+    </fields>
+    <fields>
+        <label><!-- Score 2 Factor Text 1 --></label>
+        <name>Score_2_Factor_Text_1__c</name>
+    </fields>
+    <fields>
+        <label><!-- Score 2 Factor Text 2 --></label>
+        <name>Score_2_Factor_Text_2__c</name>
+    </fields>
+    <fields>
+        <label><!-- Score 2 Factor Text 3 --></label>
+        <name>Score_2_Factor_Text_3__c</name>
+    </fields>
+    <fields>
+        <label><!-- Score 2 Factor Text 4 --></label>
+        <name>Score_2_Factor_Text_4__c</name>
+    </fields>
+    <fields>
+        <label><!-- Score 2 Inquiries Are Factor --></label>
+        <name>Score_2_Inquiries_Are_Factor__c</name>
+    </fields>
+    <fields>
+        <label><!-- Score 2 Name --></label>
+        <name>Score_2_Name__c</name>
+    </fields>
+    <fields>
+        <label><!-- Score 3 Code --></label>
+        <name>Score_3_Code__c</name>
+    </fields>
+    <fields>
+        <label><!-- Score 3 Credit Score --></label>
+        <name>Score_3_Credit_Score__c</name>
+    </fields>
+    <fields>
+        <label><!-- Score 3 Factor Code 1 --></label>
+        <name>Score_3_Factor_Code_1__c</name>
+    </fields>
+    <fields>
+        <label><!-- Score 3 Factor Code 2 --></label>
+        <name>Score_3_Factor_Code_2__c</name>
+    </fields>
+    <fields>
+        <label><!-- Score 3 Factor Code 3 --></label>
+        <name>Score_3_Factor_Code_3__c</name>
+    </fields>
+    <fields>
+        <label><!-- Score 3 Factor Code 4 --></label>
+        <name>Score_3_Factor_Code_4__c</name>
+    </fields>
+    <fields>
+        <label><!-- Score 3 Factor Text 1 --></label>
+        <name>Score_3_Factor_Text_1__c</name>
+    </fields>
+    <fields>
+        <label><!-- Score 3 Factor Text 2 --></label>
+        <name>Score_3_Factor_Text_2__c</name>
+    </fields>
+    <fields>
+        <label><!-- Score 3 Factor Text 3 --></label>
+        <name>Score_3_Factor_Text_3__c</name>
+    </fields>
+    <fields>
+        <label><!-- Score 3 Factor Text 4 --></label>
+        <name>Score_3_Factor_Text_4__c</name>
+    </fields>
+    <fields>
+        <label><!-- Score 3 Inquiries Are Factor --></label>
+        <name>Score_3_Inquiries_Are_Factor__c</name>
+    </fields>
+    <fields>
+        <label><!-- Score 3 Name --></label>
+        <name>Score_3_Name__c</name>
+    </fields>
+    <fields>
+        <label><!-- Score 4 Code --></label>
+        <name>Score_4_Code__c</name>
+    </fields>
+    <fields>
+        <label><!-- Score 4 Credit Score --></label>
+        <name>Score_4_Credit_Score__c</name>
+    </fields>
+    <fields>
+        <label><!-- Score 4 Factor Code 1 --></label>
+        <name>Score_4_Factor_Code_1__c</name>
+    </fields>
+    <fields>
+        <label><!-- Score 4 Factor Code 2 --></label>
+        <name>Score_4_Factor_Code_2__c</name>
+    </fields>
+    <fields>
+        <label><!-- Score 4 Factor Code 3 --></label>
+        <name>Score_4_Factor_Code_3__c</name>
+    </fields>
+    <fields>
+        <label><!-- Score 4 Factor Code 4 --></label>
+        <name>Score_4_Factor_Code_4__c</name>
+    </fields>
+    <fields>
+        <label><!-- Score 4 Factor Text 1 --></label>
+        <name>Score_4_Factor_Text_1__c</name>
+    </fields>
+    <fields>
+        <label><!-- Score 4 Factor Text 2 --></label>
+        <name>Score_4_Factor_Text_2__c</name>
+    </fields>
+    <fields>
+        <label><!-- Score 4 Factor Text 3 --></label>
+        <name>Score_4_Factor_Text_3__c</name>
+    </fields>
+    <fields>
+        <label><!-- Score 4 Factor Text 4 --></label>
+        <name>Score_4_Factor_Text_4__c</name>
+    </fields>
+    <fields>
+        <label><!-- Score 4 Inquiries Are Factor --></label>
+        <name>Score_4_Inquiries_Are_Factor__c</name>
+    </fields>
+    <fields>
+        <label><!-- Score 4 Name --></label>
+        <name>Score_4_Name__c</name>
+    </fields>
+    <fields>
+        <label><!-- Score 5 Code --></label>
+        <name>Score_5_Code__c</name>
+    </fields>
+    <fields>
+        <label><!-- Score 5 Credit Score --></label>
+        <name>Score_5_Credit_Score__c</name>
+    </fields>
+    <fields>
+        <label><!-- Score 5 Factor Code 1 --></label>
+        <name>Score_5_Factor_Code_1__c</name>
+    </fields>
+    <fields>
+        <label><!-- Score 5 Factor Code 2 --></label>
+        <name>Score_5_Factor_Code_2__c</name>
+    </fields>
+    <fields>
+        <label><!-- Score 5 Factor Code 3 --></label>
+        <name>Score_5_Factor_Code_3__c</name>
+    </fields>
+    <fields>
+        <label><!-- Score 5 Factor Code 4 --></label>
+        <name>Score_5_Factor_Code_4__c</name>
+    </fields>
+    <fields>
+        <label><!-- Score 5 Factor Text 1 --></label>
+        <name>Score_5_Factor_Text_1__c</name>
+    </fields>
+    <fields>
+        <label><!-- Score 5 Factor Text 2 --></label>
+        <name>Score_5_Factor_Text_2__c</name>
+    </fields>
+    <fields>
+        <label><!-- Score 5 Factor Text 3 --></label>
+        <name>Score_5_Factor_Text_3__c</name>
+    </fields>
+    <fields>
+        <label><!-- Score 5 Factor Text 4 --></label>
+        <name>Score_5_Factor_Text_4__c</name>
+    </fields>
+    <fields>
+        <label><!-- Score 5 Inquiries Are Factor --></label>
+        <name>Score_5_Inquiries_Are_Factor__c</name>
+    </fields>
+    <fields>
+        <label><!-- Score 5 Name --></label>
+        <name>Score_5_Name__c</name>
+    </fields>
+    <fields>
+        <label><!-- Score Factor Code 1 --></label>
+        <name>Score_Factor_Code_1__c</name>
+    </fields>
+    <fields>
+        <label><!-- Score Factor Code 2 --></label>
+        <name>Score_Factor_Code_2__c</name>
+    </fields>
+    <fields>
+        <label><!-- Score Factor Code 3 --></label>
+        <name>Score_Factor_Code_3__c</name>
+    </fields>
+    <fields>
+        <label><!-- Score Factor Code 4 --></label>
+        <name>Score_Factor_Code_4__c</name>
+    </fields>
+    <fields>
+        <label><!-- Score Factor Text 1 --></label>
+        <name>Score_Factor_Reason_1__c</name>
+    </fields>
+    <fields>
+        <label><!-- Score Factor Text 2 --></label>
+        <name>Score_Factor_Reason_2__c</name>
+    </fields>
+    <fields>
+        <label><!-- Score Factor Text 3 --></label>
+        <name>Score_Factor_Reason_3__c</name>
+    </fields>
+    <fields>
+        <label><!-- Score Factor Text 4 --></label>
+        <name>Score_Factor_Reason_4__c</name>
+    </fields>
+    <fields>
+        <label><!-- Score Maximum 2 --></label>
+        <name>Score_Maximum_2__c</name>
+    </fields>
+    <fields>
+        <label><!-- Score Maximum 3 --></label>
+        <name>Score_Maximum_3__c</name>
+    </fields>
+    <fields>
+        <label><!-- Score Maximum 4 --></label>
+        <name>Score_Maximum_4__c</name>
+    </fields>
+    <fields>
+        <label><!-- Score Maximum 5 --></label>
+        <name>Score_Maximum_5__c</name>
+    </fields>
+    <fields>
+        <label><!-- Score Maximum 1 --></label>
+        <name>Score_Maximum__c</name>
+    </fields>
+    <fields>
+        <label><!-- Score Minimum 2 --></label>
+        <name>Score_Minimum_2__c</name>
+    </fields>
+    <fields>
+        <label><!-- Score Minimum 3 --></label>
+        <name>Score_Minimum_3__c</name>
+    </fields>
+    <fields>
+        <label><!-- Score Minimum 4 --></label>
+        <name>Score_Minimum_4__c</name>
+    </fields>
+    <fields>
+        <label><!-- Score Minimum 5 --></label>
+        <name>Score_Minimum_5__c</name>
+    </fields>
+    <fields>
+        <label><!-- Score Minimum 1 --></label>
+        <name>Score_Minimum__c</name>
+    </fields>
+    <fields>
+        <label><!-- Score Percentile Ranking 2 --></label>
+        <name>Score_Percentile_2__c</name>
+    </fields>
+    <fields>
+        <label><!-- Score Percentile Ranking 3 --></label>
+        <name>Score_Percentile_3__c</name>
+    </fields>
+    <fields>
+        <label><!-- Score Percentile Ranking 4 --></label>
+        <name>Score_Percentile_4__c</name>
+    </fields>
+    <fields>
+        <label><!-- Score Percentile Ranking 5 --></label>
+        <name>Score_Percentile_5__c</name>
+    </fields>
+    <fields>
+        <label><!-- Score Percentile Ranking 1 --></label>
+        <name>Score_Percentile__c</name>
+    </fields>
+    <fields>
+        <label><!-- Total Number of Monthly Payments --></label>
+        <name>Total_Monthly_Payments_Amount__c</name>
+    </fields>
+    <fields>
+        <label><!-- Account Payment Index --></label>
+        <name>nFUSE__Account_Payment_Index__c</name>
+    </fields>
+    <fields>
+        <label><!-- Relationship --></label>
+        <name>nFUSE__Account__c</name>
+        <relationshipLabel><!-- Credit Reports --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Address Discrepancy --></label>
+        <name>nFUSE__Address_Discrepency__c</name>
+    </fields>
+    <fields>
+        <label><!-- Alert Code --></label>
+        <name>nFUSE__Alert_Code__c</name>
+    </fields>
+    <fields>
+        <label><!-- Alert Message --></label>
+        <name>nFUSE__Alert_Message__c</name>
+    </fields>
+    <fields>
+        <label><!-- D-AlertedMessage --></label>
+        <name>nFUSE__AlertedMessage__c</name>
+    </fields>
+    <fields>
+        <label><!-- App Plugin --></label>
+        <name>nFUSE__App_Plugin__c</name>
+    </fields>
+    <fields>
+        <label><!-- Available Credit --></label>
+        <name>nFUSE__Available_Credit__c</name>
+    </fields>
+    <fields>
+        <label><!-- Average Open Balance --></label>
+        <name>nFUSE__Average_Open_Balance__c</name>
+    </fields>
+    <fields>
+        <label><!-- Dollar amount of Bankruptcy --></label>
+        <name>nFUSE__Bankruptcy_Amount__c</name>
+    </fields>
+    <fields>
+        <label><!-- Bankruptcy Indicator --></label>
+        <name>nFUSE__Bankruptcy_Indicator__c</name>
+    </fields>
+    <fields>
+        <label><!-- Business Delinquency Financial Score --></label>
+        <name>nFUSE__Business_Delinquency_Financial_Score__c</name>
+    </fields>
+    <fields>
+        <label><!-- Business Delinquency Score --></label>
+        <name>nFUSE__Business_Delinquency_Score__c</name>
+    </fields>
+    <fields>
+        <label><!-- Business Failure Score --></label>
+        <name>nFUSE__Business_Failure_Score__c</name>
+    </fields>
+    <fields>
+        <help><!-- This field signifies if a record contains charge off activity. --></help>
+        <label><!-- Charge-off --></label>
+        <name>nFUSE__Charge_Off__c</name>
+    </fields>
+    <fields>
+        <label><!-- Collection Indicator --></label>
+        <name>nFUSE__Collection_Indicator__c</name>
+    </fields>
+    <fields>
+        <label><!-- Confidence Level Indicator --></label>
+        <name>nFUSE__Confidence_Level_Indicator__c</name>
+    </fields>
+    <fields>
+        <label><!-- Contact --></label>
+        <name>nFUSE__Contact__c</name>
+        <relationshipLabel><!-- Credit Reports --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Credit Active Since --></label>
+        <name>nFUSE__Credit_Active_Since__c</name>
+    </fields>
+    <fields>
+        <help><!-- If selected, this field indicates that an applicant&apos;s credit report is frozen or locked. --></help>
+        <label><!-- Credit Report Freeze --></label>
+        <name>nFUSE__Credit_Report_Freeze__c</name>
+    </fields>
+    <fields>
+        <label><!-- Credit Score --></label>
+        <name>nFUSE__Credit_Score__c</name>
+    </fields>
+    <fields>
+        <label><!-- EFX ID --></label>
+        <name>nFUSE__EFX_ID__c</name>
+    </fields>
+    <fields>
+        <label><!-- D-FICO Score --></label>
+        <name>nFUSE__FICO_Score__c</name>
+    </fields>
+    <fields>
+        <help><!-- This checkbox signifies if a record indicates foreclosure activity. --></help>
+        <label><!-- Foreclosure --></label>
+        <name>nFUSE__Foreclosure__c</name>
+    </fields>
+    <fields>
+        <label><!-- ID Verification/Fraud Alert --></label>
+        <name>nFUSE__Fraud_Alert__c</name>
+    </fields>
+    <fields>
+        <label><!-- Industry Payment Index --></label>
+        <name>nFUSE__Industry_Payment_Index__c</name>
+    </fields>
+    <fields>
+        <label><!-- Dollar amount of judgements satisfied --></label>
+        <name>nFUSE__Judgements_Amount_Satisfied__c</name>
+    </fields>
+    <fields>
+        <label><!-- Dollar amount of Judgements --></label>
+        <name>nFUSE__Judgements_Amount__c</name>
+    </fields>
+    <fields>
+        <label><!-- Last Run Date --></label>
+        <name>nFUSE__Last_Run_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Legal Actions --></label>
+        <name>nFUSE__Legal_Actions_Indicator__c</name>
+    </fields>
+    <fields>
+        <label><!-- Dollar amount of Liens Satisfied --></label>
+        <name>nFUSE__Liens_Amount_Satisfied__c</name>
+    </fields>
+    <fields>
+        <label><!-- Dollar amount of Liens --></label>
+        <name>nFUSE__Liens_Amount__c</name>
+    </fields>
+    <fields>
+        <help><!-- This field indicates an applicant&apos;s Military Lending Act status. --></help>
+        <label><!-- MLA Status Covered Borrower --></label>
+        <name>nFUSE__MLA_Status_Covered_Borrower__c</name>
+        <picklistValues>
+            <masterLabel>Insufficient Data for Match</masterLabel>
+            <translation><!-- Insufficient Data for Match --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Match</masterLabel>
+            <translation><!-- Match --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>No Match</masterLabel>
+            <translation><!-- No Match --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Match Quality Indicator --></label>
+        <name>nFUSE__Match_Quality_Indicator__c</name>
+    </fields>
+    <fields>
+        <label><!-- Median Balance --></label>
+        <name>nFUSE__Median_Balance__c</name>
+    </fields>
+    <fields>
+        <label><!-- MostSevereStatus24Months --></label>
+        <name>nFUSE__Most_Severe_Status_24Months__c</name>
+    </fields>
+    <fields>
+        <help><!-- This field indicates if the vendor database retrieved an applicant&apos;s Credit Bureau information successfully. --></help>
+        <label><!-- No Hit --></label>
+        <name>nFUSE__No_Hit__c</name>
+    </fields>
+    <fields>
+        <label><!-- Number of accounts --></label>
+        <name>nFUSE__Number_Of_Accounts__c</name>
+    </fields>
+    <fields>
+        <label><!-- Number of Bankruptcies --></label>
+        <name>nFUSE__Number_Of_Bankruptcies__c</name>
+    </fields>
+    <fields>
+        <label><!-- Number of Charge Offs --></label>
+        <name>nFUSE__Number_Of_Charge_Offs__c</name>
+    </fields>
+    <fields>
+        <label><!-- Number of Judgements Satisfied --></label>
+        <name>nFUSE__Number_Of_Judgements_Satisfied__c</name>
+    </fields>
+    <fields>
+        <label><!-- Number of Judgements --></label>
+        <name>nFUSE__Number_Of_Judgements__c</name>
+    </fields>
+    <fields>
+        <label><!-- Number of Liens Satisfied --></label>
+        <name>nFUSE__Number_Of_Liens_Satisfied__c</name>
+    </fields>
+    <fields>
+        <label><!-- Number of Liens --></label>
+        <name>nFUSE__Number_Of_Liens__c</name>
+    </fields>
+    <fields>
+        <label><!-- OFAC Alert --></label>
+        <name>nFUSE__OFAC_Alert_Indicator__c</name>
+    </fields>
+    <fields>
+        <help><!-- This field displays the total number of open tradelines. --></help>
+        <label><!-- Open Tradelines --></label>
+        <name>nFUSE__Open_Tradelines__c</name>
+    </fields>
+    <fields>
+        <label><!-- Bankruptcy Filing Date --></label>
+        <name>nFUSE__Recent_Bankruptcy_Filing_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Judgements Filing Date --></label>
+        <name>nFUSE__Recent_Judgements_Filing_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Liens Filing Date --></label>
+        <name>nFUSE__Recent_Liens_Filing_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Report Category --></label>
+        <name>nFUSE__Report_Category__c</name>
+        <picklistValues>
+            <masterLabel>Commercial</masterLabel>
+            <translation><!-- Commercial --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Consumer</masterLabel>
+            <translation><!-- Consumer --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Report Type --></label>
+        <name>nFUSE__Report_Type__c</name>
+        <picklistValues>
+            <masterLabel>CreditHardPull</masterLabel>
+            <translation><!-- CreditHardPull --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CreditSoftPull</masterLabel>
+            <translation><!-- CreditSoftPull --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- This field signifies if a record contains an indication of repossession on a tradeline. --></help>
+        <label><!-- Repossession --></label>
+        <name>nFUSE__Repossession__c</name>
+    </fields>
+    <fields>
+        <label><!-- Status --></label>
+        <name>nFUSE__Status__c</name>
+    </fields>
+    <fields>
+        <label><!-- Tax Lien Indicator --></label>
+        <name>nFUSE__Tax_Lien_Indicator__c</name>
+    </fields>
+    <fields>
+        <label><!-- Total Credit Limit --></label>
+        <name>nFUSE__Total_Credit_Limit__c</name>
+    </fields>
+    <fields>
+        <label><!-- Total Exposure --></label>
+        <name>nFUSE__Total_Exposure__c</name>
+    </fields>
+    <fields>
+        <label><!-- Total Past Due --></label>
+        <name>nFUSE__Total_Past_Due__c</name>
+    </fields>
+    <fields>
+        <label><!-- Transaction Log --></label>
+        <name>nFUSE__Transaction_Log__c</name>
+        <relationshipLabel><!-- Credit Reports --></relationshipLabel>
+    </fields>
+</CustomObjectTranslation>

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <help><!-- Select the associated dimension. --></help>
+        <label><!-- Dimension --></label>
+        <name>LLC_BI__Dimension__c</name>
+        <relationshipLabel><!-- Dimension Ranges --></relationshipLabel>
+    </fields>
+    <fields>
+        <help><!-- Select the checkbox to indicate that this range is inclusive of this maximum value. --></help>
+        <label><!-- Maximum Inclusive --></label>
+        <name>LLC_BI__Maximum_Inclusive__c</name>
+    </fields>
+    <fields>
+        <help><!-- Enter the maximum value for this range. --></help>
+        <label><!-- Maximum --></label>
+        <name>LLC_BI__Maximum__c</name>
+    </fields>
+    <fields>
+        <help><!-- Select the checkbox to indicate that this range is inclusive of this minimum value. --></help>
+        <label><!-- Minimum Inclusive --></label>
+        <name>LLC_BI__Minimum_Inclusive__c</name>
+    </fields>
+    <fields>
+        <help><!-- Enter the minimum value for this range. --></help>
+        <label><!-- Minimum --></label>
+        <name>LLC_BI__Minimum__c</name>
+    </fields>
+    <fields>
+        <label><!-- lookupKey --></label>
+        <name>LLC_BI__lookupKey__c</name>
+    </fields>
+</CustomObjectTranslation>

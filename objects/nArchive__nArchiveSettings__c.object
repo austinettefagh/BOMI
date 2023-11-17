@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customSettingsType>List</customSettingsType>
+    <description>Provides ability to specify custom implementations for use with Factory classes.</description>
+    <enableFeeds>false</enableFeeds>
+    <fields>
+        <fullName>nArchive__DocStatus__c</fullName>
+        <deprecated>false</deprecated>
+        <description>The Document Status (Review Status) that you want to invoke the creation of a DES record.</description>
+        <encryptionScheme>None</encryptionScheme>
+        <externalId>false</externalId>
+        <label>Document Status</label>
+        <length>25</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>nArchive__Type__c</fullName>
+        <deprecated>false</deprecated>
+        <description>The type of transaction that will create the DES record.  Valid values: DocStatus, Attachment.</description>
+        <encryptionScheme>None</encryptionScheme>
+        <externalId>false</externalId>
+        <label>Transaction Type</label>
+        <length>25</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <label>Document Export Service Factory Settings</label>
+    <visibility>Public</visibility>
+</CustomObject>

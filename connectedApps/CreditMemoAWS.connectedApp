@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ConnectedApp xmlns="http://soap.sforce.com/2006/04/metadata">
+    <contactEmail>rwilliams@bankofmissouri.com</contactEmail>
+    <contactPhone>573-547-6541</contactPhone>
+    <label>CreditMemoAWS</label>
+    <oauthConfig>
+        <callbackUrl>https://login.salesforce.com/services/oauth2/callback</callbackUrl>
+        <certificate>MIIDXDCCAkSgAwIBAgIUFm0JoPlt4L571TWAsFNK4YEnQ+MwDQYJKoZIhvcNAQENBQAwNzELMAkGA1UEBhMCVVMxDjAMBgNVBAoMBW5DaW5vMRgwFgYDVQQDDA9uQ2lubyBTQU1MIENBIDEwHhcNMjIwMTI4MTMxNTQ5WhcNMzIwMTI2MTkxNTQ5WjA3MQswCQYDVQQGEwJVUzEOMAwGA1UECgwFbkNpbm8xGDAWBgNVBAMMD25DaW5vIFNBTUwgQ0EgMTCCASIwDQYJKoZIhvcNAQEBBQADggEPADCCAQoCggEBAMDVpENzz/nccpx5L1YqEkrYwOEZx0DadCCmtOW/FiE7LNkVjO4nnQnVlVzqzzdKQEfzlB1QzcLDrCEhydv3EQTeAwjkHs0dHoTYtZpL8st9hieLLv3gXjDl0odbMAGrorePgyL8W9ET8mqpQOo5P30nOLtfYY/6PFq9DKgdDqQ0BH92jtJqVYQheXQeNyZlsoVSMjfd/ZR/uDOWe6cAor6eq3M4Zw+TPyXFjKbctmsQsSk6QRmSzhaO20lfum4ZTm8iS5rZShYYJj5ZsdsKu0C4wwgmL6Zt5UGtI0LzxRa7oY43lzS/O7L4Dt54PBCUKryFtf5ZwhniB0+KARfGiSECAwEAAaNgMF4wDAYDVR0TAQH/BAIwADAOBgNVHQ8BAf8EBAMCB4AwHwYDVR0jBBgwFoAUwe95EOoMunFEXQq5GsZ0HTnY8tEwHQYDVR0OBBYEFMHveRDqDLpxRF0KuRrGdB052PLRMA0GCSqGSIb3DQEBDQUAA4IBAQAUiA97gXV5QmbL6fL5qsTQyX2RSHfVKYzmkGii86MraPyyO6oZwn9rVwViKeAJffNBFyIa9o+/ReSgb/wsaNGKJhLPTCaV2cZRPmYoPvJzEJ8II33eZgYoyLg4hNTkwPlNw1d5bi5YZ6LL+yZGzO7ewbRuFdWxf8uhZAUkvrBMigsh9Mnqr9giHlS7VFhaEbuXFQOjGO4zFliWL3lnzy2ygZRb6rDhhDKkRGSMs5M1znyNjHR2uKQ9eZkeNyhXsM34/tEmSG36Q1CC1Kf3fR+BrsPt1eKUxKzL78L20QjF9swg6yrW3xhMdL/eoliXMZhV2IBO7CZosVR4824D235X</certificate>
+        <consumerKey>3MVG9hq7jmfCuKffxV8EIa4Pjxf4ShGpFw_gqyUFFRJNj4Rpsqx7w_9eqK8fTtfR.6zgmAuWm4z1N3_NLo.QT</consumerKey>
+        <isAdminApproved>true</isAdminApproved>
+        <isClientCredentialEnabled>false</isClientCredentialEnabled>
+        <isCodeCredentialEnabled>false</isCodeCredentialEnabled>
+        <isCodeCredentialPostOnly>false</isCodeCredentialPostOnly>
+        <isConsumerSecretOptional>false</isConsumerSecretOptional>
+        <isIntrospectAllTokens>false</isIntrospectAllTokens>
+        <isNamedUserJwtEnabled>false</isNamedUserJwtEnabled>
+        <isPkceRequired>false</isPkceRequired>
+        <isSecretRequiredForRefreshToken>false</isSecretRequiredForRefreshToken>
+        <scopes>Api</scopes>
+        <scopes>Full</scopes>
+        <scopes>RefreshToken</scopes>
+        <scopes>Content</scopes>
+    </oauthConfig>
+    <oauthPolicy>
+        <ipRelaxation>ENFORCE</ipRelaxation>
+        <refreshTokenPolicy>infinite</refreshTokenPolicy>
+    </oauthPolicy>
+    <profileName>PWC/nCino</profileName>
+    <profileName>System Administrator</profileName>
+    <profileName>Credit &amp; Processor</profileName>
+    <profileName>Relationship Manager &amp; Credit</profileName>
+</ConnectedApp>

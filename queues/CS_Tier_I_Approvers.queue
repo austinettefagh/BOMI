@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Queue xmlns="http://soap.sforce.com/2006/04/metadata">
+    <doesSendEmailToMembers>false</doesSendEmailToMembers>
+    <name>CS Tier I Approvers</name>
+    <queueMembers>
+        <users>
+            <user>atosh@bankofmissouri.com</user>
+            <user>cgoodson@bankofmissouri.com</user>
+            <user>kfelkel@bankofmissouri.com</user>
+            <user>kjones@bankofmissouri.com</user>
+            <user>lwilliams@bankofmissouri.com</user>
+            <user>mrobertson@bankofmissouri.com</user>
+            <user>snichols@cadlaw.com</user>
+        </users>
+    </queueMembers>
+    <queueSobject>
+        <sobjectType>Case</sobjectType>
+    </queueSobject>
+</Queue>

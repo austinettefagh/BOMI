@@ -1,0 +1,1 @@
+{"done":true,"entityTypeName":"EntityDefinition","queryLocator":null,"records":[{"DurableId":"Account","Label":"Account","NamespacePrefix":null,"QualifiedApiName":"Account","attributes":{"type":"EntityDefinition","url":"/services/data/v44.0/tooling/sobjects/EntityDefinition/Account"}}],"size":72,"totalSize":72}

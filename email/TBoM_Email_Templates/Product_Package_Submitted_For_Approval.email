@@ -1,0 +1,8 @@
+Hi,<br>
+<p>The Product Package {!LLC_BI__Product_Package__c.Name} requires your approval. To approve or reject this item, please click this link: {!ApprovalRequest.External_URL}. 
+</p>
+<p>Click here for the Product Package details: {!LLC_BI__Product_Package__c.Link}</p>
+<p>Here is the link to Credit Memo: {!LLC_BI__Product_Package__c.CF_Credit_Memo_Page_Link__c}
+</p>
+<br>
+Thank You.

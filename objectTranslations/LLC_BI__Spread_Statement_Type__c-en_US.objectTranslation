@@ -1,0 +1,380 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fieldSets>
+        <label><!-- Upgradeable Fields --></label>
+        <name>LLC_BI__Upgradeable_Fields</name>
+    </fieldSets>
+    <fields>
+        <help><!-- If checked, a search box is showed for every grid allowing row contents to be filtered. --></help>
+        <label><!-- Allow Record Filtering --></label>
+        <name>LLC_BI__Allow_Record_Filtering__c</name>
+    </fields>
+    <fields>
+        <help><!-- Determines whether or not to balance the  total columns. If columns are grouped then the grouped columns will be balanced otherwise the columns themselves will be balanced. If the total is equal to zero it is considered balanced. --></help>
+        <label><!-- Balance Total --></label>
+        <name>LLC_BI__Balance_Total__c</name>
+    </fields>
+    <fields>
+        <label><!-- Borrower Type --></label>
+        <name>LLC_BI__Borrower_Type__c</name>
+        <picklistValues>
+            <masterLabel>Borrower</masterLabel>
+            <translation><!-- Borrower --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Co-Borrower</masterLabel>
+            <translation><!-- Co-Borrower --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Guarantor</masterLabel>
+            <translation><!-- Guarantor --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Limited Guarantor</masterLabel>
+            <translation><!-- Limited Guarantor --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- The Underwriting Bundle to which this object is related. --></help>
+        <label><!-- Bundle --></label>
+        <name>LLC_BI__Bundle__c</name>
+        <relationshipLabel><!-- Spread Statements --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Calc Common Sizing Record --></label>
+        <name>LLC_BI__Calc_Common_Sizing_Record__c</name>
+        <relationshipLabel><!-- Spread Statement Templates --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Calc Common Sizing Total Group --></label>
+        <name>LLC_BI__Calc_Common_Sizing_Total_Group__c</name>
+        <relationshipLabel><!-- Spread Statement Templates (Calc Common Sizing Total Group) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Description --></label>
+        <name>LLC_BI__Description__c</name>
+    </fields>
+    <fields>
+        <label><!-- Display Common Sizing --></label>
+        <name>LLC_BI__Display_Common_Sizing__c</name>
+    </fields>
+    <fields>
+        <label><!-- Display Projection Drivers --></label>
+        <name>LLC_BI__Display_Projection_Drivers__c</name>
+    </fields>
+    <fields>
+        <help><!-- This field controls the visibility of the Trend column on the Balance Sheet and Income Statement. --></help>
+        <label><!-- Display Trend --></label>
+        <name>LLC_BI__Display_Trend__c</name>
+    </fields>
+    <fields>
+        <label><!-- End Date Quarter --></label>
+        <name>LLC_BI__End_Date_Quarter__c</name>
+    </fields>
+    <fields>
+        <label><!-- End Date --></label>
+        <name>LLC_BI__End_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Entity Type --></label>
+        <name>LLC_BI__Entity_Type__c</name>
+        <picklistValues>
+            <masterLabel>Analyst</masterLabel>
+            <translation><!-- Analyst --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Channel Partner / Reseller</masterLabel>
+            <translation><!-- Channel Partner / Reseller --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Competitor</masterLabel>
+            <translation><!-- Competitor --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Corporation</masterLabel>
+            <translation><!-- Corporation --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Customer</masterLabel>
+            <translation><!-- Customer --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Customer - Channel</masterLabel>
+            <translation><!-- Customer - Channel --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Customer - Direct</masterLabel>
+            <translation><!-- Customer - Direct --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>EPC</masterLabel>
+            <translation><!-- EPC --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Estate</masterLabel>
+            <translation><!-- Estate --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>General Partnership</masterLabel>
+            <translation><!-- General Partnership --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Guardianship</masterLabel>
+            <translation><!-- Guardianship --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Individual</masterLabel>
+            <translation><!-- Individual --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Installation Partner</masterLabel>
+            <translation><!-- Installation Partner --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Integrator</masterLabel>
+            <translation><!-- Integrator --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Investor</masterLabel>
+            <translation><!-- Investor --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Limited Liability Company (LLC)</masterLabel>
+            <translation><!-- Limited Liability Company (LLC) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Limited Liability Partnership (LLP)</masterLabel>
+            <translation><!-- Limited Liability Partnership (LLP) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Limited Partnership</masterLabel>
+            <translation><!-- Limited Partnership --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Municipality / Other Public Entity</masterLabel>
+            <translation><!-- Municipality / Other Public Entity --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Nonprofit Corporation</masterLabel>
+            <translation><!-- Nonprofit Corporation --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Operating Company</masterLabel>
+            <translation><!-- Operating Company --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Other</masterLabel>
+            <translation><!-- Other --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Partner</masterLabel>
+            <translation><!-- Partner --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Press</masterLabel>
+            <translation><!-- Press --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Prospect</masterLabel>
+            <translation><!-- Prospect --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Reseller</masterLabel>
+            <translation><!-- Reseller --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Sole Proprietorship</masterLabel>
+            <translation><!-- Sole Proprietorship --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Technology Partner</masterLabel>
+            <translation><!-- Technology Partner --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Trust</masterLabel>
+            <translation><!-- Trust --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- Determines whether or not the columns for the template should be grouped. I.e. Months into quarters and quarters into years. --></help>
+        <label><!-- Group Columns --></label>
+        <name>LLC_BI__Group_Columns__c</name>
+    </fields>
+    <fields>
+        <help><!-- Deprecated. All spread statements use keyboard interaction. --></help>
+        <label><!-- -D Interaction --></label>
+        <name>LLC_BI__Interaction__c</name>
+        <picklistValues>
+            <masterLabel>click</masterLabel>
+            <translation><!-- click --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>dblclick</masterLabel>
+            <translation><!-- dblclick --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>keyboard</masterLabel>
+            <translation><!-- keyboard --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Is Balance Sheet --></label>
+        <name>LLC_BI__Is_Balance_Sheet__c</name>
+    </fields>
+    <fields>
+        <label><!-- Is Budget --></label>
+        <name>LLC_BI__Is_Budget__c</name>
+    </fields>
+    <fields>
+        <help><!-- Cash Flow Statement replaced with Traditional Cash Flow and UCA Cash Flow --></help>
+        <label><!-- -D Is Cash Flow Statement --></label>
+        <name>LLC_BI__Is_Cash_Flow_Statement__c</name>
+    </fields>
+    <fields>
+        <label><!-- Is Global Analysis --></label>
+        <name>LLC_BI__Is_Global_Analysis__c</name>
+    </fields>
+    <fields>
+        <label><!-- Is Income Statement --></label>
+        <name>LLC_BI__Is_Income_Statement__c</name>
+    </fields>
+    <fields>
+        <label><!-- Is Multi-Currency --></label>
+        <name>LLC_BI__Is_Multi_Currency__c</name>
+    </fields>
+    <fields>
+        <label><!-- Is Personal Financial Statement --></label>
+        <name>LLC_BI__Is_Personal_Financial_Statement__c</name>
+    </fields>
+    <fields>
+        <label><!-- Is Ratios --></label>
+        <name>LLC_BI__Is_Ratios__c</name>
+    </fields>
+    <fields>
+        <label><!-- Is Template --></label>
+        <name>LLC_BI__Is_Template__c</name>
+    </fields>
+    <fields>
+        <label><!-- Is Traditional Cash Flow --></label>
+        <name>LLC_BI__Is_Traditional_Cash_Flow__c</name>
+    </fields>
+    <fields>
+        <label><!-- Is UCA Cash Flow --></label>
+        <name>LLC_BI__Is_UCA_Cash_Flow__c</name>
+    </fields>
+    <fields>
+        <label><!-- Product Line --></label>
+        <name>LLC_BI__Product_Line__c</name>
+        <relationshipLabel><!-- Spread Statement Templates --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Product Type --></label>
+        <name>LLC_BI__Product_Type__c</name>
+        <relationshipLabel><!-- Spread Statement Templates --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Product --></label>
+        <name>LLC_BI__Product__c</name>
+        <relationshipLabel><!-- Spread Statement Templates --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Sort Order --></label>
+        <name>LLC_BI__Sort_Order__c</name>
+    </fields>
+    <fields>
+        <label><!-- Source Statement --></label>
+        <name>LLC_BI__Source_Statement__c</name>
+        <relationshipLabel><!-- Cloned Spread Statement Templates --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Spread Statement Total Group --></label>
+        <name>LLC_BI__Spread_Statement_Total_Group__c</name>
+        <relationshipLabel><!-- Spread Statement Templates --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Start Date Quarter --></label>
+        <name>LLC_BI__Start_Date_Quarter__c</name>
+    </fields>
+    <fields>
+        <label><!-- Start Date --></label>
+        <name>LLC_BI__Start_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Static Periods --></label>
+        <name>LLC_BI__Static_Periods__c</name>
+    </fields>
+    <fields>
+        <label><!-- Supports Common Sizing --></label>
+        <name>LLC_BI__Supports_Common_Sizing__c</name>
+    </fields>
+    <fields>
+        <help><!-- Does this statement type support trend. --></help>
+        <label><!-- Supports_Trend --></label>
+        <name>LLC_BI__Supports_Trend__c</name>
+    </fields>
+    <fields>
+        <help><!-- Controls display of the currency symbol on the Total Record Group that is automatically created for this Spread Statement Template --></help>
+        <label><!-- Total Hide Currency Symbol --></label>
+        <name>LLC_BI__Total_Hide_Currency_Symbol__c</name>
+    </fields>
+    <fields>
+        <label><!-- Total Row Name --></label>
+        <name>LLC_BI__Total_Row_Name__c</name>
+    </fields>
+    <fields>
+        <label><!-- Type --></label>
+        <name>LLC_BI__Type__c</name>
+        <picklistValues>
+            <masterLabel>Balance Sheet</masterLabel>
+            <translation><!-- Balance Sheet --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Budget</masterLabel>
+            <translation><!-- Budget --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Global Analysis</masterLabel>
+            <translation><!-- Global Analysis --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Highlights</masterLabel>
+            <translation><!-- Highlights --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Income Statement</masterLabel>
+            <translation><!-- Income Statement --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Personal Financial Statement</masterLabel>
+            <translation><!-- Personal Financial Statement --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Ratios</masterLabel>
+            <translation><!-- Ratios --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Reconciliation</masterLabel>
+            <translation><!-- Reconciliation --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Traditional Cash Flow</masterLabel>
+            <translation><!-- Traditional Cash Flow --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>UCA Cash Flow</masterLabel>
+            <translation><!-- UCA Cash Flow --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- lookupKey --></label>
+        <name>LLC_BI__lookupKey__c</name>
+    </fields>
+    <webLinks>
+        <label><!-- Clone_Template --></label>
+        <name>LLC_BI__Clone_Template</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Print --></label>
+        <name>LLC_BI__Print</name>
+    </webLinks>
+</CustomObjectTranslation>

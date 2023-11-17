@@ -1,0 +1,11 @@
+*** NEW CASE APPROVAL NOTIFICATION ***  
+
+The following case has been assigned to you.  
+Account Name: {!Case.Account}
+Contact Name:  {!Contact.Name} 
+Case #:  {!Case.CaseNumber} 
+Approval Tier: {!Case.Approval_Tier__c}
+Collateral Item: {!Case.Collateral_Item__c}
+Description of Collateral & Changes: {!Case.Description_of_Collateral_Changes__c}
+
+Click on the link to access the case:  {!Case.Link}

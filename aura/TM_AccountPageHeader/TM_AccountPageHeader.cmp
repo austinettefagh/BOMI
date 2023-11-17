@@ -1,0 +1,219 @@
+<!--Declaring the component controller in the component definition TM_AccountPageController-->
+<!-- Component starts-->
+<aura:component controller="TM_AccountPageController" implements="force:appHostable,flexipage:availableForAllPageTypes,flexipage:availableForRecordHome,force:hasRecordId,forceCommunity:availableForAllPageTypes,force:lightningQuickAction,force:hasSObjectName">
+    <lightning:quickActionAPI aura:id="quickActionAPI" />
+    <aura:attribute name="recordId" type="Id" />
+    <aura:attribute name="accountDetails" type="TM_AccountPageController.AccountWrapper"/>
+    <aura:attribute name="isGoodRating" type="Boolean" default = "false"/>
+    
+    <aura:handler name="init" value="{!this}" action="{!c.doInit}" />
+	<aura:handler event="force:refreshView" action="{!c.doInit}" />
+    
+        <!-- <div class="message-action-panel slds-hide" style="height:4rem;position:absolute;left:32%;top:-9px;">
+        <div class="slds-notify_container slds-is-relative">
+            <div class="slds-notify slds-notify_toast slds-theme_success" role="alert">
+                <span class="slds-assistive-text">success</span>
+                <span class="slds-icon_container slds-icon-utility-success slds-m-right_small slds-no-flex slds-align-top">
+                    <lightning:icon iconName="utility:success" title="success" size="small" /> -->
+                    <!-- <c:OB_svgIcons svgPath="/resource/UI_Assets/assets/icons/utility-sprite/svg/symbols.svg#success" category="utility" size="small" name="success" /> -->
+                <!-- </span>
+                <div class="slds-notify__content">
+                    <h2 class="slds-text-heading_small ">Account
+                        <a href="javascript:void(0);">ACME - 100</a> widgets was created.
+                    </h2>
+                </div>
+                <button class="slds-button slds-button_icon slds-notify__close slds-button_icon-inverse" title="Close">
+                    <lightning:icon iconName="utility:close" title="close" size="small" /> -->
+                    <!-- <c:OB_svgIcons svgPath="/resource/UI_Assets/assets/icons/utility-sprite/svg/symbols.svg#close" category="utility" size="small" name="close" /> -->
+                    <!-- <span class="slds-assistive-text">Close</span>
+                </button>
+            </div>
+        </div>
+    </div> -->
+    
+    <div class="slds-p-horizontal_large slds-p-top_medium slds-p-bottom_x-large slds-size_12-of-12">
+        <!-- <div class="header-col_one slds-large-size_2-of-12 slds-medium-size_2-of-12 slds-size_12-of-12 slds-p-vertical_medium title-flex">
+            <lightning:icon iconName="custom:custom16" title="custom16" size="medium" class="slds-m-right_small" />
+            <ui:outputText class="form-control heading slds-text-heading_x-large slds-p-top_xx-small logo"  aura:id="accName" value="{!v.accountDetails.acc.Name}" />
+        </div> -->
+        <!-- <div class="header-col_two slds-m-top_medium slds-large-size_1-of-12 slds-medium-size_1-of-12 slds-size_12-of-12 slds-p-vertical_medium">
+        </div> -->
+        <!-- <div class="slds-large-size_8-of-12 slds-medium-size_8-of-12 slds-size_12-of-12 slds-p-top_medium row-one_summary">
+            <div class="slds-grid"> -->
+                <!-- <div class="slds-large-size_3-of-12 slds-medium-size_6-of-12 slds-size_6-of-12 slds-p-horizontal_small slds-m-top_small___mobile slds-m-top_small___tablet">
+                    <div class="slds-text-title_caps slds-truncate">Commitment Amount</div> -->
+                    <!-- hard code commitmentAmount(1)-->
+                    <!-- <ui:outputNumber class="form-control slds-text-heading_medium medium-bold" aura:id="comAmount" value="{!v.accountDetails.commitmentAmount}" />
+                </div>                -->
+                <!-- <div class="slds-large-size_3-of-12 slds-medium-size_6-of-12 slds-size_6-of-12 slds-p-horizontal_small slds-m-top_small___mobile">
+                    <div class="slds-text-title_caps slds-truncate">Company Growth Indicator</div>
+                    <div class="slds-text-heading_medium medium-bold">
+                        <aura:If isTrue="{!(v.accountDetails.companyGrowthIndicator>=20)}">
+                            <span class="slds-icon_container slds-icon-utility-arrowup growth-indicator up">
+                                <lightning:icon iconName="utility:arrowup" title="arrowup" size="x-small" class="profit-color" />
+                            </span>
+                            <aura:set attribute="else">
+                                <span class="slds-icon_container slds-icon-utility-arrowup growth-indicator down">
+                                    <lightning:icon iconName="utility:arrowdown" title="arrowdown" size="x-small" class="profit-color" />
+                                </span>  
+                            </aura:set>
+                        </aura:If>
+                        <span>{!v.accountDetails.companyGrowthIndicator}%</span>
+                    </div>
+                </div> -->
+                <!-- Account Custom Action -->
+                <!-- <div class="slds-large-size_6-of-12 slds-medium-size_6-of-12 slds-size_6-of-12 slds-p-horizontal_small slds-m-top_small___mobile slds-m-top_small___tablet">  
+                    <lightning:button label="Spreads" onclick="{!c.spreadsAction}"/>
+                    <lightning:button label="Review" onclick="{!c.reviewAction}"/>
+                    <lightning:button label="Run Verification" onclick="{!c.runVerificationAction}"/>
+                </div>  -->
+                <!-- <c:tm_SendReferralPopup accountRecordId = "{!v.recordId}" aura:id="tm_SendReferralPopup"></c:tm_SendReferralPopup> -->
+            <!-- </div>
+        </div> -->
+        <div class="slds-grid slds-wrap user_primary_info slds-size_2-of-12 header-col_one">
+            <div class="slds-large-size_12-of-12 slds-medium_size_12-of-12 slds-size_12-of-12">
+                <ul class="user-info-list">
+                    <li>
+                        <span class="slds-icon_container slds-icon-utility-call slds-m-right_x-small">
+                            <lightning:icon iconName="utility:call" title="call" size="xx-small" class="sf-blue" />
+                        </span>
+                        <span class="slds-text-body_small title">Phone: </span>
+                        <!-- Standard Field Phone-->
+                        <span class="user-info-detail slds-text-body_small"><ui:outputPhone value="{!v.accountDetails.acc.Phone}"/></span>
+                    </li>
+                    <li>
+                        <span class="slds-icon_container slds-icon-utility-checkin slds-m-right_x-small">
+                            <lightning:icon iconName="utility:checkin" title="checkin" size="xx-small" class="sf-blue" />
+                        </span>
+                        <span class="slds-text-body_small title">Address: </span>
+                        <!-- BillingStreet + BillingCity + BillingState + BillingPostalCode -->
+                        <span class="user-info-detail slds-text-body_small slds-text-color_default"><ui:outputText value="{!v.accountDetails.address}"/></span>
+                    </li>
+                </ul>
+            </div>
+            <!-- left side banner -->
+            <div class="slds-large-size_12-of-12 slds-medium_size_12-of-12 slds-size_12-of-12 slds-m-top_small___mobile slds-m-top_small___tablet">
+                <ul class="user-info-list">
+                    <li>
+                        <span class="slds-icon_container slds-icon-utility-checkin slds-m-right_x-small">
+                            <lightning:icon iconName="utility:emoji" title="emoji" size="xx-small" class="sf-blue" />
+                        </span>
+                        <span class="slds-text-body_small title">CIF#: </span>
+                        <!-- Custom Field: CIF__c -->
+                        <span class="slds-m-left_x-small value slds-text-color_default"><ui:outputDate value="{!v.accountDetails.acc.CIF__c}" /></span>
+                    </li>
+                    <li>
+                        <span class="slds-icon_container slds-icon-utility-checkin slds-m-right_x-small">
+                            <lightning:icon iconName="utility:company" title="company" size="xx-small" class="sf-blue" />
+                        </span>
+                        <span class="slds-text-body_small title">Industry: </span>
+                        <!-- Standard Field: Industry -->
+                        <span class="slds-m-left_x-small value slds-text-color_default"><ui:outputText value="{!v.accountDetails.acc.Industry}"/></span>
+                    </li>
+                    <li>
+                        <span class="slds-icon_container slds-icon-utility-checkin slds-m-right_x-small">
+                            <lightning:icon iconName="utility:podcast_webinar" title="podcast_webinar" size="xx-small" class="sf-blue" />
+                        </span>
+                        <span class="slds-text-body_small title">Website: </span>
+                        <!-- Standard Field: Website -->
+                        <span class="slds-m-left_x-small value slds-text-color_default"><ui:outputText value="{!v.accountDetails.acc.Website}"/></span>
+                    </li>
+                    <li>
+                        <span class="slds-icon_container slds-icon-utility-checkin slds-m-right_x-small">
+                            <lightning:icon iconName="utility:user" title="user" size="xx-small" class="sf-blue" />
+                        </span>
+                        <!-- <span class="slds-text-body_small title">Account Owner: </span> -->
+                        <!-- Standard Field: OwnerName -->
+                        <!-- <span class="slds-m-left_x-small value slds-text-color_default"><ui:outputText value="{!v.accountDetails.acc.Owner.Name}"/></span> -->
+                        <span class="slds-text-body_small title">Relationship Manager: </span>
+                        <span class="slds-m-left_x-small value slds-text-color_default"><ui:outputText value="{!v.accountDetails.acc.Relationship_Manager__c}"/></span>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        
+        <div class="slds-size_1-of-12 header-col_two">
+        </div>
+        
+        <div class="slds-grid slds-wrap company_growth_info slds-size_8-of-12">
+            <!-- <div class="slds-large-size_12-of-12 slds-medium-size_12-of-12 slds-size_12-of-12 slds-m-left_small___mobile">
+                <div class="slds-grid slds-wrap">
+                    <div class="slds-size_12-of-12">
+                        
+                    </div>
+                </div>
+            </div> -->
+            <div class="slds-large-size_12-of-12 slds-medium-size_12-of-12 slds-size_12-of-12">
+                <div class="slds-grid slds-wrap">
+                    <div class="slds-large-size_3-of-12 slds-medium-size_6-of-12 slds-size_6-of-12 slds-p-horizontal_small slds-m-top_small___mobile">
+                        <div class="slds-text-title_caps slds-truncate">Annual Revenue</div>
+                        <!-- Standard Field: annualRevenue/10000000 -->
+                        <ui:outputCurrency class="form-control slds-text-heading_medium medium-bold" aura:id="annualRevenue" value="{!v.accountDetails.annualRevenue}"/>
+                    </div>
+                    <div class="slds-large-size_3-of-12 slds-medium-size_6-of-12 slds-size_6-of-12 slds-p-horizontal_small slds-m-top_small___mobile">
+                        <div class="slds-text-title_caps slds-truncate">TOTAL Loans</div>
+                        <ui:outputCurrency class="form-control slds-text-heading_medium medium-bold" aura:id="totalLoans" value="{!v.accountDetails.totalLoans}"/>
+                    </div>
+                    <div class="slds-large-size_3-of-12 slds-medium-size_6-of-12 slds-size_6-of-12 slds-p-horizontal_small slds-m-top_small___mobile slds-m-top_small___tablet">
+                        <div class="slds-text-title_caps slds-truncate">Credit Rating</div>
+                        <span class="title-flex">
+                            <ui:outputText class="form-control slds-text-heading_medium medium-bold" aura:id="creditRating" value="{!v.accountDetails.acc.nSBA__External_Credit_Score__c}" />    
+                        </span>
+                    </div> 
+                    <!-- <div class="slds-large-size_3-of-12 slds-medium-size_6-of-12 slds-size_6-of-12 slds-p-horizontal_small slds-m-top_small___mobile slds-m-top_small___tablet">
+                        <div class="slds-text-title_caps slds-truncate">Total Open Cases</div>
+                        <ui:outputNumber class="form-control slds-text-heading_medium medium-bold" aura:id="totalCases" value="{!v.accountDetails.totalOpenCases}"/>
+                    </div> -->
+                    <div class="slds-large-size_3-of-12 slds-medium-size_6-of-12 slds-size_6-of-12 slds-p-horizontal_small slds-m-top_small___mobile slds-m-top_small___tablet">
+                        <div class="slds-text-title_caps slds-truncate">Total Bank Deposits</div>
+                        <ui:outputCurrency class="form-control slds-text-heading_medium medium-bold" aura:id="totalBankDeposits" value="{!v.accountDetails.totalBankDeposits}"/>
+                    </div>                
+                </div>                
+            </div> 
+            <!--ASSET DEMO RELATED FIELDS-->
+            <div class="slds-large-size_12-of-12 slds-medium-size_12-of-12 slds-size_12-of-12 slds-p-top_xx-small">
+               <div class="slds-grid slds-wrap">
+                   <div class="slds-large-size_3-of-12 slds-medium-size_6-of-12 slds-size_6-of-12 slds-p-horizontal_small slds-m-top_small___mobile slds-m-top_small___tablet">
+                        <div class="slds-text-title_caps slds-truncate">Loan Pipeline</div>
+                        <!-- Loan opportunity (Stage = Closed Won)-->
+                        <ui:outputCurrency class="form-control slds-text-heading_medium medium-bold" aura:id="loanOppty" value="{!v.accountDetails.loanAmount}" />
+                    </div>
+                   <div class="slds-large-size_3-of-12 slds-medium-size_6-of-12 slds-size_6-of-12 slds-p-horizontal_small slds-m-top_small___mobile">
+                        <div class="slds-text-title_caps slds-truncate">Deposit Pipeline</div>
+                        <ui:outputCurrency class="form-control slds-text-heading_medium medium-bold" aura:id="totalDeposits" value="{!v.accountDetails.totalDeposits}"/>
+                    </div>
+                    <div class="slds-large-size_3-of-12 slds-medium-size_6-of-12 slds-size_6-of-12 slds-p-horizontal_small slds-m-top_small___mobile">
+                        <div class="slds-text-title_caps slds-truncate">Treasury Pipeline</div>
+                        <ui:outputCurrency class="form-control slds-text-heading_medium medium-bold" aura:id="totalTreasury" value="{!v.accountDetails.totalTreasury}"/>
+                    </div>
+                    <div class="slds-large-size_3-of-12 slds-medium-size_6-of-12 slds-size_6-of-12 slds-p-horizontal_small slds-m-top_small___mobile">
+                        <div class="slds-text-title_caps slds-truncate">Total Treasury Products</div>
+                        <ui:outputNumber class="form-control slds-text-heading_medium medium-bold" aura:id="totalTreasuryProducts" value="{!v.accountDetails.totalTreasuryProducts}"/>
+                    </div>
+                    <!-- <div class="slds-large-size_3-of-12 slds-medium-size_6-of-12 slds-size_6-of-12 slds-p-horizontal_small slds-m-top_small___mobile slds-m-top_small___tablet">
+                        <div class="slds-text-title_caps slds-truncate">Retention Risk</div>
+                        <ui:outputText class="form-control slds-text-heading_medium medium-bold" aura:id="retRisk" value="{!v.accountDetails.acc.Retention_Risk__c}" />
+                    </div> -->
+                    <!-- <div class="slds-large-size_3-of-12 slds-medium-size_6-of-12 slds-size_6-of-12 slds-p-horizontal_small slds-m-top_small___mobile slds-m-top_small___tablet">
+                        <div class="slds-text-title_caps slds-truncate">Industry Growth Indicator</div>
+                        <div class="slds-text-heading_medium medium-bold">
+                            <aura:If isTrue="{!(v.accountDetails.industryGrowthIndicator>=20)}">
+                                <span class="slds-icon_container slds-icon-utility-arrowup growth-indicator up">
+                                    <lightning:icon iconName="utility:arrowup" title="arrowup" size="x-small" class="loss-color" />
+                                </span>
+                                <aura:set attribute="else">
+                                    <span class="slds-icon_container slds-icon-utility-arrowup growth-indicator down">
+                                        <lightning:icon iconName="utility:arrowdown" title="arrowdown" size="x-small" class="loss-color" />
+                                    </span>  
+                                </aura:set>
+                            </aura:If>
+                            <span>{!v.accountDetails.industryGrowthIndicator}%</span>
+                        </div>
+
+                    </div> -->
+                </div>  
+            </div>  
+        </div>        
+    </div>
+    <!-- Component ends-->
+</aura:component>

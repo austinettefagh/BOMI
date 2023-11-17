@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <label><!-- Active --></label>
+        <name>nFORCE__Active__c</name>
+    </fields>
+    <fields>
+        <label><!-- Field Name --></label>
+        <name>nFORCE__Field_Name__c</name>
+    </fields>
+    <fields>
+        <label><!-- Masking --></label>
+        <name>nFORCE__Mask_Type__c</name>
+        <picklistValues>
+            <masterLabel>Last 4 in Clear</masterLabel>
+            <translation><!-- Last 4 in Clear --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Mask All Characters</masterLabel>
+            <translation><!-- Mask All Characters --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>None</masterLabel>
+            <translation><!-- None --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Object Name --></label>
+        <name>nFORCE__Object_Name__c</name>
+    </fields>
+    <fields>
+        <label><!-- lookupKey --></label>
+        <name>nFORCE__lookupKey__c</name>
+    </fields>
+</CustomObjectTranslation>

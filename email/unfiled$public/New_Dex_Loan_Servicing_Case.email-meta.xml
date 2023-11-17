@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>Alert for New Dex Loan Servicing Case</description>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <letterhead>TBOM</letterhead>
+    <name>New Dex Loan Servicing Case</name>
+    <style>freeForm</style>
+    <subject>New Dex Credit Card Loan Servicing Case</subject>
+    <textOnly>{!User.FirstName}
+
+You have received a new Dex Loan Servicing Case #: {!Case.CaseNumber} that needs to be worked.</textOnly>
+    <type>html</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

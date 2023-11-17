@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <label><!-- Context Id --></label>
+        <name>nFORCE__Context_Id__c</name>
+    </fields>
+    <fields>
+        <label><!-- Screen Section --></label>
+        <name>nFORCE__Screen_Section__c</name>
+        <relationshipLabel><!-- Data Snapshots --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Snapshot DateTime --></label>
+        <name>nFORCE__Snapshot_DateTime__c</name>
+    </fields>
+    <fields>
+        <label><!-- Snapshot Description --></label>
+        <name>nFORCE__Snapshot_Description__c</name>
+    </fields>
+    <fields>
+        <label><!-- lookupKey --></label>
+        <name>nFORCE__Snapshot_Lookup_Key__c</name>
+    </fields>
+    <fields>
+        <label><!-- Snapshot Type --></label>
+        <name>nFORCE__Snapshot_Type__c</name>
+        <picklistValues>
+            <masterLabel>Attachment</masterLabel>
+            <translation><!-- Attachment --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Big Object</masterLabel>
+            <translation><!-- Big Object --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- -D lookupKey --></label>
+        <name>nFORCE__lookupKey__c</name>
+    </fields>
+</CustomObjectTranslation>

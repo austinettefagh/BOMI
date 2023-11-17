@@ -1,0 +1,261 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fieldSets>
+        <label><!-- Etran_ChangeOfOwnership --></label>
+        <name>FS_Etran_ChangeOfOwnership</name>
+    </fieldSets>
+    <fieldSets>
+        <label><!-- Change_of_Ownership_Fieldset --></label>
+        <name>nSBA__Change_of_Ownership_Fieldset</name>
+    </fieldSets>
+    <fieldSets>
+        <label><!-- SBA Boarding Sheet Change of Ownership --></label>
+        <name>nSBA__SBA_Boarding_Sheet_Change_Of_Ownership</name>
+    </fieldSets>
+    <fieldSets>
+        <label><!-- SBA ChangeOwner --></label>
+        <name>nSBA__SBA_ChangeOwner</name>
+    </fieldSets>
+    <fieldSets>
+        <label><!-- SBA ChangeOwnership --></label>
+        <name>nSBA__SBA_ChangeOwnership</name>
+    </fieldSets>
+    <fieldSets>
+        <label><!-- SBEOC Change Of Ownership --></label>
+        <name>nSBA__SBEOC_Change_Of_Ownership</name>
+    </fieldSets>
+    <fields>
+        <label><!-- 7(a) Loan --></label>
+        <name>CF_7_a_Loan__c</name>
+    </fields>
+    <fields>
+        <label><!-- Down Payment to Seller --></label>
+        <name>CF_Down_Payment_to_Seller__c</name>
+    </fields>
+    <fields>
+        <label><!-- Application --></label>
+        <name>nSBA__Application__c</name>
+        <relationshipLabel><!-- Change Of Ownerships --></relationshipLabel>
+    </fields>
+    <fields>
+        <help><!-- Business valuation value exclusive of the appraised value of real estate and equipment. This field is used in SBA Loan Authorization only. --></help>
+        <label><!-- Appr Value WO Real Estate And Equipment --></label>
+        <name>nSBA__Appr_Value_WO_Real_Estate_And_Equipment__c</name>
+    </fields>
+    <fields>
+        <help><!-- Appraiser Fee --></help>
+        <label><!-- Appraiser Fee --></label>
+        <name>nSBA__Appraiser_Fee__c</name>
+    </fields>
+    <fields>
+        <help><!-- Name of Business Appraiser (person) --></help>
+        <label><!-- Appraiser Name --></label>
+        <name>nSBA__Appraiser_Name__c</name>
+    </fields>
+    <fields>
+        <help><!-- Indicates if Appraiser is Accredited in Business Valuation (ABV) --></help>
+        <label><!-- Appraiser Qualification ABV --></label>
+        <name>nSBA__Appraiser_Qualification_ABV__c</name>
+    </fields>
+    <fields>
+        <help><!-- Indicates if Appraiser is an Accredited Senior Appraiser (ASA) --></help>
+        <label><!-- Appraiser Qualification ASA --></label>
+        <name>nSBA__Appraiser_Qualification_ASA__c</name>
+    </fields>
+    <fields>
+        <help><!-- Indicates if Appraiser is an Accredited Valuation Analyst (AVA) --></help>
+        <label><!-- Appraiser Qualification AVA --></label>
+        <name>nSBA__Appraiser_Qualification_AVA__c</name>
+    </fields>
+    <fields>
+        <help><!-- Indicates if Appraiser is a Certified Business Appraiser (CBA) --></help>
+        <label><!-- Appraiser Qualification CBA --></label>
+        <name>nSBA__Appraiser_Qualification_CBA__c</name>
+    </fields>
+    <fields>
+        <help><!-- Indicates if Appraiser is a Certified Public Accountant (CPA) --></help>
+        <label><!-- Appraiser Qualification CPA --></label>
+        <name>nSBA__Appraiser_Qualification_CPA__c</name>
+    </fields>
+    <fields>
+        <help><!-- Indicates if Appraiser is a Certified Valuation Analyst (CVA) --></help>
+        <label><!-- Appraiser Qualification CVA --></label>
+        <name>nSBA__Appraiser_Qualification_CVA__c</name>
+    </fields>
+    <fields>
+        <help><!-- Buyer’s Equity Contribution - Borrowed --></help>
+        <label><!-- Borrower Equity Amount --></label>
+        <name>nSBA__Borrower_Equity_Amount__c</name>
+    </fields>
+    <fields>
+        <help><!-- Broker&apos;s Address. --></help>
+        <label><!-- Broker Address --></label>
+        <name>nSBA__Broker_Address__c</name>
+    </fields>
+    <fields>
+        <help><!-- Broker Commission Amount. --></help>
+        <label><!-- Broker Commission --></label>
+        <name>nSBA__Broker_Commission__c</name>
+    </fields>
+    <fields>
+        <help><!-- Name of Business Broker (person) if broker has received a commission from the sale of the business. --></help>
+        <label><!-- Broker Name --></label>
+        <name>nSBA__Broker_Name__c</name>
+    </fields>
+    <fields>
+        <help><!-- Name of Business Broker Representative if broker has received a commission from the sale of the business. --></help>
+        <label><!-- Broker Representative --></label>
+        <name>nSBA__Broker_Representative__c</name>
+    </fields>
+    <fields>
+        <help><!-- Description of buyer’s equity contribution in cash. --></help>
+        <label><!-- Buyer Equity Cash Description --></label>
+        <name>nSBA__Buyer_Equity_Cash_Description__c</name>
+    </fields>
+    <fields>
+        <help><!-- Buyer’s equity contribution in cash. --></help>
+        <label><!-- Buyer Equity Cash --></label>
+        <name>nSBA__Buyer_Equity_Cash__c</name>
+    </fields>
+    <fields>
+        <help><!-- Intangible Assets - Customer/client list value. --></help>
+        <label><!-- Client List Value --></label>
+        <name>nSBA__Client_List_Value__c</name>
+    </fields>
+    <fields>
+        <help><!-- Indicates if external business evaluation is not required for this business purchase financed by SBA loan --></help>
+        <label><!-- Ext. Business Evaluation Not Required --></label>
+        <name>nSBA__External_Evaluation_Not_Required__c</name>
+    </fields>
+    <fields>
+        <help><!-- Intangible Assets - Franchise rights, patents, trademarks, etc. value. --></help>
+        <label><!-- Franchise Value --></label>
+        <name>nSBA__Franchise_Value__c</name>
+    </fields>
+    <fields>
+        <help><!-- Intangible Assets - Goodwill value. --></help>
+        <label><!-- Goodwill Value --></label>
+        <name>nSBA__Goodwill_Value__c</name>
+    </fields>
+    <fields>
+        <help><!-- Indicates whether Broker is taking a commission or not. --></help>
+        <label><!-- Is Broker Commission --></label>
+        <name>nSBA__Is_Broker_Commission__c</name>
+    </fields>
+    <fields>
+        <help><!-- Intangible Assets - License (liquor, FCC, etc.) value. --></help>
+        <label><!-- License Value --></label>
+        <name>nSBA__License_Value__c</name>
+    </fields>
+    <fields>
+        <help><!-- Identifies if assets purchased - Machinery and Equipment is Appraised or Book value --></help>
+        <label><!-- Machinery Equipment Evaluation Type --></label>
+        <name>nSBA__Machinery_Equipment_Evaluation_Type__c</name>
+        <picklistValues>
+            <masterLabel>A</masterLabel>
+            <translation>Appraised Value</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>B</masterLabel>
+            <translation>Booked Value</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- Intangible Assets - Covenant not to compete value. --></help>
+        <label><!-- Non Complete Value --></label>
+        <name>nSBA__Non_Complete_Value__c</name>
+    </fields>
+    <fields>
+        <help><!-- Amount of other buyer’s equity contribution. --></help>
+        <label><!-- Other Equity Amount --></label>
+        <name>nSBA__Other_Equity_Amount__c</name>
+    </fields>
+    <fields>
+        <help><!-- Description of other buyer’s equity contribution. --></help>
+        <label><!-- Other Equity Description --></label>
+        <name>nSBA__Other_Equity_Description__c</name>
+    </fields>
+    <fields>
+        <help><!-- Description of Other Intangible Assets --></help>
+        <label><!-- Other Intangibles Description --></label>
+        <name>nSBA__Other_Intangibles_Description__c</name>
+    </fields>
+    <fields>
+        <help><!-- Other Intangible Assets Value. --></help>
+        <label><!-- Other Intangibles Value --></label>
+        <name>nSBA__Other_Intangibles_Value__c</name>
+    </fields>
+    <fields>
+        <help><!-- Name of Business that is being purchased with this loan. This field is used in SBA Loan Authorization only. --></help>
+        <label><!-- Purchased Business Name --></label>
+        <name>nSBA__Purchased_Business_Name__c</name>
+    </fields>
+    <fields>
+        <help><!-- Identifies if assets purchased - Real Estate Amount is Appraised or Book value --></help>
+        <label><!-- Real Estate Evaluation Type --></label>
+        <name>nSBA__Real_Estate_Evaluation_Type__c</name>
+        <picklistValues>
+            <masterLabel>A</masterLabel>
+            <translation>Appraised Value</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>B</masterLabel>
+            <translation>Booked Value</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- Indicates sum of all seller financing on full standby for at least 2 yr. --></help>
+        <label><!-- Seller Finance Full Standby --></label>
+        <name>nSBA__Seller_Finance_Full_Standby__c</name>
+    </fields>
+    <fields>
+        <help><!-- Indicates sum of all seller financing not on full standby. --></help>
+        <label><!-- Seller Finance Not Full Standby --></label>
+        <name>nSBA__Seller_Finance_Not_Full_Standby__c</name>
+    </fields>
+    <fields>
+        <help><!-- Assets purchased - Accounts Receivable Amount --></help>
+        <label><!-- Total Accounts Receivable --></label>
+        <name>nSBA__Total_Accounts_Receivable__c</name>
+    </fields>
+    <fields>
+        <help><!-- Appraiser’s Conclusion or Summary of Value --></help>
+        <label><!-- Total Appraised Value --></label>
+        <name>nSBA__Total_Appraised_Value__c</name>
+    </fields>
+    <fields>
+        <help><!-- Furniture and Fixtures Amount --></help>
+        <label><!-- Total Furniture Fixtures --></label>
+        <name>nSBA__Total_Furniture_Fixtures__c</name>
+    </fields>
+    <fields>
+        <help><!-- The dollar amount of Intangible Assets. --></help>
+        <label><!-- Total Intangible Assets --></label>
+        <name>nSBA__Total_Intangible_Assets__c</name>
+    </fields>
+    <fields>
+        <help><!-- Assets purchased - Inventory Amount --></help>
+        <label><!-- Total Inventory --></label>
+        <name>nSBA__Total_Inventory__c</name>
+    </fields>
+    <fields>
+        <help><!-- Machinery and Equipment Amount --></help>
+        <label><!-- Total Machinery Equipment --></label>
+        <name>nSBA__Total_Machinery_Equipment__c</name>
+    </fields>
+    <fields>
+        <help><!-- Description of Other Assets purchased. --></help>
+        <label><!-- Total Other Assets Description --></label>
+        <name>nSBA__Total_Other_Assets_Description__c</name>
+    </fields>
+    <fields>
+        <help><!-- Other Assets (Amount) --></help>
+        <label><!-- Total Other Assets --></label>
+        <name>nSBA__Total_Other_Assets__c</name>
+    </fields>
+    <fields>
+        <help><!-- Assets purchased - Real Estate Amount --></help>
+        <label><!-- Total Real Estate --></label>
+        <name>nSBA__Total_Real_Estate__c</name>
+    </fields>
+</CustomObjectTranslation>

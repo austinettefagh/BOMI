@@ -1,0 +1,1374 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <allowInChatterGroups>false</allowInChatterGroups>
+    <compactLayoutAssignment>SYSTEM</compactLayoutAssignment>
+    <deploymentStatus>Deployed</deploymentStatus>
+    <enableActivities>false</enableActivities>
+    <enableBulkApi>true</enableBulkApi>
+    <enableFeeds>false</enableFeeds>
+    <enableHistory>true</enableHistory>
+    <enableLicensing>false</enableLicensing>
+    <enableReports>true</enableReports>
+    <enableSearch>true</enableSearch>
+    <enableSharing>true</enableSharing>
+    <enableStreamingApi>true</enableStreamingApi>
+    <externalSharingModel>ControlledByParent</externalSharingModel>
+    <fields>
+        <fullName>CF_Adverse_Action_Date__c</fullName>
+        <description>Date when Adverse action is performed on Loan</description>
+        <encryptionScheme>None</encryptionScheme>
+        <externalId>false</externalId>
+        <label>Adverse Action Date</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>CF_Loan__c</fullName>
+        <externalId>false</externalId>
+        <label>Loan</label>
+        <referenceTo>LLC_BI__Loan__c</referenceTo>
+        <relationshipLabel>SLA Solutions</relationshipLabel>
+        <relationshipName>SLA_Solutions</relationshipName>
+        <relationshipOrder>0</relationshipOrder>
+        <reparentableMasterDetail>false</reparentableMasterDetail>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>MasterDetail</type>
+        <writeRequiresMasterRead>false</writeRequiresMasterRead>
+    </fields>
+    <fields>
+        <fullName>CF_NOW__c</fullName>
+        <description>formula field to display current time</description>
+        <externalId>false</externalId>
+        <formula>NOW()</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>NOW</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>DateTime</type>
+    </fields>
+    <fields>
+        <fullName>CF_Notice_of_Incomplete_Clock__c</fullName>
+        <description>Stores Duration of Notice of Incomplete. Loan Creation date as our Start Date and Stage 4(Credit Decisioning) as our end date</description>
+        <externalId>false</externalId>
+        <formula>IF(ISBLANK( CF_Notice_of_Incomplete_End_Date__c ), TODAY()- DATEVALUE(CF_Loan__r.CreatedDate)  ,
+IF( CF_Stage4_Count__c=1, CF_Notice_of_Incomplete_End_Date__c- DATEVALUE(CF_Loan__r.CreatedDate),
+0
+))</formula>
+        <label>Notice of Incomplete Clock</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>CF_Notice_of_Incomplete_End_Date__c</fullName>
+        <description>End Date of &quot;Notice of Incomplete clock&quot;. If  &quot;Stage4 Start Date&quot; is populated  then that acts like the end date ELSE CF_Adverse_Action_Date__c</description>
+        <externalId>false</externalId>
+        <formula>IF(NOT(ISBLANK( CF_Stage4_Start_Date__c  )), CF_Stage4_Start_Date__c, 
+CF_Adverse_Action_Date__c )</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Notice of Incomplete End Date</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>CF_On_Hold__c</fullName>
+        <defaultValue>false</defaultValue>
+        <description>checked when status is On Hold</description>
+        <externalId>false</externalId>
+        <label>On Hold?</label>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>CF_Reg_B_Clock__c</fullName>
+        <description>Duration spent in Reg B considering 1st 4 stages as pre Approval Stages</description>
+        <externalId>false</externalId>
+        <formula>IF( ISBLANK( CF_Reg_B_End_Date__c ) , (TODAY()- CF_Reg_B_Start_Date__c)- ((CF_Stage1_On_Hold_Duration__c + CF_Stage2_On_Hold_Duration__c + CF_Stage3_On_Hold_Duration__c + CF_Stage4_On_Hold_Duration__c)/1440)
+, (CF_Reg_B_End_Date__c-CF_Reg_B_Start_Date__c) - ((CF_Stage1_On_Hold_Duration__c + CF_Stage2_On_Hold_Duration__c + CF_Stage3_On_Hold_Duration__c + CF_Stage4_On_Hold_Duration__c)/1440)
+)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Reg B Clock(Days)</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>CF_Reg_B_End_Date__c</fullName>
+        <description>Reg B end Date is Credit Approval Date if present else Adverse Action Date</description>
+        <externalId>false</externalId>
+        <formula>IF( NOT(ISBLANK(CF_Loan__r.LLC_BI__Credit_Approval_Date__c)),CF_Loan__r.LLC_BI__Credit_Approval_Date__c,
+ CF_Adverse_Action_Date__c )</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Reg B End Date</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>CF_Reg_B_Start_Date__c</fullName>
+        <description>&quot;Application Completed&quot; date field on Loan acts as the starting date for the Reg B Clock</description>
+        <externalId>false</externalId>
+        <formula>CF_Loan__r.CF_Application_Completed_Date__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Reg B Start Date</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>CF_Stage10_Count__c</fullName>
+        <defaultValue>0</defaultValue>
+        <description>keeps count of times loan entered stage 10</description>
+        <externalId>false</externalId>
+        <label>Stage10 Count</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>CF_Stage10_End_Time__c</fullName>
+        <description>Timestamps when loan exits stage 10</description>
+        <encryptionScheme>None</encryptionScheme>
+        <externalId>false</externalId>
+        <label>Stage10 End Time</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>DateTime</type>
+    </fields>
+    <fields>
+        <fullName>CF_Stage10_On_Hold_Duration__c</fullName>
+        <defaultValue>0</defaultValue>
+        <description>Duration for which loan has been On HOld in stage10</description>
+        <externalId>false</externalId>
+        <label>Stage10 On Hold Duration</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>CF_Stage10_Running_Clock__c</fullName>
+        <description>Shows the duration for which the Loan has been in stage 10</description>
+        <externalId>false</externalId>
+        <formula>IF( CF_On_Hold__c , ( CF_Total_Stage10_Duration_Minutes__c  -  CF_Stage10_On_Hold_Duration__c  ) ,
+IF(AND(ISNULL(  CF_Stage10_End_Time__c  ), NOT(ISNULL(  CF_Stage10_Start_Time__c  ))),
+CF_Total_Stage10_Duration_Minutes__c + VALUE(TEXT((NOW()- CF_Stage_Status_change_start_time__c ) * 24 * 60 )) -CF_Stage10_On_Hold_Duration__c ,
+CF_Total_Stage10_Duration_Minutes__c - CF_Stage10_On_Hold_Duration__c
+))</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Stage10 Running Clock</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>CF_Stage10_Start_Time__c</fullName>
+        <description>Timestamps when loan enters stage 10</description>
+        <encryptionScheme>None</encryptionScheme>
+        <externalId>false</externalId>
+        <label>Stage10 Start Time</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>DateTime</type>
+    </fields>
+    <fields>
+        <fullName>CF_Stage1_On_Hold_Duration__c</fullName>
+        <defaultValue>0</defaultValue>
+        <description>Captures cumulative On HOld Duration sum</description>
+        <externalId>false</externalId>
+        <label>Stage1 On Hold Duration</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>CF_Stage1_Running_Clock__c</fullName>
+        <externalId>false</externalId>
+        <formula>IF( CF_On_Hold__c , (CF_Total_Stage1_Duration_Minutes__c -  CF_Stage1_On_Hold_Duration__c ) ,
+IF(AND(ISNULL(Stage1_End_Time__c), NOT(ISNULL(  Stage1_Start_Time__c  ))),
+CF_Total_Stage1_Duration_Minutes__c + VALUE(TEXT((NOW()-  CF_Stage_Status_change_start_time__c  ) * 24 * 60 )) -CF_Stage1_On_Hold_Duration__c ,
+CF_Total_Stage1_Duration_Minutes__c - CF_Stage1_On_Hold_Duration__c
+))</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Stage1 Running Clock</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>CF_Stage1_SLA_Clock__c</fullName>
+        <description>Captures excess duration spent in STAGE1 than defined Stage1 SLA</description>
+        <externalId>false</externalId>
+        <formula>IF((CF_Loan__r.LLC_BI__Product_Reference__r.LLC_BI__Product_Type__r.CF_Stage1_SLA__c &lt; (CF_Stage1_Running_Clock__c/1440)) ,
+(CF_Stage1_Running_Clock__c/1440) - CF_Loan__r.LLC_BI__Product_Reference__r.LLC_BI__Product_Type__r.CF_Stage1_SLA__c,0)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Stage1 SLA Clock</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>CF_Stage2_On_Hold_Duration__c</fullName>
+        <defaultValue>0</defaultValue>
+        <description>cumulative sum of on hold duration in stage 2</description>
+        <externalId>false</externalId>
+        <label>Stage2 On Hold Duration</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>CF_Stage2_Running_Clock__c</fullName>
+        <description>captures the total duration in which loan has been inside stage 2</description>
+        <externalId>false</externalId>
+        <formula>IF( CF_On_Hold__c , (CF_Total_Stage2_Duration_Minutes__c -  CF_Stage2_On_Hold_Duration__c ) ,
+IF(AND(ISNULL( Stage2_End_Time__c ), NOT(ISNULL( Stage2_Start_Time__c ))),
+CF_Total_Stage2_Duration_Minutes__c + VALUE(TEXT((NOW()- CF_Stage_Status_change_start_time__c ) * 24 * 60 )) -CF_Stage2_On_Hold_Duration__c ,
+CF_Total_Stage2_Duration_Minutes__c - CF_Stage2_On_Hold_Duration__c
+))</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Stage2 Running Clock</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>CF_Stage2_SLA_Clock__c</fullName>
+        <description>Captures exceeding time for Stage 2 than Stage2 SLA</description>
+        <externalId>false</externalId>
+        <formula>IF((CF_Loan__r.LLC_BI__Product_Reference__r.LLC_BI__Product_Type__r.CF_Stage2_SLA__c &lt; (CF_Stage2_Running_Clock__c/1440)) ,
+(CF_Stage2_Running_Clock__c/1440) - CF_Loan__r.LLC_BI__Product_Reference__r.LLC_BI__Product_Type__r.CF_Stage2_SLA__c,0)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Stage2 SLA Clock</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>CF_Stage3_On_Hold_Duration__c</fullName>
+        <defaultValue>0</defaultValue>
+        <description>total duration stage 3 has been on Hold</description>
+        <externalId>false</externalId>
+        <label>Stage3 On Hold Duration</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>CF_Stage3_Running_Clock__c</fullName>
+        <description>Total duration spent in stage 3</description>
+        <externalId>false</externalId>
+        <formula>IF( CF_On_Hold__c , (CF_Total_Stage3_Duration_Minutes__c -  CF_Stage3_On_Hold_Duration__c  ) ,
+IF(AND(ISNULL(Stage3_End_Time__c), NOT(ISNULL( Stage3_Start_Time__c ))),
+CF_Total_Stage3_Duration_Minutes__c + VALUE(TEXT((NOW()- CF_Stage_Status_change_start_time__c ) * 24 * 60 )) -CF_Stage3_On_Hold_Duration__c ,
+CF_Total_Stage3_Duration_Minutes__c - CF_Stage3_On_Hold_Duration__c
+))</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Stage3 Running Clock</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>CF_Stage3_SLA_Clock__c</fullName>
+        <description>Duration exceeded in Loan&apos;s Stage3 than the defined Stage3 SLA</description>
+        <externalId>false</externalId>
+        <formula>IF((CF_Loan__r.LLC_BI__Product_Reference__r.LLC_BI__Product_Type__r.CF_Stage3_SLA__c &lt; (CF_Stage3_Running_Clock__c/1440)) ,
+(CF_Stage3_Running_Clock__c/1440) - CF_Loan__r.LLC_BI__Product_Reference__r.LLC_BI__Product_Type__r.CF_Stage3_SLA__c,0)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Stage3 SLA Clock</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>CF_Stage4_Count__c</fullName>
+        <defaultValue>0</defaultValue>
+        <description>keeps the count of number of times loan enters stage 4</description>
+        <externalId>false</externalId>
+        <label>Stage4 Count</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>CF_Stage4_End_Time__c</fullName>
+        <description>Timestamps when loan exists stage 4</description>
+        <encryptionScheme>None</encryptionScheme>
+        <externalId>false</externalId>
+        <label>Stage4 End Time</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>DateTime</type>
+    </fields>
+    <fields>
+        <fullName>CF_Stage4_On_Hold_Duration__c</fullName>
+        <defaultValue>0</defaultValue>
+        <description>Total duration stage 4 has been On Hold</description>
+        <externalId>false</externalId>
+        <label>Stage4 On Hold Duration</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>CF_Stage4_Running_Clock__c</fullName>
+        <description>Shows the duration for which the Loan has been in stage 4</description>
+        <externalId>false</externalId>
+        <formula>IF( CF_On_Hold__c , (CF_Total_Stage4_Duration_Minutes__c -  CF_Stage4_On_Hold_Duration__c  ) ,
+IF(AND(ISNULL( CF_Stage4_End_Time__c ), NOT(ISNULL( CF_Stage4_Start_Time__c ))),
+CF_Total_Stage4_Duration_Minutes__c + VALUE(TEXT((NOW()- CF_Stage_Status_change_start_time__c ) * 24 * 60 )) -CF_Stage4_On_Hold_Duration__c ,
+CF_Total_Stage4_Duration_Minutes__c - CF_Stage4_On_Hold_Duration__c
+))</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Stage4 Running Clock</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>CF_Stage4_SLA_Clock__c</fullName>
+        <description>Duration exceeded in Loan&apos;s Stage4 than defined Stage4 SLA</description>
+        <externalId>false</externalId>
+        <formula>IF((CF_Loan__r.LLC_BI__Product_Reference__r.LLC_BI__Product_Type__r.CF_Stage4_SLA__c &lt; (CF_Stage4_Running_Clock__c/1440)) ,
+(CF_Stage4_Running_Clock__c/1440) - CF_Loan__r.LLC_BI__Product_Reference__r.LLC_BI__Product_Type__r.CF_Stage4_SLA__c,0)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Stage4 SLA Clock</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>CF_Stage4_Start_Date__c</fullName>
+        <description>Timestamps the start date when Loan Enters &quot;Credit Decisioning&quot; stage for the first time using Loan Reg B functionality flow. Using this field as an end date for Notice of Incomplete clock.</description>
+        <encryptionScheme>None</encryptionScheme>
+        <externalId>false</externalId>
+        <label>Stage4 Start Date</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>CF_Stage4_Start_Time__c</fullName>
+        <description>timestamps when loan enters stage 4 and an OH record is created</description>
+        <encryptionScheme>None</encryptionScheme>
+        <externalId>false</externalId>
+        <label>Stage4 Start Time</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>DateTime</type>
+    </fields>
+    <fields>
+        <fullName>CF_Stage5_Count__c</fullName>
+        <defaultValue>0</defaultValue>
+        <description>keeps a count of number of times loan entered stage 5</description>
+        <externalId>false</externalId>
+        <label>Stage5 Count</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>CF_Stage5_End_Time__c</fullName>
+        <description>Timestamp when loan exists stage5</description>
+        <encryptionScheme>None</encryptionScheme>
+        <externalId>false</externalId>
+        <label>Stage5 End Time</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>DateTime</type>
+    </fields>
+    <fields>
+        <fullName>CF_Stage5_On_Hold_Duration__c</fullName>
+        <defaultValue>0</defaultValue>
+        <description>Duration for which Loan has stayed ON Hold in stage 5</description>
+        <externalId>false</externalId>
+        <label>Stage5 On Hold Duration</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>CF_Stage5_Running_clock__c</fullName>
+        <description>Shows the duration for which the Loan has been in stage 5</description>
+        <externalId>false</externalId>
+        <formula>IF( CF_On_Hold__c , ( CF_Total_Stage5_Duration_minutes__c  -  CF_Stage5_On_Hold_Duration__c  ) ,
+IF(AND(ISNULL(  CF_Stage5_End_Time__c  ), NOT(ISNULL(  CF_Stage5_Start_Time__c  ))),
+CF_Total_Stage5_Duration_minutes__c + VALUE(TEXT((NOW()- CF_Stage_Status_change_start_time__c ) * 24 * 60 )) -CF_Stage5_On_Hold_Duration__c ,
+CF_Total_Stage5_Duration_minutes__c - CF_Stage5_On_Hold_Duration__c
+))</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Stage5 Running clock</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>CF_Stage5_SLA_Clock__c</fullName>
+        <description>Duration exceeded in Loan&apos;s Stage5 than defined SLA</description>
+        <externalId>false</externalId>
+        <formula>IF((CF_Loan__r.LLC_BI__Product_Reference__r.LLC_BI__Product_Type__r.CF_Stage5_SLA__c &lt; (CF_Stage5_Running_clock__c/1440)) ,
+(CF_Stage5_Running_clock__c/1440) - CF_Loan__r.LLC_BI__Product_Reference__r.LLC_BI__Product_Type__r.CF_Stage5_SLA__c,0)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Stage5 SLA Clock</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>CF_Stage5_Start_Time__c</fullName>
+        <description>Timestamp wen Loan enters stage 5</description>
+        <encryptionScheme>None</encryptionScheme>
+        <externalId>false</externalId>
+        <label>Stage5 Start Time</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>DateTime</type>
+    </fields>
+    <fields>
+        <fullName>CF_Stage6_Count__c</fullName>
+        <defaultValue>0</defaultValue>
+        <description>Keeps the count of number of times loan enters stage 6</description>
+        <externalId>false</externalId>
+        <label>Stage6 Count</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>CF_Stage6_End_Time__c</fullName>
+        <description>Timestamp when Loan exists stage 6</description>
+        <encryptionScheme>None</encryptionScheme>
+        <externalId>false</externalId>
+        <label>Stage6 End Time</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>DateTime</type>
+    </fields>
+    <fields>
+        <fullName>CF_Stage6_On_Hold_Duration__c</fullName>
+        <defaultValue>0</defaultValue>
+        <description>keeps the duration for which loan has stayed on hold in stage 6</description>
+        <externalId>false</externalId>
+        <label>Stage6 On Hold Duration</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>CF_Stage6_Running_Clock__c</fullName>
+        <description>Duration for which loan has been in stage 6</description>
+        <externalId>false</externalId>
+        <formula>IF( CF_On_Hold__c , ( CF_Total_Stage6_Duration_Minutes__c  -  CF_Stage6_On_Hold_Duration__c  ) ,
+IF(AND(ISNULL(  CF_Stage6_End_Time__c  ), NOT(ISNULL(  CF_Stage6_Start_Time__c  ))),
+CF_Total_Stage6_Duration_Minutes__c + VALUE(TEXT((NOW()- CF_Stage_Status_change_start_time__c ) * 24 * 60 )) -CF_Stage6_On_Hold_Duration__c ,
+CF_Total_Stage6_Duration_Minutes__c - CF_Stage6_On_Hold_Duration__c
+))</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Stage6 Running Clock</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>CF_Stage6_SLA_Clock__c</fullName>
+        <description>Duration exceeded in Loan&apos;s Stage6 than defined SLA</description>
+        <externalId>false</externalId>
+        <formula>IF((CF_Loan__r.LLC_BI__Product_Reference__r.LLC_BI__Product_Type__r.CF_Stage6_SLA__c &lt; (CF_Stage6_Running_Clock__c/1440)) ,
+(CF_Stage6_Running_Clock__c/1440) - CF_Loan__r.LLC_BI__Product_Reference__r.LLC_BI__Product_Type__r.CF_Stage6_SLA__c,0)</formula>
+        <label>Stage6 SLA Clock</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>CF_Stage6_Start_Time__c</fullName>
+        <description>Timestamp when loan enters stage 6</description>
+        <encryptionScheme>None</encryptionScheme>
+        <externalId>false</externalId>
+        <label>Stage6 Start Time</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>DateTime</type>
+    </fields>
+    <fields>
+        <fullName>CF_Stage7_Count__c</fullName>
+        <defaultValue>0</defaultValue>
+        <description>keeps the count of the no of times loan enters stage7</description>
+        <externalId>false</externalId>
+        <label>Stage7 Count</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>CF_Stage7_End_Time__c</fullName>
+        <description>Timestamps when stage exists stage7</description>
+        <encryptionScheme>None</encryptionScheme>
+        <externalId>false</externalId>
+        <label>Stage7 End Time</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>DateTime</type>
+    </fields>
+    <fields>
+        <fullName>CF_Stage7_On_Hold_Duration__c</fullName>
+        <defaultValue>0</defaultValue>
+        <description>duration for which loan has stage on hold in stage 7</description>
+        <externalId>false</externalId>
+        <label>Stage7 On Hold Duration</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>CF_Stage7_Running_Clock__c</fullName>
+        <description>duration for which loan has stayed in stage7</description>
+        <externalId>false</externalId>
+        <formula>IF( CF_On_Hold__c , ( CF_Total_Stage7_Duration_minutes__c  -  CF_Stage7_On_Hold_Duration__c  ) ,
+IF(AND(ISNULL(  CF_Stage7_End_Time__c  ), NOT(ISNULL(  CF_Stage7_Start_Time__c  ))),
+CF_Total_Stage7_Duration_minutes__c + VALUE(TEXT((NOW()- CF_Stage_Status_change_start_time__c ) * 24 * 60 )) -CF_Stage7_On_Hold_Duration__c ,
+CF_Total_Stage7_Duration_minutes__c - CF_Stage7_On_Hold_Duration__c
+))</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Stage7 Running Clock</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>CF_Stage7_SLA_Clock__c</fullName>
+        <description>Duration exceeded in Loan&apos;s Stage7 than defined SLA</description>
+        <externalId>false</externalId>
+        <formula>IF((CF_Loan__r.LLC_BI__Product_Reference__r.LLC_BI__Product_Type__r.CF_Stage7_SLA__c &lt; (CF_Stage7_Running_Clock__c/1440)) ,
+(CF_Stage7_Running_Clock__c/1440) - CF_Loan__r.LLC_BI__Product_Reference__r.LLC_BI__Product_Type__r.CF_Stage7_SLA__c,0)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Stage7 SLA Clock</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>CF_Stage7_Start_Time__c</fullName>
+        <description>timestamps start time for stage7</description>
+        <encryptionScheme>None</encryptionScheme>
+        <externalId>false</externalId>
+        <label>Stage7 Start Time</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>DateTime</type>
+    </fields>
+    <fields>
+        <fullName>CF_Stage8_Count__c</fullName>
+        <defaultValue>0</defaultValue>
+        <description>keeps count of times loan enters stage8</description>
+        <externalId>false</externalId>
+        <label>Stage8 Count</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>CF_Stage8_End_Time__c</fullName>
+        <description>Timestamps when loan exits stage 8</description>
+        <encryptionScheme>None</encryptionScheme>
+        <externalId>false</externalId>
+        <label>Stage8 End Time</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>DateTime</type>
+    </fields>
+    <fields>
+        <fullName>CF_Stage8_On_Hold_Duration__c</fullName>
+        <defaultValue>0</defaultValue>
+        <description>duration for which loan has stayed on hold in stage8</description>
+        <externalId>false</externalId>
+        <label>Stage8 On Hold Duration</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>CF_Stage8_Running_Clock__c</fullName>
+        <description>Shows the duration for which the Loan has been in stage 8</description>
+        <externalId>false</externalId>
+        <formula>IF( CF_On_Hold__c , ( CF_Total_Stage8_Duration_minutes__c  -  CF_Stage8_On_Hold_Duration__c  ) ,
+IF(AND(ISNULL(  CF_Stage8_End_Time__c  ), NOT(ISNULL(  CF_Stage8_Start_Time__c  ))),
+CF_Total_Stage8_Duration_minutes__c + VALUE(TEXT((NOW()- CF_Stage_Status_change_start_time__c ) * 24 * 60 )) -CF_Stage8_On_Hold_Duration__c ,
+CF_Total_Stage8_Duration_minutes__c - CF_Stage8_On_Hold_Duration__c
+))</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Stage8 Running Clock</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>CF_Stage8_SLA_Clock__c</fullName>
+        <description>Duration exceeded in Loan&apos;s Stage8 than defined SLA</description>
+        <externalId>false</externalId>
+        <formula>IF((CF_Loan__r.LLC_BI__Product_Reference__r.LLC_BI__Product_Type__r.CF_Stage8_SLA__c &lt; (CF_Stage8_Running_Clock__c/1440)) ,
+(CF_Stage8_Running_Clock__c/1440) - CF_Loan__r.LLC_BI__Product_Reference__r.LLC_BI__Product_Type__r.CF_Stage8_SLA__c,0)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Stage8 SLA Clock</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>CF_Stage8_Start_Time__c</fullName>
+        <description>timestamp when loan enters stage8</description>
+        <encryptionScheme>None</encryptionScheme>
+        <externalId>false</externalId>
+        <label>Stage8 Start Time</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>DateTime</type>
+    </fields>
+    <fields>
+        <fullName>CF_Stage9_Count__c</fullName>
+        <defaultValue>0</defaultValue>
+        <description>keeps count of times loan enters stage 9</description>
+        <externalId>false</externalId>
+        <label>Stage9 Count</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>CF_Stage9_End_Time__c</fullName>
+        <description>Timestamps when loan exits stage 9</description>
+        <encryptionScheme>None</encryptionScheme>
+        <externalId>false</externalId>
+        <label>Stage9 End Time</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>DateTime</type>
+    </fields>
+    <fields>
+        <fullName>CF_Stage9_On_Hold_Duration__c</fullName>
+        <defaultValue>0</defaultValue>
+        <description>Duration for which loan has stayed On hold in stage9</description>
+        <externalId>false</externalId>
+        <label>Stage9 On Hold Duration</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>CF_Stage9_Running_Clock__c</fullName>
+        <description>Shows the duration for which the Loan has been in stage 9</description>
+        <externalId>false</externalId>
+        <formula>IF( CF_On_Hold__c , ( CF_Total_Stage9_Duration_Minutes__c  -  CF_Stage9_On_Hold_Duration__c  ) ,
+IF(AND(ISNULL(  CF_Stage9_End_Time__c  ), NOT(ISNULL(  CF_Stage9_Start_Time__c  ))),
+CF_Total_Stage9_Duration_Minutes__c + VALUE(TEXT((NOW()- CF_Stage_Status_change_start_time__c ) * 24 * 60 )) -CF_Stage9_On_Hold_Duration__c ,
+CF_Total_Stage9_Duration_Minutes__c - CF_Stage9_On_Hold_Duration__c
+))</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Stage9 Running Clock</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>CF_Stage9_Start_Time__c</fullName>
+        <description>timestamps when loan enters stage 9</description>
+        <encryptionScheme>None</encryptionScheme>
+        <externalId>false</externalId>
+        <label>Stage9 Start Time</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>DateTime</type>
+    </fields>
+    <fields>
+        <fullName>CF_Stage_2_Previous_Duration__c</fullName>
+        <defaultValue>0</defaultValue>
+        <description>Holds the LLC_BI__Total_Stage_Duration_Minutes__c value from most recently created Opportunity History record</description>
+        <externalId>false</externalId>
+        <label>Stage 2 Previous Duration</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>CF_Stage_Name__c</fullName>
+        <externalId>false</externalId>
+        <formula>TEXT( CF_Loan__r.LLC_BI__Stage__c )</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Stage Name</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>CF_Stage_Status_change_start_time__c</fullName>
+        <description>Not to be used on UI. Timestamps whenever new OH record is created on stage/status change.</description>
+        <encryptionScheme>None</encryptionScheme>
+        <externalId>false</externalId>
+        <label>Stage/Status change start time</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>DateTime</type>
+    </fields>
+    <fields>
+        <fullName>CF_Total_Loan_Duration__c</fullName>
+        <description>Total Duration spent in Loan(excluding On Hold Duration)</description>
+        <externalId>false</externalId>
+        <formula>(CF_Stage1_Running_Clock__c + CF_Stage2_Running_Clock__c + CF_Stage3_Running_Clock__c + CF_Stage4_Running_Clock__c + CF_Stage5_Running_clock__c + CF_Stage6_Running_Clock__c + CF_Stage7_Running_Clock__c + CF_Stage8_Running_Clock__c + CF_Stage9_Running_Clock__c + CF_Stage10_Running_Clock__c) / (24*60)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Total Loan Duration(Days)</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>CF_Total_On_Hold_Duration__c</fullName>
+        <description>Total duration spent On hold throughout all stages</description>
+        <externalId>false</externalId>
+        <formula>(CF_Stage1_On_Hold_Duration__c + CF_Stage2_On_Hold_Duration__c + CF_Stage3_On_Hold_Duration__c + CF_Stage4_On_Hold_Duration__c + CF_Stage5_On_Hold_Duration__c + CF_Stage6_On_Hold_Duration__c + CF_Stage7_On_Hold_Duration__c + CF_Stage8_On_Hold_Duration__c + CF_Stage9_On_Hold_Duration__c + CF_Stage10_On_Hold_Duration__c) / (24*60)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Total On  Hold Duration(Days)</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>CF_Total_SLA_Clock__c</fullName>
+        <description>Gives the values in days exceeding the Total SLA duration for the loan(Considering Pre- Booking Stages only here, i.e till stage 8)</description>
+        <externalId>false</externalId>
+        <formula>IF(
+(CF_Loan__r.LLC_BI__Product_Reference__r.LLC_BI__Product_Type__r.CF_Stage1_SLA__c +CF_Loan__r.LLC_BI__Product_Reference__r.LLC_BI__Product_Type__r.CF_Stage2_SLA__c +CF_Loan__r.LLC_BI__Product_Reference__r.LLC_BI__Product_Type__r.CF_Stage3_SLA__c +CF_Loan__r.LLC_BI__Product_Reference__r.LLC_BI__Product_Type__r.CF_Stage4_SLA__c +CF_Loan__r.LLC_BI__Product_Reference__r.LLC_BI__Product_Type__r.CF_Stage5_SLA__c
++CF_Loan__r.LLC_BI__Product_Reference__r.LLC_BI__Product_Type__r.CF_Stage6_SLA__c
++CF_Loan__r.LLC_BI__Product_Reference__r.LLC_BI__Product_Type__r.CF_Stage7_SLA__c
++CF_Loan__r.LLC_BI__Product_Reference__r.LLC_BI__Product_Type__r.CF_Stage8_SLA__c
+ )&lt;  ((CF_Stage1_Running_Clock__c + CF_Stage2_Running_Clock__c +CF_Stage3_Running_Clock__c +CF_Stage4_Running_Clock__c +CF_Stage5_Running_clock__c +CF_Stage6_Running_Clock__c +CF_Stage7_Running_Clock__c +CF_Stage8_Running_Clock__c)/1440)  ,
+
+((CF_Stage1_Running_Clock__c + CF_Stage2_Running_Clock__c +CF_Stage3_Running_Clock__c +CF_Stage4_Running_Clock__c +CF_Stage5_Running_clock__c +CF_Stage6_Running_Clock__c +CF_Stage7_Running_Clock__c +CF_Stage8_Running_Clock__c)/1440) - 
+(CF_Loan__r.LLC_BI__Product_Reference__r.LLC_BI__Product_Type__r.CF_Stage1_SLA__c +CF_Loan__r.LLC_BI__Product_Reference__r.LLC_BI__Product_Type__r.CF_Stage2_SLA__c +CF_Loan__r.LLC_BI__Product_Reference__r.LLC_BI__Product_Type__r.CF_Stage3_SLA__c +CF_Loan__r.LLC_BI__Product_Reference__r.LLC_BI__Product_Type__r.CF_Stage4_SLA__c +CF_Loan__r.LLC_BI__Product_Reference__r.LLC_BI__Product_Type__r.CF_Stage5_SLA__c
++CF_Loan__r.LLC_BI__Product_Reference__r.LLC_BI__Product_Type__r.CF_Stage6_SLA__c
++CF_Loan__r.LLC_BI__Product_Reference__r.LLC_BI__Product_Type__r.CF_Stage7_SLA__c
++CF_Loan__r.LLC_BI__Product_Reference__r.LLC_BI__Product_Type__r.CF_Stage8_SLA__c)
+, 0)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Total SLA Clock</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>CF_Total_Stage10_Duration_Minutes__c</fullName>
+        <defaultValue>0</defaultValue>
+        <description>Total duration spent in stage10 irrespective of status</description>
+        <externalId>false</externalId>
+        <label>Total Stage10 Duration Minutes</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>CF_Total_Stage1_Duration_Minutes__c</fullName>
+        <defaultValue>0</defaultValue>
+        <description>Total duration spent by Loan in Stage 1</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Qualification/Proposal</inlineHelpText>
+        <label>Total Stage1 Duration Minutes</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>CF_Total_Stage2_Duration_Minutes__c</fullName>
+        <description>Total duration spent in stage2</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Application Processing</inlineHelpText>
+        <label>Total Stage2 Duration Minutes</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>CF_Total_Stage3_Duration_Minutes__c</fullName>
+        <description>Total Duration spent in stage3</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Credit Underwriting</inlineHelpText>
+        <label>Total Stage3 Duration Minutes</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>CF_Total_Stage4_Duration_Minutes__c</fullName>
+        <description>Total Duration spent in stage4</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Credit Decisioning</inlineHelpText>
+        <label>Total Stage4 Duration Minutes</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>CF_Total_Stage5_Duration_minutes__c</fullName>
+        <defaultValue>0</defaultValue>
+        <description>Total duration for which Loan has stayed in stage5 irrespective of status</description>
+        <externalId>false</externalId>
+        <label>Total Stage5 Duration minutes</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>CF_Total_Stage6_Duration_Minutes__c</fullName>
+        <defaultValue>0</defaultValue>
+        <description>total duration spent in stage 6 irrespective of status</description>
+        <externalId>false</externalId>
+        <label>Total Stage6 Duration Minutes</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>CF_Total_Stage7_Duration_minutes__c</fullName>
+        <defaultValue>0</defaultValue>
+        <description>duration for which loan has stayed in stage7</description>
+        <externalId>false</externalId>
+        <label>Total Stage7 Duration minutes</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>CF_Total_Stage8_Duration_minutes__c</fullName>
+        <defaultValue>0</defaultValue>
+        <description>total duration for which loan stayed in stage 8 irrespective of status</description>
+        <externalId>false</externalId>
+        <label>Total Stage8 Duration minutes</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>CF_Total_Stage9_Duration_Minutes__c</fullName>
+        <defaultValue>0</defaultValue>
+        <description>total duration for which loan has stayed in stage 9 irrespective of status</description>
+        <externalId>false</externalId>
+        <label>Total Stage9 Duration Minutes</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Checkbox__c</fullName>
+        <defaultValue>false</defaultValue>
+        <description>used in SLA Solutions flow to avoid multiple record creation</description>
+        <externalId>false</externalId>
+        <label>Checkbox</label>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Cumulative_Stage2_Duration__c</fullName>
+        <defaultValue>0</defaultValue>
+        <externalId>false</externalId>
+        <label>Cumulative Stage2 Duration</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>On_Hold_Duration_Minutes__c</fullName>
+        <externalId>false</externalId>
+        <label>On Hold Duration Minutes</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Stage1_Count__c</fullName>
+        <defaultValue>0</defaultValue>
+        <externalId>false</externalId>
+        <label>Stage1 Count</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Stage1_End_Time__c</fullName>
+        <encryptionScheme>None</encryptionScheme>
+        <externalId>false</externalId>
+        <label>Stage1 End Time</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>DateTime</type>
+    </fields>
+    <fields>
+        <fullName>Stage1_Start_Time__c</fullName>
+        <encryptionScheme>None</encryptionScheme>
+        <externalId>false</externalId>
+        <label>Stage1 Start Time</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>DateTime</type>
+    </fields>
+    <fields>
+        <fullName>Stage2_Count__c</fullName>
+        <defaultValue>0</defaultValue>
+        <externalId>false</externalId>
+        <label>Stage2 Count</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Stage2_End_Time__c</fullName>
+        <encryptionScheme>None</encryptionScheme>
+        <externalId>false</externalId>
+        <label>Stage2 End Time</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>DateTime</type>
+    </fields>
+    <fields>
+        <fullName>Stage2_Start_Time__c</fullName>
+        <encryptionScheme>None</encryptionScheme>
+        <externalId>false</externalId>
+        <label>Stage2 Start Time</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>DateTime</type>
+    </fields>
+    <fields>
+        <fullName>Stage3_COunt__c</fullName>
+        <defaultValue>0</defaultValue>
+        <externalId>false</externalId>
+        <label>Stage3 Count</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Stage3_End_Time__c</fullName>
+        <encryptionScheme>None</encryptionScheme>
+        <externalId>false</externalId>
+        <label>Stage3 End Time</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>DateTime</type>
+    </fields>
+    <fields>
+        <fullName>Stage3_Start_Time__c</fullName>
+        <encryptionScheme>None</encryptionScheme>
+        <externalId>false</externalId>
+        <label>Stage3 Start Time</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>DateTime</type>
+    </fields>
+    <label>SLA Solution</label>
+    <nameField>
+        <displayFormat>SLA-{0000}</displayFormat>
+        <label>SLA Name</label>
+        <trackHistory>false</trackHistory>
+        <type>AutoNumber</type>
+    </nameField>
+    <pluralLabel>SLA Solutions</pluralLabel>
+    <searchLayouts/>
+    <sharingModel>ControlledByParent</sharingModel>
+    <visibility>Public</visibility>
+</CustomObject>

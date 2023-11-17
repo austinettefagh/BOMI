@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <help><!-- This text field contains the business process type. --></help>
+        <label><!-- Category --></label>
+        <name>nFORCE__Category__c</name>
+    </fields>
+    <fields>
+        <help><!-- Select this checkbox to enable logging during your BPO Business Process. --></help>
+        <label><!-- Enable Logging --></label>
+        <name>nFORCE__Enable_Logging__c</name>
+    </fields>
+    <fields>
+        <help><!-- Select this checkbox to enable logging upon method entrance and exit. **Note**: This will greatly increase the size of the logs included in your output. --></help>
+        <label><!-- Enable Method Logging --></label>
+        <name>nFORCE__Enable_Method_Logging__c</name>
+    </fields>
+    <fields>
+        <help><!-- Select checkbox to encrypt the state data of the business activities. --></help>
+        <label><!-- Encrypt Business Activity State --></label>
+        <name>nFORCE__Encrypt_Business_Activity_State__c</name>
+    </fields>
+    <fields>
+        <help><!-- Select this checkbox to enable logs in output. --></help>
+        <label><!-- Include Logs in Output --></label>
+        <name>nFORCE__Include_Logs_In_Output__c</name>
+    </fields>
+    <fields>
+        <help><!-- This text field identifies a business process. --></help>
+        <label><!-- Key --></label>
+        <name>nFORCE__Key__c</name>
+    </fields>
+    <fields>
+        <help><!-- Using this optional field, administrators can select a log level to capture for the process to communicate what occurred during the execution. The options available are ERROR, WARN, INFO, DEBUG, FINE, FINER, FINEST. --></help>
+        <label><!-- Log Level To Capture --></label>
+        <name>nFORCE__Log_Level_To_Capture__c</name>
+        <picklistValues>
+            <masterLabel>Debug</masterLabel>
+            <translation><!-- Debug --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Error</masterLabel>
+            <translation><!-- Error --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Fine</masterLabel>
+            <translation><!-- Fine --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Finer</masterLabel>
+            <translation><!-- Finer --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Finest</masterLabel>
+            <translation><!-- Finest --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Info</masterLabel>
+            <translation><!-- Info --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Warning</masterLabel>
+            <translation><!-- Warning --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- Enter the fully-qualified class name for the ALogProvider extending class. --></help>
+        <label><!-- Log Provider --></label>
+        <name>nFORCE__Log_Provider__c</name>
+    </fields>
+    <fields>
+        <help><!-- Select this checkbox to override the Business Process custom settings. --></help>
+        <label><!-- Override Custom Settings --></label>
+        <name>nFORCE__Override_Custom_Settings__c</name>
+    </fields>
+    <fields>
+        <help><!-- This field contains the External ID for the Business Process. --></help>
+        <label><!-- Lookup Key --></label>
+        <name>nFORCE__lookupKey__c</name>
+    </fields>
+    <validationRules>
+        <errorMessage><!-- The business process name must be unique. Check the name and try again. --></errorMessage>
+        <name>nFORCE__Enforce_Unique_Name</name>
+    </validationRules>
+</CustomObjectTranslation>

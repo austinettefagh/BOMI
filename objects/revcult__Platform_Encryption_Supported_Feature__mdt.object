@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <fullName>revcult__Beta_Enabled__c</fullName>
+        <defaultValue>false</defaultValue>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <fieldManageability>SubscriberControlled</fieldManageability>
+        <label>Beta Enabled</label>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>revcult__Beta__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <fieldManageability>DeveloperControlled</fieldManageability>
+        <label>Beta</label>
+        <referenceTo>revcult__Platform_Encryption_Supported_Version__mdt</referenceTo>
+        <relationshipLabel>Beta Features</relationshipLabel>
+        <relationshipName>Beta_Features</relationshipName>
+        <required>false</required>
+        <type>MetadataRelationship</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>revcult__Enabled__c</fullName>
+        <defaultValue>false</defaultValue>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <fieldManageability>SubscriberControlled</fieldManageability>
+        <label>Enabled</label>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>revcult__General__c</fullName>
+        <defaultValue>false</defaultValue>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <fieldManageability>DeveloperControlled</fieldManageability>
+        <label>General</label>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>revcult__Help_Text__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <fieldManageability>DeveloperControlled</fieldManageability>
+        <label>Help Text</label>
+        <length>32768</length>
+        <type>LongTextArea</type>
+        <visibleLines>3</visibleLines>
+    </fields>
+    <fields>
+        <fullName>revcult__Pilot_Enabled__c</fullName>
+        <defaultValue>false</defaultValue>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <fieldManageability>SubscriberControlled</fieldManageability>
+        <label>Pilot Enabled</label>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>revcult__Pilot__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <fieldManageability>DeveloperControlled</fieldManageability>
+        <label>Pilot</label>
+        <referenceTo>revcult__Platform_Encryption_Supported_Version__mdt</referenceTo>
+        <relationshipLabel>Pilot Features</relationshipLabel>
+        <relationshipName>Pilot_Features</relationshipName>
+        <required>false</required>
+        <type>MetadataRelationship</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>revcult__Production__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <fieldManageability>DeveloperControlled</fieldManageability>
+        <label>Production</label>
+        <referenceTo>revcult__Platform_Encryption_Supported_Version__mdt</referenceTo>
+        <relationshipLabel>Production Features</relationshipLabel>
+        <relationshipName>Production_Features</relationshipName>
+        <required>false</required>
+        <type>MetadataRelationship</type>
+        <unique>false</unique>
+    </fields>
+    <label>Platform Encryption Supported Feature</label>
+    <pluralLabel>Platform Encryption Supported Features</pluralLabel>
+    <visibility>Public</visibility>
+</CustomObject>

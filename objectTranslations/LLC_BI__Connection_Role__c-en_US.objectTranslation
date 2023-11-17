@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fieldSets>
+        <label><!-- SBEOC Connection Role --></label>
+        <name>nSBA__SBEOC_Connection_Role</name>
+    </fieldSets>
+    <fields>
+        <help><!-- Contacts and deposits for connected relationships display as authorized users and analyzed accounts. --></help>
+        <label><!-- Enable Treasury Maintenance Display --></label>
+        <name>LLC_BI__Enable_Treasury_Maintenance_Display__c</name>
+    </fields>
+    <fields>
+        <label><!-- Is Household Member --></label>
+        <name>LLC_BI__Is_Household_Member__c</name>
+    </fields>
+    <fields>
+        <label><!-- Reciprocal Role --></label>
+        <name>LLC_BI__Reciprocal_Role__c</name>
+        <relationshipLabel><!-- Reciprocated Roles --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Role Type --></label>
+        <name>LLC_BI__Role_Type__c</name>
+        <picklistValues>
+            <masterLabel>Individual</masterLabel>
+            <translation><!-- Individual --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Non-Individual</masterLabel>
+            <translation><!-- Non-Individual --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- Administrators populate this optional field to link field sets to connection roles, controlling the fields displayed in the UI. --></help>
+        <label><!-- Screen Section --></label>
+        <name>LLC_BI__Screen_Section__c</name>
+        <relationshipLabel><!-- Screen Sections --></relationshipLabel>
+    </fields>
+    <fields>
+        <help><!-- Check if the reciprocal role is the same as the role itself. --></help>
+        <label><!-- Self Reciprocating --></label>
+        <name>LLC_BI__Self_Reciprocating__c</name>
+    </fields>
+    <fields>
+        <label><!-- Sort Order --></label>
+        <name>LLC_BI__Sort_Order__c</name>
+    </fields>
+    <fields>
+        <help><!-- Allow the connection role to be selected in NCC. --></help>
+        <label><!-- Use in NCC --></label>
+        <name>LLC_BI__Use_in_NCC__c</name>
+    </fields>
+    <fields>
+        <label><!-- lookupKey --></label>
+        <name>LLC_BI__lookupKey__c</name>
+    </fields>
+    <fields>
+        <help><!-- When checked, entity involvements will be automatically created and managed for relationships in the reciprocal role. --></help>
+        <label><!-- Manage Reciprocal Involvements --></label>
+        <name>LLC_HI__Manage_Reciprocal_Involvements__c</name>
+    </fields>
+    <fields>
+        <help><!-- Check if this Connection Role is valid to give a Portal User access to a Business Account. --></help>
+        <label><!-- Allows Portal Access --></label>
+        <name>nPortal__Allows_Portal_Access__c</name>
+    </fields>
+    <validationRules>
+        <errorMessage><!-- A role cannot have a reciprocal role specified if it is self reciprocating. --></errorMessage>
+        <name>LLC_BI__Reciprocal_Role</name>
+    </validationRules>
+</CustomObjectTranslation>

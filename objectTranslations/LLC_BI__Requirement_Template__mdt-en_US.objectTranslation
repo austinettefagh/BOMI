@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <help><!-- This required field contains a reference to the Advanced Criteria to which this Requirement Template belongs. --></help>
+        <label><!-- Advanced Criteria --></label>
+        <name>LLC_BI__Advanced_Criteria__c</name>
+        <relationshipLabel><!-- Requirement Templates --></relationshipLabel>
+    </fields>
+    <fields>
+        <help><!-- This optional field contains the id of the User or Queue to whom Requirements based on this model are assigned. It should be copied to the Owner field on Requirement records created from this template. --></help>
+        <label><!-- Assignee --></label>
+        <name>LLC_BI__Assignee__c</name>
+    </fields>
+    <fields>
+        <help><!-- This required field contains a reference to the Checklist Template to which this Requirement Template belongs. --></help>
+        <label><!-- Checklist --></label>
+        <name>LLC_BI__Checklist__c</name>
+        <relationshipLabel><!-- Requirements --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Checkpoint Context --></label>
+        <name>LLC_BI__Checkpoint_Context__c</name>
+        <relationshipLabel><!-- Requirement Templates --></relationshipLabel>
+    </fields>
+    <fields>
+        <help><!-- A value that represents a stage in a transaction when this requirement will be used. --></help>
+        <label><!-- Checkpoint Value --></label>
+        <name>LLC_BI__Checkpoint_Value__c</name>
+    </fields>
+    <fields>
+        <help><!-- This field contains the user facing description of the requirement based on this model. --></help>
+        <label><!-- Description --></label>
+        <name>LLC_BI__Description__c</name>
+    </fields>
+    <fields>
+        <help><!-- This optional field contains the number of days expected to complete Requirements based on this model.  It should be copied to the Expected Durations Days field on Requirement records created from this template. --></help>
+        <label><!-- Expected Duration Days --></label>
+        <name>LLC_BI__Expected_Duration_Days__c</name>
+    </fields>
+    <fields>
+        <help><!-- Check this field to indicate that this Requirement must be completed before the Context Object can move beyond the Checkpoint Context. --></help>
+        <label><!-- Hard Stop --></label>
+        <name>LLC_BI__Hard_Stop__c</name>
+    </fields>
+    <fields>
+        <help><!-- This optional field specifies the sequence in which Requirements based on this model should be completed.  It should be copied to the Order field on Requirement records created from this template. --></help>
+        <label><!-- Order --></label>
+        <name>LLC_BI__Order__c</name>
+    </fields>
+    <fields>
+        <help><!-- This required field contains the user facing name of Requirements based on this model. It should be copied to the Name field on Requirement records created from this template. --></help>
+        <label><!-- Title --></label>
+        <name>LLC_BI__Title__c</name>
+    </fields>
+</CustomObjectTranslation>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <label><!-- Bundle --></label>
+        <name>LLC_BI__Bundle__c</name>
+        <relationshipLabel><!-- Projection Bundle Junctions --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Projection Template --></label>
+        <name>LLC_BI__Projection_Template__c</name>
+        <relationshipLabel><!-- Projection Bundle Junctions --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- lookupKey --></label>
+        <name>LLC_BI__lookupKey__c</name>
+    </fields>
+</CustomObjectTranslation>

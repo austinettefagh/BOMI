@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <label><!-- Child Highest --></label>
+        <name>LLC_BI__Child_Highest__c</name>
+        <relationshipLabel><!-- Child Highest --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Child Loan --></label>
+        <name>LLC_BI__Child_Loan__c</name>
+        <relationshipLabel><!-- Product Package Loans History --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Child Is Booked --></label>
+        <name>LLC_BI__Is_Booked__c</name>
+    </fields>
+    <fields>
+        <label><!-- Parent Loan --></label>
+        <name>LLC_BI__Parent_Loan__c</name>
+        <relationshipLabel><!-- Product Package Loans History (Parent Loan) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Product Package --></label>
+        <name>LLC_BI__Product_Package__c</name>
+        <relationshipLabel><!-- Product Package Loans History --></relationshipLabel>
+    </fields>
+</CustomObjectTranslation>

@@ -1,0 +1,231 @@
+<!--
+* Component Name : Commercial_RMMyClientPortfolio
+* Controller Class : Commercial_RMDesktopController
+* Description : Displayed on the RM home page
+*@Modification Log   :
+Change History Story              Modify by               Date                          Desc
+**********************************************************************************************************
+Modified                        Sagar Herakal            17-09-2021    Added the javascript method filterButton to Enable multi preset filters
+Modified                        Sagar Herakal            17-09-2021    Modified the javascript method handleButton1 and handleButton2 and handleButton3
+Modified                        Sagar Herakal            17-09-2021    Modified the javascript method handleChange and handleSearch
+ -->
+<!--Declaring the controller of the component in the definition-->
+ <!-- component starts
+ Name : TM_RMMyClientPortfolio-->
+ <aura:component implements="force:appHostable,flexipage:availableForAllPageTypes,forceCommunity:availableForAllPageTypes" access="global" controller="Commercial_RMDesktopController">
+    
+    <!--Declaring attributes for the first button state-->
+    <aura:attribute name="button1State" type="Boolean" default="false"/>
+    <aura:attribute name="button1Variant" type="String" default="neutral"/>
+    <aura:attribute name="isActivityClicked" type="Boolean" default="false"/>
+    <!--Declaring attributes for the second button state-->
+    <aura:attribute name="button2State" type="Boolean" default="false"/>
+    <aura:attribute name="button2Variant" type="String" default="neutral"/>
+    <aura:attribute name="isValueClicked" type="Boolean" default="false"/>
+    <!--Declaring attributes for the third button state-->
+    <aura:attribute name="button3State" type="Boolean" default="false"/>
+    <aura:attribute name="button3Variant" type="String" default="neutral"/>
+    <aura:attribute name="isStatusClicked" type="Boolean" default="false"/>
+    <!--Declaring attributes for the first use throughout-->
+    <aura:attribute name="wrapperList" type="object"/>
+    <aura:attribute name="truthy" type="Boolean" default="true"/>
+    <aura:attribute name="fieldType" type="String"/>
+    <aura:attribute name="pickListValues" type="List"/>
+    <aura:attribute name="colors" type="String[]" default="contains,equals,not equal to,less than,greater than,less or equal,greater or equal"/>
+    <!--selectedValue Attribute-->
+    <aura:attribute name="selectedValue" type="String"/>
+    <aura:attribute name="pickVal1" type="String"/>
+    <aura:attribute name="pickVal2" type="String"/>
+    <!--lstOfRecordType Attribute-->
+    <aura:attribute name="lstOfRecordType" type="String[]" />
+    <!--isOpen Attribute-->
+    <aura:attribute name="isOpen" type="boolean" default="false" />
+    <!-- attributes -->
+    <aura:attribute name="data" type="Object"/>
+    <aura:attribute name="columns" type="List"/>
+    <!--Declaring attributes ends-->
+    
+    <!--added extra attributes-->
+    <aura:attribute name="queryFilter" type="String" default=""/>
+    <aura:attribute name="queryClicked" type="Boolean" default="false"/>
+    <aura:attribute name="selectedField1" type="String" default=""/>
+    <!--end-->
+    
+    <!-- handlers-->
+    <aura:handler name="init" value="{! this }" action="{! c.init }"/>
+    <!--handler auto save record on clicking edit button-->
+    <aura:handler event="force:showToast" action="{!c.init}" />
+    
+    <!--Declaring the accordion with values-->
+   <lightning:accordion aura:id="accordion" activeSectionName="c" allowMultipleSectionsOpen="true">
+        <lightning:accordionSection name="C" label="FILTERS">
+            
+            <div class="slds-grid slds-m-bottom_medium">
+                    <span class="slds-m-right_medium">
+                        <!--Functionality if value is selected-->
+                        <lightning:select aura:id="select1" name="select" label="Field" value = "{!v.pickVal1}" onchange="{! c.handleChange }">
+                            <option value="all">--None--</option>
+                            <!--Initialzing the iteration-->
+                            <aura:iteration items="{!v.wrapperList.lstLabel}" var="item">
+                                <option value="{!item}">{!item}</option> 
+                            </aura:iteration> 
+                        </lightning:select>
+                    </span>
+                    
+                    <span class="slds-m-right_medium">
+
+                        <!--Functionality if value is selected-->
+                        <lightning:select aura:id="select2" name="select" value = "{!v.pickVal2}" label="Operator" onchange="{!c.handleSearch}">
+                            <option value="all">--None--</option>
+                            <!--Initialzing the iteration--> 
+                            <aura:iteration items="{!v.colors}" var="item">
+                                <option value="{!item}">{!item}</option> 
+                            </aura:iteration> 
+                        </lightning:select>
+                    </span>
+                    
+                    <span class="slds-m-right_xx-large">
+                        <aura:if isTrue="{!v.truthy}">
+                            <!--Functionality if value is selected-->
+                            <lightning:select aura:id="mySelect" name="select" label="Value" onchange="{!c.handleSearch}">
+                                <option value="all">--None--</option>
+                                <!--Initialzing the iteration--> 
+                                <aura:iteration items="{!v.pickListValues}" var="item">
+                                    <option value="{!item}">{!item}</option> 
+                                </aura:iteration> 
+                            </lightning:select>
+                            <aura:set attribute="else">
+                                <!--Input a value-->
+                                <lightning:input type="{!v.fieldType}"
+                                                 required = "true"
+                                                 name="input1" 
+                                                 label="Value" 
+                                                 value="{!v.selectedValue}"
+                                                 oncommit="{!c.handleSearch}"/>
+                            </aura:set>
+                        </aura:if> 
+                    </span>
+                    
+            <!--       <span class="slds-m-right_medium">
+                        <label class="slds-form-element__label">Preset Filters</label> -->
+                        <!--div class="slds-form-element__control"-->
+                            <!--ui:button class="slds-button filter-button_active" aura:id="activityButton" press="{! c.applyFilter }">Last Activity (6 mos)</ui:button-->
+                            <!--Declaring the state of the button--> 
+                        	<!--
+                            <lightning:buttonStateful variant="{!v.button1Variant}" 
+                                                      state="{!v.button1State }" 
+                                                      labelWhenOff="Last Activity (6 mos)"
+                                                      labelWhenOn="Last Activity (6 mos)" 
+                                                      labelWhenHover="Remove Filter" 
+                                                      iconNameWhenOff="utility:add"
+                                                      iconNameWhenOn="utility:check" 
+                                                      iconNameWhenHover="utility:close" 
+                                                      onclick="{!c.handleButton1 }" />-->
+                        <!--/div
+                    </span> -->
+                    
+                <!--    <span class="slds-m-right_medium">
+                        <label class="slds-form-element__label">⠀</label>
+                        <div class="slds-form-element__control"> -->
+                            <!--ui:button class="slds-button filter-button_inactive" aura:id="valueButton" press="{! c.applyFilter }">Value > $10,000</ui:button-->
+                            <!--Declaring the state of the button--> 
+                      <!--      <lightning:buttonStateful variant="{!v.button2Variant}" 
+                                                      state="{!v.button2State }" 
+                                                      labelWhenOff="Value > $50M" 
+                                                      labelWhenOn="Value > $50M"
+                                                      labelWhenHover="Remove Filter" 
+                                                      iconNameWhenOff="utility:add" 
+                                                      iconNameWhenOn="utility:check" 
+                                                      iconNameWhenHover="utility:close" 
+                                                      onclick="{!c.handleButton2 }" />
+                        </div>
+                    </span> -->
+                    
+                <!--    <span class="slds-m-right_medium">
+                        <label class="slds-form-element__label">⠀</label>
+                        <div class="slds-form-element__control"> -->
+                            <!--ui:button class="slds-button filter-button_inactive" aura:id="statusButton" press="{! c.applyFilter }">Status: Active</ui:button-->
+                            <!--Declaring the state of the button--> 
+                      <!--      <lightning:buttonStateful variant="{!v.button3Variant}" 
+                                                      state="{!v.button3State }" 
+                                                      labelWhenOff="Status: Active"
+                                                      labelWhenOn="Status: Active" 
+                                                      labelWhenHover="Remove Filter" 
+                                                      iconNameWhenOff="utility:add"
+                                                      iconNameWhenOn="utility:check" 
+                                                      iconNameWhenHover="utility:close" 
+                                                      onclick="{!c.handleButton3 }" />
+                        </div>
+                    </span> -->
+            </div>
+              <lightning:button variant="brand" label="Reset Filters" title="Reset Filters" onclick="{!c.handleReset}" /> 
+        </lightning:accordionSection>
+    </lightning:accordion>
+    <!--Accordian ends-->
+    <div class = "slds-float_right">
+        <lightning:buttonIcon iconName="utility:add" tooltip= "New Account" alternativeText="Add" title="Add"  onclick="{!c.openModal}" />
+        <lightning:buttonIcon  iconName="utility:refresh" tooltip= "Refresh" alternativeText="Refresh" title="Refresh"  onclick="{!c.handleReset}" />
+    </div>
+    
+    <!-- Model Box Start -->    
+    <aura:if isTrue="{!v.isOpen}">
+        <div role="dialog" tabindex="-1" aria-labelledby="header43" class="slds-modal slds-fade-in-open">
+            <div class="slds-modal__container">
+                <div class="slds-modal__header">
+                    <button class="slds-button slds-modal__close slds-button--icon-inverse" title="Close" onclick="{!c.closeModal}">
+                        X<span class="slds-assistive-text">Cancel</span>
+                    </button>
+                    <h2 id="header43" class="slds-text-heading--medium">New Account</h2>
+                </div>                
+                <div class="slds-modal__content slds-p-around--medium">
+                    <div class="slds-grid slds-wrap">
+                        <div class="slds-size--1-of-2 slds-large-size--1-of-2">
+                             <div class="slds-align--absolute-center">Select a Record Type</div>                            
+                        </div>
+                        <div class="slds-size--1-of-2 slds-large-size--1-of-2">
+                            <ui:inputSelect aura:id="selectid">
+                                <aura:iteration items="{!v.lstOfRecordType}" var="account">                            
+                                    <ui:inputSelectOption text="{!account}" label="{!account}"  />
+                                </aura:iteration>
+                            </ui:inputSelect>
+                        </div>&nbsp; &nbsp;
+                    </div>                   
+                </div>
+                <!-- Buttons -->
+                <div class="slds-modal__footer">
+                    <lightning:button class="slds-button slds-button--neutral" onclick="{!c.closeModal}">Cancel</lightning:button>
+                    <lightning:button class="slds-button slds-button--brand" onclick="{!c.createRecord}">Next</lightning:button>
+                </div>
+            </div>
+        </div>
+        <div class="slds-backdrop slds-backdrop--open"></div>
+    </aura:if>
+    <!-- Add Line Breaks -->
+    
+    <br></br><br></br>
+    <div class="slds-grid slds-gutters">
+        
+       <!-- <div class="slds-col slds-size_1-of-3"> -->
+            <!--Declaring the Einstein Dashboard to be displayed-->
+          <!--  <wave:waveDashboard dashboardId="0FK0v00000004vtGAA"  showHeader="false" showTitle="false"/>  -->     
+             <!-- <wave:waveDashboard developerName = "Account_Overview_New" showHeader="false" showTitle="false"/>  
+        </div> -->
+        <div class="slds-col slds-size_3-of-3">
+            <span>
+                <div style="height: 300px;border-left: 1px solid #DDDDDD">
+                    
+                    <!--Initializing the datatable-->
+                    <lightning:datatable keyField="id" 
+                                         class="table-test" 
+                                         data="{! v.data }" 
+                                         columns="{! v.columns }"
+                                         columnWidthsMode="fixed"
+                                         hideCheckboxColumn="true" 
+                                         onrowaction="{! c.handleRowAction }"/>
+                    <!--Initializing the datatable ends-->
+                </div>
+            </span>
+        </div>
+    </div>
+    <!-- component ends-->
+</aura:component>

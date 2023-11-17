@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <label><!-- Context Object ID --></label>
+        <name>SESOC__Context_Object_ID__c</name>
+    </fields>
+    <fields>
+        <label><!-- Date/Time Package Complete --></label>
+        <name>SESOC__Datetime_Package_Complete__c</name>
+    </fields>
+    <fields>
+        <label><!-- Document Collection --></label>
+        <name>SESOC__Document_Collection__c</name>
+        <relationshipLabel><!-- Packages --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Package Name --></label>
+        <name>SESOC__Package_Name__c</name>
+    </fields>
+    <fields>
+        <label><!-- Status --></label>
+        <name>SESOC__Status__c</name>
+        <picklistValues>
+            <masterLabel>Cancelled</masterLabel>
+            <translation><!-- Cancelled --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Complete</masterLabel>
+            <translation><!-- Complete --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Created</masterLabel>
+            <translation><!-- Created --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Declined</masterLabel>
+            <translation><!-- Declined --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Error</masterLabel>
+            <translation><!-- Error --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Pending Document Download</masterLabel>
+            <translation><!-- Pending Document Download --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Sent</masterLabel>
+            <translation><!-- Sent --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Timed Out</masterLabel>
+            <translation><!-- Timed Out --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Vendor ID --></label>
+        <name>SESOC__VendorId__c</name>
+    </fields>
+    <fields>
+        <label><!-- Vendor Plug-in --></label>
+        <name>SESOC__VendorPlugin__c</name>
+    </fields>
+</CustomObjectTranslation>

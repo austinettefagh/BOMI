@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>LLC_BI__Loan__c$Name</field>
+    </columns>
+    <columns>
+        <field>LLC_BI__Loan__c$LLC_BI__First_Payment_Date__c</field>
+    </columns>
+    <columns>
+        <field>LLC_BI__Loan__c$LLC_BI__Account__c.CF_Annual_Review_Date__c</field>
+    </columns>
+    <columns>
+        <field>LLC_BI__Loan__c$LLC_BI__Account__c.CF_Account_Primary_Contact__c</field>
+    </columns>
+    <columns>
+        <field>LLC_BI__Loan__c$LLC_BI__Account__c.CF_Account_Primary_Contact__c.Birthdate</field>
+    </columns>
+    <columns>
+        <field>LLC_BI__Loan__c$LLC_BI__Loan_Officer__c</field>
+    </columns>
+    <description>Upcoming Customer Contact Report</description>
+    <filter>
+        <criteriaItems>
+            <column>LLC_BI__Loan__c$LLC_BI__First_Payment_Date__c</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>NEXT_N_DAYS:30</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>LLC_BI__Loan__c$CF_Current_User_Assigned_As__c</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>Relationship Manager</value>
+        </criteriaItems>
+        <language>en_US</language>
+    </filter>
+    <format>Summary</format>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>LLC_BI__Loan__c$LLC_BI__Account__c</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <name>Upcoming Customer Contact Report</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>Loans_with_Accounts__c</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <showGrandTotal>true</showGrandTotal>
+    <showSubTotals>false</showSubTotals>
+    <timeFrameFilter>
+        <dateColumn>LLC_BI__Loan__c$CF_Application_Completed_Date__c</dateColumn>
+        <interval>INTERVAL_CUSTOM</interval>
+    </timeFrameFilter>
+</Report>

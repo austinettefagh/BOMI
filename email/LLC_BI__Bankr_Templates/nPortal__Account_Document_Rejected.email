@@ -1,0 +1,116 @@
+<messaging:emailTemplate subject="The Bank of Missouri - Information Correction Requested for {!relatedTo.LLC_BI__Account__r.Name}" recipientType="Contact" relatedToType="LLC_BI__AccountDocument__c">
+    <messaging:htmlEmailBody >
+        <html>
+          <body style="width:100%;">
+              <table style="width: 100%; table-layout: auto;">
+                 <tr>
+                    <td align="left">
+                       <table>
+                          <tr>
+                             <td align="left">
+                                <apex:image url="{!$Label.TBOM_non_member_logo_URL}"
+                                   style="height: 70px; max-height: 70px;"
+                                />
+                             </td>
+                          </tr>
+                       </table>
+                       <div style="width: 100%; font-family: 'Salesforce Sans', Arial, sans-serif; text-align: left;">
+                                <div style="background-color: #FFFFFF; color: #000000; padding: 20px 30px 20px 30px;">
+                                    
+                                        <p style="color: #000000; font-size: 12pt;">
+                                            Hi {!recipient.FirstName},
+                                        </p>
+                                    
+                                    <p style="color: #000000; font-size: 12pt;">
+                                        The Bank of Missouri requests additional information related to your account(s). The following document(s) have not been accepted for the following reason(s):
+                                    </p>
+                                    <ul>
+                                        <li>
+                                            <strong style="font-weight: 300; color: #000000; font-size: 12pt;">
+                                                {!If(!isNull(relatedTo.LLC_BI__Portal_Doc_Name__c),
+                                                    relatedTo.LLC_BI__Portal_Doc_Name__c, relatedTo.Name)} - {!relatedTo.LLC_BI__Portal_Rejection_Reason__c} - {!relatedTo.NDOC__Portal_Rejection_Comment__c}
+                                            </strong>
+                                        </li>
+                                    </ul>
+                                    <p style="color: #000000; font-size: 12pt;">
+                                        Please log in to your Bank of Missouri loan portal, and navigate to the To Do List on the Dashboard to upload the corrected document(s).
+                                        <!--<strong style="font-weight: 300; color: #162c52;">Log in and take a look so we can get you an official offer.</strong>-->
+                                        <br/>
+                                        <br/>
+                                        To replace or upload documents, go to:
+                                    </p>
+                                    <table>
+                                        <tr>
+                                            <td align="center">
+                                                <a style="width: 100%; background-color: #008148; color: #FFFFFF; padding-left: 16px; padding-right: 16px; border: 1px solid #008148; border-radius: 4px; line-height: 34px; display: inline-block; text-decoration: none;"
+                                                    href="{!$label.CL_Customer_Portal_Url}">
+                                                     Replace Documents
+                                                </a>
+                                            </td>
+                                        </tr>
+                                    </table>
+                                   
+                                    <!--<p style="color: #162c52;">
+                                        Give us a call at {!$Organization.Phone} with any questions.
+                                    </p>-->
+                                    <p style="color: #000000; font-size: 12pt;">
+                                          Thank you,<br/>                                   
+                                          The Bank of Missouri
+                                    </p>
+                               
+                                    <p style="color: #000000; font-size: 12pt;">
+                                    Please reach out to your Relationship Manager for any questions.
+                                    </p>
+                                </div>
+                                <hr style="color:#808080"></hr>
+                                <table style="width: 100%; background-color: #FFFFFF; color: #000000; padding: 20px; font-size: 8pt;">
+                                <tr>
+                                    <td>
+                                          The Bank of Missouri | Member FDIC | 906 N. Kingshighway, Perryville, MO | 888-547-6541
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        Please do not reply to this message, as this email inbox is not monitored.
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        This email was sent to <a href="{!recipient.Email}" style="color:#008148">{!recipient.Email}</a> and contains information directly related to your account with us and/or any application you may have submitted. If you feel you have received this message in error, please contact us at 888-547-6541.
+                                    </td>    
+                                </tr>
+                            </table>
+                            </div>
+                        </td>
+                    </tr>
+                </table>
+            </body>
+           
+        </html>
+    </messaging:htmlEmailBody>
+
+    <messaging:plainTextEmailBody >
+        Hi {!recipient.FirstName},
+        
+        The Bank of Missouri requests additional information related to your account(s). The following document(s) have not been accepted for the following reason(s):
+        
+        - {!If(!isNull(relatedTo.LLC_BI__Portal_Doc_Name__c),
+              relatedTo.LLC_BI__Portal_Doc_Name__c, relatedTo.Name)} - {!relatedTo.LLC_BI__Portal_Rejection_Reason__c} - {!relatedTo.NDOC__Portal_Rejection_Comment__c}
+        
+        Please log in to your Bank of Missouri loan portal, and navigate to the To Do List on the Dashboard to upload the corrected document(s). 
+        
+        To replace or upload documents, go to:
+        
+        <c:CommunityURL />
+        
+        Please reach out to your Relationship Manager for any questions.
+                
+        Thanks,
+        The Bank of Missouri        
+        
+        
+        The Bank of Missouri | Member FDIC | 906 N. Kingshighway, Perryville, MO | 888-547-6541
+        Please do not reply to this message, as this email inbox is not monitored.
+        This email was sent to {!recipient.Email} and contains information directly related to your account with us and/or any application you may have submitted. If you feel you have received this message in error, please contact us at 888-547-6541.
+    </messaging:plainTextEmailBody>
+</messaging:emailTemplate>

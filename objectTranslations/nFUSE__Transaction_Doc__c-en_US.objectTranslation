@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <label><!-- Attachment --></label>
+        <name>nFUSE__Attachment__c</name>
+    </fields>
+    <fields>
+        <label><!-- Content Document --></label>
+        <name>nFUSE__Content_Document__c</name>
+    </fields>
+    <fields>
+        <label><!-- DocMan Template --></label>
+        <name>nFUSE__DocMan_Template__c</name>
+    </fields>
+    <fields>
+        <label><!-- Transaction Log --></label>
+        <name>nFUSE__Transaction_Log__c</name>
+        <relationshipLabel><!-- Transaction Docs --></relationshipLabel>
+    </fields>
+    <fields>
+        <help><!-- The system uses this field to specify the location to view the report. --></help>
+        <label><!-- View Report Link --></label>
+        <name>nFUSE__View_Report_Link__c</name>
+    </fields>
+</CustomObjectTranslation>

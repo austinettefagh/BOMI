@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>CUST_NAME</field>
+    </columns>
+    <columns>
+        <aggregateTypes>Sum</aggregateTypes>
+        <field>LLC_BI__Loan__c.LLC_BI__Amount__c</field>
+    </columns>
+    <columns>
+        <field>LLC_BI__Loan__c.LLC_BI__Loan_Officer__c</field>
+    </columns>
+    <columns>
+        <field>LLC_BI__Loan__c.cm_Loan_Assistant__c</field>
+    </columns>
+    <columns>
+        <field>LLC_BI__Loan__c.CF_Flood_Verification_Status__c</field>
+    </columns>
+    <columns>
+        <field>LLC_BI__Loan__c.LLC_BI__Product_Line__c</field>
+    </columns>
+    <columns>
+        <aggregateTypes>Sum</aggregateTypes>
+        <field>LLC_BI__Loan__c.LLC_BI__Real_Estate__c</field>
+    </columns>
+    <description>Report on loans requiring flood insurance.</description>
+    <filter>
+        <criteriaItems>
+            <column>LLC_BI__Loan__c.CF_Flood_Verification_Status__c</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>notEqual</operator>
+            <value>Not Verified,Verification/Review in Process</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>LLC_BI__Loan__c.CF_Flood_Verification_Applicable__c</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>Yes</value>
+        </criteriaItems>
+        <language>en_US</language>
+    </filter>
+    <format>Tabular</format>
+    <name>Loans Requiring Flood Insurance</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>CustomEntity$LLC_BI__Loan__c</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <showGrandTotal>true</showGrandTotal>
+    <showSubTotals>true</showSubTotals>
+    <timeFrameFilter>
+        <dateColumn>LLC_BI__Loan__c.CF_Application_Completed_Date__c</dateColumn>
+        <interval>INTERVAL_CUSTOM</interval>
+    </timeFrameFilter>
+</Report>

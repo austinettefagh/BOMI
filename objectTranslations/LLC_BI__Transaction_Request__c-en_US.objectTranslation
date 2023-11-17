@@ -1,0 +1,1130 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fieldSets>
+        <label><!-- Disbursement Summary --></label>
+        <name>FS_Disbursement_Summary</name>
+    </fieldSets>
+    <fieldSets>
+        <label><!-- Disbursements Table --></label>
+        <name>LLC_BI__Disbursements_Table</name>
+    </fieldSets>
+    <fields>
+        <help><!-- The additional percentage (over and above the 10% Federal income tax withholding) that the IRA owner will have withheld from the distribution. --></help>
+        <label><!-- Additional Federal Withholding Percent --></label>
+        <name>LLC_BI__Additional_Federal_Withholding_Pct__c</name>
+    </fields>
+    <fields>
+        <help><!-- The additional discretionary dollar amount of federal withholdings, over and above the baseline 10%, to the IRA plan. --></help>
+        <label><!-- Additional Federal Withholdings --></label>
+        <name>LLC_BI__Additional_Federal_Withholdings__c</name>
+    </fields>
+    <fields>
+        <label><!-- Amount Funded --></label>
+        <name>LLC_BI__Amount_Funded__c</name>
+    </fields>
+    <fields>
+        <label><!-- Amount Requested --></label>
+        <name>LLC_BI__Amount_Requested__c</name>
+    </fields>
+    <fields>
+        <help><!-- The amount of the transaction request --></help>
+        <label><!-- Amount --></label>
+        <name>LLC_BI__Amount__c</name>
+    </fields>
+    <fields>
+        <help><!-- Specifies the type of distribution for a Coverdell Education Savings Account (CESA). --></help>
+        <label><!-- CESA Distribution Type --></label>
+        <name>LLC_BI__CESA_Distribution_Type__c</name>
+        <picklistValues>
+            <masterLabel>Correction of Excess Contribution after May 31 of the tax year after excess contribution</masterLabel>
+            <translation><!-- Correction of Excess Contribution after May 31 of the tax year after excess contribution --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Correction of Excess Contribution in same year as excess contribution</masterLabel>
+            <translation><!-- Correction of Excess Contribution in same year as excess contribution --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Correction of Excess Contribution in year after excess contribution but by May 31</masterLabel>
+            <translation><!-- Correction of Excess Contribution in year after excess contribution but by May 31 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Death</masterLabel>
+            <translation><!-- Death --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Disability</masterLabel>
+            <translation><!-- Disability --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Distributions - Non Transfer</masterLabel>
+            <translation><!-- Distributions - Non Transfer --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Distributions - Transfer to CESA of new qualified designated beneficiary</masterLabel>
+            <translation><!-- Distributions - Transfer to CESA of new qualified designated beneficiary --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Distributions - Transfer to CESA of same Designated Beneficiary</masterLabel>
+            <translation><!-- Distributions - Transfer to CESA of same Designated Beneficiary --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Distributions - Transfer to former spouse&apos;s CESA due to divorce or legal separation</masterLabel>
+            <translation><!-- Distributions - Transfer to former spouse&apos;s CESA due to divorce or legal separation --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Prohibited Transaction</masterLabel>
+            <translation><!-- Prohibited Transaction --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- The portion of the (CESA) transfer that is considered the earnings amount. --></help>
+        <label><!-- CESA Earnings Amount --></label>
+        <name>LLC_BI__CESA_Earnings_Amount__c</name>
+    </fields>
+    <fields>
+        <help><!-- The portion of the (CESA) transfer that is considered the basis amount. --></help>
+        <label><!-- CESA Transfer Basis Amount --></label>
+        <name>LLC_BI__CESA_Transfer_Basis_Amount__c</name>
+    </fields>
+    <fields>
+        <label><!-- Completed Date --></label>
+        <name>LLC_BI__Completed_Date__c</name>
+    </fields>
+    <fields>
+        <help><!-- The amount of the IRA/HSA contribution. --></help>
+        <label><!-- Contribution Amount --></label>
+        <name>LLC_BI__Contribution_Amount__c</name>
+    </fields>
+    <fields>
+        <help><!-- The amount of contribution plus earnings. --></help>
+        <label><!-- Contribution Plus Earnings Amount --></label>
+        <name>LLC_BI__Contribution_Plus_Earnings_Amount__c</name>
+    </fields>
+    <fields>
+        <help><!-- The tax year of the IRA/HSA contribution. --></help>
+        <label><!-- Contribution Tax Year --></label>
+        <name>LLC_BI__Contribution_Tax_Year__c</name>
+    </fields>
+    <fields>
+        <help><!-- The IRA Contribution Type --></help>
+        <label><!-- Contribution Type --></label>
+        <name>LLC_BI__Contribution_Type__c</name>
+        <picklistValues>
+            <masterLabel>Regular (including Catch-Up)</masterLabel>
+            <translation><!-- Regular (including Catch-Up) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Regular CESA Contribution</masterLabel>
+            <translation><!-- Regular CESA Contribution --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Return of Mistaken Distribution</masterLabel>
+            <translation><!-- Return of Mistaken Distribution --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Rollover from an Archer Medical Savings Account</masterLabel>
+            <translation><!-- Rollover from an Archer Medical Savings Account --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Rollover from an HSA</masterLabel>
+            <translation><!-- Rollover from an HSA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Rollover of Military Death Gratuity</masterLabel>
+            <translation><!-- Rollover of Military Death Gratuity --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Rollover to CESA of Same Designated Beneficiary</masterLabel>
+            <translation><!-- Rollover to CESA of Same Designated Beneficiary --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Rollover to CESA of a New Qualified Designated Beneficiary</masterLabel>
+            <translation><!-- Rollover to CESA of a New Qualified Designated Beneficiary --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Transfer from an Archer Medical Savings Account</masterLabel>
+            <translation><!-- Transfer from an Archer Medical Savings Account --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Transfer from an HSA</masterLabel>
+            <translation><!-- Transfer from an HSA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Transfer to CESA of Same Designated Beneficiary</masterLabel>
+            <translation><!-- Transfer to CESA of Same Designated Beneficiary --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Transfer to CESA of a New Qualified Designated Beneficiary</masterLabel>
+            <translation><!-- Transfer to CESA of a New Qualified Designated Beneficiary --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- This is a description of how the individual should be referenced on the check or certificate registration. --></help>
+        <label><!-- Delivery Payment Description --></label>
+        <name>LLC_BI__Delivery_Payment_Description__c</name>
+    </fields>
+    <fields>
+        <help><!-- Description of possible medium(s) for the payment/transfer requested. --></help>
+        <label><!-- Delivery Payment Options --></label>
+        <name>LLC_BI__Delivery_Payment_Options__c</name>
+        <picklistValues>
+            <masterLabel>Certificate registration in the name of</masterLabel>
+            <translation><!-- Certificate registration in the name of --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Check or electronic fund transfer payable to</masterLabel>
+            <translation><!-- Check or electronic fund transfer payable to --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Check payable to</masterLabel>
+            <translation><!-- Check payable to --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Check payable to or certificate registration in the name of</masterLabel>
+            <translation><!-- Check payable to or certificate registration in the name of --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Other</masterLabel>
+            <translation><!-- Other --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- The deposit basis amount of the (CESA) contribution. The basis amount equals the amount of the rollover or transfer contribution. --></help>
+        <label><!-- Deposit Basis Amount --></label>
+        <name>LLC_BI__Deposit_Basis_Amount__c</name>
+    </fields>
+    <fields>
+        <help><!-- The deposit earnings amount of the (CESA) contribution. --></help>
+        <label><!-- Deposit Earnings Amount --></label>
+        <name>LLC_BI__Deposit_Earnings_Amount__c</name>
+    </fields>
+    <fields>
+        <label><!-- Deposit --></label>
+        <name>LLC_BI__Deposit__c</name>
+        <relationshipLabel><!-- Transaction Request --></relationshipLabel>
+    </fields>
+    <fields>
+        <help><!-- Enter a description for the disbursement. --></help>
+        <label><!-- Disbursement Description --></label>
+        <name>LLC_BI__Disbursement_Description__c</name>
+    </fields>
+    <fields>
+        <help><!-- Select the payment method for the disbursement. --></help>
+        <label><!-- Disbursement Payment Method --></label>
+        <name>LLC_BI__Disbursement_Payment_Method__c</name>
+        <picklistValues>
+            <masterLabel>Credit Card</masterLabel>
+            <translation><!-- Credit Card --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Draft/Check</masterLabel>
+            <translation><!-- Draft/Check --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Other</masterLabel>
+            <translation><!-- Other --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Retail Account</masterLabel>
+            <translation><!-- Retail Account --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Wire Transfer</masterLabel>
+            <translation><!-- Wire Transfer --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- The amount of the administrative fees charged in connection with the distribution. --></help>
+        <label><!-- Distribution Administration Fee --></label>
+        <name>LLC_BI__Distribution_Administration_Fee__c</name>
+    </fields>
+    <fields>
+        <help><!-- The amount of the total distribution. --></help>
+        <label><!-- Distribution Amount --></label>
+        <name>LLC_BI__Distribution_Amount__c</name>
+    </fields>
+    <fields>
+        <help><!-- For Coverdell Education Savings Account (CESA) distributions this is the basis amount for the distribution. --></help>
+        <label><!-- Distribution Basis Amount --></label>
+        <name>LLC_BI__Distribution_Basis_Amount__c</name>
+    </fields>
+    <fields>
+        <help><!-- For Coverdell Education Savings Account (CESA) distributions this is the earnings for the distribution. --></help>
+        <label><!-- Distribution Earnings Amount --></label>
+        <name>LLC_BI__Distribution_Earnings_Amount__c</name>
+    </fields>
+    <fields>
+        <help><!-- Specifies the payment method applicable to the distribution. --></help>
+        <label><!-- Distribution Payment Method --></label>
+        <name>LLC_BI__Distribution_Payment_Method__c</name>
+        <picklistValues>
+            <masterLabel>Deposit into account with this financial organization</masterLabel>
+            <translation><!-- Deposit into account with this financial organization --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Mail Check</masterLabel>
+            <translation><!-- Mail Check --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Other</masterLabel>
+            <translation><!-- Other --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- The externally calculated subtotal dollar amount to print in the payment detail table on the distribution or election form. --></help>
+        <label><!-- Distribution Subtotal --></label>
+        <name>LLC_BI__Distribution_Subtotal__c</name>
+    </fields>
+    <fields>
+        <help><!-- If true an election of payment already exists and a copy of the prior election is attached. --></help>
+        <label><!-- Election of Payment Attached Indicator --></label>
+        <name>LLC_BI__Election_Of_Payment_Attached_Indicator__c</name>
+    </fields>
+    <fields>
+        <help><!-- If true the election of payment type selected is the default election that was made after the election deadline has passed. --></help>
+        <label><!-- Election of Payment Default Indicator --></label>
+        <name>LLC_BI__Election_Of_Payment_Default_Indicator__c</name>
+    </fields>
+    <fields>
+        <help><!-- Specifies the type of payment elected by the beneficiary or in the case of a beneficiary IRA the type of payment elected by the owner. --></help>
+        <label><!-- Election of Payment Type --></label>
+        <name>LLC_BI__Election_Of_Payment_Type__c</name>
+        <picklistValues>
+            <masterLabel>Five Year Rule</masterLabel>
+            <translation><!-- Five Year Rule --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Single Life Expectancy</masterLabel>
+            <translation><!-- Single Life Expectancy --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Treat As Own</masterLabel>
+            <translation><!-- Treat As Own --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- The amount of the earnings attributable to excess contribution. This only applies to distributions related to excess or recharacterized contributions. --></help>
+        <label><!-- Excess Attributable Earnings --></label>
+        <name>LLC_BI__Excess_Attributable_Earnings__c</name>
+    </fields>
+    <fields>
+        <help><!-- The amount of excess contribution related to the distribution. --></help>
+        <label><!-- Excess Contribution Amount --></label>
+        <name>LLC_BI__Excess_Contribution_Amount__c</name>
+    </fields>
+    <fields>
+        <help><!-- The tax year for which the excess contribution was made. This only applies to distributions related to excess or recharacterized contributions. --></help>
+        <label><!-- Excess Contribution Tax Year --></label>
+        <name>LLC_BI__Excess_Contribution_Tax_Year__c</name>
+    </fields>
+    <fields>
+        <help><!-- The net dollar amount of Federal Withholding, including the standard 10% applied to the distribution subtotal --></help>
+        <label><!-- Federal Withholding Amount --></label>
+        <name>LLC_BI__Federal_Withholding_Amount__c</name>
+    </fields>
+    <fields>
+        <help><!-- Specifies the type of distribution for a Health Savings Account (HSA). --></help>
+        <label><!-- HSA Distribution Type --></label>
+        <name>LLC_BI__HSA_Distribution_Type__c</name>
+        <picklistValues>
+            <masterLabel>Correction of Excess Contribution - after my tax-filing due date</masterLabel>
+            <translation><!-- Correction of Excess Contribution - after my tax-filing due date --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Correction of Excess Contribution by my tax-filing due date</masterLabel>
+            <translation><!-- Correction of Excess Contribution by my tax-filing due date --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Death - Estate Beneficiary - Distribution is After Year of Death</masterLabel>
+            <translation><!-- Death - Estate Beneficiary - Distribution is After Year of Death --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Death - Estate Beneficiary - Distribution is in Year of Death</masterLabel>
+            <translation><!-- Death - Estate Beneficiary - Distribution is in Year of Death --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Death - Other Beneficiary - Distribution is After Year of Death</masterLabel>
+            <translation><!-- Death - Other Beneficiary - Distribution is After Year of Death --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Death - Other Beneficiary - Distribution is in Year of Death</masterLabel>
+            <translation><!-- Death - Other Beneficiary - Distribution is in Year of Death --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Disability</masterLabel>
+            <translation><!-- Disability --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Normal</masterLabel>
+            <translation><!-- Normal --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Prohibited Transaction</masterLabel>
+            <translation><!-- Prohibited Transaction --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Transfer to former spouse&apos;s HSA due to divorce or legal separation</masterLabel>
+            <translation><!-- Transfer to former spouse&apos;s HSA due to divorce or legal separation --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Transfer to my HSA</masterLabel>
+            <translation><!-- Transfer to my HSA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Transfer to spouse&apos;s HSA due to death</masterLabel>
+            <translation><!-- Transfer to spouse&apos;s HSA due to death --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- If true the IRA owner elects to have 10% Federal income tax withheld from their IRA distribution. --></help>
+        <label><!-- IRA 10% Withholdings Election --></label>
+        <name>LLC_BI__IRA_10_Withholdings_Election__c</name>
+    </fields>
+    <fields>
+        <help><!-- The additional dollar amount (over and above the 10% Federal income tax withholding) that the IRA owner will have withheld from each distribution. --></help>
+        <label><!-- IRA Additional Federal Withholdings Amt --></label>
+        <name>LLC_BI__IRA_Addtl_Federal_Withholdings_Amt__c</name>
+    </fields>
+    <fields>
+        <help><!-- The additional percentage (over and above the 10% Federal income tax withholding) that the IRA owner will have withheld from each distribution. --></help>
+        <label><!-- IRA Additional Federal Withholdings Pct --></label>
+        <name>LLC_BI__IRA_Addtl_Federal_Withholdings_Pct__c</name>
+    </fields>
+    <fields>
+        <help><!-- The date of the IRA contribution. --></help>
+        <label><!-- IRA Contribution Date --></label>
+        <name>LLC_BI__IRA_Contribution_Date__c</name>
+    </fields>
+    <fields>
+        <help><!-- The date of the IRA distribution. --></help>
+        <label><!-- IRA Distribution Date --></label>
+        <name>LLC_BI__IRA_Distribution_Date__c</name>
+    </fields>
+    <fields>
+        <help><!-- Specifies the type of distribution for a Traditional Beneficiary or Roth Beneficiary IRA. --></help>
+        <label><!-- IRA Distribution Type --></label>
+        <name>LLC_BI__IRA_Distribution_Type__c</name>
+        <picklistValues>
+            <masterLabel>Correction of Excess Contribution - After my tax-filing due date</masterLabel>
+            <translation><!-- Correction of Excess Contribution - After my tax-filing due date --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Correction of Excess Contribution - On or before my tax-filing due date in the same year as excess contribution</masterLabel>
+            <translation><!-- Correction of Excess Contribution - On or before my tax-filing due date in the same year as excess contribution --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Correction of Excess Contribution - On or before my tax-filing due date in the year after excess contribution</masterLabel>
+            <translation><!-- Correction of Excess Contribution - On or before my tax-filing due date in the year after excess contribution --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Death</masterLabel>
+            <translation><!-- Death --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>IRS Levy</masterLabel>
+            <translation><!-- IRS Levy --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Prohibited Transaction</masterLabel>
+            <translation><!-- Prohibited Transaction --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Recharacterization (Roth Beneficiary only)</masterLabel>
+            <translation><!-- Recharacterization (Roth Beneficiary only) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Revocation</masterLabel>
+            <translation><!-- Revocation --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Transfer</masterLabel>
+            <translation><!-- Transfer --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- The dollar amount which the IRA owner elects to have withheld from their IRA distribution for state income tax purposes. --></help>
+        <label><!-- IRA State Withholdings Amount --></label>
+        <name>LLC_BI__IRA_State_Withholdings_Amount__c</name>
+    </fields>
+    <fields>
+        <help><!-- The percentage that the IRA owner elects to have withheld from their IRA distribution for state income tax purposes. --></help>
+        <label><!-- IRA State Withholdings Percent --></label>
+        <name>LLC_BI__IRA_State_Withholdings_Percent__c</name>
+    </fields>
+    <fields>
+        <help><!-- Optional: specify the source of the funds for transfer. --></help>
+        <label><!-- IRA Transfer Source --></label>
+        <name>LLC_BI__IRA_Transfer_Source__c</name>
+        <picklistValues>
+            <masterLabel>HSA</masterLabel>
+            <translation><!-- HSA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MSA</masterLabel>
+            <translation><!-- MSA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SIMPLE</masterLabel>
+            <translation><!-- SIMPLE --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Traditional</masterLabel>
+            <translation><!-- Traditional --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- If true the distribution is related to an IRS levy. This is only applicable to Traditional IRAs SIMPLE IRAs and Health Savings Accounts (HSAs); the other types of IRA have a separate distribution type that would be used for IRS levies. --></help>
+        <label><!-- IRS Levy Indicator --></label>
+        <name>LLC_BI__IRS_Levy_Indicator__c</name>
+    </fields>
+    <fields>
+        <help><!-- The amount of the deposit investment. --></help>
+        <label><!-- Investment Amount --></label>
+        <name>LLC_BI__Investment_Amount__c</name>
+    </fields>
+    <fields>
+        <help><!-- Specifies the way in which the requested investment should be sent. --></help>
+        <label><!-- Investment Delivery Type --></label>
+        <name>LLC_BI__Investment_Delivery_Type__c</name>
+        <picklistValues>
+            <masterLabel>Cash Proceeds</masterLabel>
+            <translation><!-- Cash Proceeds --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>In Kind</masterLabel>
+            <translation><!-- In Kind --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- Describes the type of investment. --></help>
+        <label><!-- Investment Description --></label>
+        <name>LLC_BI__Investment_Description__c</name>
+    </fields>
+    <fields>
+        <help><!-- If true this is a non-deposit investment. --></help>
+        <label><!-- Investment is Non-Deposit --></label>
+        <name>LLC_BI__Investment_Is_Non_Deposit__c</name>
+    </fields>
+    <fields>
+        <help><!-- The date that the specified investment is requested to be sent and/or liquefied. --></help>
+        <label><!-- Investment Request Date --></label>
+        <name>LLC_BI__Investment_Request_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- -D Is Approved --></label>
+        <name>LLC_BI__Is_Approved__c</name>
+    </fields>
+    <fields>
+        <label><!-- Is Disbursement Request --></label>
+        <name>LLC_BI__Is_Disbursement_Request__c</name>
+    </fields>
+    <fields>
+        <label><!-- -D Is Submitted --></label>
+        <name>LLC_BI__Is_Submitted__c</name>
+    </fields>
+    <fields>
+        <label><!-- Loan --></label>
+        <name>LLC_BI__Loan__c</name>
+        <relationshipLabel><!-- Transaction Requests --></relationshipLabel>
+    </fields>
+    <fields>
+        <help><!-- Any additional percentage amount of local income taxes to be withheld from the distribution subtotal. --></help>
+        <label><!-- Local Income Tax Percent --></label>
+        <name>LLC_BI__Local_Income_Tax_Percent__c</name>
+    </fields>
+    <fields>
+        <help><!-- Specifies the locality (e.g., city) applicable to any additional dollar amount or percentage of local income taxes to be withheld from the distribution subtotal. --></help>
+        <label><!-- Local Income Taxes Locality --></label>
+        <name>LLC_BI__Local_Income_Taxes_Locality__c</name>
+    </fields>
+    <fields>
+        <help><!-- Any additional dollar amount (not percentage) of local income taxes to be withheld from the distribution subtotal. --></help>
+        <label><!-- Local Income Taxes Withheld --></label>
+        <name>LLC_BI__Local_Income_Taxes_Withheld__c</name>
+    </fields>
+    <fields>
+        <help><!-- The externally calculated, net dollar amount of the distribution to print in the payment detail table on the distribution or election form. --></help>
+        <label><!-- Net Distribution Amount --></label>
+        <name>LLC_BI__Net_Distribution_Amount__c</name>
+    </fields>
+    <fields>
+        <help><!-- If true the beneficiary is making a new election of payment. In the case of a formally established beneficiary IRA it is the owner making a new election of payment. --></help>
+        <label><!-- New Election of Payment Indicator --></label>
+        <name>LLC_BI__New_Election_Of_Payment_Indicator__c</name>
+    </fields>
+    <fields>
+        <help><!-- The number of shares of the non-deposit investment. --></help>
+        <label><!-- Non-Deposit Investment Shares --></label>
+        <name>LLC_BI__Non_Deposit_Investment_Shares__c</name>
+    </fields>
+    <fields>
+        <help><!-- For a contribution that is a return of a mistaken distribution(s) this is a description of the date(s) of the original distribution(s). --></help>
+        <label><!-- Original Distrubtion Description --></label>
+        <name>LLC_BI__Original_Distrubtion_Description__c</name>
+    </fields>
+    <fields>
+        <help><!-- A description of any other delivery instructions regarding the payment. --></help>
+        <label><!-- Other Delivery Instructions --></label>
+        <name>LLC_BI__Other_Delivery_Instructions__c</name>
+    </fields>
+    <fields>
+        <help><!-- User-defined description of possible medium(s) for the payment/transfer requested. (e.g., &apos;check or ACH transfer.&apos;) --></help>
+        <label><!-- Other Delivery Payment Options --></label>
+        <name>LLC_BI__Other_Delivery_Payment_Options__c</name>
+    </fields>
+    <fields>
+        <help><!-- A description of the other payment method type. --></help>
+        <label><!-- Other Distribution Payment Method --></label>
+        <name>LLC_BI__Other_Distribution_Payment_Method__c</name>
+    </fields>
+    <fields>
+        <help><!-- Select the payee type for the disbursement. --></help>
+        <label><!-- Payee Type --></label>
+        <name>LLC_BI__Payee_Type__c</name>
+        <picklistValues>
+            <masterLabel>Borrower</masterLabel>
+            <translation><!-- Borrower --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Lender</masterLabel>
+            <translation><!-- Lender --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Other</masterLabel>
+            <translation><!-- Other --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Public Official</masterLabel>
+            <translation><!-- Public Official --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- Enter the name of the disbursement recipient. --></help>
+        <label><!-- Payee --></label>
+        <name>LLC_BI__Payee__c</name>
+    </fields>
+    <fields>
+        <help><!-- Specifies the type of payment amount. NOTE: This amount when used in the context of a recharacterization includes the contribution amount plus earnings attributable. --></help>
+        <label><!-- Payment Amount Type --></label>
+        <name>LLC_BI__Payment_Amount_Type__c</name>
+        <picklistValues>
+            <masterLabel>Entire balance or contribution amount</masterLabel>
+            <translation><!-- Entire balance or contribution amount --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Portion of balance or contribution amount</masterLabel>
+            <translation><!-- Portion of balance or contribution amount --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Percent Budget Requested --></label>
+        <name>LLC_BI__Percent_Budget_Requested__c</name>
+    </fields>
+    <fields>
+        <label><!-- Percent Funded --></label>
+        <name>LLC_BI__Percent_Funded__c</name>
+    </fields>
+    <fields>
+        <help><!-- Describes the portion of the account balance to be converted transferred or directly rolled over or in the case of a recharacterization the contribution amount plus earnings attributable to be recharacterized. --></help>
+        <label><!-- Portion Description --></label>
+        <name>LLC_BI__Portion_Description__c</name>
+    </fields>
+    <fields>
+        <help><!-- If true the required minimum distribution (RMD) has been satisfied for the distribution year. --></help>
+        <label><!-- RMD Has Been Satisfied --></label>
+        <name>LLC_BI__RMD_Has_Been_Satisfied__c</name>
+    </fields>
+    <fields>
+        <help><!-- Describes the other investment payment schedule and/or type --></help>
+        <label><!-- Request Payment Type Other --></label>
+        <name>LLC_BI__Request_Payment_Type_Other__c</name>
+    </fields>
+    <fields>
+        <help><!-- Specifies the investment payment schedule and type. --></help>
+        <label><!-- Request Payment Type --></label>
+        <name>LLC_BI__Request_Payment_Type__c</name>
+        <picklistValues>
+            <masterLabel>Immediately liquidate investments and send cash</masterLabel>
+            <translation><!-- Immediately liquidate investments and send cash --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Liquidate specified investments</masterLabel>
+            <translation><!-- Liquidate specified investments --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Other</masterLabel>
+            <translation><!-- Other --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Send all investments in kind</masterLabel>
+            <translation><!-- Send all investments in kind --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Send assets at maturity</masterLabel>
+            <translation><!-- Send assets at maturity --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- Specifies the type of request. --></help>
+        <label><!-- Request Type --></label>
+        <name>LLC_BI__Request_Type__c</name>
+        <picklistValues>
+            <masterLabel>Conversion</masterLabel>
+            <translation><!-- Conversion --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Direct Rollover</masterLabel>
+            <translation><!-- Direct Rollover --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Funding Distribution</masterLabel>
+            <translation><!-- Funding Distribution --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Recharacterization</masterLabel>
+            <translation><!-- Recharacterization --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Transfer</masterLabel>
+            <translation><!-- Transfer --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Requested Date --></label>
+        <name>LLC_BI__Requested_Date__c</name>
+    </fields>
+    <fields>
+        <help><!-- Specifies the type of contribution for a Roth Beneficiary IRA. --></help>
+        <label><!-- Roth Beneficiary Contribution Type --></label>
+        <name>LLC_BI__Roth_Beneficiary_Contribution_Type__c</name>
+        <picklistValues>
+            <masterLabel>Rollover/Direct Rollover from a Designated Roth Account</masterLabel>
+            <translation><!-- Rollover/Direct Rollover from a Designated Roth Account --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Rollover/Direct Rollover from an Eligible Retirement Plan</masterLabel>
+            <translation><!-- Rollover/Direct Rollover from an Eligible Retirement Plan --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Transfer from a Roth IRA</masterLabel>
+            <translation><!-- Transfer from a Roth IRA --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- The contribution type reason code.  The Roth IRA Contribution Type is Qualified Reservists/Designated Disaster Distribution Repayment or Disaster/Combat Zone Postponed Contribution. --></help>
+        <label><!-- Roth Contribution Reason --></label>
+        <name>LLC_BI__Roth_Contribution_Reason__c</name>
+    </fields>
+    <fields>
+        <help><!-- The IRA Contribution Type --></help>
+        <label><!-- Roth IRA Contribution Type --></label>
+        <name>LLC_BI__Roth_IRA_Contribution_Type__c</name>
+        <picklistValues>
+            <masterLabel>Conversion</masterLabel>
+            <translation><!-- Conversion --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Disaster/Combat Zone Postponed Contribution</masterLabel>
+            <translation><!-- Disaster/Combat Zone Postponed Contribution --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Qualified Reservist/Designated Disaster Distribution Repayment</masterLabel>
+            <translation><!-- Qualified Reservist/Designated Disaster Distribution Repayment --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Recharacterization</masterLabel>
+            <translation><!-- Recharacterization --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Regular (including Catch-Up)</masterLabel>
+            <translation><!-- Regular (including Catch-Up) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Rollover</masterLabel>
+            <translation><!-- Rollover --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Rollover/Direct Rollover from a Designated Roth Account</masterLabel>
+            <translation><!-- Rollover/Direct Rollover from a Designated Roth Account --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Rollover/Direct Rollover from an Eligible Retirement Plan</masterLabel>
+            <translation><!-- Rollover/Direct Rollover from an Eligible Retirement Plan --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Transfer</masterLabel>
+            <translation><!-- Transfer --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- Specifies the type of distribution for a Roth IRA. --></help>
+        <label><!-- Roth IRA Distribution Type --></label>
+        <name>LLC_BI__Roth_IRA_Distribution_Type__c</name>
+        <picklistValues>
+            <masterLabel>Age 59 1/2 or Older</masterLabel>
+            <translation><!-- Age 59 1/2 or Older --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Correction of Excess Contribution after my tax-filing due date</masterLabel>
+            <translation><!-- Correction of Excess Contribution after my tax-filing due date --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Correction of Excess Contribution in same year as excess contribution</masterLabel>
+            <translation><!-- Correction of Excess Contribution in same year as excess contribution --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Correction of Excess Contribution in year after excess contribution, but by my tax-filing due date</masterLabel>
+            <translation><!-- Correction of Excess Contribution in year after excess contribution, but by my tax-filing due date --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Death</masterLabel>
+            <translation><!-- Death --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Disability</masterLabel>
+            <translation><!-- Disability --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Early Distribution from a Roth IRA</masterLabel>
+            <translation><!-- Early Distribution from a Roth IRA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>IRS Levy</masterLabel>
+            <translation><!-- IRS Levy --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Prohibited Transaction</masterLabel>
+            <translation><!-- Prohibited Transaction --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Qualified Health Savings Account Funding Distribution (QHSAAFD)</masterLabel>
+            <translation><!-- Qualified Health Savings Account Funding Distribution (QHSAAFD) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Recharacterization of current tax year regular contribution/conversion in the current year</masterLabel>
+            <translation><!-- Recharacterization of current tax year regular contribution/conversion in the current year --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Recharacterization of prior tax year regular contribution/conversion in the current year</masterLabel>
+            <translation><!-- Recharacterization of prior tax year regular contribution/conversion in the current year --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Revocation</masterLabel>
+            <translation><!-- Revocation --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Transfer to beneficiary&apos;s Roth Beneficiary IRA</masterLabel>
+            <translation><!-- Transfer to beneficiary&apos;s Roth Beneficiary IRA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Transfer to former spouse&apos;s Roth IRA due to divorce or legal separation</masterLabel>
+            <translation><!-- Transfer to former spouse&apos;s Roth IRA due to divorce or legal separation --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Transfer to my Roth IRA</masterLabel>
+            <translation><!-- Transfer to my Roth IRA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Transfer to spouse&apos;s Roth IRA due to death</masterLabel>
+            <translation><!-- Transfer to spouse&apos;s Roth IRA due to death --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- Specifies the source of funds for a transfer or conversion to a Roth IRA. --></help>
+        <label><!-- Roth IRA Transfer Source --></label>
+        <name>LLC_BI__Roth_IRA_Transfer_Source__c</name>
+        <picklistValues>
+            <masterLabel>Roth</masterLabel>
+            <translation><!-- Roth --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SIMPLE</masterLabel>
+            <translation><!-- SIMPLE --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Traditional</masterLabel>
+            <translation><!-- Traditional --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- Specifies the source of funds for a direct rollover to a Roth IRA. --></help>
+        <label><!-- Roth Rollover Source Type --></label>
+        <name>LLC_BI__Roth_Rollover_Source_Type__c</name>
+        <picklistValues>
+            <masterLabel>Designated Roth Account</masterLabel>
+            <translation><!-- Designated Roth Account --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Eligible Retirement Plan (other than a Designated Roth Account)</masterLabel>
+            <translation><!-- Eligible Retirement Plan (other than a Designated Roth Account) --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- Specifies the type of contribution for a SIMPLE IRA. --></help>
+        <label><!-- SIMPLE IRA Contibution Type --></label>
+        <name>LLC_BI__Simple_IRA_Contibution_Type__c</name>
+        <picklistValues>
+            <masterLabel>Employer Contribution</masterLabel>
+            <translation><!-- Employer Contribution --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Recharacterization</masterLabel>
+            <translation><!-- Recharacterization --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Rollover from a SIMPLE IRA</masterLabel>
+            <translation><!-- Rollover from a SIMPLE IRA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Rollover from a Traditional IRA</masterLabel>
+            <translation><!-- Rollover from a Traditional IRA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Rollover from an Eligible Retirement Plan</masterLabel>
+            <translation><!-- Rollover from an Eligible Retirement Plan --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Transfer from a SIMPLE IRA</masterLabel>
+            <translation><!-- Transfer from a SIMPLE IRA --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- The account holder elects at the time of a specific IRA or other tax-deferred plan distribution to have state income tax withheld. --></help>
+        <label><!-- State Income Withholdings Indicator --></label>
+        <name>LLC_BI__State_Income_Withholdings_Indicator__c</name>
+    </fields>
+    <fields>
+        <help><!-- The percentage that the IRA owner elects to have withheld from the IRA distribution for state income tax purposes. --></help>
+        <label><!-- State Income Withholdings Percentage --></label>
+        <name>LLC_BI__State_Income_Withholdings_Percentage__c</name>
+    </fields>
+    <fields>
+        <help><!-- The dollar amount which the IRA owner elects to have withheld from the IRA distribution for state income tax purposes. --></help>
+        <label><!-- State Income Withholdings --></label>
+        <name>LLC_BI__State_Income_Withholdings__c</name>
+    </fields>
+    <fields>
+        <label><!-- Status --></label>
+        <name>LLC_BI__Status__c</name>
+        <picklistValues>
+            <masterLabel>Approved</masterLabel>
+            <translation><!-- Approved --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Pending Amounts</masterLabel>
+            <translation><!-- Pending Amounts --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Pending Approval</masterLabel>
+            <translation><!-- Pending Approval --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Pending Inspection</masterLabel>
+            <translation><!-- Pending Inspection --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Rejected</masterLabel>
+            <translation><!-- Rejected --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Submitted</masterLabel>
+            <translation><!-- Submitted --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- If true the IRA owner elects to have 10% Federal income tax withheld from the IRA distribution. --></help>
+        <label><!-- 10% Federal Withholding Indicator --></label>
+        <name>LLC_BI__Ten_Pct_Federal_Withholding_Indicator__c</name>
+    </fields>
+    <fields>
+        <help><!-- Specifies the type of contribution for a Traditional Beneficiary IRA. --></help>
+        <label><!-- Trad Benficiary IRA Contribution Type --></label>
+        <name>LLC_BI__Traditional_Benficiary_IRA_Contribution__c</name>
+        <picklistValues>
+            <masterLabel>Direct Rollover from an Eligible Retirement Plan</masterLabel>
+            <translation><!-- Direct Rollover from an Eligible Retirement Plan --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Recharacterization</masterLabel>
+            <translation><!-- Recharacterization --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Rollover from an Eligible Retirement Plan (spouse only)</masterLabel>
+            <translation><!-- Rollover from an Eligible Retirement Plan (spouse only) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Transfer from an IRA</masterLabel>
+            <translation><!-- Transfer from an IRA --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- Specifies the source for the rollover to a Traditional IRA. --></help>
+        <label><!-- Traditional IRA Contribution Source --></label>
+        <name>LLC_BI__Traditional_IRA_Contribution_Source__c</name>
+        <picklistValues>
+            <masterLabel>457(b)</masterLabel>
+            <translation><!-- 457(b) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Qualified Plan</masterLabel>
+            <translation><!-- Qualified Plan --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SIMPLE</masterLabel>
+            <translation><!-- SIMPLE --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Tax-Sheltered Annuity (TSA)</masterLabel>
+            <translation><!-- Tax-Sheltered Annuity (TSA) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Traditional IRA</masterLabel>
+            <translation><!-- Traditional IRA --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- The IRA Contribution Type --></help>
+        <label><!-- Traditional IRA Contribution Type --></label>
+        <name>LLC_BI__Traditional_IRA_Contribution_Type__c</name>
+        <picklistValues>
+            <masterLabel>Disaster/Combat Zone Postponed Contribution</masterLabel>
+            <translation><!-- Disaster/Combat Zone Postponed Contribution --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Qualified Reservist/Designated Disaster Distribution Repayment</masterLabel>
+            <translation><!-- Qualified Reservist/Designated Disaster Distribution Repayment --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Recharacterization</masterLabel>
+            <translation><!-- Recharacterization --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Regular (including Catch-Up)</masterLabel>
+            <translation><!-- Regular (including Catch-Up) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Rollover</masterLabel>
+            <translation><!-- Rollover --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Rollover/Direct Rollover from an Eligible Retirement Plan</masterLabel>
+            <translation><!-- Rollover/Direct Rollover from an Eligible Retirement Plan --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Simplified Employee Pension (SEP) Plan</masterLabel>
+            <translation><!-- Simplified Employee Pension (SEP) Plan --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Transfer</masterLabel>
+            <translation><!-- Transfer --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- Specifies the type of distribution for a Traditional or Simple IRA. --></help>
+        <label><!-- Traditional IRA Distribution Type --></label>
+        <name>LLC_BI__Traditional_IRA_Distribution_Type__c</name>
+        <picklistValues>
+            <masterLabel>Conversion</masterLabel>
+            <translation><!-- Conversion --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Correction of Excess Contribution after my tax-filing due date</masterLabel>
+            <translation><!-- Correction of Excess Contribution after my tax-filing due date --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Correction of Excess Contribution in same year as excess contribution</masterLabel>
+            <translation><!-- Correction of Excess Contribution in same year as excess contribution --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Correction of Excess Contribution in year after excess contribution but by my tax-filing due date</masterLabel>
+            <translation><!-- Correction of Excess Contribution in year after excess contribution but by my tax-filing due date --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Death</masterLabel>
+            <translation><!-- Death --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Direct Rollover to an employer-sponsored Eligible Retirement Plan</masterLabel>
+            <translation><!-- Direct Rollover to an employer-sponsored Eligible Retirement Plan --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Disability</masterLabel>
+            <translation><!-- Disability --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Early Distribution IRS Levy or other exception</masterLabel>
+            <translation><!-- Early Distribution IRS Levy or other exception --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Early Distribution no known exception</masterLabel>
+            <translation><!-- Early Distribution no known exception --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Normal</masterLabel>
+            <translation><!-- Normal --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Prohibited Transaction</masterLabel>
+            <translation><!-- Prohibited Transaction --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Qualified Health Savings Account Funding Distribution (QHSAAFD)</masterLabel>
+            <translation><!-- Qualified Health Savings Account Funding Distribution (QHSAAFD) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Recharacterization of current tax year regular contribution/conversion in the current year</masterLabel>
+            <translation><!-- Recharacterization of current tax year regular contribution/conversion in the current year --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Recharacterization of prior tax year regular contribution/conversion in the current year</masterLabel>
+            <translation><!-- Recharacterization of prior tax year regular contribution/conversion in the current year --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Revocation</masterLabel>
+            <translation><!-- Revocation --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SIMPLE IRA Distribution During Two-Year Period</masterLabel>
+            <translation><!-- SIMPLE IRA Distribution During Two-Year Period --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Transfer to another IRA</masterLabel>
+            <translation><!-- Transfer to another IRA --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- This system-populated field indicates the transaction request aggregate associated with the transaction request. --></help>
+        <label><!-- Transaction Request Aggregate --></label>
+        <name>LLC_BI__Transaction_Request_Aggregate__c</name>
+        <relationshipLabel><!-- Transaction Requests --></relationshipLabel>
+    </fields>
+    <fields>
+        <help><!-- The ID assigned to the account or plan at the transferring financial institution. For recharacterizations, this is the ID number of the plan where the original contribution was made. --></help>
+        <label><!-- Transfer Account ID --></label>
+        <name>LLC_BI__Transfer_Account_ID__c</name>
+    </fields>
+    <fields>
+        <label><!-- Type --></label>
+        <name>LLC_BI__Type__c</name>
+        <picklistValues>
+            <masterLabel>Contribution</masterLabel>
+            <translation><!-- Contribution --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Disbursement</masterLabel>
+            <translation><!-- Disbursement --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Distribution</masterLabel>
+            <translation><!-- Distribution --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Request</masterLabel>
+            <translation><!-- Request --></translation>
+        </picklistValues>
+    </fields>
+    <validationRules>
+        <errorMessage><!-- Enter a positive value in this required field. --></errorMessage>
+        <name>LLC_BI__Disbursements_Negative_Amount_Error</name>
+    </validationRules>
+</CustomObjectTranslation>

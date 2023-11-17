@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <help><!-- Historical Appraisal date that corresponds to the real estate value --></help>
+        <label><!-- Appraisal Date --></label>
+        <name>LLC_BI__Appraisal_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Collateral Value --></label>
+        <name>LLC_BI__Collateral_Value__c</name>
+    </fields>
+    <fields>
+        <label><!-- Loan Collateral --></label>
+        <name>LLC_BI__Loan_Collateral__c</name>
+        <relationshipLabel><!-- Collateral History --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Notes --></label>
+        <name>LLC_BI__Notes__c</name>
+    </fields>
+    <fields>
+        <label><!-- Type --></label>
+        <name>LLC_BI__Type__c</name>
+    </fields>
+</CustomObjectTranslation>

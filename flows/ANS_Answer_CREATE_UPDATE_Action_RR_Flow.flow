@@ -1,0 +1,574 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Flow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <apiVersion>54.0</apiVersion>
+    <decisions>
+        <name>Check_CRA_reportable</name>
+        <label>Check CRA reportable</label>
+        <locationX>556</locationX>
+        <locationY>2015</locationY>
+        <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
+        <rules>
+            <name>Is_CRA_Reportable</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record.nFORCE__Question__r.nFORCE__Label__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Is this Loan CRA reportable?</stringValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Check_Is_CRA_Reportable_Answer</targetReference>
+            </connector>
+            <label>Is CRA Reportable</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <name>Check_HVCRE_Reportable</name>
+        <label>Check HVCRE Reportable</label>
+        <locationX>556</locationX>
+        <locationY>1523</locationY>
+        <defaultConnector>
+            <targetReference>Check_CRA_reportable</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
+        <rules>
+            <name>HVCRE_Reportable</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record.nFORCE__Question__r.nFORCE__Label__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>I certify this transaction has been indicated as HVCRE reportable transaction</stringValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Is_HVCRE_Reportable_Answered_Yes</targetReference>
+            </connector>
+            <label>HVCRE Reportable</label>
+        </rules>
+        <rules>
+            <name>HVCRE_Not_Reportable</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record.nFORCE__Question__r.nFORCE__Label__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>I certify this transaction is not HVCRE reportable</stringValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Is_HVCRE_Reportable_Answered_No</targetReference>
+            </connector>
+            <label>HVCRE Not Reportable</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <name>Check_if_HMDA_Answered</name>
+        <label>Check if HMDA Answered</label>
+        <locationX>556</locationX>
+        <locationY>1031</locationY>
+        <defaultConnector>
+            <targetReference>Check_HVCRE_Reportable</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
+        <rules>
+            <name>Is_HMDA_Reportable</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record.nFORCE__Question__r.nFORCE__Label__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>I certify this Loan is HMDA Reportable</stringValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Is_HMDA_Reportable_Yes</targetReference>
+            </connector>
+            <label>Is HMDA Reportable</label>
+        </rules>
+        <rules>
+            <name>Is_HMDA_Not_Reportable</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record.nFORCE__Question__r.nFORCE__Label__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>I certify this Loan is NOT HMDA Reportable</stringValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Is_HMDA_Not_Reportable_Yes</targetReference>
+            </connector>
+            <label>Is HMDA Not Reportable</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <name>Check_if_is_Reg_O_Answered</name>
+        <label>Check if is Reg O Answered</label>
+        <locationX>556</locationX>
+        <locationY>539</locationY>
+        <defaultConnector>
+            <targetReference>Check_if_HMDA_Answered</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
+        <rules>
+            <name>Is_Reg_O_Answered</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record.nFORCE__Question__r.nFORCE__Label__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Is any borrower, co-borrower, or guarantor an executive officer, director, or principal shareholder of the bank, of a bank holding company of which the member bank is a subsidiary, and of any other subsidiary of the bank holding company?</stringValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Check_if_Reg_O_is_set_to_Yes</targetReference>
+            </connector>
+            <label>Is Reg O Answered</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <name>Check_if_New_Record</name>
+        <label>Check if New Record</label>
+        <locationX>831</locationX>
+        <locationY>431</locationY>
+        <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
+        <rules>
+            <name>Is_New_Record</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>IsNewRecord</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <booleanValue>true</booleanValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Check_if_is_Reg_O_Answered</targetReference>
+            </connector>
+            <label>Is New Record</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <name>Check_if_Reg_O_is_set_to_Yes</name>
+        <label>Check if Reg O is set to Yes</label>
+        <locationX>358</locationX>
+        <locationY>647</locationY>
+        <defaultConnector>
+            <targetReference>Update_Loan_as_Not_Reg_O</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
+        <rules>
+            <name>Is_Reg_O_set_to_Yes</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record.nFORCE__Option__r.nFORCE__Label__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Yes</stringValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Update_Loan_as_Reg_O_0</targetReference>
+            </connector>
+            <label>Is Reg O set to Yes</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <name>Check_Is_CRA_Reportable_Answer</name>
+        <label>Check Is CRA Reportable Answer</label>
+        <locationX>358</locationX>
+        <locationY>2123</locationY>
+        <defaultConnector>
+            <targetReference>Update_CRA_Reportable_False</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
+        <rules>
+            <name>Answer_Is_CRA_Reportable</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record.nFORCE__Option__r.nFORCE__Label__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>I do certify that this loan is CRA reportable.</stringValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Update_CRA_Reportable_True</targetReference>
+            </connector>
+            <label>Answer Is CRA Reportable</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <description>Checking user has flow permission or not</description>
+        <name>Checking_user_has_flow_permission_or_not</name>
+        <label>Checking user has flow permission or not</label>
+        <locationX>1100</locationX>
+        <locationY>323</locationY>
+        <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
+        <rules>
+            <name>Checking_no_workflow</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>$User.No_Workflow__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <booleanValue>false</booleanValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Check_if_New_Record</targetReference>
+            </connector>
+            <label>Checking no workflow</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <name>Is_HMDA_Not_Reportable_Yes</name>
+        <label>Is HMDA Not Reportable Yes</label>
+        <locationX>622</locationX>
+        <locationY>1139</locationY>
+        <defaultConnector>
+            <targetReference>Check_HVCRE_Reportable</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
+        <rules>
+            <name>Is_HMDA_Not_Reportable_Answered_Yes</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record.nFORCE__Option__r.nFORCE__Label__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Yes</stringValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Update_Loan_HMDA_Not_Reportable</targetReference>
+            </connector>
+            <label>Is HMDA Not Reportable Answered Yes</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <name>Is_HMDA_Reportable_Yes</name>
+        <label>Is HMDA Reportable Yes</label>
+        <locationX>182</locationX>
+        <locationY>1139</locationY>
+        <defaultConnector>
+            <targetReference>Check_HVCRE_Reportable</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
+        <rules>
+            <name>Is_HMDA_Reportable_Answered_Yes</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record.nFORCE__Option__r.nFORCE__Label__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Yes</stringValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Update_Loan_HMDA_Reportable</targetReference>
+            </connector>
+            <label>Is HMDA Reportable Answered Yes</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <name>Is_HVCRE_Reportable_Answered_No</name>
+        <label>Is HVCRE Reportable Answered No</label>
+        <locationX>622</locationX>
+        <locationY>1631</locationY>
+        <defaultConnector>
+            <targetReference>Check_CRA_reportable</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
+        <rules>
+            <name>Is_HVCRE_Reportable_Answered_As_No</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record.nFORCE__Option__r.nFORCE__Label__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>This loan is not HVCRE reportable.</stringValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Update_HVCRE_Reportable_As_False</targetReference>
+            </connector>
+            <label>Is HVCRE Reportable Answered As No</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <name>Is_HVCRE_Reportable_Answered_Yes</name>
+        <label>Is HVCRE Reportable Answered Yes</label>
+        <locationX>182</locationX>
+        <locationY>1631</locationY>
+        <defaultConnector>
+            <targetReference>Check_CRA_reportable</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
+        <rules>
+            <name>Is_HVCRE_Reportable_Answered_As_Yes</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record.nFORCE__Option__r.nFORCE__Label__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>This loan is HVCRE reportable.</stringValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Update_HVCRE_Reportable_As_True</targetReference>
+            </connector>
+            <label>Is HVCRE Reportable Answered As Yes</label>
+        </rules>
+    </decisions>
+    <environments>Default</environments>
+    <formulas>
+        <name>IsNewRecord</name>
+        <dataType>Boolean</dataType>
+        <expression>ISNEW()</expression>
+    </formulas>
+    <interviewLabel>ANS_Loan_CREATE_UPDATE_Action_RR_Flow {!$Flow.CurrentDateTime}</interviewLabel>
+    <label>ANS_Answer_CREATE_UPDATE_Action_RR_Flow</label>
+    <processMetadataValues>
+        <name>BuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>CanvasMode</name>
+        <value>
+            <stringValue>AUTO_LAYOUT_CANVAS</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>OriginBuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processType>AutoLaunchedFlow</processType>
+    <recordUpdates>
+        <name>Update_CRA_Reportable_False</name>
+        <label>Update CRA Reportable False</label>
+        <locationX>490</locationX>
+        <locationY>2231</locationY>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <field>Id</field>
+            <operator>EqualTo</operator>
+            <value>
+                <elementReference>$Record.LLC_BI__Loan__r.Id</elementReference>
+            </value>
+        </filters>
+        <inputAssignments>
+            <field>LLC_BI__CRA_Reportable__c</field>
+            <value>
+                <booleanValue>false</booleanValue>
+            </value>
+        </inputAssignments>
+        <object>LLC_BI__Loan__c</object>
+    </recordUpdates>
+    <recordUpdates>
+        <name>Update_CRA_Reportable_True</name>
+        <label>Update CRA Reportable True</label>
+        <locationX>226</locationX>
+        <locationY>2231</locationY>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <field>Id</field>
+            <operator>EqualTo</operator>
+            <value>
+                <elementReference>$Record.LLC_BI__Loan__r.Id</elementReference>
+            </value>
+        </filters>
+        <inputAssignments>
+            <field>LLC_BI__CRA_Reportable__c</field>
+            <value>
+                <booleanValue>true</booleanValue>
+            </value>
+        </inputAssignments>
+        <object>LLC_BI__Loan__c</object>
+    </recordUpdates>
+    <recordUpdates>
+        <name>Update_HVCRE_Reportable_As_False</name>
+        <label>Update HVCRE Reportable As False</label>
+        <locationX>490</locationX>
+        <locationY>1739</locationY>
+        <connector>
+            <targetReference>Check_CRA_reportable</targetReference>
+        </connector>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <field>Id</field>
+            <operator>EqualTo</operator>
+            <value>
+                <elementReference>$Record.LLC_BI__Loan__c</elementReference>
+            </value>
+        </filters>
+        <inputAssignments>
+            <field>HVCRE_Reportable__c</field>
+            <value>
+                <booleanValue>false</booleanValue>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>Loan_HVCRE_Reportable__c</field>
+            <value>
+                <stringValue>N</stringValue>
+            </value>
+        </inputAssignments>
+        <object>LLC_BI__Loan__c</object>
+    </recordUpdates>
+    <recordUpdates>
+        <name>Update_HVCRE_Reportable_As_True</name>
+        <label>Update HVCRE Reportable As True</label>
+        <locationX>50</locationX>
+        <locationY>1739</locationY>
+        <connector>
+            <targetReference>Check_CRA_reportable</targetReference>
+        </connector>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <field>Id</field>
+            <operator>EqualTo</operator>
+            <value>
+                <elementReference>$Record.LLC_BI__Loan__c</elementReference>
+            </value>
+        </filters>
+        <inputAssignments>
+            <field>HVCRE_Reportable__c</field>
+            <value>
+                <booleanValue>true</booleanValue>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>Loan_HVCRE_Reportable__c</field>
+            <value>
+                <stringValue>Y</stringValue>
+            </value>
+        </inputAssignments>
+        <object>LLC_BI__Loan__c</object>
+    </recordUpdates>
+    <recordUpdates>
+        <name>Update_Loan_as_Not_Reg_O</name>
+        <label>Update Loan as Not Reg O</label>
+        <locationX>490</locationX>
+        <locationY>755</locationY>
+        <connector>
+            <targetReference>Check_if_HMDA_Answered</targetReference>
+        </connector>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <field>Id</field>
+            <operator>EqualTo</operator>
+            <value>
+                <elementReference>$Record.LLC_BI__Loan__c</elementReference>
+            </value>
+        </filters>
+        <inputAssignments>
+            <field>LLC_BI__Reg_O_Loan__c</field>
+            <value>
+                <booleanValue>false</booleanValue>
+            </value>
+        </inputAssignments>
+        <object>LLC_BI__Loan__c</object>
+    </recordUpdates>
+    <recordUpdates>
+        <name>Update_Loan_as_Reg_O_0</name>
+        <label>Update Loan as Reg O</label>
+        <locationX>226</locationX>
+        <locationY>755</locationY>
+        <connector>
+            <targetReference>Check_if_HMDA_Answered</targetReference>
+        </connector>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <field>Id</field>
+            <operator>EqualTo</operator>
+            <value>
+                <elementReference>$Record.LLC_BI__Loan__c</elementReference>
+            </value>
+        </filters>
+        <inputAssignments>
+            <field>LLC_BI__Reg_O_Loan__c</field>
+            <value>
+                <booleanValue>true</booleanValue>
+            </value>
+        </inputAssignments>
+        <object>LLC_BI__Loan__c</object>
+    </recordUpdates>
+    <recordUpdates>
+        <name>Update_Loan_HMDA_Not_Reportable</name>
+        <label>Update Loan HMDA Not Reportable</label>
+        <locationX>490</locationX>
+        <locationY>1247</locationY>
+        <connector>
+            <targetReference>Check_HVCRE_Reportable</targetReference>
+        </connector>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <field>Id</field>
+            <operator>EqualTo</operator>
+            <value>
+                <elementReference>$Record.LLC_BI__Loan__c</elementReference>
+            </value>
+        </filters>
+        <inputAssignments>
+            <field>CF_HMDA_Not_Reportable__c</field>
+            <value>
+                <booleanValue>true</booleanValue>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>LLC_BI__HMDA_Reportable__c</field>
+            <value>
+                <booleanValue>false</booleanValue>
+            </value>
+        </inputAssignments>
+        <object>LLC_BI__Loan__c</object>
+    </recordUpdates>
+    <recordUpdates>
+        <name>Update_Loan_HMDA_Reportable</name>
+        <label>Update Loan HMDA Reportable</label>
+        <locationX>50</locationX>
+        <locationY>1247</locationY>
+        <connector>
+            <targetReference>Check_HVCRE_Reportable</targetReference>
+        </connector>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <field>Id</field>
+            <operator>EqualTo</operator>
+            <value>
+                <elementReference>$Record.LLC_BI__Loan__c</elementReference>
+            </value>
+        </filters>
+        <inputAssignments>
+            <field>CF_HMDA_Not_Reportable__c</field>
+            <value>
+                <booleanValue>false</booleanValue>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>LLC_BI__HMDA_Reportable__c</field>
+            <value>
+                <booleanValue>true</booleanValue>
+            </value>
+        </inputAssignments>
+        <object>LLC_BI__Loan__c</object>
+    </recordUpdates>
+    <start>
+        <locationX>974</locationX>
+        <locationY>0</locationY>
+        <connector>
+            <targetReference>Checking_user_has_flow_permission_or_not</targetReference>
+        </connector>
+        <object>nFORCE__Answer__c</object>
+        <recordTriggerType>CreateAndUpdate</recordTriggerType>
+        <triggerType>RecordAfterSave</triggerType>
+    </start>
+    <status>Active</status>
+</Flow>

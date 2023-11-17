@@ -1,0 +1,141 @@
+<apex:page title="Data Classification" id="DataClassification" standardStylesheets="false" controller="revcult.DataClassificationController" extensions="revcult.SharedExtensionController" showHeader="true" sidebar="false" docType="html-5.0">
+    <html xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" lang="en">
+        <head>
+            <script>
+                var dataFromSF = {
+                    sldsBase: '{!URLFOR($Asset.SLDS)}',
+                    theme: '{!$User.UIThemeDisplayed}',
+                    RevCultLogo: '{!URLFOR($Resource.DataClassification, "dist/RevCultLogo.png")}',
+                    SSCLogo: '{!URLFOR($Resource.DataClassification, "dist/SSCLogo.svg#ssclogo")}',
+                    RevCultIcon: '{!URLFOR($Resource.DataClassification, "dist/RevCultIcon.png")}',
+                    OBIcon: '{!URLFOR($Resource.DataClassification, "dist/OBIcon.png")}',
+                    getUrl: {!$RemoteAction.DataClassificationController.getUrl},
+                    getObjects: {!$RemoteAction.DataClassificationController.getObjects},
+                    getFields: {!$RemoteAction.DataClassificationController.getFields},
+                    getSeverityLevels: {!$RemoteAction.DataClassificationController.getSeverityLevels},
+                    getComplianceCategories: {!$RemoteAction.DataClassificationController.getComplianceCategories},
+                    saveFieldLevels: {!$RemoteAction.DataClassificationController.saveFieldLevels},
+                    checkSettingsInProgress: '{!$RemoteAction.DataClassificationController.checkSettingsInProgress}',
+                    getBatchConfig: {!$RemoteAction.DataClassificationController.getBatchConfig},
+                    checkUpgrade: {!$RemoteAction.DataClassificationController.checkUpgrade},
+                    checkMetadataApi: {!$RemoteAction.SharedExtensionController.checkMetadataApi},
+                    getCSVDownloadId: {!$RemoteAction.DataClassificationController.getCSVDownloadId},
+                    checkFeatures: {!$RemoteAction.DataClassificationController.checkFeatures},
+                    search: {!$RemoteAction.DataClassificationController.doSearch},
+                    runSync: {!$RemoteAction.DataClassificationController.runSync},
+                    runReverseSync: {!$RemoteAction.DataClassificationController.runReverseSync},
+                    checkBatchStatus: {!$RemoteAction.DataClassificationController.checkBatchStatus},
+                    getBatchIdOnLoad: {!$RemoteAction.DataClassificationController.getBatchIdOnLoad},
+                    getRecents: {!$RemoteAction.DataClassificationController.getRecents},
+                    getInstalledPackages: {!$RemoteAction.DataClassificationController.getInstalledPackages},
+                    getOrgNamespace: {!$RemoteAction.DataClassificationController.getOrgNamespace},
+                    getDCSnapshots: '{!$RemoteAction.DataClassificationController.getDCSnapshots}',
+                    getHistoricalClassifications: {!$RemoteAction.DataClassificationController.getHistoricalClassifications},
+                    getUserOrGroupNamesFromIds: '{!$RemoteAction.DataClassificationController.getUserOrGroupNamesFromIds}',
+                    toggleColumnConfiguration: '{!$RemoteAction.DataClassificationController.toggleColumnConfiguration}',
+                    getUserColumnConfigSettings: {!$RemoteAction.DataClassificationController.getUserColumnConfigSettings},
+                    getShieldNamespace: {!$RemoteAction.DataClassificationController.getShieldNamespace},
+                    createFillRatesJob: {!$RemoteAction.DataClassificationController.createFillRatesJob},
+                    startFillRatesJob: {!$RemoteAction.DataClassificationController.startFillRatesJob},
+                    isAFillRatesJobInProgress: {!$RemoteAction.DataClassificationController.isAFillRatesJobInProgress},
+                    getLatestFillRatesJobInfo: {!$RemoteAction.DataClassificationController.getLatestFillRatesJobInfo},
+                    getFillRateJobData: {!$RemoteAction.DataClassificationController.getFillRateJobData},
+                    updateSessionCache: {!$RemoteAction.DataClassificationController.updateSessionCache},
+                    checkAppNavigationCache: {!$RemoteAction.DataClassificationController.checkAppNavigationCache},
+                    checkAppNavigationCacheString: {!$RemoteAction.DataClassificationController.checkAppNavigationCacheString},
+                    getSITabUrl: {!$RemoteAction.DataClassificationController.getSITabUrl},
+                    isSIJobRunning: {!$RemoteAction.DataClassificationController.isSIJobRunning},
+                    isAtLeastOneSIJobCompleted: {!$RemoteAction.DataClassificationController.isAtLeastOneSIJobCompleted},
+                    getUpgradeAlertSettings: {!$RemoteAction.DataClassificationController.getUpgradeAlertSettings},
+                    setUpgradeAlertSettings: {!$RemoteAction.DataClassificationController.setUpgradeAlertSettings},
+                    hasPermissionDownloadAppExchangePackages: {!$RemoteAction.DataClassificationController.hasPermissionDownloadAppExchangePackages},
+                    userPermissions: {
+                        canClassify: {!$Permission.SSC_Classify_Fields},
+                        canExport: {!$Permission.SSC_Export_Data_Classification},
+                        syncClassifications: {!$Permission.SSC_Sync_Classifications},
+                        runFillRates: {!$Permission.SSC_Run_Fill_Rates}
+                    },
+                    images: {
+                        Pending: '{!URLFOR($Asset.SLDS, "assets/icons/utility-sprite/svg/symbols.svg#error")}',
+                        Platform: '{!URLFOR($Asset.SLDS, "assets/icons/utility-sprite/svg/symbols.svg#clear")}',
+                        Clear: '{!URLFOR($Asset.SLDS, "assets/icons/utility-sprite/svg/symbols.svg#success")}',
+                        Config: '{!URLFOR($Asset.SLDS, "assets/icons/utility-sprite/svg/symbols.svg#warning")}',
+                        Shield: '{!URLFOR($Asset.SLDS, "assets/icons/utility-sprite/svg/symbols.svg#shield")}',
+                        Total: '{!URLFOR($Asset.SLDS, "assets/icons/standard-sprite/svg/symbols.svg#topic2")}',
+                        Selected: '{!URLFOR($Asset.SLDS, "assets/icons/standard-sprite/svg/symbols.svg#task")}',
+                        PendingPNG: '{!URLFOR($Resource.ShieldAccelerator, "/dist/Pending.png")}',
+                        PlatformPNG: '{!URLFOR($Resource.ShieldAccelerator, "/dist/Platform.png")}',
+                        ClearPNG: '{!URLFOR($Resource.ShieldAccelerator, "/dist/Clear.png")}',
+                        ConfigPNG: '{!URLFOR($Resource.ShieldAccelerator, "/dist/Configuration.png")}',
+                        ShieldPNG: '{!URLFOR($Resource.ShieldAccelerator, "/dist/Shield.png")}',
+                        ShieldFilterPNG: '{!URLFOR($Resource.ShieldAccelerator, "/dist/ShieldFilter.png")}',
+                        ClearShieldPNG: '{!URLFOR($Resource.ShieldAccelerator, "/dist/ClearShield2.png")}',
+                        ConfigShieldPNG: '{!URLFOR($Resource.ShieldAccelerator, "/dist/ClearShield2.png")}',
+                        ClearFailedPNG: '{!URLFOR($Resource.ShieldAccelerator, "/dist/ClearFailed.png")}',
+                        fillRatesSVG: '{!URLFOR($Resource.ShieldAccelerator, "/dist/water_glass.svg#waterglass")}',
+                        ConfigFailedPNG: '{!URLFOR($Resource.ShieldAccelerator, "/dist/ConfigurationFailed.png")}',
+                        filter: '{!URLFOR($Asset.SLDS, "assets/icons/utility-sprite/svg/symbols.svg#filterList")}',
+                        close: '{!URLFOR($Asset.SLDS, "assets/icons/utility-sprite/svg/symbols.svg#close")}',
+                        info: '{!URLFOR($Asset.SLDS, "assets/icons/utility-sprite/svg/symbols.svg#info")}',
+                        ban: '{!URLFOR($Asset.SLDS, "assets/icons/utility-sprite/svg/symbols.svg#ban")}',
+                        download: '{!URLFOR($Asset.SLDS, "assets/icons/utility-sprite/svg/symbols.svg#download")}',
+                        chevronLeft: '{!URLFOR($Asset.SLDS, "assets/icons/utility-sprite/svg/symbols.svg#chevronleft")}',
+                        chevronRight: '{!URLFOR($Asset.SLDS, "assets/icons/utility-sprite/svg/symbols.svg#chevronright")}',
+                        left: '{!URLFOR($Asset.SLDS, "assets/icons/utility-sprite/svg/symbols.svg#left")}',
+                        right: '{!URLFOR($Asset.SLDS, "assets/icons/utility-sprite/svg/symbols.svg#right")}',
+                        down: '{!URLFOR($Asset.SLDS, "assets/icons/utility-sprite/svg/symbols.svg#down")}',
+                        settings: '{!URLFOR($Asset.SLDS, "assets/icons/utility-sprite/svg/symbols.svg#settings")}',
+                        calendar: '{!URLFOR($Asset.SLDS, "assets/icons/utility-sprite/svg/symbols.svg#event")}',
+                        chart: '{!URLFOR($Asset.SLDS, "assets/icons/utility-sprite/svg/symbols.svg#chart")}',
+                        sync: '{!URLFOR($Asset.SLDS, "assets/icons/utility-sprite/svg/symbols.svg#sync")}',
+                        satellite: '{!URLFOR($Asset.SLDS, "assets/icons/custom-sprite/svg/symbols.svg#custom30")}',
+                        RevCultLogo: '{!URLFOR($Resource.RevCultLogo)}',
+                        clearImg: "{!URLFOR($Resource.StatusIcons, '/allClear.png')}",
+                        shieldImg: "{!URLFOR($Resource.StatusIcons, '/blockedShield.png')}",
+                        platImg: "{!URLFOR($Resource.StatusIcons, '/blockedPlat.png')}",
+                        configImg: "{!URLFOR($Resource.StatusIcons, '/blockedConfig.png')}",
+                        totalFieldsImg: "{!URLFOR($Resource.StatusIcons, '/totalFields.png')}",
+                        fieldsSelectedImg: "{!URLFOR($Resource.StatusIcons, '/fieldsSelected.png')}",
+                        pendingImg: "{!URLFOR($Resource.StatusIcons, '/pendingImg.png')}",
+                        emptyCheckImg: "{!URLFOR($Resource.StatusIcons, '/emptyCheck')}",
+                        checkedCheckImg: "{!URLFOR($Resource.StatusIcons, '/checkedCheck.png')}",
+                        legend: "{!URLFOR($Resource.StatusIcons, '/legend.png')}"
+                    }
+                }
+            </script>
+            <apex:slds />
+            <meta charset="utf-8"/>
+            <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+            <title>Data Classification</title>
+            <meta name="viewport" content="width=device-width, initial-scale=1" />
+            <link rel="stylesheet" href="{!URLFOR($Resource.DataClassification, '/dist/style.css')}" />
+            <apex:styleSheet value="{!URLFOR($Resource.revcult__SLDSv41Locked, 'slds41.min.css')}"/>
+        </head>
+        <body>
+            <div id="app"></div>
+            <script src="{!URLFOR($Resource.DataClassification, '/dist/build.js')}"/>
+        </body>
+        <style>
+            @font-face {
+                font-family: "Salesforce Sans";
+                src: url('{!URLFOR($Resource.SLDSv41Locked, 'SalesforceSans-Bold.woff2')}') format('woff2');
+                font-weight: 700;
+            }
+            @font-face {
+                font-family: "Salesforce Sans";
+                src: url('{!URLFOR($Resource.SLDSv41Locked, 'SalesforceSans-Regular.woff2')}') format('woff2');
+                font-weight: 400;
+            }
+            @font-face {
+                font-family: "Salesforce Sans";
+                src: url('{!URLFOR($Resource.SLDSv41Locked, 'SalesforceSans-Light.woff2')}') format('woff2');
+                font-weight: 300;
+            }
+            .slds-table thead th {
+                background-color: #fdfdfd !important;
+                font-weight: 400 !important;
+            }
+
+        </style>
+    </html>
+</apex:page>

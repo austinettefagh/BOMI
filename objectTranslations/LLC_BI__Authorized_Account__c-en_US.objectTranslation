@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fieldSets>
+        <label><!-- Add Signer Modal --></label>
+        <name>LLC_BI__Add_Signer_Modal</name>
+    </fieldSets>
+    <fieldSets>
+        <label><!-- Authorized Business Maintenance Delta --></label>
+        <name>LLC_BI__Authorized_Business_Maintenance_Delta</name>
+    </fieldSets>
+    <fieldSets>
+        <label><!-- Borrowing Structure Table --></label>
+        <name>LLC_BI__Borrowing_Structure_Table</name>
+    </fieldSets>
+    <fieldSets>
+        <label><!-- Ownership Structure Table --></label>
+        <name>LLC_BI__Ownership_Structure_Table</name>
+    </fieldSets>
+    <fields>
+        <help><!-- The system-populated field associates the authorized business to the account. --></help>
+        <label><!-- Account --></label>
+        <name>LLC_BI__Account__c</name>
+        <relationshipLabel><!-- Authorized Accounts --></relationshipLabel>
+    </fields>
+    <fields>
+        <help><!-- Enter the Tax Favored Account percentage. --></help>
+        <label><!-- Beneficiary Allocation Percentage --></label>
+        <name>LLC_BI__Allocation_Percentage__c</name>
+    </fields>
+    <fields>
+        <help><!-- The system-populated field associates the authorized business to another authorized business. --></help>
+        <label><!-- Authorized Account --></label>
+        <name>LLC_BI__Authorized_Account__c</name>
+        <relationshipLabel><!-- Authorized Accounts --></relationshipLabel>
+    </fields>
+    <fields>
+        <help><!-- Select the Beneficiary Type. --></help>
+        <label><!-- Beneficiary Type --></label>
+        <name>LLC_BI__Beneficiary_Type__c</name>
+        <picklistValues>
+            <masterLabel>Contingent</masterLabel>
+            <translation><!-- Contingent --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Primary</masterLabel>
+            <translation><!-- Primary --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Capacity --></label>
+        <name>LLC_BI__Capacity__c</name>
+        <picklistValues>
+            <masterLabel>Beneficiary</masterLabel>
+            <translation><!-- Beneficiary --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>General Partner</masterLabel>
+            <translation><!-- General Partner --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Manager</masterLabel>
+            <translation><!-- Manager --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Member</masterLabel>
+            <translation><!-- Member --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Other</masterLabel>
+            <translation><!-- Other --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Partner</masterLabel>
+            <translation><!-- Partner --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Trustee</masterLabel>
+            <translation><!-- Trustee --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- The system-populated field associates the authorized business to a specific entity involvement. --></help>
+        <label><!-- Entity Involvement --></label>
+        <name>LLC_BI__Entity__c</name>
+        <relationshipLabel><!-- Authorized Accounts --></relationshipLabel>
+    </fields>
+    <fields>
+        <help><!-- This system-populated field associates the authorized business to a specific ownership structure role. --></help>
+        <label><!-- Ownership Structure Role --></label>
+        <name>LLC_BI__Ownership_Structure_Role__c</name>
+        <relationshipLabel><!-- Authorized Accounts --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Signing Authority --></label>
+        <name>LLC_BI__Signing_Authority__c</name>
+        <picklistValues>
+            <masterLabel>Authorized</masterLabel>
+            <translation><!-- Authorized --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Not Authorized</masterLabel>
+            <translation><!-- Not Authorized --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- Enter a unique external identifier. --></help>
+        <label><!-- lookupKey --></label>
+        <name>LLC_BI__lookupKey__c</name>
+    </fields>
+</CustomObjectTranslation>

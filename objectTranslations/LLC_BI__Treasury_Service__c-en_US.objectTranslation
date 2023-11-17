@@ -1,0 +1,1664 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fieldSets>
+        <label><!-- Account 1 --></label>
+        <name>Account_1</name>
+    </fieldSets>
+    <fieldSets>
+        <label><!-- Account 2 --></label>
+        <name>Account_2</name>
+    </fieldSets>
+    <fieldSets>
+        <label><!-- Account 3 --></label>
+        <name>Account_3</name>
+    </fieldSets>
+    <fieldSets>
+        <label><!-- Request Details - Credit Card Merchant Services - Sales --></label>
+        <name>CF_Request_Details_CCMS_Sales</name>
+    </fieldSets>
+    <fieldSets>
+        <label><!-- Account 4 --></label>
+        <name>FS_Account_4</name>
+    </fieldSets>
+    <fieldSets>
+        <label><!-- Account Information - Credit Card Merchant Services --></label>
+        <name>FS_Account_Information_CreditCardMerch</name>
+    </fieldSets>
+    <fieldSets>
+        <label><!-- Account Information - Deposit Solutions --></label>
+        <name>FS_Account_Information_Deposit_Solutions</name>
+    </fieldSets>
+    <fieldSets>
+        <label><!-- Account Information - Fraud Solutions --></label>
+        <name>FS_Account_Information_Fraud_Solutions</name>
+    </fieldSets>
+    <fieldSets>
+        <label><!-- Account Information - Liquidity Solutions --></label>
+        <name>FS_Account_Information_LiquiditySolution</name>
+    </fieldSets>
+    <fieldSets>
+        <label><!-- Account Information - Management Solutions --></label>
+        <name>FS_Account_Information_Mgmt_Solutions</name>
+    </fieldSets>
+    <fieldSets>
+        <label><!-- Account Information - Payable ACH --></label>
+        <name>FS_Account_Information_Payable_ACH</name>
+    </fieldSets>
+    <fieldSets>
+        <label><!-- Account Information - Payment Portal --></label>
+        <name>FS_Account_Information_Payment_Portal</name>
+    </fieldSets>
+    <fieldSets>
+        <label><!-- Account Information - RDC &amp; Lockbox --></label>
+        <name>FS_Account_Information_RDC_Lockbox</name>
+    </fieldSets>
+    <fieldSets>
+        <label><!-- Account Information-Wire Transmission --></label>
+        <name>FS_Account_Information_Wire_Transmission</name>
+    </fieldSets>
+    <fieldSets>
+        <label><!-- Account Treasury Products --></label>
+        <name>FS_Account_Treasury_Products</name>
+    </fieldSets>
+    <fieldSets>
+        <label><!-- Compliance Review --></label>
+        <name>FS_Compliance_Review</name>
+    </fieldSets>
+    <fieldSets>
+        <label><!-- Credit Card Merchant Services Maintenance --></label>
+        <name>FS_CreditCardMerchantServicesMaintenance</name>
+    </fieldSets>
+    <fieldSets>
+        <label><!-- Deposit Solutions Maintenance --></label>
+        <name>FS_Deposit_Solutions_Maintenance</name>
+    </fieldSets>
+    <fieldSets>
+        <label><!-- Financial Review --></label>
+        <name>FS_Financial_Review</name>
+    </fieldSets>
+    <fieldSets>
+        <label><!-- Fraud Solutions Maintenance --></label>
+        <name>FS_Fraud_Solutions_Maintenance</name>
+    </fieldSets>
+    <fieldSets>
+        <label><!-- Install Details --></label>
+        <name>FS_Install_Details</name>
+    </fieldSets>
+    <fieldSets>
+        <label><!-- Liquidity Solutions Maintenance --></label>
+        <name>FS_Liquidity_Solutions_Maintenance</name>
+    </fieldSets>
+    <fieldSets>
+        <label><!-- Management Solutions Maintenance --></label>
+        <name>FS_Management_Solutions_Maintenance</name>
+    </fieldSets>
+    <fieldSets>
+        <label><!-- Multi-User &amp; BillPay - Management Solutions --></label>
+        <name>FS_Multi_User_BillPay_Mgmt_Solutions</name>
+    </fieldSets>
+    <fieldSets>
+        <label><!-- Payable ACH Maintenance --></label>
+        <name>FS_Payable_ACH_Maintenance</name>
+    </fieldSets>
+    <fieldSets>
+        <label><!-- Payable Wire Maintenance --></label>
+        <name>FS_Payable_Wire_Maintenance</name>
+    </fieldSets>
+    <fieldSets>
+        <label><!-- Payment Portal Maintenance --></label>
+        <name>FS_Payment_Portal_Maintenance</name>
+    </fieldSets>
+    <fieldSets>
+        <label><!-- Product Details - Credit Card Merchant Services --></label>
+        <name>FS_Product_Details_CreditCardMS</name>
+    </fieldSets>
+    <fieldSets>
+        <label><!-- Product Details - Deposit Solutions --></label>
+        <name>FS_Product_Details_Deposit_Solutions</name>
+    </fieldSets>
+    <fieldSets>
+        <label><!-- Product Details - Fraud Solutions --></label>
+        <name>FS_Product_Details_Fraud_Solutions</name>
+    </fieldSets>
+    <fieldSets>
+        <label><!-- Product Details - Liquidity Solutions --></label>
+        <name>FS_Product_Details_Liquidity_Solutions</name>
+    </fieldSets>
+    <fieldSets>
+        <label><!-- Product Details - Mgmt Solutions --></label>
+        <name>FS_Product_Details_Mgmt_Solutions</name>
+    </fieldSets>
+    <fieldSets>
+        <label><!-- Product Details - Payable ACH --></label>
+        <name>FS_Product_Details_Payable_ACH</name>
+    </fieldSets>
+    <fieldSets>
+        <label><!-- Product Details - Payment Portal --></label>
+        <name>FS_Product_Details_Payment_Portal</name>
+    </fieldSets>
+    <fieldSets>
+        <label><!-- Product Details - RDC &amp; Lockbox --></label>
+        <name>FS_Product_Details_RDC_Lockbox</name>
+    </fieldSets>
+    <fieldSets>
+        <label><!-- Product Details-Wire Transmission --></label>
+        <name>FS_Product_Details_Wire_Transmission</name>
+    </fieldSets>
+    <fieldSets>
+        <label><!-- Quality Control --></label>
+        <name>FS_Quality_Control</name>
+    </fieldSets>
+    <fieldSets>
+        <label><!-- RDC &amp; Lockbox Maintenance --></label>
+        <name>FS_RDC_Lockbox_Maintenance</name>
+    </fieldSets>
+    <fieldSets>
+        <label><!-- Request Details - Credit Card Merchant Services --></label>
+        <name>FS_Request_Details_Credit_Card_Merchant</name>
+    </fieldSets>
+    <fieldSets>
+        <label><!-- Request Details - Deposit Solutions --></label>
+        <name>FS_Request_Details_Deposit_Solutions</name>
+    </fieldSets>
+    <fieldSets>
+        <label><!-- Request Details - Fraud Solutions --></label>
+        <name>FS_Request_Details_Fraud_Solutions</name>
+    </fieldSets>
+    <fieldSets>
+        <label><!-- Request Details - Liquidity Solutions --></label>
+        <name>FS_Request_Details_Liquidity_Solutions</name>
+    </fieldSets>
+    <fieldSets>
+        <label><!-- Request Details - Management Solutions --></label>
+        <name>FS_Request_Details_Management_Solutions</name>
+    </fieldSets>
+    <fieldSets>
+        <label><!-- Request Details - Payable ACH --></label>
+        <name>FS_Request_Details_Payable_ACH</name>
+    </fieldSets>
+    <fieldSets>
+        <label><!-- Request Details - Payment Portal --></label>
+        <name>FS_Request_Details_Payment_Portal</name>
+    </fieldSets>
+    <fieldSets>
+        <label><!-- Request Details - RDC &amp; Lockbox --></label>
+        <name>FS_Request_Details_RDC_Lockbox</name>
+    </fieldSets>
+    <fieldSets>
+        <label><!-- Request Details - Wire Transmission --></label>
+        <name>FS_Request_Details_Wire_Transmission</name>
+    </fieldSets>
+    <fieldSets>
+        <label><!-- SFTP Uses - Management Solutions --></label>
+        <name>FS_SFTP_Uses_Management_Solutions</name>
+    </fieldSets>
+    <fieldSets>
+        <label><!-- Setup Information 2- Payment Portal --></label>
+        <name>FS_Setup_Information_2_Payment_Portal</name>
+    </fieldSets>
+    <fieldSets>
+        <label><!-- Setup Information 3 - Payment Portal --></label>
+        <name>FS_Setup_Information_3_Payment_Portal</name>
+    </fieldSets>
+    <fieldSets>
+        <label><!-- Setup Information 1 - Payment Portal --></label>
+        <name>FS_Setup_Information_Payment_Portal</name>
+    </fieldSets>
+    <fieldSets>
+        <label><!-- Stage Durations --></label>
+        <name>FS_Stage_Durations</name>
+    </fieldSets>
+    <fieldSets>
+        <label><!-- Sub-Stage --></label>
+        <name>FS_Sub_Stage</name>
+    </fieldSets>
+    <fieldSets>
+        <label><!-- Sub-Stage Durations --></label>
+        <name>FS_Sub_Stage_Durations</name>
+    </fieldSets>
+    <fieldSets>
+        <label><!-- System Information --></label>
+        <name>FS_System_Information_Mgmt_Solutions</name>
+    </fieldSets>
+    <fieldSets>
+        <label><!-- Team Details --></label>
+        <name>FS_Team_Details</name>
+    </fieldSets>
+    <fieldSets>
+        <label><!-- Team Details DS --></label>
+        <name>FS_Team_Details_DS</name>
+    </fieldSets>
+    <fieldSets>
+        <label><!-- Treasury Service-Suspend/Cancel --></label>
+        <name>FS_Treasury_Service_Suspend_Cancel</name>
+    </fieldSets>
+    <fieldSets>
+        <label><!-- Treasury Services on PP --></label>
+        <name>FS_Treasury_Services_on_PP</name>
+    </fieldSets>
+    <fieldSets>
+        <label><!-- Jack Henry jXchange Automated Booking --></label>
+        <name>JHJX__ABJX</name>
+    </fieldSets>
+    <fieldSets>
+        <label><!-- Product Package Treasury Services FS --></label>
+        <name>LLC_BI__Product_Package_Treasury_Services_FS</name>
+    </fieldSets>
+    <fieldSets>
+        <label><!-- Service Details --></label>
+        <name>LLC_BI__Service_Details</name>
+    </fieldSets>
+    <fieldSets>
+        <label><!-- Treasury Services Summary UI --></label>
+        <name>LLC_BI__Treasury_Services_Summary_UI</name>
+    </fieldSets>
+    <fieldSets>
+        <label><!-- UI Exception Pricing --></label>
+        <name>LLC_BI__UI_Exception_Pricing</name>
+    </fieldSets>
+    <fieldSets>
+        <label><!-- UI Order Entry for ACH --></label>
+        <name>LLC_BI__UI_Order_Entry_for_ACH</name>
+    </fieldSets>
+    <fieldSets>
+        <label><!-- UI Order Entry for Cash --></label>
+        <name>LLC_BI__UI_Order_Entry_for_Cash</name>
+    </fieldSets>
+    <fieldSets>
+        <label><!-- UI Order Entry for Depository --></label>
+        <name>LLC_BI__UI_Order_Entry_for_Depository</name>
+    </fieldSets>
+    <fieldSets>
+        <label><!-- UI Order Entry for Direct File Transfer --></label>
+        <name>LLC_BI__UI_Order_Entry_for_Direct_File_Transfer</name>
+    </fieldSets>
+    <fieldSets>
+        <label><!-- UI Order Entry for Disbursement --></label>
+        <name>LLC_BI__UI_Order_Entry_for_Disbursement</name>
+    </fieldSets>
+    <fieldSets>
+        <label><!-- UI Order Entry for Loan Module --></label>
+        <name>LLC_BI__UI_Order_Entry_for_Loan_Module</name>
+    </fieldSets>
+    <fieldSets>
+        <label><!-- UI Order Entry for Lockbox --></label>
+        <name>LLC_BI__UI_Order_Entry_for_Lockbox</name>
+    </fieldSets>
+    <fieldSets>
+        <label><!-- UI Order Entry for Miscellaneous --></label>
+        <name>LLC_BI__UI_Order_Entry_for_Miscellaneous</name>
+    </fieldSets>
+    <fieldSets>
+        <label><!-- UI Order Entry for Multi Factor Auth --></label>
+        <name>LLC_BI__UI_Order_Entry_for_Multi_Factor_Auth</name>
+    </fieldSets>
+    <fieldSets>
+        <label><!-- UI Order Entry for Online ACH --></label>
+        <name>LLC_BI__UI_Order_Entry_for_Online_ACH</name>
+    </fieldSets>
+    <fieldSets>
+        <label><!-- UI Order Entry for Online Banking --></label>
+        <name>LLC_BI__UI_Order_Entry_for_Online_Banking</name>
+    </fieldSets>
+    <fieldSets>
+        <label><!-- UI Order Entry for Online Bill Pay --></label>
+        <name>LLC_BI__UI_Order_Entry_for_Online_Bill_Pay</name>
+    </fieldSets>
+    <fieldSets>
+        <label><!-- UI Order Entry for RDC --></label>
+        <name>LLC_BI__UI_Order_Entry_for_RDC</name>
+    </fieldSets>
+    <fieldSets>
+        <label><!-- UI Order Entry for Reconciliation --></label>
+        <name>LLC_BI__UI_Order_Entry_for_Reconciliation</name>
+    </fieldSets>
+    <fieldSets>
+        <label><!-- UI Order Entry for Reporting --></label>
+        <name>LLC_BI__UI_Order_Entry_for_Reporting</name>
+    </fieldSets>
+    <fieldSets>
+        <label><!-- UI Order Entry for Sweep --></label>
+        <name>LLC_BI__UI_Order_Entry_for_Sweep</name>
+    </fieldSets>
+    <fieldSets>
+        <label><!-- UI Order Entry for Wire --></label>
+        <name>LLC_BI__UI_Order_Entry_for_Wire</name>
+    </fieldSets>
+    <fieldSets>
+        <label><!-- UI Order Entry for Zero Balance --></label>
+        <name>LLC_BI__UI_Order_Entry_for_Zero_Balance</name>
+    </fieldSets>
+    <fieldSets>
+        <label><!-- UI Product Summary --></label>
+        <name>LLC_BI__UI_Product_Summary</name>
+    </fieldSets>
+    <fieldSets>
+        <label><!-- UI Setup for ACH --></label>
+        <name>LLC_BI__UI_Setup_for_ACH</name>
+    </fieldSets>
+    <fieldSets>
+        <label><!-- UI Setup for Cash --></label>
+        <name>LLC_BI__UI_Setup_for_Cash</name>
+    </fieldSets>
+    <fieldSets>
+        <label><!-- UI Setup for Depository --></label>
+        <name>LLC_BI__UI_Setup_for_Depository</name>
+    </fieldSets>
+    <fieldSets>
+        <label><!-- UI Setup for Direct File Tansfer --></label>
+        <name>LLC_BI__UI_Setup_for_Direct_File_Tansfer</name>
+    </fieldSets>
+    <fieldSets>
+        <label><!-- UI Setup for Disbursement --></label>
+        <name>LLC_BI__UI_Setup_for_Disbursement</name>
+    </fieldSets>
+    <fieldSets>
+        <label><!-- UI Setup for Lockbox --></label>
+        <name>LLC_BI__UI_Setup_for_Lockbox</name>
+    </fieldSets>
+    <fieldSets>
+        <label><!-- UI Setup for Miscellaneous --></label>
+        <name>LLC_BI__UI_Setup_for_Miscellaneous</name>
+    </fieldSets>
+    <fieldSets>
+        <label><!-- UI Setup for Online ACH --></label>
+        <name>LLC_BI__UI_Setup_for_Online_ACH</name>
+    </fieldSets>
+    <fieldSets>
+        <label><!-- UI Setup for Online Banking --></label>
+        <name>LLC_BI__UI_Setup_for_Online_Banking</name>
+    </fieldSets>
+    <fieldSets>
+        <label><!-- UI Setup for Online Bill Pay --></label>
+        <name>LLC_BI__UI_Setup_for_Online_Bill_Pay</name>
+    </fieldSets>
+    <fieldSets>
+        <label><!-- UI Setup for RDC --></label>
+        <name>LLC_BI__UI_Setup_for_RDC</name>
+    </fieldSets>
+    <fieldSets>
+        <label><!-- UI Setup for Reconciliation --></label>
+        <name>LLC_BI__UI_Setup_for_Reconciliation</name>
+    </fieldSets>
+    <fieldSets>
+        <label><!-- UI Setup for Reporting --></label>
+        <name>LLC_BI__UI_Setup_for_Reporting</name>
+    </fieldSets>
+    <fieldSets>
+        <label><!-- UI Setup for Sweep --></label>
+        <name>LLC_BI__UI_Setup_for_Sweep</name>
+    </fieldSets>
+    <fieldSets>
+        <label><!-- UI Setup for Wire --></label>
+        <name>LLC_BI__UI_Setup_for_Wire</name>
+    </fieldSets>
+    <fieldSets>
+        <label><!-- UI Setup for Zero Balance --></label>
+        <name>LLC_BI__UI_Setup_for_Zero_Balance</name>
+    </fieldSets>
+    <fieldSets>
+        <label><!-- Target Balance --></label>
+        <name>Target_Balance</name>
+    </fieldSets>
+    <fieldSets>
+        <label><!-- Wire Transmission Maintenance --></label>
+        <name>Wire_Transmission_Maintenance</name>
+    </fieldSets>
+    <fieldSets>
+        <label><!-- Portal_UI_Test --></label>
+        <name>nPortal__Portal_UI_Test</name>
+    </fieldSets>
+    <fields>
+        <label><!-- 1 Year Post Install Touchpoint --></label>
+        <name>CF_1_Year_Post_Install_Touchpoint__c</name>
+    </fields>
+    <fields>
+        <label><!-- 45 Day Post Install Touchpoint --></label>
+        <name>CF_45_Day_Post_Install_Touchpoint__c</name>
+    </fields>
+    <fields>
+        <label><!-- Account Analysis Error Count --></label>
+        <name>CF_Account_Analysis_Error_Count__c</name>
+    </fields>
+    <fields>
+        <label><!-- Account Daily Limit --></label>
+        <name>CF_Account_Daily_Limit__c</name>
+    </fields>
+    <fields>
+        <label><!-- Analysis Type --></label>
+        <name>CF_Analysis_Type__c</name>
+        <picklistValues>
+            <masterLabel>N/A</masterLabel>
+            <translation><!-- N/A --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>O4</masterLabel>
+            <translation><!-- O4 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>TS</masterLabel>
+            <translation><!-- TS --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Approval Duration --></label>
+        <name>CF_Approval_Duration__c</name>
+    </fields>
+    <fields>
+        <label><!-- Approved By --></label>
+        <name>CF_Approved_By__c</name>
+        <relationshipLabel><!-- Treasury Service (Approved By) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Awaiting Install duration --></label>
+        <name>CF_Awaiting_Install_duration__c</name>
+    </fields>
+    <fields>
+        <label><!-- Back Office Error Count --></label>
+        <name>CF_Back_Office_Error_Count__c</name>
+    </fields>
+    <fields>
+        <label><!-- Billing Account Number --></label>
+        <name>CF_Billing_Account_Number__c</name>
+        <relationshipLabel><!-- Treasury Service --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Compliance Notes --></label>
+        <name>CF_Compliance_Notes__c</name>
+    </fields>
+    <fields>
+        <label><!-- Compliance Review Needed? --></label>
+        <name>CF_Compliance_Review_Needed__c</name>
+    </fields>
+    <fields>
+        <help><!-- Is Compliance Review Required --></help>
+        <label><!-- Compliance Review Needed? --></label>
+        <name>CF_Compliance_Review_Required__c</name>
+    </fields>
+    <fields>
+        <label><!-- Compliance Review Status --></label>
+        <name>CF_Compliance_Review_Status__c</name>
+        <picklistValues>
+            <masterLabel>Approved</masterLabel>
+            <translation><!-- Approved --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>In Progress</masterLabel>
+            <translation><!-- In Progress --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Not Started</masterLabel>
+            <translation><!-- Not Started --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Rejected</masterLabel>
+            <translation><!-- Rejected --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Compliance Reviewer --></label>
+        <name>CF_Compliance_Reviewer__c</name>
+        <relationshipLabel><!-- Treasury Service (Compliance Reviewer) --></relationshipLabel>
+    </fields>
+    <fields>
+        <help><!-- Please list the expected attendees --></help>
+        <label><!-- Confirm Install Date/Attendees --></label>
+        <name>CF_Confirm_Install_Date_Attendees__c</name>
+    </fields>
+    <fields>
+        <label><!-- ACH Corporate Exposure Value --></label>
+        <name>CF_Corporate_ACH_Exposure_Value_UPayPrtl__c</name>
+    </fields>
+    <fields>
+        <label><!-- Corporate ACH Exposure Value --></label>
+        <name>CF_Corporate_ACH_Exposure_Value__c</name>
+    </fields>
+    <fields>
+        <label><!-- Corporate ACH Origination Limit --></label>
+        <name>CF_Corporate_ACH_Origination_Limit__c</name>
+    </fields>
+    <fields>
+        <label><!-- Corporate Wire Limit --></label>
+        <name>CF_Corporate_Daily_Wire_Limit__c</name>
+    </fields>
+    <fields>
+        <label><!-- Credit Analyst --></label>
+        <name>CF_Credit_Analyst__c</name>
+        <relationshipLabel><!-- Treasury Service (Credit Analyst) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Credit Officer --></label>
+        <name>CF_Credit_Officer__c</name>
+        <relationshipLabel><!-- Treasury Service (Credit Officer) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Credit Recommendation --></label>
+        <name>CF_Credit_Recommendation__c</name>
+    </fields>
+    <fields>
+        <label><!-- Customer Address - NOT IN USE --></label>
+        <name>CF_Customer_Address_Depricated__c</name>
+    </fields>
+    <fields>
+        <label><!-- Customer Address --></label>
+        <name>CF_Customer_Address__c</name>
+    </fields>
+    <fields>
+        <label><!-- Customer Signature Duration --></label>
+        <name>CF_Customer_Signature_Duration__c</name>
+    </fields>
+    <fields>
+        <label><!-- DDA Maintenance Error Count --></label>
+        <name>CF_DDA_Maintenance_Error_Count__c</name>
+    </fields>
+    <fields>
+        <label><!-- Daily Check Count --></label>
+        <name>CF_Daily_Check_Count__c</name>
+    </fields>
+    <fields>
+        <label><!-- Daily Deposit Amount --></label>
+        <name>CF_Daily_Deposit_Amount__c</name>
+    </fields>
+    <fields>
+        <label><!-- Date DocuSign Returned --></label>
+        <name>CF_Date_DocuSign_Returned__c</name>
+    </fields>
+    <fields>
+        <label><!-- Date DocuSign Sent --></label>
+        <name>CF_Date_DocuSign_Sent__c</name>
+    </fields>
+    <fields>
+        <label><!-- Date Order Entry Completed --></label>
+        <name>CF_Date_Order_Entry_Completed__c</name>
+    </fields>
+    <fields>
+        <label><!-- Date Post-Close Completed --></label>
+        <name>CF_Date_Post_Close_Completed__c</name>
+    </fields>
+    <fields>
+        <label><!-- Date Quality Control Completed --></label>
+        <name>CF_Date_Quality_Control_Completed__c</name>
+    </fields>
+    <fields>
+        <label><!-- Date Submitted for Approval --></label>
+        <name>CF_Date_Submitted_for_Approval__c</name>
+    </fields>
+    <fields>
+        <label><!-- Date of Approval --></label>
+        <name>CF_Date_of_Approval__c</name>
+    </fields>
+    <fields>
+        <label><!-- Date of Initial Setup --></label>
+        <name>CF_Date_of_Initial_Setup__c</name>
+    </fields>
+    <fields>
+        <label><!-- Doc Prep Duration --></label>
+        <name>CF_Doc_Prep_Duration__c</name>
+    </fields>
+    <fields>
+        <label><!-- DocuSign Sent By --></label>
+        <name>CF_DocuSign_Sent_By__c</name>
+        <relationshipLabel><!-- Treasury Service (DocuSign Sent By) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Document Review Error Count --></label>
+        <name>CF_Document_Review_Error_Count__c</name>
+    </fields>
+    <fields>
+        <label><!-- Does customer have CC Processing? --></label>
+        <name>CF_Does_customer_have_CC_Processing__c</name>
+        <picklistValues>
+            <masterLabel>No</masterLabel>
+            <translation><!-- No --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes</masterLabel>
+            <translation><!-- Yes --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Does customer want to accept CC Payment? --></label>
+        <name>CF_Does_customer_want_to_acceptCCPayment__c</name>
+        <picklistValues>
+            <masterLabel>No</masterLabel>
+            <translation><!-- No --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes</masterLabel>
+            <translation><!-- Yes --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Dual Control Procedures in Place? --></label>
+        <name>CF_Dual_Control_Procedures_in_Place__c</name>
+        <picklistValues>
+            <masterLabel>No</masterLabel>
+            <translation><!-- No --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes</masterLabel>
+            <translation><!-- Yes --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Error 1 Check --></label>
+        <name>CF_Error_1_Check__c</name>
+    </fields>
+    <fields>
+        <label><!-- Error 1 Description --></label>
+        <name>CF_Error_1_Description__c</name>
+    </fields>
+    <fields>
+        <label><!-- Error 1 Found --></label>
+        <name>CF_Error_1_Found__c</name>
+        <picklistValues>
+            <masterLabel>Account Analysis</masterLabel>
+            <translation><!-- Account Analysis --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Back Office</masterLabel>
+            <translation><!-- Back Office --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>DDA Maintenance</masterLabel>
+            <translation><!-- DDA Maintenance --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Document Review</masterLabel>
+            <translation><!-- Document Review --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Other</masterLabel>
+            <translation><!-- Other --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Profit Stars</masterLabel>
+            <translation><!-- Profit Stars --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Silverlake Setup</masterLabel>
+            <translation><!-- Silverlake Setup --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>iPay</masterLabel>
+            <translation><!-- iPay --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Error 2 Check --></label>
+        <name>CF_Error_2_Check__c</name>
+    </fields>
+    <fields>
+        <label><!-- Error 2 Description --></label>
+        <name>CF_Error_2_Description__c</name>
+    </fields>
+    <fields>
+        <label><!-- Error 2 Found --></label>
+        <name>CF_Error_2_Found__c</name>
+        <picklistValues>
+            <masterLabel>Account Analysis</masterLabel>
+            <translation><!-- Account Analysis --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Back Office</masterLabel>
+            <translation><!-- Back Office --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>DDA Maintenance</masterLabel>
+            <translation><!-- DDA Maintenance --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Document Review</masterLabel>
+            <translation><!-- Document Review --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Other</masterLabel>
+            <translation><!-- Other --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Profit Stars</masterLabel>
+            <translation><!-- Profit Stars --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Silverlake Setup</masterLabel>
+            <translation><!-- Silverlake Setup --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>iPay</masterLabel>
+            <translation><!-- iPay --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Error 3 Check --></label>
+        <name>CF_Error_3_Check__c</name>
+    </fields>
+    <fields>
+        <label><!-- Error 3 Description --></label>
+        <name>CF_Error_3_Description__c</name>
+    </fields>
+    <fields>
+        <label><!-- Error 3 Found --></label>
+        <name>CF_Error_3_Found__c</name>
+        <picklistValues>
+            <masterLabel>Account Analysis</masterLabel>
+            <translation><!-- Account Analysis --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Back Office</masterLabel>
+            <translation><!-- Back Office --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>DDA Maintenance</masterLabel>
+            <translation><!-- DDA Maintenance --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Document Review</masterLabel>
+            <translation><!-- Document Review --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Other</masterLabel>
+            <translation><!-- Other --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Profit Stars</masterLabel>
+            <translation><!-- Profit Stars --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Silverlake Setup</masterLabel>
+            <translation><!-- Silverlake Setup --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>iPay</masterLabel>
+            <translation><!-- iPay --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Financial Review Needed? --></label>
+        <name>CF_Financial_Review_Needed__c</name>
+    </fields>
+    <fields>
+        <label><!-- Financial Review Needed?(not in use) --></label>
+        <name>CF_Financial_Review_Needed_not_in_use__c</name>
+    </fields>
+    <fields>
+        <label><!-- Financial Review Status --></label>
+        <name>CF_Financial_Review_Status__c</name>
+        <picklistValues>
+            <masterLabel>Complete</masterLabel>
+            <translation><!-- Complete --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>In Progress</masterLabel>
+            <translation><!-- In Progress --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Not Started</masterLabel>
+            <translation><!-- Not Started --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Fulfilment Stage Duration --></label>
+        <name>CF_Fulfilment_Stage_Duration__c</name>
+    </fields>
+    <fields>
+        <label><!-- Implementation &amp; Post- Close Duration --></label>
+        <name>CF_Implementation_Post_Close_Duration__c</name>
+    </fields>
+    <fields>
+        <label><!-- Individual/Group --></label>
+        <name>CF_Individual_Group__c</name>
+        <picklistValues>
+            <masterLabel>Group</masterLabel>
+            <translation><!-- Group --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Individual</masterLabel>
+            <translation><!-- Individual --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Initial Setup Duration --></label>
+        <name>CF_Initial_Setup_Duration__c</name>
+    </fields>
+    <fields>
+        <label><!-- Install Date/Time --></label>
+        <name>CF_Install_Date_Time__c</name>
+    </fields>
+    <fields>
+        <label><!-- Install Date - NOT IN USE --></label>
+        <name>CF_Install_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Is ACH Company Rec Exists? --></label>
+        <name>CF_Is_ACH_Company_Rec_Exists__c</name>
+    </fields>
+    <fields>
+        <label><!-- Is Account Access Rec Exists? --></label>
+        <name>CF_Is_Account_Access_Rec_Exists__c</name>
+    </fields>
+    <fields>
+        <label><!-- Is Administrators Rec Exists? --></label>
+        <name>CF_Is_Administrators_Rec_Exists__c</name>
+    </fields>
+    <fields>
+        <label><!-- Is Next Review less than Install Date? --></label>
+        <name>CF_Is_Next_Review_less_than_Install_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Is Scanner Info Rec Exists? --></label>
+        <name>CF_Is_Scanner_Info_Rec_Exists__c</name>
+    </fields>
+    <fields>
+        <label><!-- Is Scanner in Stock Check --></label>
+        <name>CF_Is_Scanner_in_Stock_Check__c</name>
+    </fields>
+    <fields>
+        <label><!-- Is Setup Information Rec Exists? --></label>
+        <name>CF_Is_Setup_Info_MS_Rec_Exists__c</name>
+    </fields>
+    <fields>
+        <label><!-- Is Wire Account Rec Exists? --></label>
+        <name>CF_Is_Wire_Account_Rec_Exists__c</name>
+    </fields>
+    <fields>
+        <help><!-- Required for BillPay products --></help>
+        <label><!-- Is an Existing Retail Billpay User? --></label>
+        <name>CF_Is_an_Existing_Retail_Billpay_User__c</name>
+        <picklistValues>
+            <masterLabel>N/A</masterLabel>
+            <translation><!-- N/A --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>No</masterLabel>
+            <translation><!-- No --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes</masterLabel>
+            <translation><!-- Yes --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Last Treasury Review Date --></label>
+        <name>CF_Last_Treasury_Review_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- MSA Version --></label>
+        <name>CF_MSA_Version__c</name>
+        <picklistValues>
+            <masterLabel>New</masterLabel>
+            <translation><!-- New --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Old</masterLabel>
+            <translation><!-- Old --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Name of Merchant Processor --></label>
+        <name>CF_Name_of_Merchant_Processor__c</name>
+    </fields>
+    <fields>
+        <label><!-- Next Treasury Review Date --></label>
+        <name>CF_Next_Treasury_Review_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- No Financial Info Needed --></label>
+        <name>CF_No_Financial_Info_Needed__c</name>
+    </fields>
+    <fields>
+        <label><!-- Onboarding Stage Duration --></label>
+        <name>CF_Onboarding_Stage_Duration__c</name>
+    </fields>
+    <fields>
+        <label><!-- Open Date - NOT IN USE --></label>
+        <name>CF_Open_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Opportunity --></label>
+        <name>CF_Opportunity__c</name>
+        <relationshipLabel><!-- Treasury Service --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Order Entry Completed By --></label>
+        <name>CF_Order_Entry_Completed_By__c</name>
+        <relationshipLabel><!-- Treasury Service (Order Entry Completed By) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Order Entry Duration --></label>
+        <name>CF_Order_Entry_Duration__c</name>
+    </fields>
+    <fields>
+        <label><!-- Order Review Duration --></label>
+        <name>CF_Order_Review_Duration__c</name>
+    </fields>
+    <fields>
+        <label><!-- Other Description --></label>
+        <name>CF_Other_Description__c</name>
+    </fields>
+    <fields>
+        <label><!-- Other Error Count --></label>
+        <name>CF_Other_Error_Count__c</name>
+    </fields>
+    <fields>
+        <label><!-- Products --></label>
+        <name>CF_Products__c</name>
+        <picklistValues>
+            <masterLabel>A/A-Other</masterLabel>
+            <translation><!-- A/A-Other --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ACH Credit Origination</masterLabel>
+            <translation><!-- ACH Credit Origination --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ACH Debit Origination</masterLabel>
+            <translation><!-- ACH Debit Origination --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ACH Positive Pay</masterLabel>
+            <translation><!-- ACH Positive Pay --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>BAI File Download</masterLabel>
+            <translation><!-- BAI File Download --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Check Positive Pay</masterLabel>
+            <translation><!-- Check Positive Pay --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Commercial Loan Sweep</masterLabel>
+            <translation><!-- Commercial Loan Sweep --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>EDI Addenda Translation</masterLabel>
+            <translation><!-- EDI Addenda Translation --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>High Speed RDC</masterLabel>
+            <translation><!-- High Speed RDC --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>I-Collect Portal</masterLabel>
+            <translation><!-- I-Collect Portal --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Low Speed RDC</masterLabel>
+            <translation><!-- Low Speed RDC --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Mobile RDC</masterLabel>
+            <translation><!-- Mobile RDC --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Money Market Sweep</masterLabel>
+            <translation><!-- Money Market Sweep --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Multi User</masterLabel>
+            <translation><!-- Multi User --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Remote Lockbox</masterLabel>
+            <translation><!-- Remote Lockbox --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Retail Lockbox</masterLabel>
+            <translation><!-- Retail Lockbox --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SFTP File Transfer</masterLabel>
+            <translation><!-- SFTP File Transfer --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Target Balance Sweep</masterLabel>
+            <translation><!-- Target Balance Sweep --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Third Party Sender</masterLabel>
+            <translation><!-- Third Party Sender --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>U-Pay Portal</masterLabel>
+            <translation><!-- U-Pay Portal --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Wire Transmission</masterLabel>
+            <translation><!-- Wire Transmission --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Zero Balance Sweep</masterLabel>
+            <translation><!-- Zero Balance Sweep --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Profit Stars Error Count --></label>
+        <name>CF_Profit_Stars_Error_Count__c</name>
+    </fields>
+    <fields>
+        <label><!-- QC Review Date --></label>
+        <name>CF_QC_Review_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- QC Reviewer --></label>
+        <name>CF_QC_Reviewer__c</name>
+        <relationshipLabel><!-- Treasury Service (QC Reviewer) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Quality Control Duration --></label>
+        <name>CF_Quality_Control_Duration__c</name>
+    </fields>
+    <fields>
+        <label><!-- RDC Indemnification Agreement --></label>
+        <name>CF_RDC_Indemnification_Agreement__c</name>
+        <picklistValues>
+            <masterLabel>N/A</masterLabel>
+            <translation><!-- N/A --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>No</masterLabel>
+            <translation><!-- No --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes</masterLabel>
+            <translation><!-- Yes --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Region --></label>
+        <name>CF_Region__c</name>
+    </fields>
+    <fields>
+        <label><!-- Relationship Manager --></label>
+        <name>CF_Relationship_Manager__c</name>
+        <relationshipLabel><!-- Treasury Service (Relationship Manager) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Request Type --></label>
+        <name>CF_Request_Type__c</name>
+        <picklistValues>
+            <masterLabel>Cancelled</masterLabel>
+            <translation><!-- Cancelled --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Modify</masterLabel>
+            <translation><!-- Modify --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>New</masterLabel>
+            <translation><!-- New --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Requested ACH Limit --></label>
+        <name>CF_Requested_ACH_Limit__c</name>
+    </fields>
+    <fields>
+        <help><!-- Required for SFTP --></help>
+        <label><!-- SFTP Uses --></label>
+        <name>CF_SFTP_Uses__c</name>
+        <picklistValues>
+            <masterLabel>ACH Origination</masterLabel>
+            <translation><!-- ACH Origination --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ACH Returns</masterLabel>
+            <translation><!-- ACH Returns --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>BAI2</masterLabel>
+            <translation><!-- BAI2 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>I-Collect</masterLabel>
+            <translation><!-- I-Collect --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Positive Pay</masterLabel>
+            <translation><!-- Positive Pay --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Remittance</masterLabel>
+            <translation><!-- Remittance --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Sales Stage Duration --></label>
+        <name>CF_Sales_Stage_Duration__c</name>
+    </fields>
+    <fields>
+        <label><!-- Silverlake Setup Error Count --></label>
+        <name>CF_Silverlake_Setup_Error_Count__c</name>
+    </fields>
+    <fields>
+        <label><!-- Single Transaction Amount --></label>
+        <name>CF_Single_Transaction_Amount__c</name>
+    </fields>
+    <fields>
+        <label><!-- Sub-Stage --></label>
+        <name>CF_Sub_Stage__c</name>
+        <picklistValues>
+            <masterLabel>Awaiting Implementation / Confirm Install Date</masterLabel>
+            <translation><!-- Awaiting Implementation / Confirm Install Date --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Complete</masterLabel>
+            <translation><!-- Complete --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Customer Signature</masterLabel>
+            <translation><!-- Customer Signature --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Doc Prep</masterLabel>
+            <translation><!-- Doc Prep --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Implementation &amp; Post-Close Activities</masterLabel>
+            <translation><!-- Implementation &amp; Post-Close Activities --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Initial Setup</masterLabel>
+            <translation><!-- Initial Setup --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Order Entry</masterLabel>
+            <translation><!-- Order Entry --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Order Review</masterLabel>
+            <translation><!-- Order Review --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Quality Control</masterLabel>
+            <translation><!-- Quality Control --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Submitted for Approval</masterLabel>
+            <translation><!-- Submitted for Approval --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Submitted By --></label>
+        <name>CF_Submitted_By__c</name>
+        <relationshipLabel><!-- Treasury Service (Submitted By) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Suspend/Cancel Comments --></label>
+        <name>CF_Suspend_Cancel_Comments__c</name>
+    </fields>
+    <fields>
+        <label><!-- Transaction Type --></label>
+        <name>CF_Transaction_Type__c</name>
+        <picklistValues>
+            <masterLabel>Donations</masterLabel>
+            <translation><!-- Donations --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Fees</masterLabel>
+            <translation><!-- Fees --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Lunch Payments</masterLabel>
+            <translation><!-- Lunch Payments --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Other</masterLabel>
+            <translation><!-- Other --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Treasury Alerts --></label>
+        <name>CF_Treasury_Alerts__c</name>
+    </fields>
+    <fields>
+        <label><!-- Treasury Risk Rating --></label>
+        <name>CF_Treasury_Risk_Rating__c</name>
+    </fields>
+    <fields>
+        <label><!-- Treasury Sales Officer --></label>
+        <name>CF_Treasury_Sales_Officer__c</name>
+        <relationshipLabel><!-- Treasury Service (Treasury Sales Officer) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Treasury Sales Specialist --></label>
+        <name>CF_Treasury_Sales_Specialist__c</name>
+        <relationshipLabel><!-- Treasury Service (Treasury Sales Specialist) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Treasury Support Specialist --></label>
+        <name>CF_Treasury_Support_Specialist__c</name>
+        <relationshipLabel><!-- Treasury Service (Treasury Support Specialist) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- iPay Error Count --></label>
+        <name>CF_iPay_Error_Count__c</name>
+    </fields>
+    <fields>
+        <label><!-- Contact Reference --></label>
+        <name>Contact_Reference__c</name>
+        <relationshipLabel><!-- Treasury Service --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Create a New Contact --></label>
+        <name>Create_a_New_Contact__c</name>
+    </fields>
+    <fields>
+        <label><!-- EmbosName --></label>
+        <name>JHJX__EmbosName__c</name>
+    </fields>
+    <fields>
+        <label><!-- SecdEmbosName --></label>
+        <name>JHJX__SecdEmbosName__c</name>
+    </fields>
+    <fields>
+        <label><!-- Account ID --></label>
+        <name>LLC_BI__Account_ID__c</name>
+    </fields>
+    <fields>
+        <help><!-- Use this lookup field to associate an application record to this treasury service record. --></help>
+        <label><!-- Application --></label>
+        <name>LLC_BI__Application__c</name>
+        <relationshipLabel><!-- Treasury Service --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Automated Clearing House Service --></label>
+        <name>LLC_BI__Automated_Clearing_House_Service__c</name>
+        <relationshipLabel><!-- Treasury Service --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Branch --></label>
+        <name>LLC_BI__Branch__c</name>
+        <relationshipLabel><!-- Treasury Service --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Card Number --></label>
+        <name>LLC_BI__Card_Number__c</name>
+    </fields>
+    <fields>
+        <label><!-- Cash Service --></label>
+        <name>LLC_BI__Cash_Service__c</name>
+        <relationshipLabel><!-- Treasury Service --></relationshipLabel>
+    </fields>
+    <fields>
+        <label>Post-Close Completed By</label>
+        <name>LLC_BI__Commercial_Officer__c</name>
+        <relationshipLabel><!-- Treasury Service (Post-Close Completed By) --></relationshipLabel>
+    </fields>
+    <fields>
+        <help><!-- This field contains the Id of the object from which the treasury service was converted --></help>
+        <label><!-- Conversion Object --></label>
+        <name>LLC_BI__Conversion_Object__c</name>
+    </fields>
+    <fields>
+        <label><!-- Credit Memo --></label>
+        <name>LLC_BI__Credit_Memo__c</name>
+        <relationshipLabel><!-- Treasury Service --></relationshipLabel>
+    </fields>
+    <fields>
+        <help><!-- This field determines the default page within the nCino User Interface for this record. --></help>
+        <label><!-- Application --></label>
+        <name>LLC_BI__Default_App__c</name>
+    </fields>
+    <fields>
+        <label><!-- Depository Service --></label>
+        <name>LLC_BI__Depository_Service__c</name>
+        <relationshipLabel><!-- Treasury Service --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Disbursement Service --></label>
+        <name>LLC_BI__Disbursement_Service__c</name>
+        <relationshipLabel><!-- Treasury Service --></relationshipLabel>
+    </fields>
+    <fields>
+        <help><!-- Earliest date for the setup of products . --></help>
+        <label><!-- Effective Date --></label>
+        <name>LLC_BI__Effective_Date__c</name>
+    </fields>
+    <fields>
+        <help><!-- The first month that the customer should be billed for their Treasury Management Services. --></help>
+        <label><!-- First Billing Month --></label>
+        <name>LLC_BI__First_Billing_Month__c</name>
+        <picklistValues>
+            <masterLabel>April</masterLabel>
+            <translation><!-- April --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>August</masterLabel>
+            <translation><!-- August --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>December</masterLabel>
+            <translation><!-- December --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>February</masterLabel>
+            <translation><!-- February --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>January</masterLabel>
+            <translation><!-- January --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>July</masterLabel>
+            <translation><!-- July --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>June</masterLabel>
+            <translation><!-- June --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>March</masterLabel>
+            <translation><!-- March --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>May</masterLabel>
+            <translation><!-- May --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>November</masterLabel>
+            <translation><!-- November --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>October</masterLabel>
+            <translation><!-- October --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>September</masterLabel>
+            <translation><!-- September --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Implementation Instructions --></label>
+        <name>LLC_BI__Implementation_Instructions__c</name>
+    </fields>
+    <fields>
+        <label><!-- Is ATM Card --></label>
+        <name>LLC_BI__Is_ATM_Card__c</name>
+    </fields>
+    <fields>
+        <label><!-- Is Active --></label>
+        <name>LLC_BI__Is_Active__c</name>
+    </fields>
+    <fields>
+        <help><!-- Select this checkbox when a current treasury service is under maintenance. --></help>
+        <label><!-- Is Under Maintenance --></label>
+        <name>LLC_BI__Is_Under_Maintenance__c</name>
+    </fields>
+    <fields>
+        <label><!-- Lockbox Service --></label>
+        <name>LLC_BI__Lockbox_Service__c</name>
+        <relationshipLabel><!-- Treasury Service --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Maintenance App --></label>
+        <name>LLC_BI__Maintenance_App__c</name>
+    </fields>
+    <fields>
+        <label><!-- Miscellaneous Service --></label>
+        <name>LLC_BI__Miscellaneous_Service__c</name>
+        <relationshipLabel><!-- Treasury Service --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Online Banking Service --></label>
+        <name>LLC_BI__Online_Banking_Service__c</name>
+        <relationshipLabel><!-- Treasury Service --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Overdraft Consent --></label>
+        <name>LLC_BI__Overdraft_Consent__c</name>
+        <picklistValues>
+            <masterLabel>Refuse overdraft service</masterLabel>
+            <translation><!-- Refuse overdraft service --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Request overdraft service</masterLabel>
+            <translation><!-- Request overdraft service --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- Enter the primary name that displays on the debit card. --></help>
+        <label><!-- Primary Emboss Name --></label>
+        <name>LLC_BI__Primary_Emboss_Name__c</name>
+    </fields>
+    <fields>
+        <label><!-- Product Package --></label>
+        <name>LLC_BI__Product_Package__c</name>
+        <relationshipLabel><!-- Treasury Services --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Product --></label>
+        <name>LLC_BI__Product_Reference__c</name>
+        <relationshipLabel><!-- Treasury Service --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Reason for Suspend/Cancel --></label>
+        <name>LLC_BI__Reason_for_Suspend_Cancel__c</name>
+        <picklistValues>
+            <masterLabel>Client Resource Availability</masterLabel>
+            <translation><!-- Client Resource Availability --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Client Technical Requirements</masterLabel>
+            <translation><!-- Client Technical Requirements --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Current Provider Delay</masterLabel>
+            <translation><!-- Current Provider Delay --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Service No Longer Needed</masterLabel>
+            <translation><!-- Service No Longer Needed --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Vendor Delay</masterLabel>
+            <translation><!-- Vendor Delay --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Reconciliation Service --></label>
+        <name>LLC_BI__Reconciliation_Service__c</name>
+        <relationshipLabel><!-- Treasury Service --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Relationship --></label>
+        <name>LLC_BI__Relationship__c</name>
+        <relationshipLabel><!-- Treasury Service --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Remote Deposit Capture Service --></label>
+        <name>LLC_BI__Remote_Deposit_Capture_Service__c</name>
+        <relationshipLabel><!-- Treasury Service --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Reporting Service --></label>
+        <name>LLC_BI__Reporting_Service__c</name>
+        <relationshipLabel><!-- Treasury Service --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Scenario --></label>
+        <name>LLC_BI__Scenario__c</name>
+        <relationshipLabel><!-- Treasury Service --></relationshipLabel>
+    </fields>
+    <fields>
+        <help><!-- Enter the secondary name that displays on the debit card. --></help>
+        <label><!-- Secondary Emboss Name --></label>
+        <name>LLC_BI__Secondary_Emboss_Name__c</name>
+    </fields>
+    <fields>
+        <label><!-- Stage --></label>
+        <name>LLC_BI__Stage__c</name>
+        <picklistValues>
+            <masterLabel>Fulfillment</masterLabel>
+            <translation><!-- Fulfillment --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Onboarding</masterLabel>
+            <translation><!-- Onboarding --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Sales</masterLabel>
+            <translation><!-- Sales --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Servicing</masterLabel>
+            <translation><!-- Servicing --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Status --></label>
+        <name>LLC_BI__Status__c</name>
+        <picklistValues>
+            <masterLabel>Complete</masterLabel>
+            <translation><!-- Complete --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>On Hold</masterLabel>
+            <translation><!-- On Hold --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Open</masterLabel>
+            <translation><!-- Open --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Rejected</masterLabel>
+            <translation><!-- Rejected --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Withdrawn</masterLabel>
+            <translation><!-- Withdrawn --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Sweep Service --></label>
+        <name>LLC_BI__Sweep_Service__c</name>
+        <relationshipLabel><!-- Treasury Service --></relationshipLabel>
+    </fields>
+    <fields>
+        <label>Initial Setup Completed By</label>
+        <name>LLC_BI__TM_Officer__c</name>
+        <relationshipLabel><!-- Treasury Service (Initial Setup Completed By) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Wire Service --></label>
+        <name>LLC_BI__Wire_Service__c</name>
+        <relationshipLabel><!-- Treasury Service --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Zero Balance Account Service --></label>
+        <name>LLC_BI__Zero_Balance_Account_Service__c</name>
+        <relationshipLabel><!-- Treasury Service --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Treasury Service Number --></label>
+        <name>LLC_BI__lookupKey__c</name>
+    </fields>
+    <fields>
+        <label><!-- LegacyId --></label>
+        <name>LegacyId__c</name>
+    </fields>
+    <fields>
+        <label><!-- Proforma --></label>
+        <name>Proforma__c</name>
+    </fields>
+    <validationRules>
+        <errorMessage><!-- The Treasury Service record is not ready for maintenance. --></errorMessage>
+        <name>CVR_Maintenance_Request_Initiation</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Please update the Treasury Service limit(s) or Deposit Value before advancing to Onboarding. --></errorMessage>
+        <name>CVR_Onboarding_Stage_movement_check</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Error 1 Description is required when Error 1 Found is Other. --></errorMessage>
+        <name>CVR_QC_Error1_Description_is_Required</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Error 2 Description is required when Error 2 Found is Other. --></errorMessage>
+        <name>CVR_QC_Error2_Description_is_Required</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Error 3 Description is required when Error 3 Found is Other. --></errorMessage>
+        <name>CVR_QC_Error3_Description_is_Required</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Please ensure Daily Deposit Amount, Single Transaction Amount, and Daily Check Count are filled out before changing the Sub-Stage. --></errorMessage>
+        <name>CVR_RDC_Missing_Info</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- A current Treasury Review must be completed in order to update product limits. --></errorMessage>
+        <name>CVR_RDC_Payment_Portal_Maintenance</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Please provide &apos;Is Scanner in Stock?&apos; Information under Scanner Information sub-route to continue to Onboarding. --></errorMessage>
+        <name>CVR_Scanner_Info_RDC_Products</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Treasury Review is pending for this record. Please complete the Review before updating the Sub-stage. --></errorMessage>
+        <name>CVR_TS_Fulfillment_Stage_Validation</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Please add at least 1 ACH Company to continue to Onboarding. --></errorMessage>
+        <name>CVR_TS_Onboarding_Stage_For_ACH_Products</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Please add at least 1 Scanner Information to continue to Onboarding. --></errorMessage>
+        <name>CVR_TS_Onboarding_Stage_For_RDC_Products</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Please provide required Sweep Setup details - Account #(Parent) to continue to Onboarding. --></errorMessage>
+        <name>CVR_TS_Onboarding_Stage_For_Sweep_Prods</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Please add at least 1 Setup Information to continue to Onboarding. --></errorMessage>
+        <name>CVR_TS_Onboarding_Stage_MS_FS_Products</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Please add at least 1 Administrator to continue to Onboarding. --></errorMessage>
+        <name>CVR_TS_Onboarding_Stage_Multi_User_Prod</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Please add at least 1 Account Access to continue to Onboarding. --></errorMessage>
+        <name>CVR_TS_Onboarding_Stage_Portal_Deposit</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- The CIF #, NAICS Code, and Billing Account must all be completed before moving to the Onboarding stage. --></errorMessage>
+        <name>CVR_TS_Onboarding_Stage_Validation</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Please add at least 1 Wire Account to continue to Onboarding. --></errorMessage>
+        <name>CVR_TS_Onboarding_Stage_WIRE_Products</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Please select the Treasury Support Specialist in Team Details route before advancing to Onboarding. --></errorMessage>
+        <name>CVR_TSupportSpecialist_Required</name>
+    </validationRules>
+    <webLinks>
+        <label><!-- Credit_Memo --></label>
+        <name>LLC_BI__Credit_Memo</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Form_Generation --></label>
+        <name>LLC_BI__Form_Generation</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Mass_Actions --></label>
+        <name>LLC_BI__Mass_Actions</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Mass_Add_Analyzed_Accounts --></label>
+        <name>LLC_BI__Mass_Add_Analyzed_Accounts</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Mass_Add_Authorized_Users --></label>
+        <name>LLC_BI__Mass_Add_Authorized_Users</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Order_Entry --></label>
+        <name>LLC_BI__Order_Entry</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- nCino_Mass_Add_Authorized_Users --></label>
+        <name>nCino_Mass_Add_Authorized_Users</name>
+    </webLinks>
+</CustomObjectTranslation>

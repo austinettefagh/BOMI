@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <label><!-- Contact --></label>
+        <name>LLC_BI__Contact__c</name>
+        <relationshipLabel><!-- Credit Reports --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- FICO Score --></label>
+        <name>LLC_BI__FICO_Score__c</name>
+    </fields>
+    <fields>
+        <label><!-- OFAC --></label>
+        <name>LLC_BI__OFAC__c</name>
+    </fields>
+</CustomObjectTranslation>

@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <help><!-- The field is used to reference the Application object. --></help>
+        <label><!-- Application --></label>
+        <name>nSBA__Application__c</name>
+        <relationshipLabel><!-- SBA Loan with Application --></relationshipLabel>
+    </fields>
+    <fields>
+        <help><!-- This field is used to summarize the Assets Source for the Borrower&apos;s Injection. --></help>
+        <label><!-- Assets Source --></label>
+        <name>nSBA__Assets_Source__c</name>
+    </fields>
+    <fields>
+        <help><!-- This field is used to summarize the Cash Source for the Borrower&apos;s Injection. --></help>
+        <label><!-- Cash Source --></label>
+        <name>nSBA__Cash_Source__c</name>
+    </fields>
+    <fields>
+        <help><!-- This field is used to summarize the Other for the Borrower&apos;s Injection. --></help>
+        <label><!-- Other for Borrower&apos;s Injection --></label>
+        <name>nSBA__Other_for_Borrowers_Injection__c</name>
+    </fields>
+    <fields>
+        <help><!-- This field is used to summarize the Total of Amount Disbursed for the Use of Proceeds. --></help>
+        <label><!-- Total of Amount Disbursed --></label>
+        <name>nSBA__Total_of_Amount_Disbursed__c</name>
+    </fields>
+    <fields>
+        <help><!-- This field is used to summarize the Total of Applicant Equity Injection for the Use of Proceeds. --></help>
+        <label><!-- Total of Applicant Equity Injection --></label>
+        <name>nSBA__Total_of_Applicant_Equity_Injection__c</name>
+    </fields>
+    <fields>
+        <help><!-- This field is used to summarize the Total of Assets Source for the Borrower&apos;s Injection. --></help>
+        <label><!-- Total of Assets Source --></label>
+        <name>nSBA__Total_of_Assets_Source__c</name>
+    </fields>
+    <fields>
+        <help><!-- This field is used to summarize the Total of Authorized Amount Remaining for the Use of Proceeds. --></help>
+        <label><!-- Total of Authorized Amount Remaining --></label>
+        <name>nSBA__Total_of_Authorized_Amount_Remaining__c</name>
+    </fields>
+    <fields>
+        <help><!-- This field is used to summarize the Total of Borrower Injection. --></help>
+        <label><!-- Total of Borrower Injection --></label>
+        <name>nSBA__Total_of_Borrower_Injection__c</name>
+    </fields>
+    <fields>
+        <help><!-- This field is used to summarize the Total of Cash Source for the Borrower&apos;s Injection. --></help>
+        <label><!-- Total of Cash Source --></label>
+        <name>nSBA__Total_of_Cash_Source__c</name>
+    </fields>
+    <fields>
+        <help><!-- This field is used to summarize the Total of Other Financing for the Use of Proceeds. --></help>
+        <label><!-- Total of Other Financing --></label>
+        <name>nSBA__Total_of_Other_Financing__c</name>
+    </fields>
+    <fields>
+        <help><!-- This field is used to summarize the Total of Other for the Borrower&apos;s Injection. --></help>
+        <label><!-- Total of Other for Borrower&apos;s Injection --></label>
+        <name>nSBA__Total_of_Other_for_Borrowers_Injection__c</name>
+    </fields>
+    <fields>
+        <help><!-- This field is used to summarize the Total of Proceed Amount for the Use of Proceeds. --></help>
+        <label><!-- Total of Proceed Amount --></label>
+        <name>nSBA__Total_of_Proceed_Amount__c</name>
+    </fields>
+    <fields>
+        <help><!-- This field is used to summarize the Total of Seller Contribution to Equity for the Borrower&apos;s Injection. --></help>
+        <label><!-- Total of Seller Contribution to Equity --></label>
+        <name>nSBA__Total_of_Seller_Contribution_to_Equity__c</name>
+    </fields>
+    <fields>
+        <help><!-- This field is used to summarize the Total of Use of Proceeds. --></help>
+        <label><!-- Total of Use of Proceeds --></label>
+        <name>nSBA__Total_of_Use_of_Proceeds__c</name>
+    </fields>
+</CustomObjectTranslation>

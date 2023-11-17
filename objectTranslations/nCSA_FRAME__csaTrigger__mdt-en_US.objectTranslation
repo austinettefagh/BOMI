@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <label><!-- Class Name --></label>
+        <name>nCSA_FRAME__Class_Name__c</name>
+    </fields>
+    <fields>
+        <label><!-- Object API Name --></label>
+        <name>nCSA_FRAME__Object_API_Name__c</name>
+    </fields>
+    <fields>
+        <label><!-- csaDataInstaller --></label>
+        <name>nCSA_FRAME__csaDataInstaller__c</name>
+        <relationshipLabel><!-- csaTriggers --></relationshipLabel>
+    </fields>
+    <fields>
+        <help><!-- Should this Trigger be added to the pipeline --></help>
+        <label><!-- Active --></label>
+        <name>nCSA_FRAME__isActive__c</name>
+    </fields>
+    <fields>
+        <help><!-- Run Trigger Handler in after delete event context --></help>
+        <label><!-- After Delete --></label>
+        <name>nCSA_FRAME__isAfterDelete__c</name>
+    </fields>
+    <fields>
+        <label><!-- After Insert --></label>
+        <name>nCSA_FRAME__isAfterInsert__c</name>
+    </fields>
+    <fields>
+        <help><!-- Run Trigger Handler in after update event context --></help>
+        <label><!-- After Update --></label>
+        <name>nCSA_FRAME__isAfterUpdate__c</name>
+    </fields>
+    <fields>
+        <help><!-- Run Trigger Handler in before delete event context --></help>
+        <label><!-- Before Delete --></label>
+        <name>nCSA_FRAME__isBeforeDelete__c</name>
+    </fields>
+    <fields>
+        <help><!-- Run Trigger Handler in before insert event context --></help>
+        <label><!-- Before Insert --></label>
+        <name>nCSA_FRAME__isBeforeInsert__c</name>
+    </fields>
+    <fields>
+        <help><!-- Run Trigger Handler in before update event context --></help>
+        <label><!-- Before Update --></label>
+        <name>nCSA_FRAME__isBeforeUpdate__c</name>
+    </fields>
+</CustomObjectTranslation>

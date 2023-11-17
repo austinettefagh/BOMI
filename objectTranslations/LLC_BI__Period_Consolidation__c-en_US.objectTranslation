@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <help><!-- This field is required. The system automatically populates this required lookup field to reference the destination period in the consolidation bundle. --></help>
+        <label><!-- Destination Period --></label>
+        <name>LLC_BI__Destination_Period__c</name>
+        <relationshipLabel><!-- Destination Period Consolidations --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Ownership Percentage --></label>
+        <name>LLC_BI__Ownership_Percentage__c</name>
+    </fields>
+    <fields>
+        <help><!-- The system automatically populates this required picklist field to indicate the type of aggregation. By default, it is Consolidations. --></help>
+        <label><!-- Purpose --></label>
+        <name>LLC_BI__Purpose__c</name>
+        <picklistValues>
+            <masterLabel>Average</masterLabel>
+            <translation><!-- Average --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Consolidation</masterLabel>
+            <translation><!-- Consolidation --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Selected --></label>
+        <name>LLC_BI__Selected__c</name>
+    </fields>
+    <fields>
+        <help><!-- This field is required. The system automatically populates this required lookup field to reference the source period in the consolidation bundle. --></help>
+        <label><!-- Source Period --></label>
+        <name>LLC_BI__Source_Period__c</name>
+        <relationshipLabel><!-- Source Period Consolidations --></relationshipLabel>
+    </fields>
+    <fields>
+        <help><!-- This field is optional. The system automatically populates this optional lookup field to reference the supplemental period in the consolidation bundle. --></help>
+        <label><!-- Supplemental Period --></label>
+        <name>LLC_BI__Supplemental_Period__c</name>
+        <relationshipLabel><!-- Supplemental Period Consolidations --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- lookupKey --></label>
+        <name>LLC_BI__lookupKey__c</name>
+    </fields>
+</CustomObjectTranslation>

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <label><!-- Add Date To Placeholder --></label>
+        <name>nFUSE__Add_Date_To_Placeholder_Name__c</name>
+    </fields>
+    <fields>
+        <label><!-- Content Type --></label>
+        <name>nFUSE__Content_Type__c</name>
+    </fields>
+    <fields>
+        <label><!-- Placeholder Name --></label>
+        <name>nFUSE__Doc_Class__c</name>
+    </fields>
+    <fields>
+        <label><!-- Document Manager Name --></label>
+        <name>nFUSE__Doc_Man__c</name>
+    </fields>
+    <fields>
+        <label><!-- Document Tab --></label>
+        <name>nFUSE__Doc_Tab__c</name>
+    </fields>
+    <fields>
+        <label><!-- Category Name --></label>
+        <name>nFUSE__Doc_Type__c</name>
+    </fields>
+    <fields>
+        <label><!-- File Name --></label>
+        <name>nFUSE__File_Name__c</name>
+    </fields>
+</CustomObjectTranslation>

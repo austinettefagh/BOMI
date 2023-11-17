@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fieldSets>
+        <label><!-- Commercial --></label>
+        <name>LLC_BI__Commercial</name>
+    </fieldSets>
+    <fieldSets>
+        <label><!-- Residential --></label>
+        <name>LLC_BI__Residential</name>
+    </fieldSets>
+    <fields>
+        <label><!-- Annual Income --></label>
+        <name>LLC_BI__Annual_Income__c</name>
+    </fields>
+    <fields>
+        <help><!-- This field represents the unit of measurement used to indicate the size of the area. --></help>
+        <label><!-- Area Measurement --></label>
+        <name>LLC_BI__Area_Measurement__c</name>
+        <picklistValues>
+            <masterLabel>Sq Feet</masterLabel>
+            <translation><!-- Sq Feet --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Sq Meters</masterLabel>
+            <translation><!-- Sq Meters --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Break Date --></label>
+        <name>LLC_BI__Break_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Collateral --></label>
+        <name>LLC_BI__Collateral__c</name>
+        <relationshipLabel><!-- Tenancies --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Description --></label>
+        <name>LLC_BI__Description__c</name>
+    </fields>
+    <fields>
+        <label><!-- Lease End --></label>
+        <name>LLC_BI__Lease_End__c</name>
+    </fields>
+    <fields>
+        <label><!-- Lease Origination --></label>
+        <name>LLC_BI__Lease_Origination__c</name>
+    </fields>
+    <fields>
+        <label><!-- Lease Type --></label>
+        <name>LLC_BI__Lease_Type__c</name>
+    </fields>
+    <fields>
+        <label><!-- Monthly Income --></label>
+        <name>LLC_BI__Monthly_Income__c</name>
+    </fields>
+    <fields>
+        <label><!-- Monthly Rent --></label>
+        <name>LLC_BI__Monthly_Rent__c</name>
+    </fields>
+    <fields>
+        <label><!-- # Of Occupied Units --></label>
+        <name>LLC_BI__Occupied_Units__c</name>
+    </fields>
+    <fields>
+        <label><!-- Parent Tenant Information --></label>
+        <name>LLC_BI__Parent_Tenant_Information__c</name>
+        <relationshipLabel><!-- Tenant Information --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Price Per Area Unit Per Year --></label>
+        <name>LLC_BI__Price_Per_Sq_Ft_Per_Year__c</name>
+    </fields>
+    <fields>
+        <label><!-- Relationship --></label>
+        <name>LLC_BI__Relationship__c</name>
+        <relationshipLabel><!-- Tenancies --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Scenario --></label>
+        <name>LLC_BI__Scenario__c</name>
+    </fields>
+    <fields>
+        <label><!-- Searchable Tenant --></label>
+        <name>LLC_BI__Searchable_Tenant__c</name>
+    </fields>
+    <fields>
+        <label><!-- Spread Statement Period --></label>
+        <name>LLC_BI__Spread_Statement_Period__c</name>
+        <relationshipLabel><!-- Tenant Information --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Spread Statement Template --></label>
+        <name>LLC_BI__Spread_Statement_Template__c</name>
+        <relationshipLabel><!-- Tenant Information --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Floor Area --></label>
+        <name>LLC_BI__Sq_Feet__c</name>
+    </fields>
+    <fields>
+        <label><!-- Tenant Name --></label>
+        <name>LLC_BI__Tenant_Name__c</name>
+    </fields>
+    <fields>
+        <label><!-- Tenant Type --></label>
+        <name>LLC_BI__Tenant_Type__c</name>
+        <picklistValues>
+            <masterLabel>Commercial</masterLabel>
+            <translation><!-- Commercial --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Residential</masterLabel>
+            <translation><!-- Residential --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- # Of Units --></label>
+        <name>LLC_BI__Total_Units__c</name>
+    </fields>
+    <fields>
+        <label><!-- Type --></label>
+        <name>LLC_BI__Type__c</name>
+        <picklistValues>
+            <masterLabel>Anchor</masterLabel>
+            <translation><!-- Anchor --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Other</masterLabel>
+            <translation><!-- Other --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Shadow</masterLabel>
+            <translation><!-- Shadow --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Unit Type --></label>
+        <name>LLC_BI__Unit_Type__c</name>
+    </fields>
+    <fields>
+        <label><!-- Unit --></label>
+        <name>LLC_BI__Unit__c</name>
+    </fields>
+    <fields>
+        <label><!-- lookupKey --></label>
+        <name>LLC_BI__lookupKey__c</name>
+    </fields>
+</CustomObjectTranslation>

@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <description>This is a Custom Metadata Type to relate our report names to the classes which generate them.</description>
+    <fields>
+        <fullName>revcult__App_Namespace__c</fullName>
+        <deprecated>false</deprecated>
+        <description>This field represents the namespace which this report supports</description>
+        <externalId>false</externalId>
+        <fieldManageability>DeveloperControlled</fieldManageability>
+        <label>App Namespace</label>
+        <length>40</length>
+        <required>true</required>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>revcult__Component_Name__c</fullName>
+        <deprecated>false</deprecated>
+        <description>This is the name of the Vue Component which allows the user to run the report</description>
+        <externalId>false</externalId>
+        <fieldManageability>DeveloperControlled</fieldManageability>
+        <label>Component Name</label>
+        <length>80</length>
+        <required>false</required>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>revcult__Icon__c</fullName>
+        <deprecated>false</deprecated>
+        <description>This is the icon displayed next to the report on the report selection screen</description>
+        <externalId>false</externalId>
+        <fieldManageability>DeveloperControlled</fieldManageability>
+        <label>Icon</label>
+        <length>80</length>
+        <required>false</required>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>revcult__Report_Generator_Class_Name__c</fullName>
+        <deprecated>false</deprecated>
+        <description>This field contains the name of the class which generates data for this report</description>
+        <externalId>false</externalId>
+        <fieldManageability>DeveloperControlled</fieldManageability>
+        <label>Report Generator Class Name</label>
+        <length>80</length>
+        <required>true</required>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <label>Report</label>
+    <pluralLabel>Reports</pluralLabel>
+    <visibility>Public</visibility>
+</CustomObject>

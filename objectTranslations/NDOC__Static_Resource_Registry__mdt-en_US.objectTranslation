@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <label><!-- Folder Location --></label>
+        <name>NDOC__Folder_Location__c</name>
+    </fields>
+    <fields>
+        <label><!-- Is Active --></label>
+        <name>NDOC__Is_Active_V2__c</name>
+    </fields>
+    <fields>
+        <label><!-- -D Is Active --></label>
+        <name>NDOC__Is_Active__c</name>
+    </fields>
+    <fields>
+        <label><!-- Order of Execution --></label>
+        <name>NDOC__Order_of_Execution__c</name>
+    </fields>
+    <fields>
+        <label><!-- Permission Set --></label>
+        <name>NDOC__Permission_Set__c</name>
+    </fields>
+    <fields>
+        <label><!-- Relative Path --></label>
+        <name>NDOC__Relative_Path__c</name>
+    </fields>
+    <fields>
+        <label><!-- sObject Type --></label>
+        <name>NDOC__sObject_Type__c</name>
+    </fields>
+</CustomObjectTranslation>

@@ -1,0 +1,631 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Flow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <apiVersion>55.0</apiVersion>
+    <assignments>
+        <name>Assign_F_S_Requested_Date</name>
+        <label>Assign F/S Requested Date</label>
+        <locationX>308</locationX>
+        <locationY>803</locationY>
+        <assignmentItems>
+            <assignToReference>$Record.CF_F_S_Requested_Date__c</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>TodayDate</elementReference>
+            </value>
+        </assignmentItems>
+        <connector>
+            <targetReference>Check_Spread_Status1</targetReference>
+        </connector>
+    </assignments>
+    <assignments>
+        <name>Assign_Primary_Phone</name>
+        <label>Assign Primary Phone</label>
+        <locationX>308</locationX>
+        <locationY>2603</locationY>
+        <assignmentItems>
+            <assignToReference>$Record.Phone</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>$Record.PersonMobilePhone</elementReference>
+            </value>
+        </assignmentItems>
+    </assignments>
+    <assignments>
+        <name>F_S_Received_Date</name>
+        <label>F/S Received Date</label>
+        <locationX>308</locationX>
+        <locationY>1103</locationY>
+        <assignmentItems>
+            <assignToReference>$Record.CF_F_S_Received_Date__c</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>TodayDate</elementReference>
+            </value>
+        </assignmentItems>
+        <connector>
+            <targetReference>Check_Spread_Status2</targetReference>
+        </connector>
+    </assignments>
+    <assignments>
+        <name>Last_Spreads_Complete_Date</name>
+        <label>Last Spreads Complete Date</label>
+        <locationX>308</locationX>
+        <locationY>1403</locationY>
+        <assignmentItems>
+            <assignToReference>$Record.CF_Last_Spreads_Completed_Date__c</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>TodayDate</elementReference>
+            </value>
+        </assignmentItems>
+        <connector>
+            <targetReference>Check_Spread_Status3</targetReference>
+        </connector>
+    </assignments>
+    <assignments>
+        <name>LOS_Review_Status_Assignment</name>
+        <label>LOS Review Status Assignment</label>
+        <locationX>440</locationX>
+        <locationY>2003</locationY>
+        <assignmentItems>
+            <assignToReference>$Record.CF_LOS_Review_Status__c</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <stringValue>Ready for Risk Rating</stringValue>
+            </value>
+        </assignmentItems>
+        <connector>
+            <targetReference>LOS_Treasury_Review_Status_Check</targetReference>
+        </connector>
+    </assignments>
+    <assignments>
+        <name>LOS_Review_Status_Blank</name>
+        <label>LOS Review Status = Blank</label>
+        <locationX>440</locationX>
+        <locationY>2303</locationY>
+        <assignmentItems>
+            <assignToReference>$Record.CF_LOS_Review_Status__c</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <stringValue></stringValue>
+            </value>
+        </assignmentItems>
+        <connector>
+            <targetReference>Check_Mobile_on_Person_Account</targetReference>
+        </connector>
+    </assignments>
+    <assignments>
+        <name>Target_Review_Completion_Date</name>
+        <label>Target Review Completion Date</label>
+        <locationX>308</locationX>
+        <locationY>1703</locationY>
+        <assignmentItems>
+            <assignToReference>$Record.CF_Target_Review_Completion_Date__c</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>SixtyDaysfromToday</elementReference>
+            </value>
+        </assignmentItems>
+        <connector>
+            <targetReference>Spread_Status_check_for_Spreads_Complete</targetReference>
+        </connector>
+    </assignments>
+    <assignments>
+        <name>Treasury_Review_Status_Assignment</name>
+        <label>Treasury Review Status Assignment</label>
+        <locationX>176</locationX>
+        <locationY>2003</locationY>
+        <assignmentItems>
+            <assignToReference>$Record.CF_Treasury_Review_Status__c</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <stringValue>Ready for Treasury Risk Rating</stringValue>
+            </value>
+        </assignmentItems>
+        <connector>
+            <targetReference>LOS_Treasury_Review_Status_Check</targetReference>
+        </connector>
+    </assignments>
+    <assignments>
+        <name>Treasury_Review_Status_Blank</name>
+        <label>Treasury Review Status = Blank</label>
+        <locationX>176</locationX>
+        <locationY>2303</locationY>
+        <assignmentItems>
+            <assignToReference>$Record.CF_Treasury_Review_Status__c</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <stringValue></stringValue>
+            </value>
+        </assignmentItems>
+        <connector>
+            <targetReference>Check_Mobile_on_Person_Account</targetReference>
+        </connector>
+    </assignments>
+    <assignments>
+        <name>Update_Default_App_name_0</name>
+        <label>Update Default App name</label>
+        <locationX>308</locationX>
+        <locationY>503</locationY>
+        <assignmentItems>
+            <assignToReference>$Record.LLC_BI__Default_App__c</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>Def_App_Name</elementReference>
+            </value>
+        </assignmentItems>
+        <connector>
+            <targetReference>Check_Spread_Status</targetReference>
+        </connector>
+    </assignments>
+    <constants>
+        <name>Def_App_Name</name>
+        <dataType>String</dataType>
+        <value>
+            <stringValue>master-relationship-TBOM.master-relationship-loan-products-tbom</stringValue>
+        </value>
+    </constants>
+    <decisions>
+        <name>Check_Mobile_on_Person_Account</name>
+        <label>Check Mobile on Person Account</label>
+        <locationX>440</locationX>
+        <locationY>2495</locationY>
+        <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
+        <rules>
+            <name>Mobile_populated</name>
+            <conditionLogic>(1 AND 2 AND 4) OR (1 AND 3 AND 4)</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record.PersonMobilePhone</leftValueReference>
+                <operator>IsNull</operator>
+                <rightValue>
+                    <booleanValue>false</booleanValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>IsNew</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <booleanValue>true</booleanValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.PersonMobilePhone</leftValueReference>
+                <operator>IsChanged</operator>
+                <rightValue>
+                    <booleanValue>true</booleanValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.Phone</leftValueReference>
+                <operator>IsNull</operator>
+                <rightValue>
+                    <booleanValue>true</booleanValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Assign_Primary_Phone</targetReference>
+            </connector>
+            <label>Mobile populated</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <name>Check_Spread_Status</name>
+        <label>Check Spread Status</label>
+        <locationX>440</locationX>
+        <locationY>695</locationY>
+        <defaultConnector>
+            <targetReference>Check_Spread_Status1</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
+        <rules>
+            <name>Spread_Status_F_S_Requested</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record.CF_Current_Spreads_Status__c</leftValueReference>
+                <operator>IsChanged</operator>
+                <rightValue>
+                    <booleanValue>true</booleanValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.CF_Current_Spreads_Status__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>F/S Requested</stringValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Assign_F_S_Requested_Date</targetReference>
+            </connector>
+            <label>Spread Status = F/S Requested</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <name>Check_Spread_Status1</name>
+        <label>Check Spread Status</label>
+        <locationX>440</locationX>
+        <locationY>995</locationY>
+        <defaultConnector>
+            <targetReference>Check_Spread_Status2</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
+        <rules>
+            <name>Spread_Status_F_S_Reveived</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record.CF_Current_Spreads_Status__c</leftValueReference>
+                <operator>IsChanged</operator>
+                <rightValue>
+                    <booleanValue>true</booleanValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.CF_Current_Spreads_Status__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>F/S Received, Ready for Spreads</stringValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>F_S_Received_Date</targetReference>
+            </connector>
+            <label>Spread Status = F/S Reveived</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <name>Check_Spread_Status2</name>
+        <label>Check Spread Status</label>
+        <locationX>440</locationX>
+        <locationY>1295</locationY>
+        <defaultConnector>
+            <targetReference>Check_Spread_Status3</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
+        <rules>
+            <name>Spread_Status_Spreads_Complete</name>
+            <conditionLogic>1 AND (2 OR 3)</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record.CF_Current_Spreads_Status__c</leftValueReference>
+                <operator>IsChanged</operator>
+                <rightValue>
+                    <booleanValue>true</booleanValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.CF_Current_Spreads_Status__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Spreads Complete, Review Needed</stringValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.CF_Current_Spreads_Status__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Spreads Complete, No Review Needed</stringValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Last_Spreads_Complete_Date</targetReference>
+            </connector>
+            <label>Spread Status = Spreads Complete</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <name>Check_Spread_Status3</name>
+        <label>Check Spread Status</label>
+        <locationX>440</locationX>
+        <locationY>1595</locationY>
+        <defaultConnector>
+            <targetReference>Spread_Status_check_for_Spreads_Complete</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
+        <rules>
+            <name>Spread_Status_F_S_Review_Needed</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record.CF_Current_Spreads_Status__c</leftValueReference>
+                <operator>IsChanged</operator>
+                <rightValue>
+                    <booleanValue>true</booleanValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.CF_Current_Spreads_Status__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>F/S Needed</stringValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Target_Review_Completion_Date</targetReference>
+            </connector>
+            <label>Spread Status = F/S Review Needed</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <name>Is_Dataload_user</name>
+        <label>Is Dataload user?</label>
+        <locationX>176</locationX>
+        <locationY>287</locationY>
+        <defaultConnector>
+            <targetReference>Is_New</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
+        <rules>
+            <name>Yes1</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>$User.No_Workflow__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <booleanValue>true</booleanValue>
+                </rightValue>
+            </conditions>
+            <label>Yes</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <name>Is_New</name>
+        <label>Is New ?</label>
+        <locationX>440</locationX>
+        <locationY>395</locationY>
+        <defaultConnector>
+            <targetReference>Check_Spread_Status</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
+        <rules>
+            <name>yes</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>IsNew</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <booleanValue>true</booleanValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Update_Default_App_name_0</targetReference>
+            </connector>
+            <label>yes</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <description>Handling the negative scenario of below conditions
+
+If Spreads Status to &quot;Spreads Complete, Review Needed&quot;
+Then the LOS Review status updates to &quot;Ready for Risk Rating&quot;
+
+If Treasury Financial Account = True AND Spreads Status to &quot;Spreads Complete, Review Needed&quot;
+Then the Treasury Review status updates to &quot;Ready for Treasury Risk Rating&quot;</description>
+        <name>LOS_Treasury_Review_Status_Check</name>
+        <label>LOS &amp; Treasury Review Status Check</label>
+        <locationX>440</locationX>
+        <locationY>2195</locationY>
+        <defaultConnector>
+            <targetReference>Check_Mobile_on_Person_Account</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
+        <rules>
+            <name>Unchecking_Treasury_Review_Status</name>
+            <conditionLogic>(1 AND 2 AND 3) OR (4 AND 5 AND 6)</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record.CF_Treasury_Financial_Account__c</leftValueReference>
+                <operator>IsChanged</operator>
+                <rightValue>
+                    <booleanValue>true</booleanValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.CF_Treasury_Financial_Account__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <booleanValue>false</booleanValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.CF_Current_Spreads_Status__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Spreads Complete, Review Needed</stringValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.CF_Treasury_Financial_Account__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <booleanValue>true</booleanValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.CF_Current_Spreads_Status__c</leftValueReference>
+                <operator>IsChanged</operator>
+                <rightValue>
+                    <booleanValue>true</booleanValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record__Prior.CF_Current_Spreads_Status__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Spreads Complete, Review Needed</stringValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Treasury_Review_Status_Blank</targetReference>
+            </connector>
+            <label>Unchecking Treasury Review Status</label>
+        </rules>
+        <rules>
+            <name>Unchecking_LOS_Review_Satus</name>
+            <conditionLogic>(1 AND 2 AND 3) OR (4 AND 5 AND 6)</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record.CF_Treasury_Financial_Account__c</leftValueReference>
+                <operator>IsChanged</operator>
+                <rightValue>
+                    <booleanValue>true</booleanValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.CF_Treasury_Financial_Account__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <booleanValue>true</booleanValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.CF_Current_Spreads_Status__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Spreads Complete, Review Needed</stringValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.CF_Treasury_Financial_Account__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <booleanValue>false</booleanValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record__Prior.CF_Current_Spreads_Status__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Spreads Complete, Review Needed</stringValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.CF_Current_Spreads_Status__c</leftValueReference>
+                <operator>IsChanged</operator>
+                <rightValue>
+                    <booleanValue>true</booleanValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>LOS_Review_Status_Blank</targetReference>
+            </connector>
+            <label>Unchecking LOS Review Satus</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <description>If Spreads Status to &quot;Spreads Complete, Review Needed&quot;
+Then the LOS Review status updates to &quot;Ready for Risk Rating&quot;
+
+If Treasury Financial Account = True AND Spreads Status to &quot;Spreads Complete, Review Needed&quot;
+Then the Treasury Review status updates to &quot;Ready for Treasury Risk Rating&quot;</description>
+        <name>Spread_Status_check_for_Spreads_Complete</name>
+        <label>Spread Status check for Spreads Complete</label>
+        <locationX>440</locationX>
+        <locationY>1895</locationY>
+        <defaultConnector>
+            <targetReference>LOS_Treasury_Review_Status_Check</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
+        <rules>
+            <name>Spreads_Complete_Treasury_True</name>
+            <conditionLogic>(1 AND 2 AND 3) OR (2 AND 3 AND 4)</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record.CF_Current_Spreads_Status__c</leftValueReference>
+                <operator>IsChanged</operator>
+                <rightValue>
+                    <booleanValue>true</booleanValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.CF_Current_Spreads_Status__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Spreads Complete, Review Needed</stringValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.CF_Treasury_Financial_Account__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <booleanValue>true</booleanValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.CF_Treasury_Financial_Account__c</leftValueReference>
+                <operator>IsChanged</operator>
+                <rightValue>
+                    <booleanValue>true</booleanValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Treasury_Review_Status_Assignment</targetReference>
+            </connector>
+            <label>Spreads Complete &amp; Treasury True</label>
+        </rules>
+        <rules>
+            <name>Spreads_Complete_LOS</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record.CF_Current_Spreads_Status__c</leftValueReference>
+                <operator>IsChanged</operator>
+                <rightValue>
+                    <booleanValue>true</booleanValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.CF_Current_Spreads_Status__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Spreads Complete, Review Needed</stringValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>LOS_Review_Status_Assignment</targetReference>
+            </connector>
+            <label>Spreads Complete &amp; LOS</label>
+        </rules>
+    </decisions>
+    <environments>Default</environments>
+    <formulas>
+        <name>IsNew</name>
+        <dataType>Boolean</dataType>
+        <expression>IsNew()</expression>
+    </formulas>
+    <formulas>
+        <name>SixtyDaysfromToday</name>
+        <dataType>Date</dataType>
+        <expression>TODAY()+60</expression>
+    </formulas>
+    <formulas>
+        <name>TodayDate</name>
+        <dataType>Date</dataType>
+        <expression>TODAY()</expression>
+    </formulas>
+    <interviewLabel>ACC_Account_CREATE_UPDATE_FF_Flow {!$Flow.CurrentDateTime}</interviewLabel>
+    <label>ACC_CREATE_UPDATE_FF_Flow</label>
+    <processMetadataValues>
+        <name>BuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>CanvasMode</name>
+        <value>
+            <stringValue>AUTO_LAYOUT_CANVAS</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>OriginBuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processType>AutoLaunchedFlow</processType>
+    <start>
+        <locationX>50</locationX>
+        <locationY>0</locationY>
+        <connector>
+            <targetReference>Is_Dataload_user</targetReference>
+        </connector>
+        <object>Account</object>
+        <recordTriggerType>CreateAndUpdate</recordTriggerType>
+        <triggerType>RecordBeforeSave</triggerType>
+    </start>
+    <status>Active</status>
+</Flow>

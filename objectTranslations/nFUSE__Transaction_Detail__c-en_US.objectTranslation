@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <label><!-- Comments --></label>
+        <name>nFUSE__Comments__c</name>
+    </fields>
+    <fields>
+        <help><!-- This optional field displays the Date and Time of when the vendor record was created. --></help>
+        <label><!-- Creation DateTime --></label>
+        <name>nFUSE__Creation_DateTime__c</name>
+    </fields>
+    <fields>
+        <help><!-- Verbose information about the current state of a Transaction. --></help>
+        <label><!-- Details --></label>
+        <name>nFUSE__Details__c</name>
+    </fields>
+    <fields>
+        <label><!-- Log Type --></label>
+        <name>nFUSE__Log_Type__c</name>
+    </fields>
+    <fields>
+        <help><!-- The required master Transaction Log identifier that this detail is associated. --></help>
+        <label><!-- Transaction Log --></label>
+        <name>nFUSE__Transaction_Log__c</name>
+        <relationshipLabel><!-- Transaction Details --></relationshipLabel>
+    </fields>
+    <fields>
+        <help><!-- The required in transit status of the Transaction. --></help>
+        <label><!-- Transaction Status --></label>
+        <name>nFUSE__Transaction_Status__c</name>
+    </fields>
+    <fields>
+        <help><!-- The status of the Transaction from the provider vendor&apos;s perspective. --></help>
+        <label><!-- Vendor Status --></label>
+        <name>nFUSE__Vendor_Status__c</name>
+    </fields>
+</CustomObjectTranslation>

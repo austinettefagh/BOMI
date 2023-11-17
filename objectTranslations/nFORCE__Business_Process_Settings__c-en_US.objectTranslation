@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <help><!-- This specifies the number of records to submit per batch. --></help>
+        <label><!-- Apex Jobs Batch Size --></label>
+        <name>nFORCE__Apex_Jobs_Batch_Size__c</name>
+    </fields>
+    <fields>
+        <help><!-- Select to disable new business activities. --></help>
+        <label><!-- Disable New Business Activities --></label>
+        <name>nFORCE__Disable_New_Business_Activities__c</name>
+    </fields>
+    <fields>
+        <help><!-- Select to disable triggers. --></help>
+        <label><!-- Disable Triggers --></label>
+        <name>nFORCE__Disable_Triggers__c</name>
+    </fields>
+    <fields>
+        <help><!-- This checkbox field indicates if the system should disable validation rules for business activity and business process. --></help>
+        <label><!-- Disable Validation Rules --></label>
+        <name>nFORCE__Disable_Validation_Rules__c</name>
+    </fields>
+    <fields>
+        <help><!-- Check this box to enable logging during your BPO Business Process. --></help>
+        <label><!-- Enable Logging --></label>
+        <name>nFORCE__Enable_Logging__c</name>
+    </fields>
+    <fields>
+        <help><!-- Check this box to enable logging upon method entrance and exiting. NOTE: This will greatly increase the size of the logs included in your output. --></help>
+        <label><!-- Enable Method Logging --></label>
+        <name>nFORCE__Enable_Method_Logging__c</name>
+    </fields>
+    <fields>
+        <help><!-- Select to enable telemetry. --></help>
+        <label><!-- Enable Telemetry --></label>
+        <name>nFORCE__Enable_Telemetry__c</name>
+    </fields>
+    <fields>
+        <help><!-- Enter the comma-delimited list of keys to capture. --></help>
+        <label><!-- Enabled Telemetry Keys --></label>
+        <name>nFORCE__Enabled_Telemetry_Keys__c</name>
+    </fields>
+    <fields>
+        <help><!-- Select to encrypt the state data of the business activities. --></help>
+        <label><!-- Encrypt Business Activity State --></label>
+        <name>nFORCE__Encrypt_Business_Activity_State__c</name>
+    </fields>
+    <fields>
+        <help><!-- Select to encrypt the dynamic configuration provided at runtime for the business process interaction. --></help>
+        <label><!-- Encrypt Dynamic Configuration --></label>
+        <name>nFORCE__Encrypt_Dynamic_Configuration__c</name>
+    </fields>
+    <fields>
+        <help><!-- Check this box to enable logs in output. --></help>
+        <label><!-- Include Logs in Output --></label>
+        <name>nFORCE__Include_Logs_In_Output__c</name>
+    </fields>
+    <fields>
+        <help><!-- Using this optional field, Administrators can select a log level to capture for the process to communicate what occurred during the execution. The options available are NONE, ERROR, WARN, INFO, DEBUG, FINE, FINER, FINEST. --></help>
+        <label><!-- Log Level To Capture --></label>
+        <name>nFORCE__Log_Level_To_Capture__c</name>
+    </fields>
+    <fields>
+        <help><!-- Enter the fully-qualified class name for the ALogProvider extending class. --></help>
+        <label><!-- Log Provider --></label>
+        <name>nFORCE__Log_Provider__c</name>
+    </fields>
+    <fields>
+        <help><!-- Select to use platform events. If this reaches daily platform event limits, an admin needs to disable this field. --></help>
+        <label><!-- -D Use Platform Events --></label>
+        <name>nFORCE__Use_Platform_Events__c</name>
+    </fields>
+</CustomObjectTranslation>

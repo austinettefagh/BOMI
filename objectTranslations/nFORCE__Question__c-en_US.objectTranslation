@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fieldSets>
+        <label><!-- Admin Screen Section Lookup --></label>
+        <name>LLC_BI__Admin_Screen_Section_Lookup</name>
+    </fieldSets>
+    <fields>
+        <label><!-- Api Key --></label>
+        <name>nFORCE__Api_Key__c</name>
+    </fields>
+    <fields>
+        <help><!-- Enter the nIQ Classification Tag to help nIQ classify data for machine learning purposes. --></help>
+        <label><!-- Classification Tag --></label>
+        <name>nFORCE__Classification_Tag__c</name>
+    </fields>
+    <fields>
+        <label><!-- Default Text Answer --></label>
+        <name>nFORCE__Default_Text_Answer__c</name>
+    </fields>
+    <fields>
+        <label><!-- Form Type --></label>
+        <name>nFORCE__Form_Type__c</name>
+        <picklistValues>
+            <masterLabel>Checkbox</masterLabel>
+            <translation><!-- Checkbox --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Currency</masterLabel>
+            <translation><!-- Currency --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Number</masterLabel>
+            <translation><!-- Number --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Percentage</masterLabel>
+            <translation><!-- Percentage --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Picklist</masterLabel>
+            <translation><!-- Picklist --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ScreenSection</masterLabel>
+            <translation><!-- ScreenSection --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Text</masterLabel>
+            <translation><!-- Text --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Textarea</masterLabel>
+            <translation><!-- Textarea --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Group --></label>
+        <name>nFORCE__Group__c</name>
+        <relationshipLabel><!-- Questions --></relationshipLabel>
+    </fields>
+    <fields>
+        <help><!-- Enter your desired help text for the associated field in Questionnaires. --></help>
+        <label><!-- Help Text --></label>
+        <name>nFORCE__Help_Text__c</name>
+    </fields>
+    <fields>
+        <label><!-- Is Archived --></label>
+        <name>nFORCE__Is_Archived__c</name>
+    </fields>
+    <fields>
+        <label><!-- Is Required --></label>
+        <name>nFORCE__Is_Required__c</name>
+    </fields>
+    <fields>
+        <label>Question</label>
+        <name>nFORCE__Label__c</name>
+    </fields>
+    <fields>
+        <help><!-- Populate this field with the minimum value for Number, Currency, and Percentage fields in Questionnaires. --></help>
+        <label><!-- Maximum --></label>
+        <name>nFORCE__Maximum__c</name>
+    </fields>
+    <fields>
+        <help><!-- Populate this field with the minimum value for Number, Currency, and Percentage fields in Questionnaires. --></help>
+        <label><!-- Minimum --></label>
+        <name>nFORCE__Minimum__c</name>
+    </fields>
+    <fields>
+        <label><!-- Order --></label>
+        <name>nFORCE__Order__c</name>
+    </fields>
+    <fields>
+        <help><!-- Populate this field with the screen section that should be presented in the questionnaire. --></help>
+        <label><!-- Screen Section --></label>
+        <name>nFORCE__Screen_Section__c</name>
+        <relationshipLabel><!-- Screen Section --></relationshipLabel>
+    </fields>
+    <fields>
+        <help><!-- Enter the context record object API and target field API using dot notation (for example, Account.Name). This field is case-sensitive. --></help>
+        <label><!-- Target Answer Field --></label>
+        <name>nFORCE__Target_Answer_Field__c</name>
+    </fields>
+    <fields>
+        <label><!-- lookupKey --></label>
+        <name>nFORCE__lookupKey__c</name>
+    </fields>
+</CustomObjectTranslation>

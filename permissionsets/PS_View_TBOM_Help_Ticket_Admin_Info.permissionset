@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PermissionSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customPermissions>
+        <enabled>true</enabled>
+        <name>CP_View_TBOM_Help_Ticket_Admin_Info</name>
+    </customPermissions>
+    <description>Permission set that uses the Custom Permisson - CP_View_TBOM_Help_Ticket_Admin_Info to view admin section of help tickets and enhancement requests</description>
+    <hasActivationRequired>false</hasActivationRequired>
+    <label>View TBOM Help Ticket Admin Info</label>
+</PermissionSet>

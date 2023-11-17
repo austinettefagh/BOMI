@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <help><!-- Which Product Catalog UI Template is this Route Template associated with? --></help>
+        <label><!-- Product Catalog UI Template --></label>
+        <name>LLC_BI__Product_Catalog_UI_Template__c</name>
+        <relationshipLabel><!-- Product Catalog Route Templates --></relationshipLabel>
+    </fields>
+    <fields>
+        <help><!-- What page will be displayed in the body of this route? Can be left blank. --></help>
+        <label><!-- Route Body --></label>
+        <name>LLC_BI__Route_Body__c</name>
+    </fields>
+    <fields>
+        <help><!-- What icon set will be used? --></help>
+        <label><!-- Route Icon Class --></label>
+        <name>LLC_BI__Route_Icon_Class__c</name>
+    </fields>
+    <fields>
+        <help><!-- What navigation component will be used? --></help>
+        <label><!-- Route Navigation --></label>
+        <name>LLC_BI__Route_Navigation__c</name>
+    </fields>
+    <fields>
+        <help><!-- What sorting order number will be assigned to this route? This will decide its placement among other routes in the same group. --></help>
+        <label><!-- Route Order --></label>
+        <name>LLC_BI__Route_Order__c</name>
+    </fields>
+    <fields>
+        <help><!-- What sub navigation component will be used? --></help>
+        <label><!-- Route Sub Navigation --></label>
+        <name>LLC_BI__Route_Sub_Navigation__c</name>
+    </fields>
+    <fields>
+        <help><!-- What topbar component will be used? --></help>
+        <label><!-- Route Topbar --></label>
+        <name>LLC_BI__Route_Topbar__c</name>
+    </fields>
+    <fields>
+        <help><!-- Is the Screen associated with this Route editable? --></help>
+        <label><!-- Screen Is Editable --></label>
+        <name>LLC_BI__Screen_Is_Editable__c</name>
+    </fields>
+    <fields>
+        <help><!-- Which screen section resource should be used for this route? --></help>
+        <label><!-- Screen Section Resource --></label>
+        <name>LLC_BI__Screen_Section_Resource__c</name>
+    </fields>
+</CustomObjectTranslation>

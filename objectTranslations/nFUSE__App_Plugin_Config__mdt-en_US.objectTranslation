@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <label><!-- Plugin Name --></label>
+        <name>nFUSE__App_Plugin__c</name>
+    </fields>
+    <fields>
+        <label><!-- Field Set --></label>
+        <name>nFUSE__Field_Set__c</name>
+    </fields>
+    <fields>
+        <label><!-- Is Deactivated --></label>
+        <name>nFUSE__Is_Deactivated__c</name>
+    </fields>
+    <fields>
+        <label><!-- SObject Type Context --></label>
+        <name>nFUSE__SObject_Type_Context__c</name>
+    </fields>
+    <fields>
+        <label><!-- SObject Type --></label>
+        <name>nFUSE__SObject_Type__c</name>
+    </fields>
+</CustomObjectTranslation>

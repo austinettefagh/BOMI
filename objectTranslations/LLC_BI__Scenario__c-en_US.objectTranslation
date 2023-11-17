@@ -1,0 +1,436 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fieldSets>
+        <label><!-- Porforma Options Screen --></label>
+        <name>FS_Porforma_Options_Screen</name>
+    </fieldSets>
+    <fieldSets>
+        <label><!-- Scenario_Card_Amount_Due --></label>
+        <name>LLC_BI__Scenario_Card_Amount_Due</name>
+    </fieldSets>
+    <fieldSets>
+        <label><!-- Scenario_Card_Balance --></label>
+        <name>LLC_BI__Scenario_Card_Balance</name>
+    </fieldSets>
+    <fieldSets>
+        <label><!-- Scenario_Card_Net_Investable --></label>
+        <name>LLC_BI__Scenario_Card_Net_Investable</name>
+    </fieldSets>
+    <fieldSets>
+        <label><!-- Scenario_Card_Reserve --></label>
+        <name>LLC_BI__Scenario_Card_Reserve</name>
+    </fieldSets>
+    <fieldSets>
+        <label><!-- Scenario_Card_Totals --></label>
+        <name>LLC_BI__Scenario_Card_Totals</name>
+    </fieldSets>
+    <fieldSets>
+        <label><!-- Scenario_Proforma_ECA --></label>
+        <name>LLC_BI__Scenario_Proforma_ECA</name>
+    </fieldSets>
+    <fieldSets>
+        <label><!-- TM Proforma Total Quantity Pricing --></label>
+        <name>LLC_BI__TM_Proforma_Total_Quantity_Pricing</name>
+    </fieldSets>
+    <fieldSets>
+        <label><!-- Scenario Card Approval Details --></label>
+        <name>Scenario_Card_Approval_Details</name>
+    </fieldSets>
+    <fields>
+        <label><!-- Approver --></label>
+        <name>Approver_text_name__c</name>
+    </fields>
+    <fields>
+        <label><!-- Approver --></label>
+        <name>CF_Approver__c</name>
+        <relationshipLabel><!-- Scenarios (Approver) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Comments --></label>
+        <name>CF_Comments__c</name>
+    </fields>
+    <fields>
+        <label><!-- Competitor Bank --></label>
+        <lookupFilter>
+            <errorMessage><!-- The Competitor bank selected must be a Lender. --></errorMessage>
+        </lookupFilter>
+        <name>CF_Competitor_Bank__c</name>
+        <relationshipLabel><!-- Scenarios (Competitor Bank) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Deposit Account Type --></label>
+        <name>CF_Deposit_Account_Type__c</name>
+        <picklistValues>
+            <masterLabel>Commercial Ckg</masterLabel>
+            <translation><!-- Commercial Ckg --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Community Ckg</masterLabel>
+            <translation><!-- Community Ckg --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Other Acct</masterLabel>
+            <translation><!-- Other Acct --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Small Business Ckg</masterLabel>
+            <translation><!-- Small Business Ckg --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Earnings Credit Rate (%) --></label>
+        <name>CF_Earnings_Credit_Rate__c</name>
+        <picklistValues>
+            <masterLabel>.00</masterLabel>
+            <translation><!-- .00 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>.05</masterLabel>
+            <translation><!-- .05 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>.10</masterLabel>
+            <translation><!-- .10 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>.15</masterLabel>
+            <translation><!-- .15 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>.20</masterLabel>
+            <translation><!-- .20 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>.25</masterLabel>
+            <translation><!-- .25 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>.30</masterLabel>
+            <translation><!-- .30 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>.35</masterLabel>
+            <translation><!-- .35 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>.40</masterLabel>
+            <translation><!-- .40 --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Exception Price less than Cost --></label>
+        <name>CF_Exception_Price_less_than_Cost__c</name>
+    </fields>
+    <fields>
+        <label><!-- Exception Pricing Expiration Date --></label>
+        <name>CF_Exception_Pricing_Expiration_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- First Billing Month --></label>
+        <name>CF_First_Billing_Month__c</name>
+        <picklistValues>
+            <masterLabel>April</masterLabel>
+            <translation><!-- April --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>August</masterLabel>
+            <translation><!-- August --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>December</masterLabel>
+            <translation><!-- December --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>February</masterLabel>
+            <translation><!-- February --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>January</masterLabel>
+            <translation><!-- January --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>July</masterLabel>
+            <translation><!-- July --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>June</masterLabel>
+            <translation><!-- June --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>March</masterLabel>
+            <translation><!-- March --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>May</masterLabel>
+            <translation><!-- May --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>November</masterLabel>
+            <translation><!-- November --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>October</masterLabel>
+            <translation><!-- October --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>September</masterLabel>
+            <translation><!-- September --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- Free Rent Period End date --></help>
+        <label><!-- Free Rent Expiration Date --></label>
+        <name>CF_Free_Rent_Expiration_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Free Rent Period (In Days) --></label>
+        <name>CF_Free_Rent_Period_In_Days__c</name>
+        <picklistValues>
+            <masterLabel>30 Days</masterLabel>
+            <translation><!-- 30 Days --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>60 Days</masterLabel>
+            <translation><!-- 60 Days --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>90 Days</masterLabel>
+            <translation><!-- 90 Days --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Initial Submitter --></label>
+        <name>CF_Initial_Submitter__c</name>
+        <relationshipLabel><!-- Scenarios (Initial Submitter) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Reserve Requirement Rate --></label>
+        <name>CF_Reserve_Requirement_Rate__c</name>
+        <picklistValues>
+            <masterLabel>0%</masterLabel>
+            <translation><!-- 0% --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>10%</masterLabel>
+            <translation><!-- 10% --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Count of Fee Inc Disc Less Than Cost --></label>
+        <name>Count_of_Fee_Inc_Disc_Less_Than_Cost__c</name>
+    </fields>
+    <fields>
+        <label><!-- Date Approved --></label>
+        <name>Date_Approved__c</name>
+    </fields>
+    <fields>
+        <label><!-- Date Submitted For Approval --></label>
+        <name>Date_Submitted_For_Approval__c</name>
+    </fields>
+    <fields>
+        <label><!-- Account --></label>
+        <name>LLC_BI__Account__c</name>
+        <relationshipLabel><!-- Scenarios --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Annualized Difference --></label>
+        <name>LLC_BI__Annualized_Difference__c</name>
+    </fields>
+    <fields>
+        <label><!-- Average Collected Balance --></label>
+        <name>LLC_BI__Average_Collected_Balance__c</name>
+    </fields>
+    <fields>
+        <label><!-- Average Ledger Balance --></label>
+        <name>LLC_BI__Average_Ledger_Balance__c</name>
+    </fields>
+    <fields>
+        <label>Less:  Average Daily Float</label>
+        <name>LLC_BI__Average_Unavailable__c</name>
+    </fields>
+    <fields>
+        <label><!-- Balance Required To Offset Service --></label>
+        <name>LLC_BI__Balance_Required_To_Offset_Service__c</name>
+    </fields>
+    <fields>
+        <label><!-- Less Balance Required --></label>
+        <name>LLC_BI__Balance_Required__c</name>
+    </fields>
+    <fields>
+        <label><!-- Competitor Earnings Credit Allowance (%) --></label>
+        <name>LLC_BI__Competitor_Earnings_Credit_Allowance__c</name>
+    </fields>
+    <fields>
+        <label><!-- Competitor Net Charge --></label>
+        <name>LLC_BI__Competitor_Net_Charge__c</name>
+    </fields>
+    <fields>
+        <label><!-- Competitor Total Charge --></label>
+        <name>LLC_BI__Competitor_Total_Charge__c</name>
+    </fields>
+    <fields>
+        <label><!-- Converted From --></label>
+        <name>LLC_BI__Conversion_Object__c</name>
+    </fields>
+    <fields>
+        <label><!-- Difference Total --></label>
+        <name>LLC_BI__Difference_Total__c</name>
+    </fields>
+    <fields>
+        <label><!-- Discount ($) --></label>
+        <name>LLC_BI__Discount_Currency_Total__c</name>
+    </fields>
+    <fields>
+        <label><!-- Discount (%) --></label>
+        <name>LLC_BI__Discount_Percent_Total__c</name>
+    </fields>
+    <fields>
+        <label><!-- Earnings Credit Allowance --></label>
+        <name>LLC_BI__Earnings_Credit_Allowance_Amount__c</name>
+    </fields>
+    <fields>
+        <label>Earnings Credit Rate(%)</label>
+        <name>LLC_BI__Earnings_Credit_Allowance__c</name>
+    </fields>
+    <fields>
+        <label><!-- Investable Balance / (ECA) --></label>
+        <name>LLC_BI__Investable_Balance__c</name>
+    </fields>
+    <fields>
+        <label><!-- Is_Converted --></label>
+        <name>LLC_BI__Is_Converted__c</name>
+    </fields>
+    <fields>
+        <label><!-- Is Final --></label>
+        <name>LLC_BI__Is_Final__c</name>
+    </fields>
+    <fields>
+        <label><!-- Net Amount Due --></label>
+        <name>LLC_BI__Net_Amount_Due__c</name>
+    </fields>
+    <fields>
+        <label><!-- Net Deficit --></label>
+        <name>LLC_BI__Net_Deficit__c</name>
+    </fields>
+    <fields>
+        <label><!-- Net Investable Excess / Deficit --></label>
+        <name>LLC_BI__Net_Investable_Excess_Deficit__c</name>
+    </fields>
+    <fields>
+        <label><!-- Opportunity --></label>
+        <name>LLC_BI__Opportunity__c</name>
+        <relationshipLabel><!-- Scenarios --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Product Quantities --></label>
+        <name>LLC_BI__Product_Quantities__c</name>
+    </fields>
+    <fields>
+        <label><!-- Reserve Requirement Rate (%) --></label>
+        <name>LLC_BI__Reserve_Requirement_Rate_Perc__c</name>
+    </fields>
+    <fields>
+        <label><!-- Reserve Requirement Rate --></label>
+        <name>LLC_BI__Reserve_Requirement_Rate__c</name>
+    </fields>
+    <fields>
+        <label>Less:  Required Reserves</label>
+        <name>LLC_BI__Reserve_Requirement__c</name>
+    </fields>
+    <fields>
+        <label><!-- Proforma --></label>
+        <name>LLC_BI__Scenario_Url__c</name>
+    </fields>
+    <fields>
+        <label><!-- Setup Fee --></label>
+        <name>LLC_BI__Setup_Fee__c</name>
+    </fields>
+    <fields>
+        <label><!-- Show Competitor Pricing --></label>
+        <name>LLC_BI__Show_Competitor_Pricing__c</name>
+    </fields>
+    <fields>
+        <label><!-- Show Exception Pricing --></label>
+        <name>LLC_BI__Show_Exception_Pricing__c</name>
+    </fields>
+    <fields>
+        <label><!-- Status --></label>
+        <name>LLC_BI__Status__c</name>
+        <picklistValues>
+            <masterLabel>Draft</masterLabel>
+            <translation><!-- Draft --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Final</masterLabel>
+            <translation><!-- Final --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Inactive</masterLabel>
+            <translation><!-- Inactive --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Service Total --></label>
+        <name>LLC_BI__Svc_Total__c</name>
+    </fields>
+    <fields>
+        <label><!-- Total Balance Required Difference --></label>
+        <name>LLC_BI__Total_Balance_Required_Difference__c</name>
+    </fields>
+    <fields>
+        <label><!-- Total Balance Required --></label>
+        <name>LLC_BI__Total_Balance_Required__c</name>
+    </fields>
+    <fields>
+        <label><!-- Total Charge Difference --></label>
+        <name>LLC_BI__Total_Charge_Difference__c</name>
+    </fields>
+    <fields>
+        <label><!-- Total Competitor Balance Required --></label>
+        <name>LLC_BI__Total_Competitor_Balance_Required__c</name>
+    </fields>
+    <fields>
+        <label><!-- Total Competitor Difference --></label>
+        <name>LLC_BI__Total_Competitor_Difference__c</name>
+    </fields>
+    <fields>
+        <label><!-- Total Discount (%) --></label>
+        <name>LLC_BI__Total_Discount__c</name>
+    </fields>
+    <fields>
+        <label><!-- Total Gross Fee --></label>
+        <name>LLC_BI__Total_Gross_Fee__c</name>
+    </fields>
+    <fields>
+        <label><!-- Total Net Charge Difference --></label>
+        <name>LLC_BI__Total_Net_Charge_Difference__c</name>
+    </fields>
+    <fields>
+        <label><!-- Net Amount Due --></label>
+        <name>Net_Amount_Due_cm__c</name>
+    </fields>
+    <fields>
+        <label><!-- Requires Approval? --></label>
+        <name>Requires_Approval__c</name>
+    </fields>
+    <fields>
+        <label><!-- Service Total --></label>
+        <name>Service_Total_cm__c</name>
+    </fields>
+    <validationRules>
+        <errorMessage><!-- You cannot convert this Proforma since another Proforma has already been converted on this Opportunity. --></errorMessage>
+        <name>CVR_RestrictConversionTo_Single_Proforma</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- This record is already in Approval &amp; hence can&apos;t be edited. --></errorMessage>
+        <name>CVR_Scenario_record_Locked</name>
+    </validationRules>
+    <webLinks>
+        <label><!-- Form_Generation --></label>
+        <name>Form_Generation</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Proforma_Summary --></label>
+        <name>Proforma_Summary</name>
+    </webLinks>
+</CustomObjectTranslation>

@@ -1,0 +1,254 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Administrator</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Administrators</value>
+    </caseValues>
+    <fieldSets>
+        <label><!-- Mass Add Authorized Users --></label>
+        <name>CF_Mass_Add_Authorized_Users</name>
+    </fieldSets>
+    <fieldSets>
+        <label><!-- Authorized Users --></label>
+        <name>FS_Authorized_Users</name>
+    </fieldSets>
+    <fieldSets>
+        <label><!-- Authorized Users - WIRE --></label>
+        <name>FS_Authorized_Users_WIRE</name>
+    </fieldSets>
+    <fieldSets>
+        <label><!-- Treasury Maintenance Add Authorized User --></label>
+        <name>LLC_BI__Treasury_Maintenance_Add_Authorized_User</name>
+    </fieldSets>
+    <fieldSets>
+        <label><!-- Treasury Mass Actions Authorized Users --></label>
+        <name>LLC_BI__Treasury_Mass_Actions_Authorized_Users</name>
+    </fieldSets>
+    <fieldSets>
+        <label><!-- UI TSM Authorized User Search --></label>
+        <name>LLC_BI__UI_TSM_Authorized_User_Search</name>
+    </fieldSets>
+    <fieldSets>
+        <label><!-- UI Users for ACH --></label>
+        <name>LLC_BI__UI_Users_for_ACH</name>
+    </fieldSets>
+    <fieldSets>
+        <label><!-- UI Users for Cash --></label>
+        <name>LLC_BI__UI_Users_for_Cash</name>
+    </fieldSets>
+    <fieldSets>
+        <label><!-- UI Users for Depository --></label>
+        <name>LLC_BI__UI_Users_for_Depository</name>
+    </fieldSets>
+    <fieldSets>
+        <label><!-- UI Users for Direct File Transfers --></label>
+        <name>LLC_BI__UI_Users_for_Direct_File_Transfers</name>
+    </fieldSets>
+    <fieldSets>
+        <label><!-- UI Users for Disbursement --></label>
+        <name>LLC_BI__UI_Users_for_Disbursement</name>
+    </fieldSets>
+    <fieldSets>
+        <label><!-- UI Users for Loan Module --></label>
+        <name>LLC_BI__UI_Users_for_Loan_Module</name>
+    </fieldSets>
+    <fieldSets>
+        <label><!-- UI Users for Lockbox --></label>
+        <name>LLC_BI__UI_Users_for_Lockbox</name>
+    </fieldSets>
+    <fieldSets>
+        <label><!-- UI Users for Miscellaneous --></label>
+        <name>LLC_BI__UI_Users_for_Miscellaneous</name>
+    </fieldSets>
+    <fieldSets>
+        <label><!-- UI Users for Multi Factor Auth --></label>
+        <name>LLC_BI__UI_Users_for_Multi_Factor_Auth</name>
+    </fieldSets>
+    <fieldSets>
+        <label><!-- UI Users for Online ACH --></label>
+        <name>LLC_BI__UI_Users_for_Online_ACH</name>
+    </fieldSets>
+    <fieldSets>
+        <label><!-- UI Users for Online Banking --></label>
+        <name>LLC_BI__UI_Users_for_Online_Banking</name>
+    </fieldSets>
+    <fieldSets>
+        <label><!-- UI Users for Online Bill Pay --></label>
+        <name>LLC_BI__UI_Users_for_Online_Bill_Pay</name>
+    </fieldSets>
+    <fieldSets>
+        <label><!-- UI Users for Positive Pay --></label>
+        <name>LLC_BI__UI_Users_for_Positive_Pay</name>
+    </fieldSets>
+    <fieldSets>
+        <label><!-- UI Users for RDC --></label>
+        <name>LLC_BI__UI_Users_for_RDC</name>
+    </fieldSets>
+    <fieldSets>
+        <label><!-- UI Users for Reconciliation --></label>
+        <name>LLC_BI__UI_Users_for_Reconciliation</name>
+    </fieldSets>
+    <fieldSets>
+        <label><!-- UI Users for Reporting --></label>
+        <name>LLC_BI__UI_Users_for_Reporting</name>
+    </fieldSets>
+    <fieldSets>
+        <label><!-- UI Users for Sweep --></label>
+        <name>LLC_BI__UI_Users_for_Sweep</name>
+    </fieldSets>
+    <fieldSets>
+        <label><!-- UI Users for Wire --></label>
+        <name>LLC_BI__UI_Users_for_Wire</name>
+    </fieldSets>
+    <fieldSets>
+        <label><!-- UI Users for Zero Balance Account --></label>
+        <name>LLC_BI__UI_Users_for_Zero_Balance_Account</name>
+    </fieldSets>
+    <fields>
+        <label><!-- Active --></label>
+        <name>CF_Active__c</name>
+    </fields>
+    <fields>
+        <label><!-- Administrator --></label>
+        <name>CF_Administrator__c</name>
+    </fields>
+    <fields>
+        <label><!-- Date of Birth --></label>
+        <name>CF_Date_of_Birth__c</name>
+    </fields>
+    <fields>
+        <help><!-- Auto-populates from the Contact --></help>
+        <label><!-- Email --></label>
+        <name>CF_Email_Address__c</name>
+    </fields>
+    <fields>
+        <label><!-- Email --></label>
+        <name>CF_Email__c</name>
+    </fields>
+    <fields>
+        <label><!-- Pos Pay Exceptions Contact --></label>
+        <name>CF_Exceptions_Contact__c</name>
+    </fields>
+    <fields>
+        <label><!-- Install Date/Time --></label>
+        <name>CF_Install_Date__c</name>
+    </fields>
+    <fields>
+        <help><!-- Auto-populates from the Contact --></help>
+        <label><!-- Mobile --></label>
+        <name>CF_Mobile__c</name>
+    </fields>
+    <fields>
+        <label><!-- Online Banking Access? --></label>
+        <name>CF_Online_Banking_Access__c</name>
+        <picklistValues>
+            <masterLabel>No</masterLabel>
+            <translation><!-- No --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes</masterLabel>
+            <translation><!-- Yes --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Per Day Wire Limit --></label>
+        <name>CF_Per_Day_Limit__c</name>
+    </fields>
+    <fields>
+        <label><!-- Per Wire Limit --></label>
+        <name>CF_Per_Wire_Limit__c</name>
+    </fields>
+    <fields>
+        <help><!-- Auto-populates from the Contact --></help>
+        <label><!-- Phone --></label>
+        <name>CF_Phone__c</name>
+    </fields>
+    <fields>
+        <label><!-- Relationship --></label>
+        <name>CF_Relationship__c</name>
+    </fields>
+    <fields>
+        <label><!-- Stage --></label>
+        <name>CF_Stage__c</name>
+    </fields>
+    <fields>
+        <label><!-- Administrator --></label>
+        <name>LLC_BI__Administrator__c</name>
+    </fields>
+    <fields>
+        <label><!-- Authorized Signer --></label>
+        <name>LLC_BI__Authorized_Signer__c</name>
+    </fields>
+    <fields>
+        <label><!-- Check Issuance Parameters: Teller Active --></label>
+        <name>LLC_BI__Check_Issuance_Parameters_Teller_Active__c</name>
+    </fields>
+    <fields>
+        <label><!-- -D Contact Name --></label>
+        <name>LLC_BI__Contact_Name__c</name>
+    </fields>
+    <fields>
+        <label><!-- Contact Reference --></label>
+        <name>LLC_BI__Contact_Reference__c</name>
+        <relationshipLabel><!-- Authorized User --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- -D Contact Title --></label>
+        <name>LLC_BI__Contact_Title__c</name>
+    </fields>
+    <fields>
+        <label><!-- Contact for Exception Images and Conting --></label>
+        <name>LLC_BI__Contact_for_Exception_Images_and_Conting__c</name>
+    </fields>
+    <fields>
+        <label><!-- Contact for Exception Pricing --></label>
+        <name>LLC_BI__Contact_for_Exception_Pricing__c</name>
+    </fields>
+    <fields>
+        <label><!-- Status --></label>
+        <name>LLC_BI__Status__c</name>
+        <picklistValues>
+            <masterLabel>Active</masterLabel>
+            <translation><!-- Active --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Cancel</masterLabel>
+            <translation><!-- Cancel --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>In-Active</masterLabel>
+            <translation><!-- In-Active --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>In-Progress</masterLabel>
+            <translation><!-- In-Progress --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>N/A</masterLabel>
+            <translation><!-- N/A --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Revise</masterLabel>
+            <translation><!-- Revise --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Technical Contact --></label>
+        <name>LLC_BI__Technical_Contact__c</name>
+    </fields>
+    <fields>
+        <label><!-- Treasury Service Product --></label>
+        <name>LLC_BI__Treasury_Service_Product__c</name>
+    </fields>
+    <fields>
+        <label><!-- Treasury Service --></label>
+        <name>LLC_BI__Treasury_Service__c</name>
+        <relationshipLabel>Administrators</relationshipLabel>
+    </fields>
+    <nameFieldLabel>Admin Number</nameFieldLabel>
+    <startsWith>Vowel</startsWith>
+</CustomObjectTranslation>

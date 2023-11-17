@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Limit Changes</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Limit Changes</value>
+    </caseValues>
+    <fieldSets>
+        <label><!-- Temporary Limit Changes - Add New Screen --></label>
+        <name>FS_Temporary_Limit_Changes</name>
+    </fieldSets>
+    <fields>
+        <label><!-- ACH Client Authorization Received --></label>
+        <name>CF_ACH_Client_Authorization_Received__c</name>
+    </fields>
+    <fields>
+        <label><!-- ACH Limit Change (%) --></label>
+        <name>CF_ACH_Limit_Change__c</name>
+    </fields>
+    <fields>
+        <label><!-- Active --></label>
+        <name>CF_Active__c</name>
+    </fields>
+    <fields>
+        <label><!-- Approval Status --></label>
+        <name>CF_Approval_Status__c</name>
+        <picklistValues>
+            <masterLabel>Approver 1 Approved</masterLabel>
+            <translation><!-- Approver 1 Approved --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Approver 2 Approved</masterLabel>
+            <translation><!-- Approver 2 Approved --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Approver 3 Approved</masterLabel>
+            <translation><!-- Approver 3 Approved --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Approver 4 Approved</masterLabel>
+            <translation><!-- Approver 4 Approved --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Approver --></label>
+        <name>CF_Approver__c</name>
+        <relationshipLabel><!-- Limit Changes (Approver) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Billing Account Number --></label>
+        <name>CF_Billing_Account_Number__c</name>
+    </fields>
+    <fields>
+        <label><!-- Corporate Wire Limit --></label>
+        <name>CF_Corporate_Wire_Limit__c</name>
+    </fields>
+    <fields>
+        <label><!-- Current ACH Limit --></label>
+        <name>CF_Current_ACH_Limit__c</name>
+    </fields>
+    <fields>
+        <label><!-- Date of Request --></label>
+        <name>CF_Date_of_Request__c</name>
+    </fields>
+    <fields>
+        <label><!-- Initial Submitter --></label>
+        <name>CF_Initial_Submitter__c</name>
+        <relationshipLabel><!-- Limit Changes (Initial Submitter) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Last Treasury Review Date --></label>
+        <name>CF_Last_Treasury_Review_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Limit Change Expiration --></label>
+        <name>CF_Limit_Change_Expiration__c</name>
+    </fields>
+    <fields>
+        <label><!-- Next Treasury Review Date --></label>
+        <name>CF_Next_Treasury_Review_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Product --></label>
+        <name>CF_Product__c</name>
+    </fields>
+    <fields>
+        <label><!-- Reason for Request --></label>
+        <name>CF_Reason_for_Request__c</name>
+    </fields>
+    <fields>
+        <label><!-- Relationship Manager --></label>
+        <name>CF_Relationship_Manager__c</name>
+        <relationshipLabel><!-- Limit Changes (Relationship Manager) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Relationship Name --></label>
+        <name>CF_Relationship_Name__c</name>
+        <relationshipLabel><!-- Limit Changes --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Requested Daily Limit --></label>
+        <name>CF_Requested_Daily_Limit__c</name>
+    </fields>
+    <fields>
+        <label><!-- Requested Monthly Limit --></label>
+        <name>CF_Requested_Monthly_Limit__c</name>
+    </fields>
+    <fields>
+        <label><!-- Requested Temporary Limit --></label>
+        <name>CF_Requested_Temporary_Limit__c</name>
+    </fields>
+    <fields>
+        <label><!-- Requires Full Approval? --></label>
+        <name>CF_Requires_Full_Approval__c</name>
+    </fields>
+    <fields>
+        <label><!-- Revert --></label>
+        <name>CF_Revert__c</name>
+        <picklistValues>
+            <masterLabel>No</masterLabel>
+            <translation><!-- No --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes</masterLabel>
+            <translation><!-- Yes --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Status --></label>
+        <name>CF_Status__c</name>
+        <picklistValues>
+            <masterLabel>Approved, Ready for Setup</masterLabel>
+            <translation><!-- Approved, Ready for Setup --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Change Expired</masterLabel>
+            <translation><!-- Change Expired --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Closed</masterLabel>
+            <translation><!-- Closed --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Open</masterLabel>
+            <translation><!-- Open --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Rejected</masterLabel>
+            <translation><!-- Rejected --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Setup Complete, Change Active</masterLabel>
+            <translation><!-- Setup Complete, Change Active --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Submitted for Approval</masterLabel>
+            <translation><!-- Submitted for Approval --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- TM Deposit Only --></label>
+        <name>CF_TM_Deposit_Only__c</name>
+    </fields>
+    <fields>
+        <label><!-- Temporary/Permanent? --></label>
+        <name>CF_Temporary_Permanent__c</name>
+        <picklistValues>
+            <masterLabel>Permanent</masterLabel>
+            <translation><!-- Permanent --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Temporary</masterLabel>
+            <translation><!-- Temporary --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Treasury Risk Rating --></label>
+        <name>CF_Treasury_Risk_Rating__c</name>
+    </fields>
+    <fields>
+        <label><!-- Treasury Service Name --></label>
+        <name>CF_Treasury_Service_Name__c</name>
+        <relationshipLabel><!-- Limit Changes --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Wire Client Authorization Received --></label>
+        <name>CF_Wire_Client_Authorization_Received__c</name>
+    </fields>
+    <recordTypes>
+        <label><!-- TLC nCino Read Only Temporary Limit Change --></label>
+        <name>TLC_nCino_Read_Only_Temporary_Limit_Change</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- TLC nCino Temporary Limit Change --></label>
+        <name>TLC_nCino_Temporary_Limit_Change</name>
+    </recordTypes>
+    <startsWith>Consonant</startsWith>
+    <webLinks>
+        <label><!-- TLC_Generate_Forms --></label>
+        <name>TLC_Generate_Forms</name>
+    </webLinks>
+</CustomObjectTranslation>

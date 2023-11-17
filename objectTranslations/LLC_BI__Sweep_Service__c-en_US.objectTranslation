@@ -1,0 +1,267 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fieldSets>
+        <label><!-- Sweep Setup UI --></label>
+        <name>FS_Sweep_Setup_UI</name>
+    </fieldSets>
+    <fields>
+        <label><!-- Parent 1 --></label>
+        <name>Account_1__c</name>
+        <relationshipLabel><!-- Sweep Services (Account 1) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Parent 2 --></label>
+        <name>Account_2__c</name>
+        <relationshipLabel><!-- Sweep Services (Account 2) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Parent 3 --></label>
+        <name>Account_3__c</name>
+        <relationshipLabel><!-- Sweep Services (Account 3) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Primary (Child Account) --></label>
+        <name>Account_Parent__c</name>
+        <relationshipLabel><!-- Sweep Services (Account # (Parent)) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Parent 4 --></label>
+        <name>CF_Account_4__c</name>
+        <relationshipLabel><!-- Sweep Services (Account 4) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- From Sequence 4 --></label>
+        <name>CF_From_Parent_4__c</name>
+        <picklistValues>
+            <masterLabel>From Parent 1</masterLabel>
+            <translation><!-- From Parent 1 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>From Parent 2</masterLabel>
+            <translation><!-- From Parent 2 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>From Parent 3</masterLabel>
+            <translation><!-- From Parent 3 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>From Parent 4</masterLabel>
+            <translation><!-- From Parent 4 --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Peg Balance 1 --></label>
+        <name>CF_Peg_Balance_1__c</name>
+    </fields>
+    <fields>
+        <label><!-- Peg Balance 2 --></label>
+        <name>CF_Peg_Balance_2__c</name>
+    </fields>
+    <fields>
+        <label><!-- Peg Balance 3 --></label>
+        <name>CF_Peg_Balance_3__c</name>
+    </fields>
+    <fields>
+        <label><!-- Peg Balance 4 --></label>
+        <name>CF_Peg_Balance_4__c</name>
+    </fields>
+    <fields>
+        <label><!-- Peg Balance --></label>
+        <name>CF_Peg_Balance__c</name>
+    </fields>
+    <fields>
+        <label><!-- Primary (Child) Account --></label>
+        <name>CF_Primary_Child_Account__c</name>
+        <relationshipLabel><!-- Sweep Services --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Secondary (Parent) Account --></label>
+        <name>CF_Secondary_Parent_Account__c</name>
+        <relationshipLabel><!-- Sweep Services (Secondary (Parent) Account) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- To Sequence 4 --></label>
+        <name>CF_To_Child_4__c</name>
+        <picklistValues>
+            <masterLabel>To Parent 1</masterLabel>
+            <translation><!-- To Parent 1 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>To Parent 2</masterLabel>
+            <translation><!-- To Parent 2 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>To Parent 3</masterLabel>
+            <translation><!-- To Parent 3 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>To Parent 4</masterLabel>
+            <translation><!-- To Parent 4 --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- From Sequence 1 --></label>
+        <name>From_Parent_1__c</name>
+        <picklistValues>
+            <masterLabel>From Parent 1</masterLabel>
+            <translation><!-- From Parent 1 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>From Parent 2</masterLabel>
+            <translation><!-- From Parent 2 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>From Parent 3</masterLabel>
+            <translation><!-- From Parent 3 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>From Parent 4</masterLabel>
+            <translation><!-- From Parent 4 --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- From Sequence 2 --></label>
+        <name>From_Parent_2__c</name>
+        <picklistValues>
+            <masterLabel>From Parent 1</masterLabel>
+            <translation><!-- From Parent 1 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>From Parent 2</masterLabel>
+            <translation><!-- From Parent 2 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>From Parent 3</masterLabel>
+            <translation><!-- From Parent 3 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>From Parent 4</masterLabel>
+            <translation><!-- From Parent 4 --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- From Sequence 3 --></label>
+        <name>From_Parent_3__c</name>
+        <picklistValues>
+            <masterLabel>From Parent 1</masterLabel>
+            <translation><!-- From Parent 1 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>From Parent 2</masterLabel>
+            <translation><!-- From Parent 2 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>From Parent 3</masterLabel>
+            <translation><!-- From Parent 3 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>From Parent 4</masterLabel>
+            <translation><!-- From Parent 4 --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Repurchase Sweep --></label>
+        <name>LLC_BI__Repurchase_Sweep__c</name>
+        <picklistValues>
+            <masterLabel>Commercial</masterLabel>
+            <translation><!-- Commercial --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Public/ Nonprofit</masterLabel>
+            <translation><!-- Public/ Nonprofit --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Treasury Service Reference --></label>
+        <name>LLC_BI__Treasury_Service_Reference__c</name>
+        <relationshipLabel><!-- Sweep Services --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Notes --></label>
+        <name>Notes_tbd__c</name>
+    </fields>
+    <fields>
+        <label><!-- Target Balance --></label>
+        <name>Target_Balance__c</name>
+        <picklistValues>
+            <masterLabel>No</masterLabel>
+            <translation><!-- No --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes</masterLabel>
+            <translation><!-- Yes --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Target Type --></label>
+        <name>Target_Type__c</name>
+        <picklistValues>
+            <masterLabel>Sweep in excess above</masterLabel>
+            <translation><!-- Sweep in excess above --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Target Balance Maintained</masterLabel>
+            <translation><!-- Target Balance Maintained --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- To Sequence 1 --></label>
+        <name>To_Child_1__c</name>
+        <picklistValues>
+            <masterLabel>To Parent 1</masterLabel>
+            <translation><!-- To Parent 1 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>To Parent 2</masterLabel>
+            <translation><!-- To Parent 2 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>To Parent 3</masterLabel>
+            <translation><!-- To Parent 3 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>To Parent 4</masterLabel>
+            <translation><!-- To Parent 4 --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- To Sequence 2 --></label>
+        <name>To_Child_2__c</name>
+        <picklistValues>
+            <masterLabel>To Parent 1</masterLabel>
+            <translation><!-- To Parent 1 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>To Parent 2</masterLabel>
+            <translation><!-- To Parent 2 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>To Parent 3</masterLabel>
+            <translation><!-- To Parent 3 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>To Parent 4</masterLabel>
+            <translation><!-- To Parent 4 --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- To Sequence 3 --></label>
+        <name>To_Child_3__c</name>
+        <picklistValues>
+            <masterLabel>To Parent 1</masterLabel>
+            <translation><!-- To Parent 1 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>To Parent 2</masterLabel>
+            <translation><!-- To Parent 2 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>To Parent 3</masterLabel>
+            <translation><!-- To Parent 3 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>To Parent 4</masterLabel>
+            <translation><!-- To Parent 4 --></translation>
+        </picklistValues>
+    </fields>
+</CustomObjectTranslation>

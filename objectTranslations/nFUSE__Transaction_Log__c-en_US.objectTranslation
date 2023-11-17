@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <label><!-- Action --></label>
+        <name>nFUSE__Action__c</name>
+    </fields>
+    <fields>
+        <label><!-- API_Version --></label>
+        <name>nFUSE__Api_Version__c</name>
+    </fields>
+    <fields>
+        <label><!-- App Plugin --></label>
+        <name>nFUSE__App_Plugin__c</name>
+    </fields>
+    <fields>
+        <label><!-- Comments --></label>
+        <name>nFUSE__Comments__c</name>
+    </fields>
+    <fields>
+        <help><!-- This optional field displays the Date and Time of when the vendor&apos;s record was created. --></help>
+        <label><!-- Creation DateTime --></label>
+        <name>nFUSE__Creation_DateTime__c</name>
+    </fields>
+    <fields>
+        <label><!-- External Id --></label>
+        <name>nFUSE__External_Id__c</name>
+    </fields>
+    <fields>
+        <label><!-- Log Type --></label>
+        <name>nFUSE__Log_Type__c</name>
+    </fields>
+    <fields>
+        <label><!-- -D Object Id --></label>
+        <name>nFUSE__Object_Id__c</name>
+    </fields>
+    <fields>
+        <label><!-- Primary Object Id --></label>
+        <name>nFUSE__Primary_Object_Id__c</name>
+    </fields>
+    <fields>
+        <label><!-- RequestingUserId --></label>
+        <name>nFUSE__Requested_By_User_Id__c</name>
+    </fields>
+    <fields>
+        <label><!-- -D RequestingUserId --></label>
+        <name>nFUSE__Requesting_User_Id__c</name>
+    </fields>
+    <fields>
+        <label><!-- ResponseTime --></label>
+        <name>nFUSE__Response_Time__c</name>
+    </fields>
+    <fields>
+        <label><!-- Secondary Object Id --></label>
+        <name>nFUSE__Secondary_Object_Id__c</name>
+    </fields>
+    <fields>
+        <label><!-- SentTime --></label>
+        <name>nFUSE__Sent_Time__c</name>
+    </fields>
+    <fields>
+        <label><!-- TransactionDetail --></label>
+        <name>nFUSE__Transaction_Detail__c</name>
+    </fields>
+    <fields>
+        <label><!-- TransactionStatus --></label>
+        <name>nFUSE__Transaction_Status__c</name>
+    </fields>
+    <fields>
+        <label><!-- Vendor Status --></label>
+        <name>nFUSE__Vendor_Status__c</name>
+    </fields>
+</CustomObjectTranslation>

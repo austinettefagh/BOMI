@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <label><!-- Display Order --></label>
+        <name>nFORCE__Display_Order__c</name>
+    </fields>
+    <fields>
+        <label><!-- Field Set --></label>
+        <name>nFORCE__Field_Set_Key__c</name>
+    </fields>
+    <fields>
+        <help><!-- This field is optional and is populated by the Section Builder tool. The field denotes whether a tier should return only records that meet the specified criteria. The value should use appropriate syntax for the WHERE clause of a SOQL query. --></help>
+        <label><!-- Filter Criteria --></label>
+        <name>nFORCE__Filter_Criteria__c</name>
+    </fields>
+    <fields>
+        <label><!-- Layout --></label>
+        <name>nFORCE__Layout__c</name>
+        <relationshipLabel><!-- Section Configurations --></relationshipLabel>
+    </fields>
+    <fields>
+        <help><!-- This field is optional and is populated by an administrator. When used with the appropriate section resources, the numeric value is used to limit the returned records. The default value is 0 to return all records. --></help>
+        <label><!-- Limit --></label>
+        <name>nFORCE__Limit__c</name>
+    </fields>
+    <fields>
+        <help><!-- This field is optional and is populated by an administrator. The default value is false, which denotes that the value of Limit is a hard set limit. When updated to true, the field enables returning offset records with appropriate section resource. --></help>
+        <label><!-- Offset By Limit --></label>
+        <name>nFORCE__Offset_By_Limit__c</name>
+    </fields>
+    <fields>
+        <label><!-- Parent Configuration --></label>
+        <name>nFORCE__Parent_Configuration__c</name>
+        <relationshipLabel><!-- Child Configurations --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Parent Relationship Name --></label>
+        <name>nFORCE__Parent_Relationship_Name__c</name>
+    </fields>
+    <fields>
+        <label><!-- Screen Section --></label>
+        <name>nFORCE__Screen_Section__c</name>
+        <relationshipLabel><!-- Section Configurations --></relationshipLabel>
+    </fields>
+    <fields>
+        <help><!-- A header to display at the top of this section. --></help>
+        <label><!-- Section Header --></label>
+        <name>nFORCE__Section_Header__c</name>
+    </fields>
+    <fields>
+        <help><!-- This field is optional and is populated by the Section Builder tool. The field denotes whether a tier should return records in a specified sorted order. The value should use appropriate syntax for the ORDER BY clause of a SOQL query. --></help>
+        <label><!-- Sort Criteria --></label>
+        <name>nFORCE__Sort_Criteria__c</name>
+    </fields>
+    <fields>
+        <help><!-- This field is optional and is populated by the Section Builder tool. This field denotes whether a tier should return only unique records. When the value is set to true, the generated html code will respect the setting. --></help>
+        <label><!-- Unique --></label>
+        <name>nFORCE__Unique__c</name>
+    </fields>
+    <fields>
+        <label><!-- lookupKey --></label>
+        <name>nFORCE__lookupKey__c</name>
+    </fields>
+    <fields>
+        <label><!-- sObject Type --></label>
+        <name>nFORCE__sObject_Type__c</name>
+    </fields>
+    <validationRules>
+        <errorMessage><!-- Child configurations must follow their parents in display order. --></errorMessage>
+        <name>nFORCE__Child_Display_Order</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Parent Configuration and Parent Relationship Name must both be set. --></errorMessage>
+        <name>nFORCE__Parent_Integrity</name>
+    </validationRules>
+</CustomObjectTranslation>

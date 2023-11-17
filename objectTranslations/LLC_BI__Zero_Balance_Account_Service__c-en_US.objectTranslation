@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <label><!-- Master Account # --></label>
+        <name>LLC_BI__Master_Account__c</name>
+        <relationshipLabel><!-- Zero Balance Account Services --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Sub Account #1 --></label>
+        <name>LLC_BI__Sub_Account_1__c</name>
+        <relationshipLabel><!-- Zero Balance Account Services (Sub Account #1) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Treasury Service Reference --></label>
+        <name>LLC_BI__Treasury_Service_Reference__c</name>
+        <relationshipLabel><!-- Zero Balance Account Services --></relationshipLabel>
+    </fields>
+</CustomObjectTranslation>

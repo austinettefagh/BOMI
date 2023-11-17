@@ -1,0 +1,415 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fieldSets>
+        <label><!-- Additional Income Deal Impact --></label>
+        <name>LLC_BI__Additional_Income_Deal_Impact</name>
+    </fieldSets>
+    <fieldSets>
+        <label><!-- Comments Deal Impact --></label>
+        <name>LLC_BI__Comments_Deal_Impact</name>
+    </fieldSets>
+    <fieldSets>
+        <label><!-- DMW Panel Profitability Metrics --></label>
+        <name>LLC_BI__DMW_Panel_Profitability_Metrics</name>
+    </fieldSets>
+    <fieldSets>
+        <label><!-- Deposit Income Deal Impact --></label>
+        <name>LLC_BI__Deposit_Income_Deal_Impact</name>
+    </fieldSets>
+    <fieldSets>
+        <label><!-- Profitability Card Metrics --></label>
+        <name>LLC_BI__Profitability_Card_Metrics</name>
+    </fieldSets>
+    <fieldSets>
+        <label><!-- Proforma Profitability Top Component --></label>
+        <name>LLC_BI__Proforma_Profitability_Top_Component</name>
+    </fieldSets>
+    <fieldSets>
+        <label><!-- Quick Price Profitability Card --></label>
+        <name>LLC_BI__Quick_Price_Profitability_Card</name>
+    </fieldSets>
+    <fieldSets>
+        <label><!-- Relationship Profitability --></label>
+        <name>LLC_BI__Relationship_Profitability</name>
+    </fieldSets>
+    <fieldSets>
+        <label><!-- Scenario Card Profitability Component --></label>
+        <name>LLC_BI__Scenario_Card_Profitability_Component</name>
+    </fieldSets>
+    <fieldSets>
+        <label><!-- Treasury Income Deal Impact --></label>
+        <name>LLC_BI__Treasury_Income_Deal_Impact</name>
+    </fieldSets>
+    <fields>
+        <label><!-- Additional Risk Adjusted Income --></label>
+        <name>LLC_BI__Additional_Risk_Adjusted_Income__c</name>
+    </fields>
+    <fields>
+        <label><!-- Affected Profitability --></label>
+        <name>LLC_BI__Affected_Profitability__c</name>
+        <relationshipLabel><!-- Profitabilities (Affected Profitability) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Average Liabilities for Deposits --></label>
+        <name>LLC_BI__Average_Assets_for_Deposits__c</name>
+    </fields>
+    <fields>
+        <label><!-- Average Assets for Loans --></label>
+        <name>LLC_BI__Average_Assets_for_Loans__c</name>
+    </fields>
+    <fields>
+        <label><!-- Average Assets for Treasury --></label>
+        <name>LLC_BI__Average_Assets_for_Treasury__c</name>
+    </fields>
+    <fields>
+        <label><!-- Average Earning Assets --></label>
+        <name>LLC_BI__Average_Earning_Assets__c</name>
+    </fields>
+    <fields>
+        <label><!-- Capital Allocated for Deposits --></label>
+        <name>LLC_BI__Capital_Allocated_for_Deposits__c</name>
+    </fields>
+    <fields>
+        <label><!-- Capital Allocated for Loans --></label>
+        <name>LLC_BI__Capital_Allocated_for_Loans__c</name>
+    </fields>
+    <fields>
+        <label><!-- Capital Allocated for Treasury --></label>
+        <name>LLC_BI__Capital_Allocated_for_Treasury__c</name>
+    </fields>
+    <fields>
+        <label><!-- Cost of Deposit Capital --></label>
+        <name>LLC_BI__Cost_of_Deposit_Capital__c</name>
+    </fields>
+    <fields>
+        <label><!-- Cost of Loan Capital --></label>
+        <name>LLC_BI__Cost_of_Loan_Capital__c</name>
+    </fields>
+    <fields>
+        <label><!-- Cost of Treasury Capital --></label>
+        <name>LLC_BI__Cost_of_Treasury_Capital__c</name>
+    </fields>
+    <fields>
+        <label><!-- Deposit EVA --></label>
+        <name>LLC_BI__Deposit_EVA__c</name>
+    </fields>
+    <fields>
+        <label><!-- Deposit Expense --></label>
+        <name>LLC_BI__Deposit_Expense__c</name>
+    </fields>
+    <fields>
+        <label><!-- Deposit Operating Cost --></label>
+        <name>LLC_BI__Deposit_Operating_Cost__c</name>
+    </fields>
+    <fields>
+        <label><!-- Deposit Revenue --></label>
+        <name>LLC_BI__Deposit_Revenue__c</name>
+    </fields>
+    <fields>
+        <label><!-- Deposit --></label>
+        <name>LLC_BI__Deposit__c</name>
+        <relationshipLabel><!-- Profitabilities --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- EVA --></label>
+        <name>LLC_BI__EVA_Currency__c</name>
+    </fields>
+    <fields>
+        <label><!-- Proforma EVA --></label>
+        <name>LLC_BI__EVA_Proforma__c</name>
+    </fields>
+    <fields>
+        <label><!-- Error Message --></label>
+        <name>LLC_BI__Error_Message__c</name>
+    </fields>
+    <fields>
+        <label><!-- Expected Loss --></label>
+        <name>LLC_BI__Expected_Loss__c</name>
+    </fields>
+    <fields>
+        <label><!-- Fee Income --></label>
+        <name>LLC_BI__Fee_Income__c</name>
+    </fields>
+    <fields>
+        <label><!-- Forecasted Profitability --></label>
+        <name>LLC_BI__Forecasted_Profitability__c</name>
+    </fields>
+    <fields>
+        <label><!-- Forecasted ROE --></label>
+        <name>LLC_BI__Forecasted_ROE__c</name>
+    </fields>
+    <fields>
+        <label><!-- Funds Transfer Pricing Cost --></label>
+        <name>LLC_BI__Funds_Transfer_Pricing__c</name>
+    </fields>
+    <fields>
+        <label><!-- Hurdle Rate --></label>
+        <name>LLC_BI__Hurdle_Rate__c</name>
+    </fields>
+    <fields>
+        <label><!-- EVA Impact --></label>
+        <name>LLC_BI__Impact_EVA__c</name>
+    </fields>
+    <fields>
+        <label><!-- NOPAT Impact --></label>
+        <name>LLC_BI__Impact_NOPAT__c</name>
+    </fields>
+    <fields>
+        <label><!-- SVA Impact --></label>
+        <name>LLC_BI__Impact_SVA__c</name>
+    </fields>
+    <fields>
+        <label><!-- Interest Income --></label>
+        <name>LLC_BI__Interest_Income__c</name>
+    </fields>
+    <fields>
+        <label><!-- Last Refresh Date --></label>
+        <name>LLC_BI__Last_Refresh_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Interest Expense --></label>
+        <name>LLC_BI__Liquidity_Cost__c</name>
+    </fields>
+    <fields>
+        <label><!-- Loan --></label>
+        <name>LLC_BI__Loan__c</name>
+        <relationshipLabel><!-- Profitabilities --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- NIM Impact --></label>
+        <name>LLC_BI__NIM_Impact__c</name>
+    </fields>
+    <fields>
+        <label><!-- NIM --></label>
+        <name>LLC_BI__NIM__c</name>
+    </fields>
+    <fields>
+        <label><!-- NOPAT --></label>
+        <name>LLC_BI__NOPAT_Currency__c</name>
+    </fields>
+    <fields>
+        <label><!-- Proforma NOPAT --></label>
+        <name>LLC_BI__NOPAT_Proforma__c</name>
+    </fields>
+    <fields>
+        <label><!-- NPV Impact --></label>
+        <name>LLC_BI__NPV_Impact__c</name>
+    </fields>
+    <fields>
+        <label><!-- NPV --></label>
+        <name>LLC_BI__NPV__c</name>
+    </fields>
+    <fields>
+        <label><!-- Net Deposit Income --></label>
+        <name>LLC_BI__Net_Deposit_Income__c</name>
+    </fields>
+    <fields>
+        <label><!-- Net Income --></label>
+        <name>LLC_BI__Net_Interest_Income__c</name>
+    </fields>
+    <fields>
+        <label><!-- Net Treasury Income --></label>
+        <name>LLC_BI__Net_Treasury_Income__c</name>
+    </fields>
+    <fields>
+        <label><!-- Non - CET1 Cost --></label>
+        <name>LLC_BI__Non_CET1__c</name>
+    </fields>
+    <fields>
+        <label><!-- Non-Risk Adjusted Capital Allocation --></label>
+        <name>LLC_BI__Non_Risk_Adjusted_Capital_Allocation__c</name>
+    </fields>
+    <fields>
+        <label><!-- Non Interest Expense --></label>
+        <name>LLC_BI__Operating_Cost__c</name>
+    </fields>
+    <fields>
+        <label><!-- Operating Deposit Income --></label>
+        <name>LLC_BI__Operating_Deposit_Income__c</name>
+    </fields>
+    <fields>
+        <label><!-- Operating Loan Income --></label>
+        <name>LLC_BI__Operating_Loan_Income__c</name>
+    </fields>
+    <fields>
+        <label><!-- Operating Treasury Income --></label>
+        <name>LLC_BI__Operating_Treasury_Income__c</name>
+    </fields>
+    <fields>
+        <label><!-- Opportunity --></label>
+        <name>LLC_BI__Opportunity__c</name>
+        <relationshipLabel><!-- Profitabilities --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Original FTP --></label>
+        <name>LLC_BI__Original_FTP__c</name>
+    </fields>
+    <fields>
+        <label><!-- Pricing Option --></label>
+        <name>LLC_BI__Pricing_Option__c</name>
+        <relationshipLabel><!-- Profitabilities --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Product Package --></label>
+        <name>LLC_BI__Product_Package__c</name>
+        <relationshipLabel><!-- Profitabilities --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Profitability Impact --></label>
+        <name>LLC_BI__Profitability_Impact__c</name>
+    </fields>
+    <fields>
+        <label><!-- Profitability --></label>
+        <name>LLC_BI__Profitability__c</name>
+    </fields>
+    <fields>
+        <label><!-- Proforma NIM --></label>
+        <name>LLC_BI__Proforma_NIM__c</name>
+    </fields>
+    <fields>
+        <label><!-- Proforma NPV --></label>
+        <name>LLC_BI__Proforma_NPV__c</name>
+    </fields>
+    <fields>
+        <label><!-- Proforma Profitability --></label>
+        <name>LLC_BI__Proforma_Profitability__c</name>
+    </fields>
+    <fields>
+        <label><!-- Proforma RAA --></label>
+        <name>LLC_BI__Proforma_RAA__c</name>
+    </fields>
+    <fields>
+        <label><!-- Proforma RAROC --></label>
+        <name>LLC_BI__Proforma_RAROC__c</name>
+    </fields>
+    <fields>
+        <label><!-- Proforma ROA --></label>
+        <name>LLC_BI__Proforma_ROA__c</name>
+    </fields>
+    <fields>
+        <label><!-- Proforma ROE --></label>
+        <name>LLC_BI__Proforma_ROE__c</name>
+    </fields>
+    <fields>
+        <label><!-- Proforma RORAC --></label>
+        <name>LLC_BI__Proforma_RORAC__c</name>
+    </fields>
+    <fields>
+        <label><!-- RAA Impact --></label>
+        <name>LLC_BI__RAA_Impact__c</name>
+    </fields>
+    <fields>
+        <label><!-- RAA --></label>
+        <name>LLC_BI__RAA__c</name>
+    </fields>
+    <fields>
+        <label><!-- RAROC Impact --></label>
+        <name>LLC_BI__RAROC_Impact__c</name>
+    </fields>
+    <fields>
+        <label><!-- RAROC --></label>
+        <name>LLC_BI__RAROC__c</name>
+    </fields>
+    <fields>
+        <label><!-- Risk Adjusted Net Deposit Income --></label>
+        <name>LLC_BI__RA_Net_Deposit_Income__c</name>
+    </fields>
+    <fields>
+        <label><!-- Risk Adjusted Income --></label>
+        <name>LLC_BI__RA_Net_Interest_Income__c</name>
+    </fields>
+    <fields>
+        <label><!-- Risk Adjusted Net Treasury Income --></label>
+        <name>LLC_BI__RA_Net_Treasury_Income__c</name>
+    </fields>
+    <fields>
+        <label><!-- ROA Impact --></label>
+        <name>LLC_BI__ROA_Impact__c</name>
+    </fields>
+    <fields>
+        <label><!-- ROA --></label>
+        <name>LLC_BI__ROA__c</name>
+    </fields>
+    <fields>
+        <label><!-- ROE Impact --></label>
+        <name>LLC_BI__ROE_Impact__c</name>
+    </fields>
+    <fields>
+        <label><!-- ROE --></label>
+        <name>LLC_BI__ROE__c</name>
+    </fields>
+    <fields>
+        <label><!-- RORAC Impact --></label>
+        <name>LLC_BI__RORAC_Impact__c</name>
+    </fields>
+    <fields>
+        <label><!-- RORAC --></label>
+        <name>LLC_BI__RORAC__c</name>
+    </fields>
+    <fields>
+        <label><!-- Regulatory Cost of Capital --></label>
+        <name>LLC_BI__Reg_Cost_of_Capital__c</name>
+    </fields>
+    <fields>
+        <label><!-- Relationship --></label>
+        <name>LLC_BI__Relationship__c</name>
+        <relationshipLabel><!-- Profitabilities --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- SVA --></label>
+        <name>LLC_BI__SVA_Currency__c</name>
+    </fields>
+    <fields>
+        <label><!-- Proforma SVA --></label>
+        <name>LLC_BI__SVA_Proforma__c</name>
+    </fields>
+    <fields>
+        <label><!-- Source Profitability --></label>
+        <name>LLC_BI__Source_Profitability__c</name>
+        <relationshipLabel><!-- Profitabilities (Source Profitability) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Tax Rate --></label>
+        <name>LLC_BI__Tax_Rate__c</name>
+    </fields>
+    <fields>
+        <label><!-- Taxes --></label>
+        <name>LLC_BI__Taxes__c</name>
+    </fields>
+    <fields>
+        <label><!-- Total Liabilities for Deposits --></label>
+        <name>LLC_BI__Total_Assets_for_Deposits__c</name>
+    </fields>
+    <fields>
+        <label><!-- Total Assets for Loans --></label>
+        <name>LLC_BI__Total_Assets_for_Loans__c</name>
+    </fields>
+    <fields>
+        <label><!-- Total Assets for Treasury --></label>
+        <name>LLC_BI__Total_Assets_for_Treasury__c</name>
+    </fields>
+    <fields>
+        <label><!-- Total Prepayment Loss --></label>
+        <name>LLC_BI__Total_Prepayment_Loss__c</name>
+    </fields>
+    <fields>
+        <label><!-- Treasury EVA --></label>
+        <name>LLC_BI__Treasury_EVA__c</name>
+    </fields>
+    <fields>
+        <label><!-- Treasury Expected Losses --></label>
+        <name>LLC_BI__Treasury_Expected_Losses__c</name>
+    </fields>
+    <fields>
+        <label><!-- Treasury Operating Cost --></label>
+        <name>LLC_BI__Treasury_Operating_Cost__c</name>
+    </fields>
+    <fields>
+        <label><!-- Treasury Revenue --></label>
+        <name>LLC_BI__Treasury_Revenue__c</name>
+    </fields>
+    <fields>
+        <label><!-- lookupKey --></label>
+        <name>LLC_BI__lookupKey__c</name>
+    </fields>
+</CustomObjectTranslation>

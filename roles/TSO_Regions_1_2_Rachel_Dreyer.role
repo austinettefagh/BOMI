@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Role xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseAccessLevel>Edit</caseAccessLevel>
+    <contactAccessLevel>Edit</contactAccessLevel>
+    <description>TSO - Regions 1 &amp; 2 - Rachel Dreyer</description>
+    <mayForecastManagerShare>false</mayForecastManagerShare>
+    <name>TSO - Regions 1 &amp; 2 - Rachel Dreyer</name>
+    <opportunityAccessLevel>Edit</opportunityAccessLevel>
+    <parentRole>SVP_Treasury_Solutions</parentRole>
+</Role>

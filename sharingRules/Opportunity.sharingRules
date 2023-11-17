@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<SharingRules xmlns="http://soap.sforce.com/2006/04/metadata">
+    <sharingCriteriaRules>
+        <fullName>Opportunity_Sharing_Rule</fullName>
+        <accessLevel>Edit</accessLevel>
+        <description>This rule is used to share the Opp records of Loan record type with all LA&apos;s &amp; RM&apos;s</description>
+        <label>Opportunity Sharing Rule</label>
+        <sharedTo>
+            <group>PG_LA_RM_Public_Group</group>
+        </sharedTo>
+        <booleanFilter>1 OR 2</booleanFilter>
+        <criteriaItems>
+            <field>RecordTypeId</field>
+            <operation>equals</operation>
+            <value>Loan</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>RecordTypeId</field>
+            <operation>equals</operation>
+            <value>Treasury Management</value>
+        </criteriaItems>
+        <includeRecordsOwnedByAll>true</includeRecordsOwnedByAll>
+    </sharingCriteriaRules>
+</SharingRules>

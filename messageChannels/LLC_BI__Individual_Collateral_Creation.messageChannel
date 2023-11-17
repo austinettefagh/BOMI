@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LightningMessageChannel xmlns="http://soap.sforce.com/2006/04/metadata">
+    <description>This message channel is used by the create-individual-collateral lightning web components.</description>
+    <isExposed>true</isExposed>
+    <masterLabel>Individual Collateral Creation</masterLabel>
+</LightningMessageChannel>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomTab xmlns="http://soap.sforce.com/2006/04/metadata">
+    <frameHeight>1440</frameHeight>
+    <hasSidebar>false</hasSidebar>
+    <label>Vertical IQ</label>
+    <motif>Custom16: Bank</motif>
+    <url>https://verticaliq.com/quicklogin?api_key=5d6ae51ef9126fdc22cf1cd2ddea0c9d&amp;user={!User.FederationIdentifier}</url>
+    <urlEncodingKey>UTF-8</urlEncodingKey>
+</CustomTab>

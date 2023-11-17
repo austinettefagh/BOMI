@@ -1,0 +1,113 @@
+<messaging:emailTemplate subject="The Bank of Missouri - Status Update for {!relatedTo.CF_Con_Primary_Loan__r.Name}" recipientType="User" relatedToType="Contact">
+    <messaging:htmlEmailBody >
+        <html>
+            <body>
+                <table style="width: 100%; table-layout: auto;">
+                    <tr>
+                        <td align="left">
+                            <table>
+                                <tr align="left">
+                                    <td align="left">
+                                        <apex:image url="{!$Label.TBOM_non_member_logo_URL}"
+                                            style="height: 90px; max-height: 90px;"
+                                            />
+                                    </td>
+                                </tr>
+                            </table>
+                            <div style="width: 100%; font-family: 'Salesforce Sans', Arial, sans-serif; text-align: left;">
+                                <div style="background-color: #ffffff; color: #000000; padding: 20px 30px 20px 30px;">
+                                    <h3>
+                                        <strong style="font-weight: 600; color: #000000; font-size: 13.5pt;">
+                                            Hi {!relatedTo.FirstName}, 
+                                            <br/>
+                                        </strong>
+                                  </h3>
+                                    <p style="color: #000000; font-size: 12pt;">
+                                    <apex:outputPanel rendered="{!OR((relatedTo.CF_Con_Primary_Loan__r.CF_Loan_Portal_Loan_Stage__c != 'Complete'),AND((relatedTo.CF_Con_Primary_Loan__r.CF_Loan_Portal_Loan_Stage__c == 'Complete'),(relatedTo.CF_Con_Primary_Loan__r.LLC_BI__Status__c != 'Declined'),(relatedTo.CF_Con_Primary_Loan__r.LLC_BI__Status__c != 'Withdrawn')))}">
+                                    The status of your loan with The Bank of Missouri has changed. Your loan has been moved to {!relatedTo.CF_Con_Primary_Loan__r.CF_Loan_Portal_Loan_Stage__c}. Please log in to your Bank of Missouri loan portal, and navigate to the To Do List on the Dashboard to see the progress of your loan and if any information is required.
+                                    </apex:outputPanel>
+                                   
+                                    <apex:outputPanel rendered="{!AND(relatedTo.CF_Con_Primary_Loan__r.CF_Loan_Portal_Loan_Stage__c == 'Complete',relatedTo.CF_Con_Primary_Loan__r.LLC_BI__Status__c == 'Declined')}">
+                                    The status of your loan with The Bank of Missouri has changed. We were not able to approve your loan request. For more information, please reach out to your Relationship Manager, {!relatedTo.CF_Con_Primary_Loan__r.LLC_BI__Loan_Officer__r.FirstName} {!relatedTo.CF_Con_Primary_Loan__r.LLC_BI__Loan_Officer__r.LastName}, at {!relatedTo.CF_Con_Primary_Loan__r.LLC_BI__Loan_Officer__r.Phone} or <a href="{!relatedTo.CF_Con_Primary_Loan__r.LLC_BI__Loan_Officer__r.Email}" style="color:#007a3e;">{!relatedTo.CF_Con_Primary_Loan__r.LLC_BI__Loan_Officer__r.Email}</a>.
+                                    </apex:outputPanel>
+                                    
+                                    <apex:outputPanel rendered="{!AND(relatedTo.CF_Con_Primary_Loan__r.CF_Loan_Portal_Loan_Stage__c == 'Complete',relatedTo.CF_Con_Primary_Loan__r.LLC_BI__Status__c == 'Withdrawn')}">
+                                    The status of your loan with The Bank of Missouri has changed. Your application has been withdrawn. This change may have occurred per your request or may indicate that your loan application has expired. For more information, please reach out to your Relationship Manager, {!relatedTo.CF_Con_Primary_Loan__r.LLC_BI__Loan_Officer__r.FirstName} {!relatedTo.CF_Con_Primary_Loan__r.LLC_BI__Loan_Officer__r.LastName}, at {!relatedTo.CF_Con_Primary_Loan__r.LLC_BI__Loan_Officer__r.Phone} or <a href="{!relatedTo.CF_Con_Primary_Loan__r.LLC_BI__Loan_Officer__r.Email}" style="color:#007a3e;">{!relatedTo.CF_Con_Primary_Loan__r.LLC_BI__Loan_Officer__r.Email}</a>.
+                                    </apex:outputPanel>                                                                                                           
+                                    
+                                    </p>
+                                   <p style="color: #000000; font-size: 12pt;">
+                                   <apex:outputPanel rendered="{!OR((relatedTo.CF_Con_Primary_Loan__r.CF_Loan_Portal_Loan_Stage__c != 'Complete'),AND((relatedTo.CF_Con_Primary_Loan__r.CF_Loan_Portal_Loan_Stage__c == 'Complete'),(relatedTo.CF_Con_Primary_Loan__r.LLC_BI__Status__c != 'Declined'),(relatedTo.CF_Con_Primary_Loan__r.LLC_BI__Status__c != 'Withdrawn')))}">                                   
+                                        To navigate to the portal, go to:
+                                        <a href="https://pcgatbankofmo.my.site.com" style="color:green">
+                                            https://pcgatbankofmo.my.site.com
+                                        </a>
+                                       </apex:outputPanel>
+                                    </p>
+                                    <p style="color: #000000; font-size: 12pt;">
+                                 Thanks,<br/>                                   
+                                    The Bank of Missouri
+                                    </p>
+                                    <p style="color: #000000; font-size: 12pt;">
+                                    <apex:outputPanel rendered="{!OR((relatedTo.CF_Con_Primary_Loan__r.CF_Loan_Portal_Loan_Stage__c != 'Complete'),AND((relatedTo.CF_Con_Primary_Loan__r.CF_Loan_Portal_Loan_Stage__c == 'Complete'),(relatedTo.CF_Con_Primary_Loan__r.LLC_BI__Status__c != 'Declined'),(relatedTo.CF_Con_Primary_Loan__r.LLC_BI__Status__c != 'Withdrawn')))}">
+                                     Please reach out to your Relationship Manager, {!relatedTo.CF_Con_Primary_Loan__r.LLC_BI__Loan_Officer__r.FirstName} {!relatedTo.CF_Con_Primary_Loan__r.LLC_BI__Loan_Officer__r.LastName}, with any questions at {!relatedTo.CF_Con_Primary_Loan__r.LLC_BI__Loan_Officer__r.Phone} or <a href="{!relatedTo.CF_Con_Primary_Loan__r.LLC_BI__Loan_Officer__r.Email}" style="color:#007a3e;">{!relatedTo.CF_Con_Primary_Loan__r.LLC_BI__Loan_Officer__r.Email}.</a>.
+                                    </apex:outputPanel>
+                                    </p>
+                                </div>
+                            </div>
+                            <hr style="color:#808080"></hr>
+                            <table style="width: 100%; background-color: #ffffff; color: #000000; padding: 20px; font-size: 8pt;">
+                            <div style="width: 100%; font-family: 'Salesforce Sans', Arial, sans-serif; text-align: left;">
+                                <tr>
+                                    <td>
+                                          The Bank of Missouri | Member FDIC | 906 N. Kingshighway, Perryville, MO | 888-547-6541
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        Please do not reply to this message, as this email inbox is not monitored.
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        This email was sent to <a name="myname" style="color:#000000">{!recipient.Email}</a> and contains information directly related to your account with us and/or any application you may have submitted. If you feel you have received this message in error, please contact us at 888-547-6541.
+                                    </td>    
+                                </tr>
+                                </div>
+                            </table>
+                        </td>
+                    </tr>
+                </table>
+            </body>
+        </html>
+    </messaging:htmlEmailBody>
+
+    <messaging:plainTextEmailBody >
+        Hi {!relatedTo.FirstName}, 
+       
+
+        The status of your loan with The Bank of Missouri has changed. Please log in to your Bank of Missouri loan portal, and navigate to the To Do List on the Dashboard to see the progress of your loan and if any information is required.
+<!--       {!IF(OR((relatedTo.CF_Con_Portal_Loan_Stage__c != 'Complete'),AND((relatedTo.CF_Con_Portal_Loan_Stage__c == 'Complete'),(relatedTo.CF_Con_Portal_Loan_Status__c != 'Declined'),(relatedTo.CF_Con_Portal_Loan_Status__c != 'Withdrawn'))), 
+       "The status of your loan with The Bank of Missouri has changed. Your loan has been moved to {relatedTo.CF_Con_Portal_Loan_Stage__c}. Please log in to your Bank of Missouri loan portal, and navigate to the To Do List on the Dashboard to see the progress of your loan and if any information is required.",
+           IF(AND(relatedTo.CF_Con_Portal_Loan_Stage__c == 'Complete',relatedTo.CF_Con_Portal_Loan_Status__c == 'Declined'),
+           'The status of your loan with The Bank of Missouri has changed. We were not able to approve your loan request. For more information, please reach out to your Relationship Manager, /{relatedTo.CF_Con_Loan_RM_Name__c/}, at {relatedTo.CF_Con_Loan_RM_Phone__c} or {!relatedTo.CF_Con_Loan_RM_Email__c}.',
+               IF(AND(relatedTo.CF_Con_Portal_Loan_Stage__c == 'Complete',relatedTo.CF_Con_Portal_Loan_Status__c == 'Withdrawn'),
+               'The status of your loan with The Bank of Missouri has changed. Your application has been withdrawn. This change may have occurred per your request or may indicate that your loan application has expired. For more information, please reach out to your Relationship Manager, !relatedTo.CF_Con_Loan_RM_Name__c, at {!relatedTo.CF_Con_Loan_RM_Phone__c} or {!relatedTo.CF_Con_Loan_RM_Email__c}.',
+               'null'
+               )
+           ) 
+       )}
+         
+ --> 
+        To navigate to the portal, go to:
+        https://pcgatbankofmo.my.site.com
+    
+        Thanks,                                   
+        The Bank of Missouri
+        
+        
+        The Bank of Missouri | Member FDIC | 906 N. Kingshighway, Perryville, MO | 888-547-6541
+        Please do not reply to this message, as this email inbox is not monitored.
+        This email was sent to <a name="myname">{!recipient.Email}</a> and contains information directly related to your account with us and/or any application you may have submitted. If you feel you have received this message in error, please contact us at 888-547-6541.
+     </messaging:plainTextEmailBody>
+</messaging:emailTemplate>

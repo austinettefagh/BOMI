@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fieldSets>
+        <label><!-- Etran Submission Summary --></label>
+        <name>nSBA__Etran_Submission_Summary</name>
+    </fieldSets>
+    <fields>
+        <label><!-- Auth Error Number --></label>
+        <name>nSBA__Auth_Error_Number__c</name>
+    </fields>
+    <fields>
+        <label><!-- Auth Error Text --></label>
+        <name>nSBA__Auth_Error_Text__c</name>
+    </fields>
+    <fields>
+        <label><!-- Errors --></label>
+        <name>nSBA__Errors__c</name>
+    </fields>
+    <fields>
+        <label><!-- Liquid Credit Score --></label>
+        <name>nSBA__Liquid_Credit_Score__c</name>
+    </fields>
+    <fields>
+        <label><!-- Loan App Approval Date --></label>
+        <name>nSBA__Loan_App_Approval_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Lender&apos;s Contact E-Mail Address --></label>
+        <name>nSBA__Loan_App_Etran_Email_Address__c</name>
+    </fields>
+    <fields>
+        <label><!-- Funded Date --></label>
+        <name>nSBA__Loan_App_Fund_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Lender&apos;s Application Number --></label>
+        <name>nSBA__Loan_App_Lenders_Application_Number__c</name>
+    </fields>
+    <fields>
+        <label><!-- Lender&apos;s Loan Number --></label>
+        <name>nSBA__Loan_App_Lenders_Loan_Number__c</name>
+    </fields>
+    <fields>
+        <label><!-- Loan App Name --></label>
+        <name>nSBA__Loan_App_Name__c</name>
+    </fields>
+    <fields>
+        <label><!-- Loan App Number --></label>
+        <name>nSBA__Loan_App_Number__c</name>
+    </fields>
+    <fields>
+        <label><!-- Loan App Received Date --></label>
+        <name>nSBA__Loan_App_Received_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Requested Amount --></label>
+        <name>nSBA__Loan_App_Request_Amount__c</name>
+    </fields>
+    <fields>
+        <label><!-- Approved Amount --></label>
+        <name>nSBA__Loan_App_SBA_Approved_Amount__c</name>
+    </fields>
+    <fields>
+        <help><!-- The SBA loan application status. --></help>
+        <label><!-- Loan App Status --></label>
+        <name>nSBA__Loan_App_Status__c</name>
+    </fields>
+    <fields>
+        <label><!-- Loan App Status Code --></label>
+        <name>nSBA__Loan_App_Status_code__c</name>
+    </fields>
+    <fields>
+        <help><!-- This field is used to specify the percentage of total amount guaranteed by SBA. --></help>
+        <label><!-- Loan Guarantee Percent --></label>
+        <name>nSBA__Loan_Guarantee_Percent__c</name>
+    </fields>
+    <fields>
+        <label><!-- Guaranty Fee Amount --></label>
+        <name>nSBA__Loan_Guaranty_Fee_Amount__c</name>
+    </fields>
+    <fields>
+        <label><!-- Guaranty Fee Explanation --></label>
+        <name>nSBA__Loan_Guaranty_Fee_Explanation__c</name>
+    </fields>
+    <fields>
+        <label><!-- Loan Number --></label>
+        <name>nSBA__Loan_Number__c</name>
+    </fields>
+    <fields>
+        <label><!-- Loan --></label>
+        <name>nSBA__Loan__c</name>
+        <relationshipLabel><!-- E-tran Responses --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Primary Business DUNS Number --></label>
+        <name>nSBA__Primary_Business_DUNS_Number__c</name>
+    </fields>
+    <fields>
+        <label><!-- Request Message --></label>
+        <name>nSBA__Request_Message__c</name>
+    </fields>
+    <fields>
+        <label><!-- Response Message --></label>
+        <name>nSBA__Response_Message__c</name>
+    </fields>
+    <fields>
+        <label><!-- Synopsis --></label>
+        <name>nSBA__Synopsis__c</name>
+    </fields>
+    <fields>
+        <help><!-- This field is used to specify the warnings received by SBA during the ETran Loan Submission experience. --></help>
+        <label><!-- Warnings --></label>
+        <name>nSBA__Warnings__c</name>
+    </fields>
+</CustomObjectTranslation>

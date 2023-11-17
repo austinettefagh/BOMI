@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <help><!-- Forces a page break after the section when printing. --></help>
+        <label><!-- Break Page After --></label>
+        <name>nDESIGN__Break_Page_After__c</name>
+    </fields>
+    <fields>
+        <help><!-- Forces a page break before the section when printing. --></help>
+        <label><!-- Break Page Before --></label>
+        <name>nDESIGN__Break_Page_Before__c</name>
+    </fields>
+    <fields>
+        <label><!-- Default Editable --></label>
+        <name>nDESIGN__Default_Editable__c</name>
+    </fields>
+    <fields>
+        <label><!-- Default Rendered --></label>
+        <name>nDESIGN__Default_Rendered__c</name>
+    </fields>
+    <fields>
+        <label><!-- Disable Print --></label>
+        <name>nDESIGN__Disable_Print__c</name>
+    </fields>
+    <fields>
+        <label><!-- Display Order --></label>
+        <name>nDESIGN__Display_Order__c</name>
+    </fields>
+    <fields>
+        <label><!-- Display Toggle Effect --></label>
+        <name>nDESIGN__Display_Toggle_Effect__c</name>
+        <picklistValues>
+            <masterLabel>fade</masterLabel>
+            <translation><!-- fade --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>slide</masterLabel>
+            <translation><!-- slide --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Display Toggle Header --></label>
+        <name>nDESIGN__Display_Toggle_Header__c</name>
+    </fields>
+    <fields>
+        <label><!-- Display Toggle Link --></label>
+        <name>nDESIGN__Display_Toggle_Link__c</name>
+    </fields>
+    <fields>
+        <label><!-- Headless --></label>
+        <name>nDESIGN__Headless__c</name>
+    </fields>
+    <fields>
+        <label><!-- Inactive --></label>
+        <name>nDESIGN__Inactive__c</name>
+    </fields>
+    <fields>
+        <label><!-- Instructions --></label>
+        <name>nDESIGN__Instructions_Text__c</name>
+    </fields>
+    <fields>
+        <help><!-- Deprecated to Instructions_Text__c --></help>
+        <label><!-- -D Instructions --></label>
+        <name>nDESIGN__Instructions__c</name>
+    </fields>
+    <fields>
+        <label><!-- Is Editable --></label>
+        <name>nDESIGN__Is_Editable__c</name>
+    </fields>
+    <fields>
+        <label><!-- Layout --></label>
+        <name>nDESIGN__Layout__c</name>
+        <relationshipLabel><!-- Screen Sections --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Rendered View --></label>
+        <name>nDESIGN__Rendered_View__c</name>
+    </fields>
+    <fields>
+        <label><!-- Screen View --></label>
+        <name>nDESIGN__Screen_View__c</name>
+        <relationshipLabel><!-- Screen Sections --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Screen --></label>
+        <name>nDESIGN__Screen__c</name>
+        <relationshipLabel><!-- Screen Sections --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Section Resource --></label>
+        <name>nDESIGN__Section_Resource__c</name>
+        <picklistValues>
+            <masterLabel>ConfiguredSObjectScreenResource</masterLabel>
+            <translation><!-- ConfiguredSObjectScreenResource --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MappedSObjectHierarchyScreenResource</masterLabel>
+            <translation><!-- MappedSObjectHierarchyScreenResource --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MappedSObjectScreenResource</masterLabel>
+            <translation><!-- MappedSObjectScreenResource --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SObjectScreenResource</masterLabel>
+            <translation><!-- SObjectScreenResource --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Widget --></label>
+        <name>nDESIGN__Widget__c</name>
+        <relationshipLabel><!-- Screen Sections --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- lookupKey --></label>
+        <name>nDESIGN__lookupKey__c</name>
+    </fields>
+    <fields>
+        <label><!-- sObject Type --></label>
+        <name>nDESIGN__sObject_Type__c</name>
+        <picklistValues>
+            <masterLabel>Account</masterLabel>
+            <translation><!-- Account --></translation>
+        </picklistValues>
+    </fields>
+    <validationRules>
+        <errorMessage><!-- Please select a section resource. --></errorMessage>
+        <name>nDESIGN__Mandatory</name>
+    </validationRules>
+    <webLinks>
+        <label><!-- Build_Layout --></label>
+        <name>nDESIGN__Build_Layout</name>
+    </webLinks>
+</CustomObjectTranslation>

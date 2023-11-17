@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <help><!-- Indicates this Index is in use. --></help>
+        <label><!-- Active --></label>
+        <name>LLC_BI__Active__c</name>
+    </fields>
+    <fields>
+        <help><!-- Category --></help>
+        <label><!-- Category --></label>
+        <name>LLC_BI__Category__c</name>
+    </fields>
+    <fields>
+        <help><!-- Description --></help>
+        <label><!-- Description --></label>
+        <name>LLC_BI__Description__c</name>
+    </fields>
+    <fields>
+        <help><!-- Default Source URL --></help>
+        <label><!-- Default Source URL --></label>
+        <name>LLC_BI__External_Source__c</name>
+    </fields>
+    <fields>
+        <help><!-- Update Frequency --></help>
+        <label><!-- Modification Schedule --></label>
+        <name>LLC_BI__Modification_Schedule__c</name>
+    </fields>
+    <fields>
+        <help><!-- Index Name --></help>
+        <label><!-- Name --></label>
+        <name>LLC_BI__Name__c</name>
+    </fields>
+</CustomObjectTranslation>

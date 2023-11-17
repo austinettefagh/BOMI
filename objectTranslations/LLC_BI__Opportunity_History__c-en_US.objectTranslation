@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fieldSets>
+        <label><!-- Opp History For Dashboard --></label>
+        <name>LLC_BI__Opp_History_For_Dashboard</name>
+    </fieldSets>
+    <fields>
+        <label><!-- Amount Change --></label>
+        <name>LLC_BI__Amount_Change__c</name>
+    </fields>
+    <fields>
+        <label><!-- Amount --></label>
+        <name>LLC_BI__Amount__c</name>
+    </fields>
+    <fields>
+        <label><!-- Start Time --></label>
+        <name>LLC_BI__Change_Time__c</name>
+    </fields>
+    <fields>
+        <label><!-- Deposit --></label>
+        <name>LLC_BI__Deposit__c</name>
+        <relationshipLabel><!-- Opportunity History --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- End Time --></label>
+        <name>LLC_BI__End_Time__c</name>
+    </fields>
+    <fields>
+        <help><!-- Set in Code - indicates the final entry for a single stage for a particular loan. --></help>
+        <label><!-- Final Stage Change --></label>
+        <name>LLC_BI__Final_Stage_Change__c</name>
+    </fields>
+    <fields>
+        <label><!-- Is Booked --></label>
+        <name>LLC_BI__Is_Booked__c</name>
+    </fields>
+    <fields>
+        <label><!-- Is Closed --></label>
+        <name>LLC_BI__Is_Closed__c</name>
+    </fields>
+    <fields>
+        <label><!-- Is Excluded From Stage Duration --></label>
+        <name>LLC_BI__Is_Excluded_From_Stage_Duration__c</name>
+    </fields>
+    <fields>
+        <label><!-- Loan --></label>
+        <name>LLC_BI__Loan__c</name>
+        <relationshipLabel><!-- Opportunity History --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Opportunity Id --></label>
+        <name>LLC_BI__OpportunityId__c</name>
+    </fields>
+    <fields>
+        <label><!-- Previous Stage Duration Excluded Minutes --></label>
+        <name>LLC_BI__Previous_Stage_Duration_Excluded_Minutes__c</name>
+    </fields>
+    <fields>
+        <help><!-- Set in Code - holds the previous Stage Duration Minutes for its stage of a single loan. --></help>
+        <label><!-- Previous Stage Duration Minutes --></label>
+        <name>LLC_BI__Previous_Stage_Duration_Minutes__c</name>
+    </fields>
+    <fields>
+        <help><!-- Set in Code - holds the previous Stage Duration Minutes for its stage of a single loan (Non-business hours only). --></help>
+        <label><!-- Prev Stage Duration Non-Business Mins --></label>
+        <name>LLC_BI__Previous_Stage_Duration_Non_Business_Min__c</name>
+    </fields>
+    <fields>
+        <label><!-- Product Package --></label>
+        <name>LLC_BI__Product_Package__c</name>
+        <relationshipLabel><!-- Opportunity History --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Record Duration Excluded Minutes --></label>
+        <name>LLC_BI__Record_Duration_Excluded_Minutes__c</name>
+    </fields>
+    <fields>
+        <label><!-- Stage Name --></label>
+        <name>LLC_BI__StageName__c</name>
+    </fields>
+    <fields>
+        <label><!-- Stage And Status --></label>
+        <name>LLC_BI__Stage_And_Status__c</name>
+    </fields>
+    <fields>
+        <label><!-- Stage Change --></label>
+        <name>LLC_BI__Stage_Change__c</name>
+    </fields>
+    <fields>
+        <help><!-- Set in Code - Holds the Stage Duration Hours for each Stage entry, for a single loan. --></help>
+        <label><!-- Record Duration Hours --></label>
+        <name>LLC_BI__Stage_Duration_Hours__c</name>
+    </fields>
+    <fields>
+        <help><!-- Set in Code - Holds the Stage Duration Minutes for each Stage entry, for a single loan. --></help>
+        <label><!-- Record Duration Minutes --></label>
+        <name>LLC_BI__Stage_Duration_Minutes__c</name>
+    </fields>
+    <fields>
+        <label><!-- Record Duration Non Business Minutes --></label>
+        <name>LLC_BI__Stage_Duration_Non_Business_Minutes__c</name>
+    </fields>
+    <fields>
+        <label><!-- Record Duration Days --></label>
+        <name>LLC_BI__Stage_Duration__c</name>
+    </fields>
+    <fields>
+        <label><!-- Status Name --></label>
+        <name>LLC_BI__StatusName__c</name>
+    </fields>
+    <fields>
+        <label><!-- Status Change --></label>
+        <name>LLC_BI__Status_Change__c</name>
+    </fields>
+    <fields>
+        <help><!-- Set in Code - Holds the sum of the Stage Duration Days for each Final Stage Change, for a single loan. --></help>
+        <label><!-- Sum Stage Duration Days --></label>
+        <name>LLC_BI__Sum_Stage_Duration_Days__c</name>
+    </fields>
+    <fields>
+        <label><!-- Sum Stage Duration Excluded Days --></label>
+        <name>LLC_BI__Sum_Stage_Duration_Excluded_Days__c</name>
+    </fields>
+    <fields>
+        <label><!-- Sum Stage Duration Excluded Hours --></label>
+        <name>LLC_BI__Sum_Stage_Duration_Excluded_Hours__c</name>
+    </fields>
+    <fields>
+        <label><!-- Sum Stage Duration Excluded Minutes --></label>
+        <name>LLC_BI__Sum_Stage_Duration_Excluded_Minutes__c</name>
+    </fields>
+    <fields>
+        <help><!-- Set in Code - Holds the sum of the Stage Duration Hours for each Final Stage Change, for a single loan. --></help>
+        <label><!-- Sum Stage Duration Hours --></label>
+        <name>LLC_BI__Sum_Stage_Duration_Hours__c</name>
+    </fields>
+    <fields>
+        <help><!-- Set in Code - Holds the sum of the Stage Duration Minutes for each Final Stage Change, for a single loan. --></help>
+        <label><!-- Sum Stage Duration Minutes --></label>
+        <name>LLC_BI__Sum_Stage_Duration_Minutes__c</name>
+    </fields>
+    <fields>
+        <label><!-- Sum Stage Duration Non-Business Days --></label>
+        <name>LLC_BI__Sum_Stage_Duration_Non_Business_Days__c</name>
+    </fields>
+    <fields>
+        <label><!-- Sum Stage Duration Non-Business Hours --></label>
+        <name>LLC_BI__Sum_Stage_Duration_Non_Business_Hours__c</name>
+    </fields>
+    <fields>
+        <label><!-- Sum Stage Duration Non-Business Minutes --></label>
+        <name>LLC_BI__Sum_Stage_Duration_Non_Business_Minutes__c</name>
+    </fields>
+    <fields>
+        <label><!-- Total Stage Duration Excluded Minutes --></label>
+        <name>LLC_BI__Total_Stage_Duration_Excluded_Minutes__c</name>
+    </fields>
+    <fields>
+        <label><!-- Total Stage Duration Minutes --></label>
+        <name>LLC_BI__Total_Stage_Duration_Minutes__c</name>
+    </fields>
+    <fields>
+        <label><!-- Total Stage Duration Non-Business Mins --></label>
+        <name>LLC_BI__Total_Stage_Duration_Non_Business_Min__c</name>
+    </fields>
+    <fields>
+        <label><!-- Treasury Service --></label>
+        <name>LLC_BI__Treasury_Service__c</name>
+        <relationshipLabel><!-- Opportunity History --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- User --></label>
+        <name>LLC_BI__User__c</name>
+        <relationshipLabel><!-- Opportunity History --></relationshipLabel>
+    </fields>
+</CustomObjectTranslation>

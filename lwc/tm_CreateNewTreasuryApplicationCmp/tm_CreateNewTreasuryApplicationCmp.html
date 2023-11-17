@@ -1,0 +1,681 @@
+<template>
+    <lightning-quick-action-panel title="Create New Treasury Application" header={showHeaderTitle}>
+        <!-- show account information-->
+        <template if:true={showAccountInfo}>
+            <c-tm_-application-account-info-cmp account={account}></c-tm_-application-account-info-cmp>
+            <div class="slds-grid slds-grid_align-end" slot="footer">
+                <div class="slds-size_1-of-12">
+                    <lightning-button label="Next" variant="brand" title="Next" onclick={handleNavigationToAgreement}></lightning-button>
+                </div>
+                <!-- <c-tm_-application-footer-button-cmp right-button-label={nextButton} onrightbuttonpress={handleNavigationToAgreement}></c-tm_-application-footer-button-cmp> -->
+            </div>
+        </template>
+        <!-- show agreement information-->
+        <template if:true={showAgreementInfo}>
+            <c-tm_-application-agreement-info-cmp account={account} bizname={bizName} onbiznameinput={handleBizNameInput} handletestchange={handletestchange}></c-tm_-application-agreement-info-cmp>
+            <div class="slds-grid slds-grid_align-end" slot="footer">
+                <div class="slds-size_1-of-12">
+                    <lightning-button label="Previous" title="Previous" onclick={handleNavigationToAccount}></lightning-button>
+                </div>
+                <div class="slds-size_1-of-12 slds-m-left_small">
+                    <lightning-button label="Next" variant="brand" title="Next" onclick={handleNavigationToProduct} disabled={checkBizName}></lightning-button>
+                </div>
+            </div>
+        </template>
+        <!-- show added product information-->
+        <template if:true={showTreasuryProduct}>
+            <div>
+                <div if:true={showSelectProduct}>
+                    <lightning-button label="Select Product" icon-name="utility:add" title="Select Product" onclick={handleSelectProduct}></lightning-button>
+                </div>
+                <template if:true={tableData}>
+                    <div style="max-height: 400px;" class="slds-m-top_small">
+                        <lightning-datatable
+                                key-field="id"
+                                data={tableData}
+                                columns={columns}
+                                hide-checkbox-column="true"
+                                onrowaction={handleRowAction}>
+                        </lightning-datatable>
+                    </div>
+                </template>
+            </div>
+            <div class="slds-grid slds-grid_align-end" slot="footer">
+                <div class="slds-size_1-of-12">
+                    <lightning-button label="Previous" title="Previous" onclick={handleNavigationToAgreement}></lightning-button>
+                </div>
+                <div class="slds-size_1-of-12 slds-m-left_small">
+                    <lightning-button label="Next" variant="brand" title="Next" onclick={handleNavigationToCheck} disabled={showSelectProduct}></lightning-button>
+                </div>
+            </div>
+        </template>
+        <!-- show product information-->
+        <template if:true={showAddProduct}>
+            <div>
+                <div class="slds-grid">
+                    <div class="slds-size_5-of-12">
+                        <div class="slds-m-bottom_small">
+                            <lightning-input name="productLine" label="Product Line" type="text" value={treasuryProdObj.productLine} disabled></lightning-input>
+                        </div>
+                    </div>
+                    <div class="slds-size_1-of-12"></div>
+                    <div class="slds-size_5-of-12">
+                        <div class="slds-m-bottom_small">
+                            <lightning-input name="productType" label="Product Type" type="text" value={treasuryProdObj.productType} disabled></lightning-input>
+                        </div>
+                    </div>
+                </div>
+                <div class="slds-grid">
+                    <div class="slds-size_5-of-12">
+                        <div class="slds-m-bottom_small">
+                            <lightning-input name="product" label="Product" type="text" value={treasuryProdObj.product} disabled></lightning-input>
+                        </div>
+                    </div>
+                    <div class="slds-size_1-of-12"></div>
+                    <div class="slds-size_5-of-12" if:true={showBillPay}>
+                        <div class="slds-m-bottom_small">
+                            <lightning-combobox name="isBillPayUser" label="Is Customer Existing Retail BillPay User?" value={treasuryProdObj.isBillPayUser} placeholder="Select Status" options={sdACHOptions} onchange={handleTreasuryProductChange} required dropdown-alignment="auto"></lightning-combobox>
+                        </div>
+                    </div>
+                    <div class="slds-size_5-of-12" if:true={showAccountNumberInput}>
+                        <div class="slds-m-bottom_small">
+                            <lightning-input name="acctNumStr" label="Account Number" maxlength="30" type="text" onchange={handleTreasuryProductChange} value={treasuryProdObj.acctNumStr}></lightning-input>
+                        </div>
+                    </div>
+                </div>
+                <!-- product input screen-->
+                <template if:true={treasuryProdObj.product}>
+                    <div class="slds-grid slds-wrap">
+                        <div class="slds-size_5-of-12">
+                            <div class="slds-m-bottom_small">
+                                <lightning-combobox name="fees" label="Fees" value={treasuryProdObj.fees} placeholder="Select Fees" options={feesOptions} onchange={handleTreasuryProductChange} required dropdown-alignment="auto"></lightning-combobox>
+                            </div>
+                        </div>
+                        <div class="slds-size_1-of-12"></div>
+                        <div class="slds-size_5-of-12" if:true={showStandard}>
+                            <div class="slds-m-bottom_small">
+                                <lightning-input type="text" name="List Price" label="List Price" value={lstPrice} disabled></lightning-input>
+                            </div>
+                        </div>
+                    </div>
+                    <template if:true={showExceptionInput}>
+                        <div class="slds-grid slds-wrap">
+                            <div class="slds-size_5-of-12">
+                                <div class="slds-m-bottom_small">
+                                    <lightning-input type="number" name="exceptionPricing" label="Exception Pricing" placeholder="type here..." onchange={handleTreasuryProductChange} value={treasuryProdObj.exceptionPricing} step></lightning-input>
+                                </div>
+                            </div>
+                            <div class="slds-size_1-of-12"></div>
+                            <div class="slds-size_5-of-12">
+                                <div class="slds-m-bottom_small">
+                                    <lightning-input type="date" name="exExpirationDate" label="Exception Expiration Date" onchange={handleTreasuryProductChange} value={treasuryProdObj.exExpirationDate}></lightning-input>
+                                </div>
+                            </div>
+                        </div>
+                    </template>
+                    <template if:true={showWaiveInput}>
+                        <div class="slds-grid slds-wrap">
+                            <div class="slds-size_5-of-12">
+                                <div class="slds-m-bottom_small">
+                                    <lightning-input type="date" name="waiveExpirationDate" label="Waive Expiration Date" placeholder="type here..." onchange={handleTreasuryProductChange} value={treasuryProdObj.waiveExpirationDate}></lightning-input>
+                                </div>
+                            </div>
+                        </div>
+                    </template>
+                    <div class="slds-grid slds-wrap">
+                        <div class="slds-size_5-of-12">
+                            <div class="slds-m-bottom_small">
+                                <lightning-input type="text" name="billAcctNum" label="Billing Account Number" placeholder="type here..." onchange={handleTreasuryProductChange} value={treasuryProdObj.billAcctNum} required></lightning-input>
+                            </div>
+                        </div>
+                        <div class="slds-size_1-of-12"></div>
+                        <div class="slds-size_5-of-12">
+                            <div class="slds-m-bottom_small">
+                                <lightning-input type="text" name="billInstructions" label="Billing Instructions" placeholder="type here..." onchange={handleTreasuryProductChange} value={treasuryProdObj.billInstructions}></lightning-input>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- show LockBox OR RDC -->
+                    <template if:true={showLockBox}>
+                        <div class="slds-grid slds-wrap">
+                            <div class="slds-size_5-of-12">
+                                <div class="slds-m-bottom_small">
+                                    <lightning-input type="text" name="dailyDepositAmount" label="Daily Deposit Amount" placeholder="type here..." onchange={handleTreasuryProductChange} value={treasuryProdObj.dailyDepositAmount}></lightning-input>
+                                </div>
+                            </div>
+                            <div class="slds-size_1-of-12"></div>
+                            <div class="slds-size_5-of-12">
+                                <div class="slds-m-bottom_small">
+                                    <lightning-input type="text" name="singleTransactionAmount" label="Single Transaction Amount" placeholder="type here..." onchange={handleTreasuryProductChange} value={treasuryProdObj.singleTransactionAmount}></lightning-input>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="slds-grid slds-wrap">
+                            <div class="slds-size_5-of-12">
+                                <div class="slds-m-bottom_small">
+                                    <lightning-input type="text" name="dailyCheckCount" label="Daily Check Count" placeholder="type here..." onchange={handleTreasuryProductChange} value={treasuryProdObj.dailyCheckCount}></lightning-input>
+                                </div>
+                            </div>
+                            <div class="slds-size_1-of-12"></div>
+                            <div class="slds-size_5-of-12">
+                                <div class="slds-m-bottom_samll" if:true={isLockboxRemote}>
+                                    <lightning-combobox name="isHaveScanner" label="Does customer have scanner?" value={treasuryProdObj.isHaveScanner} placeholder="Select Status" options={sdACHOptions} onchange={handleTreasuryProductChange} dropdown-alignment="bottom-left"></lightning-combobox>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="slds-grid slds-wrap" if:true={showRDCScanner}>
+                            <div class="slds-size_5-of-12">
+                                <div class="slds-m-bottom_small">
+                                    <lightning-button name="Scanner(s)" label="Scanner(s)" onclick={handleAddScanner} ></lightning-button>
+                                </div>
+                            </div>
+                        </div>
+                        <template if:true={showScannersItem}>
+                            <div class="slds-m-bottom_small slds-border_bottom">
+                                <lightning-pill-container items={scannersItemLst} onitemremove={handleScannerItemRemove}></lightning-pill-container>
+                            </div>
+                        </template>
+                        <div class="slds-grid slds-wrap" if:true={showRDCProfitsStart}>
+                            <div class="slds-size_5-of-12">
+                                <div class="slds-m-bottom_small">
+                                    <lightning-button name="Profit Stars Account Access" label="Profit Stars Account Access" onclick={handleAddAccountAccess}></lightning-button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="slds-grid slds-wrap" if:true={isLockbox}>
+                            <div class="slds-size_5-of-12">
+                                <div class="slds-m-bottom_small">
+                                    <lightning-button name="Add Account" label="Add Account" onclick={handleAddAccountAccess} disabled={lockboxCheck}></lightning-button>
+                                </div>
+                            </div>
+                        </div>
+                        <template if:true={showProfitsStartItem}>
+                            <div class="slds-m-bottom_small slds-border_bottom">
+                                <lightning-pill-container items={profitsStartItemLst} onitemremove={handleProfitStarsItemRemove}></lightning-pill-container>
+                            </div>
+                        </template>
+                    </template>
+                    <!-- show multi user-->
+                    <template if:true={showMultiUser}>
+                        <div class="slds-grid slds-wrap">
+                            <div class="slds-size_5-of-12">
+                                <div class="slds-m-bottom_small">
+                                    <lightning-record-edit-form
+                                        object-api-name='TM_Application__c'
+                                    >
+                                    <lightning-input-field field-name="TM_Account__c" name="accountId" onchange={handleTreasuryProductChange} value={treasuryProdObj.accountId}></lightning-input-field>
+                                </lightning-record-edit-form>
+                                </div>
+                            </div>
+                            <div class="slds-size_1-of-12"></div>
+                            <div class="slds-size_5-of-12">
+                                <div class="slds-m-bottom_small">
+                                    <lightning-input type="text" name="expandAddMoreCIF" label="Expand to Add more than One CIF" placeholder="type here..." onchange={handleTreasuryProductChange} value={treasuryProdObj.expandAddMoreCIF}></lightning-input>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="slds-grid slds-wrap">
+                            <div class="slds-size_5-of-12">
+                                <div class="slds-m-bottom_small">
+                                    <lightning-button name="Add Administrator" label="Add Administrator" onclick={handleAddAdmin} ></lightning-button>
+                                </div>
+                            </div>
+                        </div>
+                        <template if:true={showAdminItem}>
+                            <div class="slds-m-bottom_small slds-border_bottom">
+                                <lightning-pill-container items={adminItemLst} onitemremove={handleUserItemRemove}></lightning-pill-container>
+                            </div>
+                        </template>
+                    </template>
+                    <!-- show wire-->
+                    <template if:true={showWire}>
+                        <div class="slds-grid slds-wrap">
+                            <div class="slds-size_5-of-12">
+                                <div class="slds-m-bottom_small">
+                                    <lightning-input type="text" name="requestedLimit" label="Requested Wire Limit" placeholder="type here..." onchange={handleTreasuryProductChange} value={treasuryProdObj.requestedLimit}></lightning-input>
+                                </div>
+                            </div>
+                            <div class="slds-size_1-of-12"></div>
+                            <div class="slds-size_5-of-12">
+                                <div class="slds-m-bottom_small">
+                                    <lightning-combobox name="dualControlProcedures" label="Dual Control Procedures in Place" placeholder="Select Status" options={sdACHOptions} value={treasuryProdObj.dualControlProcedures} onchange={handleTreasuryProductChange} dropdown-alignment="bottom-left"></lightning-combobox>
+                                </div>
+                            </div>
+                        </div>
+                        <template if:true={showInputNote}>
+                            <div class="slds-grid slds-wrap">
+                                <div class="slds-size_12-of-12">
+                                    <div class="slds-m-bottom_small">
+                                        <lightning-input-rich-text
+                                            name="dualNotes"
+                                            value={treasuryProdObj.dualNotes}
+                                            onchange={handleTreasuryProductChange}>
+                                    </lightning-input-rich-text>
+                                    </div>
+                                </div>
+                            </div>
+                        </template>
+                        <div class="slds-grid slds-wrap">
+                            <div class="slds-size_5-of-12">
+                                <div class="slds-m-bottom_small">
+                                    <lightning-button name="Add Account" label="Add Account" onclick={handleAddProductAccount} ></lightning-button>
+                                </div>
+                            </div>
+                        </div>
+                        <template if:true={showProdAcctItem}>
+                            <div class="slds-m-bottom_small slds-border_bottom">
+                                <lightning-pill-container items={prodAcctItemLst} onitemremove={handleProdActRemove}></lightning-pill-container>
+                            </div>
+                        </template>
+                        <div class="slds-grid slds-wrap">
+                            <div class="slds-size_5-of-12">
+                                <div class="slds-m-bottom_small">
+                                    <lightning-button name="Add User" label="Add User" onclick={handleAddAdmin} ></lightning-button>
+                                </div>
+                            </div>
+                        </div>
+                        <template if:true={showAdminItem}>
+                            <div class="slds-m-bottom_small slds-border_bottom">
+                                <lightning-pill-container items={adminItemLst} onitemremove={handleUserItemRemove}></lightning-pill-container>
+                            </div>
+                        </template>
+                    </template>
+                    <!-- show UP -->
+                    <template if:true={showUP}>
+                        <div class="slds-grid slds-wrap">
+                            <div class="slds-size_5-of-12">
+                                <div class="slds-m-bottom_small">
+                                    <lightning-input type="text" name="requestedLimit" label="ACH Limit Requested" placeholder="type here..." onchange={handleTreasuryProductChange} value={treasuryProdObj.requestedLimit}></lightning-input>
+                                </div>
+                            </div>
+                            <div class="slds-size_1-of-12"></div>
+                            <div class="slds-size_5-of-12">
+                                <div class="slds-m-bottom_small">
+                                    <lightning-combobox name="isCreditProcessing" label="Does customer currently have credit card processing?" value={treasuryProdObj.isCreditProcessing} placeholder="Select Status" options={sdACHOptions} onchange={handleTreasuryProductChange} dropdown-alignment="bottom-left"></lightning-combobox>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="slds-grid slds-wrap" if:true={showUPTransaction}>
+                            <div class="slds-size_5-of-12">
+                                <div class="slds-m-bottom_small">
+                                    <lightning-combobox name="transactionType" label="Transaction Type" value={treasuryProdObj.transactionType} placeholder="Select Transaction Type" options={transactionOptions3} onchange={handleTreasuryProductChange} dropdown-alignment="bottom-left" ></lightning-combobox>
+                                </div>
+                            </div>
+                            <div class="slds-size_1-of-12"></div>
+                            <div class="slds-size_5-of-12" if:true={showTransactionNotes}>
+                                <div class="slds-m-bottom_small">
+                                    <lightning-input type="text" name="transactionNote" label="Other Description" value={treasuryProdObj.transactionNote} placeholder="Other Description" onchange={handleTreasuryProductChange} ></lightning-input>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="slds-grid slds-wrap" if:true={showUPProfitsStart}>
+                            <div class="slds-size_5-of-12">
+                                <div class="slds-m-bottom_small">
+                                    <lightning-button name="Profit Stars Account Access" label="Profit Stars Account Access" onclick={handleAddAccountAccess} ></lightning-button>
+                                </div>
+                            </div>
+                        </div>
+                        <template if:true={showProfitsStartItem}>
+                            <div class="slds-m-bottom_small slds-border_bottom">
+                                <lightning-pill-container items={profitsStartItemLst} onitemremove={handleProfitStarsItemRemove}></lightning-pill-container>
+                            </div>
+                        </template>
+                    </template>
+                    <!-- show post pay-->
+                    <template if:true={showPostPay}>
+                        <div class="slds-grid slds-wrap">
+                            <div class="slds-size_5-of-12">
+                                <div class="slds-m-bottom_small">
+                                    <lightning-input type="text" name="exLstContName" label="Exceptions List Contact Name" placeholder="type here..." onchange={handleTreasuryProductChange} value={treasuryProdObj.exLstContName}></lightning-input>
+                                </div>
+                            </div>
+                            <div class="slds-size_1-of-12"></div>
+                            <div class="slds-size_5-of-12">
+                                <div class="slds-m-bottom_small">
+                                    <lightning-input type="text" name="exLstContPhone" label="Exceptions List Contact Phone" placeholder="type here..." onblur={handleTreasuryProductChange} value={treasuryProdObj.exLstContPhone}></lightning-input>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="slds-grid slds-wrap">
+                            <div class="slds-size_5-of-12">
+                                <div class="slds-m-bottom_small">
+                                    <lightning-input type="text" name="acctNumEnrolled" label="Account Numbers to be Enrolled" placeholder="type here..." onchange={handleTreasuryProductChange} value={treasuryProdObj.acctNumEnrolled} maxlength="40"></lightning-input>
+                                </div>
+                            </div>
+                            <div class="slds-size_1-of-12"></div>
+                            <div class="slds-size_5-of-12" if:true={showSampleCheck}>
+                                <div class="slds-m-bottom_small">
+                                    <lightning-combobox name="sampleIssuedCheckFile" label="Upload Sample Issued Check File" placeholder="Select Upload Sample Issued Check File" options={sdACHOptions} onchange={handleTreasuryProductChange} value={treasuryProdObj.sampleIssuedCheckFile} dropdown-alignment="bottom-left"></lightning-combobox>
+                                </div>
+                            </div>
+                            <div class="slds-size_5-of-12" if:true={showPayFilter}>
+                                <div class="slds-m-bottom_small">
+                                    <lightning-combobox name="positivePayFilterLst" label="Upload Positive Pay Filter List" placeholder="Select Upload Positive Pay Filter List" options={sdACHOptions} onchange={handleTreasuryProductChange} value={treasuryProdObj.positivePayFilterLst} dropdown-alignment="bottom-left"></lightning-combobox>
+                                </div>
+                            </div>
+                        </div>
+                    </template>
+                    <!-- show ACH-->
+                    <template if:true={showACH}>
+                        <div class="slds-grid slds-warp" if:true={showACHThird}>
+                            <div class="slds-size_5-of-12">
+                                <div class="slds-m-bottom_small">
+                                    <lightning-input type="text" name="numOriginators" label="Number of Originators" placeholder="type here..." onchange={handleTreasuryProductChange} value={treasuryProdObj.numOriginators}></lightning-input>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="slds-grid slds-wrap">
+                            <div class="slds-size_5-of-12">
+                                <div class="slds-m-bottom_small">
+                                    <lightning-button name="ACH Companies" label="ACH Companies" onclick={handleACHCompanies} ></lightning-button>
+                                </div>
+                            </div>
+                        </div>
+                        <template if:true={showACHItem}>
+                            <div class="slds-m-bottom_small slds-border_bottom">
+                                <lightning-pill-container items={achItemLst} onitemremove={handleItemRemove}></lightning-pill-container>
+                            </div>
+                        </template>
+                    </template>
+                    <!-- show Sweep-->
+                    <template if:true={showSweep}>
+                        <div class="slds-grid slds-wrap">
+                            <div class="slds-size_5-of-12">
+                                <div class="slds-m-bottom_small">
+                                    <lightning-button name="Add Account" label="Add Account" onclick={handleAddProductAccount} disabled={singleSweepCheck}></lightning-button>
+                                </div>
+                            </div>
+                        </div>
+                        <template if:true={showProdAcctItem}>
+                            <div class="slds-m-bottom_small slds-border_bottom">
+                                <lightning-pill-container items={prodAcctItemLst} onitemremove={handleProdActRemove}></lightning-pill-container>
+                            </div>
+                        </template>
+                    </template>
+                </template>
+            </div>
+            <div class="slds-grid slds-wrap slds-grid_align-end" slot="footer">
+                <div class="slds-size_1-of-12">
+                    <lightning-button label="Cancel" title="Cancel" onclick={handleCancelProduct}></lightning-button>
+                </div>
+                <div class="slds-size_1-of-12">
+                    <lightning-button label="Save" variant="brand" title="Save" onclick={handleSaveProduct} disabled={checkRequiredInput}></lightning-button>
+                </div>
+            </div>
+        </template>
+        <!-- show Add ACH Companies Screen-->
+        <template if:true={showAddACH} class="min-size">
+            <div class="slds-grid">
+                <div class="slds-size_5-of-12">
+                    <div class="slds-m-bottom_small">
+                        <lightning-input type="text" name="achName" label="Name" placeholder="type here..." onblur={handleACHCompaniesChange} value={achCompaniesObj.achName}></lightning-input>
+                    </div>
+                </div>
+                <div class="slds-size_1-of-12"></div>
+                <div class="slds-size_5-of-12">
+                    <div class="slds-m-bottom_small">
+                        <lightning-input type="number" name="reACHLimit" label="Requested ACH Limit" placeholder="type here..." onblur={handleACHCompaniesChange} value={achCompaniesObj.reACHLimit}></lightning-input>
+                    </div>
+                </div>
+            </div>
+            <div class="slds-grid slds-wrap">
+                <div class="slds-size_5-of-12">
+                    <div class="slds-m-bottom_small">
+                        <lightning-input type="text" name="achOffsetAcct" label="Offset Account" placeholder="type here..." onblur={handleACHCompaniesChange} value={achCompaniesObj.achOffsetAcct}></lightning-input>
+                    </div>
+                </div>
+                <div class="slds-size_1-of-12"></div>
+                <div class="slds-size_5-of-12">
+                    <div class="slds-m-bottom_small">
+                        <lightning-input type="text" name="achAdditional" label="Additional Offset Account" placeholder="type here..." onblur={handleACHCompaniesChange} value={achCompaniesObj.achAdditional}></lightning-input>
+                    </div>
+                </div>
+            </div>
+            <div class="slds-grid slds-wrap">
+                <div class="slds-size_5-of-12">
+                    <div class="slds-m-bottom_small">
+                        <lightning-combobox name="achCreditsDebits" label="Credits/Debits" placeholder="Select Credits/Debits" options={creditsDebitsOptions} onchange={handleACHCompaniesChange} value={achCompaniesObj.achCreditsDebits} dropdown-alignment="bottom-left"></lightning-combobox>
+                    </div>
+                </div>
+                <div class="slds-size_1-of-12"></div>
+                <div class="slds-size_5-of-12">
+                    <div class="slds-m-bottom_small">
+                        <lightning-combobox name="achSameDay" label="Same Day ACH" placeholder="Select Same Day ACH" options={sdACHOptions} onchange={handleACHCompaniesChange} value={achCompaniesObj.achSameDay} dropdown-alignment="bottom-left"></lightning-combobox>
+                    </div>
+                </div>
+            </div>
+            <div class="slds-grid slds-wrap">
+                <div class="slds-size_5-of-12">
+                    <div class="slds-m-bottom_small">
+                        <lightning-combobox name="achFrequency" label="Frequency" placeholder="Select Frequency" options={frequencyOptions} onchange={handleACHCompaniesChange} value={achCompaniesObj.achFrequency} dropdown-alignment="bottom-left"></lightning-combobox>
+                    </div>
+                </div>
+                <div class="slds-size_1-of-12"></div>
+                <div class="slds-size_5-of-12">
+                    <div class="slds-m-bottom_small">
+                        <lightning-combobox name="achTransaction" label="Transaction Type" placeholder="Select Transaction Type" options={transactionTypeOptions} onchange={handleACHCompaniesChange} value={achCompaniesObj.achTransaction} dropdown-alignment="bottom-left"></lightning-combobox>
+                    </div>
+                </div>
+            </div>
+            <div class="slds-grid slds-wrap">
+                <div class="slds-size_5-of-12" if:true={showACHTransactionsNote}>
+                    <div class="slds-m-bottom_small">
+                        <lightning-input type="text" name="achNote" label="Other Description" placeholder="Other Description" onchange={handleACHCompaniesChange} value={achCompaniesObj.achNote}></lightning-input>
+                    </div>
+                </div>
+            </div>
+            <div class="slds-grid slds-wrap slds-grid_align-end" slot="footer">
+                <div class="slds-size_1-of-12">
+                    <lightning-button label="Cancel" title="Cancel" onclick={handleCancelAddACH}></lightning-button>
+                </div>
+                <div class="slds-m-left_small">
+                    <lightning-button label="Save & New" title="Save & New" onclick={handleSaveNewACH}></lightning-button>
+                </div>
+                <div class="slds-size_1-of-12">
+                    <lightning-button label="Save" variant="brand" title="Save" onclick={handleSaveACH}></lightning-button>
+                </div>
+            </div>
+        </template>
+        <!-- show add Scanners-->
+        <template if:true={showAddScanners}>
+            <div class="scanner-min-size">
+                <div class="slds-grid slds-wrap">
+                    <div class="slds-size_5-of-12">
+                        <lightning-combobox name="scannerIsStock" label="Is scanner in stock?" value={scannerObj.scannerIsStock} placeholder="Select Status" options={sdACHOptions} onchange={handleScannerChange}></lightning-combobox>
+                    </div>
+                    <div class="slds-size_1-of-12"></div>
+                    <div class="slds-size_5-of-12" if:true={showSerialNumber}>
+                        <div class="slds-m-bottom_small">
+                            <lightning-input type="text" name="scannerSerialNum" label="Serial Number" placeholder="type here..." onchange={handleScannerChange} value={scannerObj.scannerSerialNum}></lightning-input>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="slds-grid slds-wrap slds-grid_align-end" slot="footer">
+                <div class="slds-size_1-of-12">
+                    <lightning-button label="Cancel" title="Cancel" onclick={handleCancelAddScanner}></lightning-button>
+                </div>
+                <div class="slds-m-left_small">
+                    <lightning-button label="Save & New" title="Save & New" onclick={handleSaveNewScanner}></lightning-button>
+                </div>
+                <div class="slds-size_1-of-12">
+                    <lightning-button label="Save" variant="brand" title="Save" onclick={handleSaveScanner}></lightning-button>
+                </div>
+            </div>
+        </template>
+        <!-- show add Account Access-->
+        <template if:true={showAddProfitStars}>
+            <div class="min-size">
+                <div class="slds-grid slds-wrap">
+                    <div class="slds-size_5-of-12">
+                        <div class="slds-m-bottom_small">
+                            <lightning-input type="text" name="psAcctName" label="Account Name" placeholder="type here..." onchange={handleProfitsStartChange} value={profitsStartObj.psAcctName}></lightning-input>
+                        </div>
+                    </div>
+                    <div class="slds-size_1-of-12"></div>
+                    <div class="slds-size_5-of-12">
+                        <div class="slds-m-bottom_small">
+                            <lightning-input type="text" name="psAcctNumber" label="Account Number" maxlength="30" placeholder="type here..." onchange={handleProfitsStartChange} value={profitsStartObj.psAcctNumber}></lightning-input>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="slds-grid slds-wrap slds-grid_align-end" slot="footer">
+                <div class="slds-size_1-of-12">
+                    <lightning-button label="Cancel" title="Cancel" onclick={handleCancelAddProfitStars}></lightning-button>
+                </div>
+                <div class="slds-m-left_small" if:false={isLockbox}>
+                    <lightning-button label="Save & New" title="Save & New" onclick={handleSaveNewProfitStars}></lightning-button>
+                </div>
+                <div class="slds-size_1-of-12">
+                    <lightning-button label="Save" variant="brand" title="Save" onclick={handleSaveProfitStars}></lightning-button>
+                </div>
+            </div>
+        </template>
+         <!-- Add Product Account Screen-->
+         <template if:true={showAddProductAccountScreen}>
+            <div class="slds-grid slds-wrap" if:false={showWire}>
+                <div class="slds-size_5-of-12">
+                    <div class="slds-m-bottom_small">
+                        <lightning-input type="text" name="prodAcctPrimaryAcct" label="Primary (Child) Account" placeholder="type here..." onchange={handleProdAcctChange} value={prodAcctObj.prodAcctPrimaryAcct}></lightning-input>
+                    </div>
+                </div>
+                <div class="slds-size_1-of-12"></div>
+                <div class="slds-size_5-of-12">
+                    <div class="slds-m-bottom_small">
+                        <lightning-input type="text" name="prodAcctSecondaryAcct" label="Secondary (Parent) Account" placeholder="type here..." onchange={handleProdAcctChange} value={prodAcctObj.prodAcctSecondaryAcct}></lightning-input>
+                    </div>
+                </div>
+            </div>
+            <div class="slds-grid slds-wrap" if:true={showWire}>
+                <div class="slds-size_5-of-12">
+                    <div class="slds-m-bottom_small">
+                        <lightning-input type="text" name="prodAcctAccountNumber" label="Account Number" maxlength="30" placeholder="type here..." onchange={handleProdAcctChange} value={prodAcctObj.prodAcctAccountNumber}></lightning-input>
+                    </div>
+                </div>
+                <div class="slds-size_1-of-12"></div>
+                <div class="slds-size_5-of-12">
+                    <div class="slds-m-bottom_small">
+                        <lightning-input type="text" name="prodAcctAccountDailyLimit" label="Account Daily Limit" placeholder="type here..." onchange={handleProdAcctChange} value={prodAcctObj.prodAcctAccountDailyLimit}></lightning-input>
+                    </div>
+                </div>
+            </div>
+            <div class="slds-grid slds-wrap" if:false={showWire}>
+                <div class="slds-size_5-of-12">
+                    <div class="slds-m-bottom_small">
+                        <lightning-input type="text" name="prodAcctPegBalance" label="Peg Balance" placeholder="type here..." onchange={handleProdAcctChange} value={prodAcctObj.prodAcctPegBalance}></lightning-input>
+                    </div>
+                </div>
+            </div>
+            <div class="slds-grid slds-wrap slds-grid_align-end" slot="footer">
+                <div class="slds-size_1-of-12">
+                    <lightning-button label="Cancel" title="Cancel" onclick={handleCancelAddProdAcct}></lightning-button>
+                </div>
+                <div class="slds-m-left_small" if:false={isSingeSweep}>
+                    <lightning-button label="Save & New" title="Save & New" onclick={handleSaveNewProdAcct}></lightning-button>
+                </div>
+                <div class="slds-size_1-of-12">
+                    <lightning-button label="Save" variant="brand" title="Save" onclick={handleSaveProdAcct}></lightning-button>
+                </div>
+            </div>
+        </template>
+        <!-- add user screen-->
+        <template if:true={showAddUser} class="min-size">
+            <div class="slds-grid slds-wrap">
+                <div class="slds-size_5-of-12">
+                    <div class="slds-m-bottom_small">
+                        <lightning-input type="text" name="adminName" label="Name" placeholder="type here..." onchange={handleAdminChange} value={adminObj.adminName}></lightning-input>
+                    </div>
+                </div>
+                <div class="slds-size_1-of-12"></div>
+                <div class="slds-size_5-of-12">
+                    <div class="slds-m-bottom_small">
+                        <lightning-input type="email" class="user-email-input" name="adminEmail" label="Email" placeholder="type here..." onchange={handleAdminChange} value={adminObj.adminEmail}></lightning-input>
+                    </div>
+                </div>
+            </div>
+            <template if:true={showWire}>
+                <div class="slds-grid slds-wrap">
+                    <div class="slds-size_5-of-12">
+                        <div class="slds-m-bottom_small">
+                            <lightning-input type="text" name="adminPerDayLimit" label="Per Day Limit" placeholder="type here..." onchange={handleAdminChange} maxlength="18" value={adminObj.adminPerDayLimit}></lightning-input>
+                        </div>
+                    </div>
+                    <div class="slds-size_1-of-12"></div>
+                    <div class="slds-size_5-of-12">
+                        <div class="slds-m-bottom_small">
+                            <lightning-input type="text" name="adminPerWireLimit" label="Per Wire Limit" placeholder="type here..." onchange={handleAdminChange} maxlength="18" value={adminObj.adminPerWireLimit}></lightning-input>
+                        </div>
+                    </div>
+                </div>
+                <div class="slds-grid slds-wrao">
+                    <div class="slds-size_5-of-12">
+                        <div class="slds-m-bottom_small">
+                            <lightning-input type="text" name="adminAcctAccess" label="Account Access" placeholder="type here..." onchange={handleAdminChange}  value={adminObj.adminAcctAccess}></lightning-input>
+                        </div>
+                    </div>
+                    <div class="slds-size_1-of-12"></div>
+                </div>
+            </template>
+            <div class="slds-grid slds-wrap" if:true={showMultiUser}>
+                <div class="slds-size_5-of-12">
+                    <div class="slds-m-bottom_small">
+                        <lightning-input type="text" name="adminWorkNum" label="Work Phone Number" placeholder="type here..." onchange={handleAdminChange} value={adminObj.adminWorkNum}></lightning-input>
+                    </div>
+                </div>
+                <div class="slds-size_1-of-12"></div>
+                <div class="slds-size_5-of-12">
+                    <div class="slds-m-bottom_small">
+                        <lightning-input type="text" name="adminCellNum" label="Cell Phone Number" placeholder="type here..." onchange={handleAdminChange} value={adminObj.adminCellNum}></lightning-input>
+                    </div>
+                </div>
+                <div class="slds-size_5-of-12">
+                    <div class="slds-m-bottom_small">
+                        <lightning-combobox name="adminBankingAccess" label="Online Banking Access" value={adminObj.adminBankingAccess} placeholder="Select Online Banking Access" options={sdACHOptions} onchange={handleAdminChange} dropdown-alignment="bottom-left"></lightning-combobox>
+                    </div>
+                </div>
+            </div>
+            <div class="slds-grid slds-wrap" if:true={showWire}>
+                <div class="slds-size_5_of-12">
+                    <lightning-dual-listbox
+                            name="adminAuthorized"
+                            label="Authorized to"
+                            source-label="Available"
+                            selected-label="Selected"
+                            field-level-help="Select Authorized to Check"
+                            options={authorizedOptions}
+                            value={adminObj.adminAuthorized}
+                            onchange={handleAdminChange}></lightning-dual-listbox>
+                </div>
+            </div>
+            <div class="slds-grid slds-wrap slds-grid_align-end" slot="footer">
+                <div class="slds-size_1-of-12">
+                    <lightning-button label="Cancel" title="Cancel" onclick={handleCancelAddUser}></lightning-button>
+                </div>
+                <div class="slds-m-left_small">
+                    <lightning-button label="Save & New" title="Save & New" onclick={handleSaveNewUser} disabled={validityEmail}></lightning-button>
+                </div>
+                <div class="slds-size_1-of-12">
+                    <lightning-button label="Save" variant="brand" title="Save" onclick={handleSaveUser} disabled={validityEmail}></lightning-button>
+                </div>
+            </div>
+        </template>
+        <!-- show check screen-->
+        <template if:true={showCheckScreen}>
+            <div class="slds-align_absolute-center">
+                <p>Are you sure you want to submit the Application?</p>
+            </div>
+            <div class="slds-grid slds-grid_align-end" slot="footer">
+                <div class="slds-size_1-of-12">
+                    <lightning-button label="Cancel" title="Cancel" onclick={handelCancelCreate} disabled={checkSaveButton}></lightning-button>
+                </div>
+                <div class="slds-size_1-of-12 slds-m-left_small">
+                    <lightning-button label="Previous" title="Previous" onclick={handleNavigationToProduct} disabled={checkSaveButton}></lightning-button>
+                </div>
+                <div class="slds-size_1-of-12 slds-m-left_small">
+                    <lightning-button label="Save" variant="brand" title="Save" onclick={handleSaveApplication} disabled={checkSaveButton}></lightning-button>
+                </div>
+            </div>
+        </template>
+    </lightning-quick-action-panel>
+</template>

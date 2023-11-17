@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fieldSets>
+        <label><!-- Jack Henry jXchange Automated Booking --></label>
+        <name>JHJX__ABJX</name>
+    </fieldSets>
+    <fields>
+        <label><!-- Transaction ID --></label>
+        <name>JHJX__TrnRcptId__c</name>
+    </fields>
+    <fields>
+        <help><!-- Date application is completed. --></help>
+        <label><!-- Application Date --></label>
+        <name>LLC_BI__ApplicationDate__c</name>
+    </fields>
+    <fields>
+        <help><!-- This field indicates the loan’s balloon payment due date. --></help>
+        <label><!-- Balloon Payment Date --></label>
+        <name>LLC_BI__Balloon_Payment_Date__c</name>
+    </fields>
+    <fields>
+        <help><!-- This field will populate after a user enters a rate and payment stream and an amortization term greater than the loan term. This results in a calculated balloon payment. --></help>
+        <label><!-- Calculated Balloon Principal Amount --></label>
+        <name>LLC_BI__Calculated_Balloon_Principal_Amount__c</name>
+    </fields>
+    <fields>
+        <help><!-- Select an option to collect odd days interest. --></help>
+        <label><!-- Collect Odd Days Interest --></label>
+        <name>LLC_BI__Collect_Odd_Days_Interest__c</name>
+        <picklistValues>
+            <masterLabel>Add to First Payment</masterLabel>
+            <translation><!-- Add to First Payment --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Collect When Due</masterLabel>
+            <translation><!-- Collect When Due --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- This field indicates the initial date loan moves from the Active to Default status. --></help>
+        <label><!-- Gross Charge Off Date --></label>
+        <name>LLC_BI__Gross_Charge_Off_Date__c</name>
+    </fields>
+    <fields>
+        <help><!-- This field displays the applicant’s APR without rate discounts applied to the loan. --></help>
+        <label><!-- Initial APR --></label>
+        <name>LLC_BI__Initial_APR__c</name>
+    </fields>
+    <fields>
+        <help><!-- This field displays the applicant’s calculated monthly payment without rate discounts applied to the loan. --></help>
+        <label><!-- Initial Monthly Payment --></label>
+        <name>LLC_BI__Initial_Monthly_Payment__c</name>
+    </fields>
+    <fields>
+        <help><!-- This field indicates if a loan is Interest Only. --></help>
+        <label><!-- Interest Only Indicator --></label>
+        <name>LLC_BI__Is_Interest_Only__c</name>
+    </fields>
+    <fields>
+        <help><!-- This field indicates the date at which loan line of credit expires and converts to a loan. --></help>
+        <label><!-- Line Of Credit Draw Expiration Date --></label>
+        <name>LLC_BI__Line_Of_Credit_Draw_Expiration_Date__c</name>
+    </fields>
+    <fields>
+        <help><!-- This master-detail relationship contains the associated Loan record’s Id. --></help>
+        <label><!-- Loan --></label>
+        <name>LLC_BI__Loan__c</name>
+        <relationshipLabel><!-- Loan Details --></relationshipLabel>
+    </fields>
+    <fields>
+        <help><!-- Enter a unique identifier. --></help>
+        <label><!-- Lookup Key --></label>
+        <name>LLC_BI__Lookup_Key__c</name>
+    </fields>
+    <fields>
+        <label><!-- Action Type --></label>
+        <name>LLC_BI__Mod_Type__c</name>
+        <picklistValues>
+            <masterLabel>Add New Sub-Loan</masterLabel>
+            <translation><!-- Add New Sub-Loan --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Copy Loan</masterLabel>
+            <translation><!-- Copy Loan --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Modification</masterLabel>
+            <translation><!-- Modification --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Renewal</masterLabel>
+            <translation><!-- Renewal --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- The number of days accumulating odd interest between closing and first payment. --></help>
+        <label><!-- Number of Odd Days --></label>
+        <name>LLC_BI__Number_of_Odd_Days__c</name>
+    </fields>
+    <fields>
+        <help><!-- The daily cost of odd days interest on a loan. --></help>
+        <label><!-- Odd Days Amount Per Diem --></label>
+        <name>LLC_BI__Odd_Days_Amount_Per_Diem__c</name>
+    </fields>
+    <fields>
+        <help><!-- The amount of odd days interest accrued for the loan. --></help>
+        <label><!-- Odd Days Amount --></label>
+        <name>LLC_BI__Odd_Days_Amount__c</name>
+    </fields>
+    <fields>
+        <help><!-- This field automatically calculates a customer’s discounted interest rate for a loan. --></help>
+        <label><!-- Preferred Rate --></label>
+        <name>LLC_BI__Preferred_Rate__c</name>
+    </fields>
+    <fields>
+        <help><!-- This field indicates the date tied to the loan recovery amount. --></help>
+        <label><!-- Recovery Date --></label>
+        <name>LLC_BI__Recovery_Date__c</name>
+    </fields>
+    <fields>
+        <help><!-- This field indicates the total interest the borrower pays over the loan term as a percentage of the loan amount. --></help>
+        <label><!-- Total Interest Percentage --></label>
+        <name>LLC_BI__Total_Interest_Percentage__c</name>
+    </fields>
+    <fields>
+        <help><!-- This field indicates the total principal, interest,  and loan costs the borrower pays over the first five years of the loan term. --></help>
+        <label><!-- Total Payment Over 5 Years --></label>
+        <name>LLC_BI__Total_Payment_Over_5_Years__c</name>
+    </fields>
+    <fields>
+        <help><!-- This field indicates the total principal the borrower pays over the first five years of the loan term. --></help>
+        <label><!-- Total Principal Over 5 Years --></label>
+        <name>LLC_BI__Total_Principal_Over_5_Years__c</name>
+    </fields>
+    <fields>
+        <help><!-- This field indicates the total principal, interest, and loan costs the borrower pays over the loan term. --></help>
+        <label><!-- Total of Payments --></label>
+        <name>LLC_BI__Total_of_Payments__c</name>
+    </fields>
+    <fields>
+        <help><!-- Select this checkbox to use the Preferred Rate in loan calculations. --></help>
+        <label><!-- Calculate with Preferred Rate --></label>
+        <name>LLC_BI__Use_Preferred_Rate__c</name>
+    </fields>
+</CustomObjectTranslation>

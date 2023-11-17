@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fieldSets>
+        <label><!-- Policy Exception On Loan UI --></label>
+        <name>FS_Policy_Exception_On_Loan_UI</name>
+    </fieldSets>
+    <fieldSets>
+        <label><!-- Commercial Credit Memo --></label>
+        <name>LLC_BI__Commercial_Credit_Memo</name>
+    </fieldSets>
+    <fieldSets>
+        <label><!-- Policy Exception Form --></label>
+        <name>LLC_BI__Policy_Exception_Form</name>
+    </fieldSets>
+    <fieldSets>
+        <label><!-- Policy Exception Table --></label>
+        <name>LLC_BI__Policy_Exception_Table</name>
+    </fieldSets>
+    <fieldSets>
+        <label><!-- Product Package Policy Exception --></label>
+        <name>LLC_BI__Product_Package_Policy_Exception</name>
+    </fieldSets>
+    <fieldSets>
+        <label><!-- Credit Memo Standard Product Package --></label>
+        <name>LLC_BI__Standard_Product_Package_Credit_Memo</name>
+    </fieldSets>
+    <fieldSets>
+        <label><!-- Tracked Fields --></label>
+        <name>LLC_BI__Tracked_Fields</name>
+    </fieldSets>
+    <fields>
+        <help><!-- Please add any additional comments not captured anywhere else on Policy Exception. --></help>
+        <label><!-- Policy/Comments --></label>
+        <name>Additional_Comments__c</name>
+    </fields>
+    <fields>
+        <label><!-- Board Reportable --></label>
+        <name>Board_Reportable__c</name>
+    </fields>
+    <fields>
+        <label><!-- Policy --></label>
+        <name>CF_Policy__c</name>
+    </fields>
+    <fields>
+        <label><!-- Product Package --></label>
+        <name>CF_Product_Package__c</name>
+    </fields>
+    <fields>
+        <label><!-- Generated --></label>
+        <name>LLC_BI__Automatically_Added__c</name>
+    </fields>
+    <fields>
+        <label><!-- Code --></label>
+        <name>LLC_BI__Code__c</name>
+    </fields>
+    <fields>
+        <label><!-- Collateral Mgmt --></label>
+        <name>LLC_BI__Collateral_Mgmt__c</name>
+        <relationshipLabel><!-- Policy Exceptions --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Covenant Mgmt --></label>
+        <name>LLC_BI__Covenant_Mgmt__c</name>
+        <relationshipLabel><!-- Policy Exceptions --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Loan --></label>
+        <name>LLC_BI__Loan__c</name>
+        <relationshipLabel><!-- Policy Exceptions --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Mitigation Reason 1 --></label>
+        <name>LLC_BI__Mitigation_Reason_1__c</name>
+    </fields>
+    <fields>
+        <label><!-- Mitigation Reason 2 --></label>
+        <name>LLC_BI__Mitigation_Reason_2__c</name>
+    </fields>
+    <fields>
+        <label><!-- Mitigation Reason 3 --></label>
+        <name>LLC_BI__Mitigation_Reason_3__c</name>
+    </fields>
+    <fields>
+        <label><!-- Account --></label>
+        <name>LLC_BI__Relationship__c</name>
+        <relationshipLabel><!-- Policy Exceptions --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Severity Value --></label>
+        <name>LLC_BI__Severity_Value__c</name>
+    </fields>
+    <fields>
+        <label><!-- Severity --></label>
+        <name>LLC_BI__Severity__c</name>
+    </fields>
+    <fields>
+        <label><!-- Exception status --></label>
+        <name>LLC_BI__Status__c</name>
+        <picklistValues>
+            <masterLabel>Mitigated</masterLabel>
+            <translation><!-- Mitigated --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Unmitigated</masterLabel>
+            <translation><!-- Unmitigated --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Type --></label>
+        <name>LLC_BI__Type__c</name>
+    </fields>
+    <validationRules>
+        <errorMessage><!-- This Policy Exception is Board Reportable. Please fill out Additional Comments before saving. --></errorMessage>
+        <name>Must_Fill_out_Additional_Comments</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Exception Status must be Mitigated or Unmitigated --></errorMessage>
+        <name>Policy_Exception_VR_Exception_Status</name>
+    </validationRules>
+</CustomObjectTranslation>

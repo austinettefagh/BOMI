@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fieldSets>
+        <label><!-- Upgradeable Fields --></label>
+        <name>LLC_BI__Upgradeable_Fields</name>
+    </fieldSets>
+    <fields>
+        <help><!-- In Automated Spreading, every Spreads group has a color to assist the user in identifying which group each category belongs to. --></help>
+        <label><!-- Group Color --></label>
+        <name>LLC_BI__Color__c</name>
+    </fields>
+    <fields>
+        <label><!-- Debit --></label>
+        <name>LLC_BI__Debit__c</name>
+    </fields>
+    <fields>
+        <label><!-- Global Analysis Type --></label>
+        <name>LLC_BI__Global_Analysis_Type__c</name>
+        <picklistValues>
+            <masterLabel>Adjusted Total Assets</masterLabel>
+            <translation><!-- Adjusted Total Assets --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Adjusted Total Equity</masterLabel>
+            <translation><!-- Adjusted Total Equity --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Adjusted Total Liabilities</masterLabel>
+            <translation><!-- Adjusted Total Liabilities --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Cash Flow</masterLabel>
+            <translation><!-- Cash Flow --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Debt Service</masterLabel>
+            <translation><!-- Debt Service --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>None</masterLabel>
+            <translation><!-- None --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Total Assets</masterLabel>
+            <translation><!-- Total Assets --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Total Equity</masterLabel>
+            <translation><!-- Total Equity --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Total Liabilities</masterLabel>
+            <translation><!-- Total Liabilities --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Group Type --></label>
+        <name>LLC_BI__Group_Type__c</name>
+        <picklistValues>
+            <masterLabel>Decimal</masterLabel>
+            <translation><!-- Decimal --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Financial</masterLabel>
+            <translation><!-- Financial --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Percentage</masterLabel>
+            <translation><!-- Percentage --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Hide All Records --></label>
+        <name>LLC_BI__Hide_All_Records__c</name>
+    </fields>
+    <fields>
+        <help><!-- Controls the visibility of column totals below a group. --></help>
+        <label><!-- Hide Column Totals --></label>
+        <name>LLC_BI__Hide_Column_Totals__c</name>
+    </fields>
+    <fields>
+        <label><!-- -D Hide Currency Symbol --></label>
+        <name>LLC_BI__Hide_Currency_Symbol__c</name>
+    </fields>
+    <fields>
+        <label><!-- Include In Total --></label>
+        <name>LLC_BI__Include_In_Total__c</name>
+    </fields>
+    <fields>
+        <label><!-- Is Balance Check --></label>
+        <name>LLC_BI__Is_Balance_Check__c</name>
+    </fields>
+    <fields>
+        <label><!-- -D Is Grand Total --></label>
+        <name>LLC_BI__Is_Grand_Total__c</name>
+    </fields>
+    <fields>
+        <help><!-- Typically, this type of group is used to display the columns totals for each group of records in the statement. --></help>
+        <label><!-- Is_Summary_Group --></label>
+        <name>LLC_BI__Is_Summary_Group__c</name>
+    </fields>
+    <fields>
+        <label><!-- Highlights Type --></label>
+        <name>LLC_BI__KPI_Type__c</name>
+        <picklistValues>
+            <masterLabel>Standard Highlight</masterLabel>
+            <translation><!-- Standard Highlight --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>User Highlight</masterLabel>
+            <translation><!-- User Highlight --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- Set this value to allow other applications to execute when a total is initialized. --></help>
+        <label><!-- Publish On Init Event --></label>
+        <name>LLC_BI__Publish_On_Init_Event__c</name>
+    </fields>
+    <fields>
+        <help><!-- Set this value to allow other applications to execute when a total is updated. --></help>
+        <label><!-- Publish On Update Event --></label>
+        <name>LLC_BI__Publish_On_Update_Event__c</name>
+    </fields>
+    <fields>
+        <label><!-- Row Number --></label>
+        <name>LLC_BI__Row_Number__c</name>
+    </fields>
+    <fields>
+        <label><!-- Show Math --></label>
+        <name>LLC_BI__Show_Math__c</name>
+    </fields>
+    <fields>
+        <label><!-- Source Group --></label>
+        <name>LLC_BI__Source_Group__c</name>
+        <relationshipLabel><!-- Cloned Spread Statement Total Groups --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Spread Statement Type --></label>
+        <name>LLC_BI__Spread_Statement_Type__c</name>
+        <relationshipLabel><!-- Spread Statement Total Groups --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Title --></label>
+        <name>LLC_BI__Title__c</name>
+    </fields>
+    <fields>
+        <label><!-- Total Type --></label>
+        <name>LLC_BI__Total_Type__c</name>
+        <picklistValues>
+            <masterLabel>Knockout</masterLabel>
+            <translation><!-- Knockout --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Standard</masterLabel>
+            <translation><!-- Standard --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- lookupKey --></label>
+        <name>LLC_BI__lookupKey__c</name>
+    </fields>
+</CustomObjectTranslation>

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <label><!-- Category --></label>
+        <name>LLC_BI__Category__c</name>
+        <picklistValues>
+            <masterLabel>Treasury Maintenance</masterLabel>
+            <translation><!-- Treasury Maintenance --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Change Status --></label>
+        <name>LLC_BI__Change_Status__c</name>
+        <picklistValues>
+            <masterLabel>Closed</masterLabel>
+            <translation><!-- Closed --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Open</masterLabel>
+            <translation><!-- Open --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Product Package --></label>
+        <name>LLC_BI__Product_Package__c</name>
+        <relationshipLabel><!-- Product Change Details --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Treasury Service --></label>
+        <name>LLC_BI__Treasury_Service__c</name>
+        <relationshipLabel><!-- Product Change Details --></relationshipLabel>
+    </fields>
+</CustomObjectTranslation>

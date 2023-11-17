@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <label><!-- Caller Source --></label>
+        <name>nFORCE__Caller_Source__c</name>
+    </fields>
+    <fields>
+        <label><!-- Class/XPkg/URT Type --></label>
+        <name>nFORCE__Class_Type__c</name>
+    </fields>
+    <fields>
+        <help><!-- -DEPRECATED- --></help>
+        <label><!-- -D Class/Xpkg Type --></label>
+        <name>nFORCE__Class_Xpkg_Type__c</name>
+    </fields>
+    <fields>
+        <label><!-- Executing User Hash --></label>
+        <name>nFORCE__Executing_User_Hash__c</name>
+    </fields>
+    <fields>
+        <label><!-- Exposure Type --></label>
+        <name>nFORCE__Exposure_Type__c</name>
+    </fields>
+</CustomObjectTranslation>

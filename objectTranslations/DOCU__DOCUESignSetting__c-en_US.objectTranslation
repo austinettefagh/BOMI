@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <label><!-- Logging Level --></label>
+        <name>DOCU__LoggingLevel__c</name>
+    </fields>
+    <fields>
+        <label><!-- Logging Provider --></label>
+        <name>DOCU__LoggingProvider__c</name>
+    </fields>
+    <fields>
+        <label><!-- Store Requests --></label>
+        <name>DOCU__StoreRequests__c</name>
+    </fields>
+    <fields>
+        <label><!-- Store Responses --></label>
+        <name>DOCU__StoreResponses__c</name>
+    </fields>
+</CustomObjectTranslation>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>Use this template to notify RM and CA that RegB date has crossed 25 days</description>
+    <encodingKey>UTF-8</encodingKey>
+    <letterhead>TBoM_NewLetterHead</letterhead>
+    <name>TBoM_Alert_RM_CA for RegBdays crossing 25 days</name>
+    <style>freeForm</style>
+    <subject>Immediate Attention Required - Reg B Compliance - Credit Decision Needed</subject>
+    <textOnly>Hi Team,
+
+The following Loan application is reaching 30 days since the Application Complete Date. Please submit the loan to Credit immediately for a formal credit decision to be rendered. If the loan is in Credit already, please communicate with the Credit Officer to reach a decision. Contact your Team Leader or Compliance Officer directly with any questions.
+
+{!LLC_BI__Loan__c.Link}
+
+Thank you!</textOnly>
+    <type>html</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

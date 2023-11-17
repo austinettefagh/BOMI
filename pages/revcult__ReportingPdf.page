@@ -1,0 +1,65 @@
+<apex:page controller="revcult.ReportingPdfController" applyBodyTag="false" title="Reporting PDF Export" renderAs="pdf">
+    <html>
+
+    <head>
+        <style>
+                table {
+                    border-collapse: collapse;
+                }
+        
+                table, th, td {
+                    border: 1px solid black;
+                    padding: 4px 6px;
+                    font-size: 14px;
+                }
+        
+                body * {
+                    font-family: "Salesforce Sans", Helvetica, Arial, sans-serif;
+                }
+    
+        </style>
+    </head>
+
+    <body>
+        <div>
+            <!-- float like its 1999 -->
+            <div style="float:left; width:50%;">
+                <h2 style="font-family: 'Salesforce Sans', Arial, Helvetica, sans-serif;">{!title}</h2>
+            </div>
+            <div style="float:right; width:50%; text-align: right; margin-top: 11px">
+                <img src="{!$Resource.OwnBackupLogo}" style="height: 38px"></img>
+            </div>
+        </div>
+        <table style="
+              width: 100%;
+              font-family: 'Salesforce Sans', Arial, Helvetica, sans-serif;
+              border-collapse: collapse;
+              border: 1px solid black;
+              font-size: 14px;
+              margin-top: 60px;
+            ">
+            <tr style="height: 1.5em"></tr>
+            <tr>
+                <apex:repeat value="{!headers}" var="header">
+                    <th style="border: 1px solid black;">
+                        {!header}
+                    </th>
+                </apex:repeat>
+            </tr>
+        
+            <apex:repeat value="{!rows}" var="row">
+                <tr>
+                <apex:repeat value="{!row}" var="cell">
+                    <td style="border: 1px solid black;">
+                        {!cell}
+                    </td>
+                </apex:repeat>
+                </tr>
+            </apex:repeat>
+        
+        </table>
+    </body>
+
+    </html>
+
+</apex:page>

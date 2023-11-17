@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <apiVersion>54.0</apiVersion>
+    <available>true</available>
+    <description>Use this template to send out a welcome email to the Portal users</description>
+    <encodingKey>UTF-8</encodingKey>
+    <name>TBoM_Welcome_Email</name>
+    <style>none</style>
+    <subject>Welcome to The Bank of Missouri&apos;s loan portal</subject>
+    <type>visualforce</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

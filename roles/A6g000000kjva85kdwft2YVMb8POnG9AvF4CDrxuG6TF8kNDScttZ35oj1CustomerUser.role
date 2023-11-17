@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Role xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseAccessLevel>None</caseAccessLevel>
+    <contactAccessLevel>Edit</contactAccessLevel>
+    <description>A6g000000kjva+85kdwft2Y+VMb8POnG9AvF4CDrxuG6TF8kNDScttZ35oj1 Customer User</description>
+    <mayForecastManagerShare>false</mayForecastManagerShare>
+    <name>A6g000000kjva+85kdwft2Y+VMb8POnG9AvF4CDrxuG6TF8kNDScttZ35oj1 Customer User</name>
+    <opportunityAccessLevel>None</opportunityAccessLevel>
+    <parentRole>nCino_System_Administrator</parentRole>
+</Role>

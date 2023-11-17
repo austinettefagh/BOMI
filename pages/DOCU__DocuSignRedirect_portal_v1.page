@@ -1,0 +1,5 @@
+<apex:page sidebar="false" showHeader="false">
+	<script type="text/javascript">
+		window.addEventListener('load', () => window.parent.postMessage('CEREMONY_COMPLETE', '*'));
+	</script>
+</apex:page>

@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>Account.LLC_BI__Treasury_Service__r$Name</field>
+    </columns>
+    <columns>
+        <field>Account.LLC_BI__Treasury_Service__r$LLC_BI__lookupKey__c</field>
+    </columns>
+    <columns>
+        <field>Account.LLC_BI__Treasury_Service__r$LLC_BI__Status__c</field>
+    </columns>
+    <columns>
+        <field>Account.LLC_BI__Treasury_Service__r$LLC_BI__Stage__c</field>
+    </columns>
+    <columns>
+        <field>Account.LLC_BI__Treasury_Service__r$CreatedDate</field>
+    </columns>
+    <columns>
+        <field>Account.LLC_BI__Treasury_Service__r.NDOC__Document_Placeholders__r.nArchive__nArchive__r$Name</field>
+    </columns>
+    <columns>
+        <aggregateTypes>Sum</aggregateTypes>
+        <field>Account.LLC_BI__Treasury_Service__r.NDOC__Document_Placeholders__r.nArchive__nArchive__r$nArchive__processedFlag__c</field>
+    </columns>
+    <columns>
+        <field>Account.LLC_BI__Treasury_Service__r.NDOC__Document_Placeholders__r.nArchive__nArchive__r$nArchive__processdBatchNumber__c</field>
+    </columns>
+    <columns>
+        <field>Account.LLC_BI__Treasury_Service__r.NDOC__Document_Placeholders__r.nArchive__nArchive__r$nArchive__File_Extension__c</field>
+    </columns>
+    <columns>
+        <field>Account.LLC_BI__Treasury_Service__r$LLC_BI__Effective_Date__c</field>
+    </columns>
+    <description>Baseline DES TreasuryDocs Report</description>
+    <format>Summary</format>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>Account$Name</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <name>DES TreasuryDocs</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>DES_TreasuryDocs__c</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <showGrandTotal>true</showGrandTotal>
+    <showSubTotals>false</showSubTotals>
+    <timeFrameFilter>
+        <dateColumn>Account$CreatedDate</dateColumn>
+        <interval>INTERVAL_CUSTOM</interval>
+    </timeFrameFilter>
+</Report>

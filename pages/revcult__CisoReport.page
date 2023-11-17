@@ -1,0 +1,101 @@
+<apex:page controller="revcult.CisoReportController" applyHtmlTag="false" applyBodyTag="false" showHeader="false" standardStylesheets="false"
+    sidebar="false" docType="html-5.0" action="{!hydrate}">
+    <html>
+
+    <head> </head>
+
+    <body>
+        <table style="
+              text-align: center;
+              width: 100%;
+              font-family: Arial, Helvetica, sans-serif;
+            ">
+            <tr>
+                <td>
+                    <table style="min-width: 400px; margin: 0 auto">
+                        <tr>
+                            <td style="border-radius: 15px;text-align:right;">
+                                <a target="_blank" href="https://www.ownbackup.com">
+                                    <img style="width:20%" src="https://go.ownbackup.com/l/921663/2022-02-08/2f72y/921663/1644353181Er7vrUZn/eml_ownbackup_logo_black.png" alt="OwnBackup" />
+                                </a>
+                            </td>
+                        </tr>
+                        <tr style="text-align: left">
+                            <td>
+                                <h2><a href="https://resources.revcult.com/salesforce-security-a-guide-to-your-salesforce-security-progress-report">{!orgName} Overall Salesforce Security Score:</a>&nbsp;<apex:outputText value="{!overallScore}" escape="false"/>&nbsp;<apex:outputText value="{!overallScoreChange}" escape="false"/></h2>
+                            </td>
+                        </tr>
+                        <tr style="text-align: left">
+                            <td>
+                                <h4>
+                                    Current data collected {!collectedDate}, compared to previous data collected {!comparedToDate}
+                                </h4>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div style="
+                          border: 1px solid Gray;
+                          border-radius: 15px;
+                          box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+                        ">
+                                    <table style="
+                            font-size: 12;
+                            border-style: hidden;
+                            border-collapse: collapse;
+                            border-spacing: 0;
+                            width: 100%;
+                          ">
+                                        <thead style="border: 1px solid Gray">
+                                            <tr style="border: 1px solid Gray; background: black;
+                                            color: white;">
+                                                <th style="
+                                  border: 1px solid Gray;
+                                  padding: 10px;
+                                  border-top-left-radius: 15px;
+                                ">
+                                                    Lens
+                                                </th>
+                                                <th style="
+                                  border: 1px solid Gray;
+                                  padding: 10px;
+                                  border-top-right-radius: 15px;
+                                ">
+                                                    Contributing Factors
+                                                </th>
+                                            </tr>
+                                        </thead>
+                                        <apex:repeat value="{!categories}" var="category">
+                                            <tr style="text-align: left; border: 1px solid Gray; padding: .5em;">
+                                                <td style="border: 1px solid Gray; padding: .5em;">
+                                                    <strong><a href="{!category.link}">{!category.title}</a> &#124;&nbsp;<apex:outputText value="{!category.score}" escape="false"/>&nbsp;<apex:outputText value="{!category.scorechange}" escape="false"/></strong>
+                                                    <p>{!category.subtitle}</p>
+                                                </td>
+                                                <td style="border: 1px solid Gray; padding: .5em;">
+                                                    <apex:repeat value="{!category.factors}" var="factor">
+                                                        <p><apex:outputText value="{!factor}" escape="false"/></p>
+                                                    </apex:repeat>
+                                                </td>
+                                            </tr>
+                                        </apex:repeat>
+                                    </table>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr style="height: 1.5em"></tr>
+                        <tr style="text-align: left">
+                            <td>
+                                <h4>
+                                    See attached for more information.
+                                </h4>
+                            </td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+        </table>
+    </body>
+
+    </html>
+
+</apex:page>

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <help><!-- Label used when displaying the list --></help>
+        <label><!-- Label --></label>
+        <name>LLC_BI__Label__c</name>
+    </fields>
+    <fields>
+        <help><!-- Name of a related list of data to copy --></help>
+        <label><!-- Related List Name --></label>
+        <name>LLC_BI__Related_List_Name__c</name>
+    </fields>
+    <fields>
+        <help><!-- SObject Type to which the lists apply --></help>
+        <label><!-- SObject Type --></label>
+        <name>LLC_BI__SObject_Type__c</name>
+    </fields>
+    <fields>
+        <help><!-- Indicator if the field should be selected by default. --></help>
+        <label><!-- Selected Default --></label>
+        <name>LLC_BI__Selected_Default__c</name>
+    </fields>
+    <fields>
+        <help><!-- Ranking used to order entries in the list --></help>
+        <label><!-- Sort Order --></label>
+        <name>LLC_BI__Sort_Order__c</name>
+    </fields>
+</CustomObjectTranslation>

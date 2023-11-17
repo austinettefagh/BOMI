@@ -1,0 +1,71 @@
+Hello,</br>
+</br>
+The Informatica Cloud Task Flow, {!nMONITOR__Informatica_Cloud_Integration__c.nMONITOR__Task_Flow_to_Monitor__c}, for {!Organization.Name} has completed with the results below. </br>
+</br>
+Be sure to check Exception Reports, as well as the Bulk Data Load Jobs section under 'Setup,' for additional troubleshooting details. For more information on troubleshooting errors using the Bulk Data Load Job Logs, or for specific information about Exceptions, please reference the corresponding Knowledge Articles in the nCino Community.</br>
+</br>
+</br>
+<style type="text/css">
+.tg  {border-collapse:collapse;border-spacing:0;border-color:#ccc;border-width:1px;border-style:solid;}
+.tg td{font-family:Arial, sans-serif;font-size:14px;padding:10px 20px;border-style:solid;border-width:0px;overflow:hidden;word-break:normal;border-color:#ccc;color:#333;background-color:#fff;}
+.tg th{font-family:Arial, sans-serif;font-size:14px;font-weight:normal;padding:10px 20px;border-style:solid;border-width:0px;overflow:hidden;word-break:normal;border-color:#ccc;color:#333;background-color:#f0f0f0;}
+.tg .tg-q5im{font-size:26px;vertical-align:top}
+.tg .tg-yw4l{vertical-align:top}
+</style>
+<table class="tg">
+  <tr>
+    <th class="tg-q5im">Object</th>
+    <th class="tg-q5im">Errors</th>
+    <th class="tg-q5im">Exceptions</th>
+  </tr>
+  <tr>
+    <td class="tg-yw4l">Relationship</td>
+    <td class="tg-yw4l">{!nMONITOR__Informatica_Cloud_Integration__c.nMONITOR__Relationship_Errors__c}</td>
+    <td class="tg-yw4l">{!nMONITOR__Informatica_Cloud_Integration__c.nMONITOR__Relationship_Exceptions__c}</td>
+  </tr>
+  <tr>
+    <td class="tg-yw4l">Loan</td>
+    <td class="tg-yw4l">{!nMONITOR__Informatica_Cloud_Integration__c.nMONITOR__Loan_Errors__c}</td>
+    <td class="tg-yw4l">{!nMONITOR__Informatica_Cloud_Integration__c.nMONITOR__Loan_Exceptions__c}</td>
+  </tr>
+  <tr>
+    <td class="tg-yw4l">Entity Involvement</td>
+    <td class="tg-yw4l">{!nMONITOR__Informatica_Cloud_Integration__c.nMONITOR__Entity_Involvement_Errors__c}</td>
+    <td class="tg-yw4l">{!nMONITOR__Informatica_Cloud_Integration__c.nMONITOR__Entity_Involvement_Exceptions__c}</td>
+  </tr>
+  <tr>
+    <td class="tg-yw4l">Connections</td>
+    <td class="tg-yw4l">{!nMONITOR__Informatica_Cloud_Integration__c.nMONITOR__Connection_Errors__c}</td>
+    <td class="tg-yw4l">{!nMONITOR__Informatica_Cloud_Integration__c.nMONITOR__Connection_Exceptions__c}</td>
+  </tr>
+  <tr>
+    <td class="tg-yw4l">Participations</td>
+    <td class="tg-yw4l">{!nMONITOR__Informatica_Cloud_Integration__c.nMONITOR__Participation_Errors__c}</td>
+    <td class="tg-yw4l">{!nMONITOR__Informatica_Cloud_Integration__c.nMONITOR__Participation_Exceptions__c}</td>
+  </tr>
+  <tr>
+    <td class="tg-yw4l">Covenants</td>
+    <td class="tg-yw4l">{!nMONITOR__Informatica_Cloud_Integration__c.nMONITOR__Covenant_Errors__c}</td>
+    <td class="tg-yw4l">{!nMONITOR__Informatica_Cloud_Integration__c.nMONITOR__Covenant_Exceptions__c}</td>
+  </tr>
+  <tr>
+    <td class="tg-yw4l">Collateral</td>
+    <td class="tg-yw4l">{!nMONITOR__Informatica_Cloud_Integration__c.nMONITOR__Collateral_Errors__c}</td>
+    <td class="tg-yw4l">{!nMONITOR__Informatica_Cloud_Integration__c.nMONITOR__Collateral_Exceptions__c}</td>
+  </tr>
+ <tr>
+    <td class="tg-yw4l">Contact</td>
+    <td class="tg-yw4l">{!nMONITOR__Informatica_Cloud_Integration__c.nMONITOR__Contact_Errors__c}</td>
+    <td class="tg-yw4l">{!nMONITOR__Informatica_Cloud_Integration__c.nMONITOR__Contact_Exceptions__c}</td>
+  </tr>
+<tr>
+    <td class="tg-yw4l">Deposit</td>
+    <td class="tg-yw4l">{!nMONITOR__Informatica_Cloud_Integration__c.nMONITOR__Deposit_Errors__c}</td>
+    <td class="tg-yw4l">{!nMONITOR__Informatica_Cloud_Integration__c.nMONITOR__Deposit_Exceptions__c}</td>
+  </tr>
+</table>
+</br>
+Thank you,
+</br>
+</br>
+nCino Data Services

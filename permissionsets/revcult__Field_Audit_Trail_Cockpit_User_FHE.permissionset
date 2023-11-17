@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PermissionSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <applicationVisibilities>
+        <application>revcult__Cloud_Security_Cockpit</application>
+        <visible>true</visible>
+    </applicationVisibilities>
+    <classAccesses>
+        <apexClass>revcult__FieldHistoryController</apexClass>
+        <enabled>true</enabled>
+    </classAccesses>
+    <classAccesses>
+        <apexClass>revcult__FieldHistoryControllerTest</apexClass>
+        <enabled>true</enabled>
+    </classAccesses>
+    <classAccesses>
+        <apexClass>revcult__HistoryResponse</apexClass>
+        <enabled>true</enabled>
+    </classAccesses>
+    <classAccesses>
+        <apexClass>revcult__OrgInfo</apexClass>
+        <enabled>true</enabled>
+    </classAccesses>
+    <classAccesses>
+        <apexClass>revcult__OrgInfoTest</apexClass>
+        <enabled>true</enabled>
+    </classAccesses>
+    <classAccesses>
+        <apexClass>revcult__RevertResponse</apexClass>
+        <enabled>true</enabled>
+    </classAccesses>
+    <classAccesses>
+        <apexClass>revcult__SchemaGlobalDescribe</apexClass>
+        <enabled>true</enabled>
+    </classAccesses>
+    <classAccesses>
+        <apexClass>revcult__SchemaGlobalDescribeTest</apexClass>
+        <enabled>true</enabled>
+    </classAccesses>
+    <description>The Permission set for a user who can only access the Field History Explorer section of OwnBackup Field Audit Trail.</description>
+    <hasActivationRequired>false</hasActivationRequired>
+    <label>OwnBackup Field Audit Trail User: Field History Explorer</label>
+    <pageAccesses>
+        <apexPage>revcult__FieldHistoryExplorer</apexPage>
+        <enabled>true</enabled>
+    </pageAccesses>
+    <tabSettings>
+        <tab>revcult__Field_History_Explorer</tab>
+        <visibility>Visible</visibility>
+    </tabSettings>
+</PermissionSet>

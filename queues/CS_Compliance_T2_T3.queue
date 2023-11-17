@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Queue xmlns="http://soap.sforce.com/2006/04/metadata">
+    <doesSendEmailToMembers>false</doesSendEmailToMembers>
+    <name>CS Compliance T2_T3</name>
+    <queueMembers>
+        <users>
+            <user>bstorm@bankofmissouri.com</user>
+            <user>dshaw@bankofmissouri.com</user>
+            <user>hsimmers@bankofmissouri.com</user>
+            <user>mbarker@bankofmissouri.com</user>
+            <user>mrobertson@bankofmissouri.com</user>
+            <user>snichols@cadlaw.com</user>
+            <user>smoore@bankofmissouri.com</user>
+        </users>
+    </queueMembers>
+    <queueSobject>
+        <sobjectType>Case</sobjectType>
+    </queueSobject>
+</Queue>

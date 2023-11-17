@@ -1,0 +1,31 @@
+<apex:page id="Reporting" standardStylesheets="false" controller="revcult.ReportingController" extensions="revcult.SharedExtensionController" showHeader="true" sidebar="false" docType="html-5.0" title="Reporting">
+    <html xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" lang="en">
+        <head>
+            <apex:includeScript value="{!URLFOR($Resource.revcult__Reporting,'/deps/svg4everybody.min.js')}" />
+            <apex:slds />
+            <script>
+                    const dataFromSF = {
+                        getReportsForThisApp: {!$RemoteAction.ReportingController.getReportsForThisApp},
+                        getAccessibleOrgs: {!$RemoteAction.ReportingController.getAccessibleOrgs},
+                        getHighRiskDataClassificationLevels: {!$RemoteAction.ReportingController.getHighRiskDataClassificationLevels},
+                        getAllComplianceCategorizations: {!$RemoteAction.ReportingController.getAllComplianceCategorizations},
+                        retrieveReport: {!$RemoteAction.ReportingController.retrieveReport},
+                        getSecurityInsightsLensLabels: {!$RemoteAction.ReportingController.getSecurityInsightsLensLabels},
+                        getHubAlias: {!$RemoteAction.ReportingController.getHubAlias},
+                        getUpgradeAlertSettings: {!$RemoteAction.ReportingController.getUpgradeAlertSettings},
+                        setUpgradeAlertSettings: {!$RemoteAction.ReportingController.setUpgradeAlertSettings},
+                        hasPermissionDownloadAppExchangePackages: {!$RemoteAction.ReportingController.hasPermissionDownloadAppExchangePackages},
+                        checkMetadataApi: '{!$RemoteAction.SharedExtensionController.checkMetadataApi}',
+                        theme: '{!$User.UITheme}',
+                    }
+                    svg4everybody()
+            </script>
+            <meta charset="utf-8"/>
+            <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+            <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <link href="{!URLFOR($Resource.Reporting, '/dist/style.css')}" rel="stylesheet"/></head>
+        <body>
+            <div id="app"></div>
+        <script type="text/javascript" src="{!URLFOR($Resource.Reporting, '/dist/build.js')}"></script></body>
+    </html>
+</apex:page>

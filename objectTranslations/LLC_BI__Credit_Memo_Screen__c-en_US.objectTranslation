@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <label><!-- Active --></label>
+        <name>LLC_BI__Active__c</name>
+    </fields>
+    <fields>
+        <label><!-- Credit Memo --></label>
+        <name>LLC_BI__Credit_Memo__c</name>
+        <relationshipLabel><!-- Credit Memo Screens --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Description --></label>
+        <name>LLC_BI__Description__c</name>
+    </fields>
+    <fields>
+        <label><!-- LookupKey --></label>
+        <name>LLC_BI__Lookupkey__c</name>
+    </fields>
+    <fields>
+        <label><!-- Screen --></label>
+        <name>LLC_BI__Screen__c</name>
+        <relationshipLabel><!-- Credit Memo Screens --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Template ID --></label>
+        <name>LLC_BI__Template_ID__c</name>
+    </fields>
+    <fields>
+        <label><!-- Template Name --></label>
+        <name>LLC_BI__Template_Name__c</name>
+    </fields>
+</CustomObjectTranslation>

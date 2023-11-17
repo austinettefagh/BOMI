@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>FK_NAME</field>
+    </columns>
+    <columns>
+        <field>FK_ACC_OWNER_NAME</field>
+    </columns>
+    <columns>
+        <field>FK_$Account.LLC_BI__Highest_Risk_Grade__c</field>
+    </columns>
+    <columns>
+        <field>FK_ACC_INDUSTRY</field>
+    </columns>
+    <columns>
+        <field>FK_$Account.LLC_BI__Last_Review_Date__c</field>
+    </columns>
+    <columns>
+        <field>FK_$Account.LLC_BI__Next_Review_Date__c</field>
+    </columns>
+    <columns>
+        <field>LLC_BI__Underwriting_Bundle__c.LLC_BI__Version__c</field>
+    </columns>
+    <description>This report lists all accounts that are spread on an outdated version of a spreads template. Navigate to each account and launch Spreads to update the account&apos;s bundle.</description>
+    <filter>
+        <criteriaItems>
+            <column>LLC_BI__Underwriting_Bundle__c.LLC_BI__Source_Template__c</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value></value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>LLC_BI__Underwriting_Bundle__c.LLC_BI__Version__c</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>notEqual</operator>
+            <value></value>
+        </criteriaItems>
+        <language>en_US</language>
+    </filter>
+    <format>Tabular</format>
+    <name>Pending Bundle Update Report</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>CustomEntity$LLC_BI__Underwriting_Bundle__c@LLC_BI__Underwriting_Bundle__c.LLC_BI__Relationship__c</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <showGrandTotal>true</showGrandTotal>
+    <showSubTotals>true</showSubTotals>
+    <timeFrameFilter>
+        <dateColumn>CUST_CREATED_DATE</dateColumn>
+        <interval>INTERVAL_CUSTOM</interval>
+    </timeFrameFilter>
+</Report>

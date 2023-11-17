@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <help><!-- What is the sorting order key for this screen section configuration? --></help>
+        <label><!-- Display Order --></label>
+        <name>LLC_BI__Display_Order__c</name>
+    </fields>
+    <fields>
+        <help><!-- Which field set is associated with this section configuration? --></help>
+        <label><!-- Field Set --></label>
+        <name>LLC_BI__Field_Set__c</name>
+    </fields>
+    <fields>
+        <help><!-- What layout will be used for this section configuration template? --></help>
+        <label><!-- Layout --></label>
+        <name>LLC_BI__Layout__c</name>
+    </fields>
+    <fields>
+        <help><!-- Which product catalog route template is this section configuration template associated with? --></help>
+        <label><!-- Product Catalog Route Template --></label>
+        <name>LLC_BI__Product_Catalog_Route_Template__c</name>
+        <relationshipLabel><!-- Product Catalog Section Configurations --></relationshipLabel>
+    </fields>
+    <fields>
+        <help><!-- What sObject type is tied to this section configuration? --></help>
+        <label><!-- SObject Type --></label>
+        <name>LLC_BI__SObject_Type__c</name>
+    </fields>
+</CustomObjectTranslation>

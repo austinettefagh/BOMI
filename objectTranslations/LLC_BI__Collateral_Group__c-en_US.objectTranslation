@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fieldSets>
+        <label><!-- Collateral Group Review Card --></label>
+        <name>LLC_BI__Collateral_Group_Review_Card</name>
+    </fieldSets>
+    <fields>
+        <label><!-- Associated Collateral --></label>
+        <name>LLC_BI__Associated_Collateral__c</name>
+        <relationshipLabel><!-- Collateral Groups --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Collateral Group --></label>
+        <lookupFilter>
+            <errorMessage><!-- This value does not exist or the type and subtype pairing of the collateral does not equal group and the group_type field is null. --></errorMessage>
+            <informationalMessage><!-- You can only associate this record with a collateral group, where the type and subtype pairing of the collateral equals group and the group_type field is not null. --></informationalMessage>
+        </lookupFilter>
+        <name>LLC_BI__Collateral_Group__c</name>
+        <relationshipLabel><!-- Associated Collateral --></relationshipLabel>
+    </fields>
+    <fields>
+        <help><!-- To restrict the value available to the group, enter the value you want to allocate to the group. --></help>
+        <label><!-- Restricted Value --></label>
+        <name>LLC_BI__Restricted_Value__c</name>
+    </fields>
+    <fields>
+        <label><!-- Restricted --></label>
+        <name>LLC_BI__Restricted__c</name>
+    </fields>
+    <fields>
+        <label><!-- lookupKey --></label>
+        <name>LLC_BI__lookupKey__c</name>
+    </fields>
+</CustomObjectTranslation>

@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <label><!-- Correlation Id --></label>
+        <name>EFPIO__CorrelationId__c</name>
+    </fields>
+    <fields>
+        <label><!-- Event Messages --></label>
+        <name>EFPIO__Details__c</name>
+    </fields>
+    <fields>
+        <label><!-- Fully Qualified Class Name w/ Namespace --></label>
+        <name>EFPIO__FullyQualifiedClassName__c</name>
+    </fields>
+    <fields>
+        <label><!-- Parent Event Log --></label>
+        <name>EFPIO__Parent_EventLog__c</name>
+        <relationshipLabel><!-- Parent Orchestration Event Log --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Perform Asynchronously --></label>
+        <name>EFPIO__PerformAsync__c</name>
+    </fields>
+    <fields>
+        <label><!-- Associated Package Registry --></label>
+        <name>EFPIO__Registry__c</name>
+    </fields>
+    <fields>
+        <label><!-- Status --></label>
+        <name>EFPIO__Status__c</name>
+    </fields>
+    <fields>
+        <label><!-- Timestamp --></label>
+        <name>EFPIO__Timestamp__c</name>
+    </fields>
+    <fields>
+        <label><!-- TransactionLogEID --></label>
+        <name>EFPIO__TransactionLog__c</name>
+    </fields>
+</CustomObjectTranslation>

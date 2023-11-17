@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fieldSets>
+        <label><!-- SBA Contact Former Names --></label>
+        <name>nSBA__SBA_Contact_Former_Names</name>
+    </fieldSets>
+    <fields>
+        <label><!-- Contact --></label>
+        <name>nSBA__Contact__c</name>
+        <relationshipLabel><!-- Contact Former Names --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- First Name --></label>
+        <name>nSBA__First_Name__c</name>
+    </fields>
+    <fields>
+        <label><!-- Last Name --></label>
+        <name>nSBA__Last_Name__c</name>
+    </fields>
+    <fields>
+        <label><!-- Middle Name --></label>
+        <name>nSBA__Middle_Name__c</name>
+    </fields>
+    <fields>
+        <label><!-- Name Used From --></label>
+        <name>nSBA__Name_Used_From__c</name>
+    </fields>
+    <fields>
+        <label><!-- Name Used To --></label>
+        <name>nSBA__Name_Used_To__c</name>
+    </fields>
+</CustomObjectTranslation>

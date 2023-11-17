@@ -1,0 +1,482 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fieldSets>
+        <label><!-- Fees Template --></label>
+        <name>LLC_BI__Fees_Template</name>
+    </fieldSets>
+    <fields>
+        <label><!-- Collection Frequency --></label>
+        <name>CF_Collection_Frequency__c</name>
+        <picklistValues>
+            <masterLabel>Annually</masterLabel>
+            <translation><!-- Annually --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Monthly</masterLabel>
+            <translation><!-- Monthly --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Paid at Closing</masterLabel>
+            <translation><!-- Paid at Closing --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Fee Category --></label>
+        <name>CF_Fee_Category__c</name>
+        <picklistValues>
+            <masterLabel>Aircraft</masterLabel>
+            <translation><!-- Aircraft --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Barge / Vessel / Yacht /House Boat</masterLabel>
+            <translation><!-- Barge / Vessel / Yacht /House Boat --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Boats</masterLabel>
+            <translation><!-- Boats --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>General</masterLabel>
+            <translation><!-- General --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Real Estate</masterLabel>
+            <translation><!-- Real Estate --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SBA General</masterLabel>
+            <translation><!-- SBA General --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SBA Real Estate</masterLabel>
+            <translation><!-- SBA Real Estate --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Titled Collateral</masterLabel>
+            <translation><!-- Titled Collateral --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>UCC</masterLabel>
+            <translation><!-- UCC --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Recurring Or One Time --></label>
+        <name>CF_Recurring_Or_One_Time__c</name>
+        <picklistValues>
+            <masterLabel>One Time</masterLabel>
+            <translation><!-- One Time --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Recurring</masterLabel>
+            <translation><!-- Recurring --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- Select the basis for percentage fees, such as loan amount, total interest, or another loan field. --></help>
+        <label><!-- Basis Source --></label>
+        <name>LLC_BI__Basis_Source__c</name>
+        <picklistValues>
+            <masterLabel>Loan Amount</masterLabel>
+            <translation><!-- Loan Amount --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Category --></label>
+        <name>LLC_BI__Category__c</name>
+        <picklistValues>
+            <masterLabel>Fees Management</masterLabel>
+            <translation><!-- Fees Management --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Checkbox 1 --></label>
+        <name>LLC_BI__Checkbox_1__c</name>
+    </fields>
+    <fields>
+        <label><!-- Checkbox 2 --></label>
+        <name>LLC_BI__Checkbox_2__c</name>
+    </fields>
+    <fields>
+        <label><!-- Checkbox 3 --></label>
+        <name>LLC_BI__Checkbox_3__c</name>
+    </fields>
+    <fields>
+        <label><!-- Checkbox 4 --></label>
+        <name>LLC_BI__Checkbox_4__c</name>
+    </fields>
+    <fields>
+        <help><!-- Populate this picklist to specify the collection method for a fee. --></help>
+        <label><!-- Collection Method --></label>
+        <name>LLC_BI__Collection_Method__c</name>
+        <picklistValues>
+            <masterLabel>Cash</masterLabel>
+            <translation><!-- Cash --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Financed</masterLabel>
+            <translation><!-- Financed --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- CounterCount --></label>
+        <name>LLC_BI__CounterCount__c</name>
+    </fields>
+    <fields>
+        <label><!-- Currency Field 1 --></label>
+        <name>LLC_BI__Currency_Field_1__c</name>
+    </fields>
+    <fields>
+        <label><!-- End Date --></label>
+        <name>LLC_BI__End_Date__c</name>
+    </fields>
+    <fields>
+        <help><!-- Enter a unique name that identifies this fee template record. --></help>
+        <label><!-- Fee Template Identifier --></label>
+        <name>LLC_BI__Fee_Template_Identifier__c</name>
+    </fields>
+    <fields>
+        <label><!-- Is Active --></label>
+        <name>LLC_BI__Is_Active__c</name>
+    </fields>
+    <fields>
+        <label><!-- Is Income --></label>
+        <name>LLC_BI__Is_Income__c</name>
+    </fields>
+    <fields>
+        <help><!-- Enter the percentage you want the system to use to calculate the fee based on the basis value. --></help>
+        <label><!-- Percentage --></label>
+        <name>LLC_BI__Percentage__c</name>
+    </fields>
+    <fields>
+        <label><!-- Picklist 1 --></label>
+        <name>LLC_BI__Picklist_1__c</name>
+        <picklistValues>
+            <masterLabel>AD&amp;D Insurance</masterLabel>
+            <translation><!-- AD&amp;D Insurance --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Appraisal Invoice</masterLabel>
+            <translation><!-- Appraisal Invoice --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Attorney Fees</masterLabel>
+            <translation><!-- Attorney Fees --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Business Valuation</masterLabel>
+            <translation><!-- Business Valuation --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CDC Origination Fee</masterLabel>
+            <translation><!-- CDC Origination Fee --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Closing Fee</masterLabel>
+            <translation><!-- Closing Fee --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Credit Life Insurance</masterLabel>
+            <translation><!-- Credit Life Insurance --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>E-Recording in Simplifile</masterLabel>
+            <translation><!-- E-Recording in Simplifile --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>EDR Environmental Search - Commercial Loans</masterLabel>
+            <translation><!-- EDR Environmental Search - Commercial Loans --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Escrow Reserves</masterLabel>
+            <translation><!-- Escrow Reserves --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>FAA Lien Search - Aircraft</masterLabel>
+            <translation><!-- FAA Lien Search - Aircraft --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>FedEx / Overnight - One Way</masterLabel>
+            <translation><!-- FedEx / Overnight - One Way --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>FedEx / Overnight - Round Trip</masterLabel>
+            <translation><!-- FedEx / Overnight - Round Trip --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Flood Certificate</masterLabel>
+            <translation><!-- Flood Certificate --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>IRS Transcript Fee</masterLabel>
+            <translation><!-- IRS Transcript Fee --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Insurance</masterLabel>
+            <translation><!-- Insurance --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Loan Origination Fee</masterLabel>
+            <translation><!-- Loan Origination Fee --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MO Titled Collateral  - mailed Title Application &amp; NOL - Boats</masterLabel>
+            <translation><!-- MO Titled Collateral  - mailed Title Application &amp; NOL - Boats --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MO Titled Collateral  - mailed Title Application &amp; NOL - Motor Vehicle/Mobile Homes</masterLabel>
+            <translation><!-- MO Titled Collateral  - mailed Title Application &amp; NOL - Motor Vehicle/Mobile Homes --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MO Titled Collateral  - mailed Title Application &amp; NOL - Outboard Motors</masterLabel>
+            <translation><!-- MO Titled Collateral  - mailed Title Application &amp; NOL - Outboard Motors --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MO Titled Collateral - mailed Title Application &amp; NOL - Motor Vehicle/Mobile Homes</masterLabel>
+            <translation><!-- MO Titled Collateral - mailed Title Application &amp; NOL - Motor Vehicle/Mobile Homes --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MO Titled Collateral - online Notice of Lien</masterLabel>
+            <translation><!-- MO Titled Collateral - online Notice of Lien --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Other Fees</masterLabel>
+            <translation><!-- Other Fees --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Pest Inspection</masterLabel>
+            <translation><!-- Pest Inspection --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Phase I Environmental Assessment</masterLabel>
+            <translation><!-- Phase I Environmental Assessment --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Phase II Environmental Assessment</masterLabel>
+            <translation><!-- Phase II Environmental Assessment --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Preferred Ship Mortgage</masterLabel>
+            <translation><!-- Preferred Ship Mortgage --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>RE Taxes to collect</masterLabel>
+            <translation><!-- RE Taxes to collect --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Recording MO Assignment of Rents</masterLabel>
+            <translation><!-- Recording MO Assignment of Rents --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Recording MO Deed of Trust</masterLabel>
+            <translation><!-- Recording MO Deed of Trust --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Recording MO Notice of Intended Sale</masterLabel>
+            <translation><!-- Recording MO Notice of Intended Sale --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Recording MO Warranty Deed</masterLabel>
+            <translation><!-- Recording MO Warranty Deed --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Recording Other States Assignments</masterLabel>
+            <translation><!-- Recording Other States Assignments --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Recording Other States Deed of Trust / Mortgage</masterLabel>
+            <translation><!-- Recording Other States Deed of Trust / Mortgage --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SBA EDR Environmental Search</masterLabel>
+            <translation><!-- SBA EDR Environmental Search --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SBA Guaranty Fee</masterLabel>
+            <translation><!-- SBA Guaranty Fee --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SBA Packaging Fee</masterLabel>
+            <translation><!-- SBA Packaging Fee --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Survey Fees</masterLabel>
+            <translation><!-- Survey Fees --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Tax Tracking Service</masterLabel>
+            <translation><!-- Tax Tracking Service --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Title Work Invoice</masterLabel>
+            <translation><!-- Title Work Invoice --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Transfer Tax Fee/Tax Stamp - Other States</masterLabel>
+            <translation><!-- Transfer Tax Fee/Tax Stamp - Other States --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>UCC Filing - MO</masterLabel>
+            <translation><!-- UCC Filing - MO --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>UCC Filing - Other States</masterLabel>
+            <translation><!-- UCC Filing - Other States --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>UCC Recording - County in MO</masterLabel>
+            <translation><!-- UCC Recording - County in MO --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Unfunded Commitment Fee</masterLabel>
+            <translation><!-- Unfunded Commitment Fee --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Wire Fee for TBOM</masterLabel>
+            <translation><!-- Wire Fee for TBOM --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Picklist 2 --></label>
+        <name>LLC_BI__Picklist_2__c</name>
+        <picklistValues>
+            <masterLabel>Bank</masterLabel>
+            <translation><!-- Bank --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Borrower</masterLabel>
+            <translation><!-- Borrower --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Lender</masterLabel>
+            <translation><!-- Lender --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Seller</masterLabel>
+            <translation><!-- Seller --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Picklist 3 --></label>
+        <name>LLC_BI__Picklist_3__c</name>
+        <picklistValues>
+            <masterLabel>001</masterLabel>
+            <translation><!-- 001 --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Picklist 4 --></label>
+        <name>LLC_BI__Picklist_4__c</name>
+        <picklistValues>
+            <masterLabel>Flat Amount</masterLabel>
+            <translation><!-- Flat Amount --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Percentage</masterLabel>
+            <translation><!-- Percentage --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- Select the record type of the fee, cost, or adjustment. --></help>
+        <label><!-- Record Type --></label>
+        <name>LLC_BI__Record_Type__c</name>
+        <picklistValues>
+            <masterLabel>Adjustments</masterLabel>
+            <translation><!-- Adjustments --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Costs</masterLabel>
+            <translation><!-- Costs --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Fees</masterLabel>
+            <translation><!-- Fees --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- Populate this optional field with screen section name to determine the fields displayed to a user for completion when adding fees to a loan. --></help>
+        <label><!-- Screen Section --></label>
+        <name>LLC_BI__Screen_Section__c</name>
+        <relationshipLabel><!-- Template Records --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Start Date --></label>
+        <name>LLC_BI__Start_Date__c</name>
+    </fields>
+    <fields>
+        <help><!-- Select the TRID disclosure category for the fee. --></help>
+        <label><!-- TRID Disclosure Category --></label>
+        <name>LLC_BI__TRID_Disclosure_Category__c</name>
+        <picklistValues>
+            <masterLabel>Initial Escrow Payment at Closing</masterLabel>
+            <translation><!-- Initial Escrow Payment at Closing --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Origination Charges</masterLabel>
+            <translation><!-- Origination Charges --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Other</masterLabel>
+            <translation><!-- Other --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Prepaids</masterLabel>
+            <translation><!-- Prepaids --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Services You Can Shop For</masterLabel>
+            <translation><!-- Services You Can Shop For --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Services You Cannot Shop For</masterLabel>
+            <translation><!-- Services You Cannot Shop For --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Taxes and Other Government Fees</masterLabel>
+            <translation><!-- Taxes and Other Government Fees --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- Select the TRID tolerance category for the fee. --></help>
+        <label><!-- TRID Tolerances Category --></label>
+        <name>LLC_BI__TRID_Tolerances_Category__c</name>
+        <picklistValues>
+            <masterLabel>0% Tolerance</masterLabel>
+            <translation><!-- 0% Tolerance --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>10% Cumulative Tolerance</masterLabel>
+            <translation><!-- 10% Cumulative Tolerance --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Unlimited Tolerance</masterLabel>
+            <translation><!-- Unlimited Tolerance --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Text Field 1 --></label>
+        <name>LLC_BI__Text_Field_1__c</name>
+    </fields>
+    <fields>
+        <label><!-- Text Field 2 --></label>
+        <name>LLC_BI__Text_Field_2__c</name>
+    </fields>
+    <fields>
+        <label><!-- lookupKey --></label>
+        <name>LLC_BI__lookupKey__c</name>
+    </fields>
+    <recordTypes>
+        <description><!-- Template for Fee Management --></description>
+        <label><!-- Fee Management Record Type --></label>
+        <name>LLC_BI__Fee_Management_Record_Type</name>
+    </recordTypes>
+    <recordTypes>
+        <description><!-- Starting Record Type to Select True Template --></description>
+        <label><!-- Starting Record Type --></label>
+        <name>LLC_BI__Starting_Record_Type</name>
+    </recordTypes>
+    <validationRules>
+        <errorMessage><!-- Ensure values are entered for Basis Source and Percentage so the system can calculate the percentage calculation type. --></errorMessage>
+        <name>LLC_BI__Percentage_Fee_Required_Fields</name>
+    </validationRules>
+</CustomObjectTranslation>

@@ -1,0 +1,99 @@
+<apex:page controller="nFORCE.TemplateController" showHeader="false" sidebar="false">
+	<div class="slds" id="nc-onboardingquestionnaire" ng-controller="AppController">
+		<c:Include_jQuery />
+		<c:Include_jQuery_FormatCurrency />
+		<c:Include_jQuery_Custom />
+		<c:Include_AngularJS />
+		<nFORCE:Include_Messenger />
+		<nFORCE:Internationalize />
+		<nFORCE:QuestionnaireIncludes />
+		<nFORCE:ncDataProvidersIncludes />
+		<nFORCE:QuestionnairePartials />
+		
+		<questionnaire
+			id="{{contextId}}"
+			group-id="{{groupId}}" 
+			context-id="{{contextId}}" 
+			on-save-complete="onSaveComplete()"
+			on-save-failure="onSaveFailure()"
+			on-error="onError()"
+			on-form-valid="onValidForm()"
+			on-form-invalid="onInvalidForm()"
+			on-load-complete="onLoadComplete()"
+			disable-display-messages="true"
+			trigger-save="triggerSave"
+		></questionnaire>
+		<button ng-click="saveQuestionnaire()" class="slds-button slds-button_brand">{!$Label.CustomerOnboardingQuestionnaireSaveButton}</button>
+	</div>
+	<script>
+		(() => {
+			'use strict';
+			
+			angular.element(document).ready(function () {
+				angular.bootstrap(document.getElementById('nc-onboardingquestionnaire'), ['nc-onboardingquestionnaire'])
+			})
+
+			angular.module('nc-onboardingquestionnaire', ['ncFormBuilder', 'ncPubsub', 'ncUI', 'ncDataProviders', 'ncScreenSectionFormBuilder', 'Questionnaire'])
+				.controller('AppController', AppController);
+			AppController.$inject = ['$scope', 'messageService'];
+
+			function AppController($scope, messageService) {
+				$scope.groupId = "{!$CurrentPage.parameters.groupId}";
+				$scope.contextId = "{!$CurrentPage.parameters.contextId}";
+
+				$scope.saveQuestionnaire = function() {
+					$scope.triggerSave = true;
+				};
+
+				$scope.onSaveFailure = function() {
+					$scope.triggerSave = false;
+					messageService.setMessage({
+							type: messageService.messageTypes.error,
+							text: '{!$Label.CustomerOnboardingQuestionnaireSaveError}',
+						},
+							true
+					);
+				};
+
+				$scope.onInvalidForm = function(e) {
+					messageService.setMessage({
+							type: messageService.messageTypes.error,
+							text: '{!$Label.CustomerOnboardingQuestionnaireInvalidFormError}',
+						},
+						true
+					);
+					$scope.triggerSave = false;
+				};
+
+				$scope.onError = function(e) {
+					$scope.triggerSave = false;
+					messageService.setMessage({
+							type: messageService.messageTypes.error,
+							text: '{!$Label.CustomerOnboardingQuestionnaireError}',
+						},
+							true
+					);
+				};
+
+				$scope.onValidForm = function(e) {
+					$scope.triggerSave = false;
+					messageService.clear();
+				};
+
+				$scope.onLoadComplete = function(e) {
+					messageService.clear();
+				};
+
+				$scope.onSaveComplete = function() {
+					$scope.triggerSave = false;
+					messageService.setMessage({
+							type: messageService.messageTypes.success,
+							text: '{!$Label.CustomerOnboardingQuestionnaireSaveSuccess}',
+						},
+							true
+					);
+				};
+			}
+		})()
+	</script>
+</apex:page>

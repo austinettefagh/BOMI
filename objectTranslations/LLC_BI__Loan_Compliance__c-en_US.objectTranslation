@@ -1,0 +1,1013 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fieldSets>
+        <label><!-- Jack Henry jXchange Automated Booking --></label>
+        <name>JHJX__ABJX</name>
+    </fieldSets>
+    <fieldSets>
+        <label><!-- UI HMDA Loan Compliance 2017 --></label>
+        <name>LLC_BI__UI_HMDA_Loan_Compliance_2017</name>
+    </fieldSets>
+    <fieldSets>
+        <label><!-- UI HMDA Loan Compliance 2018 --></label>
+        <name>LLC_BI__UI_HMDA_Loan_Compliance_2018</name>
+    </fieldSets>
+    <fields>
+        <help><!-- This is a 2-digit field used by the Census Bureau that can be obtained from the Flood Certificate. --></help>
+        <label><!-- HMDA State Code --></label>
+        <name>HMDA_State_Code__c</name>
+    </fields>
+    <fields>
+        <help><!-- This field displays the amount of credit provided to the borrower. --></help>
+        <label><!-- Amount Financed --></label>
+        <name>LLC_BI__Amount_Financed__c</name>
+    </fields>
+    <fields>
+        <help><!-- This field indicates the date of the acceptable change of circumstance that causes a tolerance breach. --></help>
+        <label><!-- Change of Circumstance Date --></label>
+        <name>LLC_BI__Change_of_Circumstance_Date__c</name>
+    </fields>
+    <fields>
+        <help><!-- Select the closing disclosure delivery method for the loan. --></help>
+        <label><!-- Closing Disclosure Delivery Method --></label>
+        <name>LLC_BI__Closing_Disclosure_Delivery_Method__c</name>
+        <picklistValues>
+            <masterLabel>Electronic</masterLabel>
+            <translation><!-- Electronic --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>In-person</masterLabel>
+            <translation><!-- In-person --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Mail</masterLabel>
+            <translation><!-- Mail --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- Select the date that the action was taken. For example the date the loan was originated, Application denied, Purchased Loan, etc. --></help>
+        <label><!-- Date Action Taken --></label>
+        <name>LLC_BI__Date_Action_Taken__c</name>
+    </fields>
+    <fields>
+        <help><!-- If the date the application was received does not apply to the loan, please do not select a date. --></help>
+        <label><!-- Date Application Received --></label>
+        <name>LLC_BI__Date_Application_Received__c</name>
+    </fields>
+    <fields>
+        <label><!-- Date Interest Rate Set --></label>
+        <name>LLC_BI__Date_Rate_Set__c</name>
+    </fields>
+    <fields>
+        <help><!-- Enter the earliest possible closing date for the loan. --></help>
+        <label><!-- Earliest Closing Date --></label>
+        <name>LLC_BI__Earliest_Closing_Date__c</name>
+    </fields>
+    <fields>
+        <help><!-- This field displays the expiration date and time of the estimated closing costs. --></help>
+        <label><!-- Estimated Closing Costs Expiration --></label>
+        <name>LLC_BI__Estimated_Closing_Costs_Expiration__c</name>
+    </fields>
+    <fields>
+        <help><!-- This field displays the cost of credit to the borrower. --></help>
+        <label><!-- Finance Charge --></label>
+        <name>LLC_BI__Finance_Charge__c</name>
+    </fields>
+    <fields>
+        <help><!-- This field displays the effective date of the APOR Index used to complete HCM compliance calculations for a loan. --></help>
+        <label><!-- HCM APOR Effective Date --></label>
+        <name>LLC_BI__HCM_APOR_Effective_Date__c</name>
+    </fields>
+    <fields>
+        <help><!-- This field indicates if the APR for a loan exceeds HCM APOR plus spread. --></help>
+        <label><!-- HCM APOR Test --></label>
+        <name>LLC_BI__HCM_APOR_Test__c</name>
+    </fields>
+    <fields>
+        <help><!-- This field displays the APOR for a loan when HCM compliance calculations are completed. --></help>
+        <label><!-- HCM APOR --></label>
+        <name>LLC_BI__HCM_APOR__c</name>
+    </fields>
+    <fields>
+        <help><!-- This field displays the HCM calculation date. --></help>
+        <label><!-- HCM Calculation Date --></label>
+        <name>LLC_BI__HCM_Calculation_Date__c</name>
+    </fields>
+    <fields>
+        <help><!-- This field indicates if the points and fees for a loan exceeds HCM maximum points and fees. --></help>
+        <label><!-- HCM Points and Fees Test --></label>
+        <name>LLC_BI__HCM_Points_And_Fees_Test__c</name>
+    </fields>
+    <fields>
+        <help><!-- If &quot;Other&quot; is selected as one of the Automated Underwriting Systems Results, this field allows you to specify the results from the system. --></help>
+        <label><!-- Other AUS Result Details --></label>
+        <name>LLC_BI__HMDA_AUS_Other_Result_Text__c</name>
+    </fields>
+    <fields>
+        <help><!-- If &quot;Other&quot; is selected as one of the Automated Underwriting Systems, this field allows you to specify the system. --></help>
+        <label><!-- Other AUS System Details --></label>
+        <name>LLC_BI__HMDA_AUS_Other_System_Text__c</name>
+    </fields>
+    <fields>
+        <help><!-- This field indicates the result(s) generated by the automated underwriting system (AUS).  (Up to 5 options can be selected) --></help>
+        <label><!-- Automated Underwriting System Result --></label>
+        <name>LLC_BI__HMDA_AUS_Result__c</name>
+        <picklistValues>
+            <masterLabel>1</masterLabel>
+            <translation>Approve/Eligible</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>10</masterLabel>
+            <translation>Ineligible</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>11</masterLabel>
+            <translation>Incomplete</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>12</masterLabel>
+            <translation>Invalid</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>13</masterLabel>
+            <translation>Refer</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>14</masterLabel>
+            <translation>Eligible</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>15</masterLabel>
+            <translation>Unable to Determine</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>16</masterLabel>
+            <translation>Other</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>17</masterLabel>
+            <translation>Not applicable</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>2</masterLabel>
+            <translation>Approve/Ineligible</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>3</masterLabel>
+            <translation>Refer/Eligible</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>4</masterLabel>
+            <translation>Refer/Ineligible</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>5</masterLabel>
+            <translation>Refer with Caution</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>6</masterLabel>
+            <translation>Out of Scope</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>7</masterLabel>
+            <translation>Error</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>8</masterLabel>
+            <translation>Accept</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>9</masterLabel>
+            <translation>Caution</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Automated Underwriting System --></label>
+        <name>LLC_BI__HMDA_AUS__c</name>
+        <picklistValues>
+            <masterLabel>1</masterLabel>
+            <translation>Desktop Underwriter (DU)</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>2</masterLabel>
+            <translation>Loan Prospector (LP)</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>3</masterLabel>
+            <translation>Technology Open to Approved Lenders (TOTAL) Scorecard</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>4</masterLabel>
+            <translation>Guaranteed Underwriting System (GUS)</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>5</masterLabel>
+            <translation>Other</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>6</masterLabel>
+            <translation>Not applicable</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Action Taken --></label>
+        <name>LLC_BI__HMDA_Action_Taken__c</name>
+        <picklistValues>
+            <masterLabel>1</masterLabel>
+            <translation>Loan originated</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>2</masterLabel>
+            <translation>Application approved but not accepted</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>3</masterLabel>
+            <translation>Application denied</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>4</masterLabel>
+            <translation>Application withdrawn by applicant</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>5</masterLabel>
+            <translation>File closed for incompleteness</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>6</masterLabel>
+            <translation>Purchased loan</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>7</masterLabel>
+            <translation>Preapproval request denied</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>8</masterLabel>
+            <translation>Preapproval request approved but not accepted</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Loan Amount --></label>
+        <name>LLC_BI__HMDA_Amount__c</name>
+    </fields>
+    <fields>
+        <label><!-- Balloon Payment --></label>
+        <name>LLC_BI__HMDA_Balloon_Payment__c</name>
+        <picklistValues>
+            <masterLabel>1</masterLabel>
+            <translation>Balloon payment</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>2</masterLabel>
+            <translation>No balloon payment</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Business or Commercial Purpose --></label>
+        <name>LLC_BI__HMDA_Business_Or_Commercial_Purpose__c</name>
+        <picklistValues>
+            <masterLabel>1</masterLabel>
+            <translation>Primarily for a business or commercial purpose</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>2</masterLabel>
+            <translation>Not primarily for a business or commercial purpose</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- -D Co-Applicant --></label>
+        <name>LLC_BI__HMDA_Co_Applicant__c</name>
+    </fields>
+    <fields>
+        <help><!-- Use decimal places only if the ratio relied upon uses decimal places. --></help>
+        <label><!-- Combined Loan-to-Value Ratio --></label>
+        <name>LLC_BI__HMDA_Combined_LTV__c</name>
+    </fields>
+    <fields>
+        <help><!-- Enter NA on purchased loans, when no credit decision was made (closed of incompleteness), No DTI relied upon, Applicant AND Co-applicant are both non-natural persons. --></help>
+        <label><!-- Debt-to-Income Ratio --></label>
+        <name>LLC_BI__HMDA_Debt_To_Income_Ratio__c</name>
+    </fields>
+    <fields>
+        <help><!-- You may enter up to 255 characters to list the other denial reason. --></help>
+        <label><!-- Other Denial Reason Details --></label>
+        <name>LLC_BI__HMDA_Denial_Reason_Text__c</name>
+    </fields>
+    <fields>
+        <label><!-- Denial Reasons --></label>
+        <name>LLC_BI__HMDA_Denial_Reasons__c</name>
+        <picklistValues>
+            <masterLabel>1</masterLabel>
+            <translation>Debt-to-income ratio</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>10</masterLabel>
+            <translation>Not applicable</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>2</masterLabel>
+            <translation>Employment history</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>3</masterLabel>
+            <translation>Credit history</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>4</masterLabel>
+            <translation>Collateral</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>5</masterLabel>
+            <translation>Insufficient cash (downpayment, closing costs)</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>6</masterLabel>
+            <translation>Unverifiable information</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>7</masterLabel>
+            <translation>Credit application incomplete</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>8</masterLabel>
+            <translation>Mortgage insurance denied</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>9</masterLabel>
+            <translation>Other</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- If no points were paid, leave this field blank. --></help>
+        <label><!-- Discount Points --></label>
+        <name>LLC_BI__HMDA_Discount_Points__c</name>
+    </fields>
+    <fields>
+        <help><!-- Enter the gross annual income the system uses to process the application and make the credit decision for HDMA reportable loans. --></help>
+        <label><!-- Gross Annual Income --></label>
+        <name>LLC_BI__HMDA_Gross_Annual_Income__c</name>
+    </fields>
+    <fields>
+        <label><!-- HOEPA Status --></label>
+        <name>LLC_BI__HMDA_HOEPA_Status__c</name>
+        <picklistValues>
+            <masterLabel>1</masterLabel>
+            <translation>High-cost mortgage</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>2</masterLabel>
+            <translation>Not a high-cost mortgage</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>3</masterLabel>
+            <translation>Not applicable</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Initially Payable To --></label>
+        <name>LLC_BI__HMDA_Initially_Payable_To__c</name>
+        <picklistValues>
+            <masterLabel>1</masterLabel>
+            <translation>Initially payable to your institution</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>2</masterLabel>
+            <translation>Not initially payable to your institution</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>3</masterLabel>
+            <translation>Not applicable</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Interest-Only Payments --></label>
+        <name>LLC_BI__HMDA_Interest_Only_Payments__c</name>
+        <picklistValues>
+            <masterLabel>1</masterLabel>
+            <translation>Interest-only payments</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>2</masterLabel>
+            <translation>No interest-only payments</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Legal Entity Identifier (LEI) --></label>
+        <name>LLC_BI__HMDA_Legal_Entity_Identifier__c</name>
+    </fields>
+    <fields>
+        <help><!-- If no lender credits were provided, leave this field blank. --></help>
+        <label><!-- Lender Credits --></label>
+        <name>LLC_BI__HMDA_Lender_Credits__c</name>
+    </fields>
+    <fields>
+        <help><!-- For every originated loan or application, report whether the loan is secured by a first or subordinate lien on a dwelling or is not secured by a dwelling. --></help>
+        <label><!-- Lien Status --></label>
+        <name>LLC_BI__HMDA_Lien_Status__c</name>
+        <picklistValues>
+            <masterLabel>1</masterLabel>
+            <translation>Secured by a first lien</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>2</masterLabel>
+            <translation>Secured by a subordinate lien</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>3</masterLabel>
+            <translation>Not secured by a lien</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>4</masterLabel>
+            <translation>Not applicable (purchased loans)</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Purpose of Loan --></label>
+        <name>LLC_BI__HMDA_Loan_Purpose__c</name>
+        <picklistValues>
+            <masterLabel>1</masterLabel>
+            <translation>Home purchase</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>2</masterLabel>
+            <translation>Home improvement</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>3</masterLabel>
+            <translation>Refinancing</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>31</masterLabel>
+            <translation>Refinancing</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>32</masterLabel>
+            <translation>Cash-out refinancing</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>4</masterLabel>
+            <translation>Other purpose</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Type of Loan --></label>
+        <name>LLC_BI__HMDA_Loan_Type__c</name>
+        <picklistValues>
+            <masterLabel>1</masterLabel>
+            <translation>Conventional (not insured or guaranteed by FHA, VA, RHS, or FSA)</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>2</masterLabel>
+            <translation>Federal Housing Administration insured (FHA)</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>3</masterLabel>
+            <translation>Veterans Administration guaranteed (VA)</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>4</masterLabel>
+            <translation>USDA Rural Housing Service or Farm Service Agency guaranteed (RHS or FSA)</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Negative Amortization --></label>
+        <name>LLC_BI__HMDA_Negative_Amortization__c</name>
+        <picklistValues>
+            <masterLabel>1</masterLabel>
+            <translation>Negative amortization</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>2</masterLabel>
+            <translation>No negative amortization</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Open-End Line of Credit --></label>
+        <name>LLC_BI__HMDA_Open_End_Line_Of_Credit__c</name>
+        <picklistValues>
+            <masterLabel>1</masterLabel>
+            <translation>Open-end line of credit</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>2</masterLabel>
+            <translation>Not an open-end line of credit</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- If the amount is zero, enter 0. --></help>
+        <label><!-- Origination Charges --></label>
+        <name>LLC_BI__HMDA_Origination_Charges__c</name>
+    </fields>
+    <fields>
+        <label><!-- Other Non-amortizing Features --></label>
+        <name>LLC_BI__HMDA_Other_Non_Amortizing_Features__c</name>
+        <picklistValues>
+            <masterLabel>1</masterLabel>
+            <translation>Other non-fully amortizing features</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>2</masterLabel>
+            <translation>No other non-fully amortizing features</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Request for Preapproval --></label>
+        <name>LLC_BI__HMDA_Preapproval_Requested__c</name>
+        <picklistValues>
+            <masterLabel>1</masterLabel>
+            <translation>Preapproval was requested</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>2</masterLabel>
+            <translation>Preapproval was not requested</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>3</masterLabel>
+            <translation>Not applicable</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- If the address of the property is unknown, please enter &apos;NA&apos;. --></help>
+        <label><!-- Property Securing Address --></label>
+        <name>LLC_BI__HMDA_Property_Securing_Address__c</name>
+    </fields>
+    <fields>
+        <label><!-- Multifamily Affordable Units --></label>
+        <name>LLC_BI__HMDA_Property_Securing_Affordable_Units__c</name>
+    </fields>
+    <fields>
+        <help><!-- Do not use decimals.  If the address of the property is unknown, please enter &apos;NA&apos;. --></help>
+        <label><!-- Property Securing Census Tract --></label>
+        <name>LLC_BI__HMDA_Property_Securing_Census_Tract__c</name>
+    </fields>
+    <fields>
+        <help><!-- If the address of the property is unknown, please enter &apos;NA&apos;. --></help>
+        <label><!-- Property Securing City --></label>
+        <name>LLC_BI__HMDA_Property_Securing_City__c</name>
+    </fields>
+    <fields>
+        <label><!-- Property Securing Construction Method --></label>
+        <name>LLC_BI__HMDA_Property_Securing_Construct_Method__c</name>
+        <picklistValues>
+            <masterLabel>1</masterLabel>
+            <translation>Site-built</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>2</masterLabel>
+            <translation>Manufactured Home</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- Do not use commas.  If the address of the property is unknown, please enter &apos;NA&apos;. --></help>
+        <label><!-- Property Securing FIPS County Code --></label>
+        <name>LLC_BI__HMDA_Property_Securing_FIPS_County_Code__c</name>
+    </fields>
+    <fields>
+        <help><!-- If the five-digit metropolitan statistical area (MSA) number or the five-digit metropolitan division (MD) number is not applicable, enter NA. --></help>
+        <label><!-- Five Digit MSA/MD Number --></label>
+        <name>LLC_BI__HMDA_Property_Securing_MSA_MD_Number__c</name>
+    </fields>
+    <fields>
+        <label><!-- Property Securing Manufactured Home Type --></label>
+        <name>LLC_BI__HMDA_Property_Securing_Manufactured_Type__c</name>
+        <picklistValues>
+            <masterLabel>1</masterLabel>
+            <translation>Manufactured home and land</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>2</masterLabel>
+            <translation>Manufactured home and not land</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>3</masterLabel>
+            <translation>Not applicable</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Property Securing Manufactured Home Int --></label>
+        <name>LLC_BI__HMDA_Property_Securing_Mfd_Home_Int__c</name>
+        <picklistValues>
+            <masterLabel>1</masterLabel>
+            <translation>Direct ownership</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>2</masterLabel>
+            <translation>Indirect ownership</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>3</masterLabel>
+            <translation>Paid leasehold</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>4</masterLabel>
+            <translation>Unpaid leasehold</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>5</masterLabel>
+            <translation>Not applicable</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Property Securing Occupancy Type --></label>
+        <name>LLC_BI__HMDA_Property_Securing_Occupancy_Type__c</name>
+        <picklistValues>
+            <masterLabel>1</masterLabel>
+            <translation>Principal residence</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>2</masterLabel>
+            <translation>Second residence</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>3</masterLabel>
+            <translation>Investment Property</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Property Securing Occupancy --></label>
+        <name>LLC_BI__HMDA_Property_Securing_Occupancy__c</name>
+        <picklistValues>
+            <masterLabel>1</masterLabel>
+            <translation>Owner-occupied as a principal dwelling</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>2</masterLabel>
+            <translation>Not owner-occupied</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>3</masterLabel>
+            <translation>Not applicable</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Property Securing Property Type --></label>
+        <name>LLC_BI__HMDA_Property_Securing_Property_Type__c</name>
+        <picklistValues>
+            <masterLabel>1</masterLabel>
+            <translation>One to four-family (other than manufactured housing)</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>2</masterLabel>
+            <translation>Manufactured housing</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>3</masterLabel>
+            <translation>Multifamily</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Property Securing Property Value --></label>
+        <name>LLC_BI__HMDA_Property_Securing_Property_Value__c</name>
+    </fields>
+    <fields>
+        <help><!-- If the address of the property is unknown, please enter &apos;NA&apos;. --></help>
+        <label><!-- Property Securing State --></label>
+        <name>LLC_BI__HMDA_Property_Securing_State__c</name>
+    </fields>
+    <fields>
+        <label><!-- Property Securing Total Units --></label>
+        <name>LLC_BI__HMDA_Property_Securing_Total_Units__c</name>
+    </fields>
+    <fields>
+        <help><!-- If the address of the property is unknown, please enter &apos;NA&apos;. --></help>
+        <label><!-- Property Securing Zip --></label>
+        <name>LLC_BI__HMDA_Property_Securing_Zip__c</name>
+    </fields>
+    <fields>
+        <help><!-- If you sell a loan in the same calendar year in which it was originated or purchased, you must identify the type of purchaser. If you don’t sell the loan during the same calendar year or if it didn’t result in a loan origination, enter code “0”. --></help>
+        <label><!-- Type of Purchase --></label>
+        <name>LLC_BI__HMDA_Purchaser_Type__c</name>
+        <picklistValues>
+            <masterLabel>0</masterLabel>
+            <translation>Not applicable</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>1</masterLabel>
+            <translation>Fannie Mae</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>2</masterLabel>
+            <translation>Ginnie Mae</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>3</masterLabel>
+            <translation>Freddie Mac</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>4</masterLabel>
+            <translation>Farmer Mac</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>5</masterLabel>
+            <translation>Private securitizer</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>6</masterLabel>
+            <translation>Commercial bank, savings bank, or savings association</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>7</masterLabel>
+            <translation>Life insurance company, credit union, mortgage bank, or finance company</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>71</masterLabel>
+            <translation>Credit union, mortgage company, or finance company</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>72</masterLabel>
+            <translation>Life insurance company</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>8</masterLabel>
+            <translation>Affiliate institution</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>9</masterLabel>
+            <translation>Other type of purchaser</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- This system-populated formula field indicates the gross annual income, rounded to the nearest thousand dollars, used to make the credit decision for HMDA reportable loans. --></help>
+        <label><!-- Reported Gross Annual Income --></label>
+        <name>LLC_BI__HMDA_Reported_Gross_Annual_Income__c</name>
+    </fields>
+    <fields>
+        <help><!-- This system-populated formula field indicates the total points and fees for HMDA reportable loans. --></help>
+        <label><!-- Reported Total Points and Fees --></label>
+        <name>LLC_BI__HMDA_Reported_Total_Points_Fees__c</name>
+    </fields>
+    <fields>
+        <label><!-- Reverse Mortgage --></label>
+        <name>LLC_BI__HMDA_Reverse_Mortgage__c</name>
+        <picklistValues>
+            <masterLabel>1</masterLabel>
+            <translation>Reverse mortgage</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>2</masterLabel>
+            <translation>Not a reverse mortgage</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Submission of Application --></label>
+        <name>LLC_BI__HMDA_Submission_Of_Application__c</name>
+        <picklistValues>
+            <masterLabel>1</masterLabel>
+            <translation>Submitted directly to your institution</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>2</masterLabel>
+            <translation>Not submitted directly to your institution</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>3</masterLabel>
+            <translation>Not applicable</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Total Loan Costs --></label>
+        <name>LLC_BI__HMDA_Total_Loan_Costs__c</name>
+    </fields>
+    <fields>
+        <help><!-- If the amount is zero, enter 0. --></help>
+        <label><!-- -D Total Points and Fees --></label>
+        <name>LLC_BI__HMDA_Total_Points_Fees__c</name>
+    </fields>
+    <fields>
+        <help><!-- The ULI begins with the financial institution&apos;s Legal Entity Identifier.  Follows the Legal Entity Identifier with up to 23 additional characters to identify the covered loan or application.  Ends with a two-character check digit that is calculated using --></help>
+        <label><!-- Universal Loan Identifier (ULI) --></label>
+        <name>LLC_BI__HMDA_Universal_Loan_Identifier__c</name>
+    </fields>
+    <fields>
+        <help><!-- This field displays the effective date of the APOR Index used to complete HPML compliance calculations for a loan. --></help>
+        <label><!-- HPML APOR Effective Date --></label>
+        <name>LLC_BI__HPML_APOR_Effective_Date__c</name>
+    </fields>
+    <fields>
+        <help><!-- This field displays the APOR for a loan when HPML compliance calculations are completed. --></help>
+        <label><!-- HPML APOR --></label>
+        <name>LLC_BI__HPML_APOR__c</name>
+    </fields>
+    <fields>
+        <help><!-- This field displays the HPML calculation date. --></help>
+        <label><!-- HPML Calculation Date --></label>
+        <name>LLC_BI__HPML_Calculation_Date__c</name>
+    </fields>
+    <fields>
+        <help><!-- Enter the date for the initial closing disclosure. --></help>
+        <label><!-- Initial Closing Disclosure Date --></label>
+        <name>LLC_BI__Initial_Closing_Disclosure_Date__c</name>
+    </fields>
+    <fields>
+        <help><!-- Enter the date for the initial loan estimate. --></help>
+        <label><!-- Initial Loan Estimate Date --></label>
+        <name>LLC_BI__Initial_Loan_Estimate_Date__c</name>
+    </fields>
+    <fields>
+        <help><!-- Enter the date the applicant indicated intent to proceed with the application. --></help>
+        <label><!-- Intent to Proceed Date --></label>
+        <name>LLC_BI__Intent_to_Proceed_Date__c</name>
+    </fields>
+    <fields>
+        <help><!-- This field displays the amount of interest paid for a loan. --></help>
+        <label><!-- Interest Charge --></label>
+        <name>LLC_BI__Interest_Charge__c</name>
+    </fields>
+    <fields>
+        <help><!-- Numbers calculated to beyond three (3) decimal places may either be reported beyond three (3) decimal places or rounded or truncated to three (3) decimal places. Decimal place trailing zeros may be either included or omitted. --></help>
+        <label><!-- Interest Rate --></label>
+        <name>LLC_BI__Interest_Rate__c</name>
+    </fields>
+    <fields>
+        <label><!-- Introductory Rate Period --></label>
+        <name>LLC_BI__Introductory_Rate_Period__c</name>
+    </fields>
+    <fields>
+        <help><!-- This field indicates if a loan qualifies as HCM. --></help>
+        <label><!-- Is HCM --></label>
+        <name>LLC_BI__Is_HCM__c</name>
+    </fields>
+    <fields>
+        <help><!-- This field indicates if a loan qualifies as HPML. --></help>
+        <label><!-- Is HPML --></label>
+        <name>LLC_BI__Is_HPML__c</name>
+    </fields>
+    <fields>
+        <help><!-- This field indicates if a user has manually edited the loan compliance record. When selected, the system does not automatically populate fields on the loan compliance record with values entered in the workflow. --></help>
+        <label><!-- Is Manually Edited --></label>
+        <name>LLC_BI__Is_Manually_Edited__c</name>
+    </fields>
+    <fields>
+        <help><!-- Select this checkbox to indicate that loan proceeds will be used for home
+        improvement. --></help>
+        <label><!-- Is Used for Home Improvement --></label>
+        <name>LLC_BI__Is_Used_for_Home_Improvement__c</name>
+    </fields>
+    <fields>
+        <help><!-- Select the loan estimate delivery method for the loan. --></help>
+        <label><!-- Loan Estimate Delivery Method --></label>
+        <name>LLC_BI__Loan_Estimate_Delivery_Method__c</name>
+        <picklistValues>
+            <masterLabel>Electronic</masterLabel>
+            <translation><!-- Electronic --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>In-person</masterLabel>
+            <translation><!-- In-person --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Mail</masterLabel>
+            <translation><!-- Mail --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Loan Identification Number --></label>
+        <name>LLC_BI__Loan_Id__c</name>
+    </fields>
+    <fields>
+        <label><!-- Loan Term --></label>
+        <name>LLC_BI__Loan_Term__c</name>
+    </fields>
+    <fields>
+        <label><!-- Loan --></label>
+        <name>LLC_BI__Loan__c</name>
+        <relationshipLabel><!-- Loan Compliances --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Mortgage Loan Originator NMLSR Id --></label>
+        <name>LLC_BI__Mortgage_LO_NMLSR_Id__c</name>
+    </fields>
+    <fields>
+        <help><!-- Enter &quot;NA&quot; if the requirement to report prepayment penalty term does not apply to the covered loan or application that your institution is reporting. --></help>
+        <label><!-- Prepayment Penalty Term --></label>
+        <name>LLC_BI__Prepayment_Penalty_Term__c</name>
+    </fields>
+    <fields>
+        <help><!-- Select the purpose of the refinance loan. --></help>
+        <label><!-- Purpose of Refinance --></label>
+        <name>LLC_BI__Purpose_of_Refinance__c</name>
+        <picklistValues>
+            <masterLabel>Refinance with current lender and cash-out</masterLabel>
+            <translation><!-- Refinance with current lender and cash-out --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Refinance with current lender and limited cash-out</masterLabel>
+            <translation><!-- Refinance with current lender and limited cash-out --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Refinance with current lender and no cash-out</masterLabel>
+            <translation><!-- Refinance with current lender and no cash-out --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Refinance with different lender and cash-out</masterLabel>
+            <translation><!-- Refinance with different lender and cash-out --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Refinance with different lender and limited cash-out</masterLabel>
+            <translation><!-- Refinance with different lender and limited cash-out --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Refinance with different lender and no cash-out</masterLabel>
+            <translation><!-- Refinance with different lender and no cash-out --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- This field indicates if a loan qualifies as Qualified Mortgage. --></help>
+        <label><!-- Qualified Mortgage Indicator --></label>
+        <name>LLC_BI__Qualified_Mortgage_Indicator__c</name>
+    </fields>
+    <fields>
+        <help><!-- Enter the date and time the rate lock expires. --></help>
+        <label><!-- Rate Lock Expiration Date and Time --></label>
+        <name>LLC_BI__Rate_Lock_Expiration_Date_and_Time__c</name>
+    </fields>
+    <fields>
+        <help><!-- Enter, as a percentage, to at least three (3) decimal places. Numbers calculated to beyond three (3) decimal places may either be reported beyond three (3) decimal places or rounded or truncated to three (3) decimal places. --></help>
+        <label><!-- Rate Spread (##.### format) --></label>
+        <name>LLC_BI__Rate_Spread__c</name>
+    </fields>
+    <fields>
+        <help><!-- Enter the date for the redisclosed closing disclosure. --></help>
+        <label><!-- Redisclosed Closing Disclosure Date --></label>
+        <name>LLC_BI__Redisclosed_Closing_Disclosure_Date__c</name>
+    </fields>
+    <fields>
+        <help><!-- Enter the date for the redisclosed loan estimate. --></help>
+        <label><!-- Redisclosed Loan Estimate Date --></label>
+        <name>LLC_BI__Redisclosed_Loan_Estimate_Date__c</name>
+    </fields>
+    <fields>
+        <help><!-- This system-populated multi-select picklist indicates the reason the loan may require redisclosure. --></help>
+        <label><!-- Redisclosure Reasons --></label>
+        <name>LLC_BI__Redisclosure_Reasons__c</name>
+        <picklistValues>
+            <masterLabel>Borrower Requested Revisions</masterLabel>
+            <translation><!-- Borrower Requested Revisions --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Changed Circumstance Affecting Eligibility</masterLabel>
+            <translation><!-- Changed Circumstance Affecting Eligibility --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Changed Circumstance Affecting Settlement Costs</masterLabel>
+            <translation><!-- Changed Circumstance Affecting Settlement Costs --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Interest Rate Lock</masterLabel>
+            <translation><!-- Interest Rate Lock --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Loan Estimate Expiration</masterLabel>
+            <translation><!-- Loan Estimate Expiration --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- Select the TRID Loan Purpose. --></help>
+        <label><!-- TRID Loan Purpose --></label>
+        <name>LLC_BI__TRID_Loan_Purpose__c</name>
+        <picklistValues>
+            <masterLabel>Construction</masterLabel>
+            <translation><!-- Construction --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Home Equity</masterLabel>
+            <translation><!-- Home Equity --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Purchase</masterLabel>
+            <translation><!-- Purchase --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Refinance</masterLabel>
+            <translation><!-- Refinance --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- This system-populated field displays the date the fees exceeded TRID tolerances. --></help>
+        <label><!-- TRID Tolerances Exceeded Date --></label>
+        <name>LLC_BI__TRID_Tolerances_Exceeded_Date__c</name>
+    </fields>
+    <fields>
+        <help><!-- Captures the date that an unacceptable change of circumstance occurred for a TRID loan. --></help>
+        <label><!-- Unacceptable Change Date --></label>
+        <name>LLC_BI__TRID_Unacceptable_Change_Date__c</name>
+    </fields>
+    <fields>
+        <help><!-- This field indicates the total points and fees for a loan. --></help>
+        <label><!-- Total Points and Fees --></label>
+        <name>LLC_BI__Total_Points_And_Fees__c</name>
+    </fields>
+    <recordTypes>
+        <description><!-- HMDA Compliance record, using rules effective as of 2017 --></description>
+        <label><!-- HMDA-Effective-2017 --></label>
+        <name>LLC_BI__HMDA_Effective_2017</name>
+    </recordTypes>
+    <recordTypes>
+        <description><!-- HMDA Compliance record, using rules effective as of 2018 --></description>
+        <label><!-- HMDA-Effective-2018 --></label>
+        <name>LLC_BI__HMDA_Effective_2018</name>
+    </recordTypes>
+    <validationRules>
+        <errorMessage><!-- One or more required date fields are empty. Enter the initial loan estimate date or the initial closing disclosure date to continue. --></errorMessage>
+        <name>LLC_BI__LE_CD_Date_Required</name>
+    </validationRules>
+</CustomObjectTranslation>

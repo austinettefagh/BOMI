@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Flow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <apiVersion>55.0</apiVersion>
+    <decisions>
+        <description>nCino&apos;s general purpose Record-Trigger flows are designed to bucket interactions into distinct pillars. 
+
+1. On Create. These actions occur at the time the record is created. 
+2. Progression (if applicable). These actions occur when a core process on the record progresses forward or backward. These should be picklists (Example: Loan Stage). 
+3. Adhoc. All other actions which occur when distinct criteria are met.
+
+A &quot;skip&quot; function is build into start conditions. This flow will not execute when the &quot;Exclude Flow&quot; permission set is assigned to the running user.</description>
+        <name>Determine_Path</name>
+        <label>Determine Path</label>
+        <locationX>182</locationX>
+        <locationY>431</locationY>
+        <defaultConnector>
+            <targetReference>Update_Collateral_Mgmt_On_Edit</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>Adhoc</defaultConnectorLabel>
+        <rules>
+            <name>On_Create</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>forB_ISNEW</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <booleanValue>true</booleanValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Update_Collateral_Mgmt_On_Create</targetReference>
+            </connector>
+            <label>On Create</label>
+        </rules>
+    </decisions>
+    <description>Managed flow handling various Collateral Mgmt actions in Before Save context. When a Collateral Mgmt record is created or edited, the resulting actions update the record which triggered the flow.</description>
+    <formulas>
+        <description>Reusable variable. Drives &quot;On Create&quot; pillar.</description>
+        <name>forB_ISNEW</name>
+        <dataType>Boolean</dataType>
+        <expression>ISNEW()</expression>
+    </formulas>
+    <formulas>
+        <description>This formula uses logic to return a text value matching the names of the object&apos;s record types. The final ELSE condition returns a text value of &quot;Master Record Type&quot; which does not exist as an available record type. Per Salesforce functionality, when a record is updated and a matching record type cannot be found, the Record Type is updated based on profile configuration. 
+Profile &gt; Object Settings &gt; Object &gt; Master Record Type.</description>
+        <name>forT_DetermineRecordType</name>
+        <dataType>String</dataType>
+        <expression>IF(
+NOT(ISBLANK(TEXT({!$Record.LLC_BI__Collateral_Type__r.LLC_BI__Group_Type__c}))), &apos;Group&apos;,
+IF(
+TEXT({!$Record.LLC_BI__Collateral_Type__r.LLC_BI__Type__c}) = &quot;Possessory&quot; &amp;&amp; TEXT({!$Record.LLC_BI__Collateral_Type__r.LLC_BI__Subtype__c}) = &quot;Letter of Credit&quot;, &apos;Possessory Letter of Credit&apos;,
+IF(
+TEXT({!$Record.LLC_BI__Collateral_Type__r.LLC_BI__Type__c}) = &quot;Possessory&quot; &amp;&amp; TEXT({!$Record.LLC_BI__Collateral_Type__r.LLC_BI__Subtype__c}) = &quot;Life Insurance&quot;, &apos;Possessory Life Insurance&apos;,
+IF(
+TEXT({!$Record.LLC_BI__Collateral_Type__r.LLC_BI__Type__c}) = &quot;Possessory&quot; &amp;&amp; (TEXT({!$Record.LLC_BI__Collateral_Type__r.LLC_BI__Subtype__c}) = &quot;Other Possessory&quot; || TEXT({!$Record.LLC_BI__Collateral_Type__r.LLC_BI__Subtype__c}) = &quot;Note/Instrument&quot; || TEXT({!$Record.LLC_BI__Collateral_Type__r.LLC_BI__Subtype__c}) = &quot;Receipts/Bills&quot;), &apos;Possessory Other&apos;,
+IF(
+TEXT({!$Record.LLC_BI__Collateral_Type__r.LLC_BI__Type__c}) = &quot;Possessory&quot; &amp;&amp; TEXT({!$Record.LLC_BI__Collateral_Type__r.LLC_BI__Subtype__c}) = &quot;Savings/CD&apos;s&quot;, &apos;Possessory Savings/CD&apos;,
+IF(
+TEXT({!$Record.LLC_BI__Collateral_Type__r.LLC_BI__Type__c}) = &quot;Possessory&quot; &amp;&amp; TEXT({!$Record.LLC_BI__Collateral_Type__r.LLC_BI__Subtype__c}) = &quot;Securities&quot;, &apos;Possessory Securities&apos;,
+IF(
+TEXT({!$Record.LLC_BI__Collateral_Type__r.LLC_BI__Type__c}) = &quot;Real Estate&quot;, &apos;Real Estate&apos;,
+IF(
+TEXT({!$Record.LLC_BI__Collateral_Type__r.LLC_BI__Type__c}) = &quot;Titled&quot; &amp;&amp; TEXT({!$Record.LLC_BI__Collateral_Type__r.LLC_BI__Subtype__c}) = &quot;Aircraft&quot;, &apos;Titled Aircraft&apos;,
+IF(
+TEXT({!$Record.LLC_BI__Collateral_Type__r.LLC_BI__Type__c}) = &quot;Titled&quot; &amp;&amp; TEXT({!$Record.LLC_BI__Collateral_Type__r.LLC_BI__Subtype__c}) = &quot;Pleasure Boat&quot;, &apos;Titled Boat&apos;,
+IF(
+TEXT({!$Record.LLC_BI__Collateral_Type__r.LLC_BI__Type__c}) = &quot;Titled&quot; &amp;&amp; TEXT({!$Record.LLC_BI__Collateral_Type__r.LLC_BI__Subtype__c}) = &quot;Mobile Home&quot;, &apos;Titled Mobile Home&apos;,
+IF(
+TEXT({!$Record.LLC_BI__Collateral_Type__r.LLC_BI__Type__c}) = &quot;Titled&quot; &amp;&amp; TEXT({!$Record.LLC_BI__Collateral_Type__r.LLC_BI__Subtype__c}) = &quot;Motor Vehicle&quot;, &apos;Titled Motor Vehicle&apos;,
+IF(
+TEXT({!$Record.LLC_BI__Collateral_Type__r.LLC_BI__Type__c}) = &quot;Titled&quot; &amp;&amp; (TEXT({!$Record.LLC_BI__Collateral_Type__r.LLC_BI__Subtype__c}) = &quot;Trailer&quot; || TEXT({!$Record.LLC_BI__Collateral_Type__r.LLC_BI__Subtype__c}) = &quot;Other&quot;), &apos;Titled Trailer/Other&apos;,
+IF(
+TEXT({!$Record.LLC_BI__Collateral_Type__r.LLC_BI__Type__c}) = &quot;UCC&quot;, &apos;UCC&apos;,
+IF(
+TEXT({!$Record.LLC_BI__Collateral_Type__r.LLC_BI__Type__c}) = &quot;Titled&quot; &amp;&amp; TEXT({!$Record.LLC_BI__Collateral_Type__r.LLC_BI__Subtype__c}) = &quot;Vessel&quot;, &apos;Titled Vessel&apos;,
+&apos;Master Record Type&apos;))))))))))))))</expression>
+    </formulas>
+    <interviewLabel>nCino PDE - Record Trigger: Collateral Mgmt Before Save - V.1.0.0 {!$Flow.CurrentDateTime}</interviewLabel>
+    <isTemplate>true</isTemplate>
+    <label>nCino PDE - Record Trigger: Collateral Mgmt Before Save - V.1.0.0</label>
+    <processMetadataValues>
+        <name>BuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>CanvasMode</name>
+        <value>
+            <stringValue>AUTO_LAYOUT_CANVAS</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>OriginBuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processType>AutoLaunchedFlow</processType>
+    <recordLookups>
+        <name>Get_Collateral_Mgmt_Record_Types</name>
+        <label>Get Collateral Mgmt Record Types</label>
+        <locationX>182</locationX>
+        <locationY>311</locationY>
+        <assignNullValuesIfNoRecordsFound>false</assignNullValuesIfNoRecordsFound>
+        <connector>
+            <targetReference>Determine_Path</targetReference>
+        </connector>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <field>SobjectType</field>
+            <operator>EqualTo</operator>
+            <value>
+                <stringValue>LLC_BI__Collateral__c</stringValue>
+            </value>
+        </filters>
+        <filters>
+            <field>Name</field>
+            <operator>EqualTo</operator>
+            <value>
+                <elementReference>forT_DetermineRecordType</elementReference>
+            </value>
+        </filters>
+        <getFirstRecordOnly>true</getFirstRecordOnly>
+        <object>RecordType</object>
+        <queriedFields>Id</queriedFields>
+        <queriedFields>Name</queriedFields>
+        <sortField>Id</sortField>
+        <sortOrder>Asc</sortOrder>
+        <storeOutputAutomatically>true</storeOutputAutomatically>
+    </recordLookups>
+    <recordUpdates>
+        <description>A DML element to update the triggering Collateral Mgmt.
+Migrated from Workflow(s): All Collateral Mgmt workflows</description>
+        <name>Update_Collateral_Mgmt_On_Create</name>
+        <label>Update Collateral Mgmt On Create</label>
+        <locationX>50</locationX>
+        <locationY>551</locationY>
+        <inputAssignments>
+            <field>RecordTypeId</field>
+            <value>
+                <elementReference>Get_Collateral_Mgmt_Record_Types.Id</elementReference>
+            </value>
+        </inputAssignments>
+        <inputReference>$Record</inputReference>
+    </recordUpdates>
+    <recordUpdates>
+        <description>A DML element to update the triggering Collateral Mgmt.
+Migrated from Workflow(s): All Collateral Mgmt workflows</description>
+        <name>Update_Collateral_Mgmt_On_Edit</name>
+        <label>Update Collateral Mgmt On Edit</label>
+        <locationX>314</locationX>
+        <locationY>551</locationY>
+        <inputAssignments>
+            <field>RecordTypeId</field>
+            <value>
+                <elementReference>Get_Collateral_Mgmt_Record_Types.Id</elementReference>
+            </value>
+        </inputAssignments>
+        <inputReference>$Record</inputReference>
+    </recordUpdates>
+    <start>
+        <locationX>56</locationX>
+        <locationY>0</locationY>
+        <connector>
+            <targetReference>Get_Collateral_Mgmt_Record_Types</targetReference>
+        </connector>
+        <filterFormula>{!$Permission.LLC_BI__Exclude_Flow} = False</filterFormula>
+        <object>LLC_BI__Collateral__c</object>
+        <recordTriggerType>CreateAndUpdate</recordTriggerType>
+        <triggerType>RecordBeforeSave</triggerType>
+    </start>
+    <status>Draft</status>
+</Flow>

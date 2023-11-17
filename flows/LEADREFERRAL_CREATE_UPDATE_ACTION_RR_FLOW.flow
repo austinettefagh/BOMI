@@ -1,0 +1,325 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Flow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionCalls>
+        <description>Email customer a questionnaire</description>
+        <name>Email_Questionnaire_to_Customer</name>
+        <label>Email Questionnaire to Customer</label>
+        <locationX>50</locationX>
+        <locationY>755</locationY>
+        <actionName>emailSimple</actionName>
+        <actionType>emailSimple</actionType>
+        <flowTransactionModel>CurrentTransaction</flowTransactionModel>
+        <inputParameters>
+            <name>emailAddresses</name>
+            <value>
+                <elementReference>$Record.Email</elementReference>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>senderType</name>
+            <value>
+                <stringValue>OrgWideEmailAddress</stringValue>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>senderAddress</name>
+            <value>
+                <stringValue>jbuck@bankofmissouri.com</stringValue>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>emailSubject</name>
+            <value>
+                <elementReference>PartnerWithUs_EmailSubject</elementReference>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>emailBody</name>
+            <value>
+                <elementReference>PartnerWithUs_EmailBody</elementReference>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>sendRichBody</name>
+            <value>
+                <booleanValue>true</booleanValue>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>logEmailOnSend</name>
+            <value>
+                <booleanValue>true</booleanValue>
+            </value>
+        </inputParameters>
+        <nameSegment>emailSimple</nameSegment>
+        <versionSegment>1</versionSegment>
+    </actionCalls>
+    <apiVersion>57.0</apiVersion>
+    <assignments>
+        <description>Update the new &apos;Partner with Us&apos; Lead record with specific values.</description>
+        <name>Assign_Default_Values_for_Partner_with_Us_Leads</name>
+        <label>Assign Default Values for &apos;Partner with Us&apos; Leads</label>
+        <locationX>50</locationX>
+        <locationY>539</locationY>
+        <assignmentItems>
+            <assignToReference>VAR_PartnerWithUsLead_Record.OwnerId</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <stringValue>0056g000006SJafAAG</stringValue>
+            </value>
+        </assignmentItems>
+        <assignmentItems>
+            <assignToReference>VAR_PartnerWithUsLead_Record.LeadSource</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <stringValue>Website</stringValue>
+            </value>
+        </assignmentItems>
+        <assignmentItems>
+            <assignToReference>VAR_PartnerWithUsLead_Record.RecordTypeId</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <stringValue>0126g000000H4f6AAC</stringValue>
+            </value>
+        </assignmentItems>
+        <assignmentItems>
+            <assignToReference>VAR_PartnerWithUsLead_Record.Status</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <stringValue>Pre-Call Questionnaire</stringValue>
+            </value>
+        </assignmentItems>
+        <connector>
+            <targetReference>UPDATE_PARTNER_WITH_US_LEAD_RECORD</targetReference>
+        </connector>
+    </assignments>
+    <decisions>
+        <description>Is this a newly created record, or an existing record being updated?</description>
+        <name>IS_NEW_OR_EXISTING_RECORD</name>
+        <label>IS NEW OR EXISTING RECORD?</label>
+        <locationX>380</locationX>
+        <locationY>323</locationY>
+        <defaultConnectorLabel>EXISTING RECORD</defaultConnectorLabel>
+        <rules>
+            <name>NEW_RECORD</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>ISNEWLEADRECORD</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <booleanValue>true</booleanValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>IS_THIS_A_PARTNER_WITH_US_LEAD</targetReference>
+            </connector>
+            <label>NEW RECORD</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <description>Determine if the new lead was created using https://www.bankofmissouri.com/strategic-partners/connect/become-a-strategic-partner on the TBOM website</description>
+        <name>IS_THIS_A_PARTNER_WITH_US_LEAD</name>
+        <label>IS THIS A &apos;PARTNER WITH US&apos; LEAD?</label>
+        <locationX>182</locationX>
+        <locationY>431</locationY>
+        <defaultConnectorLabel>NOT &apos;PARTNER WITH US&apos; LEAD</defaultConnectorLabel>
+        <rules>
+            <name>PARTNER_WITH_US_LEAD</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record.Form_Type__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Partner with Us</stringValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Assign_Default_Values_for_Partner_with_Us_Leads</targetReference>
+            </connector>
+            <label>&apos;PARTNER WITH US&apos; LEAD</label>
+        </rules>
+    </decisions>
+    <description>Used for Leads and Referrals</description>
+    <environments>Default</environments>
+    <formulas>
+        <description>IS THIS A NEW LEAD RECORD?</description>
+        <name>ISNEWLEADRECORD</name>
+        <dataType>Boolean</dataType>
+        <expression>ISNEW()</expression>
+    </formulas>
+    <interviewLabel>LeadReferral_ {!$Flow.CurrentDateTime}</interviewLabel>
+    <label>LEADREFERRAL_CREATE_UPDATE_ACTION_RR_FLOW</label>
+    <processMetadataValues>
+        <name>BuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>CanvasMode</name>
+        <value>
+            <stringValue>AUTO_LAYOUT_CANVAS</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>OriginBuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processType>AutoLaunchedFlow</processType>
+    <recordUpdates>
+        <description>Update the newly created &apos;Partner with Us&apos; Lead record with desired information</description>
+        <name>UPDATE_PARTNER_WITH_US_LEAD_RECORD</name>
+        <label>UPDATE &apos;PARTNER WITH US&apos; LEAD RECORD</label>
+        <locationX>50</locationX>
+        <locationY>647</locationY>
+        <connector>
+            <targetReference>Email_Questionnaire_to_Customer</targetReference>
+        </connector>
+        <inputAssignments>
+            <field>LeadSource</field>
+            <value>
+                <elementReference>VAR_PartnerWithUsLead_Record.LeadSource</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>OwnerId</field>
+            <value>
+                <elementReference>VAR_PartnerWithUsLead_Record.OwnerId</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>RecordTypeId</field>
+            <value>
+                <elementReference>VAR_PartnerWithUsLead_Record.RecordTypeId</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>Status</field>
+            <value>
+                <elementReference>VAR_PartnerWithUsLead_Record.Status</elementReference>
+            </value>
+        </inputAssignments>
+        <inputReference>$Record</inputReference>
+    </recordUpdates>
+    <start>
+        <locationX>254</locationX>
+        <locationY>0</locationY>
+        <connector>
+            <targetReference>IS_NEW_OR_EXISTING_RECORD</targetReference>
+        </connector>
+        <filterFormula>{!$User.No_Workflow__c}=false</filterFormula>
+        <object>Lead</object>
+        <recordTriggerType>CreateAndUpdate</recordTriggerType>
+        <triggerType>RecordAfterSave</triggerType>
+    </start>
+    <status>Active</status>
+    <textTemplates>
+        <description>Body of email for New Partner With Us Lead</description>
+        <name>PartnerWithUs_EmailBody</name>
+        <isViewedAsPlainText>true</isViewedAsPlainText>
+        <text>&lt;h3&gt;Hello {!$Record.Company},&lt;/h3&gt;
+&lt;p&gt;Thank you for requesting information about Partner Services with The Bank of Missouri. I am following up on a contact made via The Bank of Missouri website regarding a potential partnership between The Bank of Missouri and  {!$Record.Company}. Thank you for contacting us.
+&lt;br&gt;
+&lt;br&gt;
+We welcome the opportunity to connect and learn more about your needs in the issuing space. In order to best coordinate a conversation please tell us more about you.
+&lt;br&gt;
+&lt;br&gt;
+&lt;form&gt;
+&lt;b&gt;Are you interested in offering a service to The Bank of Missouri? &lt;/b&gt;
+&lt;input type=&quot;checkbox&quot; id=&quot;interestY&quot; name=&quot;interestY&quot; value=&quot;Yes&quot;&gt;
+&lt;label for=&quot;interestY&quot;&gt; Yes &lt;/label&gt;
+&lt;input type=&quot;checkbox&quot; id=&quot;interestN&quot; name=&quot;interestN&quot; value=&quot;No&quot;&gt;
+&lt;label for=&quot;interestY&quot;&gt; No &lt;/label&gt;&lt;br&gt;
+If YES, please explain service opportunity:
+&lt;br&gt;
+&lt;br&gt;
+&lt;/form&gt;
+&lt;br&gt;
+&lt;form&gt;
+&lt;b&gt;Are you interested in obtaining a product or service from The Bank of Missouri? &lt;/b&gt;
+&lt;input type=&quot;checkbox&quot; id=&quot;productY&quot; name=&quot;productY&quot; value=&quot;Yes&quot;&gt;
+&lt;label for=&quot;productY&quot;&gt; Yes &lt;/label&gt;
+&lt;input type=&quot;checkbox&quot; id=&quot;productN&quot; name=&quot;productN&quot; value=&quot;No&quot;&gt;
+&lt;label for=&quot;productN&quot;&gt; No &lt;/label&gt;&lt;br&gt;
+If YES, please choose desired product(s) or service(s).
+&lt;br&gt;
+&amp;emsp; &lt;input type=&quot;checkbox&quot; id=&quot;productGUCC&quot; name=&quot;productGUCC&quot; value=&quot;GENERAL USE CREDIT CARD&quot;&gt;
+&lt;label for=&quot;productGUCC&quot;&gt; GENERAL USE CREDIT CARD &lt;/label&gt;&lt;br&gt;
+&amp;emsp; &lt;input type=&quot;checkbox&quot; id=&quot;productPLCC&quot; name=&quot;productPLCC&quot; value=&quot;PRIVATE LABEL CREDIT CARD&quot;&gt;
+&lt;label for=&quot;productPLCC&quot;&gt; PRIVATE LABEL CREDIT CARD &lt;/label&gt;&lt;br&gt;
+&amp;emsp; &lt;input type=&quot;checkbox&quot; id=&quot;productDC&quot; name=&quot;productDC&quot; value=&quot;DEBIT CARD&quot;&gt;
+&lt;label for=&quot;productDC&quot;&gt; DEBIT CARD &lt;/label&gt;&lt;br&gt;
+&amp;emsp; &lt;input type=&quot;checkbox&quot; id=&quot;productIL&quot; name=&quot;productIL&quot; value=&quot;INSTALLMENT LOAN&quot;&gt;
+&lt;label for=&quot;productIL&quot;&gt; INSTALLMENT LOAN &lt;/label&gt;&lt;br&gt;
+&amp;emsp; &lt;input type=&quot;checkbox&quot; id=&quot;productCA&quot; name=&quot;productCA&quot; value=&quot;CHECKING ACCOUNT&quot;&gt;
+&lt;label for=&quot;productCA&quot;&gt; CHECKING ACCOUNT &lt;/label&gt;&lt;br&gt;
+&amp;emsp; &lt;input type=&quot;checkbox&quot; id=&quot;productPS&quot; name=&quot;productPS&quot; value=&quot;PAYMENT SERVICES&quot;&gt;
+&lt;label for=&quot;productPS&quot;&gt; PAYMENT SERVICES &lt;/label&gt;&lt;br&gt;
+&amp;emsp; &lt;input type=&quot;checkbox&quot; id=&quot;productOther&quot; name=&quot;productOther&quot; value=&quot;OTHER&quot;&gt;
+&lt;label for=&quot;productOther&quot;&gt; OTHER: 
+&lt;br&gt;
+&lt;br&gt;
+&lt;/form&gt;
+&lt;br&gt;
+&lt;form&gt;
+&lt;b&gt;Is your company currently a US Based Company? &lt;/b&gt;
+&lt;input type=&quot;checkbox&quot; id=&quot;USY&quot; name=&quot;USY&quot; value=&quot;Yes&quot;&gt;
+&lt;label for=&quot;USY&quot;&gt; Yes &lt;/label&gt;
+&lt;input type=&quot;checkbox&quot; id=&quot;USN&quot; name=&quot;USN&quot; value=&quot;No&quot;&gt;
+&lt;label for=&quot;USN&quot;&gt; No &lt;/label&gt;&lt;br&gt;
+If NO, will it be before any potential launch of product?
+&lt;input type=&quot;checkbox&quot; id=&quot;USLaterY&quot; name=&quot;USLaterY&quot; value=&quot;Yes&quot;&gt;
+&lt;label for=&quot;USLaterY&quot;&gt; Yes &lt;/label&gt;
+&lt;input type=&quot;checkbox&quot; id=&quot;USLaterN&quot; name=&quot;USLaterN&quot; value=&quot;No&quot;&gt;
+&lt;label for=&quot;USLaterN&quot;&gt; No &lt;/label&gt;
+&lt;/form&gt;
+&lt;br&gt;
+&lt;form&gt;
+&lt;b&gt;Does your company currently have a product in the marketplace? &lt;/b&gt;
+&lt;input type=&quot;checkbox&quot; id=&quot;currentProdY&quot; name=&quot;currentProdY&quot; value=&quot;Yes&quot;&gt;
+&lt;label for=&quot;currentProdY&quot;&gt; Yes &lt;/label&gt;
+&lt;input type=&quot;checkbox&quot; id=&quot;currentProdN&quot; name=&quot;currentProdN&quot; value=&quot;No&quot;&gt;
+&lt;label for=&quot;currentProdN&quot;&gt; No &lt;/label&gt;&lt;br&gt;
+If YES, please answer below questions.
+&lt;br&gt;
+&amp;emsp; What is the APR for your product?
+&amp;emsp; What is your target audience?
+&lt;br&gt;
+&lt;br&gt;
+&lt;/form&gt;
+&lt;br&gt;
+&lt;form&gt;
+&lt;b&gt;Is your company a startup? &lt;/b&gt;
+&lt;input type=&quot;checkbox&quot; id=&quot;startupY&quot; name=&quot;startupY&quot; value=&quot;Yes&quot;&gt;
+&lt;label for=&quot;startupY&quot;&gt; Yes &lt;/label&gt;
+&lt;input type=&quot;checkbox&quot; id=&quot;startupN&quot; name=&quot;startupN&quot; value=&quot;No&quot;&gt;
+&lt;label for=&quot;startupN&quot;&gt; No &lt;/label&gt;&lt;br&gt;
+&lt;label for=&quot;incorporated&quot;&gt;If yes, when was the company incorporated?&lt;/label&gt;&lt;br&gt;
+&lt;input type=&quot;number&quot; id=&quot;incorporated&quot; name=&quot;incorporated&quot; min=&quot;1900&quot;&gt;&lt;br&gt;
+&lt;/form&gt;
+&lt;br&gt;
+Please provide the information above and times for a potential call spanning two weeks. Someone from our team will reach out to coordinate a conversation.
+&lt;br&gt;
+&lt;br&gt;
+Thank you and have a wonderful day!
+&lt;br&gt;
+&lt;br&gt;
+&lt;h3&gt;Partner Services at The Bank of Missouri&lt;/h3&gt;</text>
+    </textTemplates>
+    <textTemplates>
+        <description>Email subject for New Partner with Us email</description>
+        <name>PartnerWithUs_EmailSubject</name>
+        <isViewedAsPlainText>true</isViewedAsPlainText>
+        <text>Strategic Partnership Inquiry | {!$Record.Company}</text>
+    </textTemplates>
+    <variables>
+        <name>VAR_PartnerWithUsLead_Record</name>
+        <dataType>SObject</dataType>
+        <isCollection>false</isCollection>
+        <isInput>false</isInput>
+        <isOutput>false</isOutput>
+        <objectType>Lead</objectType>
+    </variables>
+</Flow>

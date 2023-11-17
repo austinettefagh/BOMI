@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <label><!-- Automated Scheduling Software --></label>
+        <name>LLC_BI__Automated_Scheduling_Software__c</name>
+    </fields>
+    <fields>
+        <label><!-- Communication Setup --></label>
+        <name>LLC_BI__Communication_Setup__c</name>
+        <picklistValues>
+            <masterLabel>FRP (File Transfer Protocol) with PGP Encrytion</masterLabel>
+            <translation><!-- FRP (File Transfer Protocol) with PGP Encrytion --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SFTP (Preferred)</masterLabel>
+            <translation><!-- SFTP (Preferred) --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Credit Limit --></label>
+        <name>LLC_BI__Credit_Limit__c</name>
+    </fields>
+    <fields>
+        <label><!-- Customer Overall ACH Limit --></label>
+        <name>LLC_BI__Customer_Overall_ACH_Limit__c</name>
+    </fields>
+    <fields>
+        <label><!-- Date of Activation --></label>
+        <name>LLC_BI__Date_of_Activation__c</name>
+    </fields>
+    <fields>
+        <label><!-- Debit Limit --></label>
+        <name>LLC_BI__Debit_Limit__c</name>
+    </fields>
+    <fields>
+        <label><!-- Dual Control --></label>
+        <name>LLC_BI__Dual_Control__c</name>
+    </fields>
+    <fields>
+        <label><!-- Expiration Date/Date of Next Review --></label>
+        <name>LLC_BI__Expiration_Date_Date_of_Next_Review__c</name>
+    </fields>
+    <fields>
+        <label><!-- One Time Passcode --></label>
+        <name>LLC_BI__One_Time_Passcode__c</name>
+    </fields>
+    <fields>
+        <help><!-- Select the checkbox to enable this online banking capability in the Deposit Maintenance workflow. --></help>
+        <label><!-- Online Banking Enabled --></label>
+        <name>LLC_BI__Online_Banking_Enabled__c</name>
+    </fields>
+    <fields>
+        <help><!-- Enter the unique online ID associated to the customer. --></help>
+        <label><!-- Online Banking ID --></label>
+        <name>LLC_BI__Online_Banking_ID__c</name>
+    </fields>
+    <fields>
+        <label><!-- Scheduling Software Description --></label>
+        <name>LLC_BI__Scheduling_Software_Description__c</name>
+    </fields>
+    <fields>
+        <label><!-- Starting Check Number --></label>
+        <name>LLC_BI__Starting_Check_Number__c</name>
+    </fields>
+    <fields>
+        <label><!-- Treasury Service Reference --></label>
+        <name>LLC_BI__Treasury_Service_Reference__c</name>
+        <relationshipLabel><!-- Online Banking Services --></relationshipLabel>
+    </fields>
+</CustomObjectTranslation>

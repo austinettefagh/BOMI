@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <help><!-- Select a specific Institution where this tile displays. If blank, the tile appears on every instance of this route, regardless of Institution. --></help>
+        <label><!-- Institution --></label>
+        <name>LLC_BI__Institution__c</name>
+        <relationshipLabel><!-- Route Tiles --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Order --></label>
+        <name>nFORCE__Order__c</name>
+    </fields>
+    <fields>
+        <label><!-- Route --></label>
+        <name>nFORCE__Route__c</name>
+        <relationshipLabel><!-- Route Tiles --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Tile --></label>
+        <name>nFORCE__Tile__c</name>
+        <relationshipLabel><!-- Route Tiles --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- lookupKey --></label>
+        <name>nFORCE__lookupKey__c</name>
+    </fields>
+</CustomObjectTranslation>

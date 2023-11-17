@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomPermission xmlns="http://soap.sforce.com/2006/04/metadata">
+    <description>Grants a user the ability to delete Data Snapshot, Data Snapshot Item, and Data Snapshot Archive records.</description>
+    <isLicensed>false</isLicensed>
+    <label>Data Snapshots Remover</label>
+</CustomPermission>

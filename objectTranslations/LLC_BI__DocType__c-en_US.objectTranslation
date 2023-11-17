@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <label><!-- Description --></label>
+        <name>LLC_BI__Description__c</name>
+    </fields>
+    <fields>
+        <label><!-- DocManager --></label>
+        <name>LLC_BI__docManager__c</name>
+        <relationshipLabel><!-- DocTypes --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- DocTab --></label>
+        <name>LLC_BI__docTab__c</name>
+        <relationshipLabel><!-- DocTypes --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- lookupId --></label>
+        <name>LLC_BI__lookupId__c</name>
+    </fields>
+    <fields>
+        <label><!-- lookupKey --></label>
+        <name>LLC_BI__lookupKey__c</name>
+    </fields>
+    <fields>
+        <label><!-- sortOrder --></label>
+        <name>LLC_BI__sortOrder__c</name>
+    </fields>
+</CustomObjectTranslation>

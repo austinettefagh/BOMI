@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <label><!-- Data --></label>
+        <name>nDESIGN__Data__c</name>
+    </fields>
+    <fields>
+        <label><!-- Icon --></label>
+        <name>nDESIGN__Icon__c</name>
+    </fields>
+    <fields>
+        <label><!-- Is_Knockout --></label>
+        <name>nDESIGN__Is_Knockout__c</name>
+    </fields>
+    <fields>
+        <label><!-- Is Narrative --></label>
+        <name>nDESIGN__Is_Narrative__c</name>
+    </fields>
+    <fields>
+        <label><!-- Parameters --></label>
+        <name>nDESIGN__Parameters__c</name>
+    </fields>
+    <fields>
+        <help><!-- A static javascript resource to load with the widget. --></help>
+        <label><!-- Script Resource Eight --></label>
+        <name>nDESIGN__Script_Resource_Eight__c</name>
+    </fields>
+    <fields>
+        <help><!-- A static javascript resource to load with the widget. --></help>
+        <label><!-- Script Resource Five --></label>
+        <name>nDESIGN__Script_Resource_Five__c</name>
+    </fields>
+    <fields>
+        <help><!-- A static javascript resource to load with the widget. --></help>
+        <label><!-- Script Resource Four --></label>
+        <name>nDESIGN__Script_Resource_Four__c</name>
+    </fields>
+    <fields>
+        <help><!-- A static javascript resource to load with the widget. --></help>
+        <label><!-- Script Resource Nine --></label>
+        <name>nDESIGN__Script_Resource_Nine__c</name>
+    </fields>
+    <fields>
+        <help><!-- A static javascript resource to load with the widget. --></help>
+        <label><!-- Script Resource One --></label>
+        <name>nDESIGN__Script_Resource_One__c</name>
+    </fields>
+    <fields>
+        <help><!-- A static javascript resource to load with the widget. --></help>
+        <label><!-- Script Resource Seven --></label>
+        <name>nDESIGN__Script_Resource_Seven__c</name>
+    </fields>
+    <fields>
+        <help><!-- A static javascript resource to load with the widget. --></help>
+        <label><!-- Script Resource Six --></label>
+        <name>nDESIGN__Script_Resource_Six__c</name>
+    </fields>
+    <fields>
+        <help><!-- A static javascript resource to load with the widget. --></help>
+        <label><!-- Script Resource Ten --></label>
+        <name>nDESIGN__Script_Resource_Ten__c</name>
+    </fields>
+    <fields>
+        <help><!-- A static javascript resource to load with the widget. --></help>
+        <label><!-- Script Resource Three --></label>
+        <name>nDESIGN__Script_Resource_Three__c</name>
+    </fields>
+    <fields>
+        <help><!-- A static javascript resource to load with the widget. --></help>
+        <label><!-- Script Resource Two --></label>
+        <name>nDESIGN__Script_Resource_Two__c</name>
+    </fields>
+    <fields>
+        <help><!-- A cascading style sheet (CSS) resource to load with the widget. --></help>
+        <label><!-- Stylesheet Resource Eight --></label>
+        <name>nDESIGN__Stylesheet_Resource_Eight__c</name>
+    </fields>
+    <fields>
+        <help><!-- A cascading style sheet (CSS) resource to load with the widget. --></help>
+        <label><!-- Stylesheet Resource Five --></label>
+        <name>nDESIGN__Stylesheet_Resource_Five__c</name>
+    </fields>
+    <fields>
+        <help><!-- A cascading style sheet (CSS) resource to load with the widget. --></help>
+        <label><!-- Stylesheet Resource Four --></label>
+        <name>nDESIGN__Stylesheet_Resource_Four__c</name>
+    </fields>
+    <fields>
+        <help><!-- A cascading style sheet (CSS) resource to load with the widget. --></help>
+        <label><!-- Stylesheet Resource Nine --></label>
+        <name>nDESIGN__Stylesheet_Resource_Nine__c</name>
+    </fields>
+    <fields>
+        <help><!-- A cascading style sheet (CSS) resource to load with the widget. --></help>
+        <label><!-- Stylesheet Resource One --></label>
+        <name>nDESIGN__Stylesheet_Resource_One__c</name>
+    </fields>
+    <fields>
+        <help><!-- A cascading style sheet (CSS) resource to load with the widget. --></help>
+        <label><!-- Stylesheet Resource Seven --></label>
+        <name>nDESIGN__Stylesheet_Resource_Seven__c</name>
+    </fields>
+    <fields>
+        <help><!-- A cascading style sheet (CSS) resource to load with the widget. --></help>
+        <label><!-- Stylesheet Resource Six --></label>
+        <name>nDESIGN__Stylesheet_Resource_Six__c</name>
+    </fields>
+    <fields>
+        <help><!-- A cascading style sheet (CSS) resource to load with the widget. --></help>
+        <label><!-- Stylesheet Resource Ten --></label>
+        <name>nDESIGN__Stylesheet_Resource_Ten__c</name>
+    </fields>
+    <fields>
+        <help><!-- A cascading style sheet (CSS) resource to load with the widget. --></help>
+        <label><!-- Stylesheet Resource Three --></label>
+        <name>nDESIGN__Stylesheet_Resource_Three__c</name>
+    </fields>
+    <fields>
+        <help><!-- A cascading style sheet (CSS) resource to load with the widget. --></help>
+        <label><!-- Stylesheet Resource Two --></label>
+        <name>nDESIGN__Stylesheet_Resource_Two__c</name>
+    </fields>
+    <fields>
+        <label><!-- Type --></label>
+        <name>nDESIGN__Type__c</name>
+        <picklistValues>
+            <masterLabel>Knockout</masterLabel>
+            <translation><!-- Knockout --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Narrative</masterLabel>
+            <translation><!-- Narrative --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- View --></label>
+        <name>nDESIGN__View__c</name>
+    </fields>
+    <fields>
+        <label><!-- lookupKey --></label>
+        <name>nDESIGN__lookupKey__c</name>
+    </fields>
+</CustomObjectTranslation>

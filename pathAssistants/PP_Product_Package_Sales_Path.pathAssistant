@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PathAssistant xmlns="http://soap.sforce.com/2006/04/metadata">
+    <active>true</active>
+    <entityName>LLC_BI__Product_Package__c</entityName>
+    <fieldName>LLC_BI__Stage__c</fieldName>
+    <masterLabel>Product Package Sales Path</masterLabel>
+    <recordTypeName>PP_nCino_Product_Package</recordTypeName>
+</PathAssistant>

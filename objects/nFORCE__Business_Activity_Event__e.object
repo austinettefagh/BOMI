@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <deploymentStatus>Deployed</deploymentStatus>
+    <description>This object manages the publishing of business activity events.</description>
+    <eventType>HighVolume</eventType>
+    <fields>
+        <fullName>nFORCE__Business_Activity_Id__c</fullName>
+        <deprecated>false</deprecated>
+        <description>The system automatically populates this field to indicate the business activity execution it refers to.</description>
+        <externalId>false</externalId>
+        <isFilteringDisabled>false</isFilteringDisabled>
+        <isNameField>false</isNameField>
+        <isSortingDisabled>false</isSortingDisabled>
+        <label>Business Activity Execution</label>
+        <length>18</length>
+        <required>true</required>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <label>Business Activity Event</label>
+    <pluralLabel>Business Activity Events</pluralLabel>
+    <publishBehavior>PublishAfterCommit</publishBehavior>
+</CustomObject>

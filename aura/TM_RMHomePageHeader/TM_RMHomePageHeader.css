@@ -1,0 +1,112 @@
+.THIS .border-around {
+    border: 1rem solid #ffffff;
+}
+
+.THIS .home-wrapper {
+        background-color: #152a53;
+        padding: 1rem 0;
+    	margin: 0;
+}
+.THIS .row-Item-size {
+    height: 71px;
+}
+.THIS .head_Tab{
+    color: #FFF !important;
+}
+.THIS .metric-line{
+    border-right: 2px solid #32af99;
+}
+
+.THIS .head_tab_item_size {
+    height: 71px;
+}
+
+.THIS .title_pipline_font{
+    font-size: 13px;
+}
+@media only screen and (min-width: 20.0625em) and (max-width:47.937em){ /* -small- */
+  .THIS #desktop_view  {
+        display:none;
+    }
+     .THIS #Metric-data-mobile{
+         display:block;
+    }
+    .THIS .metric-line {
+        border-right: 0 !important;
+    }
+   .THIS  .slick-dots {
+    bottom: 15px;
+    }
+    .THIS .slick-cloned { 
+        display: none !important; 
+    }
+     
+    .THIS .co-carousel_page-indicators ul.co-carousel_dots{
+        display:block;
+        list-style-type:none;
+        overflow:hidden;
+        width:62px;
+        padding:0;
+        margin:0 auto;
+    }
+    
+    .THIS .co-carousel_page-indicators ul.co-carousel_dots > li{
+        width: 10px;
+        height:10px;
+        border-radius:50%;
+        background:#FFF;
+        float:left;
+        margin-right:1rem;
+        cursor:pointer;
+    }
+    .THIS .co-carousel_page-indicators ul.co-carousel_dots > li:last-child{
+        margin-right:0;
+    }
+    .THIS .co-carousel_page-indicators ul.co-carousel_dots > li.active{
+        background:#002843;
+    }
+   
+}
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : portrait){
+  
+      .THIS #desktop_view  {
+        display:none;
+    }
+     .THIS #Metric-data-mobile{
+         display:block;
+    }
+    .THIS .metric-line {
+        border-right: 0 !important;
+    }
+   .THIS  .slick-dots {
+    bottom: 15px;
+    }
+    .THIS .slick-cloned { 
+        display: none !important; 
+    }
+    
+    .THIS .co-carousel_page-indicators ul.co-carousel_dots{
+        display:block;
+        list-style-type:none;
+        overflow:hidden;
+        width:62px;
+        padding:0;
+        margin:0 auto;
+    }
+    
+    .THIS .co-carousel_page-indicators ul.co-carousel_dots > li{
+        width: 10px;
+        height:10px;
+        border-radius:50%;
+        background:#FFF;
+        float:left;
+        margin-right:1rem;
+        cursor:pointer;
+    }
+    .THIS .co-carousel_page-indicators ul.co-carousel_dots > li:last-child{
+        margin-right:0;
+    }
+    .THIS .co-carousel_page-indicators ul.co-carousel_dots > li.active{
+        background:#002843;
+    }
+}

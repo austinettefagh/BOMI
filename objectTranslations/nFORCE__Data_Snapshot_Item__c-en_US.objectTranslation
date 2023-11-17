@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <label><!-- Context Id --></label>
+        <name>nFORCE__Context_Id__c</name>
+    </fields>
+    <fields>
+        <label><!-- Snapshot --></label>
+        <name>nFORCE__Data_Snapshot__c</name>
+        <relationshipLabel><!-- Data Snapshot Items --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Job Id --></label>
+        <name>nFORCE__Job_Id__c</name>
+    </fields>
+</CustomObjectTranslation>

@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fieldSets>
+        <label><!-- Authorised Singer Loan UI --></label>
+        <name>FS_Authorised_Singer_Loan_UI</name>
+    </fieldSets>
+    <fieldSets>
+        <label><!-- Jack Henry jXchange Automated Booking --></label>
+        <name>JHJX__ABJX</name>
+    </fieldSets>
+    <fieldSets>
+        <label><!-- Add Signer Modal --></label>
+        <name>LLC_BI__Add_Signer_Modal</name>
+    </fieldSets>
+    <fieldSets>
+        <label><!-- Authorized Signer Maintenance Delta --></label>
+        <name>LLC_BI__Authorized_Signer_Maintenance_Delta</name>
+    </fieldSets>
+    <fieldSets>
+        <label><!-- Borrowing Structure Table --></label>
+        <name>LLC_BI__Borrowing_Structure_Table</name>
+    </fieldSets>
+    <fieldSets>
+        <label><!-- Ownership Structure Table --></label>
+        <name>LLC_BI__Ownership_Structure_Table</name>
+    </fieldSets>
+    <fieldSets>
+        <label><!-- UI Authorized Signer Fieldset --></label>
+        <name>LLC_BI__UI_Authorized_Signer_Fieldset</name>
+    </fieldSets>
+    <fields>
+        <label><!-- Account Entity Type --></label>
+        <name>LLC_BI__Account_Entity_Type__c</name>
+    </fields>
+    <fields>
+        <help><!-- Enter the Tax Favored Account percentage. --></help>
+        <label><!-- Beneficiary Allocation Percentage --></label>
+        <name>LLC_BI__Allocation_Percentage__c</name>
+    </fields>
+    <fields>
+        <help><!-- Select this checkbox to indicate that the authorized signer is only acting as an attesting witness rather than the authorizing signer. --></help>
+        <label><!-- Attesting Witness --></label>
+        <name>LLC_BI__Attesting_Witness__c</name>
+    </fields>
+    <fields>
+        <label><!-- Signing Authority --></label>
+        <name>LLC_BI__Authority__c</name>
+        <picklistValues>
+            <masterLabel>Authorized</masterLabel>
+            <translation><!-- Authorized --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Not Authorized</masterLabel>
+            <translation><!-- Not Authorized --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- The system-populated field associates the authorized signer to an authorized business. --></help>
+        <label><!-- Authorized Account --></label>
+        <name>LLC_BI__Authorized_Account__c</name>
+        <relationshipLabel><!-- Authorized Signers --></relationshipLabel>
+    </fields>
+    <fields>
+        <help><!-- The system-populated field associates the authorized signer to another authorized signer. --></help>
+        <label><!-- Authorized Signer --></label>
+        <name>LLC_BI__Authorized_Signer__c</name>
+        <relationshipLabel><!-- Authorized Signers --></relationshipLabel>
+    </fields>
+    <fields>
+        <help><!-- Select the Beneficiary Type. --></help>
+        <label><!-- Beneficiary Type --></label>
+        <name>LLC_BI__Beneficiary_Type__c</name>
+        <picklistValues>
+            <masterLabel>Contingent</masterLabel>
+            <translation><!-- Contingent --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Primary</masterLabel>
+            <translation><!-- Primary --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Contact --></label>
+        <name>LLC_BI__Contact__c</name>
+        <relationshipLabel><!-- Authorized Signers --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- -D Contingency Type --></label>
+        <name>LLC_BI__Contingency_Type__c</name>
+        <picklistValues>
+            <masterLabel>Assign Specific</masterLabel>
+            <translation><!-- Assign Specific --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Joint &amp; Several</masterLabel>
+            <translation><!-- Joint &amp; Several --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Pro Rata</masterLabel>
+            <translation><!-- Pro Rata --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Ownership Percentage --></label>
+        <name>LLC_BI__Contingent_Percentage__c</name>
+    </fields>
+    <fields>
+        <label><!-- Entity --></label>
+        <name>LLC_BI__Entity__c</name>
+        <relationshipLabel><!-- Authorized Signers --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- lookupKey --></label>
+        <name>LLC_BI__LookupKey__c</name>
+    </fields>
+    <fields>
+        <label><!-- Ownership Structure Role --></label>
+        <name>LLC_BI__Ownership_Structure_Role__c</name>
+        <relationshipLabel><!-- Authorized Signers --></relationshipLabel>
+    </fields>
+    <fields>
+        <help><!-- Valid options depending on entity type
+
+Association: Officer
+Corporation: Officer
+LLC: Member
+Partnership: Partner
+Trust: Trustee --></help>
+        <label><!-- Capacity --></label>
+        <name>LLC_BI__Role__c</name>
+        <picklistValues>
+            <masterLabel>Member</masterLabel>
+            <translation><!-- Member --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Officer</masterLabel>
+            <translation><!-- Officer --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Partner</masterLabel>
+            <translation><!-- Partner --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Trustee</masterLabel>
+            <translation><!-- Trustee --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- Click this checkbox if the signer is qualified to sign TIN certifications or other tax-related documents for the business or entity account holder. --></help>
+        <label><!-- TIN Certifier --></label>
+        <name>LLC_BI__TIN_Certifier__c</name>
+    </fields>
+    <validationRules>
+        <errorMessage><!-- The valid capacity options for this entity&apos;s account type (Association) are &quot;Officer&quot; and &quot;Agent&quot; --></errorMessage>
+        <name>LLC_BI__Capacity_Association</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- The valid capacity options for this entity&apos;s account type (Corporation) are &quot;Officer&quot; and &quot;Agent&quot; --></errorMessage>
+        <name>LLC_BI__Capacity_Corporation</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- The valid capacity options for this entity&apos;s account type (Government) are &quot;Official&quot; and &quot;Agent&quot; --></errorMessage>
+        <name>LLC_BI__Capacity_Government</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- The valid capacity options for this entity&apos;s account type (Limited Liability Company) are &quot;Member&quot; and &quot;Agent&quot; --></errorMessage>
+        <name>LLC_BI__Capacity_Limited_Liability_Company</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- The valid capacity options for this entity&apos;s account type (Partnership) are &quot;Partner&quot; and &quot;Agent&quot; --></errorMessage>
+        <name>LLC_BI__Capacity_Partnership</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- The only valid capacity option for this entity&apos;s account type (Sole Proprietorship) are &quot;Sole Proprietorship&quot; --></errorMessage>
+        <name>LLC_BI__Capacity_Soleprietorship</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- The valid capacity options for this entity&apos;s account type (Trust) are &quot;Trustee&quot;,&quot;Beneficiary&quot; and &quot;Agent&quot; --></errorMessage>
+        <name>LLC_BI__Capacity_Trust</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- - - DEPRECATED- -  A percentage can only be specified if the contingency type is &apos;Assign Specific&apos; or  &apos;Pro Rata&apos; --></errorMessage>
+        <name>LLC_BI__percentage_only_if_assign_specific</name>
+    </validationRules>
+</CustomObjectTranslation>

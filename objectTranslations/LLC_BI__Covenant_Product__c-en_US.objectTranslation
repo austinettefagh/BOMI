@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fieldSets>
+        <label><!-- Jack Henry jXchange Automated Booking --></label>
+        <name>JHJX__ABJX</name>
+    </fieldSets>
+    <fields>
+        <help><!-- Covenant Product Master-Detail Relationship to Covenant --></help>
+        <label><!-- Covenant2 --></label>
+        <name>LLC_BI__Covenant2__c</name>
+        <relationshipLabel><!-- Covenant Products --></relationshipLabel>
+    </fields>
+    <fields>
+        <help><!-- Available Product Lines --></help>
+        <label><!-- Product Line --></label>
+        <name>LLC_BI__Product_Line__c</name>
+        <picklistValues>
+            <masterLabel>SBA Loan</masterLabel>
+            <translation><!-- SBA Loan --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Start</masterLabel>
+            <translation><!-- Start --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- Available Product Types --></help>
+        <label><!-- Product Type --></label>
+        <name>LLC_BI__Product_Type__c</name>
+        <picklistValues>
+            <masterLabel>7(a)</masterLabel>
+            <translation><!-- 7(a) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Conventional</masterLabel>
+            <translation><!-- Conventional --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- Available Products --></help>
+        <label><!-- Product --></label>
+        <name>LLC_BI__Product__c</name>
+        <picklistValues>
+            <masterLabel>Expansion</masterLabel>
+            <translation><!-- Expansion --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Refinance</masterLabel>
+            <translation><!-- Refinance --></translation>
+        </picklistValues>
+    </fields>
+    <webLinks>
+        <label><!-- New_Covenant_Product --></label>
+        <name>LLC_BI__New_Covenant_Product</name>
+    </webLinks>
+</CustomObjectTranslation>

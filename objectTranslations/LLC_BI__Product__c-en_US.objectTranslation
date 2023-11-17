@@ -1,0 +1,292 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fieldSets>
+        <label><!-- Jack Henry jXchange Automated Booking --></label>
+        <name>JHJX__ABJX</name>
+    </fieldSets>
+    <fieldSets>
+        <label><!-- Product_Line --></label>
+        <name>LLC_BI__Product_Line</name>
+    </fieldSets>
+    <fieldSets>
+        <label><!-- Related_List --></label>
+        <name>LLC_BI__Related_List</name>
+    </fieldSets>
+    <fieldSets>
+        <label><!-- SBEOC Product --></label>
+        <name>nSBA__SBEOC_Product</name>
+    </fieldSets>
+    <fields>
+        <label><!-- jXchange Product Code --></label>
+        <name>JHJX__CoreProductCode__c</name>
+    </fields>
+    <fields>
+        <label><!-- Classification --></label>
+        <name>LLC_BI__Classification__c</name>
+        <picklistValues>
+            <masterLabel>Overdraft Coverage</masterLabel>
+            <translation><!-- Overdraft Coverage --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- This field determines the default page within the nCino User Interface for this record. --></help>
+        <label><!-- Default Application --></label>
+        <name>LLC_BI__Default_App__c</name>
+    </fields>
+    <fields>
+        <label><!-- Deposit Rate Structure --></label>
+        <name>LLC_BI__Deposit_Rate_Structure__c</name>
+        <relationshipLabel><!-- Products --></relationshipLabel>
+    </fields>
+    <fields>
+        <help><!-- Enter a detailed description for the product. --></help>
+        <label><!-- Description --></label>
+        <name>LLC_BI__Description__c</name>
+    </fields>
+    <fields>
+        <help><!-- Select this checkbox to prevent an ID Document from saving into Document Manager. --></help>
+        <label><!-- Disable ID Document Save --></label>
+        <name>LLC_BI__Disable_Id_Document_Save__c</name>
+    </fields>
+    <fields>
+        <label><!-- Institution --></label>
+        <name>LLC_BI__Institution__c</name>
+        <relationshipLabel><!-- Products --></relationshipLabel>
+    </fields>
+    <fields>
+        <help><!-- Provide an external hyperlink where users can learn more about the product(s) they selected. --></help>
+        <label><!-- Learn More --></label>
+        <name>LLC_BI__Learn_More__c</name>
+    </fields>
+    <fields>
+        <label><!-- Maintenance App --></label>
+        <name>LLC_BI__Maintenance_App__c</name>
+    </fields>
+    <fields>
+        <help><!-- Enter the unique identifier for the Screen Section. --></help>
+        <label><!-- Maintenance Screen Section --></label>
+        <name>LLC_BI__Maintenance_Screen_Section__c</name>
+        <relationshipLabel><!-- Products (Maintenance) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Maximum Funding Amount --></label>
+        <name>LLC_BI__Maximum_Funding_Amount__c</name>
+    </fields>
+    <fields>
+        <label><!-- Minimum Funding Amount --></label>
+        <name>LLC_BI__Minimum_Funding_Amount__c</name>
+    </fields>
+    <fields>
+        <help><!-- Enter a number to assign ordering priority on the product list. Products display in ascending order of priority. --></help>
+        <label><!-- Order --></label>
+        <name>LLC_BI__Order__c</name>
+    </fields>
+    <fields>
+        <help><!-- Enter a description of the other disclosure the account holder(s) will acknowledge receipt of on the signature card. --></help>
+        <label><!-- Other Disclosures Description --></label>
+        <name>LLC_BI__Other_Disclosures_Description__c</name>
+    </fields>
+    <fields>
+        <help><!-- Select this field to acknowledge receipt of a disclosure other than the disclosures predefined on the signature card. --></help>
+        <label><!-- Other Disclosures Received --></label>
+        <name>LLC_BI__Other_Disclosures_Received__c</name>
+    </fields>
+    <fields>
+        <help><!-- After changing this field, go to the nCino Administration tab then run Install Updates and Install Batch Updates if this product is related to existing loans. --></help>
+        <label><!-- Product Feature --></label>
+        <name>LLC_BI__Product_Feature__c</name>
+        <relationshipLabel><!-- Products --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Product Line --></label>
+        <name>LLC_BI__Product_Line_Name__c</name>
+    </fields>
+    <fields>
+        <label><!-- Product Type --></label>
+        <name>LLC_BI__Product_Type_Name__c</name>
+    </fields>
+    <fields>
+        <label><!-- Product Type --></label>
+        <name>LLC_BI__Product_Type__c</name>
+        <relationshipLabel><!-- Products --></relationshipLabel>
+    </fields>
+    <fields>
+        <help><!-- If this product has real estate involved, what type of real estate. Note: If anything besides &quot;None&quot; is checked, then a hidden &quot;Real Estate&quot; checkbox field will be set to true. --></help>
+        <label><!-- Real Estate Type --></label>
+        <name>LLC_BI__RealEstate_Type__c</name>
+        <picklistValues>
+            <masterLabel>Single Family Home</masterLabel>
+            <translation><!-- Single Family Home --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- T/F -If the real estate picklist value is none, then set this field to &quot;false&quot;, if there is a RE type selected, then set this field to &quot;true&quot; --></help>
+        <label><!-- Real Estate --></label>
+        <name>LLC_BI__RealEstate__c</name>
+    </fields>
+    <fields>
+        <label><!-- Screen Section --></label>
+        <name>LLC_BI__Screen_Section__c</name>
+        <relationshipLabel><!-- Products --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- lookupKey --></label>
+        <name>LLC_BI__lookupKey__c</name>
+    </fields>
+    <fields>
+        <label><!-- SBA Loan Program --></label>
+        <name>SBA_Loan_Program__c</name>
+    </fields>
+    <fields>
+        <label><!-- SBA Phase Laser Pro --></label>
+        <name>SBA_Phase_Laser_Pro__c</name>
+        <picklistValues>
+            <masterLabel>Eligibility</masterLabel>
+            <translation><!-- Eligibility --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Product Code --></label>
+        <name>nMONITOR__Product_Code__c</name>
+    </fields>
+    <fields>
+        <help><!-- Select this checkbox to indicate that when a Customer Portal user is applying for this product, they can pledge multiple pieces of collateral. --></help>
+        <label><!-- Can Pledge Multiple Collateral --></label>
+        <name>nPortal__Can_Pledge_Multiple_Collateral__c</name>
+    </fields>
+    <fields>
+        <help><!-- Enter the product name that should be displayed to external users in Customer Portal. If no name is provided here, the internal product name will be shown. --></help>
+        <label><!-- Product Name --></label>
+        <name>nPortal__External_Name__c</name>
+    </fields>
+    <fields>
+        <help><!-- Use this rich text field to configure the approval message when auto decision approves the online application. --></help>
+        <label><!-- OA Approval Next Steps --></label>
+        <name>nPortal__OA_Approval_Next_Steps__c</name>
+    </fields>
+    <fields>
+        <help><!-- Select this checkbox field to indicate if auto-decision is being used for online applications for this product. --></help>
+        <label><!-- OA Auto Decision Enabled --></label>
+        <name>nPortal__OA_Auto_Decision_Enabled__c</name>
+    </fields>
+    <fields>
+        <help><!-- Enter the API name for the collapsed offer card field set. --></help>
+        <label><!-- OA Collapsed Offers Card Summary --></label>
+        <name>nPortal__OA_Collapsed_Offer_Card_Summary__c</name>
+    </fields>
+    <fields>
+        <help><!-- Select this checkbox if the user must add collateral during an online application for this product. --></help>
+        <label><!-- OA Collateral Required --></label>
+        <name>nPortal__OA_Collateral_Required__c</name>
+    </fields>
+    <fields>
+        <label><!-- OA Deposit Funding Failure Next Steps --></label>
+        <name>nPortal__OA_Deposit_Funding_Failure_Next_Steps__c</name>
+    </fields>
+    <fields>
+        <label><!-- OA Deposit Funding Next Steps --></label>
+        <name>nPortal__OA_Deposit_Funding_Next_Steps__c</name>
+    </fields>
+    <fields>
+        <help><!-- Enter the API name for the expanded offer card field set. --></help>
+        <label><!-- OA Expanded Offers Summary Card --></label>
+        <name>nPortal__OA_Expanded_Offer_Summary_Card__c</name>
+    </fields>
+    <fields>
+        <help><!-- This field hides products from the marketplace and self registration picklists. --></help>
+        <label><!-- OA Is Hidden --></label>
+        <name>nPortal__OA_Is_Hidden__c</name>
+    </fields>
+    <fields>
+        <help><!-- Use this rich text field to configure the message displayed when auto decision declines the online application or the application requires manual review. --></help>
+        <label><!-- OA Not Approved Next Steps --></label>
+        <name>nPortal__OA_Not_Approved_Next_Steps__c</name>
+    </fields>
+    <fields>
+        <help><!-- Enter an offers accepted message. --></help>
+        <label><!-- OA Offers Accepted Next Steps --></label>
+        <name>nPortal__OA_Offers_Accepted_Next_Steps__c</name>
+    </fields>
+    <fields>
+        <help><!-- Select this checkbox field to indicate if offers automatically generate in online applications for this product. --></help>
+        <label><!-- OA Offers Enabled --></label>
+        <name>nPortal__OA_Offers_Enabled__c</name>
+    </fields>
+    <fields>
+        <help><!-- For an image hosted online, use the image URL. Alternately, upload an image to Documents, make image visibility public, and populate the field with the image URL. --></help>
+        <label><!-- OA Product Image --></label>
+        <name>nPortal__OA_Product_Image__c</name>
+    </fields>
+    <fields>
+        <label><!-- OA Ancillary Service Screen --></label>
+        <name>nPortal__Online_Application_AS_Screen__c</name>
+        <relationshipLabel><!-- Products --></relationshipLabel>
+    </fields>
+    <fields>
+        <help><!-- Check this field to enable this product for Customer Portal online applications. --></help>
+        <label><!-- Online Application Enabled --></label>
+        <name>nPortal__Online_Application_Enabled__c</name>
+    </fields>
+    <fields>
+        <label><!-- Online Application Group --></label>
+        <name>nPortal__Online_Application_Group__c</name>
+        <relationshipLabel><!-- Products --></relationshipLabel>
+    </fields>
+    <fields>
+        <help><!-- Enter Header text to be displayed on the Self Registration page for this product. --></help>
+        <label><!-- Online Application Header Text --></label>
+        <name>nPortal__Online_Application_Header_Text__c</name>
+    </fields>
+    <fields>
+        <help><!-- Enter Subheader text to be displayed beneath the Header text on the Self Registration page for this product. --></help>
+        <label><!-- Online Application Subheader Text --></label>
+        <name>nPortal__Online_Application_Subheader_Text__c</name>
+    </fields>
+    <fields>
+        <help><!-- Enter the name of the existing field set that should be used to render a summary of this product in the Online Applications topbar. If one is not entered, the default field set will be used. --></help>
+        <label><!-- Online Application Topbar Fieldset --></label>
+        <name>nPortal__Online_Application_Topbar_Fieldset__c</name>
+    </fields>
+    <fields>
+        <help><!-- Enter the text you would like to display in the topbar in Online Applications for this product. If left blank, the default topbar text will be displayed. --></help>
+        <label><!-- Online Application Topbar Text --></label>
+        <name>nPortal__Online_Application_Topbar_Text__c</name>
+    </fields>
+    <fields>
+        <label><!-- Online Application Type --></label>
+        <name>nPortal__Online_Application_Type__c</name>
+        <picklistValues>
+            <masterLabel>Online Deposit Application</masterLabel>
+            <translation><!-- Online Deposit Application --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Online Loan Application</masterLabel>
+            <translation><!-- Online Loan Application --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- Enter the name of the existing field set that should be used to render a summary of this product in the Your Account page. If one is not entered, the default field set will be used. --></help>
+        <label><!-- Online Application Your Account Fieldset --></label>
+        <name>nPortal__Online_Application_Your_Account_Fieldset__c</name>
+    </fields>
+    <fields>
+        <help><!-- Enter the content you wish to display to Customer Portal users interested in applying for this product. This is a rich text field. --></help>
+        <label><!-- Product Marketing --></label>
+        <name>nPortal__Product_Marketing__c</name>
+    </fields>
+    <fields>
+        <help><!-- Select this checkbox to indicate that when a Customer Portal user is applying for this product, they should be able to see applicable suggested collateral. --></help>
+        <label><!-- Suggested Collateral Enabled --></label>
+        <name>nPortal__Suggested_Collateral_Enabled__c</name>
+    </fields>
+    <fields>
+        <help><!-- Enter the API name of the field set to be displayed on the Your Products component of the Customer Engagement Solution dashboard. --></help>
+        <label><!-- Your Products Component Field Set --></label>
+        <name>nPortal__Your_Products_Component_Field_Set__c</name>
+    </fields>
+    <fields>
+        <help><!-- This is the SBA eTran specific code that represents this product. --></help>
+        <label><!-- eTran Value Code --></label>
+        <name>nSBA__eTran_Value__c</name>
+    </fields>
+</CustomObjectTranslation>

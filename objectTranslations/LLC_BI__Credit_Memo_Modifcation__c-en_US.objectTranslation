@@ -1,0 +1,352 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fieldSets>
+        <label><!-- Does Not Require Approval --></label>
+        <name>FS_Does_Not_Require_Approval</name>
+    </fieldSets>
+    <fieldSets>
+        <label><!-- InformationSection --></label>
+        <name>FS_InformationSection</name>
+    </fieldSets>
+    <fieldSets>
+        <label><!-- Memo Detail --></label>
+        <name>FS_Memo_Detail</name>
+    </fieldSets>
+    <fieldSets>
+        <label><!-- Requires Approval --></label>
+        <name>FS_Requires_Approval</name>
+    </fieldSets>
+    <fieldSets>
+        <label><!-- Does Not Require Approval --></label>
+        <name>LLC_BI__Does_Not_Require_Approval</name>
+    </fieldSets>
+    <fieldSets>
+        <label><!-- InformationSection --></label>
+        <name>LLC_BI__InformationSection</name>
+    </fieldSets>
+    <fieldSets>
+        <label><!-- Memo Detail --></label>
+        <name>LLC_BI__Memo_Detail</name>
+    </fieldSets>
+    <fieldSets>
+        <label><!-- Modification Description --></label>
+        <name>LLC_BI__Modification_Description</name>
+    </fieldSets>
+    <fieldSets>
+        <label><!-- Requires Approval --></label>
+        <name>LLC_BI__Requires_Approval</name>
+    </fieldSets>
+    <fieldSets>
+        <label><!-- UI Memo Action --></label>
+        <name>LLC_BI__UI_Memo_Action</name>
+    </fieldSets>
+    <fieldSets>
+        <label><!-- UI Loan Memo --></label>
+        <name>UI_Loan_Memo</name>
+    </fieldSets>
+    <fieldSets>
+        <label><!-- Does Not Require Approval --></label>
+        <name>cm_Does_Not_Require_Approval</name>
+    </fieldSets>
+    <fields>
+        <label><!-- Borrower Added --></label>
+        <name>Borrower_Added__c</name>
+    </fields>
+    <fields>
+        <label><!-- Borrower Removed --></label>
+        <name>Borrower_Removed__c</name>
+    </fields>
+    <fields>
+        <label><!-- Add Collateral --></label>
+        <name>CF_Add_Collateral__c</name>
+    </fields>
+    <fields>
+        <label><!-- Add Covenant --></label>
+        <name>CF_Add_Covenant__c</name>
+    </fields>
+    <fields>
+        <label><!-- Add Guarantor --></label>
+        <name>CF_Add_Guarantor__c</name>
+    </fields>
+    <fields>
+        <label><!-- Add New Policy Exception-More Severe --></label>
+        <name>CF_Add_New_Policy_Exception_More_Severe__c</name>
+    </fields>
+    <fields>
+        <label><!-- Add New Policy Exception-Same/Better --></label>
+        <name>CF_Add_New_Policy_Exception_Same_Better__c</name>
+    </fields>
+    <fields>
+        <label><!-- Remove / Change Borrower or Guarantor --></label>
+        <name>CF_Change_Borrower_Guarantor_Other_Enti__c</name>
+    </fields>
+    <fields>
+        <label><!-- Edit Covenants --></label>
+        <name>CF_Edit_Covenants__c</name>
+    </fields>
+    <fields>
+        <label><!-- Edit Existing Policy Exceptions --></label>
+        <name>CF_Edit_Existing_Policy_Exceptions__c</name>
+    </fields>
+    <fields>
+        <label><!-- Edit Policy Exceptions --></label>
+        <name>CF_Edit_Policy_Exceptions__c</name>
+    </fields>
+    <fields>
+        <label><!-- First Payment Date --></label>
+        <name>CF_First_Payment_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Loan Amount Decrease --></label>
+        <name>CF_Loan_Amount_Decrease__c</name>
+    </fields>
+    <fields>
+        <label><!-- Loan Amount Increase --></label>
+        <name>CF_Loan_Amount_Increase__c</name>
+    </fields>
+    <fields>
+        <label><!-- Loan Pricing Change --></label>
+        <name>CF_Loan_Pricing_Change__c</name>
+    </fields>
+    <fields>
+        <label><!-- Loan Repayment / Term Change --></label>
+        <name>CF_Loan_Repayment_Term_Change__c</name>
+    </fields>
+    <fields>
+        <label><!-- Minor Loan Amount Increase(&lt;5% or $25k) --></label>
+        <name>CF_Minor_Loan_Amount_Increase_5_or_5_00__c</name>
+    </fields>
+    <fields>
+        <label><!-- Minor Loan Repayment/Term Change --></label>
+        <name>CF_Minor_Loan_Repayment_Term_Change__c</name>
+    </fields>
+    <fields>
+        <label><!-- Minor Non-Credit Edits / Typos --></label>
+        <name>CF_Minor_Non_Credit_Edits_Typos__c</name>
+    </fields>
+    <fields>
+        <label><!-- Minor Pricing Change --></label>
+        <name>CF_Minor_Pricing_Change__c</name>
+    </fields>
+    <fields>
+        <label><!-- Other -D --></label>
+        <name>CF_Other__c</name>
+    </fields>
+    <fields>
+        <help><!-- This field will have value only when the corresponding PP approvers are till level 4 --></help>
+        <label><!-- Product Package Final Approver Queue --></label>
+        <name>CF_PP_Final_Approver_Queue__c</name>
+    </fields>
+    <fields>
+        <help><!-- This field will have value only when the corresponding PP approvers are till level 3 --></help>
+        <label><!-- Product Package Final Approver --></label>
+        <name>CF_PP_Final_Approver__c</name>
+        <relationshipLabel><!-- Memos (Product Package Final Approver) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- ProposedIncreaseAmount10% --></label>
+        <name>CF_ProposedIncreaseAmount10__c</name>
+    </fields>
+    <fields>
+        <label><!-- ProposedIncreaseAmount5% --></label>
+        <name>CF_ProposedIncreaseAmount5__c</name>
+    </fields>
+    <fields>
+        <label><!-- ProposedNewMoney --></label>
+        <name>CF_ProposedNewMoney__c</name>
+    </fields>
+    <fields>
+        <label><!-- Relationship Manager --></label>
+        <name>CF_Relationship_Manager__c</name>
+    </fields>
+    <fields>
+        <label><!-- Remove / Change Collateral --></label>
+        <name>CF_Remove_Change_Collateral__c</name>
+    </fields>
+    <fields>
+        <label><!-- CLA Budget Amount Change --></label>
+        <name>CLA_Budget_Amount_Change__c</name>
+    </fields>
+    <fields>
+        <label><!-- CLA Budget Line Item Change --></label>
+        <name>CLA_Budget_Line_Item_Change__c</name>
+    </fields>
+    <fields>
+        <label><!-- Loan Amount Change --></label>
+        <name>LLC_BI__Amount_Change__c</name>
+    </fields>
+    <fields>
+        <label><!-- Approval Required --></label>
+        <name>LLC_BI__Approval_Required__c</name>
+    </fields>
+    <fields>
+        <label><!-- Approval Status --></label>
+        <name>LLC_BI__Approval_Status__c</name>
+        <picklistValues>
+            <masterLabel>Approved</masterLabel>
+            <translation><!-- Approved --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>In Review</masterLabel>
+            <translation><!-- In Review --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>In Review with Pricing Committee</masterLabel>
+            <translation><!-- In Review with Pricing Committee --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Not Approved</masterLabel>
+            <translation><!-- Not Approved --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Recalled</masterLabel>
+            <translation><!-- Recalled --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Rejected</masterLabel>
+            <translation><!-- Rejected --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Collateral Change --></label>
+        <name>LLC_BI__Collateral_Change__c</name>
+    </fields>
+    <fields>
+        <help><!-- This field is used to determine the default landing page for this loan within the nCino User Interface. --></help>
+        <label><!-- Default App --></label>
+        <name>LLC_BI__Default_App__c</name>
+    </fields>
+    <fields>
+        <label><!-- Description --></label>
+        <name>LLC_BI__Description__c</name>
+    </fields>
+    <fields>
+        <label><!-- Equity Injection Change --></label>
+        <name>LLC_BI__Equity_Injection_Change__c</name>
+    </fields>
+    <fields>
+        <label><!-- Guarantor Added --></label>
+        <name>LLC_BI__Guarantor_Added__c</name>
+    </fields>
+    <fields>
+        <label><!-- Guarantor Removed --></label>
+        <name>LLC_BI__Guarantor_Removed__c</name>
+    </fields>
+    <fields>
+        <label><!-- Life Insurance Change --></label>
+        <name>LLC_BI__Life_Insurance_Change__c</name>
+    </fields>
+    <fields>
+        <label><!-- Loan Renewal --></label>
+        <name>LLC_BI__Loan_Renewal__c</name>
+        <relationshipLabel><!-- Loan Renewal --></relationshipLabel>
+    </fields>
+    <fields>
+        <help><!-- Interest rate change, length, etc --></help>
+        <label><!-- Loan Term Change --></label>
+        <name>LLC_BI__Loan_Term_Change__c</name>
+    </fields>
+    <fields>
+        <label><!-- Loan --></label>
+        <name>LLC_BI__Loan__c</name>
+        <relationshipLabel><!-- Memos --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Maturity Date Change --></label>
+        <name>LLC_BI__Maturity_Date_Change__c</name>
+    </fields>
+    <fields>
+        <label><!-- -D Maturity Date --></label>
+        <name>LLC_BI__Maturity_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Memo Type --></label>
+        <name>LLC_BI__Memo_Type__c</name>
+        <picklistValues>
+            <masterLabel>Change Memo</masterLabel>
+            <translation><!-- Change Memo --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- New Rate Requested --></label>
+        <name>LLC_BI__New_Rate_Requested__c</name>
+    </fields>
+    <fields>
+        <label><!-- Notify Attorney --></label>
+        <name>LLC_BI__Notify_Attorney__c</name>
+    </fields>
+    <fields>
+        <label><!-- Other --></label>
+        <name>LLC_BI__Other__c</name>
+    </fields>
+    <fields>
+        <label><!-- Post Close Items --></label>
+        <name>LLC_BI__Post_Close_Items__c</name>
+    </fields>
+    <fields>
+        <label><!-- Re-Approval After Expiration --></label>
+        <name>LLC_BI__Re_approval_After_Expiration__c</name>
+    </fields>
+    <fields>
+        <help><!-- Check this when your loan modification is ready to be sent for approval. --></help>
+        <label><!-- Ready for Approval --></label>
+        <name>LLC_BI__Ready_for_Approval__c</name>
+    </fields>
+    <fields>
+        <label><!-- Seller Note Change --></label>
+        <name>LLC_BI__Seller_Note_Change__c</name>
+    </fields>
+    <fields>
+        <label><!-- Use of Proceeds Change --></label>
+        <name>LLC_BI__Use_of_Proceeds_Change__c</name>
+    </fields>
+    <fields>
+        <label><!-- User_Initiated --></label>
+        <name>LLC_BI__User_Initiated__c</name>
+    </fields>
+    <fields>
+        <label><!-- lookupKey --></label>
+        <name>LLC_BI__lookupKey__c</name>
+    </fields>
+    <fields>
+        <label><!-- Loan Information Change --></label>
+        <name>Loan_Information_Change__c</name>
+    </fields>
+    <fields>
+        <label><!-- Loan Officer --></label>
+        <name>Loan_Officer__c</name>
+        <relationshipLabel><!-- Memos (Loan Officer) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Approval Required --></label>
+        <name>cm_Approval_Required_Formula__c</name>
+    </fields>
+    <fields>
+        <label><!-- ChangeMemoFlag --></label>
+        <name>cm_ChangeMemoFlag__c</name>
+    </fields>
+    <validationRules>
+        <errorMessage><!-- Only one change memo can be in progress at a time. --></errorMessage>
+        <name>VR_EXISTING_CHANGE_MEMO</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Please ensure proposed loan amount increase is less than 25% of the original loan amount. If it is greater than 25%, please create a new loan. --></errorMessage>
+        <name>VR_Memo_LoanAmount_Increase_1L_10Percent</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Please ensure the proposed loan amount increase is within 5% of the originally approved loan amount or $25,000, whichever is greater. --></errorMessage>
+        <name>VR_Memo_LoanAmount_Increased_5K_5Percent</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Please check that New Money has been updated to reflect the proposed increase in the Loan Amount. --></errorMessage>
+        <name>VR_NewMoney_should_be_same_as_LoanAmount</name>
+    </validationRules>
+    <webLinks>
+        <label><!-- Change_Memo_Generate_Forms --></label>
+        <name>Change_Memo_Generate_Forms</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Custom_Submit_Button --></label>
+        <name>Custom_Submit_Button</name>
+    </webLinks>
+</CustomObjectTranslation>

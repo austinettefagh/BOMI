@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <label><!-- ProposedIncreaseAmount10% --></label>
+        <name>CF_ProposedIncreaseAmount10__c</name>
+    </fields>
+    <fields>
+        <label><!-- ProposedIncreaseAmount5% --></label>
+        <name>CF_ProposedIncreaseAmount5__c</name>
+    </fields>
+    <fields>
+        <label><!-- ProposedLoanAmount --></label>
+        <name>CF_ProposedLoanAmount__c</name>
+    </fields>
+    <fields>
+        <label><!-- ProposedNewMoney --></label>
+        <name>CF_ProposedNewMoney__c</name>
+    </fields>
+    <fields>
+        <label><!-- Current --></label>
+        <name>LLC_BI__Current__c</name>
+    </fields>
+    <fields>
+        <label><!-- Field_Name --></label>
+        <name>LLC_BI__Field_Name__c</name>
+    </fields>
+    <fields>
+        <label><!-- Memo_Field_Name__c --></label>
+        <name>LLC_BI__Memo_Field_Name__c</name>
+    </fields>
+    <fields>
+        <label><!-- Memo --></label>
+        <name>LLC_BI__Memo__c</name>
+        <relationshipLabel><!-- Memo_Data --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Proposed --></label>
+        <name>LLC_BI__Proposed__c</name>
+    </fields>
+</CustomObjectTranslation>

@@ -1,0 +1,5 @@
+<apex:page sidebar="false" showHeader="false">
+	<div style="text-align: center">
+		<h1> Please click save and close to return to nCino </h1>
+	</div>
+</apex:page>

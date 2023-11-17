@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>BaaS Submitted for Approval template</description>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <letterhead>TBOM</letterhead>
+    <name>BaaS Material Submitted for Approval</name>
+    <style>freeForm</style>
+    <subject>BaaS Case Submitted for Approval</subject>
+    <textOnly>BaaS Case Submitted for Approval
+
+Please review the following material and take action:
+
+Company: {!Account.Name}
+Contact Name: {!Contact.Name}
+Case #: {!Case.CaseNumber}
+Subject: {!Case.Subject}
+Description: {!Case.Description}
+
+Reviewers: Communicate via Chatter. Acknowledge Final Review via Case Comments.
+
+Approvers: You must hit Approve on the case. If the case is Rejected by any of you, it will return to In-Process.
+
+Click on the link to access the case: {!Case.Link}</textOnly>
+    <type>html</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

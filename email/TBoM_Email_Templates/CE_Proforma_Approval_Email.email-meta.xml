@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>Use this template to notify TSO when Proforma is Approved</description>
+    <encodingKey>UTF-8</encodingKey>
+    <letterhead>TBoM_NewLetterHead</letterhead>
+    <name>Proforma Approval Notification</name>
+    <style>freeForm</style>
+    <subject>Scenario Awaiting Approval</subject>
+    <type>html</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

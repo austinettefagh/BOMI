@@ -1,0 +1,5 @@
+<apex:page standardController="cm_Treasury_Review__c">
+    <script>
+    window.open("/apex/nFORMS__NewFormGenerator?Type=cm_Treasury_Review__c&id={!cm_Treasury_Review__c.Id}&form_purpose=Credit Memo","_self");
+    </script>
+</apex:page>

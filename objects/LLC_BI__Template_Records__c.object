@@ -1,0 +1,1826 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <allowInChatterGroups>false</allowInChatterGroups>
+    <compactLayoutAssignment>SYSTEM</compactLayoutAssignment>
+    <deploymentStatus>Deployed</deploymentStatus>
+    <deprecated>false</deprecated>
+    <description>Templatation Object to house all records used as a template for other objects</description>
+    <enableActivities>false</enableActivities>
+    <enableBulkApi>true</enableBulkApi>
+    <enableFeeds>false</enableFeeds>
+    <enableHistory>false</enableHistory>
+    <enableLicensing>false</enableLicensing>
+    <enableReports>true</enableReports>
+    <enableSearch>true</enableSearch>
+    <enableSharing>true</enableSharing>
+    <enableStreamingApi>true</enableStreamingApi>
+    <externalSharingModel>Private</externalSharingModel>
+    <fieldSets>
+        <fullName>LLC_BI__Fees_Template</fullName>
+        <availableFields>
+            <field>LLC_BI__CounterCount__c</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </availableFields>
+        <availableFields>
+            <field>CreatedById</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </availableFields>
+        <availableFields>
+            <field>CreatedDate</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </availableFields>
+        <availableFields>
+            <field>Id</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </availableFields>
+        <availableFields>
+            <field>IsDeleted</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </availableFields>
+        <availableFields>
+            <field>LastModifiedById</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </availableFields>
+        <availableFields>
+            <field>LastModifiedDate</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </availableFields>
+        <availableFields>
+            <field>Name</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </availableFields>
+        <availableFields>
+            <field>OwnerId</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </availableFields>
+        <availableFields>
+            <field>RecordTypeId</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </availableFields>
+        <availableFields>
+            <field>SystemModstamp</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </availableFields>
+        <description>Used for Template Fees</description>
+        <displayedFields>
+            <field>LLC_BI__Text_Field_1__c</field>
+            <isFieldManaged>true</isFieldManaged>
+            <isRequired>true</isRequired>
+        </displayedFields>
+        <displayedFields>
+            <field>LLC_BI__Picklist_1__c</field>
+            <isFieldManaged>true</isFieldManaged>
+            <isRequired>true</isRequired>
+        </displayedFields>
+        <displayedFields>
+            <field>LLC_BI__Picklist_3__c</field>
+            <isFieldManaged>true</isFieldManaged>
+            <isRequired>true</isRequired>
+        </displayedFields>
+        <displayedFields>
+            <field>LLC_BI__Start_Date__c</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </displayedFields>
+        <displayedFields>
+            <field>LLC_BI__End_Date__c</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </displayedFields>
+        <displayedFields>
+            <field>LLC_BI__Currency_Field_1__c</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </displayedFields>
+        <displayedFields>
+            <field>LLC_BI__Picklist_2__c</field>
+            <isFieldManaged>true</isFieldManaged>
+            <isRequired>true</isRequired>
+        </displayedFields>
+        <displayedFields>
+            <field>LLC_BI__Checkbox_1__c</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </displayedFields>
+        <displayedFields>
+            <field>LLC_BI__Checkbox_2__c</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </displayedFields>
+        <displayedFields>
+            <field>LLC_BI__Category__c</field>
+            <isFieldManaged>true</isFieldManaged>
+            <isRequired>true</isRequired>
+        </displayedFields>
+        <displayedFields>
+            <field>LLC_BI__Text_Field_2__c</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </displayedFields>
+        <displayedFields>
+            <field>LLC_BI__Is_Active__c</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </displayedFields>
+        <displayedFields>
+            <field>LLC_BI__Picklist_4__c</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </displayedFields>
+        <displayedFields>
+            <field>LLC_BI__Record_Type__c</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </displayedFields>
+        <displayedFields>
+            <field>LLC_BI__TRID_Tolerances_Category__c</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </displayedFields>
+        <displayedFields>
+            <field>LLC_BI__TRID_Disclosure_Category__c</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </displayedFields>
+        <displayedFields>
+            <field>LLC_BI__Checkbox_3__c</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </displayedFields>
+        <displayedFields>
+            <field>LLC_BI__Checkbox_4__c</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </displayedFields>
+        <displayedFields>
+            <field>LLC_BI__Basis_Source__c</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </displayedFields>
+        <displayedFields>
+            <field>LLC_BI__Percentage__c</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </displayedFields>
+        <displayedFields>
+            <field>LLC_BI__Collection_Method__c</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </displayedFields>
+        <displayedFields>
+            <field>LLC_BI__Screen_Section__c</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </displayedFields>
+        <label>Fees Template</label>
+    </fieldSets>
+    <fields>
+        <fullName>CF_Collection_Frequency__c</fullName>
+        <externalId>false</externalId>
+        <label>Collection Frequency</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Paid at Closing</fullName>
+                    <default>false</default>
+                    <label>Paid at Closing</label>
+                </value>
+                <value>
+                    <fullName>Monthly</fullName>
+                    <default>false</default>
+                    <label>Monthly</label>
+                </value>
+                <value>
+                    <fullName>Annually</fullName>
+                    <default>false</default>
+                    <label>Annually</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>CF_Fee_Category__c</fullName>
+        <externalId>false</externalId>
+        <label>Fee Category</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <controllingField>LLC_BI__Picklist_1__c</controllingField>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>General</fullName>
+                    <default>false</default>
+                    <label>General</label>
+                </value>
+                <value>
+                    <fullName>Real Estate</fullName>
+                    <default>false</default>
+                    <label>Real Estate</label>
+                </value>
+                <value>
+                    <fullName>UCC</fullName>
+                    <default>false</default>
+                    <label>UCC</label>
+                </value>
+                <value>
+                    <fullName>SBA General</fullName>
+                    <default>false</default>
+                    <label>SBA General</label>
+                </value>
+                <value>
+                    <fullName>Titled Collateral</fullName>
+                    <default>false</default>
+                    <label>Titled Collateral</label>
+                </value>
+                <value>
+                    <fullName>Boats</fullName>
+                    <default>false</default>
+                    <label>Boats</label>
+                </value>
+                <value>
+                    <fullName>Aircraft</fullName>
+                    <default>false</default>
+                    <label>Aircraft</label>
+                </value>
+                <value>
+                    <fullName>Barge / Vessel / Yacht /House Boat</fullName>
+                    <default>false</default>
+                    <label>Barge / Vessel / Yacht /House Boat</label>
+                </value>
+                <value>
+                    <fullName>SBA Real Estate</fullName>
+                    <default>false</default>
+                    <label>SBA Real Estate</label>
+                </value>
+            </valueSetDefinition>
+            <valueSettings>
+                <controllingFieldValue>Tax Tracking Service</controllingFieldValue>
+                <controllingFieldValue>Transfer Tax Fee/Tax Stamp - Other States</controllingFieldValue>
+                <controllingFieldValue>Recording Other States Deed of Trust / Mortgage</controllingFieldValue>
+                <controllingFieldValue>Flood Certificate</controllingFieldValue>
+                <controllingFieldValue>Recording MO Deed of Trust</controllingFieldValue>
+                <controllingFieldValue>Recording MO Assignment of Rents</controllingFieldValue>
+                <controllingFieldValue>E-Recording in Simplifile</controllingFieldValue>
+                <controllingFieldValue>Recording MO Warranty Deed</controllingFieldValue>
+                <controllingFieldValue>Title Work Invoice</controllingFieldValue>
+                <controllingFieldValue>Recording MO Notice of Intended Sale</controllingFieldValue>
+                <controllingFieldValue>Appraisal Invoice</controllingFieldValue>
+                <controllingFieldValue>EDR Environmental Search - Commercial Loans</controllingFieldValue>
+                <controllingFieldValue>Recording Other States Assignments</controllingFieldValue>
+                <controllingFieldValue>RE Taxes to collect</controllingFieldValue>
+                <controllingFieldValue>Escrow Reserves</controllingFieldValue>
+                <controllingFieldValue>Pest Inspection</controllingFieldValue>
+                <controllingFieldValue>Survey Fees</controllingFieldValue>
+                <controllingFieldValue>Phase I Environmental Assessment</controllingFieldValue>
+                <valueName>Real Estate</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>UCC Recording - County in MO</controllingFieldValue>
+                <controllingFieldValue>UCC Filing - Other States</controllingFieldValue>
+                <controllingFieldValue>UCC Filing - MO</controllingFieldValue>
+                <controllingFieldValue>Phase II Environmental Assessment</controllingFieldValue>
+                <valueName>UCC</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Insurance</controllingFieldValue>
+                <controllingFieldValue>AD&amp;D Insurance</controllingFieldValue>
+                <controllingFieldValue>Loan Origination Fee</controllingFieldValue>
+                <controllingFieldValue>FedEx / Overnight - One Way</controllingFieldValue>
+                <controllingFieldValue>Credit Life Insurance</controllingFieldValue>
+                <controllingFieldValue>FedEx / Overnight - Round Trip</controllingFieldValue>
+                <controllingFieldValue>Wire Fee for TBOM</controllingFieldValue>
+                <controllingFieldValue>Attorney Fees</controllingFieldValue>
+                <controllingFieldValue>Other Fees</controllingFieldValue>
+                <controllingFieldValue>Unfunded Commitment Fee</controllingFieldValue>
+                <valueName>General</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Business Valuation</controllingFieldValue>
+                <controllingFieldValue>SBA Packaging Fee</controllingFieldValue>
+                <controllingFieldValue>IRS Transcript Fee</controllingFieldValue>
+                <controllingFieldValue>SBA Guaranty Fee</controllingFieldValue>
+                <controllingFieldValue>Closing Fee</controllingFieldValue>
+                <valueName>SBA General</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>MO Titled Collateral  - mailed Title Application &amp; NOL - Boats</controllingFieldValue>
+                <controllingFieldValue>MO Titled Collateral  - mailed Title Application &amp; NOL - Outboard Motors</controllingFieldValue>
+                <valueName>Boats</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>MO Titled Collateral - mailed Title Application &amp; NOL - Motor Vehicle/Mobile Homes</controllingFieldValue>
+                <controllingFieldValue>MO Titled Collateral - online Notice of Lien</controllingFieldValue>
+                <controllingFieldValue>MO Titled Collateral  - mailed Title Application &amp; NOL - Motor Vehicle/Mobile Homes</controllingFieldValue>
+                <valueName>Titled Collateral</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>FAA Lien Search - Aircraft</controllingFieldValue>
+                <valueName>Aircraft</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Preferred Ship Mortgage</controllingFieldValue>
+                <valueName>Barge / Vessel / Yacht /House Boat</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>CDC Origination Fee</controllingFieldValue>
+                <controllingFieldValue>SBA EDR Environmental Search</controllingFieldValue>
+                <valueName>SBA Real Estate</valueName>
+            </valueSettings>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>CF_Recurring_Or_One_Time__c</fullName>
+        <externalId>false</externalId>
+        <label>Recurring Or One Time</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>One Time</fullName>
+                    <default>true</default>
+                    <label>One Time</label>
+                </value>
+                <value>
+                    <fullName>Recurring</fullName>
+                    <default>false</default>
+                    <label>Recurring</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>LLC_BI__Basis_Source__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Users populate this optional picklist with the basis for percentage fees, such as loan amount or another loan field. This field is used when Calculation Type is equal to percent. By default, it is blank.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Select the basis for percentage fees, such as loan amount, total interest, or another loan field.</inlineHelpText>
+        <label>Basis Source</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>LLC_BI__Amount__c</fullName>
+                    <default>false</default>
+                    <label>Loan Amount</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>LLC_BI__Category__c</fullName>
+        <deprecated>false</deprecated>
+        <description>The category field is required and specifies the template record&apos;s functional area of the ncino system. Currently, Fee Management is the only feature utilizing the templated object. It is manually populated.</description>
+        <externalId>false</externalId>
+        <label>Category</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Fees Management</fullName>
+                    <default>false</default>
+                    <label>Fees Management</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>LLC_BI__Checkbox_1__c</fullName>
+        <defaultValue>false</defaultValue>
+        <deprecated>false</deprecated>
+        <description>The check box option is required and helps to establish a yes/no attribute of the template record. This option is dependent on the category used. In the fee management feature, checkboxes are used to specify if this is a multiple fee (can be applied more than once per loan) as well as whether is it included in APR (No additional functionality built into the APR field yet). It is manually populated.</description>
+        <externalId>false</externalId>
+        <label>Checkbox 1</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>LLC_BI__Checkbox_2__c</fullName>
+        <defaultValue>false</defaultValue>
+        <deprecated>false</deprecated>
+        <description>The check box option is required and helps to establish a yes/no attribute of the template record. This option is dependent on the category used. In the fee management feature, checkboxes are used to specify if this is a multiple fee (can be applied more than once per loan) as well as whether is it included in APR (No additional functionality built into the APR field yet). It is manually populated.</description>
+        <externalId>false</externalId>
+        <label>Checkbox 2</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>LLC_BI__Checkbox_3__c</fullName>
+        <defaultValue>false</defaultValue>
+        <deprecated>false</deprecated>
+        <description>The check box option is required and helps to establish a yes/no attribute of the template record. This option is dependent on the category used. In the fee management feature, checkboxes are used to specify if this is a multiple fee (can be applied more than once per loan) as well as whether is it included in APR (No additional functionality built into the APR field yet). It is manually populated.</description>
+        <externalId>false</externalId>
+        <label>Checkbox 3</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>LLC_BI__Checkbox_4__c</fullName>
+        <defaultValue>false</defaultValue>
+        <deprecated>false</deprecated>
+        <description>The check box option is required and helps to establish a yes/no attribute of the template record. This option is dependent on the category used. In the fee management feature, checkboxes are used to specify if this is a multiple fee (can be applied more than once per loan) as well as whether is it included in MAPR. It is manually populated.</description>
+        <externalId>false</externalId>
+        <label>Checkbox 4</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>LLC_BI__Collection_Method__c</fullName>
+        <deprecated>false</deprecated>
+        <description>The user populates this picklist field to specify the method of collection for a fee. Values of Cash and Financed will be used in Financed Fee Calculations for the loan. By default, this field is blank.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Populate this picklist to specify the collection method for a fee.</inlineHelpText>
+        <label>Collection Method</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Cash</fullName>
+                    <default>false</default>
+                    <label>Cash</label>
+                </value>
+                <value>
+                    <fullName>Financed</fullName>
+                    <default>false</default>
+                    <label>Financed</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>LLC_BI__CounterCount__c</fullName>
+        <deprecated>false</deprecated>
+        <description>This field is used as a string field in conjunction with Text field 1 to create the unique identifier for the template record.</description>
+        <displayFormat>{000}</displayFormat>
+        <externalId>false</externalId>
+        <label>CounterCount</label>
+        <trackTrending>false</trackTrending>
+        <type>AutoNumber</type>
+    </fields>
+    <fields>
+        <fullName>LLC_BI__Currency_Field_1__c</fullName>
+        <deprecated>false</deprecated>
+        <description>This field is required and sets a specific currency amount. If needed for the template record, this would be dependent on category selected. In fee management, the currency field is used to specify the dollar amount of the fee record.  This field is manually populated.</description>
+        <externalId>false</externalId>
+        <label>Currency Field 1</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>LLC_BI__End_Date__c</fullName>
+        <deprecated>false</deprecated>
+        <description>This field is optional and specifies the end date used to drive the active or inactive status of this template record. Setting the end date is not required if the template record has no end date and will go on indefinitely. This field is manually populated.</description>
+        <encryptionScheme>None</encryptionScheme>
+        <externalId>false</externalId>
+        <label>End Date</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>LLC_BI__Fee_Template_Identifier__c</fullName>
+        <caseSensitive>false</caseSensitive>
+        <deprecated>false</deprecated>
+        <description>Administrators populate this optional text field with a unique identifier, which the system uses to map matrix criteria to this fee template record. By default, it is blank.</description>
+        <encryptionScheme>None</encryptionScheme>
+        <externalId>false</externalId>
+        <inlineHelpText>Enter a unique name that identifies this fee template record.</inlineHelpText>
+        <label>Fee Template Identifier</label>
+        <length>255</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>true</unique>
+    </fields>
+    <fields>
+        <fullName>LLC_BI__Is_Active__c</fullName>
+        <deprecated>false</deprecated>
+        <description>This field is required and confirms that the template is active. The active flag checks when within the specified period based on start and end dates.The field is manually populated.</description>
+        <externalId>false</externalId>
+        <formula>IF((LLC_BI__Start_Date__c &lt;= TODAY() &amp;&amp; TODAY() &lt;=  LLC_BI__End_Date__c) || (LLC_BI__Start_Date__c &lt;= TODAY() &amp;&amp; ISBLANK(LLC_BI__End_Date__c)) , TRUE, FALSE)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Is Active</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>LLC_BI__Is_Income__c</fullName>
+        <defaultValue>false</defaultValue>
+        <deprecated>false</deprecated>
+        <description>The admin populates this checkbox to establish a yes or no attribute of the template record and to specify if templated fees are income. By default, it is not selected.</description>
+        <externalId>false</externalId>
+        <label>Is Income</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>LLC_BI__Percentage__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Users populate this optional field with the percentage they want the system to use to calculate the fee based on the basis value. By default, it is blank.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Enter the percentage you want the system to use to calculate the fee based on the basis value.</inlineHelpText>
+        <label>Percentage</label>
+        <precision>7</precision>
+        <required>false</required>
+        <scale>4</scale>
+        <trackTrending>false</trackTrending>
+        <type>Percent</type>
+    </fields>
+    <fields>
+        <fullName>LLC_BI__Picklist_1__c</fullName>
+        <deprecated>false</deprecated>
+        <description>The picklist field establishes the specific category&apos;s template record.  Different options can be selected depending on the category. In the fee management feature, picklist 1 drives the specific fee type. The field is manually populated.</description>
+        <externalId>false</externalId>
+        <label>Picklist 1</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Loan Origination Fee</fullName>
+                    <default>false</default>
+                    <label>Loan Origination Fee</label>
+                </value>
+                <value>
+                    <fullName>FedEx / Overnight - One Way</fullName>
+                    <default>false</default>
+                    <label>FedEx / Overnight - One Way</label>
+                </value>
+                <value>
+                    <fullName>FedEx / Overnight - Round Trip</fullName>
+                    <default>false</default>
+                    <label>FedEx / Overnight - Round Trip</label>
+                </value>
+                <value>
+                    <fullName>Wire Fee for TBOM</fullName>
+                    <default>false</default>
+                    <label>Wire Fee for TBOM</label>
+                </value>
+                <value>
+                    <fullName>Flood Certificate</fullName>
+                    <default>false</default>
+                    <label>Flood Certificate</label>
+                </value>
+                <value>
+                    <fullName>Recording MO Deed of Trust</fullName>
+                    <default>false</default>
+                    <label>Recording MO Deed of Trust</label>
+                </value>
+                <value>
+                    <fullName>Recording MO Assignment of Rents</fullName>
+                    <default>false</default>
+                    <label>Recording MO Assignment of Rents</label>
+                </value>
+                <value>
+                    <fullName>E-Recording in Simplifile</fullName>
+                    <default>false</default>
+                    <label>E-Recording in Simplifile</label>
+                </value>
+                <value>
+                    <fullName>Title Work Invoice</fullName>
+                    <default>false</default>
+                    <label>Title Work Invoice</label>
+                </value>
+                <value>
+                    <fullName>Appraisal Invoice</fullName>
+                    <default>false</default>
+                    <label>Appraisal Invoice</label>
+                </value>
+                <value>
+                    <fullName>EDR Environmental Search - Commercial Loans</fullName>
+                    <default>false</default>
+                    <label>EDR Environmental Search - Commercial Loans</label>
+                </value>
+                <value>
+                    <fullName>SBA Packaging Fee</fullName>
+                    <default>false</default>
+                    <label>SBA Packaging Fee</label>
+                </value>
+                <value>
+                    <fullName>IRS Transcript Fee</fullName>
+                    <default>false</default>
+                    <label>IRS Transcript Fee</label>
+                </value>
+                <value>
+                    <fullName>SBA Guaranty Fee</fullName>
+                    <default>false</default>
+                    <label>SBA Guaranty Fee</label>
+                </value>
+                <value>
+                    <fullName>Closing Fee</fullName>
+                    <default>false</default>
+                    <label>Closing Fee</label>
+                </value>
+                <value>
+                    <fullName>MO Titled Collateral - online Notice of Lien</fullName>
+                    <default>false</default>
+                    <label>MO Titled Collateral - online Notice of Lien</label>
+                </value>
+                <value>
+                    <fullName>MO Titled Collateral  - mailed Title Application &amp; NOL - Motor Vehicle/Mobile Homes</fullName>
+                    <default>false</default>
+                    <label>MO Titled Collateral  - mailed Title Application &amp; NOL - Motor Vehicle/Mobile Homes</label>
+                </value>
+                <value>
+                    <fullName>CDC Origination Fee</fullName>
+                    <default>false</default>
+                    <label>CDC Origination Fee</label>
+                </value>
+                <value>
+                    <fullName>SBA EDR Environmental Search</fullName>
+                    <default>false</default>
+                    <label>SBA EDR Environmental Search</label>
+                </value>
+                <value>
+                    <fullName>Tax Tracking Service</fullName>
+                    <default>false</default>
+                    <label>Tax Tracking Service</label>
+                </value>
+                <value>
+                    <fullName>Insurance</fullName>
+                    <default>false</default>
+                    <label>Insurance</label>
+                </value>
+                <value>
+                    <fullName>Business Valuation</fullName>
+                    <default>false</default>
+                    <label>Business Valuation</label>
+                </value>
+                <value>
+                    <fullName>MO Titled Collateral  - mailed Title Application &amp; NOL - Boats</fullName>
+                    <default>false</default>
+                    <label>MO Titled Collateral  - mailed Title Application &amp; NOL - Boats</label>
+                </value>
+                <value>
+                    <fullName>Credit Life Insurance</fullName>
+                    <default>false</default>
+                    <label>Credit Life Insurance</label>
+                </value>
+                <value>
+                    <fullName>Recording Other States Deed of Trust / Mortgage</fullName>
+                    <default>false</default>
+                    <label>Recording Other States Deed of Trust / Mortgage</label>
+                </value>
+                <value>
+                    <fullName>Attorney Fees</fullName>
+                    <default>false</default>
+                    <label>Attorney Fees</label>
+                </value>
+                <value>
+                    <fullName>MO Titled Collateral  - mailed Title Application &amp; NOL - Outboard Motors</fullName>
+                    <default>false</default>
+                    <label>MO Titled Collateral  - mailed Title Application &amp; NOL - Outboard Motors</label>
+                </value>
+                <value>
+                    <fullName>MO Titled Collateral - mailed Title Application &amp; NOL - Motor Vehicle/Mobile Homes</fullName>
+                    <default>false</default>
+                    <label>MO Titled Collateral - mailed Title Application &amp; NOL - Motor Vehicle/Mobile Homes</label>
+                </value>
+                <value>
+                    <fullName>Other Fees</fullName>
+                    <default>false</default>
+                    <label>Other Fees</label>
+                </value>
+                <value>
+                    <fullName>Recording MO Warranty Deed</fullName>
+                    <default>false</default>
+                    <label>Recording MO Warranty Deed</label>
+                </value>
+                <value>
+                    <fullName>Recording MO Notice of Intended Sale</fullName>
+                    <default>false</default>
+                    <label>Recording MO Notice of Intended Sale</label>
+                </value>
+                <value>
+                    <fullName>Unfunded Commitment Fee</fullName>
+                    <default>false</default>
+                    <label>Unfunded Commitment Fee</label>
+                </value>
+                <value>
+                    <fullName>FAA Lien Search - Aircraft</fullName>
+                    <default>false</default>
+                    <label>FAA Lien Search - Aircraft</label>
+                </value>
+                <value>
+                    <fullName>Recording Other States Assignments</fullName>
+                    <default>false</default>
+                    <label>Recording Other States Assignments</label>
+                </value>
+                <value>
+                    <fullName>RE Taxes to collect</fullName>
+                    <default>false</default>
+                    <label>RE Taxes to collect</label>
+                </value>
+                <value>
+                    <fullName>Preferred Ship Mortgage</fullName>
+                    <default>false</default>
+                    <label>Preferred Ship Mortgage</label>
+                </value>
+                <value>
+                    <fullName>Escrow Reserves</fullName>
+                    <default>false</default>
+                    <label>Escrow Reserves</label>
+                </value>
+                <value>
+                    <fullName>Pest Inspection</fullName>
+                    <default>false</default>
+                    <label>Pest Inspection</label>
+                </value>
+                <value>
+                    <fullName>Survey Fees</fullName>
+                    <default>false</default>
+                    <label>Survey Fees</label>
+                </value>
+                <value>
+                    <fullName>Phase I Environmental Assessment</fullName>
+                    <default>false</default>
+                    <label>Phase I Environmental Assessment</label>
+                </value>
+                <value>
+                    <fullName>Phase II Environmental Assessment</fullName>
+                    <default>false</default>
+                    <label>Phase II Environmental Assessment</label>
+                </value>
+                <value>
+                    <fullName>UCC Recording - County in MO</fullName>
+                    <default>false</default>
+                    <label>UCC Recording - County in MO</label>
+                </value>
+                <value>
+                    <fullName>Transfer Tax Fee/Tax Stamp - Other States</fullName>
+                    <default>false</default>
+                    <label>Transfer Tax Fee/Tax Stamp - Other States</label>
+                </value>
+                <value>
+                    <fullName>AD&amp;D Insurance</fullName>
+                    <default>false</default>
+                    <label>AD&amp;D Insurance</label>
+                </value>
+                <value>
+                    <fullName>UCC Filing - Other States</fullName>
+                    <default>false</default>
+                    <label>UCC Filing - Other States</label>
+                </value>
+                <value>
+                    <fullName>UCC Filing - MO</fullName>
+                    <default>false</default>
+                    <label>UCC Filing - MO</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>LLC_BI__Picklist_2__c</fullName>
+        <deprecated>false</deprecated>
+        <description>This picklist field is required and establishes the specific category&apos;s template record . Different options can be selected depending on the category. In the fee management feature, picklist 2 determines the party responsible for paying the fee. The field is manually populated.</description>
+        <externalId>false</externalId>
+        <label>Picklist 2</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Borrower</fullName>
+                    <default>false</default>
+                    <label>Borrower</label>
+                </value>
+                <value>
+                    <fullName>Lender</fullName>
+                    <default>false</default>
+                    <label>Lender</label>
+                </value>
+                <value>
+                    <fullName>Seller</fullName>
+                    <default>false</default>
+                    <label>Seller</label>
+                </value>
+                <value>
+                    <fullName>Bank</fullName>
+                    <default>false</default>
+                    <label>Bank</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>LLC_BI__Picklist_3__c</fullName>
+        <deprecated>false</deprecated>
+        <description>This picklist field is required and establishes the specific category&apos;s template record. Different options can be selected depending on the category. In the fee management feature, picklist 3 is the fee code used for the specific template record. The field is manually populated.</description>
+        <externalId>false</externalId>
+        <label>Picklist 3</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>001</fullName>
+                    <default>false</default>
+                    <label>001</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>LLC_BI__Picklist_4__c</fullName>
+        <deprecated>false</deprecated>
+        <description>This picklist field is required and establishes the specific category&apos;s template record. Different options can be selected depending on the category. In the fee management feature, picklist 3 is the fee code used for the specific template record. The field is manually populated.</description>
+        <externalId>false</externalId>
+        <label>Picklist 4</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Flat Amount</fullName>
+                    <default>false</default>
+                    <label>Flat Amount</label>
+                </value>
+                <value>
+                    <fullName>Percentage</fullName>
+                    <default>false</default>
+                    <label>Percentage</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>LLC_BI__Record_Type__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Users populate this optional picklist with the record type of the fee, cost, or adjustment. By default, it is blank.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Select the record type of the fee, cost, or adjustment.</inlineHelpText>
+        <label>Record Type</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Fees</fullName>
+                    <default>false</default>
+                    <label>Fees</label>
+                </value>
+                <value>
+                    <fullName>Costs</fullName>
+                    <default>false</default>
+                    <label>Costs</label>
+                </value>
+                <value>
+                    <fullName>Adjustments</fullName>
+                    <default>false</default>
+                    <label>Adjustments</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>LLC_BI__Screen_Section__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <deprecated>false</deprecated>
+        <description>Administrators populate this optional field with the screen section name to determine the fields displayed to a user for completion when adding a fee to a loan. By default, it is blank.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Populate this optional field with screen section name to determine the fields displayed to a user for completion when adding fees to a loan.</inlineHelpText>
+        <label>Screen Section</label>
+        <referenceTo>nFORCE__Screen_Section__c</referenceTo>
+        <relationshipLabel>Template Records</relationshipLabel>
+        <relationshipName>Template_Records</relationshipName>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>LLC_BI__Start_Date__c</fullName>
+        <deprecated>false</deprecated>
+        <description>This field is required and specifies the start date used to drive the active or inactive status of this template record. Setting the start date is required to activate the template record. This field is manually populated.</description>
+        <encryptionScheme>None</encryptionScheme>
+        <externalId>false</externalId>
+        <label>Start Date</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>LLC_BI__TRID_Disclosure_Category__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Administrators manually populate this optional picklist to indicate the TRID disclosure category for a fee. By default, the picklist value is null.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Select the TRID disclosure category for the fee.</inlineHelpText>
+        <label>TRID Disclosure Category</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Origination Charges</fullName>
+                    <default>false</default>
+                    <label>Origination Charges</label>
+                </value>
+                <value>
+                    <fullName>Services You Cannot Shop For</fullName>
+                    <default>false</default>
+                    <label>Services You Cannot Shop For</label>
+                </value>
+                <value>
+                    <fullName>Services You Can Shop For</fullName>
+                    <default>false</default>
+                    <label>Services You Can Shop For</label>
+                </value>
+                <value>
+                    <fullName>Taxes and Other Government Fees</fullName>
+                    <default>false</default>
+                    <label>Taxes and Other Government Fees</label>
+                </value>
+                <value>
+                    <fullName>Prepaids</fullName>
+                    <default>false</default>
+                    <label>Prepaids</label>
+                </value>
+                <value>
+                    <fullName>Initial Escrow Payment at Closing</fullName>
+                    <default>false</default>
+                    <label>Initial Escrow Payment at Closing</label>
+                </value>
+                <value>
+                    <fullName>Other</fullName>
+                    <default>false</default>
+                    <label>Other</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>LLC_BI__TRID_Tolerances_Category__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Administrators manually populate this picklist to indicate the TRID tolerance category for a fee. By default, the picklist value is null.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Select the TRID tolerance category for the fee.</inlineHelpText>
+        <label>TRID Tolerances Category</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>0% Tolerance</fullName>
+                    <default>false</default>
+                    <label>0% Tolerance</label>
+                </value>
+                <value>
+                    <fullName>10% Cumulative Tolerance</fullName>
+                    <default>false</default>
+                    <label>10% Cumulative Tolerance</label>
+                </value>
+                <value>
+                    <fullName>Unlimited Tolerance</fullName>
+                    <default>false</default>
+                    <label>Unlimited Tolerance</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>LLC_BI__Text_Field_1__c</fullName>
+        <deprecated>false</deprecated>
+        <description>This field specifies the template record&apos;s creation detail, which is dependent on the chosen category. Text field 1 is used in conjunction with the countercount__c field to specify the unique identifier for the template record. In fee management, Text field 1 =&quot; Fee&quot;and the counter would specify the number of that fee record Fee-001.</description>
+        <encryptionScheme>None</encryptionScheme>
+        <externalId>false</externalId>
+        <label>Text Field 1</label>
+        <length>255</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>LLC_BI__Text_Field_2__c</fullName>
+        <deprecated>false</deprecated>
+        <description>This field is optional and specifies the template record&apos;s creation detail, which is dependent on the category chosen. In fee management, only one text field is utilized, specifying the stage at which a fee should be automatically applied. This field is manually populated.</description>
+        <encryptionScheme>None</encryptionScheme>
+        <externalId>false</externalId>
+        <label>Text Field 2</label>
+        <length>255</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>LLC_BI__lookupKey__c</fullName>
+        <caseSensitive>false</caseSensitive>
+        <deprecated>false</deprecated>
+        <description>The field is optional. If populated the value must be unique across all the records of this type. The field typically contains an external identifier that is used to associate the record with its matching record in an external system. The field can also be used to efficiently associate related records, when importing data into nCino, without the need to know the internal ID for the record. For more information, refer to https://developer.salesforce.com/docs/atlas.en-us.apexcode.meta/apexcode/langCon_apex_dml_nested_object.htm.</description>
+        <encryptionScheme>None</encryptionScheme>
+        <externalId>true</externalId>
+        <label>lookupKey</label>
+        <length>255</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>true</unique>
+    </fields>
+    <label>Template Records</label>
+    <listViews>
+        <fullName>LLC_BI__All</fullName>
+        <columns>NAME</columns>
+        <columns>LLC_BI__Text_Field_1__c</columns>
+        <columns>LLC_BI__Category__c</columns>
+        <columns>RECORDTYPE</columns>
+        <filterScope>Everything</filterScope>
+        <label>All</label>
+    </listViews>
+    <listViews>
+        <fullName>LLC_BI__All1</fullName>
+        <filterScope>Everything</filterScope>
+        <label>All</label>
+    </listViews>
+    <nameField>
+        <displayFormat>TR - {00000000}</displayFormat>
+        <label>Template Record Name</label>
+        <type>AutoNumber</type>
+    </nameField>
+    <pluralLabel>Template Records</pluralLabel>
+    <recordTypes>
+        <fullName>LLC_BI__Fee_Management_Record_Type</fullName>
+        <active>true</active>
+        <description>Template for Fee Management</description>
+        <label>Fee Management Record Type</label>
+        <picklistValues>
+            <picklist>CF_Collection_Frequency__c</picklist>
+            <values>
+                <fullName>Annually</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Monthly</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Paid at Closing</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>CF_Fee_Category__c</picklist>
+            <values>
+                <fullName>Aircraft</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Barge %2F Vessel %2F Yacht %2FHouse Boat</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Boats</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>General</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Real Estate</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>SBA General</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>SBA Real Estate</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Titled Collateral</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>UCC</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>CF_Recurring_Or_One_Time__c</picklist>
+            <values>
+                <fullName>One Time</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Recurring</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>LLC_BI__Basis_Source__c</picklist>
+            <values>
+                <fullName>LLC_BI%5F%5FAmount%5F%5Fc</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>LLC_BI__Category__c</picklist>
+            <values>
+                <fullName>Fees Management</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>LLC_BI__Collection_Method__c</picklist>
+            <values>
+                <fullName>Cash</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Financed</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>LLC_BI__Picklist_1__c</picklist>
+            <values>
+                <fullName>AD%26D Insurance</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Appraisal Invoice</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Attorney Fees</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Business Valuation</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>CDC Origination Fee</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Closing Fee</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Credit Life Insurance</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>E-Recording in Simplifile</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>EDR Environmental Search - Commercial Loans</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Escrow Reserves</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>FAA Lien Search - Aircraft</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>FedEx %2F Overnight - One Way</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>FedEx %2F Overnight - Round Trip</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Flood Certificate</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>IRS Transcript Fee</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Insurance</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Loan Origination Fee</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>MO Titled Collateral  - mailed Title Application %26 NOL - Boats</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>MO Titled Collateral  - mailed Title Application %26 NOL - Motor Vehicle%2FMobile Homes</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>MO Titled Collateral  - mailed Title Application %26 NOL - Outboard Motors</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>MO Titled Collateral - mailed Title Application %26 NOL - Motor Vehicle%2FMobile Homes</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>MO Titled Collateral - online Notice of Lien</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Other Fees</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Pest Inspection</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Phase I Environmental Assessment</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Phase II Environmental Assessment</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Preferred Ship Mortgage</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>RE Taxes to collect</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Recording MO Assignment of Rents</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Recording MO Deed of Trust</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Recording MO Notice of Intended Sale</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Recording MO Warranty Deed</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Recording Other States Assignments</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Recording Other States Deed of Trust %2F Mortgage</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>SBA EDR Environmental Search</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>SBA Guaranty Fee</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>SBA Packaging Fee</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Survey Fees</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Tax Tracking Service</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Title Work Invoice</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Transfer Tax Fee%2FTax Stamp - Other States</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>UCC Filing - MO</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>UCC Filing - Other States</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>UCC Recording - County in MO</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Unfunded Commitment Fee</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Wire Fee for TBOM</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>LLC_BI__Picklist_2__c</picklist>
+            <values>
+                <fullName>Bank</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Borrower</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Lender</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Seller</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>LLC_BI__Picklist_3__c</picklist>
+            <values>
+                <fullName>001</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>LLC_BI__Picklist_4__c</picklist>
+            <values>
+                <fullName>Flat Amount</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Percentage</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>LLC_BI__Record_Type__c</picklist>
+            <values>
+                <fullName>Adjustments</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Costs</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Fees</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>LLC_BI__TRID_Disclosure_Category__c</picklist>
+            <values>
+                <fullName>Initial Escrow Payment at Closing</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Origination Charges</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Other</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Prepaids</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Services You Can Shop For</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Services You Cannot Shop For</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Taxes and Other Government Fees</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>LLC_BI__TRID_Tolerances_Category__c</picklist>
+            <values>
+                <fullName>0%25 Tolerance</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>10%25 Cumulative Tolerance</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Unlimited Tolerance</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+    </recordTypes>
+    <recordTypes>
+        <fullName>LLC_BI__Starting_Record_Type</fullName>
+        <active>true</active>
+        <description>Starting Record Type to Select True Template</description>
+        <label>Starting Record Type</label>
+        <picklistValues>
+            <picklist>CF_Collection_Frequency__c</picklist>
+            <values>
+                <fullName>Annually</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Monthly</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Paid at Closing</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>CF_Fee_Category__c</picklist>
+            <values>
+                <fullName>Aircraft</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Barge %2F Vessel %2F Yacht %2FHouse Boat</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Boats</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>General</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Real Estate</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>SBA General</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>SBA Real Estate</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Titled Collateral</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>UCC</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>CF_Recurring_Or_One_Time__c</picklist>
+            <values>
+                <fullName>One Time</fullName>
+                <default>true</default>
+            </values>
+            <values>
+                <fullName>Recurring</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>LLC_BI__Basis_Source__c</picklist>
+            <values>
+                <fullName>LLC_BI%5F%5FAmount%5F%5Fc</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>LLC_BI__Category__c</picklist>
+            <values>
+                <fullName>Fees Management</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>LLC_BI__Collection_Method__c</picklist>
+            <values>
+                <fullName>Cash</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Financed</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>LLC_BI__Picklist_2__c</picklist>
+            <values>
+                <fullName>Borrower</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Lender</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Seller</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>LLC_BI__Picklist_3__c</picklist>
+            <values>
+                <fullName>001</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>LLC_BI__Picklist_4__c</picklist>
+            <values>
+                <fullName>Flat Amount</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Percentage</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>LLC_BI__Record_Type__c</picklist>
+            <values>
+                <fullName>Adjustments</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Costs</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Fees</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>LLC_BI__TRID_Disclosure_Category__c</picklist>
+            <values>
+                <fullName>Initial Escrow Payment at Closing</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Origination Charges</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Other</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Prepaids</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Services You Can Shop For</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Services You Cannot Shop For</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Taxes and Other Government Fees</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>LLC_BI__TRID_Tolerances_Category__c</picklist>
+            <values>
+                <fullName>0%25 Tolerance</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>10%25 Cumulative Tolerance</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Unlimited Tolerance</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+    </recordTypes>
+    <searchLayouts>
+        <customTabListAdditionalFields>LLC_BI__Text_Field_1__c</customTabListAdditionalFields>
+        <customTabListAdditionalFields>LLC_BI__Category__c</customTabListAdditionalFields>
+        <customTabListAdditionalFields>RECORDTYPE</customTabListAdditionalFields>
+        <lookupDialogsAdditionalFields>LLC_BI__Text_Field_1__c</lookupDialogsAdditionalFields>
+        <lookupDialogsAdditionalFields>LLC_BI__Category__c</lookupDialogsAdditionalFields>
+        <lookupDialogsAdditionalFields>RECORDTYPE</lookupDialogsAdditionalFields>
+        <lookupPhoneDialogsAdditionalFields>LLC_BI__Text_Field_1__c</lookupPhoneDialogsAdditionalFields>
+        <lookupPhoneDialogsAdditionalFields>LLC_BI__Category__c</lookupPhoneDialogsAdditionalFields>
+        <lookupPhoneDialogsAdditionalFields>RECORDTYPE</lookupPhoneDialogsAdditionalFields>
+        <searchFilterFields>NAME</searchFilterFields>
+        <searchFilterFields>LLC_BI__Text_Field_1__c</searchFilterFields>
+        <searchFilterFields>LLC_BI__Category__c</searchFilterFields>
+        <searchFilterFields>RECORDTYPE</searchFilterFields>
+        <searchResultsAdditionalFields>LLC_BI__Text_Field_1__c</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>LLC_BI__Category__c</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>RECORDTYPE</searchResultsAdditionalFields>
+    </searchLayouts>
+    <sharingModel>ReadWrite</sharingModel>
+    <validationRules>
+        <fullName>LLC_BI__Percentage_Fee_Required_Fields</fullName>
+        <active>true</active>
+        <description>When calculation type equals Percentage, Basis Source and Percentage fields are required.</description>
+        <errorConditionFormula>ISPICKVAL(LLC_BI__Picklist_4__c, &apos;Percentage&apos;) &amp;&amp; (ISPICKVAL(LLC_BI__Basis_Source__c, &apos;&apos;) || ISNULL(LLC_BI__Percentage__c))</errorConditionFormula>
+        <errorMessage>Ensure values are entered for Basis Source and Percentage so the system can calculate the percentage calculation type.</errorMessage>
+    </validationRules>
+    <visibility>Public</visibility>
+</CustomObject>

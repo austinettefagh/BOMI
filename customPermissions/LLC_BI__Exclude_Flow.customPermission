@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomPermission xmlns="http://soap.sforce.com/2006/04/metadata">
+    <description>Introduced Spring 2023. Enabled in the &quot;Exclude Flow&quot; permission set. If assigned to a user, flows with &quot;Exclude Flow = False&quot; in entry conditions will not execute. This allows users to bypass automation when needed.</description>
+    <isLicensed>false</isLicensed>
+    <label>Exclude Flow</label>
+</CustomPermission>

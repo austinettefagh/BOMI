@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Use of Proceeds</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Use of Proceeds</value>
+    </caseValues>
+    <fieldSets>
+        <label><!-- FS_Use_Of_Proceeds_Commerical_Loans --></label>
+        <name>FS_Use_Of_Proceeds_Commerical_Loans</name>
+    </fieldSets>
+    <fields>
+        <label><!-- Loan Type Proceed Code --></label>
+        <name>CF_Loan_Type_Proceed_Code__c</name>
+        <picklistValues>
+            <masterLabel>test</masterLabel>
+            <translation><!-- test --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Loan --></label>
+        <name>CF_Loan__c</name>
+        <relationshipLabel><!-- Use of Proceeds --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Proceed Amount --></label>
+        <name>CF_Proceed_Amount__c</name>
+    </fields>
+    <fields>
+        <label><!-- Source Type --></label>
+        <name>CF_Source_Type__c</name>
+        <picklistValues>
+            <masterLabel>Borrower</masterLabel>
+            <translation><!-- Borrower --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Loan</masterLabel>
+            <translation><!-- Loan --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Participant Lender OR Seller Carry Not on Standby</masterLabel>
+            <translation><!-- Participant Lender OR Seller Carry Not on Standby --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Seller Injection (Full Standby for Life of Loan)</masterLabel>
+            <translation><!-- Seller Injection (Full Standby for Life of Loan) --></translation>
+        </picklistValues>
+    </fields>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <help><!-- Enter the total amount the service covers. --></help>
+        <label><!-- Coverage Amount --></label>
+        <name>LLC_BI__Coverage_Amount__c</name>
+    </fields>
+    <fields>
+        <help><!-- Enter the total service deductible. --></help>
+        <label><!-- Deductible --></label>
+        <name>LLC_BI__Deductible__c</name>
+    </fields>
+    <fields>
+        <help><!-- Use this field to determine when the service goes into effect. --></help>
+        <label><!-- Effective Date --></label>
+        <name>LLC_BI__Effective_Date__c</name>
+    </fields>
+    <fields>
+        <help><!-- Use this field to determine when the service is no longer in effect. --></help>
+        <label><!-- Expiration Date --></label>
+        <name>LLC_BI__Expiration_Date__c</name>
+    </fields>
+    <fields>
+        <help><!-- Enter the total amount per occurrence. --></help>
+        <label><!-- Occurrence Amount --></label>
+        <name>LLC_BI__Occurrence_Amount__c</name>
+    </fields>
+    <fields>
+        <help><!-- Displays the policy number associated with the service. --></help>
+        <label><!-- Policy Number --></label>
+        <name>LLC_BI__Policy_Number__c</name>
+    </fields>
+    <fields>
+        <help><!-- The lookup for the Service Management record. --></help>
+        <label><!-- Service Mgmt --></label>
+        <name>LLC_BI__Service_Mgmt__c</name>
+        <relationshipLabel><!-- Service Mgmt Details --></relationshipLabel>
+    </fields>
+    <fields>
+        <help><!-- Select the appropriate status of the service. --></help>
+        <label><!-- Status --></label>
+        <name>LLC_BI__Status__c</name>
+        <picklistValues>
+            <masterLabel>Active</masterLabel>
+            <translation><!-- Active --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Inactive</masterLabel>
+            <translation><!-- Inactive --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Pending</masterLabel>
+            <translation><!-- Pending --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- Select a service sub type. --></help>
+        <label><!-- Sub Type --></label>
+        <name>LLC_BI__Sub_Type__c</name>
+        <picklistValues>
+            <masterLabel>Builder Risk</masterLabel>
+            <translation><!-- Builder Risk --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Business Interruption</masterLabel>
+            <translation><!-- Business Interruption --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Business Personal Property</masterLabel>
+            <translation><!-- Business Personal Property --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Collision &amp; Comprehensive</masterLabel>
+            <translation><!-- Collision &amp; Comprehensive --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Credit</masterLabel>
+            <translation><!-- Credit --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Disability</masterLabel>
+            <translation><!-- Disability --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Earthquake</masterLabel>
+            <translation><!-- Earthquake --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Flood Building</masterLabel>
+            <translation><!-- Flood Building --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Flood Contents</masterLabel>
+            <translation><!-- Flood Contents --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Hazard</masterLabel>
+            <translation><!-- Hazard --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Liability</masterLabel>
+            <translation><!-- Liability --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Life</masterLabel>
+            <translation><!-- Life --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Miscellaneous</masterLabel>
+            <translation><!-- Miscellaneous --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Multi Peril - Excluding Flood</masterLabel>
+            <translation><!-- Multi Peril - Excluding Flood --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Multi Peril - Including Flood</masterLabel>
+            <translation><!-- Multi Peril - Including Flood --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Re-Insurance</masterLabel>
+            <translation><!-- Re-Insurance --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Real and Personal Property</masterLabel>
+            <translation><!-- Real and Personal Property --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Sinkhole</masterLabel>
+            <translation><!-- Sinkhole --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Terrorism</masterLabel>
+            <translation><!-- Terrorism --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Title</masterLabel>
+            <translation><!-- Title --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Windstorm and Hail</masterLabel>
+            <translation><!-- Windstorm and Hail --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Workers Compensation</masterLabel>
+            <translation><!-- Workers Compensation --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- Select a service type. --></help>
+        <label><!-- Type --></label>
+        <name>LLC_BI__Type__c</name>
+        <picklistValues>
+            <masterLabel>Insurance Policy</masterLabel>
+            <translation><!-- Insurance Policy --></translation>
+        </picklistValues>
+    </fields>
+</CustomObjectTranslation>

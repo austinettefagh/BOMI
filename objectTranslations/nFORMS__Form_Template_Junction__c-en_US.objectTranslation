@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <label><!-- Form Template --></label>
+        <name>nFORMS__Form_Template__c</name>
+        <relationshipLabel><!-- Form Template Junctions --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Origin Object --></label>
+        <name>nFORMS__Origin_Object__c</name>
+    </fields>
+</CustomObjectTranslation>

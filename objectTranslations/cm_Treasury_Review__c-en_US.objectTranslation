@@ -1,0 +1,490 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Treasury Review</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Treasury Reviews</value>
+    </caseValues>
+    <fields>
+        <label><!-- ACH Approval Level --></label>
+        <name>ACH_Approval_Level__c</name>
+        <picklistValues>
+            <masterLabel>Dual</masterLabel>
+            <translation><!-- Dual --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>N/A</masterLabel>
+            <translation><!-- N/A --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>No Approval</masterLabel>
+            <translation><!-- No Approval --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Single</masterLabel>
+            <translation><!-- Single --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- ACH Credit Last Used --></label>
+        <name>CF_ACH_Credit_Last_Used__c</name>
+    </fields>
+    <fields>
+        <label><!-- ACH Credit Max Batch Amount(s) --></label>
+        <name>CF_ACH_Credit_Max_Batch_Amount_s__c</name>
+    </fields>
+    <fields>
+        <label><!-- # ACH Credit Temp Limit Increases TTM --></label>
+        <name>CF_ACH_Credit_Temp_Limit_Increases_TTM__c</name>
+    </fields>
+    <fields>
+        <label><!-- ACH Debit Last Used --></label>
+        <name>CF_ACH_Debit_Last_Used__c</name>
+    </fields>
+    <fields>
+        <label><!-- ACH Debit Max Batch Amount(s) --></label>
+        <name>CF_ACH_Debit_Max_Batch_Amount_s__c</name>
+    </fields>
+    <fields>
+        <label><!-- # ACH Debit Temp Limit Increases TTM --></label>
+        <name>CF_ACH_Debit_Temp_Limit_Increases_TTM__c</name>
+    </fields>
+    <fields>
+        <label><!-- ACH Exposure / Avg Bal Rating --></label>
+        <name>CF_ACH_Exposure_Avg_Bal_Rating__c</name>
+    </fields>
+    <fields>
+        <label><!-- Account Owner --></label>
+        <name>CF_Account_Owner__c</name>
+        <relationshipLabel><!-- Treasury Reviews (Account Owner) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Approval Status --></label>
+        <name>CF_Approval_Status__c</name>
+        <picklistValues>
+            <masterLabel>Approver 1 Approved</masterLabel>
+            <translation><!-- Approver 1 Approved --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Approver 2 Approved</masterLabel>
+            <translation><!-- Approver 2 Approved --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Approver 3 Approved</masterLabel>
+            <translation><!-- Approver 3 Approved --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Approver 4 Approved</masterLabel>
+            <translation><!-- Approver 4 Approved --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Cash Flow Supports Limits --></label>
+        <name>CF_Cash_Flow_Supports_Limits__c</name>
+    </fields>
+    <fields>
+        <label><!-- Contract Services Relationship Rating --></label>
+        <name>CF_Contract_Services_Relationship_Rating__c</name>
+    </fields>
+    <fields>
+        <label><!-- Corporate ACH Credit Limit --></label>
+        <name>CF_Corporate_ACH_Credit_Limit__c</name>
+    </fields>
+    <fields>
+        <label><!-- Corporate ACH Debit Limit --></label>
+        <name>CF_Corporate_ACH_Debit_Limit__c</name>
+    </fields>
+    <fields>
+        <label><!-- Credit Rating Code Rating --></label>
+        <name>CF_Credit_Rating_Code_Rating__c</name>
+    </fields>
+    <fields>
+        <label><!-- Credit Rating Code --></label>
+        <name>CF_Credit_Rating_Code__c</name>
+    </fields>
+    <fields>
+        <label><!-- Date Review Approved --></label>
+        <name>CF_Date_Review_Approved__c</name>
+    </fields>
+    <fields>
+        <label><!-- Exceeds ACH Return Rate Rating --></label>
+        <name>CF_Exceeds_ACH_Return_Rate_Rating__c</name>
+    </fields>
+    <fields>
+        <label><!-- Financial Position Description --></label>
+        <name>CF_Financial_Position_Description__c</name>
+    </fields>
+    <fields>
+        <label><!-- Financially Stable --></label>
+        <name>CF_Financially_Stable__c</name>
+    </fields>
+    <fields>
+        <label><!-- Industry --></label>
+        <name>CF_Industry__c</name>
+    </fields>
+    <fields>
+        <label><!-- Is Contract Service Relationship? --></label>
+        <name>CF_Is_Contract_Service_Relationship__c</name>
+        <picklistValues>
+            <masterLabel>No</masterLabel>
+            <translation><!-- No --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes</masterLabel>
+            <translation><!-- Yes --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Exceeds ACH Return Rate? --></label>
+        <name>CF_Is_Exceeds_ACH_Return_Rate__c</name>
+        <picklistValues>
+            <masterLabel>No</masterLabel>
+            <translation><!-- No --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes</masterLabel>
+            <translation><!-- Yes --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Is Restricted NAICS Code? --></label>
+        <name>CF_Is_Restricted_NAICS_Code__c</name>
+        <picklistValues>
+            <masterLabel>No</masterLabel>
+            <translation><!-- No --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes</masterLabel>
+            <translation><!-- Yes --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Third-Party Sender Rating --></label>
+        <name>CF_Is_Third_Party_Sender_Rating__c</name>
+    </fields>
+    <fields>
+        <label><!-- Is Third-Party Sender? --></label>
+        <name>CF_Is_Third_Party_Sender__c</name>
+        <picklistValues>
+            <masterLabel>No</masterLabel>
+            <translation><!-- No --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes</masterLabel>
+            <translation><!-- Yes --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Lockbox Last Used --></label>
+        <name>CF_Lockbox_Last_Used__c</name>
+    </fields>
+    <fields>
+        <label><!-- Lockbox Limit --></label>
+        <name>CF_Lockbox_Limit__c</name>
+    </fields>
+    <fields>
+        <label><!-- Low Speed RDC Last Used --></label>
+        <name>CF_Low_Speed_RDC_Last_Used__c</name>
+    </fields>
+    <fields>
+        <label><!-- Low Speed RDC Limit --></label>
+        <name>CF_Low_Speed_RDC_Limit__c</name>
+    </fields>
+    <fields>
+        <label><!-- Max Lockbox Deposit Amount(s) --></label>
+        <name>CF_Max_Lockbox_Deposit_Amount_s__c</name>
+    </fields>
+    <fields>
+        <label><!-- Max Low Speed RDC Deposit Amount(s) --></label>
+        <name>CF_Max_Low_Speed_RDC_Deposit_Amount_s__c</name>
+    </fields>
+    <fields>
+        <label><!-- Max Mobile RDC Deposit Amount(s) --></label>
+        <name>CF_Max_Mobile_RDC_Deposit_Amount_s__c</name>
+    </fields>
+    <fields>
+        <label><!-- Max High Speed RDC Deposit Amount(s) --></label>
+        <name>CF_Max_RDC_Deposit_Amount_s__c</name>
+    </fields>
+    <fields>
+        <label><!-- Max Wire Amount(s) --></label>
+        <name>CF_Max_Wire_Amount_s__c</name>
+    </fields>
+    <fields>
+        <label><!-- Mobile RDC Last Used --></label>
+        <name>CF_Mobile_RDC_Last_Used__c</name>
+    </fields>
+    <fields>
+        <label><!-- Mobile RDC Limit --></label>
+        <name>CF_Mobile_RDC_Limit__c</name>
+    </fields>
+    <fields>
+        <label><!-- Module Review Recommendations --></label>
+        <name>CF_Module_Review_Recommendations__c</name>
+    </fields>
+    <fields>
+        <label><!-- NAICS Code --></label>
+        <name>CF_NAICS_Code__c</name>
+    </fields>
+    <fields>
+        <label><!-- New CIF # Rating --></label>
+        <name>CF_New_CIF_Rating__c</name>
+    </fields>
+    <fields>
+        <label><!-- Is New CIF (within last 6 mo)? --></label>
+        <name>CF_New_CIF_within_last_30_days__c</name>
+        <picklistValues>
+            <masterLabel>No</masterLabel>
+            <translation><!-- No --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes</masterLabel>
+            <translation><!-- Yes --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Number of Charge/Credit Back Items --></label>
+        <name>CF_Number_of_Charge_Credit_Back_Items__c</name>
+    </fields>
+    <fields>
+        <label><!-- Number of Charge/Credit Back Rating --></label>
+        <name>CF_Number_of_Charge_Credit_Back_Rating__c</name>
+    </fields>
+    <fields>
+        <label><!-- Number of NSF Items Rating --></label>
+        <name>CF_Number_of_NSF_Items_Rating__c</name>
+    </fields>
+    <fields>
+        <label><!-- Number of NSF Items --></label>
+        <name>CF_Number_of_NSF_Items__c</name>
+    </fields>
+    <fields>
+        <label><!-- Opportunity Analysis Recommendations --></label>
+        <name>CF_Opportunity_Analysis_Recommendations__c</name>
+    </fields>
+    <fields>
+        <label><!-- High Speed RDC Last Used --></label>
+        <name>CF_RDC_Last_Used__c</name>
+    </fields>
+    <fields>
+        <label><!-- High Speed RDC Limit --></label>
+        <name>CF_RDC_Limit__c</name>
+    </fields>
+    <fields>
+        <label><!-- Relationship Branch --></label>
+        <name>CF_Relationship_Branch__c</name>
+    </fields>
+    <fields>
+        <label><!-- Relationship Region --></label>
+        <name>CF_Relationship_Region__c</name>
+    </fields>
+    <fields>
+        <label><!-- Request Type --></label>
+        <name>CF_Request_Type__c</name>
+        <picklistValues>
+            <masterLabel>Initial</masterLabel>
+            <translation><!-- Initial --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Modification</masterLabel>
+            <translation><!-- Modification --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Relationship</masterLabel>
+            <translation><!-- Relationship --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Restricted NAICS Code Rating --></label>
+        <name>CF_Restricted_NAICS_Code_Rating__c</name>
+    </fields>
+    <fields>
+        <label><!-- Review Approver --></label>
+        <name>CF_Review_Approver__c</name>
+        <relationshipLabel><!-- Treasury Reviews (Review Approver) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- TM Deposit Only --></label>
+        <name>CF_TM_Deposit_Only__c</name>
+    </fields>
+    <fields>
+        <label><!-- TTM Average Deposit Balances --></label>
+        <name>CF_TTM_Average_Deposit_Balances__c</name>
+    </fields>
+    <fields>
+        <label><!-- Time Since Account Opened Rating --></label>
+        <name>CF_Time_Since_Account_Opened_Rating__c</name>
+    </fields>
+    <fields>
+        <label><!-- Time Since Account Opened --></label>
+        <name>CF_Time_Since_Account_Opened__c</name>
+        <picklistValues>
+            <masterLabel>&lt;6 Months</masterLabel>
+            <translation><!-- &lt;6 Months --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>&gt;=6 Months</masterLabel>
+            <translation><!-- &gt;=6 Months --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Total ACH Credit Exposure --></label>
+        <name>CF_Total_ACH_Credit_Exposure__c</name>
+    </fields>
+    <fields>
+        <label><!-- Total ACH Debit Exposure --></label>
+        <name>CF_Total_ACH_Debit_Exposure__c</name>
+    </fields>
+    <fields>
+        <label><!-- Total ACH Exposure / Avg Balance --></label>
+        <name>CF_Total_ACH_Exposure_Avg_Balance__c</name>
+    </fields>
+    <fields>
+        <label><!-- Total ACH Exposure --></label>
+        <name>CF_Total_ACH_Exposure__c</name>
+    </fields>
+    <fields>
+        <label><!-- Total Aggregate Loan Exposure --></label>
+        <name>CF_Total_Aggregate_Loan_Exposure__c</name>
+    </fields>
+    <fields>
+        <label><!-- Total Combined Exposure (LOS &amp; TM) --></label>
+        <name>CF_Total_Combined_Exposure_LOS_TM_Formul__c</name>
+    </fields>
+    <fields>
+        <label><!-- Total Combined Exposure (LOS &amp; TM) --></label>
+        <name>CF_Total_Combined_Exposure_LOS_TM__c</name>
+    </fields>
+    <fields>
+        <label><!-- Total Combined Exposure Rating --></label>
+        <name>CF_Total_Combined_Exposure_Rating__c</name>
+    </fields>
+    <fields>
+        <label><!-- Total RDC Exposure --></label>
+        <name>CF_Total_RDC_Exposure__c</name>
+    </fields>
+    <fields>
+        <label><!-- Total Treasury Exposure Rating --></label>
+        <name>CF_Total_Treasury_Exposure_Rating__c</name>
+    </fields>
+    <fields>
+        <label><!-- Total Treasury Exposure --></label>
+        <name>CF_Total_Treasury_Exposure__c</name>
+    </fields>
+    <fields>
+        <label><!-- Treasury Approval Level --></label>
+        <name>CF_Treasury_Approval_Level__c</name>
+    </fields>
+    <fields>
+        <label><!-- Treasury Risk Rating --></label>
+        <name>CF_Treasury_Risk_Rating__c</name>
+    </fields>
+    <fields>
+        <label><!-- Treasury Sales Officer --></label>
+        <name>CF_Treasury_Sales_Officer__c</name>
+    </fields>
+    <fields>
+        <label><!-- U-Pay Last Used --></label>
+        <name>CF_U_Pay_Last_Used__c</name>
+    </fields>
+    <fields>
+        <label><!-- U-Pay Max Batch Amount(s) --></label>
+        <name>CF_U_Pay_Max_Batch_Amount_s__c</name>
+    </fields>
+    <fields>
+        <label><!-- U-Pay Portal Limit --></label>
+        <name>CF_U_Pay_Portal_Limit__c</name>
+    </fields>
+    <fields>
+        <label><!-- Waive Financials --></label>
+        <name>CF_Waive_Financials__c</name>
+    </fields>
+    <fields>
+        <label><!-- Wire Module Last Used --></label>
+        <name>CF_Wire_Module_Last_Used__c</name>
+    </fields>
+    <fields>
+        <label><!-- Wire Transfer Limit --></label>
+        <name>CF_Wire_Transfer_Limit__c</name>
+    </fields>
+    <fields>
+        <label><!-- Date Review Completed --></label>
+        <name>Date_Review_Completed__c</name>
+    </fields>
+    <fields>
+        <label><!-- Lending Relationship --></label>
+        <name>Lending_Relationship__c</name>
+        <picklistValues>
+            <masterLabel>No</masterLabel>
+            <translation><!-- No --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes</masterLabel>
+            <translation><!-- Yes --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Number of Treasury Services --></label>
+        <name>Number_of_Treasury_Services__c</name>
+        <picklistValues>
+            <masterLabel>1</masterLabel>
+            <translation><!-- 1 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>2</masterLabel>
+            <translation><!-- 2 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>=&gt; 3</masterLabel>
+            <translation><!-- =&gt; 3 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>N/A</masterLabel>
+            <translation><!-- N/A --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Review Completed By --></label>
+        <name>Review_Completed_By__c</name>
+        <relationshipLabel><!-- Treasury Reviews (Review Completed By) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Status --></label>
+        <name>Status__c</name>
+        <picklistValues>
+            <masterLabel>Approved</masterLabel>
+            <translation><!-- Approved --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>In Approval</masterLabel>
+            <translation><!-- In Approval --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>In Progress</masterLabel>
+            <translation><!-- In Progress --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Relationship --></label>
+        <name>cm_Relationship__c</name>
+        <relationshipLabel><!-- Treasury Reviews --></relationshipLabel>
+    </fields>
+    <recordTypes>
+        <description><!-- This record type gets updated when Treasury Review is either in Approval or submitted for approval. --></description>
+        <label><!-- nCino TR Read Only --></label>
+        <name>nCino_TR_Read_Only</name>
+    </recordTypes>
+    <recordTypes>
+        <description><!-- This is the default record type of Treasury Review record. --></description>
+        <label><!-- nCino Treasury Review --></label>
+        <name>nCino_Treasury_Review</name>
+    </recordTypes>
+    <startsWith>Consonant</startsWith>
+    <webLinks>
+        <label><!-- Treasury_Review_Memo --></label>
+        <name>Treasury_Review_Memo</name>
+    </webLinks>
+</CustomObjectTranslation>

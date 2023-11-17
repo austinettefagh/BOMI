@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>CUST_NAME</field>
+    </columns>
+    <columns>
+        <field>TBOM_Help_Ticket__c.Brief_Description_of_Request__c</field>
+    </columns>
+    <columns>
+        <field>TBOM_Help_Ticket__c.Requested_Date__c</field>
+    </columns>
+    <columns>
+        <field>TBOM_Help_Ticket__c.Priority__c</field>
+    </columns>
+    <columns>
+        <field>TBOM_Help_Ticket__c.Status__c</field>
+    </columns>
+    <columns>
+        <aggregateTypes>Sum</aggregateTypes>
+        <field>TBOM_Help_Ticket__c.Sprint__c</field>
+    </columns>
+    <description>Open enhancement requests that are active and assigned to a DTO team member.</description>
+    <filter>
+        <criteriaItems>
+            <column>TBOM_Help_Ticket__c.Type_of_Request__c</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>Enhancement Request</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>TBOM_Help_Ticket__c.Status__c</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>notEqual</operator>
+            <value>Re-Assigned to PWC/nCino,Resolved/Closed,Request Cancelled by User,Enhancement Request Rejected,Duplicate Request,Roadmap Item</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>TBOM_Help_Ticket__c.Sprint__c</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>greaterOrEqual</operator>
+            <value>1</value>
+        </criteriaItems>
+        <language>en_US</language>
+    </filter>
+    <format>Summary</format>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>TBOM_Help_Ticket__c.User__c</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <name>Open Assigned Enhancement Requests</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>CustomEntity$TBOM_Help_Ticket__c</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <showGrandTotal>true</showGrandTotal>
+    <showSubTotals>true</showSubTotals>
+    <sortColumn>TBOM_Help_Ticket__c.Sprint__c</sortColumn>
+    <sortOrder>Asc</sortOrder>
+    <timeFrameFilter>
+        <dateColumn>TBOM_Help_Ticket__c.Date_change_will_be_deployed__c</dateColumn>
+        <interval>INTERVAL_CUSTOM</interval>
+    </timeFrameFilter>
+</Report>

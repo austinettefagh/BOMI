@@ -1,0 +1,1832 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <allowInChatterGroups>false</allowInChatterGroups>
+    <compactLayoutAssignment>SYSTEM</compactLayoutAssignment>
+    <deploymentStatus>Deployed</deploymentStatus>
+    <deprecated>false</deprecated>
+    <description>The Pro Forma for an opportunity.</description>
+    <enableActivities>true</enableActivities>
+    <enableBulkApi>true</enableBulkApi>
+    <enableFeeds>false</enableFeeds>
+    <enableHistory>false</enableHistory>
+    <enableLicensing>false</enableLicensing>
+    <enableReports>true</enableReports>
+    <enableSearch>true</enableSearch>
+    <enableSharing>true</enableSharing>
+    <enableStreamingApi>true</enableStreamingApi>
+    <externalSharingModel>Private</externalSharingModel>
+    <fieldSets>
+        <fullName>FS_Porforma_Options_Screen</fullName>
+        <description>Used to display field in Proforma Options Screen.</description>
+        <displayedFields>
+            <field>Name</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </displayedFields>
+        <displayedFields>
+            <field>CF_Deposit_Account_Type__c</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>true</isRequired>
+        </displayedFields>
+        <displayedFields>
+            <field>LLC_BI__Average_Ledger_Balance__c</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </displayedFields>
+        <displayedFields>
+            <field>LLC_BI__Average_Unavailable__c</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </displayedFields>
+        <displayedFields>
+            <field>CF_First_Billing_Month__c</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </displayedFields>
+        <displayedFields>
+            <field>CF_Free_Rent_Period_In_Days__c</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </displayedFields>
+        <displayedFields>
+            <field>CF_Reserve_Requirement_Rate__c</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </displayedFields>
+        <displayedFields>
+            <field>CF_Earnings_Credit_Rate__c</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </displayedFields>
+        <displayedFields>
+            <field>CF_Competitor_Bank__c</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </displayedFields>
+        <displayedFields>
+            <field>CF_Exception_Pricing_Expiration_Date__c</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </displayedFields>
+        <displayedFields>
+            <field>LLC_BI__Opportunity__c</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </displayedFields>
+        <displayedFields>
+            <field>LLC_BI__Account__c</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </displayedFields>
+        <displayedFields>
+            <field>LLC_BI__Conversion_Object__c</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </displayedFields>
+        <displayedFields>
+            <field>CF_Approver__c</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </displayedFields>
+        <displayedFields>
+            <field>CF_Comments__c</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </displayedFields>
+        <label>Porforma Options Screen</label>
+    </fieldSets>
+    <fieldSets>
+        <fullName>LLC_BI__Scenario_Card_Amount_Due</fullName>
+        <availableFields>
+            <field>LLC_BI__Annualized_Difference__c</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </availableFields>
+        <availableFields>
+            <field>LLC_BI__Average_Collected_Balance__c</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </availableFields>
+        <availableFields>
+            <field>LLC_BI__Average_Ledger_Balance__c</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </availableFields>
+        <availableFields>
+            <field>LLC_BI__Average_Unavailable__c</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </availableFields>
+        <availableFields>
+            <field>LLC_BI__Balance_Required_To_Offset_Service__c</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </availableFields>
+        <availableFields>
+            <field>LLC_BI__Balance_Required__c</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </availableFields>
+        <availableFields>
+            <field>LLC_BI__Competitor_Earnings_Credit_Allowance__c</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </availableFields>
+        <availableFields>
+            <field>LLC_BI__Competitor_Net_Charge__c</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </availableFields>
+        <availableFields>
+            <field>LLC_BI__Competitor_Total_Charge__c</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </availableFields>
+        <availableFields>
+            <field>LLC_BI__Difference_Total__c</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </availableFields>
+        <availableFields>
+            <field>LLC_BI__Discount_Currency_Total__c</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </availableFields>
+        <availableFields>
+            <field>LLC_BI__Discount_Percent_Total__c</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </availableFields>
+        <availableFields>
+            <field>LLC_BI__Earnings_Credit_Allowance__c</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </availableFields>
+        <availableFields>
+            <field>LLC_BI__Investable_Balance__c</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </availableFields>
+        <availableFields>
+            <field>LLC_BI__Net_Amount_Due__c</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </availableFields>
+        <availableFields>
+            <field>LLC_BI__Net_Deficit__c</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </availableFields>
+        <availableFields>
+            <field>LLC_BI__Net_Investable_Excess_Deficit__c</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </availableFields>
+        <availableFields>
+            <field>LLC_BI__Reserve_Requirement_Rate_Perc__c</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </availableFields>
+        <availableFields>
+            <field>LLC_BI__Reserve_Requirement_Rate__c</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </availableFields>
+        <availableFields>
+            <field>LLC_BI__Reserve_Requirement__c</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </availableFields>
+        <availableFields>
+            <field>LLC_BI__Setup_Fee__c</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </availableFields>
+        <availableFields>
+            <field>LLC_BI__Total_Balance_Required_Difference__c</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </availableFields>
+        <availableFields>
+            <field>LLC_BI__Total_Balance_Required__c</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </availableFields>
+        <availableFields>
+            <field>LLC_BI__Total_Charge_Difference__c</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </availableFields>
+        <availableFields>
+            <field>LLC_BI__Total_Competitor_Balance_Required__c</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </availableFields>
+        <availableFields>
+            <field>LLC_BI__Total_Competitor_Difference__c</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </availableFields>
+        <availableFields>
+            <field>LLC_BI__Total_Discount__c</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </availableFields>
+        <availableFields>
+            <field>LLC_BI__Total_Gross_Fee__c</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </availableFields>
+        <availableFields>
+            <field>LLC_BI__Total_Net_Charge_Difference__c</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </availableFields>
+        <description>This field set is used in the Proforma and drives the fields that display in the Amount Due section of the proforma summary card.</description>
+        <displayedFields>
+            <field>LLC_BI__Svc_Total__c</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </displayedFields>
+        <displayedFields>
+            <field>CF_Earnings_Credit_Rate__c</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </displayedFields>
+        <displayedFields>
+            <field>LLC_BI__Earnings_Credit_Allowance_Amount__c</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </displayedFields>
+        <displayedFields>
+            <field>Net_Amount_Due_cm__c</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </displayedFields>
+        <label>Scenario_Card_Amount_Due</label>
+    </fieldSets>
+    <fieldSets>
+        <fullName>LLC_BI__Scenario_Card_Balance</fullName>
+        <description>Defines which fields are visible on the Balance section of the Scenario Card</description>
+        <displayedFields>
+            <field>LLC_BI__Average_Ledger_Balance__c</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </displayedFields>
+        <displayedFields>
+            <field>LLC_BI__Average_Unavailable__c</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </displayedFields>
+        <displayedFields>
+            <field>LLC_BI__Average_Collected_Balance__c</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </displayedFields>
+        <label>Scenario_Card_Balance</label>
+    </fieldSets>
+    <fieldSets>
+        <fullName>LLC_BI__Scenario_Card_Net_Investable</fullName>
+        <description>Defines which fields are visible on the Net Investable section of the Scenario Card</description>
+        <displayedFields>
+            <field>LLC_BI__Investable_Balance__c</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </displayedFields>
+        <displayedFields>
+            <field>LLC_BI__Balance_Required__c</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </displayedFields>
+        <displayedFields>
+            <field>LLC_BI__Net_Investable_Excess_Deficit__c</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </displayedFields>
+        <label>Scenario_Card_Net_Investable</label>
+    </fieldSets>
+    <fieldSets>
+        <fullName>LLC_BI__Scenario_Card_Reserve</fullName>
+        <description>Defines which fields are visible on the Reserve section of the Scenario Card</description>
+        <displayedFields>
+            <field>LLC_BI__Average_Collected_Balance__c</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </displayedFields>
+        <displayedFields>
+            <field>LLC_BI__Reserve_Requirement_Rate_Perc__c</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </displayedFields>
+        <displayedFields>
+            <field>LLC_BI__Reserve_Requirement__c</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </displayedFields>
+        <label>Scenario_Card_Reserve</label>
+    </fieldSets>
+    <fieldSets>
+        <fullName>LLC_BI__Scenario_Card_Totals</fullName>
+        <availableFields>
+            <field>LLC_BI__Annualized_Difference__c</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </availableFields>
+        <availableFields>
+            <field>LLC_BI__Average_Collected_Balance__c</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </availableFields>
+        <availableFields>
+            <field>LLC_BI__Average_Ledger_Balance__c</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </availableFields>
+        <availableFields>
+            <field>LLC_BI__Average_Unavailable__c</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </availableFields>
+        <availableFields>
+            <field>LLC_BI__Balance_Required_To_Offset_Service__c</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </availableFields>
+        <availableFields>
+            <field>LLC_BI__Balance_Required__c</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </availableFields>
+        <availableFields>
+            <field>LLC_BI__Competitor_Earnings_Credit_Allowance__c</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </availableFields>
+        <availableFields>
+            <field>LLC_BI__Competitor_Net_Charge__c</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </availableFields>
+        <availableFields>
+            <field>LLC_BI__Competitor_Total_Charge__c</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </availableFields>
+        <availableFields>
+            <field>LLC_BI__Difference_Total__c</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </availableFields>
+        <availableFields>
+            <field>LLC_BI__Discount_Currency_Total__c</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </availableFields>
+        <availableFields>
+            <field>LLC_BI__Discount_Percent_Total__c</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </availableFields>
+        <availableFields>
+            <field>LLC_BI__Earnings_Credit_Allowance_Amount__c</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </availableFields>
+        <availableFields>
+            <field>LLC_BI__Earnings_Credit_Allowance__c</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </availableFields>
+        <availableFields>
+            <field>LLC_BI__Investable_Balance__c</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </availableFields>
+        <availableFields>
+            <field>LLC_BI__Net_Deficit__c</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </availableFields>
+        <availableFields>
+            <field>LLC_BI__Net_Investable_Excess_Deficit__c</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </availableFields>
+        <availableFields>
+            <field>LLC_BI__Reserve_Requirement_Rate_Perc__c</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </availableFields>
+        <availableFields>
+            <field>LLC_BI__Reserve_Requirement_Rate__c</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </availableFields>
+        <availableFields>
+            <field>LLC_BI__Reserve_Requirement__c</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </availableFields>
+        <availableFields>
+            <field>LLC_BI__Svc_Total__c</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </availableFields>
+        <availableFields>
+            <field>LLC_BI__Total_Balance_Required_Difference__c</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </availableFields>
+        <availableFields>
+            <field>LLC_BI__Total_Balance_Required__c</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </availableFields>
+        <availableFields>
+            <field>LLC_BI__Total_Charge_Difference__c</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </availableFields>
+        <availableFields>
+            <field>LLC_BI__Total_Competitor_Balance_Required__c</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </availableFields>
+        <availableFields>
+            <field>LLC_BI__Total_Competitor_Difference__c</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </availableFields>
+        <availableFields>
+            <field>LLC_BI__Total_Discount__c</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </availableFields>
+        <availableFields>
+            <field>LLC_BI__Total_Gross_Fee__c</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </availableFields>
+        <availableFields>
+            <field>LLC_BI__Total_Net_Charge_Difference__c</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </availableFields>
+        <description>This field set is used in the Proforma and drives the fields that display in the Total section of the proforma summary card.</description>
+        <displayedFields>
+            <field>LLC_BI__Setup_Fee__c</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </displayedFields>
+        <displayedFields>
+            <field>LLC_BI__Net_Amount_Due__c</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </displayedFields>
+        <label>Scenario_Card_Totals</label>
+    </fieldSets>
+    <fieldSets>
+        <fullName>LLC_BI__Scenario_Proforma_ECA</fullName>
+        <description>This field set is used to display the ECA information from the Scenario object on the Scenario Options modal</description>
+        <displayedFields>
+            <field>Name</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </displayedFields>
+        <displayedFields>
+            <field>LLC_BI__Average_Ledger_Balance__c</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </displayedFields>
+        <displayedFields>
+            <field>LLC_BI__Average_Unavailable__c</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </displayedFields>
+        <displayedFields>
+            <field>LLC_BI__Reserve_Requirement_Rate__c</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </displayedFields>
+        <displayedFields>
+            <field>LLC_BI__Total_Discount__c</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </displayedFields>
+        <displayedFields>
+            <field>LLC_BI__Earnings_Credit_Allowance__c</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </displayedFields>
+        <displayedFields>
+            <field>LLC_BI__Competitor_Earnings_Credit_Allowance__c</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </displayedFields>
+        <displayedFields>
+            <field>LLC_BI__Opportunity__c</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </displayedFields>
+        <displayedFields>
+            <field>LLC_BI__Account__c</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </displayedFields>
+        <displayedFields>
+            <field>LLC_BI__Conversion_Object__c</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </displayedFields>
+        <label>Scenario_Proforma_ECA</label>
+    </fieldSets>
+    <fieldSets>
+        <fullName>LLC_BI__TM_Proforma_Total_Quantity_Pricing</fullName>
+        <availableFields>
+            <field>LLC_BI__Competitor_Total_Charge__c</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </availableFields>
+        <availableFields>
+            <field>LLC_BI__Difference_Total__c</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </availableFields>
+        <availableFields>
+            <field>LLC_BI__Svc_Total__c</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </availableFields>
+        <availableFields>
+            <field>LLC_BI__Total_Balance_Required_Difference__c</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </availableFields>
+        <availableFields>
+            <field>LLC_BI__Total_Balance_Required__c</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </availableFields>
+        <availableFields>
+            <field>LLC_BI__Total_Charge_Difference__c</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </availableFields>
+        <availableFields>
+            <field>LLC_BI__Total_Competitor_Balance_Required__c</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </availableFields>
+        <availableFields>
+            <field>LLC_BI__Total_Competitor_Difference__c</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </availableFields>
+        <availableFields>
+            <field>LLC_BI__Total_Discount__c</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </availableFields>
+        <availableFields>
+            <field>LLC_BI__Total_Net_Charge_Difference__c</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </availableFields>
+        <description>This field set is used to display the totals for configurable columns on the
+            Proforma Quantity and Pricing screen</description>
+        <displayedFields>
+            <field>LLC_BI__Total_Gross_Fee__c</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </displayedFields>
+        <label>TM Proforma Total Quantity Pricing</label>
+    </fieldSets>
+    <fieldSets>
+        <fullName>Scenario_Card_Approval_Details</fullName>
+        <description>This field set it used at the top of the Proforma Summary Card</description>
+        <displayedFields>
+            <field>Requires_Approval__c</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </displayedFields>
+        <displayedFields>
+            <field>Approver_text_name__c</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </displayedFields>
+        <label>Scenario Card Approval Details</label>
+    </fieldSets>
+    <fields>
+        <fullName>Approver_text_name__c</fullName>
+        <externalId>false</externalId>
+        <formula>CF_Approver__r.FirstName + &quot; &quot; + CF_Approver__r.LastName</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Approver</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>CF_Approver__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <description>Used in Proforma Options Screen to capture the approver.</description>
+        <externalId>false</externalId>
+        <label>Approver</label>
+        <lookupFilter>
+            <active>false</active>
+            <filterItems>
+                <field>$User.FirstName</field>
+                <operation>contains</operation>
+                <value>Abhishek</value>
+            </filterItems>
+            <isOptional>false</isOptional>
+        </lookupFilter>
+        <referenceTo>User</referenceTo>
+        <relationshipName>Scenarios</relationshipName>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>CF_Comments__c</fullName>
+        <description>Used in Proforma Options Screen to capture comments.</description>
+        <encryptionScheme>None</encryptionScheme>
+        <externalId>false</externalId>
+        <label>Comments</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>TextArea</type>
+    </fields>
+    <fields>
+        <fullName>CF_Competitor_Bank__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <description>This field has been used to store competitor bank information.</description>
+        <externalId>false</externalId>
+        <label>Competitor Bank</label>
+        <lookupFilter>
+            <active>true</active>
+            <errorMessage>The Competitor bank selected must be a Lender.</errorMessage>
+            <filterItems>
+                <field>Account.RecordTypeId</field>
+                <operation>equals</operation>
+                <value>Lender</value>
+            </filterItems>
+            <isOptional>false</isOptional>
+        </lookupFilter>
+        <referenceTo>Account</referenceTo>
+        <relationshipLabel>Scenarios (Competitor Bank)</relationshipLabel>
+        <relationshipName>Scenarios</relationshipName>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>CF_Deposit_Account_Type__c</fullName>
+        <externalId>false</externalId>
+        <label>Deposit Account Type</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Commercial Ckg</fullName>
+                    <default>false</default>
+                    <label>Commercial Ckg</label>
+                </value>
+                <value>
+                    <fullName>Community Ckg</fullName>
+                    <default>false</default>
+                    <label>Community Ckg</label>
+                </value>
+                <value>
+                    <fullName>Small Business Ckg</fullName>
+                    <default>false</default>
+                    <label>Small Business Ckg</label>
+                </value>
+                <value>
+                    <fullName>Other Acct</fullName>
+                    <default>false</default>
+                    <label>Other Acct</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>CF_Earnings_Credit_Rate__c</fullName>
+        <description>Used in Proforma Options Screen to capture Earnings Credit Rate.</description>
+        <externalId>false</externalId>
+        <label>Earnings Credit Rate (%)</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>.00</fullName>
+                    <default>false</default>
+                    <label>.00</label>
+                </value>
+                <value>
+                    <fullName>.05</fullName>
+                    <default>false</default>
+                    <label>.05</label>
+                </value>
+                <value>
+                    <fullName>.10</fullName>
+                    <default>false</default>
+                    <label>.10</label>
+                </value>
+                <value>
+                    <fullName>.15</fullName>
+                    <default>false</default>
+                    <label>.15</label>
+                </value>
+                <value>
+                    <fullName>.20</fullName>
+                    <default>true</default>
+                    <label>.20</label>
+                </value>
+                <value>
+                    <fullName>.25</fullName>
+                    <default>false</default>
+                    <label>.25</label>
+                </value>
+                <value>
+                    <fullName>.30</fullName>
+                    <default>false</default>
+                    <label>.30</label>
+                </value>
+                <value>
+                    <fullName>.35</fullName>
+                    <default>false</default>
+                    <label>.35</label>
+                </value>
+                <value>
+                    <fullName>.40</fullName>
+                    <default>false</default>
+                    <label>.40</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>CF_Exception_Price_less_than_Cost__c</fullName>
+        <defaultValue>false</defaultValue>
+        <description>This field will auto-populates as True when Exception Price is less than Cost on Scenario Item object.</description>
+        <externalId>false</externalId>
+        <label>Exception Price less than Cost</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>CF_Exception_Pricing_Expiration_Date__c</fullName>
+        <encryptionScheme>None</encryptionScheme>
+        <externalId>false</externalId>
+        <label>Exception Pricing Expiration Date</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>CF_First_Billing_Month__c</fullName>
+        <description>Used in Proforma Options Screen</description>
+        <externalId>false</externalId>
+        <label>First Billing Month</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>January</fullName>
+                    <default>false</default>
+                    <label>January</label>
+                </value>
+                <value>
+                    <fullName>February</fullName>
+                    <default>false</default>
+                    <label>February</label>
+                </value>
+                <value>
+                    <fullName>March</fullName>
+                    <default>false</default>
+                    <label>March</label>
+                </value>
+                <value>
+                    <fullName>April</fullName>
+                    <default>false</default>
+                    <label>April</label>
+                </value>
+                <value>
+                    <fullName>May</fullName>
+                    <default>false</default>
+                    <label>May</label>
+                </value>
+                <value>
+                    <fullName>June</fullName>
+                    <default>false</default>
+                    <label>June</label>
+                </value>
+                <value>
+                    <fullName>July</fullName>
+                    <default>false</default>
+                    <label>July</label>
+                </value>
+                <value>
+                    <fullName>August</fullName>
+                    <default>false</default>
+                    <label>August</label>
+                </value>
+                <value>
+                    <fullName>September</fullName>
+                    <default>false</default>
+                    <label>September</label>
+                </value>
+                <value>
+                    <fullName>October</fullName>
+                    <default>false</default>
+                    <label>October</label>
+                </value>
+                <value>
+                    <fullName>November</fullName>
+                    <default>false</default>
+                    <label>November</label>
+                </value>
+                <value>
+                    <fullName>December</fullName>
+                    <default>false</default>
+                    <label>December</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>CF_Free_Rent_Expiration_Date__c</fullName>
+        <description>Free Rent Period End date calculated based on Install Date + Free Rent Period Days</description>
+        <externalId>false</externalId>
+        <formula>IF (ISPICKVAL(CF_Free_Rent_Period_In_Days__c, &quot;&quot; ), LLC_BI__Opportunity__r.TM_Expected_Install_Date__c, 
+ IF (ISPICKVAL(CF_Free_Rent_Period_In_Days__c, &quot;30 Days&quot;),  LLC_BI__Opportunity__r.TM_Expected_Install_Date__c + 30,
+ IF (ISPICKVAL(CF_Free_Rent_Period_In_Days__c, &quot;60 Days&quot;),  LLC_BI__Opportunity__r.TM_Expected_Install_Date__c + 60,
+ IF (ISPICKVAL(CF_Free_Rent_Period_In_Days__c, &quot;90 Days&quot;),  LLC_BI__Opportunity__r.TM_Expected_Install_Date__c + 90,NULL))))</formula>
+        <inlineHelpText>Free Rent Period End date</inlineHelpText>
+        <label>Free Rent Expiration Date</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>CF_Free_Rent_Period_In_Days__c</fullName>
+        <description>Used in Proforma Options Screen to capture Free Rent period (In Days)</description>
+        <externalId>false</externalId>
+        <label>Free Rent Period (In Days)</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>30 Days</fullName>
+                    <default>false</default>
+                    <label>30 Days</label>
+                </value>
+                <value>
+                    <fullName>60 Days</fullName>
+                    <default>false</default>
+                    <label>60 Days</label>
+                </value>
+                <value>
+                    <fullName>90 Days</fullName>
+                    <default>false</default>
+                    <label>90 Days</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>CF_Initial_Submitter__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <description>This field is used to store the user info who submitted the Proforma/Scenario for approval.</description>
+        <externalId>false</externalId>
+        <label>Initial Submitter</label>
+        <referenceTo>User</referenceTo>
+        <relationshipName>Scenarios1</relationshipName>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>CF_Reserve_Requirement_Rate__c</fullName>
+        <description>It is used to calculate value of Reserve Requirement Rate using flow</description>
+        <externalId>false</externalId>
+        <label>Reserve Requirement Rate</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>10%</fullName>
+                    <default>true</default>
+                    <label>10%</label>
+                </value>
+                <value>
+                    <fullName>0%</fullName>
+                    <default>false</default>
+                    <label>0%</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Count_of_Fee_Inc_Disc_Less_Than_Cost__c</fullName>
+        <externalId>false</externalId>
+        <label>Count of Fee Inc Disc Less Than Cost</label>
+        <summaryFilterItems>
+            <field>LLC_BI__Scenario_Item__c.Fee_Including_Discounts_Less_Than_Costs__c</field>
+            <operation>equals</operation>
+            <value>Yes</value>
+        </summaryFilterItems>
+        <summaryForeignKey>LLC_BI__Scenario_Item__c.LLC_BI__Scenario__c</summaryForeignKey>
+        <summaryOperation>count</summaryOperation>
+        <trackTrending>false</trackTrending>
+        <type>Summary</type>
+    </fields>
+    <fields>
+        <fullName>Date_Approved__c</fullName>
+        <encryptionScheme>None</encryptionScheme>
+        <externalId>false</externalId>
+        <label>Date Approved</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Date_Submitted_For_Approval__c</fullName>
+        <encryptionScheme>None</encryptionScheme>
+        <externalId>false</externalId>
+        <label>Date Submitted For Approval</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>LLC_BI__Account__c</fullName>
+        <deleteConstraint>Restrict</deleteConstraint>
+        <deprecated>false</deprecated>
+        <description>This field is populated automatically when creating a scenario. This field
+        specifies the account associated with the scenario.</description>
+        <externalId>false</externalId>
+        <label>Account</label>
+        <referenceTo>Account</referenceTo>
+        <relationshipLabel>Scenarios</relationshipLabel>
+        <relationshipName>Scenarios</relationshipName>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>LLC_BI__Annualized_Difference__c</fullName>
+        <deprecated>false</deprecated>
+        <description>This field is populated automatically via formula. This field stores annualized total charge difference.</description>
+        <externalId>false</externalId>
+        <formula>LLC_BI__Total_Charge_Difference__c * 12</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Annualized Difference</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>LLC_BI__Average_Collected_Balance__c</fullName>
+        <deprecated>false</deprecated>
+        <description>This field is populated automatically via formula. This field stores the difference of the average ledger balance and the average unavailable.</description>
+        <externalId>false</externalId>
+        <formula>LLC_BI__Average_Ledger_Balance__c - LLC_BI__Average_Unavailable__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Average Collected Balance</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>LLC_BI__Average_Ledger_Balance__c</fullName>
+        <deprecated>false</deprecated>
+        <description>This field is optional. It is populated manually in the proforma. This field represents the balance of a customer&apos;s bank account that is displayed on a bank statement</description>
+        <externalId>false</externalId>
+        <label>Average Ledger Balance</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>LLC_BI__Average_Unavailable__c</fullName>
+        <deprecated>false</deprecated>
+        <description>This field is optional. It is populated manually in the proforma. This field represents that amount of unavailable funds on an account</description>
+        <externalId>false</externalId>
+        <label>Less: Average Unavailable</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>LLC_BI__Balance_Required_To_Offset_Service__c</fullName>
+        <deprecated>false</deprecated>
+        <description>This field is populated automatically via formula. This field stores the balance needed to pay the earnings credit allowance balance.</description>
+        <externalId>false</externalId>
+        <formula>IF(LLC_BI__Earnings_Credit_Allowance__c &gt; 0, 1 / (LLC_BI__Earnings_Credit_Allowance__c * (DAY(DATE(YEAR(TODAY()),MONTH(TODAY())+1,1)-1)/360)), 0)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Balance Required To Offset Service</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>LLC_BI__Balance_Required__c</fullName>
+        <deprecated>false</deprecated>
+        <description>This field is automatically populated via a trigger. It is calculated by adding the LLC_BI__Minimum_Required_Balance__c value together for each LLC_BI__Scenario_Item__c associated with the Scenario. This field represents the minimum dollar amount that a customer must have in an account in order to receive all services on the proforma.</description>
+        <externalId>false</externalId>
+        <label>Less Balance Required</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>LLC_BI__Competitor_Earnings_Credit_Allowance__c</fullName>
+        <deprecated>false</deprecated>
+        <description>This field is optional. It is populated manually in the proforma. This field stores a competitor&apos;s earnings credit allowance percentage.</description>
+        <externalId>false</externalId>
+        <label>Competitor Earnings Credit Allowance (%)</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackTrending>false</trackTrending>
+        <type>Percent</type>
+    </fields>
+    <fields>
+        <fullName>LLC_BI__Competitor_Net_Charge__c</fullName>
+        <deprecated>false</deprecated>
+        <description>This field is populated automatically via formula. This field stores the value of a competitor&apos;s net charge.</description>
+        <externalId>false</externalId>
+        <formula>IF((LLC_BI__Competitor_Total_Charge__c - LLC_BI__Average_Collected_Balance__c * ( LLC_BI__Competitor_Earnings_Credit_Allowance__c /365) * 30 &gt; 0),
+  (LLC_BI__Competitor_Total_Charge__c - LLC_BI__Average_Collected_Balance__c * ( LLC_BI__Competitor_Earnings_Credit_Allowance__c    /365) * 30) ,
+  0
+)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Competitor Net Charge</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>LLC_BI__Competitor_Total_Charge__c</fullName>
+        <deprecated>false</deprecated>
+        <description>This field is populated automatically via formula. This field stores the value of a competitor&apos;s total charge.</description>
+        <externalId>false</externalId>
+        <formula>LLC_BI__Svc_Total__c +  LLC_BI__Total_Competitor_Difference__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Competitor Total Charge</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>LLC_BI__Conversion_Object__c</fullName>
+        <deprecated>false</deprecated>
+        <description>This is a text field that stores the ID of the object from which the scenario is created</description>
+        <encryptionScheme>None</encryptionScheme>
+        <externalId>false</externalId>
+        <label>Converted From</label>
+        <length>255</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>LLC_BI__Difference_Total__c</fullName>
+        <deprecated>false</deprecated>
+        <description>This field is populated automatically via formula. This field stores the difference between the net charge difference and the total charge difference.</description>
+        <externalId>false</externalId>
+        <formula>LLC_BI__Total_Net_Charge_Difference__c -  LLC_BI__Total_Charge_Difference__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Difference Total</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>LLC_BI__Discount_Currency_Total__c</fullName>
+        <defaultValue>0.00</defaultValue>
+        <deprecated>false</deprecated>
+        <description>This field is populated automatically. This field stores the discounted amount of the entire performa.</description>
+        <externalId>false</externalId>
+        <label>Discount ($)</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>LLC_BI__Discount_Percent_Total__c</fullName>
+        <deprecated>false</deprecated>
+        <description>This field is populated automatically. This field stores the total percentage of discounts applied to the entire performa.</description>
+        <externalId>false</externalId>
+        <formula>IF(LLC_BI__Total_Gross_Fee__c  &gt; 0, 1 - (LLC_BI__Svc_Total__c / LLC_BI__Total_Gross_Fee__c), 0)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Discount (%)</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackTrending>false</trackTrending>
+        <type>Percent</type>
+    </fields>
+    <fields>
+        <fullName>LLC_BI__Earnings_Credit_Allowance_Amount__c</fullName>
+        <deprecated>false</deprecated>
+        <description>This field is populated automatically via formula. It stores the calculation on the net funds available in a checking account and the credit amount can be used to offset all or a portion of monthly service charges.</description>
+        <externalId>false</externalId>
+        <formula>IF(LLC_BI__Investable_Balance__c &lt; 0, 0, (LLC_BI__Earnings_Credit_Allowance__c / 12) * LLC_BI__Investable_Balance__c)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Earnings Credit Allowance</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>LLC_BI__Earnings_Credit_Allowance__c</fullName>
+        <deprecated>false</deprecated>
+        <description>This field is not required and is populated manually. This field stores the total customer&apos;s percentage of earnings credit allowance for the proforma.</description>
+        <externalId>false</externalId>
+        <label>Earnings Credit Allowance (%)</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackTrending>false</trackTrending>
+        <type>Percent</type>
+    </fields>
+    <fields>
+        <fullName>LLC_BI__Investable_Balance__c</fullName>
+        <deprecated>false</deprecated>
+        <description>This field is populated automatically via formula. It stores the available balances to support services.</description>
+        <externalId>false</externalId>
+        <formula>LLC_BI__Average_Collected_Balance__c - LLC_BI__Reserve_Requirement__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Investable Balance / (ECA)</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>LLC_BI__Is_Converted__c</fullName>
+        <defaultValue>false</defaultValue>
+        <deprecated>false</deprecated>
+        <description>This field marks this scenario as this proforma already having been converted to treasury services</description>
+        <externalId>false</externalId>
+        <label>Is_Converted</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>LLC_BI__Is_Final__c</fullName>
+        <deprecated>false</deprecated>
+        <description>This field is populated automatically via formula. This is a formula checkbox that is checked when proforma status changes to Final.</description>
+        <externalId>false</externalId>
+        <formula>TEXT(LLC_BI__Status__c) = &apos;Final&apos;</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Is Final</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>LLC_BI__Net_Amount_Due__c</fullName>
+        <deprecated>false</deprecated>
+        <description>This field is populated automatically via formula. It stores the total sum of money due for the purchase of a service.</description>
+        <externalId>false</externalId>
+        <formula>IF(LLC_BI__Earnings_Credit_Allowance_Amount__c &gt; LLC_BI__Svc_Total__c , LLC_BI__Svc_Total__c - LLC_BI__Earnings_Credit_Allowance_Amount__c, LLC_BI__Net_Deficit__c)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Net Amount Due</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>LLC_BI__Net_Deficit__c</fullName>
+        <deprecated>false</deprecated>
+        <description>This field is populated automatically via formula. It stores the difference between the the service total and the earnings credit allowance. This is the net amount due, unless the earnings credit allowance is more than the service total.</description>
+        <externalId>false</externalId>
+        <formula>IF(LLC_BI__Earnings_Credit_Allowance_Amount__c &lt;= 0, LLC_BI__Svc_Total__c, LLC_BI__Svc_Total__c - LLC_BI__Earnings_Credit_Allowance_Amount__c)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Net Deficit</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>LLC_BI__Net_Investable_Excess_Deficit__c</fullName>
+        <deprecated>false</deprecated>
+        <description>This field is populated automatically via formula. It stores the investable balance after the minimum balance required for services, if the initial investable balance is positive. Otherwise, it just shows the minimum balance required for services.</description>
+        <externalId>false</externalId>
+        <formula>IF(LLC_BI__Investable_Balance__c &lt; 0 ,LLC_BI__Balance_Required__c, (LLC_BI__Investable_Balance__c - LLC_BI__Balance_Required__c))</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Net Investable Excess / Deficit</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>LLC_BI__Opportunity__c</fullName>
+        <deleteConstraint>Restrict</deleteConstraint>
+        <deprecated>false</deprecated>
+        <description>This field is populated automatically when creating a scenario from opportunity. This field specifies the opportunity associated with the scenario.</description>
+        <externalId>false</externalId>
+        <label>Opportunity</label>
+        <referenceTo>Opportunity</referenceTo>
+        <relationshipLabel>Scenarios</relationshipLabel>
+        <relationshipName>Scenarios</relationshipName>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>LLC_BI__Product_Quantities__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Serialized data containing the product or product type id to the quantity of treasury services to create.</description>
+        <encryptionScheme>None</encryptionScheme>
+        <externalId>false</externalId>
+        <label>Product Quantities</label>
+        <length>32768</length>
+        <trackTrending>false</trackTrending>
+        <type>LongTextArea</type>
+        <visibleLines>3</visibleLines>
+    </fields>
+    <fields>
+        <fullName>LLC_BI__Reserve_Requirement_Rate_Perc__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <formula>LLC_BI__Reserve_Requirement_Rate__c / 100</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Reserve Requirement Rate (%)</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackTrending>false</trackTrending>
+        <type>Percent</type>
+    </fields>
+    <fields>
+        <fullName>LLC_BI__Reserve_Requirement_Rate__c</fullName>
+        <deprecated>false</deprecated>
+        <description>This field is optional. It is populated manually in the proforma. This fields stores the percentage value that sets the minimum fraction of customer deposits and notes that each commercial bank must hold.</description>
+        <externalId>false</externalId>
+        <label>Reserve Requirement Rate</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>3</scale>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>LLC_BI__Reserve_Requirement__c</fullName>
+        <deprecated>false</deprecated>
+        <description>This field is populated automatically via formula. This fields stores the amount that sets the minimum fraction of customer deposits and notes that each commercial bank must hold.</description>
+        <externalId>false</externalId>
+        <formula>(LLC_BI__Average_Collected_Balance__c * LLC_BI__Reserve_Requirement_Rate__c) / 100</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Reserve Requirement</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>LLC_BI__Scenario_Url__c</fullName>
+        <deprecated>false</deprecated>
+        <description>This field is populated automatically when the proforma is created. This field is a hyperlink. This field links to the Performa visualforce page where values from the scenario where imputed and calculated.</description>
+        <externalId>false</externalId>
+        <formula>HYPERLINK(&quot;/apex/&quot; + $Label.LLC_BI__Namespace + &quot;__Scenario?id=&quot; + LLC_BI__Opportunity__r.Id + &quot;&amp;scenarioId=&quot; + Id, $Label.LLC_BI__View_Proforma)</formula>
+        <label>Proforma</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>LLC_BI__Setup_Fee__c</fullName>
+        <deprecated>false</deprecated>
+        <description>The system automatically populates this currency field with the sum of scenario item records where the LLC_BI_Is_Monthly_c checkbox is not selected.</description>
+        <externalId>false</externalId>
+        <label>Setup Fee</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>LLC_BI__Show_Competitor_Pricing__c</fullName>
+        <defaultValue>false</defaultValue>
+        <deprecated>false</deprecated>
+        <description>This is an optional field. It is populated based on the user selecting to show or hide the Competitor Pricing column on a scenario.</description>
+        <externalId>false</externalId>
+        <label>Show Competitor Pricing</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>LLC_BI__Show_Exception_Pricing__c</fullName>
+        <defaultValue>false</defaultValue>
+        <deprecated>false</deprecated>
+        <description>This is an optional field. It is populated based on the user selecting to show or hide the Exception Pricing columns on a scenario.</description>
+        <externalId>false</externalId>
+        <label>Show Exception Pricing</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>LLC_BI__Status__c</fullName>
+        <deprecated>false</deprecated>
+        <description>This field is automatically set whenever a scenario record is created. It specifies the status of the scenario. It is usually updated via an approval process or workflow to drive automation of the scenario record.</description>
+        <externalId>false</externalId>
+        <label>Status</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Draft</fullName>
+                    <default>true</default>
+                    <label>Draft</label>
+                </value>
+                <value>
+                    <fullName>Final</fullName>
+                    <default>false</default>
+                    <label>Final</label>
+                </value>
+                <value>
+                    <fullName>Inactive</fullName>
+                    <default>false</default>
+                    <label>Inactive</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>LLC_BI__Svc_Total__c</fullName>
+        <defaultValue>0.00</defaultValue>
+        <deprecated>false</deprecated>
+        <description>This field is populated automatically via trigger. It stores the sum of the fee including discounts for all bill points. It details the total fee for all bill points.</description>
+        <externalId>false</externalId>
+        <label>Service Total</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>LLC_BI__Total_Balance_Required_Difference__c</fullName>
+        <deprecated>false</deprecated>
+        <description>This field is automatically populated via trigger. It stores the difference between LLC_BI__Total_Balance_Required__c and Total_Competitor_Balance_Required__c.</description>
+        <externalId>false</externalId>
+        <label>Total Balance Required Difference</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>LLC_BI__Total_Balance_Required__c</fullName>
+        <deprecated>false</deprecated>
+        <description>This field is automatically populated via a trigger. It stores the annualized minimum required balance for all bill points in the scenario.</description>
+        <externalId>false</externalId>
+        <label>Total Balance Required</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>LLC_BI__Total_Charge_Difference__c</fullName>
+        <deprecated>false</deprecated>
+        <description>This field is populated automatically via formula. It holds the value of expenses on a company&apos;s income statement that is either releated to debt that is deemed uncollectible.</description>
+        <externalId>false</externalId>
+        <formula>LLC_BI__Competitor_Total_Charge__c -  LLC_BI__Svc_Total__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Total Charge Difference</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>LLC_BI__Total_Competitor_Balance_Required__c</fullName>
+        <deprecated>false</deprecated>
+        <description>This field is populated automatically via a trigger. It stores the competitor&apos;s annualized minimum required balance for all bill points in the scenario.</description>
+        <externalId>false</externalId>
+        <label>Total Competitor Balance Required</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>LLC_BI__Total_Competitor_Difference__c</fullName>
+        <deprecated>false</deprecated>
+        <description>This field is populated automatically via a trigger. It stores the difference between your calculated fee (including discounts for all bill points) and the competitor&apos;s fees for all bill points</description>
+        <externalId>false</externalId>
+        <label>Total Competitor Difference</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>LLC_BI__Total_Discount__c</fullName>
+        <deprecated>false</deprecated>
+        <description>This field is optional. It is populated manually in the proforma. It contains the discount percent applied to the total scenario, which is input on the proforma.</description>
+        <externalId>false</externalId>
+        <label>Total Discount (%)</label>
+        <precision>4</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackTrending>false</trackTrending>
+        <type>Percent</type>
+    </fields>
+    <fields>
+        <fullName>LLC_BI__Total_Gross_Fee__c</fullName>
+        <deprecated>false</deprecated>
+        <description>This field is automatically calculated via a sum roll-up. It is the sum of the LLC_BI__Gross_Fee__c for all children LLC_BI__Scenario_Item__c. It stores the value of the gross fees associated to all bill points in the scenario.</description>
+        <externalId>false</externalId>
+        <label>Total Gross Fee</label>
+        <summarizedField>LLC_BI__Scenario_Item__c.LLC_BI__Gross_Fee__c</summarizedField>
+        <summaryForeignKey>LLC_BI__Scenario_Item__c.LLC_BI__Scenario__c</summaryForeignKey>
+        <summaryOperation>sum</summaryOperation>
+        <trackTrending>false</trackTrending>
+        <type>Summary</type>
+    </fields>
+    <fields>
+        <fullName>LLC_BI__Total_Net_Charge_Difference__c</fullName>
+        <deprecated>false</deprecated>
+        <description>This field is populated automatically via formula. It stores the difference between a competitor&apos;s net charge and the net amount for this proforma.</description>
+        <externalId>false</externalId>
+        <formula>LLC_BI__Competitor_Net_Charge__c -  LLC_BI__Net_Amount_Due__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Total Net Charge Difference</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Net_Amount_Due_cm__c</fullName>
+        <externalId>false</externalId>
+        <formula>Service_Total_cm__c -  LLC_BI__Earnings_Credit_Allowance_Amount__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Net Amount Due</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Requires_Approval__c</fullName>
+        <externalId>false</externalId>
+        <formula>IF(
+OR(
+Count_of_Fee_Inc_Disc_Less_Than_Cost__c &gt; 0,
+ISPICKVAL( CF_Earnings_Credit_Rate__c , &quot;.30&quot;),
+ISPICKVAL( CF_Earnings_Credit_Rate__c , &quot;.35&quot;), 
+ISPICKVAL( CF_Earnings_Credit_Rate__c , &quot;.40&quot;),
+CF_Exception_Price_less_than_Cost__c  = true
+),&quot;Yes&quot;, &quot;No&quot;
+)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Requires Approval?</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Service_Total_cm__c</fullName>
+        <externalId>false</externalId>
+        <label>Service Total</label>
+        <summarizedField>LLC_BI__Scenario_Item__c.Fee_Including_Discounts_cm__c</summarizedField>
+        <summaryFilterItems>
+            <field>LLC_BI__Scenario_Item__c.LLC_BI__Is_Monthly__c</field>
+            <operation>equals</operation>
+            <value>True</value>
+        </summaryFilterItems>
+        <summaryForeignKey>LLC_BI__Scenario_Item__c.LLC_BI__Scenario__c</summaryForeignKey>
+        <summaryOperation>sum</summaryOperation>
+        <trackTrending>false</trackTrending>
+        <type>Summary</type>
+    </fields>
+    <label>Scenario</label>
+    <listViews>
+        <fullName>CLV_Scenarios_for_Approval</fullName>
+        <columns>NAME</columns>
+        <columns>Date_Submitted_For_Approval__c</columns>
+        <columns>LLC_BI__Opportunity__c</columns>
+        <columns>CF_Approver__c</columns>
+        <columns>CF_Earnings_Credit_Rate__c</columns>
+        <columns>CF_Exception_Price_less_than_Cost__c</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>LLC_BI__Status__c</field>
+            <operation>equals</operation>
+            <value>Draft</value>
+        </filters>
+        <filters>
+            <field>Requires_Approval__c</field>
+            <operation>equals</operation>
+            <value>Yes</value>
+        </filters>
+        <filters>
+            <field>Date_Submitted_For_Approval__c</field>
+            <operation>lessOrEqual</operation>
+            <value>TODAY</value>
+        </filters>
+        <label>Scenarios for Approval</label>
+        <sharedTo>
+            <role>Information_Technology</role>
+            <role>SVP_Treasury_Solutions</role>
+            <role>Treasury_Sales_Officers</role>
+            <role>Treasury_Sales_Specialist</role>
+            <role>Treasury_Support_Specialist</role>
+        </sharedTo>
+    </listViews>
+    <listViews>
+        <fullName>CQ_Scenario_Approval_Queue_Scenario</fullName>
+        <filterScope>Queue</filterScope>
+        <label>Scenario Approval Queue</label>
+        <queue>CQ_Scenario_Approval_Queue</queue>
+        <sharedTo>
+            <allInternalUsers></allInternalUsers>
+        </sharedTo>
+    </listViews>
+    <nameField>
+        <encryptionScheme>None</encryptionScheme>
+        <label>Scenario Name</label>
+        <type>Text</type>
+    </nameField>
+    <pluralLabel>Scenarios</pluralLabel>
+    <searchLayouts/>
+    <sharingModel>ReadWrite</sharingModel>
+    <validationRules>
+        <fullName>CVR_RestrictConversionTo_Single_Proforma</fullName>
+        <active>true</active>
+        <description>This VR is to ensure only one Proforma is converted to Treasury Service per Opportunity.</description>
+        <errorConditionFormula>AND(
+ISPICKVAL( LLC_BI__Opportunity__r.CF_Has_Converted_Proforma__c , &quot;Yes&quot;) ,
+ISCHANGED( LLC_BI__Is_Converted__c ),
+LLC_BI__Is_Converted__c = true 
+)</errorConditionFormula>
+        <errorMessage>You cannot convert this Proforma since another Proforma has already been converted on this Opportunity.</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>CVR_Scenario_record_Locked</fullName>
+        <active>true</active>
+        <description>This validation rule is to ensure that users are not making any changes to the record once it was submitted for approval.</description>
+        <errorConditionFormula>AND( 
+NOT( ISBLANK(Date_Submitted_For_Approval__c) ),
+
+OR(
+ISCHANGED(Name),
+ISCHANGED(CF_Deposit_Account_Type__c),
+ISCHANGED(LLC_BI__Average_Ledger_Balance__c),
+ISCHANGED(LLC_BI__Average_Unavailable__c),
+ISCHANGED(CF_First_Billing_Month__c),
+ISCHANGED(CF_Free_Rent_Period_In_Days__c),
+ISCHANGED(CF_Reserve_Requirement_Rate__c),
+ISCHANGED(CF_Earnings_Credit_Rate__c),
+ISCHANGED(CF_Competitor_Bank__c),
+ISCHANGED(CF_Exception_Pricing_Expiration_Date__c),
+ISCHANGED(CF_Comments__c)
+)
+)</errorConditionFormula>
+        <errorMessage>This record is already in Approval &amp; hence can&apos;t be edited.</errorMessage>
+    </validationRules>
+    <visibility>Public</visibility>
+    <webLinks>
+        <fullName>Form_Generation</fullName>
+        <availability>online</availability>
+        <displayType>button</displayType>
+        <hasMenubar>false</hasMenubar>
+        <hasScrollbars>true</hasScrollbars>
+        <hasToolbar>false</hasToolbar>
+        <height>600</height>
+        <isResizable>true</isResizable>
+        <linkType>page</linkType>
+        <masterLabel>Form Generation</masterLabel>
+        <openType>newWindow</openType>
+        <page>FormsGenPageAction</page>
+        <position>none</position>
+        <protected>false</protected>
+        <showsLocation>false</showsLocation>
+        <showsStatus>false</showsStatus>
+    </webLinks>
+    <webLinks>
+        <fullName>Proforma_Summary</fullName>
+        <availability>online</availability>
+        <displayType>button</displayType>
+        <encodingKey>UTF-8</encodingKey>
+        <height>600</height>
+        <linkType>url</linkType>
+        <masterLabel>Proforma Summary</masterLabel>
+        <openType>sidebar</openType>
+        <protected>false</protected>
+        <url>{!URLFOR(&apos;/apex/LLC_BI__Proforma?&apos;,Opportunity.Id,[app=&apos;treasury-proforma.proforma-summary&apos;,id= LLC_BI__Scenario__c.LLC_BI__OpportunityId__c, source=&apos;opportunity&apos;])}</url>
+    </webLinks>
+</CustomObject>
