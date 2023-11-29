@@ -77,6 +77,14 @@
     <label>TBOM LOS</label>
     <navType>Standard</navType>
     <profileActionOverrides>
+        <actionName>Tab</actionName>
+        <content>RM_Home_for_TSO</content>
+        <formFactor>Large</formFactor>
+        <pageOrSobjectType>standard-home</pageOrSobjectType>
+        <type>Flexipage</type>
+        <profile>Treasury Sales Officer</profile>
+    </profileActionOverrides>
+    <profileActionOverrides>
         <actionName>View</actionName>
         <content>Opportunity_Treasury_and_Deposit_Record_Page</content>
         <formFactor>Large</formFactor>
@@ -102,14 +110,6 @@
         <recordType>Opportunity.TM_Track_Treasury_Products_Sold</recordType>
         <type>Flexipage</type>
         <profile>Admin</profile>
-    </profileActionOverrides>
-    <profileActionOverrides>
-        <actionName>Tab</actionName>
-        <content>RM_Home_for_TSO</content>
-        <formFactor>Large</formFactor>
-        <pageOrSobjectType>standard-home</pageOrSobjectType>
-        <type>Flexipage</type>
-        <profile>Treasury Sales Officer</profile>
     </profileActionOverrides>
     <profileActionOverrides>
         <actionName>View</actionName>
@@ -201,6 +201,15 @@
     </profileActionOverrides>
     <profileActionOverrides>
         <actionName>View</actionName>
+        <content>Knowledge_Record_Page1</content>
+        <formFactor>Large</formFactor>
+        <pageOrSobjectType>Knowledge__kav</pageOrSobjectType>
+        <recordType>Knowledge__kav.Admin_Knowledge</recordType>
+        <type>Flexipage</type>
+        <profile>Admin</profile>
+    </profileActionOverrides>
+    <profileActionOverrides>
+        <actionName>View</actionName>
         <content>Account_Record_Page_For_TSO</content>
         <formFactor>Large</formFactor>
         <pageOrSobjectType>Account</pageOrSobjectType>
@@ -224,15 +233,6 @@
         <pageOrSobjectType>standard-home</pageOrSobjectType>
         <type>Flexipage</type>
         <profile>TBOM Read Only</profile>
-    </profileActionOverrides>
-    <profileActionOverrides>
-        <actionName>View</actionName>
-        <content>Knowledge_Record_Page1</content>
-        <formFactor>Large</formFactor>
-        <pageOrSobjectType>Knowledge__kav</pageOrSobjectType>
-        <recordType>Knowledge__kav.Admin_Knowledge</recordType>
-        <type>Flexipage</type>
-        <profile>Admin</profile>
     </profileActionOverrides>
     <profileActionOverrides>
         <actionName>View</actionName>
@@ -371,19 +371,19 @@
     </profileActionOverrides>
     <profileActionOverrides>
         <actionName>Tab</actionName>
-        <content>Admin_Home_Page</content>
-        <formFactor>Large</formFactor>
-        <pageOrSobjectType>standard-home</pageOrSobjectType>
-        <type>Flexipage</type>
-        <profile>nCino System Administrator</profile>
-    </profileActionOverrides>
-    <profileActionOverrides>
-        <actionName>Tab</actionName>
         <content>RM_Home_Commercial</content>
         <formFactor>Large</formFactor>
         <pageOrSobjectType>standard-home</pageOrSobjectType>
         <type>Flexipage</type>
         <profile>Relationship Manager &amp; Credit</profile>
+    </profileActionOverrides>
+    <profileActionOverrides>
+        <actionName>Tab</actionName>
+        <content>Admin_Home_Page</content>
+        <formFactor>Large</formFactor>
+        <pageOrSobjectType>standard-home</pageOrSobjectType>
+        <type>Flexipage</type>
+        <profile>nCino System Administrator</profile>
     </profileActionOverrides>
     <profileActionOverrides>
         <actionName>Tab</actionName>
@@ -612,6 +612,15 @@
         <pageOrSobjectType>TBOM_Help_Ticket__c</pageOrSobjectType>
         <recordType>TBOM_Help_Ticket__c.Help_Ticket</recordType>
         <type>Flexipage</type>
+        <profile>Customer Portal Profile</profile>
+    </profileActionOverrides>
+    <profileActionOverrides>
+        <actionName>View</actionName>
+        <content>TBOM_Help_Ticket_Record_Page1</content>
+        <formFactor>Large</formFactor>
+        <pageOrSobjectType>TBOM_Help_Ticket__c</pageOrSobjectType>
+        <recordType>TBOM_Help_Ticket__c.Help_Ticket</recordType>
+        <type>Flexipage</type>
         <profile>Credit &amp; Processor</profile>
     </profileActionOverrides>
     <profileActionOverrides>
@@ -631,15 +640,6 @@
         <recordType>TBOM_Help_Ticket__c.Help_Ticket</recordType>
         <type>Flexipage</type>
         <profile>Customer Portal Document Uploader User</profile>
-    </profileActionOverrides>
-    <profileActionOverrides>
-        <actionName>View</actionName>
-        <content>TBOM_Help_Ticket_Record_Page1</content>
-        <formFactor>Large</formFactor>
-        <pageOrSobjectType>TBOM_Help_Ticket__c</pageOrSobjectType>
-        <recordType>TBOM_Help_Ticket__c.Help_Ticket</recordType>
-        <type>Flexipage</type>
-        <profile>Customer Portal Profile</profile>
     </profileActionOverrides>
     <profileActionOverrides>
         <actionName>View</actionName>
@@ -1152,6 +1152,15 @@
         <pageOrSobjectType>TBOM_Help_Ticket__c</pageOrSobjectType>
         <recordType>TBOM_Help_Ticket__c.Enhancement_Request</recordType>
         <type>Flexipage</type>
+        <profile>Treasury Sales Officer</profile>
+    </profileActionOverrides>
+    <profileActionOverrides>
+        <actionName>View</actionName>
+        <content>TBOM_Enhancement_Request_Record_Page</content>
+        <formFactor>Large</formFactor>
+        <pageOrSobjectType>TBOM_Help_Ticket__c</pageOrSobjectType>
+        <recordType>TBOM_Help_Ticket__c.Enhancement_Request</recordType>
+        <type>Flexipage</type>
         <profile>Standard</profile>
     </profileActionOverrides>
     <profileActionOverrides>
@@ -1171,15 +1180,6 @@
         <recordType>TBOM_Help_Ticket__c.Enhancement_Request</recordType>
         <type>Flexipage</type>
         <profile>TBOM Read Only</profile>
-    </profileActionOverrides>
-    <profileActionOverrides>
-        <actionName>View</actionName>
-        <content>TBOM_Enhancement_Request_Record_Page</content>
-        <formFactor>Large</formFactor>
-        <pageOrSobjectType>TBOM_Help_Ticket__c</pageOrSobjectType>
-        <recordType>TBOM_Help_Ticket__c.Enhancement_Request</recordType>
-        <type>Flexipage</type>
-        <profile>Treasury Sales Officer</profile>
     </profileActionOverrides>
     <setupExperience>all</setupExperience>
     <tabs>standard-home</tabs>
