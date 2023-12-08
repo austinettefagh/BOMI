@@ -326,7 +326,8 @@
             <label>Is HVCRE Reportable Answered As Yes</label>
         </rules>
     </decisions>
-    <description>Testing changes</description>
+    <description>Testing changes
+testing more changes</description>
     <environments>Default</environments>
     <formulas>
         <name>IsNewRecord</name>
@@ -359,6 +360,12 @@
         <label>Test Update</label>
         <locationX>1370</locationX>
         <locationY>431</locationY>
+        <inputAssignments>
+            <field>nFORCE__Currency_Answer__c</field>
+            <value>
+                <numberValue>10.0</numberValue>
+            </value>
+        </inputAssignments>
         <inputAssignments>
             <field>nFORCE__Number_Answer__c</field>
             <value>
