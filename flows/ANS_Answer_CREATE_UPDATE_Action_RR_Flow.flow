@@ -206,6 +206,9 @@
         <label>Checking user has flow permission or not</label>
         <locationX>1100</locationX>
         <locationY>323</locationY>
+        <defaultConnector>
+            <targetReference>Test_Update</targetReference>
+        </defaultConnector>
         <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
         <rules>
             <name>Checking_no_workflow</name>
@@ -323,6 +326,7 @@
             <label>Is HVCRE Reportable Answered As Yes</label>
         </rules>
     </decisions>
+    <description>Testing changes</description>
     <environments>Default</environments>
     <formulas>
         <name>IsNewRecord</name>
@@ -350,6 +354,19 @@
         </value>
     </processMetadataValues>
     <processType>AutoLaunchedFlow</processType>
+    <recordUpdates>
+        <name>Test_Update</name>
+        <label>Test Update</label>
+        <locationX>1370</locationX>
+        <locationY>431</locationY>
+        <inputAssignments>
+            <field>nFORCE__Number_Answer__c</field>
+            <value>
+                <numberValue>10.0</numberValue>
+            </value>
+        </inputAssignments>
+        <inputReference>$Record</inputReference>
+    </recordUpdates>
     <recordUpdates>
         <name>Update_CRA_Reportable_False</name>
         <label>Update CRA Reportable False</label>
